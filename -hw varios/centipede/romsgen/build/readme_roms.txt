@@ -1,0 +1,1 @@
+Note, these are not the original rom images, they are blank placeholder files. Replace with Centipede MAME ROMs and run build_roms.bat
