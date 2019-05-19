@@ -1,0 +1,9 @@
+Para que funcione el spinner hace falta un ROTARY ENCODER de onda cuadrada de 600 de resolucion.
+La señal "A" la conectaremos en el pin de Izda del DB9
+La señal "B" la conectaremos en el pin de Derecha del DB9
+La señal 0V  la conectaremos al GND del DB9 y al Negativo de la fuente de alimentacion externa
+La señal VCC la conectaremos al positivo de la fuente de aliemntacion externa.
+
+La Fuente de alimentacion puere variar segun el modelo de Encoder. El que yo tengo admite de 5-24v.
+
+Para 2 jugadores se necesitaran 2 spinners y un joy splitter.
