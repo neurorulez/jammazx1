@@ -1,0 +1,192 @@
+/*
+
+Xilinx Vivado v2018.3.1 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2489853 on Tue Mar 26 04:20:25 MDT 2019
+IP Build: 2486929 on Tue Mar 26 06:44:21 MDT 2019
+
+Process ID (PID): 9120
+License: Customer
+
+Current time: 	Fri May 31 10:13:08 CEST 2019
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 33 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	F:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sysop
+User home directory: C:/Users/sysop
+User working directory: F:/repos/a35/NUEVO/asteroids/A35
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: F:/Xilinx/Vivado
+HDI_APPROOT: F:/Xilinx/Vivado/2018.3
+RDI_DATADIR: F:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: F:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	F:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/repos/a35/NUEVO/asteroids/A35/vivado.log
+Vivado journal file location: 	F:/repos/a35/NUEVO/asteroids/A35/vivado.jou
+Engine tmp dir: 	F:/repos/a35/NUEVO/asteroids/A35/.Xil/Vivado-9120-W7-PC
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: F:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: F:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: F:/Xilinx/Vivado/2018.3
+XILINX_SDK: F:/Xilinx/SDK/2018.3
+XILINX_VIVADO: F:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: F:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 536 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: F:\repos\a35\NUEVO\asteroids\A35\A35.xpr. Version: Vivado v2018.3.1 
+// WARNING: HEventQueue.dispatchEvent() is taking  1241 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/repos/a35/NUEVO/asteroids/A35/A35.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 573 MB. GUI used memory: 46 MB. Current time: 5/31/19, 10:13:10 AM CEST
+// Tcl Message: open_project F:/repos/a35/NUEVO/asteroids/A35/A35.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 98 MB (+100436kb) [00:00:38]
+// [Engine Memory]: 594 MB (+471685kb) [00:00:38]
+// [Engine Memory]: 625 MB (+1370kb) [00:00:42]
+// WARNING: HEventQueue.dispatchEvent() is taking  10961 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1043 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 639 MB. GUI used memory: 48 MB. Current time: 5/31/19, 10:13:26 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  2418 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1130 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1349 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 663.949 ; gain = 79.668 
+// Project name: A35; location: F:/repos/a35/NUEVO/asteroids/A35; part: xc7a35tftg256-1
+// [Engine Memory]: 759 MB (+107717kb) [00:00:53]
+dismissDialog("Open Project"); // bx (cp)
+// [GUI Memory]: 103 MB (+154kb) [00:00:54]
+// [Engine Memory]: 822 MB (+25726kb) [00:00:59]
+// PAPropertyPanels.initPanels (dpram.v) elapsed time: 0.6s
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dpram (dpram.v)]", 4, false); // B (D, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1200 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dpram (dpram.v)]", 4, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// aE (cp): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl_mio/dpram.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/repos/a35/NUEVO/asteroids/src/rtl_mio/dpram.v 
+dismissDialog("Remove Sources"); // bx (aE)
+// WARNING: HTimer (StateMonitor Timer) is taking 854ms to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1130 ms. Increasing delay to 3000 ms.
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, asteroids_top (modulo_top_a35t.v)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, asteroids_top (modulo_top_a35t.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ASTEROIDS_PROM_ROM(prom) (ASTEROIDS_PROM_ROM.VHD)]", 3, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROM_ROM.VHD] -no_script -reset -force -quiet 
+// aE (cp): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROM_ROM.VHD 
+dismissDialog("Remove Sources"); // bx (aE)
+// WARNING: HEventQueue.dispatchEvent() is taking  1308 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 853 MB. GUI used memory: 51 MB. Current time: 5/31/19, 10:14:18 AM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2391 ms. Increasing delay to 7173 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ASTEROIDS_POKEY(RTL) (asteroids_pokey.vhd)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ASTEROIDS_POKEY(RTL) (asteroids_pokey.vhd)]", 2, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_pokey.vhd] -no_script -reset -force -quiet 
+// aE (cp): Remove Sources: addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (aE):  Remove Sources : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_pokey.vhd 
+dismissDialog("Remove Sources"); // bx (aE)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "2", 1); // e (bc, f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 11 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 31 10:14:45 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log [Fri May 31 10:14:45 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)

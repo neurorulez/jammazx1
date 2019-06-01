@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Fri May 31 10:32:39 2019
+# Process ID: 11408
+# Current directory: F:/repos/a35/NUEVO/astdelux/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10932 F:\repos\a35\NUEVO\astdelux\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/astdelux/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/astdelux/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/astdelux/A35/A35.xpr
+add_files -norecurse {F:/repos/a35/NUEVO/astdelux/src/roms/ASTEROIDS_VEC_ROM_2.vhd F:/repos/a35/NUEVO/astdelux/src/roms/ASTEROIDS_PROG_ROM_3.vhd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1

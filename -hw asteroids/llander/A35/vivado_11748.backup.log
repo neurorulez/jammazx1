@@ -1,0 +1,86 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Fri May 31 13:47:18 2019
+# Process ID: 11748
+# Current directory: F:/repos/a35/NUEVO/llander/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10000 F:\repos\a35\NUEVO\llander\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/llander/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/llander/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/llander/A35/A35.xpr
+INFO: [Project 1-313] Project file moved from 'F:/repos/a35/NUEVO/asteroids/A35' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/repos/a35/NUEVO/llander/ip_repo', nor could it be found using path 'F:/repos/a35/NUEVO/asteroids/ip_repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/repos/a35/NUEVO/llander/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 713.980 ; gain = 134.324
+set_property top llander_top [current_fileset]
+add_files -norecurse {F:/repos/a35/NUEVO/llander/src/rtl_mio/RAM256.vhd F:/repos/a35/NUEVO/llander/src/roms/ASTEROIDS_PROG_ROM_3.vhd F:/repos/a35/NUEVO/llander/src/roms/ASTEROIDS_VEC_ROM_2.vhd F:/repos/a35/NUEVO/llander/src/roms/ASTEROIDS_VEC_ROM_3.vhd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May 31 13:50:42 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log
+[Fri May 31 13:50:42 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3.1
+  **** Build date : Mar 26 2019-05:02:51
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1755.125 ; gain = 853.688
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May 31 13:57:11 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log
+[Fri May 31 13:57:11 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 14:06:47 2019...

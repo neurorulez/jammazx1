@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Fri May 31 10:32:39 2019
+# Process ID: 11408
+# Current directory: F:/repos/a35/NUEVO/astdelux/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10932 F:\repos\a35\NUEVO\astdelux\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/astdelux/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/astdelux/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/astdelux/A35/A35.xpr
+INFO: [Project 1-313] Project file moved from 'F:/repos/a35/NUEVO/asteroids/A35' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/repos/a35/NUEVO/astdelux/ip_repo', nor could it be found using path 'F:/repos/a35/NUEVO/asteroids/ip_repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/repos/a35/NUEVO/astdelux/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 703.809 ; gain = 130.145
+add_files -norecurse {F:/repos/a35/NUEVO/astdelux/src/roms/ASTEROIDS_VEC_ROM_2.vhd F:/repos/a35/NUEVO/astdelux/src/roms/ASTEROIDS_PROG_ROM_3.vhd}
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Couldn't access process for termination
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May 31 10:57:45 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/astdelux/A35/A35.runs/synth_1/runme.log
+[Fri May 31 10:57:45 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/astdelux/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May 31 10:58:57 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/astdelux/A35/A35.runs/synth_1/runme.log
+[Fri May 31 10:58:57 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/astdelux/A35/A35.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May 31 11:04:11 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/astdelux/A35/A35.runs/synth_1/runme.log
+[Fri May 31 11:04:11 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/astdelux/A35/A35.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 11:07:25 2019...

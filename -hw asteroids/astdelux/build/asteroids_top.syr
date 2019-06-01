@@ -1,0 +1,2053 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: asteroids_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "asteroids_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "asteroids_top"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : asteroids_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\repos\a35\NUEVO\astdelux\src\multiboot.v" into library work
+Parsing module <multiboot>.
+Parsing module <multiboot_spartan6>.
+Analyzing Verilog file "F:\repos\a35\NUEVO\astdelux\src\modulo_top.v" into library work
+Parsing module <asteroids_top>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl_T65\T65_Pack.vhd" into library work
+Parsing package <T65_Pack>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl_mio\ram_1k.vhd" into library work
+Parsing entity <ram_1k>.
+Parsing architecture <rtl> of entity <ram_1k>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl_T65\T65_MCode.vhd" into library work
+Parsing entity <T65_MCode>.
+Parsing architecture <rtl> of entity <t65_mcode>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl_T65\T65_ALU.vhd" into library work
+Parsing entity <T65_ALU>.
+Parsing architecture <rtl> of entity <t65_alu>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_ram.vhd" into library work
+Parsing entity <ASTEROIDS_RAM>.
+Parsing architecture <RTL> of entity <asteroids_ram>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\roms\ASTEROIDS_VEC_ROM_2.vhd" into library work
+Parsing entity <ASTEROIDS_VEC_ROM_2>.
+Parsing architecture <prom> of entity <asteroids_vec_rom_2>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\roms\ASTEROIDS_VEC_ROM_1.vhd" into library work
+Parsing entity <ASTEROIDS_VEC_ROM_1>.
+Parsing architecture <prom> of entity <asteroids_vec_rom_1>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl_T65\T65.vhd" into library work
+Parsing entity <T65>.
+Parsing architecture <rtl> of entity <t65>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_vg.vhd" into library work
+Parsing entity <ASTEROIDS_VG>.
+Parsing architecture <RTL> of entity <asteroids_vg>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\roms\ASTEROIDS_PROG_ROM_3.vhd" into library work
+Parsing entity <ASTEROIDS_PROG_ROM_3>.
+Parsing architecture <prom> of entity <asteroids_prog_rom_3>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\roms\ASTEROIDS_PROG_ROM_2.vhd" into library work
+Parsing entity <ASTEROIDS_PROG_ROM_2>.
+Parsing architecture <prom> of entity <asteroids_prog_rom_2>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\roms\ASTEROIDS_PROG_ROM_1.vhd" into library work
+Parsing entity <ASTEROIDS_PROG_ROM_1>.
+Parsing architecture <prom> of entity <asteroids_prog_rom_1>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\roms\ASTEROIDS_PROG_ROM_0.vhd" into library work
+Parsing entity <ASTEROIDS_PROG_ROM_0>.
+Parsing architecture <prom> of entity <asteroids_prog_rom_0>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl_mio\keyb\ps2_intf.vhd" into library work
+Parsing entity <ps2_intf>.
+Parsing architecture <ps2_intf_arch> of entity <ps2_intf>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl_mio\debounce.vhd" into library work
+Parsing entity <DEBOUNCE>.
+Parsing architecture <RTL> of entity <debounce>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl_mio\dac.vhd" into library work
+Parsing entity <dac>.
+Parsing architecture <rtl> of entity <dac>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_dw.vhd" into library work
+Parsing entity <ASTEROIDS_DW>.
+Parsing architecture <RTL> of entity <asteroids_dw>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" into library work
+Parsing entity <ASTEROIDS>.
+Parsing architecture <RTL> of entity <asteroids>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl_mio\keyb\keyboard_wasd.vhd" into library work
+Parsing entity <keyboard>.
+Parsing architecture <rtl> of entity <keyboard>.
+Parsing VHDL file "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_main.vhd" into library work
+Parsing entity <ASTEROIDS_MAIN>.
+Parsing architecture <RTL> of entity <asteroids_main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <asteroids_top>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <PLL_BASE(CLKIN_PERIOD=20,CLKFBOUT_MULT=12,CLKOUT0_DIVIDE=24,CLKOUT1_DIVIDE=50,CLKOUT2_DIVIDE=12,COMPENSATION="INTERNAL")>.
+WARNING:HDLCompiler:1127 - "F:\repos\a35\NUEVO\astdelux\src\modulo_top.v" Line 88: Assignment to pm_reset ignored, since the identifier is never used
+Going to vhdl side to elaborate module asteroids_main
+
+Elaborating entity <ASTEROIDS_MAIN> (architecture <RTL>) from library <work>.
+
+Elaborating entity <ASTEROIDS> (architecture <RTL>) from library <work>.
+WARNING:HDLCompiler:1127 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 227: Assignment to ena_3m ignored, since the identifier is never used
+
+Elaborating entity <T65> (architecture <rtl>) from library <work>.
+
+Elaborating entity <T65_MCode> (architecture <rtl>) from library <work>.
+INFO:HDLCompiler:679 - "F:\repos\a35\NUEVO\astdelux\src\rtl_T65\T65_MCode.vhd" Line 945. Case statement is complete. others clause is never selected
+
+Elaborating entity <T65_ALU> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:1127 - "F:\repos\a35\NUEVO\astdelux\src\rtl_T65\T65.vhd" Line 232: Assignment to d ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 360. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 381. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 400. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 345: Assignment to earead ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 434. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 444: reset_l should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 497. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 510. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 519. Case statement is complete. others clause is never selected
+
+Elaborating entity <ASTEROIDS_PROG_ROM_0> (architecture <prom>) from library <work>.
+
+Elaborating entity <ASTEROIDS_PROG_ROM_1> (architecture <prom>) from library <work>.
+
+Elaborating entity <ASTEROIDS_PROG_ROM_2> (architecture <prom>) from library <work>.
+
+Elaborating entity <ASTEROIDS_PROG_ROM_3> (architecture <prom>) from library <work>.
+INFO:HDLCompiler:679 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 563. Case statement is complete. others clause is never selected
+
+Elaborating entity <ASTEROIDS_RAM> (architecture <RTL>) from library <work>.
+
+Elaborating entity <ram_1k> (architecture <rtl>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 614: pkydcd should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 615: pokey_dout should be on the sensitivity list of the process
+
+Elaborating entity <ASTEROIDS_VG> (architecture <RTL>) from library <work>.
+INFO:HDLCompiler:679 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_vg.vhd" Line 246. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_vg.vhd" Line 284. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_vg.vhd" Line 352. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_vg.vhd" Line 366. Case statement is complete. others clause is never selected
+
+Elaborating entity <ASTEROIDS_VEC_ROM_1> (architecture <prom>) from library <work>.
+
+Elaborating entity <ASTEROIDS_VEC_ROM_2> (architecture <prom>) from library <work>.
+WARNING:HDLCompiler:634 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 86: Net <ena_48k> does not have a driver.
+WARNING:HDLCompiler:634 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" Line 137: Net <pokey_dout[7]> does not have a driver.
+
+Elaborating entity <ASTEROIDS_DW> (architecture <RTL>) from library <work>.
+
+Elaborating entity <dac> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <DEBOUNCE> (architecture <RTL>) with generics from library <work>.
+Back to verilog to continue elaboration
+WARNING:HDLCompiler:189 - "F:\repos\a35\NUEVO\astdelux\src\modulo_top.v" Line 179: Size mismatch in connection of port <sram_addr>. Formal port size is 19-bit while actual signal size is 21-bit.
+WARNING:HDLCompiler:189 - "F:\repos\a35\NUEVO\astdelux\src\modulo_top.v" Line 180: Size mismatch in connection of port <sram_data>. Formal port size is 8-bit while actual signal size is 1-bit.
+Going to vhdl side to elaborate module keyboard
+
+Elaborating entity <keyboard> (architecture <rtl>) from library <work>.
+
+Elaborating entity <ps2_intf> (architecture <ps2_intf_arch>) with generics from library <work>.
+Back to verilog to continue elaboration
+
+Elaborating module <multiboot>.
+WARNING:HDLCompiler:872 - "F:\repos\a35\NUEVO\astdelux\src\multiboot.v" Line 6: Using initial value of spi_addr since it is never assigned
+WARNING:HDLCompiler:1016 - "F:\repos\a35\NUEVO\astdelux\src\multiboot.v" Line 38: Port BUSY is not connected to this instance
+
+Elaborating module <multiboot_spartan6>.
+
+Elaborating module <ICAP_SPARTAN6>.
+WARNING:HDLCompiler:634 - "F:\repos\a35\NUEVO\astdelux\src\modulo_top.v" Line 46: Net <scandblctrl[1]> does not have a driver.
+WARNING:HDLCompiler:634 - "F:\repos\a35\NUEVO\astdelux\src\modulo_top.v" Line 124: Net <O_AUDIO_ML> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <asteroids_top>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\modulo_top.v".
+        joyType = 1
+WARNING:Xst:647 - Input <sram_dq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\modulo_top.v" line 162: Output port <AUDIO_L_OUT> of the instance <pm> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\modulo_top.v" line 162: Output port <AUDIO_R_OUT> of the instance <pm> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <scandblctrl> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <O_AUDIO_ML> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 8-bit register for signal <delay_count>.
+    Found 1-bit register for signal <JSELECT>.
+    Found 8-bit register for signal <joy1>.
+    Found 8-bit register for signal <joy2>.
+    Found 8-bit adder for signal <delay_count[7]_GND_1_o_add_1_OUT> created at line 93.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+Unit <asteroids_top> synthesized.
+
+Synthesizing Unit <ASTEROIDS_MAIN>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_main.vhd".
+WARNING:Xst:647 - Input <scanSW<8:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <scanSW<10:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <scandblctrl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_main.vhd" line 165: Output port <START1_LED_L> of the instance <u_asteroids> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_main.vhd" line 165: Output port <START2_LED_L> of the instance <u_asteroids> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_main.vhd" line 165: Output port <L_COIN_COUNTER> of the instance <u_asteroids> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_main.vhd" line 165: Output port <C_COIN_COUNTER> of the instance <u_asteroids> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_main.vhd" line 165: Output port <R_COIN_COUNTER> of the instance <u_asteroids> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_main.vhd" line 183: Output port <VID_DE> of the instance <u_DW> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_main.vhd" line 183: Output port <VID_HBLANK> of the instance <u_DW> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_main.vhd" line 183: Output port <VID_VBLANK> of the instance <u_DW> is unconnected or connected to loadless signal.
+    Found 8-bit register for signal <delay_count>.
+    Found 1-bit register for signal <reset_6_l>.
+    Found 8-bit adder for signal <delay_count[7]_GND_8_o_add_1_OUT> created at line 159.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal sram_data<3:0> may hinder XST clustering optimizations.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   9 Multiplexer(s).
+Unit <ASTEROIDS_MAIN> synthesized.
+
+Synthesizing Unit <ASTEROIDS>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd".
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" line 272: Output port <Sync> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" line 272: Output port <EF> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" line 272: Output port <MF> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" line 272: Output port <XF> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" line 272: Output port <ML_n> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" line 272: Output port <VP_n> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" line 272: Output port <VDA> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids.vhd" line 272: Output port <VPA> of the instance <cpu> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <pokey_dout> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <ena_48k> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <reset_l>.
+    Found 1-bit register for signal <saucrsel_l>.
+    Found 1-bit register for signal <c_nmi_l>.
+    Found 1-bit register for signal <pitch_rising>.
+    Found 4-bit register for signal <nmi_count>.
+    Found 4-bit register for signal <thumpfreq>.
+    Found 4-bit register for signal <expaud>.
+    Found 8-bit register for signal <wd_cnt>.
+    Found 16-bit register for signal <noise_shift>.
+    Found 2-bit register for signal <expitch>.
+    Found 1-bit register for signal <saucrsnden>.
+    Found 1-bit register for signal <saucrfireen>.
+    Found 1-bit register for signal <shipthrusten>.
+    Found 1-bit register for signal <shpfireen>.
+    Found 1-bit register for signal <lifeen>.
+    Found 1-bit register for signal <thumpvol>.
+    Found 1-bit register for signal <noise>.
+    Found 1-bit register for signal <ena_1_5M>.
+    Found 1-bit register for signal <ena_1_5M_e>.
+    Found 1-bit register for signal <ena_12K>.
+    Found 1-bit register for signal <ena_3K>.
+    Found 1-bit register for signal <clk_3K>.
+    Found 1-bit register for signal <ramsel_l>.
+    Found 1-bit register for signal <START1_LED_L>.
+    Found 1-bit register for signal <START2_LED_L>.
+    Found 1-bit register for signal <L_COIN_COUNTER>.
+    Found 1-bit register for signal <C_COIN_COUNTER>.
+    Found 1-bit register for signal <R_COIN_COUNTER>.
+    Found 5-bit register for signal <control_ip0_l>.
+    Found 1-bit register for signal <test_l>.
+    Found 8-bit register for signal <control_ip1_l>.
+    Found 15-bit register for signal <pitch_bend>.
+    Found 17-bit register for signal <saucer_ramp_count>.
+    Found 1-bit register for signal <saucer_snd>.
+    Found 6-bit register for signal <thump_count>.
+    Found 4-bit register for signal <thumpsnd>.
+    Found 32-bit register for signal <shpfr_pitch>.
+    Found 32-bit register for signal <shpfr_decay>.
+    Found 32-bit register for signal <shpfr_count>.
+    Found 4-bit register for signal <firesnd>.
+    Found 32-bit register for signal <saucrfr_pitch>.
+    Found 32-bit register for signal <saucrfr_decay>.
+    Found 32-bit register for signal <saucrfr_count>.
+    Found 4-bit register for signal <saucrfiresnd>.
+    Found 1-bit register for signal <shpsnd_prefilter>.
+    Found 4-bit register for signal <shpsnd_filter_t1>.
+    Found 4-bit register for signal <shpsnd_filter_t2>.
+    Found 4-bit register for signal <shpsnd_filter_t3>.
+    Found 6-bit register for signal <shpsnd_filtered>.
+    Found 4-bit register for signal <noise_cnt>.
+    Found 4-bit register for signal <expld_snd>.
+    Found 8-bit register for signal <AUDIO_OUT>.
+    Found 11-bit register for signal <ena_count>.
+    Found 11-bit adder for signal <ena_count[10]_GND_9_o_add_0_OUT> created at line 230.
+    Found 4-bit adder for signal <nmi_count[3]_GND_9_o_add_12_OUT> created at line 317.
+    Found 8-bit adder for signal <wd_cnt[7]_GND_9_o_add_16_OUT> created at line 334.
+    Found 15-bit adder for signal <pitch_bend[14]_GND_9_o_add_49_OUT> created at line 643.
+    Found 17-bit adder for signal <saucer_ramp_count[16]_GND_9_o_add_57_OUT> created at line 664.
+    Found 20-bit adder for signal <n0407> created at line 665.
+    Found 6-bit adder for signal <GND_9_o_GND_9_o_add_69_OUT> created at line 701.
+    Found 32-bit adder for signal <shpfr_pitch[31]_GND_9_o_add_83_OUT> created at line 738.
+    Found 32-bit adder for signal <saucrfr_pitch[31]_GND_9_o_add_101_OUT> created at line 770.
+    Found 6-bit adder for signal <n0455> created at line 815.
+    Found 6-bit adder for signal <GND_9_o_GND_9_o_add_120_OUT> created at line 815.
+    Found 4-bit adder for signal <noise_cnt[3]_GND_9_o_add_132_OUT> created at line 848.
+    Found 5-bit adder for signal <n0463> created at line 873.
+    Found 5-bit adder for signal <n0466> created at line 873.
+    Found 5-bit adder for signal <n0469> created at line 873.
+    Found 5-bit adder for signal <GND_9_o_GND_9_o_add_143_OUT> created at line 873.
+    Found 8-bit adder for signal <n0475> created at line 873.
+    Found 8-bit adder for signal <GND_9_o_GND_9_o_add_145_OUT> created at line 873.
+    Found 15-bit subtractor for signal <GND_9_o_GND_9_o_sub_51_OUT<14:0>> created at line 645.
+    Found 6-bit subtractor for signal <GND_9_o_GND_9_o_sub_73_OUT<5:0>> created at line 708.
+    Found 32-bit subtractor for signal <shpfr_count[31]_GND_9_o_sub_80_OUT<31:0>> created at line 734.
+    Found 32-bit subtractor for signal <shpfr_decay[31]_GND_9_o_sub_85_OUT<31:0>> created at line 740.
+    Found 32-bit subtractor for signal <saucrfr_count[31]_GND_9_o_sub_98_OUT<31:0>> created at line 766.
+    Found 32-bit subtractor for signal <saucrfr_decay[31]_GND_9_o_sub_103_OUT<31:0>> created at line 772.
+    Found 15x4-bit multiplier for signal <pitch_bend[14]_pitchbendmult[3]_MuLt_58_OUT> created at line 665.
+    Found 4x4-bit Read Only RAM for signal <p_addr_decode1.deca>
+    Found 4x4-bit Read Only RAM for signal <c_addr[11]_GND_9_o_wide_mux_23_OUT>
+    Found 8x8-bit Read Only RAM for signal <c_addr[11]_GND_9_o_wide_mux_25_OUT>
+    Found 4x2-bit Read Only RAM for signal <dips_ip_sel>
+    Found 1-bit 8-to-1 multiplexer for signal <control_ip0_sel> created at line 488.
+    Found 1-bit 8-to-1 multiplexer for signal <control_ip1_sel> created at line 501.
+    Found 8-bit 4-to-1 multiplexer for signal <rom_dout> created at line 558.
+    Found 15-bit comparator lessequal for signal <GND_9_o_pitch_bend[14]_LessThan_53_o> created at line 647
+    Found 20-bit comparator greater for signal <BUS_0007_GND_9_o_LessThan_61_o> created at line 665
+    WARNING:Xst:2404 -  FFs/Latches <dips_p6_l<1:3>> (without init value) have a constant value of 0 in block <ASTEROIDS>.
+    WARNING:Xst:2404 -  FFs/Latches <dips_p6_l<3:3>> (without init value) have a constant value of 1 in block <ASTEROIDS>.
+    WARNING:Xst:2404 -  FFs/Latches <dips_p6_l<3:6>> (without init value) have a constant value of 0 in block <ASTEROIDS>.
+    Summary:
+	inferred   4 RAM(s).
+	inferred   1 Multiplier(s).
+	inferred  22 Adder/Subtractor(s).
+	inferred 363 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  22 Multiplexer(s).
+Unit <ASTEROIDS> synthesized.
+
+Synthesizing Unit <T65>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\rtl_T65\T65.vhd".
+WARNING:Xst:647 - Input <Abort_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <IRQCycle>.
+    Found 1-bit register for signal <NMICycle>.
+    Found 1-bit register for signal <NMIAct>.
+    Found 1-bit register for signal <R_W_n_i>.
+    Found 1-bit register for signal <EF_i>.
+    Found 1-bit register for signal <MF_i>.
+    Found 1-bit register for signal <XF_i>.
+    Found 1-bit register for signal <RstCycle>.
+    Found 8-bit register for signal <IR>.
+    Found 8-bit register for signal <PBR>.
+    Found 8-bit register for signal <DBR>.
+    Found 8-bit register for signal <BusA_r>.
+    Found 8-bit register for signal <BusB>.
+    Found 8-bit register for signal <AD>.
+    Found 8-bit register for signal <BAH>.
+    Found 8-bit register for signal <DL>.
+    Found 16-bit register for signal <S>.
+    Found 16-bit register for signal <PC>.
+    Found 2-bit register for signal <Mode_r>.
+    Found 2-bit register for signal <Set_Addr_To_r>.
+    Found 3-bit register for signal <Write_Data_r>.
+    Found 9-bit register for signal <BAL>.
+    Found 3-bit register for signal <MCycle>.
+    Found 4-bit register for signal <ALU_Op_r>.
+    Found 1-bit register for signal <ABC<7>>.
+    Found 1-bit register for signal <ABC<6>>.
+    Found 1-bit register for signal <ABC<5>>.
+    Found 1-bit register for signal <ABC<4>>.
+    Found 1-bit register for signal <ABC<3>>.
+    Found 1-bit register for signal <ABC<2>>.
+    Found 1-bit register for signal <ABC<1>>.
+    Found 1-bit register for signal <ABC<0>>.
+    Found 1-bit register for signal <X<7>>.
+    Found 1-bit register for signal <X<6>>.
+    Found 1-bit register for signal <X<5>>.
+    Found 1-bit register for signal <X<4>>.
+    Found 1-bit register for signal <X<3>>.
+    Found 1-bit register for signal <X<2>>.
+    Found 1-bit register for signal <X<1>>.
+    Found 1-bit register for signal <X<0>>.
+    Found 1-bit register for signal <Y<7>>.
+    Found 1-bit register for signal <Y<6>>.
+    Found 1-bit register for signal <Y<5>>.
+    Found 1-bit register for signal <Y<4>>.
+    Found 1-bit register for signal <Y<3>>.
+    Found 1-bit register for signal <Y<2>>.
+    Found 1-bit register for signal <Y<1>>.
+    Found 1-bit register for signal <Y<0>>.
+    Found 8-bit register for signal <P>.
+    Found 1-bit register for signal <B_o>.
+    Found 1-bit register for signal <NMI_n_o>.
+    Found 16-bit adder for signal <PC[15]_GND_12_o_add_7_OUT> created at line 1241.
+    Found 16-bit adder for signal <S[15]_GND_12_o_add_14_OUT> created at line 1241.
+    Found 8-bit adder for signal <PC[15]_GND_12_o_add_23_OUT> created at line 1241.
+    Found 9-bit adder for signal <GND_12_o_DL[7]_add_56_OUT> created at line 326.
+    Found 8-bit adder for signal <AD[7]_GND_12_o_add_76_OUT> created at line 1241.
+    Found 9-bit adder for signal <BAL[8]_GND_12_o_add_77_OUT> created at line 1241.
+    Found 9-bit adder for signal <GND_12_o_GND_12_o_add_78_OUT> created at line 427.
+    Found 8-bit adder for signal <BAH[7]_GND_12_o_add_79_OUT> created at line 1241.
+    Found 8-bit adder for signal <AD[7]_Y[7]_add_84_OUT> created at line 439.
+    Found 8-bit adder for signal <AD[7]_X[7]_add_85_OUT> created at line 441.
+    Found 3-bit adder for signal <MCycle[2]_GND_12_o_add_120_OUT> created at line 1241.
+    Found 16-bit subtractor for signal <GND_12_o_GND_12_o_sub_17_OUT<15:0>> created at line 1308.
+    Found 8-bit subtractor for signal <GND_12_o_GND_12_o_sub_25_OUT<7:0>> created at line 1308.
+    Found 16-bit 4-to-1 multiplexer for signal <PC[15]_Jump[1]_mux_30_OUT> created at line 302.
+    Found 9-bit 4-to-1 multiplexer for signal <BAAdd[1]_BAL[8]_wide_mux_82_OUT> created at line 420.
+    Found 8-bit 6-to-1 multiplexer for signal <BusA> created at line 484.
+    Found 24-bit 4-to-1 multiplexer for signal <A> created at line 493.
+    Found 8-bit 8-to-1 multiplexer for signal <DO> created at line 499.
+    Found 3-bit comparator equal for signal <LCycle[2]_MCycle[2]_equal_120_o> created at line 526
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred 158 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  79 Multiplexer(s).
+Unit <T65> synthesized.
+
+Synthesizing Unit <T65_MCode>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\rtl_T65\T65_MCode.vhd".
+WARNING:Xst:647 - Input <P<5:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit 8-to-1 multiplexer for signal <Branch> created at line 109.
+    Found 4-bit 4-to-1 multiplexer for signal <ALU_Op> created at line 953.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0712> created at line 209.
+    Summary:
+	inferred 227 Multiplexer(s).
+Unit <T65_MCode> synthesized.
+
+Synthesizing Unit <T65_ALU>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\rtl_T65\T65_ALU.vhd".
+WARNING:Xst:647 - Input <Mode> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit subtractor for signal <n0089> created at line 140.
+    Found 7-bit subtractor for signal <n0091> created at line 141.
+    Found 7-bit adder for signal <n0084> created at line 97.
+    Found 7-bit adder for signal <n0085> created at line 98.
+    Found 6-bit adder for signal <GND_14_o_GND_14_o_add_5_OUT> created at line 1241.
+    Found 7-bit adder for signal <n0087> created at line 116.
+    Found 6-bit adder for signal <GND_14_o_GND_14_o_add_8_OUT> created at line 1241.
+    Found 8-bit adder for signal <BusA[7]_GND_14_o_add_23_OUT> created at line 1241.
+    Found 4-bit subtractor for signal <GND_14_o_GND_14_o_sub_15_OUT<3:0>> created at line 1308.
+    Found 6-bit subtractor for signal <GND_14_o_GND_14_o_sub_16_OUT<5:0>> created at line 162.
+    Found 5-bit subtractor for signal <GND_14_o_GND_14_o_sub_17_OUT<4:0>> created at line 1308.
+    Found 8-bit subtractor for signal <GND_14_o_GND_14_o_sub_23_OUT<7:0>> created at line 1308.
+    Found 8-bit 14-to-1 multiplexer for signal <Q_t> created at line 180.
+    Found 5-bit comparator greater for signal <GND_14_o_GND_14_o_LessThan_5_o> created at line 111
+    Found 5-bit comparator greater for signal <GND_14_o_GND_14_o_LessThan_8_o> created at line 125
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  72 Multiplexer(s).
+Unit <T65_ALU> synthesized.
+
+Synthesizing Unit <ASTEROIDS_PROG_ROM_0>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\roms\ASTEROIDS_PROG_ROM_0.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'ASTEROIDS_PROG_ROM_0', is tied to its initial value.
+    Found 2048x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <ASTEROIDS_PROG_ROM_0> synthesized.
+
+Synthesizing Unit <ASTEROIDS_PROG_ROM_1>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\roms\ASTEROIDS_PROG_ROM_1.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'ASTEROIDS_PROG_ROM_1', is tied to its initial value.
+    Found 2048x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <ASTEROIDS_PROG_ROM_1> synthesized.
+
+Synthesizing Unit <ASTEROIDS_PROG_ROM_2>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\roms\ASTEROIDS_PROG_ROM_2.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'ASTEROIDS_PROG_ROM_2', is tied to its initial value.
+    Found 2048x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <ASTEROIDS_PROG_ROM_2> synthesized.
+
+Synthesizing Unit <ASTEROIDS_PROG_ROM_3>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\roms\ASTEROIDS_PROG_ROM_3.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'ASTEROIDS_PROG_ROM_3', is tied to its initial value.
+    Found 2048x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <ASTEROIDS_PROG_ROM_3> synthesized.
+
+Synthesizing Unit <ASTEROIDS_RAM>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_ram.vhd".
+    Summary:
+	no macro.
+Unit <ASTEROIDS_RAM> synthesized.
+
+Synthesizing Unit <ram_1k>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\rtl_mio\ram_1k.vhd".
+        dWidth = 4
+        aWidth = 10
+    Found 1024x4-bit single-port RAM <Mram_ram> for signal <ram>.
+    Found 4-bit register for signal <q>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 D-type flip-flop(s).
+Unit <ram_1k> synthesized.
+
+Synthesizing Unit <ASTEROIDS_VG>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_vg.vhd".
+WARNING:Xst:647 - Input <C_ADDR<15:13>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <halt>.
+    Found 1-bit register for signal <go>.
+    Found 1-bit register for signal <state_halt>.
+    Found 1-bit register for signal <BEAM_ON>.
+    Found 4-bit register for signal <state>.
+    Found 4-bit register for signal <Z_VECTOR>.
+    Found 10-bit register for signal <ratemul_reg>.
+    Found 10-bit register for signal <X_VECTOR>.
+    Found 10-bit register for signal <Y_VECTOR>.
+    Found 1-bit register for signal <dma_ld_l_t1>.
+    Found 4-bit register for signal <reg_addr>.
+    Found 12-bit register for signal <stack_reg<3>>.
+    Found 12-bit register for signal <stack_reg<2>>.
+    Found 12-bit register for signal <stack_reg<1>>.
+    Found 12-bit register for signal <stack_reg<0>>.
+    Found 12-bit register for signal <adma_bus>.
+    Found 1-bit register for signal <vram1_t1_l>.
+    Found 1-bit register for signal <vram2_t1_l>.
+    Found 1-bit register for signal <vrom1_t1_l>.
+    Found 1-bit register for signal <vrom2_t1_l>.
+    Found 4-bit register for signal <scale>.
+    Found 12-bit register for signal <dvx_bus>.
+    Found 4-bit register for signal <timer>.
+    Found 12-bit register for signal <dvy_bus>.
+    Found 4-bit register for signal <scale_reg>.
+    Found 12-bit register for signal <timer_counter>.
+    Found 1-bit register for signal <ratemulx_op>.
+    Found 1-bit register for signal <ratemuly_op>.
+    Found 12-bit register for signal <xpos_bus>.
+    Found 12-bit register for signal <ypos_bus>.
+INFO:Xst:1799 - State 0101 is never reached in FSM <state>.
+INFO:Xst:1799 - State 0110 is never reached in FSM <state>.
+INFO:Xst:1799 - State 0111 is never reached in FSM <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 14                                             |
+    | Transitions        | 52                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 11                                             |
+    | Clock              | CLK_6 (rising_edge)                            |
+    | Reset              | RESET_L (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <reg_addr[3]_GND_31_o_add_25_OUT> created at line 326.
+    Found 12-bit adder for signal <adma_bus[12]_GND_31_o_add_43_OUT> created at line 380.
+    Found 4-bit adder for signal <p_vector_timer.add> created at line 549.
+    Found 12-bit adder for signal <timer_counter[11]_GND_31_o_add_71_OUT> created at line 574.
+    Found 10-bit adder for signal <ratemul_reg[9]_GND_31_o_add_76_OUT> created at line 598.
+    Found 12-bit adder for signal <xpos_bus[11]_GND_31_o_add_81_OUT> created at line 664.
+    Found 12-bit adder for signal <ypos_bus[11]_GND_31_o_add_87_OUT> created at line 678.
+    Found 12-bit subtractor for signal <GND_31_o_GND_31_o_sub_83_OUT<11:0>> created at line 666.
+    Found 12-bit subtractor for signal <GND_31_o_GND_31_o_sub_89_OUT<11:0>> created at line 680.
+    Found 8x2-bit Read Only RAM for signal <_n0464>
+    Found 4x2-bit Read Only RAM for signal <_n0469>
+    Found 12-bit 4-to-1 multiplexer for signal <new_reg_addr[1]_stack_reg[3][11]_wide_mux_41_OUT> created at line 361.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred 181 D-type flip-flop(s).
+	inferred  67 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ASTEROIDS_VG> synthesized.
+
+Synthesizing Unit <ASTEROIDS_VEC_ROM_1>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\roms\ASTEROIDS_VEC_ROM_1.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'ASTEROIDS_VEC_ROM_1', is tied to its initial value.
+    Found 2048x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <ASTEROIDS_VEC_ROM_1> synthesized.
+
+Synthesizing Unit <ASTEROIDS_VEC_ROM_2>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\roms\ASTEROIDS_VEC_ROM_2.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'ASTEROIDS_VEC_ROM_2', is tied to its initial value.
+    Found 2048x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <ASTEROIDS_VEC_ROM_2> synthesized.
+
+Synthesizing Unit <ASTEROIDS_DW>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\rtl\asteroids_dw.vhd".
+WARNING:Xst:647 - Input <X_VECTOR<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Y_VECTOR<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk_50> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk_6> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <h_sync>.
+    Found 1-bit register for signal <h_blank>.
+    Found 1-bit register for signal <v_sync>.
+    Found 1-bit register for signal <v_blank>.
+    Found 1-bit register for signal <clear_ram.beam_ena_r>.
+    Found 9-bit register for signal <vcount>.
+    Found 9-bit register for signal <hcount>.
+    Found 11-bit register for signal <pcount>.
+    Found 10-bit register for signal <lcount>.
+    Found 3-bit register for signal <dcount>.
+    Found 9-bit register for signal <pxcount>.
+    Found 1-bit register for signal <raster_active>.
+    Found 4-bit register for signal <video_r>.
+    Found 4-bit register for signal <video_g>.
+    Found 4-bit register for signal <video_b>.
+    Found 4-bit register for signal <VIDEO_R_OUT>.
+    Found 4-bit register for signal <VIDEO_G_OUT>.
+    Found 4-bit register for signal <VIDEO_B_OUT>.
+    Found 1-bit register for signal <VID_DE>.
+    Found 1-bit register for signal <VSYNC_OUT>.
+    Found 1-bit register for signal <HSYNC_OUT>.
+    Found 1-bit register for signal <VID_HBLANK>.
+    Found 1-bit register for signal <VID_VBLANK>.
+    Found 1-bit register for signal <vram_wren>.
+    Found 1-bit register for signal <screen>.
+    Found 19-bit register for signal <dw_addr>.
+    Found 4-bit register for signal <Vid_data>.
+    Found 9-bit adder for signal <hcount[8]_GND_36_o_add_2_OUT> created at line 155.
+    Found 9-bit adder for signal <vcount[8]_GND_36_o_add_4_OUT> created at line 163.
+    Found 11-bit adder for signal <pcount[10]_GND_36_o_add_11_OUT> created at line 187.
+    Found 9-bit adder for signal <pxcount[8]_GND_36_o_add_14_OUT> created at line 191.
+    Found 3-bit adder for signal <dcount[2]_GND_36_o_add_18_OUT> created at line 203.
+    Found 10-bit adder for signal <lcount[9]_GND_36_o_add_19_OUT> created at line 205.
+    Found 8x1-bit Read Only RAM for signal <screen[0]_PWR_35_o_MUX_641_o>
+    Found 16x8-bit Read Only RAM for signal <_n0892>
+    Found 4-bit 7-to-1 multiplexer for signal <Vid_data[3]_Vid_data[3]_mux_96_OUT> created at line 415.
+    Found 4-bit 3-to-1 multiplexer for signal <_n0901> created at line 370.
+    Found 4-bit 6-to-1 multiplexer for signal <_n0460> created at line 396.
+    Found 4-bit 3-to-1 multiplexer for signal <_n0904> created at line 370.
+    Found 4-bit 7-to-1 multiplexer for signal <Vid_data[3]_Vid_data[3]_mux_90_OUT> created at line 402.
+    Found 4-bit 3-to-1 multiplexer for signal <_n0907> created at line 370.
+    Found 4-bit 6-to-1 multiplexer for signal <Vid_data[3]_GND_36_o_mux_84_OUT> created at line 396.
+    Found 4-bit 3-to-1 multiplexer for signal <_n0910> created at line 370.
+    Found 1-bit tristate buffer for signal <sram_data<7>> created at line 435
+    Found 1-bit tristate buffer for signal <sram_data<6>> created at line 435
+    Found 1-bit tristate buffer for signal <sram_data<5>> created at line 435
+    Found 1-bit tristate buffer for signal <sram_data<4>> created at line 435
+    Found 1-bit tristate buffer for signal <sram_data<3>> created at line 435
+    Found 1-bit tristate buffer for signal <sram_data<2>> created at line 435
+    Found 1-bit tristate buffer for signal <sram_data<1>> created at line 435
+    Found 1-bit tristate buffer for signal <sram_data<0>> created at line 435
+    Found 11-bit comparator greater for signal <GND_36_o_pcount[10]_LessThan_14_o> created at line 190
+    Found 11-bit comparator greater for signal <GND_36_o_pcount[10]_LessThan_17_o> created at line 194
+    Summary:
+	inferred   2 RAM(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred 111 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred 111 Multiplexer(s).
+	inferred   8 Tristate(s).
+Unit <ASTEROIDS_DW> synthesized.
+
+Synthesizing Unit <dac>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\rtl_mio\dac.vhd".
+        msbi_g = 7
+    Found 10-bit register for signal <sig_in>.
+    Found 1-bit register for signal <dac_o>.
+    Found 10-bit adder for signal <sig_in[9]_sig_in[9]_add_0_OUT> created at line 47.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+Unit <dac> synthesized.
+
+Synthesizing Unit <DEBOUNCE>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\rtl_mio\debounce.vhd".
+        G_WIDTH = 16
+    Found 13-bit register for signal <tick_counter>.
+    Found 16-bit register for signal <button>.
+    Found 13-bit subtractor for signal <GND_48_o_GND_48_o_sub_1_OUT<12:0>> created at line 79.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred  33 Multiplexer(s).
+Unit <DEBOUNCE> synthesized.
+
+Synthesizing Unit <keyboard>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\rtl_mio\keyb\keyboard_wasd.vhd".
+    Found 1-bit register for signal <resetKey>.
+    Found 1-bit register for signal <MRESET>.
+    Found 1-bit register for signal <CTRL>.
+    Found 1-bit register for signal <ALT>.
+    Found 21-bit register for signal <scanSW>.
+    Found 1-bit register for signal <VIDEO>.
+    Found 1-bit register for signal <PAUSE>.
+    Found 1-bit register for signal <SCANL>.
+    Found 1-bit register for signal <VFREQ>.
+    Found 1-bit register for signal <TABLE>.
+    Found 1-bit register for signal <release>.
+    Summary:
+	inferred  31 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <keyboard> synthesized.
+
+Synthesizing Unit <ps2_intf>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\rtl_mio\keyb\ps2_intf.vhd".
+        filter_length = 8
+    Found 1-bit register for signal <ps2_dat_in>.
+    Found 8-bit register for signal <clk_filter>.
+    Found 1-bit register for signal <clk_edge>.
+    Found 4-bit register for signal <bit_count>.
+    Found 9-bit register for signal <shiftreg>.
+    Found 1-bit register for signal <parity>.
+    Found 8-bit register for signal <DATA>.
+    Found 1-bit register for signal <VALID>.
+    Found 1-bit register for signal <ps2_clk_in>.
+    Found 4-bit adder for signal <bit_count[3]_GND_50_o_add_7_OUT> created at line 1241.
+    Found 4-bit comparator greater for signal <bit_count[3]_PWR_40_o_LessThan_7_o> created at line 131
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <ps2_intf> synthesized.
+
+Synthesizing Unit <multiboot>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\multiboot.v".
+    Found 1-bit register for signal <reboot_ff>.
+    Found 5-bit register for signal <q>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <multiboot> synthesized.
+
+Synthesizing Unit <multiboot_spartan6>.
+    Related source file is "F:\repos\a35\NUEVO\astdelux\src\multiboot.v".
+        IDLE = 0
+        SYNC_H = 1
+        SYNC_L = 2
+        CWD_H = 3
+        CWD_L = 4
+        GEN1_H = 5
+        GEN1_L = 6
+        GEN2_H = 7
+        GEN2_L = 8
+        GEN3_H = 9
+        GEN3_L = 10
+        GEN4_H = 11
+        GEN4_L = 12
+        GEN5_H = 13
+        GEN5_L = 14
+        NUL_H = 15
+        NUL_L = 16
+        MOD_H = 17
+        MOD_L = 18
+        HCO_H = 19
+        HCO_L = 20
+        RBT_H = 21
+        RBT_L = 22
+        NOOP_0 = 23
+        NOOP_1 = 24
+        NOOP_2 = 25
+        NOOP_3 = 26
+    Register <ff_icap_wr> equivalent to <ff_icap_ce> has been removed
+    Found 16-bit register for signal <icapd_r>.
+    Found 1-bit register for signal <ff_icap_ce>.
+    Found 5-bit register for signal <state>.
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <state> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred  22 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <multiboot_spartan6> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 20
+ 1024x4-bit single-port RAM                            : 6
+ 16x8-bit single-port Read Only RAM                    : 1
+ 2048x8-bit single-port Read Only RAM                  : 6
+ 4x2-bit single-port Read Only RAM                     : 2
+ 4x4-bit single-port Read Only RAM                     : 2
+ 8x1-bit single-port Read Only RAM                     : 1
+ 8x2-bit single-port Read Only RAM                     : 1
+ 8x8-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 1
+ 15x4-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 60
+ 10-bit adder                                          : 3
+ 11-bit adder                                          : 2
+ 12-bit adder                                          : 2
+ 12-bit addsub                                         : 2
+ 13-bit subtractor                                     : 1
+ 15-bit addsub                                         : 1
+ 16-bit adder                                          : 1
+ 16-bit addsub                                         : 1
+ 17-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 32-bit adder                                          : 2
+ 32-bit subtractor                                     : 4
+ 4-bit adder                                           : 5
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 4
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 4
+ 6-bit addsub                                          : 1
+ 6-bit subtractor                                      : 1
+ 7-bit adder                                           : 3
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 8
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 2
+ 9-bit adder                                           : 5
+# Registers                                            : 181
+ 1-bit register                                        : 74
+ 10-bit register                                       : 5
+ 11-bit register                                       : 2
+ 12-bit register                                       : 10
+ 13-bit register                                       : 1
+ 15-bit register                                       : 1
+ 16-bit register                                       : 5
+ 17-bit register                                       : 1
+ 19-bit register                                       : 1
+ 2-bit register                                        : 4
+ 21-bit register                                       : 1
+ 3-bit register                                        : 3
+ 32-bit register                                       : 6
+ 4-bit register                                        : 29
+ 5-bit register                                        : 3
+ 6-bit register                                        : 2
+ 8-bit register                                        : 28
+ 9-bit register                                        : 5
+# Comparators                                          : 8
+ 11-bit comparator greater                             : 2
+ 15-bit comparator lessequal                           : 1
+ 20-bit comparator greater                             : 1
+ 3-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 1
+ 5-bit comparator greater                              : 2
+# Multiplexers                                         : 648
+ 1-bit 2-to-1 multiplexer                              : 343
+ 1-bit 4-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 3
+ 10-bit 2-to-1 multiplexer                             : 3
+ 11-bit 2-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 5
+ 12-bit 4-to-1 multiplexer                             : 1
+ 13-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 19
+ 16-bit 4-to-1 multiplexer                             : 1
+ 19-bit 2-to-1 multiplexer                             : 8
+ 2-bit 2-to-1 multiplexer                              : 46
+ 24-bit 4-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 53
+ 32-bit 2-to-1 multiplexer                             : 4
+ 4-bit 2-to-1 multiplexer                              : 92
+ 4-bit 3-to-1 multiplexer                              : 4
+ 4-bit 4-to-1 multiplexer                              : 1
+ 4-bit 6-to-1 multiplexer                              : 2
+ 4-bit 7-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 38
+ 8-bit 4-to-1 multiplexer                              : 1
+ 8-bit 6-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 12
+# Tristates                                            : 8
+ 1-bit tristate buffer                                 : 8
+# FSMs                                                 : 1
+# Xors                                                 : 7
+ 1-bit xor2                                            : 6
+ 8-bit xor2                                            : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <u_dac> is unconnected in block <pm>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <PBR_0> in Unit <cpu> is equivalent to the following 15 FFs/Latches, which will be removed : <PBR_1> <PBR_2> <PBR_3> <PBR_4> <PBR_5> <PBR_6> <PBR_7> <DBR_0> <DBR_1> <DBR_2> <DBR_3> <DBR_4> <DBR_5> <DBR_6> <DBR_7> 
+INFO:Xst:2261 - The FF/Latch <control_ip0_l_2> in Unit <u_asteroids> is equivalent to the following 3 FFs/Latches, which will be removed : <control_ip0_l_3> <control_ip1_l_1> <control_ip1_l_2> 
+INFO:Xst:2261 - The FF/Latch <test_l> in Unit <u_asteroids> is equivalent to the following FF/Latch, which will be removed : <control_ip0_l_4> 
+INFO:Xst:2261 - The FF/Latch <video_b_0> in Unit <u_DW> is equivalent to the following FF/Latch, which will be removed : <video_g_0> 
+INFO:Xst:2261 - The FF/Latch <video_b_1> in Unit <u_DW> is equivalent to the following FF/Latch, which will be removed : <video_g_1> 
+INFO:Xst:2261 - The FF/Latch <video_b_2> in Unit <u_DW> is equivalent to the following FF/Latch, which will be removed : <video_g_2> 
+INFO:Xst:2261 - The FF/Latch <video_b_3> in Unit <u_DW> is equivalent to the following FF/Latch, which will be removed : <video_g_3> 
+INFO:Xst:2261 - The FF/Latch <VIDEO_R_OUT_2> in Unit <u_DW> is equivalent to the following FF/Latch, which will be removed : <VIDEO_G_OUT_2> 
+INFO:Xst:2261 - The FF/Latch <VIDEO_R_OUT_1> in Unit <u_DW> is equivalent to the following FF/Latch, which will be removed : <VIDEO_G_OUT_1> 
+INFO:Xst:2261 - The FF/Latch <VIDEO_R_OUT_3> in Unit <u_DW> is equivalent to the following FF/Latch, which will be removed : <VIDEO_G_OUT_3> 
+INFO:Xst:2261 - The FF/Latch <VIDEO_R_OUT_0> in Unit <u_DW> is equivalent to the following FF/Latch, which will be removed : <VIDEO_G_OUT_0> 
+WARNING:Xst:1426 - The value init of the FF/Latch P_5 hinder the constant cleaning in the block cpu.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <control_ip0_l_2> (without init value) has a constant value of 1 in block <u_asteroids>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Y_VECTOR_0> of sequential type is unconnected in block <vg>.
+WARNING:Xst:2677 - Node <X_VECTOR_0> of sequential type is unconnected in block <vg>.
+WARNING:Xst:2677 - Node <scanSW_7> of sequential type is unconnected in block <keyb>.
+WARNING:Xst:2677 - Node <PAUSE> of sequential type is unconnected in block <keyb>.
+WARNING:Xst:2677 - Node <joy2_6> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <joy1_6> of sequential type is unconnected in block <asteroids_top>.
+
+Synthesizing (advanced) Unit <ASTEROIDS>.
+The following registers are absorbed into counter <pitch_bend>: 1 register on signal <pitch_bend>.
+The following registers are absorbed into counter <wd_cnt>: 1 register on signal <wd_cnt>.
+The following registers are absorbed into counter <ena_count>: 1 register on signal <ena_count>.
+The following registers are absorbed into counter <nmi_count>: 1 register on signal <nmi_count>.
+The following registers are absorbed into counter <noise_cnt>: 1 register on signal <noise_cnt>.
+The following registers are absorbed into counter <saucer_ramp_count>: 1 register on signal <saucer_ramp_count>.
+The following registers are absorbed into counter <saucrfr_decay>: 1 register on signal <saucrfr_decay>.
+The following registers are absorbed into counter <saucrfr_count>: 1 register on signal <saucrfr_count>.
+The following registers are absorbed into counter <shpfr_count>: 1 register on signal <shpfr_count>.
+The following registers are absorbed into counter <shpfr_decay>: 1 register on signal <shpfr_decay>.
+The following registers are absorbed into counter <saucrfr_pitch>: 1 register on signal <saucrfr_pitch>.
+The following registers are absorbed into counter <shpfr_pitch>: 1 register on signal <shpfr_pitch>.
+	The following adders/subtractors are grouped into adder tree <Madd_GND_9_o_GND_9_o_add_143_OUT1> :
+ 	<Madd_n0463> in block <ASTEROIDS>, 	<Madd_n0466> in block <ASTEROIDS>, 	<Madd_n0469> in block <ASTEROIDS>, 	<Madd_GND_9_o_GND_9_o_add_143_OUT> in block <ASTEROIDS>.
+	Multiplier <Mmult_pitch_bend[14]_pitchbendmult[3]_MuLt_58_OUT> in block <ASTEROIDS> and adder/subtractor <Madd_n0407> in block <ASTEROIDS> are combined into a MAC<Maddsub_pitch_bend[14]_pitchbendmult[3]_MuLt_58_OUT>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_p_addr_decode1.deca> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <c_addr<14:13>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <p_addr_decode1.deca> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_c_addr[11]_GND_9_o_wide_mux_23_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <c_addr<11:10>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_c_addr[11]_GND_9_o_wide_mux_25_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <c_addr<11:9>>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_dips_ip_sel> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 2-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <c_addr<1:0>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <dips_ip_sel>   |          |
+    -----------------------------------------------------------------------
+Unit <ASTEROIDS> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ASTEROIDS_DW>.
+The following registers are absorbed into counter <hcount>: 1 register on signal <hcount>.
+The following registers are absorbed into counter <pcount>: 1 register on signal <pcount>.
+The following registers are absorbed into counter <lcount>: 1 register on signal <lcount>.
+The following registers are absorbed into counter <vcount>: 1 register on signal <vcount>.
+The following registers are absorbed into counter <dcount>: 1 register on signal <dcount>.
+The following registers are absorbed into counter <pxcount>: 1 register on signal <pxcount>.
+INFO:Xst:3231 - The small RAM <Mram_screen[0]_PWR_35_o_MUX_641_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <dcount>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0892> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <vid_out>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ASTEROIDS_DW> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ASTEROIDS_MAIN>.
+The following registers are absorbed into counter <delay_count>: 1 register on signal <delay_count>.
+Unit <ASTEROIDS_MAIN> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ASTEROIDS_PROG_ROM_0>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ASTEROIDS_PROG_ROM_0> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ASTEROIDS_PROG_ROM_1>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ASTEROIDS_PROG_ROM_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ASTEROIDS_PROG_ROM_2>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ASTEROIDS_PROG_ROM_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ASTEROIDS_PROG_ROM_3>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ASTEROIDS_PROG_ROM_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ASTEROIDS_VEC_ROM_1>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ASTEROIDS_VEC_ROM_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ASTEROIDS_VEC_ROM_2>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ASTEROIDS_VEC_ROM_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ASTEROIDS_VG>.
+The following registers are absorbed into accumulator <reg_addr>: 1 register on signal <reg_addr>.
+The following registers are absorbed into counter <ratemul_reg>: 1 register on signal <ratemul_reg>.
+The following registers are absorbed into counter <timer_counter>: 1 register on signal <timer_counter>.
+The following registers are absorbed into counter <xpos_bus>: 1 register on signal <xpos_bus>.
+The following registers are absorbed into counter <ypos_bus>: 1 register on signal <ypos_bus>.
+The following registers are absorbed into counter <adma_bus>: 1 register on signal <adma_bus>.
+INFO:Xst:3231 - The small RAM <Mram__n0469> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 2-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <am_bus<12:11>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0464> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 2-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <am_bus<12:10>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ASTEROIDS_VG> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DEBOUNCE>.
+The following registers are absorbed into counter <tick_counter>: 1 register on signal <tick_counter>.
+Unit <DEBOUNCE> synthesized (advanced).
+
+Synthesizing (advanced) Unit <T65>.
+The following registers are absorbed into accumulator <AD>: 1 register on signal <AD>.
+The following registers are absorbed into counter <MCycle>: 1 register on signal <MCycle>.
+Unit <T65> synthesized (advanced).
+
+Synthesizing (advanced) Unit <asteroids_top>.
+The following registers are absorbed into counter <delay_count>: 1 register on signal <delay_count>.
+Unit <asteroids_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <dac>.
+The following registers are absorbed into accumulator <sig_in>: 1 register on signal <sig_in>.
+Unit <dac> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ps2_intf>.
+The following registers are absorbed into counter <bit_count>: 1 register on signal <bit_count>.
+Unit <ps2_intf> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ram_1k>.
+INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <q>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 4-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <wren>          | high     |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <data>          |          |
+    |     doA            | connected to signal <q>             |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ram_1k> synthesized (advanced).
+WARNING:Xst:2677 - Node <noise_shift_15> of sequential type is unconnected in block <ASTEROIDS>.
+WARNING:Xst:2677 - Node <joy2_6> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <joy1_6> of sequential type is unconnected in block <asteroids_top>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 20
+ 1024x4-bit single-port block RAM                      : 6
+ 16x8-bit single-port distributed Read Only RAM        : 1
+ 2048x8-bit single-port block Read Only RAM            : 6
+ 4x2-bit single-port distributed Read Only RAM         : 2
+ 4x4-bit single-port distributed Read Only RAM         : 2
+ 8x1-bit single-port distributed Read Only RAM         : 1
+ 8x2-bit single-port distributed Read Only RAM         : 1
+ 8x8-bit single-port distributed Read Only RAM         : 1
+# MACs                                                 : 1
+ 15x4-to-20-bit MAC                                    : 1
+# Adders/Subtractors                                   : 25
+ 16-bit adder                                          : 1
+ 16-bit addsub                                         : 1
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 4
+ 6-bit addsub                                          : 1
+ 6-bit subtractor                                      : 2
+ 7-bit adder                                           : 2
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 4
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 2
+# Adder Trees                                          : 1
+ 5-bit / 5-inputs adder tree                           : 1
+# Counters                                             : 28
+ 10-bit up counter                                     : 2
+ 11-bit up counter                                     : 2
+ 12-bit up counter                                     : 2
+ 12-bit updown counter                                 : 2
+ 13-bit down counter                                   : 1
+ 15-bit updown counter                                 : 1
+ 17-bit up counter                                     : 1
+ 3-bit up counter                                      : 2
+ 32-bit down counter                                   : 4
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 3
+ 8-bit up counter                                      : 3
+ 9-bit up counter                                      : 3
+# Accumulators                                         : 3
+ 10-bit up accumulator                                 : 1
+ 4-bit up loadable accumulator                         : 1
+ 8-bit up loadable accumulator                         : 1
+# Registers                                            : 559
+ Flip-Flops                                            : 559
+# Comparators                                          : 8
+ 11-bit comparator greater                             : 2
+ 15-bit comparator lessequal                           : 1
+ 20-bit comparator greater                             : 1
+ 3-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 1
+ 5-bit comparator greater                              : 2
+# Multiplexers                                         : 643
+ 1-bit 2-to-1 multiplexer                              : 343
+ 1-bit 4-to-1 multiplexer                              : 1
+ 1-bit 6-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 11
+ 10-bit 2-to-1 multiplexer                             : 2
+ 12-bit 2-to-1 multiplexer                             : 1
+ 12-bit 4-to-1 multiplexer                             : 1
+ 13-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 19
+ 16-bit 4-to-1 multiplexer                             : 1
+ 19-bit 2-to-1 multiplexer                             : 8
+ 2-bit 2-to-1 multiplexer                              : 46
+ 24-bit 4-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 52
+ 4-bit 2-to-1 multiplexer                              : 90
+ 4-bit 3-to-1 multiplexer                              : 4
+ 4-bit 4-to-1 multiplexer                              : 1
+ 4-bit 6-to-1 multiplexer                              : 2
+ 4-bit 7-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 35
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 10
+# FSMs                                                 : 1
+# Xors                                                 : 7
+ 1-bit xor2                                            : 6
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <firesnd_0> (without init value) has a constant value of 0 in block <ASTEROIDS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <firesnd_1> (without init value) has a constant value of 0 in block <ASTEROIDS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <firesnd_2> (without init value) has a constant value of 0 in block <ASTEROIDS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <firesnd_3> (without init value) has a constant value of 0 in block <ASTEROIDS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <saucrfiresnd_0> (without init value) has a constant value of 0 in block <ASTEROIDS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <saucrfiresnd_1> (without init value) has a constant value of 0 in block <ASTEROIDS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <saucrfiresnd_2> (without init value) has a constant value of 0 in block <ASTEROIDS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <saucrfiresnd_3> (without init value) has a constant value of 0 in block <ASTEROIDS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <control_ip1_l_1> (without init value) has a constant value of 1 in block <ASTEROIDS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <control_ip1_l_2> (without init value) has a constant value of 1 in block <ASTEROIDS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <control_ip0_l_2> (without init value) has a constant value of 1 in block <ASTEROIDS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <control_ip0_l_3> (without init value) has a constant value of 1 in block <ASTEROIDS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <saucrfireen> of sequential type is unconnected in block <ASTEROIDS>.
+WARNING:Xst:2677 - Node <shpfireen> of sequential type is unconnected in block <ASTEROIDS>.
+WARNING:Xst:1426 - The value init of the FF/Latch P_5 hinder the constant cleaning in the block T65.
+   You should achieve better results by setting this init to 1.
+INFO:Xst:2261 - The FF/Latch <test_l> in Unit <ASTEROIDS> is equivalent to the following FF/Latch, which will be removed : <control_ip0_l_4> 
+INFO:Xst:2261 - The FF/Latch <noise_shift_0> in Unit <ASTEROIDS> is equivalent to the following FF/Latch, which will be removed : <noise> 
+INFO:Xst:2261 - The FF/Latch <DBR_0> in Unit <T65> is equivalent to the following 15 FFs/Latches, which will be removed : <DBR_1> <DBR_2> <DBR_3> <DBR_4> <DBR_5> <DBR_6> <DBR_7> <PBR_0> <PBR_1> <PBR_2> <PBR_3> <PBR_4> <PBR_5> <PBR_6> <PBR_7> 
+INFO:Xst:2261 - The FF/Latch <EF_i> in Unit <T65> is equivalent to the following 2 FFs/Latches, which will be removed : <MF_i> <XF_i> 
+INFO:Xst:2261 - The FF/Latch <video_b_0> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <video_g_0> 
+INFO:Xst:2261 - The FF/Latch <video_b_1> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <video_g_1> 
+INFO:Xst:2261 - The FF/Latch <video_b_2> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <video_g_2> 
+INFO:Xst:2261 - The FF/Latch <video_b_3> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <video_g_3> 
+INFO:Xst:2261 - The FF/Latch <VIDEO_R_OUT_2> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <VIDEO_G_OUT_2> 
+INFO:Xst:2261 - The FF/Latch <VIDEO_R_OUT_1> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <VIDEO_G_OUT_1> 
+INFO:Xst:2261 - The FF/Latch <VIDEO_R_OUT_3> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <VIDEO_G_OUT_3> 
+INFO:Xst:2261 - The FF/Latch <VIDEO_R_OUT_0> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <VIDEO_G_OUT_0> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <pm/u_asteroids/vg/FSM_0> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 1001  | 1001
+ 0010  | 0010
+ 0001  | 0001
+ 1101  | 1101
+ 0101  | unreached
+ 0110  | unreached
+ 0111  | unreached
+ 1011  | 1011
+ 1111  | 1111
+ 1010  | 1010
+ 1000  | 1000
+ 1100  | 1100
+ 1110  | 1110
+-------------------
+WARNING:Xst:2677 - Node <S_8> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_9> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_10> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_11> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_12> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_13> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_14> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_15> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <reg_addr_2> of sequential type is unconnected in block <ASTEROIDS_VG>.
+WARNING:Xst:2677 - Node <reg_addr_3> of sequential type is unconnected in block <ASTEROIDS_VG>.
+WARNING:Xst:2677 - Node <delay_count_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <delay_count_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <delay_count_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <delay_count_4> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <delay_count_5> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <delay_count_6> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <delay_count_7> of sequential type is unconnected in block <asteroids_top>.
+INFO:Xst:1901 - Instance PLL_OSERDES in unit PLL_OSERDES of type PLL_BASE has been replaced by PLL_ADV
+INFO:Xst:2261 - The FF/Latch <video_b_0> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <video_r_0> 
+INFO:Xst:2261 - The FF/Latch <video_b_1> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <video_r_1> 
+INFO:Xst:2261 - The FF/Latch <video_b_3> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <video_r_3> 
+INFO:Xst:2261 - The FF/Latch <VIDEO_R_OUT_1> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <VIDEO_B_OUT_1> 
+INFO:Xst:2261 - The FF/Latch <VIDEO_R_OUT_3> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <VIDEO_B_OUT_3> 
+INFO:Xst:2261 - The FF/Latch <VIDEO_R_OUT_0> in Unit <ASTEROIDS_DW> is equivalent to the following FF/Latch, which will be removed : <VIDEO_B_OUT_0> 
+WARNING:Xst:2042 - Unit ASTEROIDS_DW: 8 internal tristates are replaced by logic (pull-up yes): sram_data<0>, sram_data<1>, sram_data<2>, sram_data<3>, sram_data<4>, sram_data<5>, sram_data<6>, sram_data<7>.
+
+Optimizing unit <asteroids_top> ...
+
+Optimizing unit <ASTEROIDS_MAIN> ...
+
+Optimizing unit <ASTEROIDS> ...
+
+Optimizing unit <T65> ...
+
+Optimizing unit <T65_ALU> ...
+
+Optimizing unit <T65_MCode> ...
+
+Optimizing unit <ASTEROIDS_VG> ...
+
+Optimizing unit <ASTEROIDS_DW> ...
+INFO:Xst:2261 - The FF/Latch <video_b_0> in Unit <ASTEROIDS_DW> is equivalent to the following 4 FFs/Latches, which will be removed : <video_b_1> <video_b_2> <video_b_3> <video_r_2> 
+INFO:Xst:2261 - The FF/Latch <VIDEO_R_OUT_0> in Unit <ASTEROIDS_DW> is equivalent to the following 4 FFs/Latches, which will be removed : <VIDEO_R_OUT_1> <VIDEO_R_OUT_2> <VIDEO_R_OUT_3> <VIDEO_B_OUT_2> 
+INFO:Xst:2261 - The FF/Latch <video_b_0> in Unit <ASTEROIDS_DW> is equivalent to the following 4 FFs/Latches, which will be removed : <video_b_1> <video_b_2> <video_b_3> <video_r_2> 
+INFO:Xst:2261 - The FF/Latch <VIDEO_R_OUT_0> in Unit <ASTEROIDS_DW> is equivalent to the following 4 FFs/Latches, which will be removed : <VIDEO_R_OUT_1> <VIDEO_R_OUT_2> <VIDEO_R_OUT_3> <VIDEO_B_OUT_2> 
+
+Optimizing unit <DEBOUNCE> ...
+
+Optimizing unit <keyboard> ...
+
+Optimizing unit <ps2_intf> ...
+
+Optimizing unit <multiboot> ...
+
+Optimizing unit <multiboot_spartan6> ...
+WARNING:Xst:2677 - Node <joy2_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <joy2_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <joy2_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <joy2_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <joy2_4> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <joy2_5> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_dac/sig_in_9> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_dac/sig_in_8> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_dac/sig_in_6> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_dac/sig_in_5> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_dac/sig_in_7> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_dac/sig_in_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_dac/sig_in_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_dac/sig_in_4> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_dac/sig_in_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_dac/sig_in_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_dac/dac_o> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_16> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_15> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_14> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_13> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_12> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_11> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_10> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_9> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_8> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_7> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_6> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_5> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_4> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_ramp_count_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_14> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_13> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_12> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_11> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_10> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_9> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_8> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_7> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_6> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_5> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_4> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_bend_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_cnt_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_cnt_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_cnt_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_cnt_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/Maddsub_pitch_bend[14]_pitchbendmult[3]_MuLt_58_OUT> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucer_snd> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/AUDIO_OUT_7> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/AUDIO_OUT_6> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/AUDIO_OUT_5> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/AUDIO_OUT_4> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/AUDIO_OUT_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/AUDIO_OUT_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/AUDIO_OUT_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/AUDIO_OUT_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thump_count_5> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thump_count_4> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thump_count_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thump_count_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thump_count_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thump_count_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_prefilter> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/pitch_rising> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/expld_snd_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/expld_snd_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/expld_snd_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/expld_snd_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/C_COIN_COUNTER> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/L_COIN_COUNTER> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/R_COIN_COUNTER> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/START1_LED_L> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/START2_LED_L> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/lifeen> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thumpvol> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucrsnden> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shipthrusten> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/expitch_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/expitch_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thumpfreq_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thumpfreq_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thumpfreq_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thumpfreq_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/expaud_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/expaud_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/expaud_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/expaud_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filtered_5> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filtered_4> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filtered_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filtered_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filtered_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filtered_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filter_t3_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filter_t3_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filter_t3_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filter_t3_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thumpsnd_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thumpsnd_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thumpsnd_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/thumpsnd_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filter_t2_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filter_t2_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filter_t2_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filter_t2_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_14> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_13> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_12> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_11> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_10> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_9> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_8> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_7> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_6> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_5> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_4> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/noise_shift_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/saucrsel_l> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filter_t1_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filter_t1_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filter_t1_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/shpsnd_filter_t1_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/ena_12K> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/cpu/BAH_7> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/cpu/DBR_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/cpu/EF_i> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/vg/X_VECTOR_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_asteroids/vg/Y_VECTOR_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_DW/Vid_data_3> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_DW/Vid_data_2> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_DW/Vid_data_1> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_DW/Vid_data_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_DW/VID_HBLANK> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_DW/VID_VBLANK> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_DW/VID_DE> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_DW/v_blank> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/u_DW/h_blank> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_14> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_13> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_12> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_11> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_10> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_9> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_0> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/TABLE> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/SCANL> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/VIDEO> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/PAUSE> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_19> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_18> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_17> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_16> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_15> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_14> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_10> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_8> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_7> of sequential type is unconnected in block <asteroids_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_6> of sequential type is unconnected in block <asteroids_top>.
+INFO:Xst:2261 - The FF/Latch <keyb/VFREQ> in Unit <asteroids_top> is equivalent to the following FF/Latch, which will be removed : <keyb/scanSW_9> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block asteroids_top, actual ratio is 24.
+FlipFlop keyb/ps2/DATA_0 has been replicated 1 time(s)
+FlipFlop keyb/ps2/DATA_1 has been replicated 1 time(s)
+FlipFlop keyb/ps2/DATA_3 has been replicated 1 time(s)
+FlipFlop keyb/ps2/DATA_4 has been replicated 1 time(s)
+FlipFlop keyb/ps2/DATA_5 has been replicated 1 time(s)
+FlipFlop pm/u_asteroids/cpu/ALU_Op_r_0 has been replicated 1 time(s)
+FlipFlop pm/u_asteroids/cpu/IR_0 has been replicated 3 time(s)
+FlipFlop pm/u_asteroids/cpu/IR_1 has been replicated 2 time(s)
+FlipFlop pm/u_asteroids/cpu/IR_2 has been replicated 2 time(s)
+FlipFlop pm/u_asteroids/cpu/IR_3 has been replicated 4 time(s)
+FlipFlop pm/u_asteroids/cpu/IR_4 has been replicated 2 time(s)
+FlipFlop pm/u_asteroids/cpu/IR_5 has been replicated 2 time(s)
+FlipFlop pm/u_asteroids/cpu/IR_6 has been replicated 2 time(s)
+FlipFlop pm/u_asteroids/cpu/IR_7 has been replicated 2 time(s)
+FlipFlop pm/u_asteroids/cpu/MCycle_0 has been replicated 3 time(s)
+FlipFlop pm/u_asteroids/cpu/MCycle_1 has been replicated 3 time(s)
+FlipFlop pm/u_asteroids/cpu/MCycle_2 has been replicated 2 time(s)
+FlipFlop pm/u_asteroids/cpu/P_0 has been replicated 1 time(s)
+FlipFlop pm/u_asteroids/cpu/Set_Addr_To_r_0 has been replicated 1 time(s)
+FlipFlop pm/u_asteroids/cpu/Set_Addr_To_r_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <asteroids_top> :
+	Found 2-bit shift register for signal <keyb/ps2/shiftreg_7>.
+Unit <asteroids_top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 583
+ Flip-Flops                                            : 583
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : asteroids_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1627
+#      GND                         : 1
+#      INV                         : 23
+#      LUT1                        : 48
+#      LUT2                        : 83
+#      LUT3                        : 165
+#      LUT4                        : 183
+#      LUT5                        : 205
+#      LUT6                        : 467
+#      MULT_AND                    : 22
+#      MUXCY                       : 177
+#      MUXF7                       : 55
+#      VCC                         : 1
+#      XORCY                       : 197
+# FlipFlops/Latches                : 584
+#      FD                          : 128
+#      FDC                         : 60
+#      FDCE                        : 162
+#      FDE                         : 199
+#      FDP                         : 6
+#      FDPE                        : 8
+#      FDR                         : 4
+#      FDRE                        : 8
+#      FDSE                        : 9
+# RAMS                             : 12
+#      RAMB16BWER                  : 6
+#      RAMB8BWER                   : 6
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 74
+#      IBUF                        : 20
+#      OBUF                        : 54
+# Others                           : 2
+#      ICAP_SPARTAN6               : 1
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             584  out of  11440     5%  
+ Number of Slice LUTs:                 1175  out of   5720    20%  
+    Number used as Logic:              1174  out of   5720    20%  
+    Number used as Memory:                1  out of   1440     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1297
+   Number with an unused Flip Flop:     713  out of   1297    54%  
+   Number with an unused LUT:           122  out of   1297     9%  
+   Number of fully used LUT-FF pairs:   462  out of   1297    35%  
+   Number of unique control sets:        46
+
+IO Utilization: 
+ Number of IOs:                          77
+ Number of bonded IOBs:                  74  out of    102    72%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                9  out of     32    28%  
+    Number using Block RAM only:          9
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------+---------------------------------+-------+
+Clock Signal                                                                     | Clock buffer(FF name)           | Load  |
+---------------------------------------------------------------------------------+---------------------------------+-------+
+PLL_OSERDES/CLKOUT1                                                              | BUFG                            | 93    |
+delay_count_0                                                                    | BUFG                            | 423   |
+pm/u_asteroids/p_addr_decode1.decc<1>(pm/u_asteroids/Mmux_p_addr_decode1.decc2:O)| NONE(*)(pm/u_asteroids/ramsel_l)| 1     |
+PLL_OSERDES/CLKOUT0                                                              | BUFG                            | 80    |
+---------------------------------------------------------------------------------+---------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 9.972ns (Maximum Frequency: 100.276MHz)
+   Minimum input arrival time before clock: 6.647ns
+   Maximum output required time after clock: 5.934ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PLL_OSERDES/CLKOUT1'
+  Clock period: 9.787ns (frequency: 102.176MHz)
+  Total number of paths / destination ports: 4177 / 131
+-------------------------------------------------------------------------
+Delay:               9.787ns (Levels of Logic = 8)
+  Source:            keyb/ps2/DATA_2 (FF)
+  Destination:       keyb/scanSW_12 (FF)
+  Source Clock:      PLL_OSERDES/CLKOUT1 rising
+  Destination Clock: PLL_OSERDES/CLKOUT1 rising
+
+  Data Path: keyb/ps2/DATA_2 to keyb/scanSW_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             16   0.525   1.182  keyb/ps2/DATA_2 (keyb/ps2/DATA_2)
+     LUT3:I2->O            4   0.254   0.804  keyb/GND_49_o_keyb_data[7]_equal_10_o<7>21 (keyb/GND_49_o_keyb_data[7]_equal_10_o<7>2)
+     LUT6:I5->O            5   0.254   1.271  keyb/GND_49_o_keyb_data[7]_equal_11_o<7>1 (keyb/GND_49_o_keyb_data[7]_equal_11_o)
+     LUT5:I0->O            1   0.254   0.910  keyb/_n03695 (keyb/_n03695)
+     LUT6:I3->O            2   0.235   0.834  keyb/_n03697 (keyb/_n0369)
+     LUT2:I0->O            2   0.250   0.726  keyb/GND_49_o_scanSW[20]_select_33_OUT<14>11113 (keyb/GND_49_o_scanSW[20]_select_33_OUT<14>1111)
+     LUT6:I5->O            2   0.254   0.726  keyb/GND_49_o_scanSW[20]_select_33_OUT<16>1111 (keyb/GND_49_o_scanSW[20]_select_33_OUT<16>111)
+     LUT6:I5->O            2   0.254   0.726  keyb/GND_49_o_scanSW[20]_select_33_OUT<17>111 (keyb/GND_49_o_scanSW[20]_select_33_OUT<17>11)
+     LUT5:I4->O            1   0.254   0.000  keyb/GND_49_o_scanSW[20]_select_33_OUT<17>1 (keyb/GND_49_o_scanSW[20]_select_33_OUT<3>)
+     FDE:D                     0.074          keyb/scanSW_3
+    ----------------------------------------
+    Total                      9.787ns (2.608ns logic, 7.179ns route)
+                                       (26.6% logic, 73.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'delay_count_0'
+  Clock period: 9.972ns (frequency: 100.276MHz)
+  Total number of paths / destination ports: 85646 / 1051
+-------------------------------------------------------------------------
+Delay:               9.972ns (Levels of Logic = 16)
+  Source:            pm/u_asteroids/cpu/IR_3_1 (FF)
+  Destination:       pm/u_asteroids/cpu/BAL_8 (FF)
+  Source Clock:      delay_count_0 rising
+  Destination Clock: delay_count_0 rising
+
+  Data Path: pm/u_asteroids/cpu/IR_3_1 to pm/u_asteroids/cpu/BAL_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.525   1.234  pm/u_asteroids/cpu/IR_3_1 (pm/u_asteroids/cpu/IR_3_1)
+     LUT6:I1->O           12   0.254   1.069  pm/u_asteroids/cpu/mcode/_n0713<7>1 (pm/u_asteroids/cpu/mcode/_n0713)
+     LUT6:I5->O            1   0.254   0.682  pm/u_asteroids/cpu/mcode/Mmux_Set_BusA_To2134_SW0 (N121)
+     LUT6:I5->O            2   0.254   0.834  pm/u_asteroids/cpu/mcode/Mmux_Set_BusA_To2135 (pm/u_asteroids/cpu/mcode/Mmux_Set_BusA_To213)
+     LUT5:I3->O           16   0.250   1.637  pm/u_asteroids/cpu/mcode/Mmux_Set_BusA_To210 (pm/u_asteroids/cpu/Set_BusA_To<0>)
+     LUT6:I0->O            1   0.254   0.000  pm/u_asteroids/cpu/mux1112_G (N298)
+     MUXF7:I1->O           2   0.175   0.726  pm/u_asteroids/cpu/mux1112 (pm/u_asteroids/cpu/BusA<1>)
+     LUT4:I3->O            1   0.254   0.000  pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_lut<1> (pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<1> (pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<2> (pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<3> (pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<4> (pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<5> (pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<6> (pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<6>)
+     MUXCY:CI->O           0   0.023   0.000  pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<7> (pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<7>)
+     XORCY:CI->O           1   0.206   0.682  pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_xor<8> (pm/u_asteroids/cpu/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_split<8>)
+     LUT2:I1->O            1   0.254   0.000  pm/u_asteroids/cpu/Mmux_BAAdd[1]_PWR_12_o_mux_92_OUT11 (pm/u_asteroids/cpu/BAAdd[1]_PWR_12_o_mux_92_OUT<8>)
+     FDCE:D                    0.074          pm/u_asteroids/cpu/BAL_8
+    ----------------------------------------
+    Total                      9.972ns (3.108ns logic, 6.864ns route)
+                                       (31.2% logic, 68.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PLL_OSERDES/CLKOUT0'
+  Clock period: 7.328ns (frequency: 136.463MHz)
+  Total number of paths / destination ports: 3217 / 119
+-------------------------------------------------------------------------
+Delay:               7.328ns (Levels of Logic = 5)
+  Source:            pm/u_DW/pcount_9 (FF)
+  Destination:       pm/u_DW/v_sync (FF)
+  Source Clock:      PLL_OSERDES/CLKOUT0 rising
+  Destination Clock: PLL_OSERDES/CLKOUT0 rising
+
+  Data Path: pm/u_DW/pcount_9 to pm/u_DW/v_sync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.525   1.271  pm/u_DW/pcount_9 (pm/u_DW/pcount_9)
+     LUT6:I1->O            3   0.254   1.042  pm/u_DW/h_blank_PWR_35_o_MUX_601_o<10>11 (pm/u_DW/h_blank_PWR_35_o_MUX_601_o<10>1)
+     LUT6:I2->O           23   0.254   1.634  pm/u_DW/hterm<10>1 (pm/u_DW/hterm)
+     LUT6:I2->O            2   0.254   0.834  pm/u_DW/lcount[9]_hterm_AND_438_o2 (pm/u_DW/lcount[9]_hterm_AND_438_o2)
+     LUT2:I0->O            1   0.250   0.682  pm/u_DW/v_sync_GND_36_o_MUX_595_o1 (pm/u_DW/v_sync_GND_36_o_MUX_595_o)
+     LUT3:I2->O            1   0.254   0.000  pm/u_DW/v_sync_rstpot (pm/u_DW/v_sync_rstpot)
+     FDP:D                     0.074          pm/u_DW/v_sync
+    ----------------------------------------
+    Total                      7.328ns (1.865ns logic, 5.463ns route)
+                                       (25.5% logic, 74.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PLL_OSERDES/CLKOUT1'
+  Total number of paths / destination ports: 17 / 11
+-------------------------------------------------------------------------
+Offset:              2.442ns (Levels of Logic = 2)
+  Source:            JJOY<0> (PAD)
+  Destination:       joy1_0 (FF)
+  Destination Clock: PLL_OSERDES/CLKOUT1 rising
+
+  Data Path: JJOY<0> to joy1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.790  JJOY_0_IBUF (JJOY_0_IBUF)
+     LUT2:I0->O            1   0.250   0.000  JJOY[7]_PWR_1_o_and_13_OUT<0>1 (JJOY[7]_PWR_1_o_and_13_OUT<0>)
+     FDE:D                     0.074          joy1_0
+    ----------------------------------------
+    Total                      2.442ns (1.652ns logic, 0.790ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'delay_count_0'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.722ns (Levels of Logic = 2)
+  Source:            JTEST (PAD)
+  Destination:       pm/delay_count_7 (FF)
+  Destination Clock: delay_count_0 rising
+
+  Data Path: JTEST to pm/delay_count_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   0.834  JTEST_IBUF (JTEST_IBUF)
+     LUT2:I0->O           54   0.250   1.851  pm/RESET_L_inv1 (pm/RESET_L_inv)
+     FDC:CLR                   0.459          pm/reset_6_l
+    ----------------------------------------
+    Total                      4.722ns (2.037ns logic, 2.685ns route)
+                                       (43.1% logic, 56.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PLL_OSERDES/CLKOUT0'
+  Total number of paths / destination ports: 86 / 85
+-------------------------------------------------------------------------
+Offset:              6.647ns (Levels of Logic = 5)
+  Source:            JTEST (PAD)
+  Destination:       pm/u_DW/raster_active (FF)
+  Destination Clock: PLL_OSERDES/CLKOUT0 rising
+
+  Data Path: JTEST to pm/u_DW/raster_active
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   0.726  JTEST_IBUF (JTEST_IBUF)
+     LUT2:I1->O           23   0.254   1.813  resetHW_INV_476_o1 (pm/u_DW/RESET_inv)
+     LUT6:I0->O           10   0.254   1.008  pm/u_DW/_n02971 (pm/u_DW/_n0297)
+     LUT2:I1->O            1   0.254   0.682  pm/u_DW/raster_active_glue_set (pm/u_DW/raster_active_glue_set)
+     LUT2:I1->O            1   0.254   0.000  pm/u_DW/raster_active_rstpot (pm/u_DW/raster_active_rstpot)
+     FD:D                      0.074          pm/u_DW/raster_active
+    ----------------------------------------
+    Total                      6.647ns (2.418ns logic, 4.229ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PLL_OSERDES/CLKOUT0'
+  Total number of paths / destination ports: 101 / 45
+-------------------------------------------------------------------------
+Offset:              5.934ns (Levels of Logic = 2)
+  Source:            pm/u_DW/vram_wren (FF)
+  Destination:       sram_addr<17> (PAD)
+  Source Clock:      PLL_OSERDES/CLKOUT0 rising
+
+  Data Path: pm/u_DW/vram_wren to sram_addr<17>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             20   0.525   1.562  pm/u_DW/vram_wren (pm/u_DW/vram_wren)
+     LUT4:I0->O            1   0.254   0.681  pm/u_DW/Mmux_sram_addr110 (sram_addr_0_OBUF)
+     OBUF:I->O                 2.912          sram_addr_0_OBUF (sram_addr<0>)
+    ----------------------------------------
+    Total                      5.934ns (3.691ns logic, 2.243ns route)
+                                       (62.2% logic, 37.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PLL_OSERDES/CLKOUT1'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              4.346ns (Levels of Logic = 1)
+  Source:            keyb/VFREQ (FF)
+  Destination:       LED (PAD)
+  Source Clock:      PLL_OSERDES/CLKOUT1 rising
+
+  Data Path: keyb/VFREQ to LED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.525   0.909  keyb/VFREQ (keyb/VFREQ)
+     OBUF:I->O                 2.912          LED_OBUF (LED)
+    ----------------------------------------
+    Total                      4.346ns (3.437ns logic, 0.909ns route)
+                                       (79.1% logic, 20.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock PLL_OSERDES/CLKOUT0
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+PLL_OSERDES/CLKOUT0|    7.328|         |         |         |
+PLL_OSERDES/CLKOUT1|    5.988|         |         |         |
+delay_count_0      |    3.393|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock PLL_OSERDES/CLKOUT1
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+PLL_OSERDES/CLKOUT1|    9.787|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock delay_count_0
+-------------------------------------+---------+---------+---------+---------+
+                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------+---------+---------+---------+---------+
+PLL_OSERDES/CLKOUT1                  |    3.855|         |         |         |
+delay_count_0                        |    9.972|         |         |         |
+pm/u_asteroids/p_addr_decode1.decc<1>|    2.586|         |         |         |
+-------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/u_asteroids/p_addr_decode1.decc<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+delay_count_0  |    2.665|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 41.00 secs
+Total CPU time to Xst completion: 40.25 secs
+ 
+--> 
+
+Total memory usage is 315756 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  253 (   0 filtered)
+Number of infos    :   74 (   0 filtered)
+

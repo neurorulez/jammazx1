@@ -1,0 +1,288 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Sat Jun  1 09:51:14 2019
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_drc -file bwidow_top_drc_opted.rpt -pb bwidow_top_drc_opted.pb -rpx bwidow_top_drc_opted.rpx
+| Design       : bwidow_top
+| Device       : xc7a35tftg256-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 48
++-----------+----------+-----------------------------------------------------+------------+
+| Rule      | Severity | Description                                         | Violations |
++-----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| CHECK-3   | Warning  | Report rule limit reached                           | 2          |
+| REQP-1839 | Warning  | RAMB36 async control check                          | 20         |
+| REQP-1840 | Warning  | RAMB18 async control check                          | 20         |
+| RPBF-3    | Warning  | IO port buffering is incomplete                     | 5          |
++-----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+CHECK-3#2 Warning
+Report rule limit reached  
+REQP-1840 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/Set_Addr_To_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/Set_Addr_To_r_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[14] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[11]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[14] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[11]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[14] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[11]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[14] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[11]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[14] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[11]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[14] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[11]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[14] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[11]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[14] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[11]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[14] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[11]) which is driven by a register (pm/u_bwidow/cpu/Set_Addr_To_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 pm/u_bwidow/myavg/memory_addr_reg_rep has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep/ADDRARDADDR[14] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[11]) which is driven by a register (pm/u_bwidow/cpu/Set_Addr_To_r_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[12] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[9]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[12] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[9]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[12] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[9]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[12] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[9]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[12] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[9]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[12] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[9]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[12] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[9]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[12] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[9]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[12] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[9]) which is driven by a register (pm/u_bwidow/cpu/Set_Addr_To_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[12] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[9]) which is driven by a register (pm/u_bwidow/cpu/Set_Addr_To_r_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/BAH_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#17 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#18 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/PC_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#19 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/Set_Addr_To_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#20 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/u_bwidow/myavg/memory_addr_reg_rep__2 has an input control pin pm/u_bwidow/myavg/memory_addr_reg_rep__2/ADDRARDADDR[13] (net: pm/u_bwidow/myavg/memory_addr_reg[13]_0[10]) which is driven by a register (pm/u_bwidow/cpu/Set_Addr_To_r_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RPBF-3#1 Warning
+IO port buffering is incomplete  
+Device port sram_data[0] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#2 Warning
+IO port buffering is incomplete  
+Device port sram_data[4] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#3 Warning
+IO port buffering is incomplete  
+Device port sram_data[5] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#4 Warning
+IO port buffering is incomplete  
+Device port sram_data[6] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#5 Warning
+IO port buffering is incomplete  
+Device port sram_data[7] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+

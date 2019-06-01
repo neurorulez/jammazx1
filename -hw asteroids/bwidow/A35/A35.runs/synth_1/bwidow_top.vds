@@ -1,0 +1,1282 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Jun  1 09:47:53 2019
+# Process ID: 11816
+# Current directory: F:/repos/a35/NUEVO/bwidow/A35/A35.runs/synth_1
+# Command line: vivado.exe -log bwidow_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bwidow_top.tcl
+# Log file: F:/repos/a35/NUEVO/bwidow/A35/A35.runs/synth_1/bwidow_top.vds
+# Journal file: F:/repos/a35/NUEVO/bwidow/A35/A35.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source bwidow_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/repos/a35/NUEVO/bwidow/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top bwidow_top -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7696 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 386.395 ; gain = 100.199
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port reset_h is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_main.vhd:171]
+WARNING: [Synth 8-1565] actual for formal port x_vector is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_main.vhd:190]
+WARNING: [Synth 8-1565] actual for formal port y_vector is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_main.vhd:191]
+WARNING: [Synth 8-1565] actual for formal port beam_on is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_main.vhd:197]
+INFO: [Synth 8-6157] synthesizing module 'bwidow_top' [F:/repos/a35/NUEVO/bwidow/src/modulo_top_a35t.v:9]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'PLL_BASE' [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41499]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 12 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN_PERIOD bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 24 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 50 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 12 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLK_FEEDBACK bound to: CLKFBOUT - type: string 
+	Parameter COMPENSATION bound to: INTERNAL - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER bound to: 0.100000 - type: float 
+	Parameter RESET_ON_LOSS_OF_LOCK bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLL_BASE' (2#1) [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41499]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/repos/a35/NUEVO/bwidow/src/modulo_top_a35t.v:129]
+INFO: [Synth 8-638] synthesizing module 'BWIDOW_MAIN' [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_main.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'bwidow' [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'pokey' [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:73]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:271]
+WARNING: [Synth 8-614] signal 'pot_fin' is read in the process but is not in the sensitivity list [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:331]
+WARNING: [Synth 8-6014] Unused sequential element poly9_zero_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:194]
+WARNING: [Synth 8-6014] Unused sequential element poly17_zero_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:198]
+WARNING: [Synth 8-6014] Unused sequential element stimer_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:245]
+WARNING: [Synth 8-6014] Unused sequential element skres_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:246]
+WARNING: [Synth 8-6014] Unused sequential element serout_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:249]
+WARNING: [Synth 8-6014] Unused sequential element irqen_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element vol_reg[1] was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:538]
+WARNING: [Synth 8-6014] Unused sequential element vol_reg[2] was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:538]
+WARNING: [Synth 8-6014] Unused sequential element vol_reg[3] was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:538]
+WARNING: [Synth 8-6014] Unused sequential element vol_reg[4] was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:538]
+WARNING: [Synth 8-6014] Unused sequential element sum12_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:548]
+WARNING: [Synth 8-6014] Unused sequential element sum34_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:549]
+WARNING: [Synth 8-6014] Unused sequential element sum_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:550]
+WARNING: [Synth 8-6014] Unused sequential element chan_load_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:397]
+WARNING: [Synth 8-6014] Unused sequential element chan_dec_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:403]
+WARNING: [Synth 8-3848] Net kbcode in module/entity pokey does not have driver. [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:108]
+WARNING: [Synth 8-3848] Net serin in module/entity pokey does not have driver. [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:110]
+WARNING: [Synth 8-3848] Net irqst in module/entity pokey does not have driver. [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:111]
+WARNING: [Synth 8-3848] Net skstat in module/entity pokey does not have driver. [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'pokey' (3#1) [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'T65' [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65.vhd:97]
+INFO: [Synth 8-3491] module 'T65_MCode' declared at 'F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65_MCode.vhd:69' bound to instance 'mcode' of component 'T65_MCode' [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'T65_MCode' [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65_MCode.vhd:103]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65_MCode.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'T65_MCode' (4#1) [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65_MCode.vhd:103]
+INFO: [Synth 8-3491] module 'T65_ALU' declared at 'F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65_ALU.vhd:64' bound to instance 'alu' of component 'T65_ALU' [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65.vhd:221]
+INFO: [Synth 8-638] synthesizing module 'T65_ALU' [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65_ALU.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'T65_ALU' (5#1) [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65_ALU.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element D_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65.vhd:238]
+INFO: [Synth 8-256] done synthesizing module 'T65' (6#1) [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'pgmrom' [F:/repos/a35/NUEVO/bwidow/src/rtl/pgmrom.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'rom_pgma' [F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgma.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_pgma' (7#1) [F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgma.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'rom_pgmb' [F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgmb.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_pgmb' (8#1) [F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgmb.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'rom_pgmc' [F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgmc.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_pgmc' (9#1) [F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgmc.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'rom_pgmd' [F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgmd.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_pgmd' (10#1) [F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgmd.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'rom_pgme' [F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgme.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_pgme' (11#1) [F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgme.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'rom_pgmf' [F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgmf.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_pgmf' (12#1) [F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgmf.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'pgmrom' (13#1) [F:/repos/a35/NUEVO/bwidow/src/rtl/pgmrom.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'ram2k' [F:/repos/a35/NUEVO/bwidow/src/rtl/ram2k.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'ram_2k' [F:/repos/a35/NUEVO/bwidow/src/rtl/ram_2k.vhd:45]
+	Parameter dWidth bound to: 8 - type: integer 
+	Parameter aWidth bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ram_2k' (14#1) [F:/repos/a35/NUEVO/bwidow/src/rtl/ram_2k.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'ram2k' (15#1) [F:/repos/a35/NUEVO/bwidow/src/rtl/ram2k.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'earom' [F:/repos/a35/NUEVO/bwidow/src/rtl/earom.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'earom' (16#1) [F:/repos/a35/NUEVO/bwidow/src/rtl/earom.vhd:37]
+INFO: [Synth 8-3491] module 'avg' declared at 'F:/repos/a35/NUEVO/bwidow/src/rtl/avg.vhd:31' bound to instance 'myavg' of component 'avg' [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'avg' [F:/repos/a35/NUEVO/bwidow/src/rtl/avg.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'vecrom' [F:/repos/a35/NUEVO/bwidow/src/rtl/vecrom.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'rom_veca' [F:/repos/a35/NUEVO/bwidow/src/roms/rom_veca.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_veca' (17#1) [F:/repos/a35/NUEVO/bwidow/src/roms/rom_veca.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'rom_vecb' [F:/repos/a35/NUEVO/bwidow/src/roms/rom_vecb.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_vecb' (18#1) [F:/repos/a35/NUEVO/bwidow/src/roms/rom_vecb.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'rom_vecc' [F:/repos/a35/NUEVO/bwidow/src/roms/rom_vecc.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_vecc' (19#1) [F:/repos/a35/NUEVO/bwidow/src/roms/rom_vecc.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'rom_vecd' [F:/repos/a35/NUEVO/bwidow/src/roms/rom_vecd.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_vecd' (20#1) [F:/repos/a35/NUEVO/bwidow/src/roms/rom_vecd.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'vecrom' (21#1) [F:/repos/a35/NUEVO/bwidow/src/rtl/vecrom.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'vector_drawer' [F:/repos/a35/NUEVO/bwidow/src/rtl/vector_drawer.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'vector_drawer' (22#1) [F:/repos/a35/NUEVO/bwidow/src/rtl/vector_drawer.vhd:53]
+WARNING: [Synth 8-614] signal 'clken' is read in the process but is not in the sensitivity list [F:/repos/a35/NUEVO/bwidow/src/rtl/avg.vhd:124]
+INFO: [Synth 8-256] done synthesizing module 'avg' (23#1) [F:/repos/a35/NUEVO/bwidow/src/rtl/avg.vhd:64]
+WARNING: [Synth 8-614] signal 'intack_l' is read in the process but is not in the sensitivity list [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow.vhd:257]
+INFO: [Synth 8-256] done synthesizing module 'bwidow' (24#1) [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'bwidow_dw' [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_dw.vhd:86]
+WARNING: [Synth 8-6014] Unused sequential element vcnt_front_porch_start_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_dw.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element hcnt_front_porch_start_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_dw.vhd:150]
+WARNING: [Synth 8-6014] Unused sequential element vcnt_eq_front_porch_start_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_dw.vhd:222]
+WARNING: [Synth 8-6014] Unused sequential element vcnt_eq_sync_start_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_dw.vhd:223]
+WARNING: [Synth 8-6014] Unused sequential element vcnt_eq_back_porch_start_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_dw.vhd:224]
+WARNING: [Synth 8-6014] Unused sequential element hcnt_eq_front_porch_start_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_dw.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element hcnt_eq_sync_start_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_dw.vhd:251]
+WARNING: [Synth 8-6014] Unused sequential element hcnt_eq_back_porch_start_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_dw.vhd:252]
+INFO: [Synth 8-256] done synthesizing module 'bwidow_dw' (25#1) [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_dw.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'dac' [F:/repos/a35/NUEVO/bwidow/src/rtl_mio/dac.vhd:37]
+	Parameter msbi_g bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dac' (26#1) [F:/repos/a35/NUEVO/bwidow/src/rtl_mio/dac.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'DEBOUNCE' [F:/repos/a35/NUEVO/bwidow/src/rtl_mio/debounce.vhd:60]
+	Parameter G_WIDTH bound to: 16 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element tick_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/rtl_mio/debounce.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'DEBOUNCE' (27#1) [F:/repos/a35/NUEVO/bwidow/src/rtl_mio/debounce.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'BWIDOW_MAIN' (28#1) [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_main.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [F:/repos/a35/NUEVO/bwidow/src/rtl_mio/keyb/keyboard_wasd.vhd:20]
+	Parameter filter_length bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ps2_intf' declared at 'F:/repos/a35/NUEVO/bwidow/src/rtl_mio/keyb/ps2_intf.vhd:44' bound to instance 'ps2' of component 'ps2_intf' [F:/repos/a35/NUEVO/bwidow/src/rtl_mio/keyb/keyboard_wasd.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ps2_intf' [F:/repos/a35/NUEVO/bwidow/src/rtl_mio/keyb/ps2_intf.vhd:62]
+	Parameter filter_length bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ps2_intf' (29#1) [F:/repos/a35/NUEVO/bwidow/src/rtl_mio/keyb/ps2_intf.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (30#1) [F:/repos/a35/NUEVO/bwidow/src/rtl_mio/keyb/keyboard_wasd.vhd:20]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/repos/a35/NUEVO/bwidow/src/modulo_top_a35t.v:199]
+INFO: [Synth 8-6157] synthesizing module 'multiboot' [F:/repos/a35/NUEVO/bwidow/src/multiboot_artix7.v:1]
+INFO: [Synth 8-6157] synthesizing module 'multiboot_artix7' [F:/repos/a35/NUEVO/bwidow/src/multiboot_artix7.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'multiboot_artix7' (31#1) [F:/repos/a35/NUEVO/bwidow/src/multiboot_artix7.v:35]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/repos/a35/NUEVO/bwidow/src/multiboot_artix7.v:16]
+INFO: [Synth 8-6157] synthesizing module 'icape' [F:/repos/a35/NUEVO/bwidow/src/multiboot_artix7.v:75]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/repos/a35/NUEVO/bwidow/src/multiboot_artix7.v:91]
+INFO: [Synth 8-6157] synthesizing module 'ICAPE2' [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22206]
+	Parameter DEVICE_ID bound to: 56955027 - type: integer 
+	Parameter ICAP_WIDTH bound to: X32 - type: string 
+	Parameter SIM_CFG_FILE_NAME bound to: NONE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ICAPE2' (32#1) [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22206]
+INFO: [Synth 8-6155] done synthesizing module 'icape' (33#1) [F:/repos/a35/NUEVO/bwidow/src/multiboot_artix7.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'multiboot' (34#1) [F:/repos/a35/NUEVO/bwidow/src/multiboot_artix7.v:1]
+WARNING: [Synth 8-6014] Unused sequential element pm_reset_reg was removed.  [F:/repos/a35/NUEVO/bwidow/src/modulo_top_a35t.v:77]
+WARNING: [Synth 8-3848] Net scandblctrl in module/entity bwidow_top does not have driver. [F:/repos/a35/NUEVO/bwidow/src/modulo_top_a35t.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'bwidow_top' (35#1) [F:/repos/a35/NUEVO/bwidow/src/modulo_top_a35t.v:9]
+WARNING: [Synth 8-3331] design bwidow_dw has unconnected port clk_6
+WARNING: [Synth 8-3331] design bwidow_dw has unconnected port X_VECTOR[0]
+WARNING: [Synth 8-3331] design bwidow_dw has unconnected port Y_VECTOR[0]
+WARNING: [Synth 8-3331] design vector_drawer has unconnected port clk_ena
+WARNING: [Synth 8-3331] design avg has unconnected port clk_25
+WARNING: [Synth 8-3331] design earom has unconnected port reset_l
+WARNING: [Synth 8-3331] design earom has unconnected port clk
+WARNING: [Synth 8-3331] design earom has unconnected port addr[5]
+WARNING: [Synth 8-3331] design earom has unconnected port addr[4]
+WARNING: [Synth 8-3331] design earom has unconnected port addr[3]
+WARNING: [Synth 8-3331] design earom has unconnected port addr[2]
+WARNING: [Synth 8-3331] design earom has unconnected port addr[1]
+WARNING: [Synth 8-3331] design earom has unconnected port addr[0]
+WARNING: [Synth 8-3331] design earom has unconnected port data_in[7]
+WARNING: [Synth 8-3331] design earom has unconnected port data_in[6]
+WARNING: [Synth 8-3331] design earom has unconnected port data_in[5]
+WARNING: [Synth 8-3331] design earom has unconnected port data_in[4]
+WARNING: [Synth 8-3331] design earom has unconnected port data_in[3]
+WARNING: [Synth 8-3331] design earom has unconnected port data_in[2]
+WARNING: [Synth 8-3331] design earom has unconnected port data_in[1]
+WARNING: [Synth 8-3331] design earom has unconnected port data_in[0]
+WARNING: [Synth 8-3331] design earom has unconnected port write_l
+WARNING: [Synth 8-3331] design earom has unconnected port con_l
+WARNING: [Synth 8-3331] design T65_ALU has unconnected port Mode[1]
+WARNING: [Synth 8-3331] design T65_ALU has unconnected port Mode[0]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[5]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[4]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[3]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[2]
+WARNING: [Synth 8-3331] design T65 has unconnected port Abort_n
+WARNING: [Synth 8-3331] design bwidow has unconnected port buttons[14]
+WARNING: [Synth 8-3331] design BWIDOW_MAIN has unconnected port scanSW[10]
+WARNING: [Synth 8-3331] design BWIDOW_MAIN has unconnected port scanSW[8]
+WARNING: [Synth 8-3331] design BWIDOW_MAIN has unconnected port scanSW[7]
+WARNING: [Synth 8-3331] design BWIDOW_MAIN has unconnected port scanSW[6]
+WARNING: [Synth 8-3331] design BWIDOW_MAIN has unconnected port scandblctrl[1]
+WARNING: [Synth 8-3331] design BWIDOW_MAIN has unconnected port scandblctrl[0]
+WARNING: [Synth 8-3331] design bwidow_top has unconnected port BTN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 498.656 ; gain = 212.461
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 498.656 ; gain = 212.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 498.656 ; gain = 212.461
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/repos/a35/NUEVO/bwidow/pines_zxuno_a35t.xdc]
+Finished Parsing XDC File [F:/repos/a35/NUEVO/bwidow/pines_zxuno_a35t.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/repos/a35/NUEVO/bwidow/pines_zxuno_a35t.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bwidow_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bwidow_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 815.539 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 815.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  PLL_BASE => MMCME2_ADV: 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 815.539 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 815.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 815.539 ; gain = 529.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 815.539 ; gain = 529.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 815.539 ; gain = 529.344
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'skctls_reg' and it is trimmed from '8' to '3' bits. [F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd:251]
+INFO: [Synth 8-5544] ROM "ALU_Op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_Op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_Op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_Op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Set_BusA_To" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Jump" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Jump" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Jump" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Jump" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Jump" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BAAdd" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BreakAtNA" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AddY" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PCAdd" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Dec_S" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LDP" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LDS" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LDDI" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SaveP" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65_ALU.vhd:180]
+INFO: [Synth 8-5546] ROM "P_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "P_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'DBR_reg[7:0]' into 'PBR_reg[7:0]' [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65.vhd:240]
+INFO: [Synth 8-4471] merging register 'MF_i_reg' into 'EF_i_reg' [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65.vhd:181]
+INFO: [Synth 8-4471] merging register 'XF_i_reg' into 'EF_i_reg' [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65.vhd:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65.vhd:289]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65.vhd:311]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65.vhd:420]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65.vhd:438]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/bwidow/src/rtl_T65/T65.vhd:437]
+INFO: [Synth 8-5544] ROM "Sync" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "vec_zero" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "vec_draw" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "vec_draw" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instruction" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "operand" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "vec_zero" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "vec_draw" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "vec_draw" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instruction" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "operand" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'latchout_reg' and it is trimmed from '8' to '3' bits. [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow.vhd:215]
+INFO: [Synth 8-5546] ROM "ps2_clk_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "release" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_11_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_7_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_6_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "icap_command" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element indx_reg_rep was removed.  [F:/repos/a35/NUEVO/bwidow/src/multiboot_artix7.v:65]
+INFO: [Synth 8-5546] ROM "joy_renew" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'latchout_reg' [F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow.vhd:215]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 815.539 ; gain = 529.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 16    
+	   2 Input      7 Bit       Adders := 2     
+	   3 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 6     
+	   3 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 12    
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               34 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 8     
+	               14 Bit    Registers := 6     
+	               13 Bit    Registers := 6     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 8     
+	                8 Bit    Registers := 83    
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 24    
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 57    
++---RAMs : 
+	              16K Bit         RAMs := 2     
++---ROMs : 
+	                              ROMs := 10    
++---Muxes : 
+	  17 Input     34 Bit        Muxes := 1     
+	   4 Input     24 Bit        Muxes := 1     
+	  29 Input     21 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   8 Input     19 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 16    
+	   4 Input     16 Bit        Muxes := 3     
+	  12 Input     16 Bit        Muxes := 2     
+	  14 Input     14 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 1     
+	   3 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 6     
+	  17 Input     13 Bit        Muxes := 1     
+	  25 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 9     
+	   4 Input      9 Bit        Muxes := 2     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 55    
+	   5 Input      8 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 44    
+	   4 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 11    
+	  16 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 2     
+	  13 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 30    
+	   3 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 12    
+	   4 Input      2 Bit        Muxes := 8     
+	   7 Input      2 Bit        Muxes := 8     
+	   8 Input      2 Bit        Muxes := 3     
+	  16 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 4     
+	  15 Input      2 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 188   
+	   6 Input      1 Bit        Muxes := 26    
+	   3 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 24    
+	   7 Input      1 Bit        Muxes := 16    
+	   8 Input      1 Bit        Muxes := 7     
+	  13 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 10    
+	  12 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 4     
+	   9 Input      1 Bit        Muxes := 6     
+	  29 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module bwidow_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  25 Input     12 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module pokey 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
++---XORs : 
+	   3 Input      1 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 28    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 12    
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 34    
+Module T65_MCode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 6     
+	   3 Input      3 Bit        Muxes := 2     
+	  13 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 20    
+	   3 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 12    
+	   4 Input      2 Bit        Muxes := 8     
+	   7 Input      2 Bit        Muxes := 8     
+	   8 Input      2 Bit        Muxes := 3     
+	  16 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 23    
+	   2 Input      1 Bit        Muxes := 38    
+	   3 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 18    
+	   7 Input      1 Bit        Muxes := 15    
+	   8 Input      1 Bit        Muxes := 4     
+	  13 Input      1 Bit        Muxes := 13    
+	  16 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 8     
+Module T65_ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 4     
+	   3 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 3     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module T65 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 5     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 7     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 5     
+	   4 Input      9 Bit        Muxes := 2     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 31    
+	   5 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module rom_pgma 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module rom_pgmb 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module rom_pgmc 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module rom_pgmd 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module rom_pgme 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module rom_pgmf 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module ram_2k 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module rom_veca 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module rom_vecb 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module rom_vecc 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module rom_vecd 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module vecrom 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+Module vector_drawer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module avg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 6     
+	               13 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 9     
+	  12 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	  14 Input     14 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 1     
+	   3 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+	  17 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 7     
+	  20 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 14    
+	   8 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+	   9 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module bwidow 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module bwidow_dw 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   8 Input     19 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 30    
+	   4 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+Module dac 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module DEBOUNCE 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module BWIDOW_MAIN 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module ps2_intf 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 2     
+Module keyboard 
+Detailed RTL Component Info : 
++---Registers : 
+	               21 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	  29 Input     21 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+Module multiboot_artix7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               34 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	  17 Input     34 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "P_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "P_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Sync" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instruction" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "operand" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "intensity0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "vec_dx1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "joy_renew" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ps2_clk_in0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/ps2/ps2_clk_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_11_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/release" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_7_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_6_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_0_in" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design avg has unconnected port clk_25
+WARNING: [Synth 8-3331] design T65_ALU has unconnected port Mode[1]
+WARNING: [Synth 8-3331] design T65_ALU has unconnected port Mode[0]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[5]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[4]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[3]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[2]
+WARNING: [Synth 8-3331] design T65 has unconnected port Abort_n
+WARNING: [Synth 8-3331] design bwidow has unconnected port buttons[14]
+WARNING: [Synth 8-3331] design bwidow_top has unconnected port BTN
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/cpu/NMI_n_o_reg' (FDE) to 'pm/u_bwidow/cpu/SO_n_o_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/u_bwidow /service_btnst_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/u_bwidow /cpu/SO_n_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/u_bwidow /cpu/NMIAct_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/u_bwidow /myavg/\vec_scale_reg[12] )
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/cpu/Mode_r_reg[0]' (FDCE) to 'pm/u_bwidow/cpu/Mode_r_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/u_bwidow /cpu/\Mode_r_reg[1] )
+INFO: [Synth 8-3886] merging instance 'pokey:/AUDIO_OUT_reg[0]' (FDRE) to 'pokey:/AUDIO_OUT_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pokey:/AUDIO_OUT_reg[1]' (FDRE) to 'pokey:/AUDIO_OUT_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/video_b_reg[0]' (FDE) to 'pm/u_DW/video_b_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/video_b_reg[1]' (FDE) to 'pm/u_DW/video_b_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/video_b_reg[2]' (FDE) to 'pm/u_DW/video_b_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/video_g_reg[0]' (FDE) to 'pm/u_DW/video_g_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/video_g_reg[1]' (FDE) to 'pm/u_DW/video_g_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/video_g_reg[2]' (FDE) to 'pm/u_DW/video_g_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/video_r_reg[0]' (FDE) to 'pm/u_DW/video_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/video_r_reg[1]' (FDE) to 'pm/u_DW/video_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/video_r_reg[2]' (FDE) to 'pm/u_DW/video_r_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/u_DW/Vid_data_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/VIDEO_B_OUT_reg[0]' (FDR) to 'pm/u_DW/VIDEO_B_OUT_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/VIDEO_B_OUT_reg[1]' (FDR) to 'pm/u_DW/VIDEO_B_OUT_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/VIDEO_B_OUT_reg[2]' (FDR) to 'pm/u_DW/VIDEO_B_OUT_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/VIDEO_G_OUT_reg[0]' (FDR) to 'pm/u_DW/VIDEO_G_OUT_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/VIDEO_G_OUT_reg[1]' (FDR) to 'pm/u_DW/VIDEO_G_OUT_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/VIDEO_G_OUT_reg[2]' (FDR) to 'pm/u_DW/VIDEO_G_OUT_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/VIDEO_R_OUT_reg[0]' (FDR) to 'pm/u_DW/VIDEO_R_OUT_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/VIDEO_R_OUT_reg[1]' (FDR) to 'pm/u_DW/VIDEO_R_OUT_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/VIDEO_R_OUT_reg[2]' (FDR) to 'pm/u_DW/VIDEO_R_OUT_reg[3]'
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/u_bwidow /\latchin_c_reg[4] )
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-3332] Sequential element (latchout_reg[1]) is unused and will be removed from module bwidow.
+WARNING: [Synth 8-3332] Sequential element (latchout_reg[0]) is unused and will be removed from module bwidow.
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pin_reg_reg[7]' (FD) to 'pm/u_bwidow/pokeya/pin_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pin_reg_reg[7]' (FD) to 'pm/u_bwidow/pokeyb/pin_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pin_reg_reg[5]' (FD) to 'pm/u_bwidow/pokeya/pin_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pin_reg_reg[5]' (FD) to 'pm/u_bwidow/pokeyb/pin_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pin_reg_reg[6]' (FD) to 'pm/u_bwidow/pokeya/pin_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pin_reg_reg[6]' (FD) to 'pm/u_bwidow/pokeyb/pin_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pin_reg_reg[3]' (FD) to 'pm/u_bwidow/pokeya/pin_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pin_reg_reg[3]' (FD) to 'pm/u_bwidow/pokeyb/pin_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pin_reg_reg[2]' (FD) to 'pm/u_bwidow/pokeya/pin_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pin_reg_reg[2]' (FD) to 'pm/u_bwidow/pokeyb/pin_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pin_reg_reg[1]' (FD) to 'pm/u_bwidow/pokeya/pin_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pin_reg_reg[1]' (FD) to 'pm/u_bwidow/pokeyb/pin_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pin_reg_reg[4]' (FD) to 'pm/u_bwidow/pokeya/pin_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pin_reg_reg[4]' (FD) to 'pm/u_bwidow/pokeyb/pin_reg_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/u_bwidow /pokeya/\pin_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/u_bwidow /pokeyb/\pin_reg_reg[0] )
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[7][7]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[6][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[6][7]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[5][7]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[4][7]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[3][7]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[2][7]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[1][7]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[7][7]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[6][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[6][7]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[5][7]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[4][7]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[3][7]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[2][7]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[1][7]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[7][5]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[6][5]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[5][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[5][5]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[4][5]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[3][5]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[2][5]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[1][5]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[7][5]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[6][5]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[5][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[5][5]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[4][5]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[3][5]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[2][5]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[1][5]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[7][6]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[6][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[6][6]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[5][6]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[4][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[4][6]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[3][6]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[2][6]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[1][6]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[7][6]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[6][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[6][6]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[5][6]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[4][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[4][6]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[3][6]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[2][6]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[1][6]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[7][3]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[6][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[6][3]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[5][3]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[4][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[4][3]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[3][3]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[2][3]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[1][3]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[7][3]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[6][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[6][3]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[5][3]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[4][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[4][3]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[3][3]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[2][3]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[1][3]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[7][2]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[6][2]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[6][2]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[5][2]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[5][2]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[4][2]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[4][2]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[3][2]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[2][2]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeya/pot_val_reg[1][2]' (FDE) to 'pm/u_bwidow/pokeya/pot_val_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'pm/u_bwidow/pokeyb/pot_val_reg[7][2]' (FDE) to 'pm/u_bwidow/pokeyb/pot_val_reg[6][2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 820.105 ; gain = 533.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+---------------------+---------------+----------------+
+|Module Name | RTL Object          | Depth x Width | Implemented As | 
++------------+---------------------+---------------+----------------+
+|pgmrom      | roma/data_reg       | 4096x8        | Block RAM      | 
+|pgmrom      | romb/data_reg       | 4096x8        | Block RAM      | 
+|pgmrom      | romc/data_reg       | 4096x8        | Block RAM      | 
+|pgmrom      | romd/data_reg       | 4096x8        | Block RAM      | 
+|pgmrom      | rome/data_reg       | 4096x8        | Block RAM      | 
+|pgmrom      | romf/data_reg       | 4096x8        | Block RAM      | 
+|avg         | memory_addr_reg_rep | 4096x8        | Block RAM      | 
+|avg         | memory_addr_reg_rep | 4096x8        | Block RAM      | 
+|avg         | memory_addr_reg_rep | 4096x8        | Block RAM      | 
+|avg         | memory_addr_reg_rep | 2048x8        | Block RAM      | 
++------------+---------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram_2k:     | ram_reg    | 2 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ram_2k:     | ram_reg    | 2 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/mypgmrom/i_0/roma/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/mypgmrom/i_1/romb/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/mypgmrom/i_2/romc/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/mypgmrom/i_3/romd/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/mypgmrom/i_4/rome/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/mypgmrom/i_5/romf/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/i_0/mypgmram/myram/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/myavg/myvecrami_0/myvecram/myram/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/myavg/i_31/memory_addr_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/myavg/i_33/memory_addr_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/myavg/i_35/memory_addr_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/myavg/i_41/memory_addr_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 858.734 ; gain = 572.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pm/u_bwidow /\latchout_reg[2]  is always disabled
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 861.086 ; gain = 574.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram_2k:     | ram_reg    | 2 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ram_2k:     | ram_reg    | 2 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (pm/u_bwidow/latchout_reg[2]) is unused and will be removed from module bwidow_top.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/mypgmrom/roma/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/mypgmrom/romb/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/mypgmrom/romc/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/mypgmrom/romd/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/mypgmrom/rome/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/mypgmrom/romf/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/mypgmram/myram/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_bwidow/myavg/myvecram/myram/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:47 ; elapsed = 00:01:52 . Memory (MB): peak = 889.500 ; gain = 603.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop pm/reset_6_l_reg is being inverted and renamed to pm/reset_6_l_reg_inv.
+INFO: [Synth 8-5365] Flop el_multiboot/el_multiboot/icap_data0_reg[32] is being inverted and renamed to el_multiboot/el_multiboot/icap_data0_reg[32]_inv.
+INFO: [Synth 8-5365] Flop el_multiboot/el_multiboot/icap_data0_reg[33] is being inverted and renamed to el_multiboot/el_multiboot/icap_data0_reg[33]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 889.500 ; gain = 603.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 889.500 ; gain = 603.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 889.500 ; gain = 603.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 889.500 ; gain = 603.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:50 ; elapsed = 00:01:55 . Memory (MB): peak = 889.500 ; gain = 603.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:50 ; elapsed = 00:01:55 . Memory (MB): peak = 889.500 ; gain = 603.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|bwidow_top  | pm/u_bwidow/pokeya/tone_gen_zero_t_reg[1][5] | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|bwidow_top  | pm/u_bwidow/pokeya/poly4_reg[2]              | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|bwidow_top  | pm/u_bwidow/pokeya/poly5_reg[4]              | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|bwidow_top  | pm/u_bwidow/pokeyb/tone_gen_zero_t_reg[1][5] | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|bwidow_top  | pm/u_bwidow/pokeyb/poly4_reg[2]              | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|bwidow_top  | pm/u_bwidow/pokeyb/poly5_reg[4]              | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     4|
+|2     |CARRY4      |    49|
+|3     |ICAPE2      |     1|
+|4     |LUT1        |    41|
+|5     |LUT2        |   246|
+|6     |LUT3        |   248|
+|7     |LUT4        |   282|
+|8     |LUT5        |   325|
+|9     |LUT6        |   529|
+|10    |MUXF7       |    16|
+|11    |PLL_BASE    |     1|
+|12    |RAMB18E1    |     2|
+|13    |RAMB18E1_2  |     1|
+|14    |RAMB36E1    |     1|
+|15    |RAMB36E1_1  |     1|
+|16    |RAMB36E1_10 |     1|
+|17    |RAMB36E1_11 |     1|
+|18    |RAMB36E1_2  |     1|
+|19    |RAMB36E1_3  |     1|
+|20    |RAMB36E1_4  |     1|
+|21    |RAMB36E1_5  |     1|
+|22    |RAMB36E1_9  |     1|
+|23    |SRL16E      |    20|
+|24    |FDCE        |   161|
+|25    |FDPE        |     9|
+|26    |FDRE        |   896|
+|27    |FDSE        |    28|
+|28    |IBUF        |     4|
+|29    |IOBUF       |     3|
+|30    |OBUF        |    39|
+|31    |OBUFT       |     5|
++------+------------+------+
+
+Report Instance Areas: 
++------+---------------------+-----------------+------+
+|      |Instance             |Module           |Cells |
++------+---------------------+-----------------+------+
+|1     |top                  |                 |  2919|
+|2     |  el_multiboot       |multiboot        |    85|
+|3     |    el_icap          |icape            |     1|
+|4     |    el_multiboot     |multiboot_artix7 |    84|
+|5     |  keyb               |keyboard         |   123|
+|6     |    ps2              |ps2_intf         |    74|
+|7     |  pm                 |BWIDOW_MAIN      |  2605|
+|8     |    debounce         |DEBOUNCE         |    60|
+|9     |    u_DW             |bwidow_dw        |   219|
+|10    |    u_bwidow         |bwidow           |  2282|
+|11    |      cpu            |T65              |   853|
+|12    |        alu          |T65_ALU          |    41|
+|13    |      myavg          |avg              |   593|
+|14    |        myvecram     |ram2k_1          |    18|
+|15    |          myram      |ram_2k_2         |    18|
+|16    |        vectordrawer |vector_drawer    |   234|
+|17    |      mypgmram       |ram2k            |     1|
+|18    |        myram        |ram_2k           |     1|
+|19    |      mypgmrom       |pgmrom           |    25|
+|20    |        roma         |rom_pgma         |     1|
+|21    |        romb         |rom_pgmb         |     1|
+|22    |        romc         |rom_pgmc         |     1|
+|23    |        romd         |rom_pgmd         |     1|
+|24    |        rome         |rom_pgme         |     1|
+|25    |        romf         |rom_pgmf         |     1|
+|26    |      pokeya         |pokey            |   383|
+|27    |      pokeyb         |pokey_0          |   381|
+|28    |    u_dac            |dac              |    23|
++------+---------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:50 ; elapsed = 00:01:55 . Memory (MB): peak = 889.500 ; gain = 603.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:26 ; elapsed = 00:01:41 . Memory (MB): peak = 889.500 ; gain = 286.422
+Synthesis Optimization Complete : Time (s): cpu = 00:01:50 ; elapsed = 00:01:55 . Memory (MB): peak = 889.500 ; gain = 603.305
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 889.500 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  PLL_BASE => MMCME2_ADV: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+297 Infos, 123 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:54 ; elapsed = 00:02:00 . Memory (MB): peak = 889.500 ; gain = 616.469
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 889.500 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/repos/a35/NUEVO/bwidow/A35/A35.runs/synth_1/bwidow_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bwidow_top_utilization_synth.rpt -pb bwidow_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  1 09:50:03 2019...

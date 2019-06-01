@@ -1,0 +1,1075 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Fri May 31 10:14:50 2019
+# Process ID: 2008
+# Current directory: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1
+# Command line: vivado.exe -log asteroids_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source asteroids_top.tcl
+# Log file: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/asteroids_top.vds
+# Journal file: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source asteroids_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/repos/a35/NUEVO/asteroids/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top asteroids_top -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11776 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 386.953 ; gain = 100.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'asteroids_top' [F:/repos/a35/NUEVO/asteroids/src/modulo_top_a35t.v:9]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'PLL_BASE' [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41499]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 12 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN_PERIOD bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 24 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 50 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 12 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLK_FEEDBACK bound to: CLKFBOUT - type: string 
+	Parameter COMPENSATION bound to: INTERNAL - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER bound to: 0.100000 - type: float 
+	Parameter RESET_ON_LOSS_OF_LOCK bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLL_BASE' (2#1) [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41499]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/repos/a35/NUEVO/asteroids/src/modulo_top_a35t.v:129]
+INFO: [Synth 8-638] synthesizing module 'ASTEROIDS_MAIN' [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_main.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'ASTEROIDS' [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'T65' [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd:97]
+INFO: [Synth 8-3491] module 'T65_MCode' declared at 'F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65_MCode.vhd:69' bound to instance 'mcode' of component 'T65_MCode' [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'T65_MCode' [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65_MCode.vhd:103]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65_MCode.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'T65_MCode' (3#1) [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65_MCode.vhd:103]
+INFO: [Synth 8-3491] module 'T65_ALU' declared at 'F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65_ALU.vhd:64' bound to instance 'alu' of component 'T65_ALU' [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd:221]
+INFO: [Synth 8-638] synthesizing module 'T65_ALU' [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65_ALU.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'T65_ALU' (4#1) [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65_ALU.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element D_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd:238]
+INFO: [Synth 8-256] done synthesizing module 'T65' (5#1) [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd:97]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:351]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:366]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:381]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:415]
+WARNING: [Synth 8-614] signal 'reset_l' is read in the process but is not in the sensitivity list [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:432]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:478]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:491]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:504]
+INFO: [Synth 8-638] synthesizing module 'ASTEROIDS_PROG_ROM_0' [F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_0.VHD:12]
+INFO: [Synth 8-256] done synthesizing module 'ASTEROIDS_PROG_ROM_0' (6#1) [F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_0.VHD:12]
+INFO: [Synth 8-638] synthesizing module 'ASTEROIDS_PROG_ROM_1' [F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_1.VHD:12]
+INFO: [Synth 8-256] done synthesizing module 'ASTEROIDS_PROG_ROM_1' (7#1) [F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_1.VHD:12]
+INFO: [Synth 8-638] synthesizing module 'ASTEROIDS_PROG_ROM_2' [F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_2.VHD:12]
+INFO: [Synth 8-256] done synthesizing module 'ASTEROIDS_PROG_ROM_2' (8#1) [F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_2.VHD:12]
+INFO: [Synth 8-638] synthesizing module 'ASTEROIDS_RAM' [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_ram.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'ram_1k' [F:/repos/a35/NUEVO/asteroids/src/rtl_mio/ram_1k.vhd:45]
+	Parameter dWidth bound to: 4 - type: integer 
+	Parameter aWidth bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ram_1k' (9#1) [F:/repos/a35/NUEVO/asteroids/src/rtl_mio/ram_1k.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'ASTEROIDS_RAM' (10#1) [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_ram.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'ASTEROIDS_VG' [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd:77]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd:192]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd:275]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd:347]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd:361]
+INFO: [Synth 8-638] synthesizing module 'ASTEROIDS_VEC_ROM_1' [F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_VEC_ROM_1.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ASTEROIDS_VEC_ROM_1' (11#1) [F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_VEC_ROM_1.vhd:12]
+WARNING: [Synth 8-6014] Unused sequential element vrom1_t1_l_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd:420]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ratemuly_reg_and_reg' and it is trimmed from '10' to '9' bits. [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd:605]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ratemulx_reg_and_reg' and it is trimmed from '10' to '9' bits. [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd:597]
+INFO: [Synth 8-256] done synthesizing module 'ASTEROIDS_VG' (12#1) [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd:77]
+WARNING: [Synth 8-6014] Unused sequential element ena_3M_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:227]
+WARNING: [Synth 8-6014] Unused sequential element clkdiv2_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:260]
+WARNING: [Synth 8-6014] Unused sequential element clk_100_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:263]
+WARNING: [Synth 8-6014] Unused sequential element carry_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:302]
+WARNING: [Synth 8-6014] Unused sequential element shift_in_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:771]
+WARNING: [Synth 8-6014] Unused sequential element rc_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:823]
+WARNING: [Synth 8-6014] Unused sequential element sum_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:853]
+INFO: [Synth 8-4471] merging register 'ena_12K_reg' into 'ena_48k_reg' [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:244]
+WARNING: [Synth 8-6014] Unused sequential element ena_12K_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:244]
+INFO: [Synth 8-256] done synthesizing module 'ASTEROIDS' (13#1) [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'ASTEROIDS_DW' [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd:86]
+WARNING: [Synth 8-6014] Unused sequential element vcnt_front_porch_start_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element hcnt_front_porch_start_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd:150]
+WARNING: [Synth 8-6014] Unused sequential element vcnt_eq_front_porch_start_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd:222]
+WARNING: [Synth 8-6014] Unused sequential element vcnt_eq_sync_start_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd:223]
+WARNING: [Synth 8-6014] Unused sequential element vcnt_eq_back_porch_start_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd:224]
+WARNING: [Synth 8-6014] Unused sequential element hcnt_eq_front_porch_start_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element hcnt_eq_sync_start_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd:251]
+WARNING: [Synth 8-6014] Unused sequential element hcnt_eq_back_porch_start_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd:252]
+INFO: [Synth 8-256] done synthesizing module 'ASTEROIDS_DW' (14#1) [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'dac' [F:/repos/a35/NUEVO/asteroids/src/rtl_mio/dac.vhd:37]
+	Parameter msbi_g bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dac' (15#1) [F:/repos/a35/NUEVO/asteroids/src/rtl_mio/dac.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'DEBOUNCE' [F:/repos/a35/NUEVO/asteroids/src/rtl_mio/debounce.vhd:60]
+	Parameter G_WIDTH bound to: 16 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element tick_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/rtl_mio/debounce.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'DEBOUNCE' (16#1) [F:/repos/a35/NUEVO/asteroids/src/rtl_mio/debounce.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'ASTEROIDS_MAIN' (17#1) [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_main.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [F:/repos/a35/NUEVO/asteroids/src/rtl_mio/keyb/keyboard.vhd:20]
+	Parameter filter_length bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ps2_intf' declared at 'F:/repos/a35/NUEVO/asteroids/src/rtl_mio/keyb/ps2_intf.vhd:44' bound to instance 'ps2' of component 'ps2_intf' [F:/repos/a35/NUEVO/asteroids/src/rtl_mio/keyb/keyboard.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ps2_intf' [F:/repos/a35/NUEVO/asteroids/src/rtl_mio/keyb/ps2_intf.vhd:62]
+	Parameter filter_length bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ps2_intf' (18#1) [F:/repos/a35/NUEVO/asteroids/src/rtl_mio/keyb/ps2_intf.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (19#1) [F:/repos/a35/NUEVO/asteroids/src/rtl_mio/keyb/keyboard.vhd:20]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/repos/a35/NUEVO/asteroids/src/modulo_top_a35t.v:199]
+INFO: [Synth 8-6157] synthesizing module 'multiboot' [F:/repos/a35/NUEVO/asteroids/src/multiboot_artix7.v:1]
+INFO: [Synth 8-6157] synthesizing module 'multiboot_artix7' [F:/repos/a35/NUEVO/asteroids/src/multiboot_artix7.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'multiboot_artix7' (20#1) [F:/repos/a35/NUEVO/asteroids/src/multiboot_artix7.v:35]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/repos/a35/NUEVO/asteroids/src/multiboot_artix7.v:16]
+INFO: [Synth 8-6157] synthesizing module 'icape' [F:/repos/a35/NUEVO/asteroids/src/multiboot_artix7.v:75]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/repos/a35/NUEVO/asteroids/src/multiboot_artix7.v:91]
+INFO: [Synth 8-6157] synthesizing module 'ICAPE2' [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22206]
+	Parameter DEVICE_ID bound to: 56955027 - type: integer 
+	Parameter ICAP_WIDTH bound to: X32 - type: string 
+	Parameter SIM_CFG_FILE_NAME bound to: NONE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ICAPE2' (21#1) [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22206]
+INFO: [Synth 8-6155] done synthesizing module 'icape' (22#1) [F:/repos/a35/NUEVO/asteroids/src/multiboot_artix7.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'multiboot' (23#1) [F:/repos/a35/NUEVO/asteroids/src/multiboot_artix7.v:1]
+WARNING: [Synth 8-6014] Unused sequential element pm_reset_reg was removed.  [F:/repos/a35/NUEVO/asteroids/src/modulo_top_a35t.v:77]
+WARNING: [Synth 8-3848] Net scandblctrl in module/entity asteroids_top does not have driver. [F:/repos/a35/NUEVO/asteroids/src/modulo_top_a35t.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'asteroids_top' (24#1) [F:/repos/a35/NUEVO/asteroids/src/modulo_top_a35t.v:9]
+WARNING: [Synth 8-3331] design ASTEROIDS_DW has unconnected port clk_50
+WARNING: [Synth 8-3331] design ASTEROIDS_DW has unconnected port clk_6
+WARNING: [Synth 8-3331] design ASTEROIDS_DW has unconnected port X_VECTOR[0]
+WARNING: [Synth 8-3331] design ASTEROIDS_DW has unconnected port Y_VECTOR[0]
+WARNING: [Synth 8-3331] design ASTEROIDS_VG has unconnected port C_ADDR[15]
+WARNING: [Synth 8-3331] design ASTEROIDS_VG has unconnected port C_ADDR[14]
+WARNING: [Synth 8-3331] design ASTEROIDS_VG has unconnected port C_ADDR[13]
+WARNING: [Synth 8-3331] design T65_ALU has unconnected port Mode[1]
+WARNING: [Synth 8-3331] design T65_ALU has unconnected port Mode[0]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[5]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[4]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[3]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[2]
+WARNING: [Synth 8-3331] design T65 has unconnected port Abort_n
+WARNING: [Synth 8-3331] design ASTEROIDS_MAIN has unconnected port scanSW[10]
+WARNING: [Synth 8-3331] design ASTEROIDS_MAIN has unconnected port scanSW[8]
+WARNING: [Synth 8-3331] design ASTEROIDS_MAIN has unconnected port scanSW[7]
+WARNING: [Synth 8-3331] design ASTEROIDS_MAIN has unconnected port scanSW[6]
+WARNING: [Synth 8-3331] design ASTEROIDS_MAIN has unconnected port scandblctrl[1]
+WARNING: [Synth 8-3331] design ASTEROIDS_MAIN has unconnected port scandblctrl[0]
+WARNING: [Synth 8-3331] design asteroids_top has unconnected port BTN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 463.742 ; gain = 177.316
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 463.742 ; gain = 177.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 463.742 ; gain = 177.316
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/repos/a35/NUEVO/asteroids/pines_zxuno_a35t.xdc]
+Finished Parsing XDC File [F:/repos/a35/NUEVO/asteroids/pines_zxuno_a35t.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/repos/a35/NUEVO/asteroids/pines_zxuno_a35t.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/asteroids_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/asteroids_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 793.016 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 793.016 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  PLL_BASE => MMCME2_ADV: 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 793.016 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 793.016 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 793.016 ; gain = 506.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 793.016 ; gain = 506.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 793.016 ; gain = 506.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "ALU_Op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_Op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_Op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_Op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Set_BusA_To" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Jump" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Jump" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Jump" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Jump" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Jump" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BAAdd" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BreakAtNA" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AddY" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PCAdd" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Dec_S" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LDP" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LDS" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LDDI" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SaveP" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65_ALU.vhd:180]
+INFO: [Synth 8-5546] ROM "P_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "P_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'DBR_reg[7:0]' into 'PBR_reg[7:0]' [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd:240]
+INFO: [Synth 8-4471] merging register 'MF_i_reg' into 'EF_i_reg' [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd:181]
+INFO: [Synth 8-4471] merging register 'XF_i_reg' into 'EF_i_reg' [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd:289]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd:311]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd:420]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd:438]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd:437]
+INFO: [Synth 8-5544] ROM "Sync" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd:655]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd:669]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ASTEROIDS_VG'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:622]
+INFO: [Synth 8-5546] ROM "pitch_rising" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "shpfr_pitch" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shpfr_decay" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "firesnd" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "saucrfr_pitch" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "saucrfr_decay" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "saucrfiresnd" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'video_g_reg[3:0]' into 'video_r_reg[3:0]' [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd:290]
+INFO: [Synth 8-4471] merging register 'VIDEO_G_OUT_reg[3:0]' into 'VIDEO_R_OUT_reg[3:0]' [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd:310]
+INFO: [Synth 8-5544] ROM "video_r" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "video_b" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ps2_clk_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "release" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_11_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_7_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_6_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "icap_command" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element indx_reg_rep was removed.  [F:/repos/a35/NUEVO/asteroids/src/multiboot_artix7.v:65]
+INFO: [Synth 8-5546] ROM "joy_renew" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE7 |                             0000 |                             0000
+                 iSTATE9 |                             0001 |                             1001
+                 iSTATE1 |                             0010 |                             1101
+                 iSTATE4 |                             0011 |                             1100
+                iSTATE11 |                             0100 |                             1000
+                iSTATE12 |                             0101 |                             1111
+                iSTATE13 |                             0110 |                             1110
+                 iSTATE3 |                             0111 |                             1011
+                 iSTATE5 |                             1000 |                             1010
+                 iSTATE6 |                             1001 |                             0001
+                 iSTATE2 |                             1010 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ASTEROIDS_VG'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 793.016 ; gain = 506.590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     21 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 5     
+	   2 Input      8 Bit       Adders := 6     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 6     
+	   3 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 6     
+	   5 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 7     
++---Registers : 
+	               34 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               21 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 7     
+	               15 Bit    Registers := 2     
+	               12 Bit    Registers := 9     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 20    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 26    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 79    
++---RAMs : 
+	               4K Bit         RAMs := 6     
++---ROMs : 
+	                              ROMs := 4     
++---Muxes : 
+	  17 Input     34 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     24 Bit        Muxes := 1     
+	  29 Input     21 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 2     
+	   8 Input     19 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 7     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   4 Input     12 Bit        Muxes := 1     
+	  25 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 9     
+	   4 Input      9 Bit        Muxes := 2     
+	   3 Input      9 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 48    
+	   8 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 28    
+	   4 Input      4 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 2     
+	  16 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 7     
+	   3 Input      3 Bit        Muxes := 2     
+	  13 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 22    
+	   3 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 12    
+	   4 Input      2 Bit        Muxes := 9     
+	   7 Input      2 Bit        Muxes := 8     
+	   8 Input      2 Bit        Muxes := 3     
+	  16 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 4     
+	  15 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 24    
+	   2 Input      1 Bit        Muxes := 123   
+	   3 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 25    
+	   7 Input      1 Bit        Muxes := 18    
+	   8 Input      1 Bit        Muxes := 11    
+	  13 Input      1 Bit        Muxes := 13    
+	  16 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 8     
+	  29 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module asteroids_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  25 Input     12 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module T65_MCode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 6     
+	   3 Input      3 Bit        Muxes := 2     
+	  13 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 20    
+	   3 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 12    
+	   4 Input      2 Bit        Muxes := 8     
+	   7 Input      2 Bit        Muxes := 8     
+	   8 Input      2 Bit        Muxes := 3     
+	  16 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 23    
+	   2 Input      1 Bit        Muxes := 38    
+	   3 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 18    
+	   7 Input      1 Bit        Muxes := 15    
+	   8 Input      1 Bit        Muxes := 4     
+	  13 Input      1 Bit        Muxes := 13    
+	  16 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 8     
+Module T65_ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 4     
+	   3 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 3     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module T65 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 5     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 7     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 5     
+	   4 Input      9 Bit        Muxes := 2     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 31    
+	   5 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module ASTEROIDS_PROG_ROM_0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module ASTEROIDS_PROG_ROM_1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module ASTEROIDS_PROG_ROM_2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module ram_1k 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	               4K Bit         RAMs := 1     
+Module ASTEROIDS_VEC_ROM_1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module ASTEROIDS_VG 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 7     
+	               10 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 7     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	  11 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 3     
+Module ASTEROIDS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     21 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   5 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 28    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   8 Input      1 Bit        Muxes := 6     
+Module ASTEROIDS_DW 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   8 Input     19 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 11    
+	  16 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 30    
+	   4 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+Module dac 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module DEBOUNCE 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module ASTEROIDS_MAIN 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module ps2_intf 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 2     
+Module keyboard 
+Detailed RTL Component Info : 
++---Registers : 
+	               21 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	  29 Input     21 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+Module multiboot_artix7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               34 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	  17 Input     34 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "P_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "P_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Sync" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'pm/u_asteroids/pitch_bend_reg[14:0]' into 'pm/u_asteroids/pitch_bend_reg[14:0]' [F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd:623]
+INFO: [Synth 8-5544] ROM "pm/u_asteroids/vg/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pm/u_asteroids/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pm/u_asteroids/c_din01" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "joy_renew" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "pm/u_asteroids/saucrfr_decay" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pm/u_asteroids/saucrfr_pitch" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pm/u_asteroids/saucrfiresnd" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pm/u_asteroids/shpfr_decay" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pm/u_asteroids/shpfr_pitch" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pm/u_asteroids/firesnd" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "pm/u_asteroids/pitch_rising" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ps2_clk_in0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/ps2/ps2_clk_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_11_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/release" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_7_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_6_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_0_in" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design T65_ALU has unconnected port Mode[1]
+WARNING: [Synth 8-3331] design T65_ALU has unconnected port Mode[0]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[5]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[4]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[3]
+WARNING: [Synth 8-3331] design T65_MCode has unconnected port P[2]
+WARNING: [Synth 8-3331] design T65 has unconnected port Abort_n
+WARNING: [Synth 8-3331] design asteroids_top has unconnected port BTN
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/noise_shift_reg[0]' (FDCE) to 'pm/u_asteroids/noise_reg'
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/test_l_reg' (FD) to 'pm/u_asteroids/control_ip0_l_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/cpu/SO_n_o_reg' (FDE) to 'pm/u_asteroids/cpu/IRQ_n_o_reg'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/u_asteroids/cpu/IRQ_n_o_reg )
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/control_ip1_l_reg[2]' (FD) to 'pm/u_asteroids/control_ip0_l_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/control_ip1_l_reg[1]' (FD) to 'pm/u_asteroids/control_ip0_l_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/control_ip0_l_reg[3]' (FD) to 'pm/u_asteroids/control_ip0_l_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/control_ip0_l_reg[2]' (FD) to 'pm/u_asteroids/dips_p6_l_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/dips_p6_l_reg[0]' (FD) to 'pm/u_asteroids/dips_p6_l_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/dips_p6_l_reg[2]' (FD) to 'pm/u_asteroids/dips_p6_l_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/u_asteroids/dips_p6_l_reg[4] )
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/dips_p6_l_reg[6]' (FD) to 'pm/u_asteroids/dips_p6_l_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/dips_p6_l_reg[1]' (FD) to 'pm/u_asteroids/dips_p6_l_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/dips_p6_l_reg[3]' (FD) to 'pm/u_asteroids/dips_p6_l_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/dips_p6_l_reg[5]' (FD) to 'pm/u_asteroids/dips_p6_l_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/u_asteroids/dips_p6_l_reg[7] )
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/cpu/Mode_r_reg[0]' (FDCE) to 'pm/u_asteroids/cpu/Mode_r_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/u_asteroids/cpu/Mode_r_reg[1] )
+INFO: [Synth 8-3886] merging instance 'pm/u_asteroids/shpsnd_filtered_reg[2]' (FD) to 'pm/u_asteroids/shpsnd_filtered_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/video_b_reg[0]' (FDE) to 'pm/u_DW/video_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/video_b_reg[1]' (FDE) to 'pm/u_DW/video_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/video_b_reg[3]' (FDE) to 'pm/u_DW/video_r_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/VIDEO_B_OUT_reg[0]' (FDR) to 'pm/u_DW/VIDEO_R_OUT_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/VIDEO_B_OUT_reg[1]' (FDR) to 'pm/u_DW/VIDEO_R_OUT_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pm/u_DW/VIDEO_B_OUT_reg[3]' (FDR) to 'pm/u_DW/VIDEO_R_OUT_reg[3]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 803.555 ; gain = 517.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+-------------------------------------------+---------------+----------------+
+|Module Name   | RTL Object                                | Depth x Width | Implemented As | 
++--------------+-------------------------------------------+---------------+----------------+
+|asteroids_top | pm/u_asteroids/vg/u_vector_rom_1/data_reg | 2048x8        | Block RAM      | 
+|asteroids_top | pm/u_asteroids/rom2/data_reg              | 2048x8        | Block RAM      | 
+|asteroids_top | pm/u_asteroids/rom1/data_reg              | 2048x8        | Block RAM      | 
+|asteroids_top | pm/u_asteroids/rom0/data_reg              | 2048x8        | Block RAM      | 
++--------------+-------------------------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram_1k:     | ram_reg    | 1 K x 4(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ram_1k:     | ram_reg    | 1 K x 4(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ram_1k:     | ram_reg    | 1 K x 4(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ram_1k:     | ram_reg    | 1 K x 4(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ram_1k:     | ram_reg    | 1 K x 4(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ram_1k:     | ram_reg    | 1 K x 4(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_30/pm/u_asteroids/rams/r1/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_31/pm/u_asteroids/rams/r0/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/pm/u_asteroids/vg/u_vector_ram_1/r1/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_33/pm/u_asteroids/vg/u_vector_ram_1/r0/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_34/pm/u_asteroids/vg/u_vector_ram_2/r1/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_35/pm/u_asteroids/vg/u_vector_ram_2/r0/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_54/pm/u_asteroids/vg/u_vector_rom_1/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_111/pm/u_asteroids/rom2/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_112/pm/u_asteroids/rom1/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_113/pm/u_asteroids/rom0/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:01:39 . Memory (MB): peak = 815.813 ; gain = 529.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:39 . Memory (MB): peak = 816.313 ; gain = 529.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram_1k:     | ram_reg    | 1 K x 4(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ram_1k:     | ram_reg    | 1 K x 4(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ram_1k:     | ram_reg    | 1 K x 4(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ram_1k:     | ram_reg    | 1 K x 4(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ram_1k:     | ram_reg    | 1 K x 4(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ram_1k:     | ram_reg    | 1 K x 4(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance pm/u_asteroids/rams/r1/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_asteroids/rams/r0/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_asteroids/vg/u_vector_ram_1/r1/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_asteroids/vg/u_vector_ram_1/r0/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_asteroids/vg/u_vector_ram_2/r1/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_asteroids/vg/u_vector_ram_2/r0/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_asteroids/vg/u_vector_rom_1/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_asteroids/rom2/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_asteroids/rom1/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/u_asteroids/rom0/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 857.109 ; gain = 570.684
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop el_multiboot/el_multiboot/icap_data0_reg[32] is being inverted and renamed to el_multiboot/el_multiboot/icap_data0_reg[32]_inv.
+INFO: [Synth 8-5365] Flop el_multiboot/el_multiboot/icap_data0_reg[33] is being inverted and renamed to el_multiboot/el_multiboot/icap_data0_reg[33]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 857.109 ; gain = 570.684
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 857.109 ; gain = 570.684
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 857.109 ; gain = 570.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 857.109 ; gain = 570.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 857.109 ; gain = 570.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 857.109 ; gain = 570.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|asteroids_top | pm/u_asteroids/noise_shift_reg[14] | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|asteroids_top | pm/u_asteroids/noise_shift_reg[6]  | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++--------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     6|
+|2     |CARRY4     |   117|
+|3     |ICAPE2     |     1|
+|4     |LUT1       |   186|
+|5     |LUT2       |   262|
+|6     |LUT3       |   188|
+|7     |LUT4       |   217|
+|8     |LUT5       |   299|
+|9     |LUT6       |   455|
+|10    |MUXF7      |    12|
+|11    |PLL_BASE   |     1|
+|12    |RAMB18E1   |     6|
+|13    |RAMB18E1_1 |     1|
+|14    |RAMB18E1_2 |     1|
+|15    |RAMB18E1_3 |     1|
+|16    |RAMB18E1_4 |     1|
+|17    |SRL16E     |     2|
+|18    |FDCE       |   235|
+|19    |FDPE       |    14|
+|20    |FDRE       |   641|
+|21    |FDSE       |    26|
+|22    |IBUF       |     4|
+|23    |IOBUF      |     4|
+|24    |OBUF       |    39|
+|25    |OBUFT      |     4|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------------+---------------------+------+
+|      |Instance               |Module               |Cells |
++------+-----------------------+---------------------+------+
+|1     |top                    |                     |  2723|
+|2     |  el_multiboot         |multiboot            |    88|
+|3     |    el_icap            |icape                |     1|
+|4     |    el_multiboot       |multiboot_artix7     |    87|
+|5     |  keyb                 |keyboard             |   109|
+|6     |    ps2                |ps2_intf             |    72|
+|7     |  pm                   |ASTEROIDS_MAIN       |  2420|
+|8     |    debounce           |DEBOUNCE             |    60|
+|9     |    u_DW               |ASTEROIDS_DW         |   216|
+|10    |    u_asteroids        |ASTEROIDS            |  2101|
+|11    |      cpu              |T65                  |   771|
+|12    |        alu            |T65_ALU              |    12|
+|13    |      rams             |ASTEROIDS_RAM        |     2|
+|14    |        r0             |ram_1k_5             |     1|
+|15    |        r1             |ram_1k_6             |     1|
+|16    |      rom0             |ASTEROIDS_PROG_ROM_0 |     1|
+|17    |      rom1             |ASTEROIDS_PROG_ROM_1 |     1|
+|18    |      rom2             |ASTEROIDS_PROG_ROM_2 |     1|
+|19    |      vg               |ASTEROIDS_VG         |   400|
+|20    |        u_vector_ram_1 |ASTEROIDS_RAM_0      |     2|
+|21    |          r0           |ram_1k_3             |     1|
+|22    |          r1           |ram_1k_4             |     1|
+|23    |        u_vector_ram_2 |ASTEROIDS_RAM_1      |     3|
+|24    |          r0           |ram_1k               |     2|
+|25    |          r1           |ram_1k_2             |     1|
+|26    |        u_vector_rom_1 |ASTEROIDS_VEC_ROM_1  |     9|
+|27    |    u_dac              |dac                  |    23|
++------+-----------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 857.109 ; gain = 570.684
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:14 ; elapsed = 00:01:31 . Memory (MB): peak = 857.109 ; gain = 241.410
+Synthesis Optimization Complete : Time (s): cpu = 00:01:37 ; elapsed = 00:01:45 . Memory (MB): peak = 857.109 ; gain = 570.684
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 144 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 857.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  PLL_BASE => MMCME2_ADV: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+218 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:41 ; elapsed = 00:01:49 . Memory (MB): peak = 857.109 ; gain = 583.473
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 857.109 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/asteroids_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file asteroids_top_utilization_synth.rpt -pb asteroids_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 10:16:50 2019...

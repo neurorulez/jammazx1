@@ -1,0 +1,115 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Thu May 30 09:37:55 2019
+# Process ID: 2356
+# Current directory: F:/repos/a35/NUEVO/asteroids/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9912 F:\repos\a35\NUEVO\asteroids\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/asteroids/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/asteroids/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/asteroids/A35/A35.xpr
+INFO: [Project 1-313] Project file moved from 'F:/repos/a35/NUEVO/cclimber/A35' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80_Reg.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/rtl_T80/T80_Reg.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80_Pack.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/rtl_T80/T80_Pack.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80_MCode.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/rtl_T80/T80_MCode.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80_ALU.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/rtl_T80/T80_ALU.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/ym_2149_linmix.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/ym_2149_linmix.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/rtl_T80/T80.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_samples.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/roms/cclimber_samples.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/video_gen.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/video_gen.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80s.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/rtl_T80/T80s.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_tile_bit1.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/roms/cclimber_tile_bit1.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_tile_bit0.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/roms/cclimber_tile_bit0.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_program.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/roms/cclimber_program.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_palette.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/roms/cclimber_palette.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_big_sprite_tile_bit1.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/roms/cclimber_big_sprite_tile_bit1.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_big_sprite_tile_bit0.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/roms/cclimber_big_sprite_tile_bit0.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_big_sprite_palette.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/roms/cclimber_big_sprite_palette.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/line_doubler.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/line_doubler.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/keyb/ps2_intf.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/keyb/ps2_intf.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/gen_ram.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/gen_ram.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/debounce.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/debounce.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/dac.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/dac.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/crazy_climber_sound.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/crazy_climber_sound.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/synchro.v', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/synchro.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/keyb/keyboard_wasd.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/keyb/keyboard_wasd.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/asteroids/src/crazy_climber.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/cclimber/src/crazy_climber.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:17 . Memory (MB): peak = 658.164 ; gain = 77.430
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/synchro.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80_ALU.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80_MCode.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80_Pack.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80_Reg.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80s.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_big_sprite_palette.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_big_sprite_tile_bit0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_big_sprite_tile_bit1.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_palette.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_program.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_samples.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_tile_bit0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_tile_bit1.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/crazy_climber.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/crazy_climber_sound.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/dac.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/debounce.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/gen_ram.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/keyb/keyboard_wasd.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/line_doubler.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/keyb/ps2_intf.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/video_gen.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/ym_2149_linmix.vhd] -no_script -reset -force -quiet
+remove_files  {F:/repos/a35/NUEVO/asteroids/src/synchro.v F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80.vhd F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80_ALU.vhd F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80_MCode.vhd F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80_Pack.vhd F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80_Reg.vhd F:/repos/a35/NUEVO/asteroids/src/rtl_T80/T80s.vhd F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_big_sprite_palette.vhd F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_big_sprite_tile_bit0.vhd F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_big_sprite_tile_bit1.vhd F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_palette.vhd F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_program.vhd F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_samples.vhd F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_tile_bit0.vhd F:/repos/a35/NUEVO/asteroids/src/roms/cclimber_tile_bit1.vhd F:/repos/a35/NUEVO/asteroids/src/crazy_climber.vhd F:/repos/a35/NUEVO/asteroids/src/crazy_climber_sound.vhd F:/repos/a35/NUEVO/asteroids/src/dac.vhd F:/repos/a35/NUEVO/asteroids/src/debounce.vhd F:/repos/a35/NUEVO/asteroids/src/gen_ram.vhd F:/repos/a35/NUEVO/asteroids/src/keyb/keyboard_wasd.vhd F:/repos/a35/NUEVO/asteroids/src/line_doubler.vhd F:/repos/a35/NUEVO/asteroids/src/keyb/ps2_intf.vhd F:/repos/a35/NUEVO/asteroids/src/video_gen.vhd F:/repos/a35/NUEVO/asteroids/src/ym_2149_linmix.vhd}
+set_property top asteroids_top [current_fileset]
+add_files -norecurse {F:/repos/a35/NUEVO/asteroids/src/rtl_mio/keyb/keyboard.vhd F:/repos/a35/NUEVO/asteroids/src/rtl_mio/keyb/ps2_intf.vhd}
+add_files -norecurse {F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_1.VHD F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_2.VHD F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROM_ROM.VHD F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_0.VHD F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_VEC_ROM.VHD}
+add_files -norecurse {F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_main.vhd F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_ram.vhd F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_pokey.vhd F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd}
+add_files -norecurse F:/repos/a35/NUEVO/asteroids/src/rtl_mio/dac.vhd
+add_files -norecurse F:/repos/a35/NUEVO/asteroids/src/rtl_mio/dpram.v
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_VEC_ROM.VHD] -no_script -reset -force -quiet
+remove_files  F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_VEC_ROM.VHD
+add_files -norecurse F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_VEC_ROM_1.vhd
+add_files -norecurse {F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65.vhd F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65_ALU.vhd F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65_MCode.vhd F:/repos/a35/NUEVO/asteroids/src/rtl_T65/T65_Pack.vhd}
+add_files -norecurse F:/repos/a35/NUEVO/asteroids/src/rtl_mio/ram_1k.vhd
+add_files -norecurse F:/repos/a35/NUEVO/asteroids/src/rtl_mio/debounce.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 10:17:13 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 10:17:13 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 10:20:20 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 10:20:20 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 10:21:48 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 10:21:48 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 10:23:09 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 10:23:09 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 10:24:55 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 10:24:55 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 30 10:34:01 2019...

@@ -1,0 +1,312 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'asteroids_top'
+
+Design Information
+------------------
+Command Line   : map -filter F:/repos/a35/NUEVO/astdelux/iseconfig/filter.filter
+-intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0
+-register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off
+-power off -o asteroids_top_map.ncd asteroids_top.ngd asteroids_top.pcf 
+Target Device  : xc6slx9
+Target Package : tqg144
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Fri May 31 11:17:43 2019
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    2
+Slice Logic Utilization:
+  Number of Slice Registers:                   584 out of  11,440    5%
+    Number used as Flip Flops:                 584
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      1,061 out of   5,720   18%
+    Number used as logic:                    1,052 out of   5,720   18%
+      Number using O6 output only:             827
+      Number using O5 output only:              43
+      Number using O5 and O6:                  182
+      Number used as ROM:                        0
+    Number used as Memory:                       1 out of   1,440    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             1
+        Number using O6 output only:             1
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:      8
+      Number with same-slice register load:      2
+      Number with same-slice carry load:         6
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   445 out of   1,430   31%
+  Number of MUXCYs used:                       224 out of   2,860    7%
+  Number of LUT Flip Flop pairs used:        1,177
+    Number with an unused Flip Flop:           630 out of   1,177   53%
+    Number with an unused LUT:                 116 out of   1,177    9%
+    Number of fully used LUT-FF pairs:         431 out of   1,177   36%
+    Number of unique control sets:              46
+    Number of slice register sites lost
+      to control set restrictions:             191 out of  11,440    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        77 out of     102   75%
+    Number of LOCed IOBs:                       77 out of      77  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         6 out of      32   18%
+  Number of RAMB8BWERs:                          6 out of      64    9%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       3 out of      16   18%
+    Number used as BUFGs:                        3
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     200    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     200    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      16    0%
+  Number of ICAPs:                               1 out of       1  100%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       2   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                4.28
+
+Peak Memory Usage:  383 MB
+Total REAL time to MAP completion:  33 secs 
+Total CPU time to MAP completion:   33 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   pm/u_asteroids/p_addr_decode1.decc<1> is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network sram_dq<1>_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 2 more times for the following
+   (max. 5 shown):
+   sram_dq<0>_IBUF,
+   JJOY<6>_IBUF
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal SYS_CLK are pushed forward
+   through input buffer.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   1 block(s) removed
+   2 block(s) optimized away
+   1 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "pclkbufg2" (CKBUF) removed.
+ The signal "pllclk2" is loadless and has been removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| JAUDIO                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JB<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JB<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JB<2>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JB<3>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JCOIN<0>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JCOIN<1>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JG<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JG<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JG<2>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JG<3>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JHSYNC                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JJOY<0>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JJOY<1>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JJOY<2>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JJOY<3>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JJOY<4>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JJOY<5>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JJOY<6>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JJOY<7>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JOYSTICK<0>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JOYSTICK<1>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JOYSTICK<2>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JOYSTICK<3>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JOYSTICK<4>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JOYSTICK<5>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JR<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JR<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JR<2>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JR<3>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JSELECT                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| JSERVICE                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JTEST                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JVSYNC                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED                                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| O_AUDIO_L                          | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| O_AUDIO_R                          | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| O_HSYNC                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| O_NTSC                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| O_PAL                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| O_VIDEO_B<0>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| O_VIDEO_B<1>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| O_VIDEO_B<2>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| O_VIDEO_G<0>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| O_VIDEO_G<1>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| O_VIDEO_G<2>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| O_VIDEO_R<0>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| O_VIDEO_R<1>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| O_VIDEO_R<2>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| O_VSYNC                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SYS_CLK                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ps2_clk                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ps2_data                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sram_addr<0>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<1>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<2>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<3>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<4>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<5>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<6>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<7>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<8>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<9>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<10>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<11>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<12>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<13>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<14>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<15>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<16>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<17>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<18>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<19>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<20>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_dq<0>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sram_dq<1>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sram_we_n                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

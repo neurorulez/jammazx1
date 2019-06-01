@@ -1,0 +1,377 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Thu May 30 11:21:13 2019
+# Process ID: 10804
+# Current directory: F:/repos/a35/NUEVO/asteroids/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11140 F:\repos\a35\NUEVO\asteroids\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/asteroids/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/asteroids/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/asteroids/A35/A35.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 685.449 ; gain = 104.316
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 11:28:44 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 11:28:44 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+reset_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 764.727 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 11:30:32 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 11:30:32 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 11:31:21 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 11:31:21 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 11:37:04 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 11:37:04 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3.1
+  **** Build date : Mar 26 2019-05:02:51
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1691.625 ; gain = 725.523
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 11:46:01 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 11:46:01 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 12:26:25 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 12:26:25 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 12:39:58 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 12:39:58 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 12:49:59 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 12:49:59 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 13:00:34 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 13:00:34 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 13:23:45 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 13:23:45 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 13:25:13 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 13:25:13 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 13:26:23 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 13:26:23 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 13:35:23 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 13:35:23 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 13:36:04 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 13:36:04 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 13:42:25 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 13:42:25 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 13:49:54 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+2. Failed to delete one or more files in run directory F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 13:49:59 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 13:49:59 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 13:51:27 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 13:51:27 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 14:03:22 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 14:03:22 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+ipx::create_abstraction_definition xilinx.com user memoria_rtl 1.0
+ipx::create_bus_definition xilinx.com user memoria 1.0
+set_property xml_file_name F:/repos/a35/NUEVO/asteroids/A35/../ip_repo/memoria_rtl.xml [ipx::current_busabs]
+set_property xml_file_name F:/repos/a35/NUEVO/asteroids/A35/../ip_repo/memoria.xml [ipx::current_busdef]
+set_property bus_type_vlnv xilinx.com:user:memoria:1.0 [ipx::current_busabs]
+ipx::save_abstraction_definition [ipx::current_busabs]
+ipx::save_bus_definition [ipx::current_busdef]
+set_property  ip_repo_paths  F:/repos/a35/NUEVO/asteroids/A35/../ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/repos/a35/NUEVO/asteroids/ip_repo'.
+ipx::unload_abstraction_definition f:/repos/a35/NUEVO/asteroids/ip_repo/memoria_rtl.xml
+ipx::unload_bus_definition f:/repos/a35/NUEVO/asteroids/ip_repo/memoria.xml
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 14:28:48 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 14:28:48 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 14:31:28 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 14:31:28 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 14:47:59 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 14:47:59 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 15:00:59 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 15:00:59 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 15:02:10 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 15:02:10 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 15:02:34 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 15:02:34 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 30 15:09:11 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Thu May 30 15:09:11 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/asteroids_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 30 15:15:49 2019...

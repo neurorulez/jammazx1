@@ -1,0 +1,2665 @@
+/*
+
+Xilinx Vivado v2018.3.1 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2489853 on Tue Mar 26 04:20:25 MDT 2019
+IP Build: 2486929 on Tue Mar 26 06:44:21 MDT 2019
+
+Process ID (PID): 1676
+License: Customer
+
+Current time: 	Sat Jun 01 11:01:35 CEST 2019
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 33 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	F:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sysop
+User home directory: C:/Users/sysop
+User working directory: F:/repos/a35/NUEVO/llander/A35
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: F:/Xilinx/Vivado
+HDI_APPROOT: F:/Xilinx/Vivado/2018.3
+RDI_DATADIR: F:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: F:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	F:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/repos/a35/NUEVO/llander/A35/vivado.log
+Vivado journal file location: 	F:/repos/a35/NUEVO/llander/A35/vivado.jou
+Engine tmp dir: 	F:/repos/a35/NUEVO/llander/A35/.Xil/Vivado-1676-W7-PC
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: F:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: F:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: F:/Xilinx/Vivado/2018.3
+XILINX_SDK: F:/Xilinx/SDK/2018.3
+XILINX_VIVADO: F:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: F:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 542 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: F:\repos\a35\NUEVO\llander\A35\A35.xpr. Version: Vivado v2018.3.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/repos/a35/NUEVO/llander/A35/A35.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project F:/repos/a35/NUEVO/llander/A35/A35.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// HMemoryUtils.trashcanNow. Engine heap size: 568 MB. GUI used memory: 44 MB. Current time: 6/1/19, 11:01:38 AM CEST
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 97 MB (+99674kb) [00:00:28]
+// [Engine Memory]: 608 MB (+485571kb) [00:00:28]
+// [GUI Memory]: 102 MB (+11kb) [00:00:33]
+// WARNING: HEventQueue.dispatchEvent() is taking  9507 ms.
+// [Engine Memory]: 685 MB (+49521kb) [00:00:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  1881 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 709.324 ; gain = 132.359 
+// Project name: A35; location: F:/repos/a35/NUEVO/llander/A35; part: xc7a35tftg256-1
+// [Engine Memory]: 767 MB (+49502kb) [00:00:40]
+// WARNING: updateGUI() is taking  1081 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1051 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 789 MB. GUI used memory: 60 MB. Current time: 6/1/19, 11:01:56 AM CEST
+dismissDialog("Open Project"); // bx (cp)
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, llander_top (modulo_top_a35t.v)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, llander_top (modulo_top_a35t.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, llander_top (modulo_top_a35t.v)]", 1); // B (D, cp)
+// PAPropertyPanels.initPanels (asteroids_main.vhd) elapsed time: 0.4s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, llander_top (modulo_top_a35t.v), pm : ASTEROIDS_MAIN(RTL) (asteroids_main.vhd)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, llander_top (modulo_top_a35t.v), pm : ASTEROIDS_MAIN(RTL) (asteroids_main.vhd)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("asteroids_main.vhd", 307, 280); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 294, 314); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 299, 325); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 302, 342); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 306, 363); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 304, 379); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 307, 392); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 108 MB (+875kb) [00:01:29]
+// PAPropertyPanels.initPanels (asteroids_main.vhd) elapsed time: 0.3s
+// WARNING: HEventQueue.dispatchEvent() is taking  3182 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// 'Q' command handler elapsed time: 3 seconds
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3.1   **** Build date : Mar 26 2019-05:02:51     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  7760 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,687 MB. GUI used memory: 54 MB. Current time: 6/1/19, 11:03:08 AM CEST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1699.289 ; gain = 827.531 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,687 MB (+924816kb) [00:01:53]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// Elapsed time: 12 seconds
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// PAPropertyPanels.initPanels (xc7a35t_0) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 149 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, llander_top (modulo_top_a35t.v), pm : ASTEROIDS_MAIN(RTL) (asteroids_main.vhd), u_asteroids : ASTEROIDS(RTL) (asteroids.vhd)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, llander_top (modulo_top_a35t.v), pm : ASTEROIDS_MAIN(RTL) (asteroids_main.vhd), u_asteroids : ASTEROIDS(RTL) (asteroids.vhd), rom1 : ASTEROIDS_PROG_ROM_1(prom) (ASTEROIDS_PROG_ROM_1.VHD)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 71 seconds
+selectCodeEditor("asteroids.vhd", 164, 145); // cl (w, cp)
+// Elapsed time: 167 seconds
+selectCodeEditor("asteroids.vhd", 168, 75); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 174, 77); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 181, 77); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 188, 78); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("asteroids.vhd", 240, 190); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 226, 177); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("asteroids.vhd", 164, 162); // cl (w, cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Elapsed time: 21 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectCodeEditor("asteroids.vhd", 165, 141); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("asteroids.vhd", 140, 96); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 180, 105); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 173, 105); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,705 MB. GUI used memory: 55 MB. Current time: 6/1/19, 11:11:40 AM CEST
+// Elapsed time: 24 seconds
+selectCodeEditor("asteroids.vhd", 218, 139); // cl (w, cp)
+// Elapsed time: 58 seconds
+selectCodeEditor("asteroids.vhd", 172, 268); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 266, 267); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 218, 269); // cl (w, cp)
+// Elapsed time: 10 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("asteroids.vhd", 381, 276); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 368, 267); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("asteroids.vhd", 297, 246); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("asteroids.vhd", 267, 214); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 218, 211); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 232, 214); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 266, 214); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 216, 212); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 236, 212); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 168, 242); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 169, 251); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("asteroids.vhd", 239, 260); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 167, 247); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids_main.vhd", 0); // k (j, cp)
+selectCodeEditor("asteroids_main.vhd", 209, 332); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids.vhd", 1); // k (j, cp)
+selectCodeEditor("asteroids.vhd", 217, 243); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 171, 212); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("asteroids.vhd", 280, 176); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 263, 198); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids_main.vhd", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids.vhd", 1); // k (j, cp)
+selectCodeEditor("asteroids.vhd", 221, 175); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 216, 147); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 219, 163); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids_main.vhd", 0); // k (j, cp)
+selectCodeEditor("asteroids_main.vhd", 211, 316); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 281, 349); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids.vhd", 1); // k (j, cp)
+selectCodeEditor("asteroids.vhd", 162, 197); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 169, 333); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 225, 334); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids_main.vhd", 0); // k (j, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("asteroids_main.vhd", 314, 314); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 314, 350); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 316, 319); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids.vhd", 1); // k (j, cp)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids_main.vhd", 0); // k (j, cp)
+selectCodeEditor("asteroids_main.vhd", 200, 296); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 187, 321); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 170, 297); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids.vhd", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids_main.vhd", 0); // k (j, cp)
+selectCodeEditor("asteroids_main.vhd", 286, 348); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 291, 326); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 309, 307); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids.vhd", 1); // k (j, cp)
+selectCodeEditor("asteroids.vhd", 169, 282); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 173, 297); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 163, 297); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 170, 295); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 222, 303); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectCodeEditor("asteroids.vhd", 245, 159); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 247, 188); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 242, 185); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 250, 200); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 359, 136); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 302, 159); // cl (w, cp)
+// Elapsed time: 121 seconds
+selectCodeEditor("asteroids.vhd", 181, 162); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 180, 147); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 180, 125); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 178, 108); // cl (w, cp)
+// Elapsed time: 54 seconds
+selectCodeEditor("asteroids.vhd", 417, 231); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 272, 228); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 272, 149); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 273, 228); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 271, 142); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("asteroids.vhd", 366, 251); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("asteroids.vhd", 39, 164); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 39, 164, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("asteroids.vhd", 246, 164); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("asteroids.vhd", 388, 192); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 241, 103); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 394, 232); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 337, 98); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 350, 108); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("asteroids.vhd", 278, 132); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("asteroids.vhd", 306, 228); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 272, 230); // cl (w, cp)
+// Elapsed time: 34 seconds
+selectCodeEditor("asteroids.vhd", 274, 230); // cl (w, cp)
+// Elapsed time: 43 seconds
+selectCodeEditor("asteroids.vhd", 278, 178); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("asteroids.vhd", 372, 129); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 276, 184); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 275, 179); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 275, 144); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("asteroids.vhd", 374, 139); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 269, 180); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("asteroids.vhd", 301, 73); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 303, 147); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 394, 179); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("asteroids.vhd", 220, 198); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("asteroids.vhd", 372, 214); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 271, 143); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("asteroids.vhd", 302, 83); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 305, 95); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 284, 92); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 222, 144); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 298, 143); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 306, 92); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("asteroids.vhd", 323, 74); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("asteroids.vhd", 276, 230); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("asteroids.vhd", 433, 198); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 276, 230); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("asteroids.vhd", 283, 329); // cl (w, cp)
+// Elapsed time: 224 seconds
+selectCodeEditor("asteroids.vhd", 420, 329); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("asteroids.vhd", 497, 290); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 426, 335); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 275, 227); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("asteroids.vhd", 379, 312); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("asteroids.vhd", 299, 97); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 277, 94); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 328, 96); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("asteroids.vhd", 275, 382); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 271, 300); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 321, 384); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 401, 382); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 461, 391); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 479, 389); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 492, 280); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 480, 294); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Jun  1 11:35:27 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 11:35:27 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,733 MB. GUI used memory: 55 MB. Current time: 6/1/19, 11:35:32 AM CEST
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 41 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectCodeEditor("asteroids.vhd", 265, 282); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-97] array index 8 out of range [F:/repos/a35/NUEVO/llander/src/rtl/asteroids.vhd:453]. ]", 4, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\repos\a35\NUEVO\llander\src\rtl\asteroids.vhd;-;;-;16;-;line;-;453;-;;-;16;-;"); // ah (Q, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids_main.vhd", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids.vhd", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids_main.vhd", 0); // k (j, cp)
+selectCodeEditor("asteroids_main.vhd", 291, 332); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids.vhd", 1); // k (j, cp)
+selectCodeEditor("asteroids.vhd", 216, 334); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids_main.vhd", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids.vhd", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids_main.vhd", 0); // k (j, cp)
+// [GUI Memory]: 115 MB (+1315kb) [00:35:52]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids.vhd", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids_main.vhd", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids.vhd", 1); // k (j, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 417ms to process. Increasing delay to 3000 ms.
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 11:37:47 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 11:37:47 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3106 ms. Increasing delay to 9318 ms.
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 345 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 127 seconds
+selectCodeEditor("asteroids.vhd", 166, 195); // cl (w, cp)
+// Elapsed time: 173 seconds
+selectCodeEditor("asteroids.vhd", 271, 144); // cl (w, cp)
+// Elapsed time: 54 seconds
+selectCodeEditor("asteroids.vhd", 273, 163); // cl (w, cp)
+// Elapsed time: 41 seconds
+selectCodeEditor("asteroids.vhd", 271, 180); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1441 ms. Increasing delay to 3000 ms.
+selectCodeEditor("asteroids.vhd", 293, 205); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 282, 179); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 277, 176); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("asteroids.vhd", 281, 232); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 276, 254); // cl (w, cp)
+// Elapsed time: 34 seconds
+selectCodeEditor("asteroids.vhd", 270, 262); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: updateGUI() is taking  1897 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1968 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 11:52:13 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 11:52:13 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: RUN_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  1105 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2122 ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,737 MB. GUI used memory: 54 MB. Current time: 6/1/19, 12:05:35 PM CEST
+// Elapsed time: 1516 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 92 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// Elapsed time: 52 seconds
+selectCodeEditor("asteroids.vhd", 163, 246); // cl (w, cp)
+// Elapsed time: 89 seconds
+selectCodeEditor("asteroids.vhd", 447, 270); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("asteroids.vhd", 442, 251); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 277, 146); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("asteroids.vhd", 275, 95); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 318, 95); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("asteroids.vhd", 272, 107); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 274, 126); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 286, 142); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 287, 159); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 290, 177); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 274, 177); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 270, 196); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 277, 179); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 273, 199); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 277, 211); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 271, 212); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 273, 194); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 273, 213); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 120 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 12:25:29 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 12:25:29 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1227 ms.
+// Elapsed time: 20 seconds
+selectCodeEditor("asteroids.vhd", 291, 292); // cl (w, cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectCodeEditor("asteroids.vhd", 337, 80); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1365 ms.
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// HOptionPane Error: 'The file 'F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // JButton (C, J)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// HOptionPane Error: 'The file 'F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bC)
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bC (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Jun  1 12:26:26 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 12:26:26 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids_main.vhd", 0); // k (j, cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 119 seconds
+selectCodeEditor("asteroids_main.vhd", 181, 334); // cl (w, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 10 seconds
+selectCodeEditor("asteroids_main.vhd", 182, 338); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids.vhd", 1); // k (j, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 123 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Elapsed time: 55 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids_main.vhd", 0); // k (j, cp)
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+selectCodeEditor("asteroids_main.vhd", 89, 168); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 89, 168, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "asteroids_main.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 180, 335); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids_main.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 92 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: updateGUI() is taking  1491 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1528 ms.
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 45 seconds
+selectCodeEditor("asteroids.vhd", 203, 107); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,744 MB. GUI used memory: 53 MB. Current time: 6/1/19, 12:35:38 PM CEST
+// Elapsed time: 47 seconds
+selectCodeEditor("asteroids.vhd", 178, 77); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 12:36:19 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 12:36:19 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("asteroids.vhd", 219, 143); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 69, 73); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 69, 73, false, false, false, false, true); // cl (w, cp) - Double Click
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 120 seconds
+selectCodeEditor("asteroids.vhd", 366, 94); // cl (w, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2898 ms. Increasing delay to 4000 ms.
+// Elapsed time: 90 seconds
+selectCodeEditor("asteroids.vhd", 128, 74); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 166, 85); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 286, 91); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 503, 98); // cl (w, cp)
+// WARNING: HTimer (StateMonitor Timer) is taking 1677ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1677 ms.
+// Elapsed time: 26 seconds
+selectCodeEditor("asteroids.vhd", 511, 97); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("asteroids.vhd", 309, 96); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 16 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectCodeEditor("asteroids.vhd", 578, 99); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 572, 98); // cl (w, cp)
+// Elapsed time: 43 seconds
+selectCodeEditor("asteroids.vhd", 583, 97); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("asteroids.vhd", 213, 350); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 12:43:23 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 12:43:23 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 57 seconds
+selectCodeEditor("asteroids.vhd", 125, 27); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 66 seconds
+selectCodeEditor("asteroids.vhd", 515, 27); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 180, 25); // cl (w, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 160 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 69 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("asteroids.vhd", 161, 128); // cl (w, cp)
+// Elapsed time: 45 seconds
+selectCodeEditor("asteroids.vhd", 152, 219); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 360, 294); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 126, 128); // cl (w, cp)
+// Elapsed time: 47 seconds
+selectCodeEditor("asteroids.vhd", 134, 134); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 126, 126); // cl (w, cp)
+// Elapsed time: 46 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("asteroids.vhd", 175, 177); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 169, 162); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 170, 161); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 167, 157); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 170, 177); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 169, 191); // cl (w, cp)
+// Elapsed time: 18 seconds
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 12:53:50 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 12:53:50 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("asteroids.vhd", 77, 124); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 15, 130); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 0, 126); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 107 seconds
+selectCodeEditor("asteroids.vhd", 0, 124); // cl (w, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 157 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 105 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+selectCodeEditor("asteroids.vhd", 251, 212); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 237, 263); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 197, 296); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 170, 294); // cl (w, cp)
+// Elapsed time: 22 seconds
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 65 seconds
+selectCodeEditor("asteroids.vhd", 140, 128); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 169, 125); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 13:02:50 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 13:02:50 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,744 MB. GUI used memory: 53 MB. Current time: 6/1/19, 1:05:42 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1046 ms.
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 291 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// Elapsed time: 19 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 146 seconds
+selectCodeEditor("asteroids.vhd", 240, 214); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("asteroids.vhd", 170, 327); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 239, 295); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("asteroids.vhd", 257, 296); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 167, 313); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 148, 128); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("asteroids.vhd", 165, 281); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 168, 297); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 267, 299, true, false, false, false, false); // cl (w, cp) - Shift Key
+selectCodeEditor("asteroids.vhd", 194, 263); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1224 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 19 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 13:12:14 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 13:12:14 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 44 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2715] syntax error near ' [F:/repos/a35/NUEVO/llander/src/rtl/asteroids.vhd:462]. ]", 9, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\repos\a35\NUEVO\llander\src\rtl\asteroids.vhd;-;;-;16;-;line;-;462;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("asteroids.vhd", 169, 174); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// HOptionPane Error: 'The file 'F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bC)
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bC (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 13:13:25 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 13:13:25 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("asteroids.vhd", 162, 244); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 162, 244, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("asteroids.vhd", 93, 233); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 93, 233, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("asteroids.vhd", 318, 76); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 145, 249); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 145, 249, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 404, 73); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 376, 102); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 245, 242); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 134 seconds
+selectCodeEditor("asteroids.vhd", 78, 175); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 78, 175, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("asteroids.vhd", 342, 243); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 342, 243, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("asteroids.vhd", 347, 242, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af (al, Popup.HeavyWeightWindow)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: RUN_COMPLETED
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// Elapsed time: 50 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Close Hardware Target"); // n (cp)
+// ah (cp): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// WARNING: HEventQueue.dispatchEvent() is taking  4195 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,036 MB. GUI used memory: 54 MB. Current time: 6/1/19, 1:18:22 PM CEST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1019ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1019 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,072 MB. GUI used memory: 54 MB. Current time: 6/1/19, 1:18:53 PM CEST
+// [Engine Memory]: 2,120 MB (+365503kb) [02:17:51]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,284 MB. GUI used memory: 54 MB. Current time: 6/1/19, 1:19:08 PM CEST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,541 MB. GUI used memory: 55 MB. Current time: 6/1/19, 1:19:11 PM CEST
+// [Engine Memory]: 2,541 MB (+330123kb) [02:17:56]
+// Xgd.load filename: F:/Xilinx/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_floorplan.xgd elapsed time: 0.7s
+// WARNING: HEventQueue.dispatchEvent() is taking  1008 ms.
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 3s
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: F:/Xilinx/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 2.5s
+// [GUI Memory]: 123 MB (+2444kb) [02:18:03]
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 131 MB (+1589kb) [02:18:06]
+// WARNING: HEventQueue.dispatchEvent() is taking  6384 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 67 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3.1 INFO: [Device 21-403] Loading part xc7a35tftg256-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.503 . Memory (MB): peak = 2570.887 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.503 . Memory (MB): peak = 2570.887 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2570.887 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 4 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 4 instances  
+// TclEventType: CURR_DESIGN_SET
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0,0
+// WARNING: HEventQueue.dispatchEvent() is taking  1320 ms.
+// Tcl Message: open_run: Time (s): cpu = 00:01:08 ; elapsed = 00:01:05 . Memory (MB): peak = 2674.344 ; gain = 924.941 
+// ExpRunCommands.openImplResults elapsed time: 67.2s
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// Elapsed time: 70 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bx)
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bx)
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 145 MB (+7713kb) [02:18:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  4560 ms.
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// HMemoryUtils.trashcanNow. Engine heap size: 2,664 MB. GUI used memory: 91 MB. Current time: 6/1/19, 1:19:33 PM CEST
+// 'dQ' command handler elapsed time: 77 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  2275 ms.
+dismissDialog("Open Implemented Design"); // bx (cp)
+// [Engine Memory]: 2,669 MB (+1530kb) [02:18:22]
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+selectCodeEditor("asteroids.vhd", 56, 133); // cl (w, cp)
+closeFrame(PAResourceOtoP.PAViews_NETLIST, "Netlist"); // ax (aI, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (Q, cp)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (Q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // X (q, cp)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // X (q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// WARNING: HEventQueue.dispatchEvent() is taking  1110 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,687 MB. GUI used memory: 89 MB. Current time: 6/1/19, 1:21:24 PM CEST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Elapsed time: 100 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Close Hardware Target"); // n (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,722 MB. GUI used memory: 88 MB. Current time: 6/1/19, 1:21:54 PM CEST
+// Elapsed time: 33 seconds
+selectCodeEditor("asteroids.vhd", 254, 198); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 168, 160); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 56 seconds
+selectCodeEditor("asteroids.vhd", 167, 195); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("asteroids.vhd", 138, 146); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("asteroids.vhd", 172, 144); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 169, 144); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 137, 142); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 140, 142); // cl (w, cp)
+// Elapsed time: 56 seconds
+selectCodeEditor("asteroids.vhd", 172, 145); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 168, 145); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 130, 146); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 140, 144); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 93 seconds
+selectCodeEditor("asteroids.vhd", 430, 250); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 238, 281); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("asteroids.vhd", 479, 280); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 202, 278); // cl (w, cp)
+// Elapsed time: 268 seconds
+selectCodeEditor("asteroids.vhd", 315, 159); // cl (w, cp)
+// Elapsed time: 62 seconds
+selectCodeEditor("asteroids.vhd", 365, 180); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 358, 159); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 273, 196); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 348, 157); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 272, 178); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 421, 173); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 414, 180); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("asteroids.vhd", 477, 346); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 271, 195); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("asteroids.vhd", 396, 182); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 417, 192); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 544, 196); // cl (w, cp)
+// Elapsed time: 81 seconds
+selectCodeEditor("asteroids.vhd", 477, 311); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 280, 212); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("asteroids.vhd", 308, 209); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 304, 232); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 306, 248); // cl (w, cp)
+// Elapsed time: 48 seconds
+selectCodeEditor("asteroids.vhd", 276, 264); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("asteroids.vhd", 269, 281); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 267, 281); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 466, 286); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 400, 199); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 505, 279); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 373, 281); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 544, 283); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("asteroids.vhd", 304, 402); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1265 ms.
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: [Sat Jun  1 13:38:59 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 13:38:59 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  1137 ms.
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 323 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 51 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+selectCodeEditor("asteroids.vhd", 276, 256); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 275, 284); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 274, 299); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 275, 382); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: updateGUI() is taking  1471 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1507 ms.
+// Elapsed time: 11 seconds
+selectCodeEditor("asteroids.vhd", 165, 142); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 203, 143); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("asteroids.vhd", 235, 319); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// A (cp): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 6 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Jun  1 13:46:41 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 13:46:41 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 293 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,724 MB. GUI used memory: 88 MB. Current time: 6/1/19, 1:51:55 PM CEST
+// Elapsed time: 93 seconds
+selectCodeEditor("asteroids.vhd", 276, 178); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 284, 178); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("asteroids.vhd", 142, 60); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Jun  1 13:53:51 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 13:53:51 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// Elapsed time: 16 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 124 seconds
+selectCodeEditor("asteroids.vhd", 155, 244); // cl (w, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 154 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// Elapsed time: 32 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+// TclEventType: HW_TARGET_CLOSE
+dismissDialog("Close Hardware Target"); // n (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("asteroids.vhd", 291, 281); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("asteroids.vhd", 320, 260); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 44 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("asteroids.vhd", 269, 228); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 362, 234); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 340, 229); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 272, 335); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 271, 244); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 270, 230); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 271, 262); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 275, 227); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 272, 331); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 14:02:17 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 14:02:17 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 292 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("asteroids.vhd", 164, 125); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 269, 156); // cl (w, cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 18 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// Elapsed time: 34 seconds
+selectCodeEditor("asteroids.vhd", 284, 91); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("asteroids.vhd", 332, 214); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: [Sat Jun  1 14:09:43 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 14:09:43 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 97 seconds
+selectCodeEditor("asteroids.vhd", 267, 206); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 423, 211); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, llander_top (modulo_top_a35t.v), pm : ASTEROIDS_MAIN(RTL) (asteroids_main.vhd)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, llander_top (modulo_top_a35t.v), pm : ASTEROIDS_MAIN(RTL) (asteroids_main.vhd)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("asteroids_main.vhd", 298, 293); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 299, 332); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+selectCodeEditor("asteroids_main.vhd", 34, 277); // cl (w, cp)
+selectCodeEditor("asteroids_main.vhd", 72, 326); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "asteroids.vhd", 0); // k (j, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 164 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 54 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+selectCodeEditor("asteroids.vhd", 278, 92); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 316, 96); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 365, 105); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 359, 127); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 313, 197); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 101 seconds
+selectCodeEditor("asteroids.vhd", 128, 24); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 152 MB (+198kb) [03:17:03]
+// Elapsed time: 34 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: [Sat Jun  1 14:19:02 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 14:19:02 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 83 seconds
+selectCodeEditor("asteroids.vhd", 110, 189); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 110, 189, false, false, false, false, true); // cl (w, cp) - Double Click
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,726 MB. GUI used memory: 87 MB. Current time: 6/1/19, 2:21:56 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1453 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2125 ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 212 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 74 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("asteroids.vhd", 318, 317); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 318, 317, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("asteroids.vhd", 318, 317); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 324, 318); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 340, 315); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 340, 315, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 157, 180); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 157, 180, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("asteroids.vhd", 120, 186); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 106, 177); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 491, 162); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 406, 162); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectCodeEditor("asteroids.vhd", 534, 371); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 394, 157); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 0, 94); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 298, 142); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 1, 58); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("asteroids.vhd", 228, 184); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 2, 99); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 14:27:33 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 14:27:33 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectCodeEditor("asteroids.vhd", 32, 195); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("asteroids.vhd", 134, 175); // cl (w, cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1031] control_thr_ll is not declared [F:/repos/a35/NUEVO/llander/src/rtl/asteroids.vhd:585]. ]", 4, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\repos\a35\NUEVO\llander\src\rtl\asteroids.vhd;-;;-;16;-;line;-;585;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("asteroids.vhd", 481, 177); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 133, 251); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 14:28:38 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 14:28:38 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 273 seconds
+selectCodeEditor("asteroids.vhd", 540, 222); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 94 seconds
+selectCodeEditor("asteroids.vhd", 273, 237); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 2, 193); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("asteroids.vhd", 3, 193); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 14:35:29 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 14:35:29 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 62 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 63 seconds
+selectCodeEditor("asteroids.vhd", 103, 282); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+// aS (cp): Cancel Implementation: addNotify
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a (aS)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Cancel Implementation"); // aS (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Jun  1 14:37:58 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 14:37:58 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 171 seconds
+selectCodeEditor("asteroids.vhd", 418, 159); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("asteroids.vhd", 282, 250); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1765 ms.
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 101 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 34 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("asteroids.vhd", 252, 180); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 71 seconds
+selectCodeEditor("asteroids.vhd", 316, 243); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 312, 220); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 170, 210); // cl (w, cp)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1121 ms.
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("asteroids.vhd", 172, 246); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1123 ms.
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 14:46:53 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 14:46:53 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("asteroids.vhd", 177, 264); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 177, 264, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 409, 94); // cl (w, cp)
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+// bx (cp):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (C, I)
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (cp)
+selectCodeEditor("asteroids.vhd", 133, 268); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 133, 268, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "asteroids.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 475, 92); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 475, 92, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "asteroids.vhd", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// f (cp): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: [Sat Jun  1 14:47:30 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 14:47:30 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("asteroids.vhd", 205, 159); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("asteroids.vhd", 182, 163); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 79 seconds
+selectCodeEditor("asteroids.vhd", 212, 162); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 197, 175); // cl (w, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,726 MB. GUI used memory: 88 MB. Current time: 6/1/19, 2:51:58 PM CEST
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 152 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 91 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// Elapsed time: 57 seconds
+selectCodeEditor("asteroids.vhd", 167, 361); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("asteroids.vhd", 284, 317); // cl (w, cp)
+// Elapsed time: 51 seconds
+selectCodeEditor("asteroids.vhd", 277, 261); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 269, 264); // cl (w, cp)
+selectCodeEditor("asteroids.vhd", 274, 264); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat Jun  1 14:57:06 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/synth_1/runme.log [Sat Jun  1 14:57:06 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 103 seconds
+selectCodeEditor("asteroids.vhd", 173, 247); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 191 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/llander/A35/A35.runs/impl_1/llander_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Elapsed time: 40 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Close Hardware Target"); // n (cp)
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE

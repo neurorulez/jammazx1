@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Fri May 31 10:12:22 2019
+# Process ID: 9120
+# Current directory: F:/repos/a35/NUEVO/asteroids/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5472 F:\repos\a35\NUEVO\asteroids\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/asteroids/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/asteroids/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/asteroids/A35/A35.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'F:/repos/a35/NUEVO/asteroids/ip_repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/repos/a35/NUEVO/asteroids/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 663.949 ; gain = 79.668
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl_mio/dpram.v] -no_script -reset -force -quiet
+remove_files  F:/repos/a35/NUEVO/asteroids/src/rtl_mio/dpram.v
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROM_ROM.VHD] -no_script -reset -force -quiet
+remove_files  F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROM_ROM.VHD
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_pokey.vhd] -no_script -reset -force -quiet
+remove_files  F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_pokey.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May 31 10:14:45 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/synth_1/runme.log
+[Fri May 31 10:14:45 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/asteroids/A35/A35.runs/impl_1/runme.log

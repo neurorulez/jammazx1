@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Jun  1 08:55:58 2019
+# Process ID: 13128
+# Current directory: F:/repos/a35/NUEVO/bwidow/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12312 F:\repos\a35\NUEVO\bwidow\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/bwidow/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/bwidow/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/bwidow/A35/A35.xpr
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_1.VHD] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_2.VHD] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_0.VHD] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_main.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_ram.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd] -no_script -reset -force -quiet
+remove_files  {F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_1.VHD F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_2.VHD F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_PROG_ROM_0.VHD F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_main.vhd F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_ram.vhd F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_vg.vhd F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids_dw.vhd F:/repos/a35/NUEVO/asteroids/src/rtl/asteroids.vhd}
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_VEC_ROM_1.vhd] -no_script -reset -force -quiet
+remove_files  F:/repos/a35/NUEVO/asteroids/src/roms/ASTEROIDS_VEC_ROM_1.vhd
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/bwidow/src/rtl_mio/ram_1k.vhd] -no_script -reset -force -quiet
+remove_files  F:/repos/a35/NUEVO/bwidow/src/rtl_mio/ram_1k.vhd
+set_property top bwidow_top [current_fileset]
+add_files -norecurse {F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgme.vhd F:/repos/a35/NUEVO/bwidow/src/rtl/pkg_bwidow.vhd F:/repos/a35/NUEVO/bwidow/src/rtl/ram_2k.vhd F:/repos/a35/NUEVO/bwidow/src/rtl/pgmrom.vhd F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgmb.vhd F:/repos/a35/NUEVO/bwidow/src/rtl/vecrom.vhd F:/repos/a35/NUEVO/bwidow/src/roms/rom_vecc.vhd F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgmf.vhd F:/repos/a35/NUEVO/bwidow/src/roms/rom_veca.vhd F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgmd.vhd F:/repos/a35/NUEVO/bwidow/src/rtl/vector_drawer.vhd F:/repos/a35/NUEVO/bwidow/src/rtl/avg.vhd F:/repos/a35/NUEVO/bwidow/src/rtl/ram2k.vhd F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgma.vhd F:/repos/a35/NUEVO/bwidow/src/rtl/pokey.vhd F:/repos/a35/NUEVO/bwidow/src/roms/rom_pgmc.vhd F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_dw.vhd F:/repos/a35/NUEVO/bwidow/src/roms/rom_vecb.vhd F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow_main.vhd F:/repos/a35/NUEVO/bwidow/src/rtl/earom.vhd F:/repos/a35/NUEVO/bwidow/src/rtl/bwidow.vhd F:/repos/a35/NUEVO/bwidow/src/roms/rom_vecd.vhd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/bwidow/A35/A35.runs/impl_1/bwidow_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/bwidow/A35/A35.runs/impl_1/bwidow_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/bwidow/A35/A35.runs/impl_1/bwidow_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/bwidow/A35/A35.runs/impl_1/bwidow_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/bwidow/A35/A35.runs/impl_1/bwidow_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/bwidow/A35/A35.runs/impl_1/bwidow_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/bwidow/src/rtl_mio/keyb/keyboard.vhd] -no_script -reset -force -quiet
+remove_files  F:/repos/a35/NUEVO/bwidow/src/rtl_mio/keyb/keyboard.vhd
+add_files -norecurse F:/repos/a35/NUEVO/bwidow/src/rtl_mio/keyb/keyboard_wasd.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/bwidow/A35/A35.runs/impl_1/bwidow_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

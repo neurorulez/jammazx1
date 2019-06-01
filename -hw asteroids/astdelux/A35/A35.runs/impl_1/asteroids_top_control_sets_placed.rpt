@@ -1,0 +1,164 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Fri May 31 13:05:16 2019
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file asteroids_top_control_sets_placed.rpt
+| Design       : asteroids_top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    89 |
+| Unused register locations in slices containing registers |   283 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           16 |
+|      2 |            1 |
+|      4 |            6 |
+|      5 |            5 |
+|      6 |            1 |
+|      7 |            1 |
+|      8 |           33 |
+|      9 |            4 |
+|     10 |            4 |
+|     11 |            1 |
+|     12 |            8 |
+|    16+ |            9 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             124 |           53 |
+| No           | No                    | Yes                    |              86 |           30 |
+| No           | Yes                   | No                     |              26 |            8 |
+| Yes          | No                    | No                     |             383 |          122 |
+| Yes          | No                    | Yes                    |             154 |           68 |
+| Yes          | Yes                   | No                     |              88 |           21 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+----------------------------------------------+--------------------------------------------------+------------------+----------------+
+|         Clock Signal        |                 Enable Signal                |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++-----------------------------+----------------------------------------------+--------------------------------------------------+------------------+----------------+
+|  JOY_CLK_OBUF               | joy2[6]                                      |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF               |                                              | p_0_in__0                                        |                1 |              1 |
+|  JOY_CLK_OBUF               | joy1[0]                                      |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF               | joy1[1]                                      |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF               | joy1[2]                                      |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF               | joy1[3]                                      |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF               | joy1[4]                                      |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF               | joy1[5]                                      |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF               | joy1[6]                                      |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF               | joy1[7]                                      |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF               | joy1[11]                                     |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF               | joy2[7]                                      |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF               | joy2[11]                                     |                                                  |                1 |              1 |
+|  clk12                      | keyb/ps2/DATA_reg[0]_0                       |                                                  |                1 |              1 |
+|  delay_count_reg__0_BUFG[0] |                                              | pm/u_asteroids/vg/dma_ld_l_t1_i_2_n_0            |                1 |              1 |
+|  delay_count_reg__0_BUFG[0] |                                              | pm/u_asteroids/reset_l_i_2_n_0                   |                1 |              1 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/beam_ena                      | pm/u_asteroids/pokey/cnt_15k[5]_i_1_n_0          |                1 |              2 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/ena_3K                        | pm/u_asteroids/cpu/reset_l_reg                   |                1 |              4 |
+|  clk12                      | keyb/ps2/bit_count                           |                                                  |                1 |              4 |
+|  clk25                      |                                              |                                                  |                4 |              4 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/expld_snd_1                   | pm/u_asteroids/expld_snd[3]_i_1_n_0              |                1 |              4 |
+|  clk25                      | pm/u_DW/Vid_data0                            | pm/u_DW/Vid_data[3]_i_1_n_0                      |                1 |              4 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/vg/scale_reg0                 |                                                  |                1 |              4 |
+|  JOY_CLK_OBUF               |                                              | joy_count[4]_i_1_n_0                             |                2 |              5 |
+|  clk12                      |                                              | delay_count[4]_i_2_n_0                           |                1 |              5 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/pokey/AUDIO_OUT[7]_i_2_n_0    | pm/u_asteroids/pokey/AUDIO_OUT[7]_i_1_n_0        |                3 |              5 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/ena_1_5M_reg[0]           | pm/u_asteroids/cpu/reset_l_reg                   |                3 |              5 |
+|  clk25                      | pm/u_DW/raster_active                        |                                                  |                1 |              5 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/ena_1_5M_reg_0[0]         | pm/u_asteroids/cpu/reset_l_reg                   |                1 |              6 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/BAH[6]_i_1_n_0            | pm/u_asteroids/cpu/reset_l_reg                   |                4 |              7 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/R_W_n_i_reg_3[0]          |                                                  |                2 |              8 |
+|  clk12                      | keyb/ps2/DATA[7]_i_1_n_0                     |                                                  |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/R_W_n_i_reg_4[0]          |                                                  |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/R_W_n_i_reg_5[0]          |                                                  |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/R_W_n_i_reg_6[0]          |                                                  |                3 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/R_W_n_i_reg_7[0]          |                                                  |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/X[7]_i_1_n_0              |                                                  |                5 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/p_1_out[7]                |                                                  |                4 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/ena_12K                       |                                                  |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/Set_Addr_To_r_reg[0]_2[0] |                                                  |                3 |              8 |
+|  delay_count_reg__0_BUFG[0] |                                              | pm/u_asteroids/pokey/SS[0]                       |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/vg/dvx_bus[11]_i_1_n_0        |                                                  |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/vg/p_2_out0                   | pm/u_asteroids/vg/dvx_bus[7]_i_1_n_0             |                1 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/vg/adma_bus172_in             | pm/u_asteroids/vg/dvy_bus[7]_i_1_n_0             |                1 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/pokey/tone_gen_cnt[1]_1       |                                                  |                3 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/vg/timer[3]_i_2_n_0           | pm/u_asteroids/cpu/SR[0]                         |                3 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/pokey/tone_gen_cnt[3]_4       |                                                  |                3 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/pokey/pot_cnt0                | pm/u_asteroids/pokey/potgo                       |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/pokey/pot_fin35_in            |                                                  |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/pokey/tone_gen_cnt[4]_3       |                                                  |                3 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/pokey/tone_gen_cnt[2]_2       |                                                  |                3 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/AD                        | pm/u_asteroids/cpu/reset_l_reg                   |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/BAL[7]_i_1_n_0            | pm/u_asteroids/cpu/reset_l_reg                   |                4 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/DL                        | pm/u_asteroids/cpu/reset_l_reg                   |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/Mode_r                    | pm/u_asteroids/cpu/reset_l_reg                   |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/PC[15]_i_1_n_0            | pm/u_asteroids/cpu/reset_l_reg                   |                4 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/PC[7]_i_1_n_0             | pm/u_asteroids/cpu/reset_l_reg                   |                4 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/S[7]_i_1_n_0              | pm/u_asteroids/cpu/reset_l_reg                   |                4 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/Y[7]_i_1_n_0              |                                                  |                5 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/ena_3K_reg                | pm/u_asteroids/reset_l_i_2_n_0                   |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/R_W_n_i_reg_0[0]          |                                                  |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/R_W_n_i_reg_1[0]          |                                                  |                2 |              8 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/cpu/R_W_n_i_reg_2[0]          |                                                  |                1 |              8 |
+|  clk12                      | keyb/ps2/shiftreg                            |                                                  |                2 |              9 |
+|  clk12                      | el_multiboot/el_multiboot/Q[0]               | el_multiboot/el_multiboot/indx_rep[3]_i_1_n_0    |                2 |              9 |
+|  clk25                      | pm/u_DW/raster_active010_out                 | pm/u_DW/raster_active0                           |                3 |              9 |
+|  clk25                      | pm/u_DW/vcount[8]_i_1_n_0                    | keyb/resetKey_reg_0                              |                2 |              9 |
+|  clk25                      | pm/u_DW/eqOp11_in                            | keyb/resetKey_reg_0                              |                4 |             10 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/beam_ena                      | pm/u_asteroids/vg/timer_counter[0]               |                6 |             10 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/ena_12K                       | pm/u_asteroids/cpu/reset_l_reg                   |                3 |             10 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/vg/timer_counter[10]_i_1_n_0  |                                                  |                3 |             10 |
+|  clk12                      | keyb/p_0_in                                  |                                                  |                2 |             11 |
+|  clk25                      |                                              | pm/u_DW/VIDEO_R_OUT[2]_i_1_n_0                   |                3 |             12 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/vg/stack_reg[0]_5             |                                                  |                3 |             12 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/vg/stack_reg[1]_6             |                                                  |                2 |             12 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/vg/xpos_bus[0]_i_1_n_0        |                                                  |                3 |             12 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/vg/ypos_bus[0]_i_1_n_0        |                                                  |                3 |             12 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/vg/adma_bus[1]_i_1_n_0        |                                                  |                3 |             12 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/vg/stack_reg[2][11]_i_1_n_0   |                                                  |                2 |             12 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/vg/stack_reg[3]_7             |                                                  |                3 |             12 |
+|  delay_count_reg__0_BUFG[0] |                                              | keyb/resetKey_reg_0                              |                8 |             21 |
+|  clk12                      | keyb/p_0_in                                  | el_multiboot/el_multiboot/icap_data0[31]_i_1_n_0 |                3 |             23 |
+|  clk25                      | keyb/dw_addr0                                |                                                  |                9 |             25 |
+|  clk25                      |                                              | keyb/resetKey_reg_0                              |                8 |             26 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/beam_ena                      | pm/u_asteroids/cpu/reset_l_reg                   |               20 |             29 |
+|  clk12                      |                                              |                                                  |               14 |             31 |
+|  delay_count_reg__0_BUFG[0] |                                              | pm/u_asteroids/cpu/reset_l_reg                   |               11 |             32 |
+|  delay_count_reg__0_BUFG[0] | pm/u_asteroids/beam_ena                      |                                                  |               18 |             70 |
+|  delay_count_reg__0_BUFG[0] |                                              |                                                  |               35 |             89 |
++-----------------------------+----------------------------------------------+--------------------------------------------------+------------------+----------------+
+
+
