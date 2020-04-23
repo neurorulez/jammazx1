@@ -1,0 +1,48 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+WARNING:sim - A core named 'dcm_dsp' already exists in the project. Output
+   products for this core may be overwritten.
+Resolving generics for 'dcm_dsp'...
+WARNING:sim - A core named 'dcm_dsp' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'dcm_dsp'...
+Delivering associated files for 'dcm_dsp'...
+WARNING:sim - Component clk_wiz_v3_6 does not have a valid model name for
+   Verilog synthesis
+Delivering EJava files for 'dcm_dsp'...
+Delivered 3 files into directory
+D:/repos/lx16/zxunoxt_v2_rev/ipcore_dir/tmp/_cg/dcm_dsp
+Delivered 1 file into directory
+D:/repos/lx16/zxunoxt_v2_rev/ipcore_dir/tmp/_cg/dcm_dsp
+Generating ASY schematic symbol...
+Loading device for application Rf_Device from file '6slx16.nph' in environment
+C:\Xilinx\14.7\ISE_DS\ISE\.
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'dcm_dsp'...
+Generating ISE project...
+XCO file found: dcm_dsp.xco
+XMDF file found: dcm_dsp_xmdf.tcl
+Adding D:/repos/lx16/zxunoxt_v2_rev/ipcore_dir/tmp/_cg/dcm_dsp.asy -view all
+-origin_type imported
+Adding D:/repos/lx16/zxunoxt_v2_rev/ipcore_dir/tmp/_cg/dcm_dsp.ucf -view all
+-origin_type created
+Adding D:/repos/lx16/zxunoxt_v2_rev/ipcore_dir/tmp/_cg/dcm_dsp.v -view all
+-origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "D:/repos/lx16/zxunoxt_v2_rev/ipcore_dir/tmp/_cg/dcm_dsp.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding D:/repos/lx16/zxunoxt_v2_rev/ipcore_dir/tmp/_cg/dcm_dsp.veo -view all
+-origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/dcm_dsp"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'dcm_dsp'.

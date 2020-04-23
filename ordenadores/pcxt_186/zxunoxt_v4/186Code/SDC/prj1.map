@@ -1,0 +1,183 @@
+Open Watcom Linker Version 1.9
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       15/02/24 00:46:40
+Executable Image: prj1.com
+creating a DOS .COM executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+DGROUP                          0172:0000            0000533d
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+head_TEXT              CODE           AUTO           0000:0000       00000000
+_TEXT                  CODE           AUTO           0000:0000       00001720
+sd_fast_TEXT           CODE           AUTO           0000:1720       00000000
+_DATA                  DATA           DGROUP         0172:0000       00000059
+CONST                  DATA           DGROUP         0177:000a       00000144
+CONST2                 DATA           DGROUP         018b:000e       00000000
+XIB                    DATA           DGROUP         018b:000e       00000000
+XI                     DATA           DGROUP         018b:000e       00000006
+XIE                    DATA           DGROUP         018c:0004       00000000
+YIB                    DATA           DGROUP         018c:0004       00000000
+YI                     DATA           DGROUP         018c:0004       00000000
+YIE                    DATA           DGROUP         018c:0004       00000000
+_BSS                   BSS            DGROUP         018d:0000       0000518d
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: head.obj(D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\head.asm)
+0000:0265      cls_
+0000:023b      flush_
+0000:01c4*     defpal_
+0000:0203      setpal_
+0000:01ed*     getpal_
+0000:0000*     putpixel_
+0000:0000      cputpixel_
+0000:01c1*     LEDdisplay_
+0000:0139*     muldiv8_
+0000:0140*     muldiv_
+0000:024a      vscroll_
+0000:0000*     hrzline_
+0000:019b      delline_
+0000:01af      dispchr_
+0000:0145      int21hanlder_
+0000:0183      setcursor_
+0000:015b      showcursor_
+0000:016c*     getcursor_
+0000:0275      _small_code_
+0000:0276*     __compiled_under_generic
+0000:0277      ___wcpp_4_data_init_fs_root_
+0000:0278*     __ppfltused_
+0000:0100      _cstart_
+0000:0279*     _Not_Enough_Memory_
+0000:027a      __GETDS
+0000:027b*     ___begtext
+0000:027c      __do_exit_with_msg__
+0000:027d*     __exit_
+0000:027e*     __nullarea
+Module: sd_fast.obj(D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\sd_fast.asm)
+0000:0439      sdinit_
+0000:028b      sdread_
+0000:02a0      sdwrite_
+0000:027f*     sdsb_
+Module: main.obj(D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\main.cpp)
+0000:0500+     void near dispstr( char near * )
+0000:0511+     long unsigned near HCS_to_LBA( int unsigned, int unsigned )
+0000:0556+     void near showpartinfo( sPartInfo near *, int )
+0000:05f0+     void near diskinfo( long unsigned, int )
+0000:064b      main_
+0172:11b0+     char near c[]
+0172:1230+     char near buf[]
+Module: tty.obj(D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\tty.cpp)
+0000:0733+     void near pc( int )
+0000:0797+     void near nint21( int unsigned, int )
+0000:07c2      void near initTTY()
+0000:07d6      void near SetTextColor( char unsigned )
+0172:5234+     int near cx
+0172:5236+     int near cy
+0172:5238+     char unsigned near textcolor
+Module: C:\WATCOM/lib286/dos\clibs.lib(crwdata)
+0172:0028*     __curbrk
+0172:0030*     __STACKLOW
+0172:0032*     __STACKTOP
+0172:0034*     __cbyte
+0172:0036*     __child
+0172:0038      __no87
+0172:0046*     ___FPE_handler
+0172:002a*     __psp
+0172:003a*     __get_ovl_stack
+0172:003e*     __restore_ovl_stack
+0172:0042*     __close_ovl_file
+0172:004a*     __LpCmdLine
+0172:004e*     __LpPgmName
+0172:002c*     __osmajor
+0172:002d*     __osminor
+0172:002e*     __osmode
+0172:002f*     __HShift
+Module: C:\WATCOM/lib286/dos\clibs.lib(i4m)
+0000:07da      __I4M
+0000:07da      __U4M
+Module: C:\WATCOM/lib286/dos\clibs.lib(sprintf.c)
+0000:07f2      sprintf_
+Module: C:\WATCOM/lib286/dos\clibs.lib(sgdef086)
+0172:019e      __Start_XI
+0172:01a4      __End_XI
+0172:01a4      __Start_YI
+0172:01a4      __End_YI
+Module: C:\WATCOM/lib286/dos\clibs.lib(vsprintf.c)
+0000:0825      vsprintf_
+Module: C:\WATCOM/lib286/dos\clibs.lib(prtf.c)
+0000:0837      __prtf_
+Module: C:\WATCOM/lib286/dos\clibs.lib(wctomb.c)
+0000:1396      wctomb_
+Module: C:\WATCOM/lib286/dos\clibs.lib(itoa.c)
+0000:13b3+     utoa_
+0000:13f8      itoa_
+Module: C:\WATCOM/lib286/dos\clibs.lib(strupr.c)
+0000:1413      strupr_
+Module: C:\WATCOM/lib286/dos\clibs.lib(noefgfmt.c)
+0172:0052      ___EFG_printf
+0172:0054*     ___EFG_scanf
+Module: C:\WATCOM/lib286/dos\clibs.lib(mbisdbcs.c)
+0172:523a      ___IsDBCS
+Module: C:\WATCOM/lib286/dos\clibs.lib(mbislead.c)
+0000:1443*     _ismbblead_
+0172:523c      ___MBCSIsTable
+Module: C:\WATCOM/lib286/dos\clibs.lib(lltoa.c)
+0000:1458      ulltoa_
+0000:151d*     lltoa_
+Module: C:\WATCOM/lib286/dos\clibs.lib(ltoa.c)
+0000:1570      ultoa_
+0000:15c3*     ltoa_
+Module: C:\WATCOM/lib286/dos\clibs.lib(alphabet.c)
+0172:0178      ___Alphabet
+Module: C:\WATCOM/lib286/dos\clibs.lib(xmsg.c)
+0000:15e3*     __exit_with_msg_
+0000:15e6      __fatal_runtime_error_
+Module: C:\WATCOM/lib286/dos\clibs.lib(mbinit.c)
+0000:1634      __mbinit_
+0172:0056+     ___MBCodePage
+Module: C:\WATCOM/lib286/dos\clibs.lib(enterdb.c)
+0000:1704      __EnterWVIDEO_
+0172:0058+     ___WD_Present
+Warning! W1019: file head.obj(D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\head.asm): segment relocation at 0000:0105
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+C:\WATCOM/lib286/dos\clibs.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  1000 (4096.)
+Memory size:  6a5d (27229.)
+Entry point address: 0000:0100
+Link time: 00:00.15

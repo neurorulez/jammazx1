@@ -1,0 +1,476 @@
+Open Watcom Linker Version 1.9
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       15/07/16 16:56:20
+Executable Image: prj1.com
+creating a DOS .COM executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+DGROUP                          059b:000a            00002c5a
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+head_TEXT              CODE           AUTO           0000:0000       00000000
+_TEXT                  CODE           AUTO           0000:0000       000059ba
+_DATA                  DATA           DGROUP         059b:000a       00000296
+CONST                  DATA           DGROUP         05c5:0000       00000190
+CONST2                 DATA           DGROUP         05de:0000       000001e2
+XIB                    DATA           DGROUP         05fc:0002       00000000
+XI                     DATA           DGROUP         05fc:0002       00000024
+XIE                    DATA           DGROUP         05fe:0006       00000000
+YIB                    DATA           DGROUP         05fe:0006       00000000
+YI                     DATA           DGROUP         05fe:0006       00000006
+YIE                    DATA           DGROUP         05fe:000c       00000000
+_BSS                   BSS            DGROUP         05ff:0000       00002624
+_emu_init_start        EMU            DGROUP         0861:0004       00000000
+_emu_init_end          EMU            DGROUP         0861:0004       00000000
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: head.obj(E:\Work\xilinx\Pipistrello\Next186_SoC_HDMI\186Code\3d_graph\head.asm)
+0000:0296      cls_
+0000:0268*     flush_
+0000:01e4      defpal_
+0000:0223*     setpal_
+0000:020d*     getpal_
+0000:025a      putpixel_
+0000:024f      cputpixel_
+0000:01e1*     LEDdisplay_
+0000:0181*     muldiv8_
+0000:0188*     muldiv_
+0000:0279*     vscroll_
+0000:01bd*     hrzline_
+0000:01a3*     fillrect_
+0000:0000*     dispchr_
+0000:018d*     int21hanlder_
+0000:02a9*     _LineDraw
+059b:000c      _SCREEN_SEGMENT
+0000:044d      _small_code_
+0000:044e*     __compiled_under_generic
+0000:044f      ___wcpp_4_data_init_fs_root_
+0000:0450      __ppfltused_
+0000:0100      _cstart_
+0000:0451*     _Not_Enough_Memory_
+0000:0452      __GETDS
+0000:0453*     ___begtext
+0000:0454      __do_exit_with_msg__
+0000:0455      __exit_
+0000:0456*     __nullarea
+Module: main.obj(E:\Work\xilinx\Pipistrello\Next186_SoC_HDMI\186Code\3d_graph\main.cpp)
+059b:0e40+     int near ll
+059b:0e42+     int near g
+059b:0e44+     int near i
+059b:0e46+     int near j
+059b:0e48+     int near n
+059b:0e4a+     int near l
+059b:0e4c+     int near x
+059b:0e4e+     int near y
+059b:0e50+     int near ia
+059b:0e52+     int near ib
+059b:0e54+     int near ic
+059b:0e56+     int near id
+059b:0e58+     int near ie
+059b:0e5a+     int near rl2d
+059b:0e5c+     float near a
+059b:0e60+     float near b
+059b:0e64+     float near c
+059b:0e68+     float near d
+059b:0e6c+     float near e
+0000:0457*     void near dispstr( char near * )
+0000:0465+     float near f( float, float )
+0000:04ae+     void near draw( int )
+0000:05f8+     void near Draw3D()
+0000:0a9a      main_
+059b:0e70+     float near ix
+059b:0e74+     float near iy
+059b:0e78+     char near z
+059b:0e7a+     int near o[]
+059b:10fa+     int near u[]
+059b:137a+     int near v[]
+059b:15fa+     bool near q
+059b:15fb+     bool near qq
+059b:15fc+     bool near ql
+059b:15fe+     int near s[][50]
+059b:2986+     int near m[][2]
+Module: next186.obj(E:\Work\xilinx\Pipistrello\Next186_SoC_HDMI\186Code\3d_graph\next186.cpp)
+0000:0aa7*     int unsigned near Random32( int )
+0000:0ad8*     void near circle( int, int, int, char )
+0000:0bb1      void near DisplayPage( int )
+0000:0bc7      void near DrawPage( int )
+Module: E:\WATCOM/lib286/dos\clibs.lib(crwdata)
+059b:000e      __curbrk
+059b:0016      __STACKLOW
+059b:0018      __STACKTOP
+059b:001a*     __cbyte
+059b:001c*     __child
+059b:001e      __no87
+059b:002c      ___FPE_handler
+059b:0010      __psp
+059b:0020*     __get_ovl_stack
+059b:0024*     __restore_ovl_stack
+059b:0028*     __close_ovl_file
+059b:0030*     __LpCmdLine
+059b:0034*     __LpPgmName
+059b:0012      __osmajor
+059b:0013*     __osminor
+059b:0014      __osmode
+059b:0015*     __HShift
+Module: E:\WATCOM/lib286/dos\clibs.lib(initrtns.c)
+0000:0c0c      __FInitRtns
+0000:0c10+     __InitRtns
+0000:0c6b*     __FFiniRtns
+0000:0c6f      __FiniRtns
+Module: E:\WATCOM/lib286/dos\clibs.lib(fsfd086)
+0000:0cd4      __FSFD
+Module: E:\WATCOM/lib286\maths.lib(sincos.c)
+0000:0fed*     IF@SIN
+0000:0ffb      IF@DSIN
+0000:0ffb*     sin_
+0000:1011*     IF@COS
+0000:101b      IF@DCOS
+0000:101b*     cos_
+0000:1031*     IF@TAN
+0000:103b+     IF@DTAN
+0000:103b*     tan_
+Module: E:\WATCOM/lib286/dos\clibs.lib(fdmth086)
+0000:10e3      __FDA
+0000:109a*     __EDA
+0000:10b2      __FDS
+0000:1082*     __EDS
+0000:125d      __FDM
+0000:106a*     __EDM
+0000:13d6      __FDD
+0000:1052*     __EDD
+Module: E:\WATCOM/lib286/dos\clibs.lib(fdfs086)
+0000:1652      __FDFS
+Module: E:\WATCOM/lib286/dos\clibs.lib(i4fs086)
+0000:169a      __I4FS
+0000:16ac*     __U4FS
+Module: E:\WATCOM/lib286/dos\clibs.lib(fsmth086)
+0000:1707      __FSA
+0000:1702*     __FSS
+0000:17ee      __FSM
+0000:18a0      __FSD
+Module: E:\WATCOM/lib286/dos\clibs.lib(toupper.c)
+0000:19bb      toupper_
+Module: E:\WATCOM/lib286/dos\clibs.lib(fdc086)
+0000:19e7      __FDC
+0000:19ca*     __EDC
+Module: E:\WATCOM/lib286/dos\clibs.lib(fsn086)
+0000:1a2c      __FSN
+Module: E:\WATCOM/lib286/dos\clibs.lib(fdi4086)
+0000:1a42      __FDI4
+0000:1a3d*     __RDI4
+0000:1a47*     __FDU4
+0000:1a38*     __RDU4
+Module: E:\WATCOM/lib286/dos\clibs.lib(i4fd086)
+0000:1ae4      __I4FD
+0000:1af4*     __U4FD
+Module: E:\WATCOM/lib286/dos\clibs.lib(fsi4086)
+0000:1b98      __FSI4
+0000:1ba0*     __FSU4
+0000:1ba8*     __FSI2
+0000:1bb0*     __FSU2
+0000:1bb8*     __FSI1
+0000:1bc0*     __FSU1
+Module: E:\WATCOM/lib286/dos\clibs.lib(fltused.c)
+059b:0046      _fltused_
+Module: E:\WATCOM/lib286/dos\clibs.lib(i4m)
+0000:1c22      __I4M
+0000:1c22      __U4M
+Module: E:\WATCOM/lib286/dos\clibs.lib(sgdef086)
+059b:0612      __Start_XI
+059b:0636      __End_XI
+059b:0636      __Start_YI
+059b:063c      __End_YI
+Module: E:\WATCOM/lib286\maths.lib(frexp.c)
+0000:1c3a      frexp_
+Module: E:\WATCOM/lib286\maths.lib(fprem086)
+0000:1c8a      __fprem_
+Module: E:\WATCOM/lib286/dos\clibs.lib(fdn086)
+0000:1d7e      __FDN
+Module: E:\WATCOM/lib286\maths.lib(math2err.c)
+0000:1d92      __math1err_
+0000:1d94      __math2err_
+Module: E:\WATCOM/lib286\maths.lib(evalpoly.c)
+0000:1e95      _EvalPoly_
+0000:1ed9      _OddPoly_
+Module: E:\WATCOM/lib286/dos\clibs.lib(seterrno.c)
+0000:1f09      __set_errno_
+0000:1f17      __set_EDOM_
+0000:1f23      __set_ERANGE_
+0000:1f2f*     __set_EINVAL_
+0000:1f3e      __set_doserrno_
+Module: E:\WATCOM/lib286/dos\clibs.lib(hugeval.c)
+059b:04d2      __HugeValue
+Module: E:\WATCOM/lib286/dos\clibs.lib(_8087)
+059b:0076      __8087
+059b:0077      __real87
+059b:0078      __dos87emucall
+059b:007a      __dos87real
+Module: E:\WATCOM/lib286\maths.lib(sin087)
+0000:1f6d      __sin87
+0000:1f62      __cos87
+Module: E:\WATCOM/lib286\maths.lib(tan087)
+0000:2048      __tan87
+Module: E:\WATCOM/lib286/dos\clibs.lib(fstat086)
+059b:007c*     _FPStatus_
+0000:2100      F8UnderFlow
+0000:2104      F4UnderFlow
+0000:2110      F8InvalidOp
+0000:2119      F8DivZero
+0000:214b      F4DivZero
+0000:212b      F8OverFlow
+0000:215d      F4OverFlow
+0000:2130*     F8RetInf_
+0000:2130*     _F8RetInf_
+Module: E:\WATCOM/lib286/dos\clibs.lib(fdiv_patch)
+0000:22fc      __fdiv_fpr
+0000:279c*     __fdiv_chk
+0000:27b0      __fdiv_m32
+0000:27f7*     __fdiv_m64
+0000:283e*     __fdiv_m32r
+0000:2885      __fdiv_m64r
+Module: E:\WATCOM/lib286/dos\clibs.lib(chipvar)
+059b:007e      ___chipbug
+059b:007e      __chipbug
+Module: E:\WATCOM/lib286/dos\clibs.lib(setefg.c)
+0000:28cc      __setEFGfmt_
+Module: E:\WATCOM/lib286\maths.lib(_matherr.c)
+0000:28d9*     _set_matherr_
+0000:28dd+     __rterrmsg_
+0000:2912      _matherr_
+059b:0082+     ___matherr_handler
+Module: E:\WATCOM/lib286/dos\clibs.lib(errno.c)
+0000:2946      __get_errno_ptr_
+0000:294a      __get_doserrno_ptr_
+059b:2a54+     _errno
+059b:2a56+     __doserrno
+Module: E:\WATCOM/lib286/dos\clibs.lib(chk8087.c)
+0000:2962*     _fpreset_
+0000:2988      __init_8087_
+0000:29a5+     __default_sigfpe_handler_
+0000:29b5      __chk8087_
+Module: E:\WATCOM/lib286/dos\clibs.lib(chipt16.asm)
+0000:2a20      __fptan_chk
+Module: E:\WATCOM/lib286/dos\clibs.lib(chipbug.c)
+0000:2ac1      __verify_pentium_fdiv_bug_
+Module: E:\WATCOM/lib286/dos\clibs.lib(noefgfmt.c)
+059b:0084      ___EFG_printf
+059b:0086      ___EFG_scanf
+Module: E:\WATCOM/lib286\maths.lib(efgfmt.c)
+0000:2b38      _EFG_Format_
+Module: E:\WATCOM/lib286\maths.lib(cnvs2d.c)
+0000:2c95      __cnvs2d_
+Module: E:\WATCOM/lib286\maths.lib(__mtherr)
+0000:2cae      __matherr
+Module: E:\WATCOM/lib286/dos\clibs.lib(iobaddr.c)
+0000:2cb1      __get_std_stream_
+0000:2cb1*     __get_std_file_
+Module: E:\WATCOM/lib286/dos\clibs.lib(fputs.c)
+0000:2ccd      fputs_
+Module: E:\WATCOM/lib286/dos\clibs.lib(fputc.c)
+0000:2d44      fputc_
+Module: E:\WATCOM/lib286/dos\clibs.lib(8087cw.c)
+059b:0088      __8087cw
+Module: E:\WATCOM/lib286/dos\clibs.lib(save8087.c)
+059b:008a      ___Save8087
+059b:008c      ___Rest8087
+Module: E:\WATCOM/lib286/dos\clibs.lib(xmsg.c)
+0000:2deb*     __exit_with_msg_
+0000:2dee      __fatal_runtime_error_
+Module: E:\WATCOM/lib286/dos\clibs.lib(grabfp87.c)
+0000:2e08      __GrabFP87_
+Module: E:\WATCOM/lib286/dos\clibs.lib(init8087)
+0000:2e1c*     __init_8087_emu
+0000:2e20      __x87id
+Module: E:\WATCOM/lib286/dos\clibs.lib(rtcntrl.c)
+0000:2e5f*     _SetLD64bit_
+0000:2e65*     _SetLD80bit_
+0000:2e6b      _LDisDouble_
+Module: E:\WATCOM/lib286\maths.lib(ldcvt.c)
+0000:2f29      _LDScale10x_
+0000:342d      __LDcvt_
+Module: E:\WATCOM/lib286\maths.lib(fdld086)
+0000:382e      __iFDLD
+Module: E:\WATCOM/lib286\maths.lib(strtod.c)
+0000:3d9f+     __Strtold_
+0000:3ef5      strtod_
+Module: E:\WATCOM/lib286\maths.lib(matherr.c)
+0000:404a      matherr_
+Module: E:\WATCOM/lib286/dos\clibs.lib(iob.c)
+059b:011c      ___iob
+059b:0234*     __fmode
+059b:2a58      ___OpenStreams
+059b:2a5a      ___ClosedStreams
+Module: E:\WATCOM/lib286/dos\clibs.lib(flush.c)
+0000:404d      __flush_
+Module: E:\WATCOM/lib286/dos\clibs.lib(ioalloc.c)
+0000:4136      __ioalloc_
+Module: E:\WATCOM/lib286/dos\clibs.lib(enterdb.c)
+0000:41a2      __EnterWVIDEO_
+059b:0236+     ___WD_Present
+Module: E:\WATCOM/lib286/dos\clibs.lib(exit.c)
+0000:41be+     __null_int23_exit_
+0000:41bf*     exit_
+0000:41dd*     _exit_
+059b:0238+     ___int23_exit
+059b:023a      ___FPE_handler_exit
+Module: E:\WATCOM/lib286/dos\clibs.lib(fpe87)
+0000:41f2      __Init_FPE_handler_
+0000:422b      __Fini_FPE_handler_
+0000:4262*     __FPEHandler
+Module: E:\WATCOM/lib286\maths.lib(fldm086)
+0000:44f4      __FLDM
+0000:45b9*     ___LDM
+Module: E:\WATCOM/lib286\maths.lib(fldd086)
+0000:4754      __FLDD
+0000:477c*     ___LDD
+Module: E:\WATCOM/lib286\maths.lib(ldclass.c)
+0000:4a34      __LDClass_
+0000:4a80*     _FLClass_
+Module: E:\WATCOM/lib286/dos\clibs.lib(i4d)
+0000:4a9c      __I4D
+0000:4ae5*     __U4D
+Module: E:\WATCOM/lib286\maths.lib(ldi4086)
+0000:4b6a      __LDI4
+0000:4b6a*     __LDU4
+Module: E:\WATCOM/lib286\maths.lib(i4ld086)
+0000:4bd8      __I4LD
+0000:4be9*     __U4LD
+Module: E:\WATCOM/lib286\maths.lib(flda086)
+0000:4c6d*     __FLDA
+0000:4c2c      __FLDS
+0000:4c95*     __FLDAC
+0000:4c58*     __FLDSC
+0000:4cc4*     ___LDA
+Module: E:\WATCOM/lib286/dos\clibs.lib(istable.c)
+059b:04e8      __IsTable
+Module: E:\WATCOM/lib286/dos\clibs.lib(tolower.c)
+0000:4e67      tolower_
+Module: E:\WATCOM/lib286\maths.lib(bufld086)
+0000:4e76      __ZBuf2LD
+Module: E:\WATCOM/lib286\maths.lib(ldfd086)
+0000:4f3e      __iLDFD
+Module: E:\WATCOM/lib286\maths.lib(inf_nan.c)
+059b:05ea*     ___f_infinity
+059b:05ee*     ___f_posqnan
+059b:05f2      ___d_infinity
+059b:05fa      ___d_posqnan
+059b:0602*     ___ld_infinity
+059b:060a*     ___ld_posqnan
+Module: E:\WATCOM/lib286/dos\clibs.lib(initfile.c)
+0000:5024      __InitFiles_
+Module: E:\WATCOM/lib286/dos\clibs.lib(ioexit.c)
+0000:50e6*     fcloseall_
+0000:50eb      __full_io_exit_
+Module: E:\WATCOM/lib286/dos\clibs.lib(__lseek.c)
+0000:50f3      __lseek_
+Module: E:\WATCOM/lib286/dos\clibs.lib(qwrit.c)
+0000:512b      __qwrite_
+Module: E:\WATCOM/lib286/dos\clibs.lib(fsync.c)
+0000:5181      fsync_
+Module: E:\WATCOM/lib286/dos\clibs.lib(chktty.c)
+0000:5184      __chktty_
+Module: E:\WATCOM/lib286/dos\clibs.lib(nmalloc.c)
+0000:51a9      _nmalloc_
+0000:51a9      malloc_
+059b:0252      ___nheapbeg
+059b:0254      ___MiniHeapRover
+059b:0256      ___LargestSizeB4MiniHeapRover
+Module: E:\WATCOM/lib286/dos\clibs.lib(fpeint.c)
+059b:0258      ___FPE_int
+Module: E:\WATCOM/lib286/dos\clibs.lib(fclose.c)
+0000:5275+     __doclose_
+0000:52f6      __shutdown_stream_
+0000:5307*     fclose_
+059b:2c60+     ___RmTmpFileFn
+Module: E:\WATCOM/lib286/dos\clibs.lib(freefp.c)
+0000:5329      __freefp_
+0000:5356      __purgefp_
+Module: E:\WATCOM/lib286/dos\clibs.lib(dosret.c)
+0000:537a*     _dosretax_
+0000:537f*     _dosret0_
+0000:5386      __set_errno_dos_
+0000:53d6*     __set_errno_dos_reterr_
+Module: E:\WATCOM/lib286/dos\clibs.lib(iomode.c)
+0000:53e0      __GetIOMode_
+0000:53f7      __SetIOMode_nogrow_
+059b:026e+     ___NFiles
+059b:0270+     ___init_mode
+059b:0298+     ___io_mode
+Module: E:\WATCOM/lib286/dos\clibs.lib(filedos.c)
+0000:540c*     _dos_close_
+0000:5418      _dos_commit_
+Module: E:\WATCOM/lib286/dos\clibs.lib(isatt.c)
+0000:5426      isatty_
+Module: E:\WATCOM/lib286/dos\clibs.lib(nmemneed.c)
+0000:5442      __nmemneed_
+Module: E:\WATCOM/lib286/dos\clibs.lib(mem.c)
+0000:5450      __MemAllocator
+0000:551a      __MemFree
+Module: E:\WATCOM/lib286/dos\clibs.lib(grownear.c)
+0000:56e3+     __LastFree_
+0000:574a      __ExpandDGROUP_
+Module: E:\WATCOM/lib286/dos\clibs.lib(nonibm.c)
+0000:5824+     __is_nonIBM_
+059b:029a      ___NonIBM
+Module: E:\WATCOM/lib286/dos\clibs.lib(_clse.c)
+0000:5866      __close_
+Module: E:\WATCOM/lib286/dos\clibs.lib(nfree.c)
+0000:5895      _nfree_
+0000:5895      free_
+059b:2c62+     ___MiniHeapFreeRover
+Module: E:\WATCOM/lib286/dos\clibs.lib(doserror)
+0000:5956      __doserror_
+Module: E:\WATCOM/lib286/dos\clibs.lib(amblksiz.c)
+059b:029c      __amblksiz
+Module: E:\WATCOM/lib286/dos\clibs.lib(heapen.c)
+059b:029e      ___heap_enabled
+Module: E:\WATCOM/lib286/dos\clibs.lib(sbrk.c)
+0000:5962*     sbrk_
+0000:5966      __brk_
+Warning! W1019: file head.obj(E:\Work\xilinx\Pipistrello\Next186_SoC_HDMI\186Code\3d_graph\head.asm): segment relocation at 0000:0105
+Warning! W1019: file clibs.lib(chk8087.c): segment relocation at 0000:29cd
+Warning! W1019: file clibs.lib(fpe87): segment relocation at 0000:429e
+Warning! W1019: file clibs.lib(fpe87): segment relocation at 0000:4348
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+E:\WATCOM/lib286/dos\clibs.lib
+E:\WATCOM/lib286\maths.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  1000 (4096.)
+Memory size:  8614 (34324.)
+Entry point address: 0000:0100
+Link time: 00:00.16

@@ -1,0 +1,170 @@
+Module: D:\work\xilinx\ddr_186\ddr_186\186Code\watcom\3d_graph\next186.cpp
+GROUP: 'DGROUP' CONST,CONST2,_DATA,_BSS
+
+File contains no line numbers.
+Segment: _TEXT BYTE USE16 00000135 bytes
+0000                          int unsigned near Random32( int ):
+0000    53                        push        bx 
+0001    51                        push        cx 
+0002    52                        push        dx 
+0003    85 C0                     test        ax,ax 
+0005    74 08                     je          L$1 
+0007    99                        cwd         
+0008    A3 00 00                  mov         word ptr long unsigned near int unsigned near Random32( int )::.0::seed,ax 
+000B    89 16 02 00               mov         word ptr long unsigned near int unsigned near Random32( int )::.0::seed+0x2,dx 
+000F                          L$1:
+000F    BB ED A3                  mov         bx,0xa3ed 
+0012    B9 F8 7F                  mov         cx,0x7ff8 
+0015    A1 00 00                  mov         ax,word ptr long unsigned near int unsigned near Random32( int )::.0::seed 
+0018    8B 16 02 00               mov         dx,word ptr long unsigned near int unsigned near Random32( int )::.0::seed+0x2 
+001C    E8 00 00                  call        __U4M 
+001F    05 31 1D                  add         ax,0x1d31 
+0022    81 D2 A0 2A               adc         dx,0x2aa0 
+0026    A3 00 00                  mov         word ptr long unsigned near int unsigned near Random32( int )::.0::seed,ax 
+0029    89 16 02 00               mov         word ptr long unsigned near int unsigned near Random32( int )::.0::seed+0x2,dx 
+002D    5A                        pop         dx 
+002E    59                        pop         cx 
+002F    5B                        pop         bx 
+0030    C3                        ret         
+
+Routine Size: 49 bytes,    Routine Base: _TEXT + 0000
+
+0031                          void near circle( int, int, int, char ):
+0031    56                        push        si 
+0032    57                        push        di 
+0033    55                        push        bp 
+0034    89 E5                     mov         bp,sp 
+0036    83 EC 14                  sub         sp,0x0014 
+0039    89 D7                     mov         di,dx 
+003B    88 4E FE                  mov         byte ptr -0x2[bp],cl 
+003E    C7 46 FC 00 00            mov         word ptr -0x4[bp],0x0000 
+0043    89 5E FA                  mov         word ptr -0x6[bp],bx 
+0046    89 5E F8                  mov         word ptr -0x8[bp],bx 
+0049    89 D9                     mov         cx,bx 
+004B    89 C6                     mov         si,ax 
+004D    F7 D9                     neg         cx 
+004F    89 46 F4                  mov         word ptr -0xc[bp],ax 
+0052    89 CA                     mov         dx,cx 
+0054    89 7E EE                  mov         word ptr -0x12[bp],di 
+0057    01 FA                     add         dx,di 
+0059    01 C1                     add         cx,ax 
+005B    89 56 F2                  mov         word ptr -0xe[bp],dx 
+005E    89 4E F0                  mov         word ptr -0x10[bp],cx 
+0061    89 DA                     mov         dx,bx 
+0063    01 D8                     add         ax,bx 
+0065    01 FA                     add         dx,di 
+0067    89 46 F6                  mov         word ptr -0xa[bp],ax 
+006A    89 56 EC                  mov         word ptr -0x14[bp],dx 
+006D                          L$2:
+006D    8A 4E FE                  mov         cl,byte ptr -0x2[bp] 
+0070    8B 46 F6                  mov         ax,word ptr -0xa[bp] 
+0073    30 ED                     xor         ch,ch 
+0075    89 FA                     mov         dx,di 
+0077    89 CB                     mov         bx,cx 
+0079    E8 00 00                  call        cputpixel_ 
+007C    8B 56 EE                  mov         dx,word ptr -0x12[bp] 
+007F    8B 46 F6                  mov         ax,word ptr -0xa[bp] 
+0082    89 CB                     mov         bx,cx 
+0084    E8 00 00                  call        cputpixel_ 
+0087    8B 46 F0                  mov         ax,word ptr -0x10[bp] 
+008A    89 CB                     mov         bx,cx 
+008C    89 FA                     mov         dx,di 
+008E    E8 00 00                  call        cputpixel_ 
+0091    8B 56 EE                  mov         dx,word ptr -0x12[bp] 
+0094    8B 46 F0                  mov         ax,word ptr -0x10[bp] 
+0097    89 CB                     mov         bx,cx 
+0099    FF 46 FC                  inc         word ptr -0x4[bp] 
+009C    E8 00 00                  call        cputpixel_ 
+009F    8B 56 EC                  mov         dx,word ptr -0x14[bp] 
+00A2    8B 46 F4                  mov         ax,word ptr -0xc[bp] 
+00A5    89 CB                     mov         bx,cx 
+00A7    47                        inc         di 
+00A8    E8 00 00                  call        cputpixel_ 
+00AB    8B 56 F2                  mov         dx,word ptr -0xe[bp] 
+00AE    8B 46 F4                  mov         ax,word ptr -0xc[bp] 
+00B1    89 CB                     mov         bx,cx 
+00B3    FF 4E EE                  dec         word ptr -0x12[bp] 
+00B6    E8 00 00                  call        cputpixel_ 
+00B9    8B 56 EC                  mov         dx,word ptr -0x14[bp] 
+00BC    89 CB                     mov         bx,cx 
+00BE    89 F0                     mov         ax,si 
+00C0    FF 46 F4                  inc         word ptr -0xc[bp] 
+00C3    E8 00 00                  call        cputpixel_ 
+00C6    89 CB                     mov         bx,cx 
+00C8    8B 4E F8                  mov         cx,word ptr -0x8[bp] 
+00CB    8B 56 F2                  mov         dx,word ptr -0xe[bp] 
+00CE    2B 4E FC                  sub         cx,word ptr -0x4[bp] 
+00D1    89 F0                     mov         ax,si 
+00D3    2B 4E FC                  sub         cx,word ptr -0x4[bp] 
+00D6    E8 00 00                  call        cputpixel_ 
+00D9    49                        dec         cx 
+00DA    4E                        dec         si 
+00DB    89 4E F8                  mov         word ptr -0x8[bp],cx 
+00DE    85 C9                     test        cx,cx 
+00E0    7C 0C                     jl          L$4 
+00E2                          L$3:
+00E2    8B 46 FA                  mov         ax,word ptr -0x6[bp] 
+00E5    3B 46 FC                  cmp         ax,word ptr -0x4[bp] 
+00E8    7D 83                     jge         L$2 
+00EA    C9                        leave       
+00EB    5F                        pop         di 
+00EC    5E                        pop         si 
+00ED    C3                        ret         
+00EE                          L$4:
+00EE    8B 46 FA                  mov         ax,word ptr -0x6[bp] 
+00F1    FF 46 F2                  inc         word ptr -0xe[bp] 
+00F4    FF 4E EC                  dec         word ptr -0x14[bp] 
+00F7    FF 46 F0                  inc         word ptr -0x10[bp] 
+00FA    03 4E FA                  add         cx,word ptr -0x6[bp] 
+00FD    FF 4E F6                  dec         word ptr -0xa[bp] 
+0100    01 C8                     add         ax,cx 
+0102    FF 4E FA                  dec         word ptr -0x6[bp] 
+0105    89 46 F8                  mov         word ptr -0x8[bp],ax 
+0108    EB D8                     jmp         L$3 
+
+Routine Size: 217 bytes,    Routine Base: _TEXT + 0031
+
+010A                          void near DisplayPage( int ):
+010A    53                        push        bx 
+010B    52                        push        dx 
+010C    89 C3                     mov         bx,ax 
+010E    B0 0C                     mov         al,0x0c 
+0110    BA B4 03                  mov         dx,0x03b4 
+0113    EE                        out         dx,al 
+0114    89 D8                     mov         ax,bx 
+0116    BA B5 03                  mov         dx,0x03b5 
+0119    C1 E0 05                  shl         ax,0x05 
+011C    EE                        out         dx,al 
+011D    C7 06 00 00 0C 00         mov         word ptr int near zz,0x000c 
+0123    5A                        pop         dx 
+0124    5B                        pop         bx 
+0125    C3                        ret         
+
+Routine Size: 28 bytes,    Routine Base: _TEXT + 010A
+
+0126                          void near DrawPage( int ):
+0126    51                        push        cx 
+0127    8A 0E 00 00               mov         cl,byte ptr int near zz 
+012B    D3 E0                     shl         ax,cl 
+012D    80 C4 A0                  add         ah,0xa0 
+0130    A3 00 00                  mov         word ptr _SCREEN_SEGMENT,ax 
+0133    59                        pop         cx 
+0134    C3                        ret         
+
+Routine Size: 15 bytes,    Routine Base: _TEXT + 0126
+
+No disassembly errors
+
+Segment: CONST BYTE USE16 00000000 bytes
+
+Segment: CONST2 BYTE USE16 00000000 bytes
+
+Segment: _DATA WORD USE16 00000002 bytes
+0000                          int near zz:
+0000    0C 00                                           ..
+
+Segment: _BSS PARA USE16 00000004 bytes
+0000                          long unsigned near int unsigned near Random32( int )::.0::seed:
+
+BSS Size: 4 bytes
+

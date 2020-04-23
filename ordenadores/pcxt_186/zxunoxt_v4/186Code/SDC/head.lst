@@ -1,0 +1,989 @@
+Module: D:\work\xilinx\ddr_186\ddr_186\186Code\watcom\SDC\head.asm
+GROUP: 'DGROUP' _DATA,CONST,_BSS
+
+File contains no line numbers.
+Segment: head_TEXT WORD USE16 00000000 bytes
+
+Routine Size: 0 bytes,    Routine Base: head_TEXT + 0000
+
+No disassembly errors
+
+Segment: _DATA WORD USE16 00000002 bytes
+0000                          L$1:
+0000    00 00                                           ..
+
+Segment: _TEXT BYTE USE16 0000027F bytes
+0000    00 00                     add         byte ptr [bx+si],al 
+0002    00 00                     add         byte ptr [bx+si],al 
+0004    00 00                     add         byte ptr [bx+si],al 
+0006    00 00                     add         byte ptr [bx+si],al 
+0008    00 00                     add         byte ptr [bx+si],al 
+000A    00 00                     add         byte ptr [bx+si],al 
+000C    00 00                     add         byte ptr [bx+si],al 
+000E    00 00                     add         byte ptr [bx+si],al 
+0010    00 00                     add         byte ptr [bx+si],al 
+0012    00 00                     add         byte ptr [bx+si],al 
+0014    00 00                     add         byte ptr [bx+si],al 
+0016    00 00                     add         byte ptr [bx+si],al 
+0018    00 00                     add         byte ptr [bx+si],al 
+001A    00 00                     add         byte ptr [bx+si],al 
+001C    00 00                     add         byte ptr [bx+si],al 
+001E    00 00                     add         byte ptr [bx+si],al 
+0020    00 00                     add         byte ptr [bx+si],al 
+0022    00 00                     add         byte ptr [bx+si],al 
+0024    00 00                     add         byte ptr [bx+si],al 
+0026    00 00                     add         byte ptr [bx+si],al 
+0028    00 00                     add         byte ptr [bx+si],al 
+002A    00 00                     add         byte ptr [bx+si],al 
+002C    00 00                     add         byte ptr [bx+si],al 
+002E    00 00                     add         byte ptr [bx+si],al 
+0030    00 00                     add         byte ptr [bx+si],al 
+0032    00 00                     add         byte ptr [bx+si],al 
+0034    00 00                     add         byte ptr [bx+si],al 
+0036    00 00                     add         byte ptr [bx+si],al 
+0038    00 00                     add         byte ptr [bx+si],al 
+003A    00 00                     add         byte ptr [bx+si],al 
+003C    00 00                     add         byte ptr [bx+si],al 
+003E    00 00                     add         byte ptr [bx+si],al 
+0040    00 00                     add         byte ptr [bx+si],al 
+0042    00 00                     add         byte ptr [bx+si],al 
+0044    00 00                     add         byte ptr [bx+si],al 
+0046    00 00                     add         byte ptr [bx+si],al 
+0048    00 00                     add         byte ptr [bx+si],al 
+004A    00 00                     add         byte ptr [bx+si],al 
+004C    00 00                     add         byte ptr [bx+si],al 
+004E    00 00                     add         byte ptr [bx+si],al 
+0050    00 00                     add         byte ptr [bx+si],al 
+0052    00 00                     add         byte ptr [bx+si],al 
+0054    00 00                     add         byte ptr [bx+si],al 
+0056    00 00                     add         byte ptr [bx+si],al 
+0058    00 00                     add         byte ptr [bx+si],al 
+005A    00 00                     add         byte ptr [bx+si],al 
+005C    00 00                     add         byte ptr [bx+si],al 
+005E    00 00                     add         byte ptr [bx+si],al 
+0060    00 00                     add         byte ptr [bx+si],al 
+0062    00 00                     add         byte ptr [bx+si],al 
+0064    00 00                     add         byte ptr [bx+si],al 
+0066    00 00                     add         byte ptr [bx+si],al 
+0068    00 00                     add         byte ptr [bx+si],al 
+006A    00 00                     add         byte ptr [bx+si],al 
+006C    00 00                     add         byte ptr [bx+si],al 
+006E    00 00                     add         byte ptr [bx+si],al 
+0070    00 00                     add         byte ptr [bx+si],al 
+0072    00 00                     add         byte ptr [bx+si],al 
+0074    00 00                     add         byte ptr [bx+si],al 
+0076    00 00                     add         byte ptr [bx+si],al 
+0078    00 00                     add         byte ptr [bx+si],al 
+007A    00 00                     add         byte ptr [bx+si],al 
+007C    00 00                     add         byte ptr [bx+si],al 
+007E    00 00                     add         byte ptr [bx+si],al 
+0080    00 00                     add         byte ptr [bx+si],al 
+0082    00 00                     add         byte ptr [bx+si],al 
+0084    00 00                     add         byte ptr [bx+si],al 
+0086    00 00                     add         byte ptr [bx+si],al 
+0088    00 00                     add         byte ptr [bx+si],al 
+008A    00 00                     add         byte ptr [bx+si],al 
+008C    00 00                     add         byte ptr [bx+si],al 
+008E    00 00                     add         byte ptr [bx+si],al 
+0090    00 00                     add         byte ptr [bx+si],al 
+0092    00 00                     add         byte ptr [bx+si],al 
+0094    00 00                     add         byte ptr [bx+si],al 
+0096    00 00                     add         byte ptr [bx+si],al 
+0098    00 00                     add         byte ptr [bx+si],al 
+009A    00 00                     add         byte ptr [bx+si],al 
+009C    00 00                     add         byte ptr [bx+si],al 
+009E    00 00                     add         byte ptr [bx+si],al 
+00A0    00 00                     add         byte ptr [bx+si],al 
+00A2    00 00                     add         byte ptr [bx+si],al 
+00A4    00 00                     add         byte ptr [bx+si],al 
+00A6    00 00                     add         byte ptr [bx+si],al 
+00A8    00 00                     add         byte ptr [bx+si],al 
+00AA    00 00                     add         byte ptr [bx+si],al 
+00AC    00 00                     add         byte ptr [bx+si],al 
+00AE    00 00                     add         byte ptr [bx+si],al 
+00B0    00 00                     add         byte ptr [bx+si],al 
+00B2    00 00                     add         byte ptr [bx+si],al 
+00B4    00 00                     add         byte ptr [bx+si],al 
+00B6    00 00                     add         byte ptr [bx+si],al 
+00B8    00 00                     add         byte ptr [bx+si],al 
+00BA    00 00                     add         byte ptr [bx+si],al 
+00BC    00 00                     add         byte ptr [bx+si],al 
+00BE    00 00                     add         byte ptr [bx+si],al 
+00C0    00 00                     add         byte ptr [bx+si],al 
+00C2    00 00                     add         byte ptr [bx+si],al 
+00C4    00 00                     add         byte ptr [bx+si],al 
+00C6    00 00                     add         byte ptr [bx+si],al 
+00C8    00 00                     add         byte ptr [bx+si],al 
+00CA    00 00                     add         byte ptr [bx+si],al 
+00CC    00 00                     add         byte ptr [bx+si],al 
+00CE    00 00                     add         byte ptr [bx+si],al 
+00D0    00 00                     add         byte ptr [bx+si],al 
+00D2    00 00                     add         byte ptr [bx+si],al 
+00D4    00 00                     add         byte ptr [bx+si],al 
+00D6    00 00                     add         byte ptr [bx+si],al 
+00D8    00 00                     add         byte ptr [bx+si],al 
+00DA    00 00                     add         byte ptr [bx+si],al 
+00DC    00 00                     add         byte ptr [bx+si],al 
+00DE    00 00                     add         byte ptr [bx+si],al 
+00E0    00 00                     add         byte ptr [bx+si],al 
+00E2    00 00                     add         byte ptr [bx+si],al 
+00E4    00 00                     add         byte ptr [bx+si],al 
+00E6    00 00                     add         byte ptr [bx+si],al 
+00E8    00 00                     add         byte ptr [bx+si],al 
+00EA    00 00                     add         byte ptr [bx+si],al 
+00EC    00 00                     add         byte ptr [bx+si],al 
+00EE    00 00                     add         byte ptr [bx+si],al 
+00F0    00 00                     add         byte ptr [bx+si],al 
+00F2    00 00                     add         byte ptr [bx+si],al 
+00F4    00 00                     add         byte ptr [bx+si],al 
+00F6    00 00                     add         byte ptr [bx+si],al 
+00F8    00 00                     add         byte ptr [bx+si],al 
+00FA    00 00                     add         byte ptr [bx+si],al 
+00FC    00 00                     add         byte ptr [bx+si],al 
+00FE    00 00                     add         byte ptr [bx+si],al 
+
+.186
+extrn   main_: proc near
+public cls_
+public flush_
+public defpal_
+public setpal_
+public getpal_
+public putpixel_
+public cputpixel_
+public LEDdisplay_
+public muldiv8_
+public muldiv_
+public vscroll_
+public hrzline_
+public delline_
+public dispchr_
+public int21hanlder_
+public setcursor_
+public showcursor_
+public getcursor_
+
+public _small_code_
+public __compiled_under_generic
+public ___wcpp_4_data_init_fs_root_
+public __ppfltused_
+public _cstart_
+extrn   __no87                  : byte
+extrn __FInitRtns: proc near
+public    _Not_Enough_Memory_
+public    __GETDS
+public    ___begtext
+public    __do_exit_with_msg__
+public    __exit_
+public    __nullarea
+
+
+DGROUP          GROUP   CONST,_DATA,_BSS
+assume cs:_TEXT, ds:DGROUP, ss:DGROUP
+_TEXT           SEGMENT BYTE PUBLIC USE16 'CODE'
+    org 100h
+_cstart_ proc near
+    cli
+
+Routine Size: 256 bytes,    Routine Base: _TEXT + 0000
+
+0100                          _cstart_:
+0100    FA                        cli         
+
+    cld
+0101    FC                        cld         
+
+    mov ax, cs
+0102    8C C8                     mov         ax,cs 
+
+    add ax, DGROUP + 10h
+0104    05 10 00                  add         ax,DGROUP+0x10 
+
+    mov ds, ax
+0107    8E D8                     mov         ds,ax 
+
+    mov ss, ax
+0109    8E D0                     mov         ss,ax 
+
+    mov sp, offset endstack 
+010B    BC 00 20                  mov         sp,offset DGROUP:L$6 
+
+    mov __no87, 1
+010E    C6 06 00 00 01            mov         byte ptr DGROUP:__no87,0x01 
+
+    xor di,di
+0113    33 FF                     xor         di,di 
+
+    xor si,si
+0115    33 F6                     xor         si,si 
+
+    mov es,si
+0117    8E C6                     mov         es,si 
+
+    mov ax, offset fpex
+0119    B8 38 01                  mov         ax,offset fpex 
+
+    stosw
+011C    AB                        stosw       
+
+    mov ax,cs
+011D    8C C8                     mov         ax,cs 
+
+    stosw
+011F    AB                        stosw       
+
+    mov cx, 200h - 2
+0120    B9 FE 01                  mov         cx,0x01fe 
+
+    rep movs word ptr es:[di], word ptr es:[si]
+0123    F3 26 A5                  rep movs    word ptr [di],word ptr es:[si] 
+
+    mov dx,3c0h
+0126    BA C0 03                  mov         dx,0x03c0 
+
+    mov al,10h
+0129    B0 10                     mov         al,0x10 
+
+    out dx,al
+012B    EE                        out         dx,al 
+
+    mov al,8h
+012C    B0 08                     mov         al,0x08 
+
+    out dx,al   ; // text mode, flash enabled
+012E    EE                        out         dx,al 
+
+        
+    call near ptr main_
+012F    E8 00 00                  call        main_ 
+
+    cli
+0132    FA                        cli         
+0133    EA 00 00 FF FF                                  .....
+
+    db 0eah
+    dw 0,-1
+_cstart_ endp
+
+
+fpex proc near
+    iret
+0138                          fpex:
+0138    CF                        iret        
+
+fpex endp
+
+muldiv8_ proc near
+    imul dx
+
+Routine Size: 57 bytes,    Routine Base: _TEXT + 0100
+
+0139                          muldiv8_:
+0139    F7 EA                     imul        dx 
+
+    mov al,ah
+013B    8A C4                     mov         al,ah 
+
+    mov ah,dl
+013D    8A E2                     mov         ah,dl 
+
+    ret
+013F    C3                        ret         
+
+muldiv8_ endp
+
+muldiv_ proc near
+    imul dx
+
+Routine Size: 7 bytes,    Routine Base: _TEXT + 0139
+
+0140                          muldiv_:
+0140    F7 EA                     imul        dx 
+
+    idiv bx
+0142    F7 FB                     idiv        bx 
+
+    ret
+0144    C3                        ret         
+
+muldiv_ endp
+
+
+int21hanlder_ proc near
+    mov int21hproc,ax
+
+Routine Size: 5 bytes,    Routine Base: _TEXT + 0140
+
+0145                          int21hanlder_:
+0145    A3 00 00                  mov         word ptr DGROUP:L$1,ax 
+
+    xor ax,ax
+0148    33 C0                     xor         ax,ax 
+
+    mov es,ax
+014A    8E C0                     mov         es,ax 
+
+    mov word ptr es:[21h*4], offset int21h_
+014C    26 C7 06 84 00 54 01      mov         word ptr es:[0x84],offset int21h_ 
+
+    ret
+0153    C3                        ret         
+
+int21hanlder_ endp
+
+int21h_ proc near
+    pusha
+0154                          int21h_:
+0154    60                        pusha       
+
+    call int21hproc
+0155    FF 16 00 00               call        word ptr DGROUP:L$1 
+
+    popa
+0159    61                        popa        
+
+    iret
+015A    CF                        iret        
+
+int21h_ endp
+
+
+;------------------------------ showcursor ---------
+showcursor_ proc near ; ax = on
+    push dx
+
+Routine Size: 22 bytes,    Routine Base: _TEXT + 0145
+
+015B                          showcursor_:
+015B    52                        push        dx 
+
+    mov dx,3d4h
+015C    BA D4 03                  mov         dx,0x03d4 
+
+    shr al,1
+015F    D0 E8                     shr         al,0x01 
+
+    mov al,0ah
+0161    B0 0A                     mov         al,0x0a 
+
+    out dx,al
+0163    EE                        out         dx,al 
+
+    cmc
+0164    F5                        cmc         
+
+    rcl al,6
+0165    C0 D0 06                  rcl         al,0x06 
+
+    inc dx
+0168    42                        inc         dx 
+
+    out dx, al
+0169    EE                        out         dx,al 
+
+    pop dx
+016A    5A                        pop         dx 
+
+    ret
+016B    C3                        ret         
+
+showcursor_ endp
+
+
+;------------------------------ getcursor ---------
+getcursor_ proc near ; returns ax = y<<8 + x
+    push dx
+
+Routine Size: 17 bytes,    Routine Base: _TEXT + 015B
+
+016C                          getcursor_:
+016C    52                        push        dx 
+
+    mov dx,3d4h
+016D    BA D4 03                  mov         dx,0x03d4 
+
+    mov al,0eh
+0170    B0 0E                     mov         al,0x0e 
+
+    out dx,al
+0172    EE                        out         dx,al 
+
+    inc dx
+0173    42                        inc         dx 
+
+    in al,dx
+0174    EC                        in          al,dx 
+
+    mov ah,al
+0175    8A E0                     mov         ah,al 
+
+    dec dx
+0177    4A                        dec         dx 
+
+    mov al,0fh
+0178    B0 0F                     mov         al,0x0f 
+
+    out dx,al
+017A    EE                        out         dx,al 
+
+    inc dx
+017B    42                        inc         dx 
+
+    in al,dx
+017C    EC                        in          al,dx 
+
+    mov dl,80
+017D    B2 50                     mov         dl,0x50 
+
+    div dl
+017F    F6 F2                     div         dl 
+
+    pop dx
+0181    5A                        pop         dx 
+
+    ret
+0182    C3                        ret         
+
+getcursor_ endp
+
+
+;------------------------------ setcursor ---------
+setcursor_ proc near ; ax = x, dx = y
+    imul ax,80
+
+Routine Size: 23 bytes,    Routine Base: _TEXT + 016C
+
+0183                          setcursor_:
+0183    6B C0 50                  imul        ax,0x0050 
+
+    add ax,dx
+0186    03 C2                     add         ax,dx 
+
+    mov dx, 3d4h
+0188    BA D4 03                  mov         dx,0x03d4 
+
+    push ax
+018B    50                        push        ax 
+
+    mov al, 0fh
+018C    B0 0F                     mov         al,0x0f 
+
+    out dx,al
+018E    EE                        out         dx,al 
+
+    inc dx
+018F    42                        inc         dx 
+
+    pop ax
+0190    58                        pop         ax 
+
+    out dx,al
+0191    EE                        out         dx,al 
+
+    dec dx
+0192    4A                        dec         dx 
+
+    mov al, 0eh
+0193    B0 0E                     mov         al,0x0e 
+
+    out dx,al
+0195    EE                        out         dx,al 
+
+    inc dx
+0196    42                        inc         dx 
+
+    mov al,ah
+0197    8A C4                     mov         al,ah 
+
+    out dx,al
+0199    EE                        out         dx,al 
+
+    ret
+019A    C3                        ret         
+
+setcursor_ endp
+
+;------------------------------ clear line ---------
+delline_ proc near ;ax=char, dx = line
+    push di
+
+Routine Size: 24 bytes,    Routine Base: _TEXT + 0183
+
+019B                          delline_:
+019B    57                        push        di 
+
+    push cx
+019C    51                        push        cx 
+
+    imul dx,10
+019D    6B D2 0A                  imul        dx,0x000a 
+
+    add dh,0b8h
+01A0    80 C6 B8                  add         dh,0xb8 
+
+    mov es,dx
+01A3    8E C2                     mov         es,dx 
+
+    xor di,di
+01A5    33 FF                     xor         di,di 
+
+    mov cx,80
+01A7    B9 50 00                  mov         cx,0x0050 
+
+    rep stosw
+01AA    F3 AB                     rep stosw   
+
+    pop cx
+01AC    59                        pop         cx 
+
+    pop di
+01AD    5F                        pop         di 
+
+    ret
+01AE    C3                        ret         
+
+delline_ endp
+
+;------------------------------ display char ---------
+dispchr_ proc near ;ax=char, dx=x, bx=y, cx=color
+    imul bx,10
+
+Routine Size: 20 bytes,    Routine Base: _TEXT + 019B
+
+01AF                          dispchr_:
+01AF    6B DB 0A                  imul        bx,0x000a 
+
+    add bh,0b8h
+01B2    80 C7 B8                  add         bh,0xb8 
+
+    mov es,bx
+01B5    8E C3                     mov         es,bx 
+
+    mov bx,dx
+01B7    8B DA                     mov         bx,dx 
+
+    add bx,bx
+01B9    03 DB                     add         bx,bx 
+
+    mov ah,cl
+01BB    8A E1                     mov         ah,cl 
+
+    mov es:[bx],ax
+01BD    26 89 07                  mov         word ptr es:[bx],ax 
+
+    ret
+01C0    C3                        ret         
+
+dispchr_ endp
+
+;------------------------------ set default palette ---------
+LEDdisplay_ proc near
+    out 0,al
+
+Routine Size: 18 bytes,    Routine Base: _TEXT + 01AF
+
+01C1                          LEDdisplay_:
+01C1    E6 00                     out         0x00,al 
+
+    ret
+01C3    C3                        ret         
+
+LEDdisplay_ endp
+
+;------------------------------ set default palette ---------
+defpal_ proc near
+        push dx
+
+Routine Size: 3 bytes,    Routine Base: _TEXT + 01C1
+
+01C4                          defpal_:
+01C4    52                        push        dx 
+
+        mov dx,3c8h
+01C5    BA C8 03                  mov         dx,0x03c8 
+
+        xor ax,ax
+01C8    33 C0                     xor         ax,ax 
+
+        out dx,al
+01CA    EE                        out         dx,al 
+
+        inc dx
+01CB    42                        inc         dx 
+
+lop:    
+        mov al,ah
+01CC                          L$2:
+01CC    8A C4                     mov         al,ah 
+
+        and al,7
+01CE    24 07                     and         al,0x07 
+
+        shl al,3
+01D0    C0 E0 03                  shl         al,0x03 
+
+        out dx,al
+01D3    EE                        out         dx,al 
+
+        mov al,ah
+01D4    8A C4                     mov         al,ah 
+
+        and al,38h
+01D6    24 38                     and         al,0x38 
+
+        out dx,al
+01D8    EE                        out         dx,al 
+
+        mov al,ah
+01D9    8A C4                     mov         al,ah 
+
+        ror al,2
+01DB    C0 C8 02                  ror         al,0x02 
+
+        and al,30h
+01DE    24 30                     and         al,0x30 
+
+        cmp al,30h
+01E0    3C 30                     cmp         al,0x30 
+
+        jne nob
+01E2    75 02                     jne         L$3 
+
+        or al,8
+01E4    0C 08                     or          al,0x08 
+
+nob:
+        out dx,al
+01E6                          L$3:
+01E6    EE                        out         dx,al 
+
+        inc ah
+01E7    FE C4                     inc         ah 
+
+        jnz lop
+01E9    75 E1                     jne         L$2 
+
+        pop dx
+01EB    5A                        pop         dx 
+
+        ret
+01EC    C3                        ret         
+
+defpal_ endp
+
+;------------------------------ get palette ------------------
+getpal_ proc near    ; es:di = mem palette, al=start color, cx = num colors
+        push di
+
+Routine Size: 41 bytes,    Routine Base: _TEXT + 01C4
+
+01ED                          getpal_:
+01ED    57                        push        di 
+
+        push cx
+01EE    51                        push        cx 
+
+        mov cx,dx
+01EF    8B CA                     mov         cx,dx 
+
+        mov di,bx
+01F1    8B FB                     mov         di,bx 
+
+        mov dx,3c7h
+01F3    BA C7 03                  mov         dx,0x03c7 
+
+        out dx,al
+01F6    EE                        out         dx,al 
+
+        inc dx
+01F7    42                        inc         dx 
+
+        inc dx
+01F8    42                        inc         dx 
+
+        imul cx,3
+01F9    6B C9 03                  imul        cx,0x0003 
+
+        push ds
+01FC    1E                        push        ds 
+
+        pop es
+01FD    07                        pop         es 
+
+        rep insb
+01FE    F3 6C                     rep insb    
+
+        pop cx
+0200    59                        pop         cx 
+
+        pop di
+0201    5F                        pop         di 
+
+        ret
+0202    C3                        ret         
+
+getpal_ endp
+
+
+;------------------------------ set palette ------------------
+setpal_ proc near    ; ds:si = mem palette, al=start color, cx = num colors
+        push si
+
+Routine Size: 22 bytes,    Routine Base: _TEXT + 01ED
+
+0203                          setpal_:
+0203    56                        push        si 
+
+        push cx
+0204    51                        push        cx 
+
+        mov cx,dx
+0205    8B CA                     mov         cx,dx 
+
+        mov si,bx
+0207    8B F3                     mov         si,bx 
+
+        mov dx, 3c8h
+0209    BA C8 03                  mov         dx,0x03c8 
+
+        out dx,al
+020C    EE                        out         dx,al 
+
+        inc dx
+020D    42                        inc         dx 
+
+        imul cx,3
+020E    6B C9 03                  imul        cx,0x0003 
+
+        rep outsb
+0211    F3 6E                     rep outsb   
+
+        pop cx
+0213    59                        pop         cx 
+
+        pop si
+0214    5E                        pop         si 
+
+        ret
+0215    C3                        ret         
+
+setpal_ endp
+
+
+;------------------------------- copy screen ------------------
+copyscr_ proc near   ; ax = src screen segment
+        mov ds,ax
+0216                          copyscr_:
+0216    8E D8                     mov         ds,ax 
+
+        mov ax,0a000h
+0218    B8 00 A0                  mov         ax,0xa000 
+
+        mov es,ax
+021B    8E C0                     mov         es,ax 
+
+        mov dx,48
+021D    BA 30 00                  mov         dx,0x0030 
+
+copy1:
+        mov cx,3200
+0220                          L$4:
+0220    B9 80 0C                  mov         cx,0x0c80 
+
+        xor si,si
+0223    33 F6                     xor         si,si 
+
+        xor di,di
+0225    33 FF                     xor         di,di 
+
+        rep movsw
+0227    F3 A5                     rep movsw   
+
+        mov ax,ds
+0229    8C D8                     mov         ax,ds 
+
+        add ax,400
+022B    05 90 01                  add         ax,0x0190 
+
+        mov ds,ax
+022E    8E D8                     mov         ds,ax 
+
+        mov ax,es
+0230    8C C0                     mov         ax,es 
+
+        add ax,400
+0232    05 90 01                  add         ax,0x0190 
+
+        mov es,ax
+0235    8E C0                     mov         es,ax 
+
+        dec dx
+0237    4A                        dec         dx 
+
+        jne copy1
+0238    75 E6                     jne         L$4 
+
+        ret
+023A    C3                        ret         
+
+
+copyscr_ endp
+
+
+;------------------------------- flush --------------------------
+flush_  proc near 
+        push ds
+
+Routine Size: 56 bytes,    Routine Base: _TEXT + 0203
+
+023B                          flush_:
+023B    1E                        push        ds 
+
+        mov bh,8
+023C    B7 08                     mov         bh,0x08 
+
+        mov ds,bx
+023E    8E DB                     mov         ds,bx 
+
+flush1:        
+        mov al,[bx]
+0240                          L$5:
+0240    8A 07                     mov         al,byte ptr [bx] 
+
+        dec bh
+0242    FE CF                     dec         bh 
+
+        jnz flush1
+0244    75 FA                     jne         L$5 
+
+        pop ds
+0246    1F                        pop         ds 
+
+        ret  
+0247    C3                        ret         
+0248    26 FF                                           &.
+
+flush_ endp    
+
+; ----------------  serial receive byte 115200 bps --------------
+srecb_   dw  0ff26h  
+
+
+;----------------------------------- vertical scroll ------------------------
+vscroll_ proc near   ; ax = lines
+        push si
+
+Routine Size: 15 bytes,    Routine Base: _TEXT + 023B
+
+024A                          vscroll_:
+024A    56                        push        si 
+
+        push di
+024B    57                        push        di 
+
+        push cx
+024C    51                        push        cx 
+
+        push 0b800h
+024D    68 00 B8                  push        0xb800 
+
+        pop es
+0250    07                        pop         es 
+
+        imul si,ax,160
+0251    69 F0 A0 00               imul        si,ax,0x00a0 
+
+        xor di,di
+0255    33 FF                     xor         di,di 
+
+        imul cx,ax,-80
+0257    6B C8 B0                  imul        cx,ax,0xffb0 
+
+        add cx,2000
+025A    81 C1 D0 07               add         cx,0x07d0 
+
+        rep movs word ptr es:[di], word ptr es:[si]
+025E    F3 26 A5                  rep movs    word ptr [di],word ptr es:[si] 
+
+        pop cx
+0261    59                        pop         cx 
+
+        pop di
+0262    5F                        pop         di 
+
+        pop si
+0263    5E                        pop         si 
+
+        ret
+0264    C3                        ret         
+
+vscroll_ endp
+
+
+;----------------------------------- CLS -------------------------------------
+cls_ proc near   ; ax = attr-char
+        push di
+
+Routine Size: 27 bytes,    Routine Base: _TEXT + 024A
+
+0265                          cls_:
+0265    57                        push        di 
+
+        push cx
+0266    51                        push        cx 
+
+        xor di,di
+0267    33 FF                     xor         di,di 
+
+        push 0b800h
+0269    68 00 B8                  push        0xb800 
+
+        pop es
+026C    07                        pop         es 
+
+        mov cx,2000
+026D    B9 D0 07                  mov         cx,0x07d0 
+
+        rep stosw
+0270    F3 AB                     rep stosw   
+
+        pop cx
+0272    59                        pop         cx 
+
+        pop di
+0273    5F                        pop         di 
+
+        ret
+0274    C3                        ret         
+0275                          _small_code_:
+0275    00                                              .
+0276                          __compiled_under_generic:
+0276    00                                              .
+0277                          ___wcpp_4_data_init_fs_root_:
+0277    00                                              .
+0278                          __ppfltused_:
+0278    00                                              .
+0279                          _Not_Enough_Memory_:
+0279    00                                              .
+027A                          __GETDS:
+027A    00                                              .
+027B                          ___begtext:
+027B    00                                              .
+027C                          __do_exit_with_msg__:
+027C    00                                              .
+027D                          __exit_:
+027D    00                                              .
+027E                          __nullarea:
+027E    00                                              .
+
+Routine Size: 26 bytes,    Routine Base: _TEXT + 0265
+
+No disassembly errors
+
+Segment: CONST WORD USE16 00000000 bytes
+
+Segment: _BSS WORD USE16 00002000 bytes
+2000                          L$6:
+
+BSS Size: 8192 bytes
+

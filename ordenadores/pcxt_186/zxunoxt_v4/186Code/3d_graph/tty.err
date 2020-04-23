@@ -1,0 +1,4 @@
+tty.cpp(167): Warning! W726: col(1) no reference to formal parameter 'c'
+tty.cpp(161): Note! N392: col(41) definition: 'int c' in 'void nint21( unsigned, int, int, int )'
+tty.cpp(167): Warning! W726: col(1) no reference to formal parameter 'd'
+tty.cpp(161): Note! N392: col(48) definition: 'int d' in 'void nint21( unsigned, int, int, int )'

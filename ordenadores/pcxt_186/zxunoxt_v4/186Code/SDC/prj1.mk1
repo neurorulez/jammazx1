@@ -1,0 +1,49 @@
+!define BLANK ""
+D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\head.obj : D:\Work\xilinx\&
+PapilioPro\Next186_SoC\186Code\SDC\head.asm .AUTODEPEND
+ @D:
+ cd D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC
+ *wasm head.asm -i="C:\WATCOM/h" -ml -d1 -w4 -e25 -zq
+
+D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\sd_fast.obj : D:\Work\xili&
+nx\PapilioPro\Next186_SoC\186Code\SDC\sd_fast.asm .AUTODEPEND
+ @D:
+ cd D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC
+ *wasm sd_fast.asm -i="C:\WATCOM/h" -ml -d1 -w4 -e25 -zq
+
+D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\main.obj : D:\Work\xilinx\&
+PapilioPro\Next186_SoC\186Code\SDC\main.cpp .AUTODEPEND
+ @D:
+ cd D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC
+ *wpp main.cpp -i="C:\WATCOM/h" -w4 -e25 -zq -ox -fpc -1 -bt=dos -fo=.obj -m&
+s -xd -xr
+
+D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\next186.obj : D:\Work\xili&
+nx\PapilioPro\Next186_SoC\186Code\SDC\next186.cpp .AUTODEPEND
+ @D:
+ cd D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC
+ *wpp next186.cpp -i="C:\WATCOM/h" -w4 -e25 -zq -ox -fpc -1 -bt=dos -fo=.obj&
+ -ms -xd -xr
+
+D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\tty.obj : D:\Work\xilinx\P&
+apilioPro\Next186_SoC\186Code\SDC\tty.cpp .AUTODEPEND
+ @D:
+ cd D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC
+ *wpp tty.cpp -i="C:\WATCOM/h" -w4 -e25 -zq -ox -fpc -1 -bt=dos -fo=.obj -ms&
+ -xd -xr
+
+D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\prj1.com : D:\Work\xilinx\&
+PapilioPro\Next186_SoC\186Code\SDC\head.obj D:\Work\xilinx\PapilioPro\Next18&
+6_SoC\186Code\SDC\sd_fast.obj D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\&
+SDC\main.obj D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\next186.obj D&
+:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\tty.obj D:\Work\xilinx\Papi&
+lioPro\Next186_SoC\186Code\SDC\next186.h D:\Work\xilinx\PapilioPro\Next186_S&
+oC\186Code\SDC\sd.h D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC\tty.h &
+.AUTODEPEND
+ @D:
+ cd D:\Work\xilinx\PapilioPro\Next186_SoC\186Code\SDC
+ @%write prj1.lk1 FIL head.obj,sd_fast.obj,main.obj,next186.obj,tty.obj
+ @%append prj1.lk1 
+ *wlink name prj1 sys dos com op m op nod libr clibs,maths op maxe=25 op q o&
+p symf op el @prj1.lk1
+

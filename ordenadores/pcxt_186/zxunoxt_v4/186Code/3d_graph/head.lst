@@ -1,0 +1,1704 @@
+Module: D:\work\xilinx\ddr_186\ddr_186\186Code\watcom\3d_graph\head.asm
+GROUP: 'DGROUP' _DATA,CONST,_BSS
+
+File contains no line numbers.
+Segment: head_TEXT WORD USE16 00000000 bytes
+
+Routine Size: 0 bytes,    Routine Base: head_TEXT + 0000
+
+No disassembly errors
+
+Segment: _DATA WORD USE16 00000004 bytes
+0000                          L$1:
+0000    00 00                                           ..
+0002                          _SCREEN_SEGMENT:
+0002    00                                              .
+0003                          L$2:
+0003    A0                                              .
+
+Segment: _TEXT WORD USE16 0000040F bytes
+0000    00 00                     add         byte ptr [bx+si],al 
+0002    00 00                     add         byte ptr [bx+si],al 
+0004    00 00                     add         byte ptr [bx+si],al 
+0006    00 00                     add         byte ptr [bx+si],al 
+0008    00 00                     add         byte ptr [bx+si],al 
+000A    00 00                     add         byte ptr [bx+si],al 
+000C    00 00                     add         byte ptr [bx+si],al 
+000E    00 00                     add         byte ptr [bx+si],al 
+0010    00 00                     add         byte ptr [bx+si],al 
+0012    00 00                     add         byte ptr [bx+si],al 
+0014    00 00                     add         byte ptr [bx+si],al 
+0016    00 00                     add         byte ptr [bx+si],al 
+0018    00 00                     add         byte ptr [bx+si],al 
+001A    00 00                     add         byte ptr [bx+si],al 
+001C    00 00                     add         byte ptr [bx+si],al 
+001E    00 00                     add         byte ptr [bx+si],al 
+0020    00 00                     add         byte ptr [bx+si],al 
+0022    00 00                     add         byte ptr [bx+si],al 
+0024    00 00                     add         byte ptr [bx+si],al 
+0026    00 00                     add         byte ptr [bx+si],al 
+0028    00 00                     add         byte ptr [bx+si],al 
+002A    00 00                     add         byte ptr [bx+si],al 
+002C    00 00                     add         byte ptr [bx+si],al 
+002E    00 00                     add         byte ptr [bx+si],al 
+0030    00 00                     add         byte ptr [bx+si],al 
+0032    00 00                     add         byte ptr [bx+si],al 
+0034    00 00                     add         byte ptr [bx+si],al 
+0036    00 00                     add         byte ptr [bx+si],al 
+0038    00 00                     add         byte ptr [bx+si],al 
+003A    00 00                     add         byte ptr [bx+si],al 
+003C    00 00                     add         byte ptr [bx+si],al 
+003E    00 00                     add         byte ptr [bx+si],al 
+0040    00 00                     add         byte ptr [bx+si],al 
+0042    00 00                     add         byte ptr [bx+si],al 
+0044    00 00                     add         byte ptr [bx+si],al 
+0046    00 00                     add         byte ptr [bx+si],al 
+0048    00 00                     add         byte ptr [bx+si],al 
+004A    00 00                     add         byte ptr [bx+si],al 
+004C    00 00                     add         byte ptr [bx+si],al 
+004E    00 00                     add         byte ptr [bx+si],al 
+0050    00 00                     add         byte ptr [bx+si],al 
+0052    00 00                     add         byte ptr [bx+si],al 
+0054    00 00                     add         byte ptr [bx+si],al 
+0056    00 00                     add         byte ptr [bx+si],al 
+0058    00 00                     add         byte ptr [bx+si],al 
+005A    00 00                     add         byte ptr [bx+si],al 
+005C    00 00                     add         byte ptr [bx+si],al 
+005E    00 00                     add         byte ptr [bx+si],al 
+0060    00 00                     add         byte ptr [bx+si],al 
+0062    00 00                     add         byte ptr [bx+si],al 
+0064    00 00                     add         byte ptr [bx+si],al 
+0066    00 00                     add         byte ptr [bx+si],al 
+0068    00 00                     add         byte ptr [bx+si],al 
+006A    00 00                     add         byte ptr [bx+si],al 
+006C    00 00                     add         byte ptr [bx+si],al 
+006E    00 00                     add         byte ptr [bx+si],al 
+0070    00 00                     add         byte ptr [bx+si],al 
+0072    00 00                     add         byte ptr [bx+si],al 
+0074    00 00                     add         byte ptr [bx+si],al 
+0076    00 00                     add         byte ptr [bx+si],al 
+0078    00 00                     add         byte ptr [bx+si],al 
+007A    00 00                     add         byte ptr [bx+si],al 
+007C    00 00                     add         byte ptr [bx+si],al 
+007E    00 00                     add         byte ptr [bx+si],al 
+0080    00 00                     add         byte ptr [bx+si],al 
+0082    00 00                     add         byte ptr [bx+si],al 
+0084    00 00                     add         byte ptr [bx+si],al 
+0086    00 00                     add         byte ptr [bx+si],al 
+0088    00 00                     add         byte ptr [bx+si],al 
+008A    00 00                     add         byte ptr [bx+si],al 
+008C    00 00                     add         byte ptr [bx+si],al 
+008E    00 00                     add         byte ptr [bx+si],al 
+0090    00 00                     add         byte ptr [bx+si],al 
+0092    00 00                     add         byte ptr [bx+si],al 
+0094    00 00                     add         byte ptr [bx+si],al 
+0096    00 00                     add         byte ptr [bx+si],al 
+0098    00 00                     add         byte ptr [bx+si],al 
+009A    00 00                     add         byte ptr [bx+si],al 
+009C    00 00                     add         byte ptr [bx+si],al 
+009E    00 00                     add         byte ptr [bx+si],al 
+00A0    00 00                     add         byte ptr [bx+si],al 
+00A2    00 00                     add         byte ptr [bx+si],al 
+00A4    00 00                     add         byte ptr [bx+si],al 
+00A6    00 00                     add         byte ptr [bx+si],al 
+00A8    00 00                     add         byte ptr [bx+si],al 
+00AA    00 00                     add         byte ptr [bx+si],al 
+00AC    00 00                     add         byte ptr [bx+si],al 
+00AE    00 00                     add         byte ptr [bx+si],al 
+00B0    00 00                     add         byte ptr [bx+si],al 
+00B2    00 00                     add         byte ptr [bx+si],al 
+00B4    00 00                     add         byte ptr [bx+si],al 
+00B6    00 00                     add         byte ptr [bx+si],al 
+00B8    00 00                     add         byte ptr [bx+si],al 
+00BA    00 00                     add         byte ptr [bx+si],al 
+00BC    00 00                     add         byte ptr [bx+si],al 
+00BE    00 00                     add         byte ptr [bx+si],al 
+00C0    00 00                     add         byte ptr [bx+si],al 
+00C2    00 00                     add         byte ptr [bx+si],al 
+00C4    00 00                     add         byte ptr [bx+si],al 
+00C6    00 00                     add         byte ptr [bx+si],al 
+00C8    00 00                     add         byte ptr [bx+si],al 
+00CA    00 00                     add         byte ptr [bx+si],al 
+00CC    00 00                     add         byte ptr [bx+si],al 
+00CE    00 00                     add         byte ptr [bx+si],al 
+00D0    00 00                     add         byte ptr [bx+si],al 
+00D2    00 00                     add         byte ptr [bx+si],al 
+00D4    00 00                     add         byte ptr [bx+si],al 
+00D6    00 00                     add         byte ptr [bx+si],al 
+00D8    00 00                     add         byte ptr [bx+si],al 
+00DA    00 00                     add         byte ptr [bx+si],al 
+00DC    00 00                     add         byte ptr [bx+si],al 
+00DE    00 00                     add         byte ptr [bx+si],al 
+00E0    00 00                     add         byte ptr [bx+si],al 
+00E2    00 00                     add         byte ptr [bx+si],al 
+00E4    00 00                     add         byte ptr [bx+si],al 
+00E6    00 00                     add         byte ptr [bx+si],al 
+00E8    00 00                     add         byte ptr [bx+si],al 
+00EA    00 00                     add         byte ptr [bx+si],al 
+00EC    00 00                     add         byte ptr [bx+si],al 
+00EE    00 00                     add         byte ptr [bx+si],al 
+00F0    00 00                     add         byte ptr [bx+si],al 
+00F2    00 00                     add         byte ptr [bx+si],al 
+00F4    00 00                     add         byte ptr [bx+si],al 
+00F6    00 00                     add         byte ptr [bx+si],al 
+00F8    00 00                     add         byte ptr [bx+si],al 
+00FA    00 00                     add         byte ptr [bx+si],al 
+00FC    00 00                     add         byte ptr [bx+si],al 
+00FE    00 00                     add         byte ptr [bx+si],al 
+
+.186
+extrn   main_: proc near
+public cls_
+public flush_
+public defpal_
+public setpal_
+public getpal_
+public putpixel_
+public cputpixel_
+public LEDdisplay_
+public muldiv8_
+public muldiv_
+public vscroll_
+public hrzline_
+public fillrect_
+public dispchr_
+public int21hanlder_
+public _LineDraw
+public _SCREEN_SEGMENT
+
+
+public _small_code_
+public __compiled_under_generic
+public ___wcpp_4_data_init_fs_root_
+public __ppfltused_
+public _cstart_
+extrn   __no87                  : byte
+extrn __FInitRtns: proc near
+public    _Not_Enough_Memory_
+public    __GETDS
+public    ___begtext
+public    __do_exit_with_msg__
+public    __exit_
+public    __nullarea
+
+
+DGROUP          GROUP   CONST,_DATA,_BSS
+assume cs:_TEXT, ds:DGROUP, ss:DGROUP
+_TEXT           SEGMENT WORD PUBLIC USE16 'CODE' 
+    org 100h
+_cstart_ proc near
+    cli
+
+Routine Size: 256 bytes,    Routine Base: _TEXT + 0000
+
+0100                          _cstart_:
+0100    FA                        cli         
+
+    cld
+0101    FC                        cld         
+
+    mov ax, cs
+0102    8C C8                     mov         ax,cs 
+
+    add ax, DGROUP + 10h
+0104    05 10 00                  add         ax,DGROUP+0x10 
+
+    mov ds, ax
+0107    8E D8                     mov         ds,ax 
+
+    mov ss, ax
+0109    8E D0                     mov         ss,ax 
+
+    mov sp, offset endstack 
+010B    BC 00 08                  mov         sp,offset DGROUP:L$38 
+
+    mov __no87, 1
+010E    C6 06 00 00 01            mov         byte ptr DGROUP:__no87,0x01 
+
+    xor di,di
+0113    33 FF                     xor         di,di 
+
+    xor si,si
+0115    33 F6                     xor         si,si 
+
+    mov es,si
+0117    8E C6                     mov         es,si 
+
+    mov ax, offset fpex
+0119    B8 39 01                  mov         ax,offset fpex 
+
+    stosw
+011C    AB                        stosw       
+
+    mov ax,cs
+011D    8C C8                     mov         ax,cs 
+
+    stosw
+011F    AB                        stosw       
+
+    mov cx, 200h - 2
+0120    B9 FE 01                  mov         cx,0x01fe 
+
+    rep movs word ptr es:[di], word ptr es:[si]
+0123    F3 26 A5                  rep movs    word ptr [di],word ptr es:[si] 
+
+    mov dx,3c0h
+0126    BA C0 03                  mov         dx,0x03c0 
+
+    mov al,10h
+0129    B0 10                     mov         al,0x10 
+
+    out dx,al
+012B    EE                        out         dx,al 
+
+    mov al,41h
+012C    B0 41                     mov         al,0x41 
+
+    out dx,al   ; // VGA 320x200
+012E    EE                        out         dx,al 
+
+
+    
+ ;   mov al,34h
+ ;   out 43h,al
+ ;   mov al,0
+ ;   out 40h,al
+ ;   xor al,al
+ ;   out 40h,al  ; program PIT 18.2Hz
+    sti
+012F    FB                        sti         
+
+    
+        
+    call near ptr main_
+0130    E8 00 00                  call        main_ 
+
+    cli
+0133    FA                        cli         
+0134    EA 00 00 FF FF                                  .....
+
+    db 0eah
+    dw 0,-1
+_cstart_ endp
+
+fpex proc near
+    iret
+0139                          fpex:
+0139    CF                        iret        
+
+fpex endp
+
+muldiv8_ proc near
+    imul dx
+
+Routine Size: 58 bytes,    Routine Base: _TEXT + 0100
+
+013A                          muldiv8_:
+013A    F7 EA                     imul        dx 
+
+    mov al,ah
+013C    8A C4                     mov         al,ah 
+
+    mov ah,dl
+013E    8A E2                     mov         ah,dl 
+
+    ret
+0140    C3                        ret         
+
+muldiv8_ endp
+
+muldiv_ proc near
+    imul dx
+
+Routine Size: 7 bytes,    Routine Base: _TEXT + 013A
+
+0141                          muldiv_:
+0141    F7 EA                     imul        dx 
+
+    idiv bx
+0143    F7 FB                     idiv        bx 
+
+    ret
+0145    C3                        ret         
+
+muldiv_ endp
+
+
+int21hanlder_ proc near
+    mov int21hproc,ax
+
+Routine Size: 5 bytes,    Routine Base: _TEXT + 0141
+
+0146                          int21hanlder_:
+0146    A3 00 00                  mov         word ptr DGROUP:L$1,ax 
+
+    xor ax,ax
+0149    33 C0                     xor         ax,ax 
+
+    mov es,ax
+014B    8E C0                     mov         es,ax 
+
+    mov word ptr es:[21h*4], offset int21h_
+014D    26 C7 06 84 00 55 01      mov         word ptr es:[0x84],offset int21h_ 
+
+    ret
+0154    C3                        ret         
+
+int21hanlder_ endp
+
+int21h_ proc near
+    pusha
+0155                          int21h_:
+0155    60                        pusha       
+
+    call int21hproc
+0156    FF 16 00 00               call        word ptr DGROUP:L$1 
+
+    popa
+015A    61                        popa        
+
+    iret
+015B    CF                        iret        
+
+int21h_ endp
+
+
+
+;------------------------------ rect ---------
+fillrect_ proc near  ; ax=x, dx=y, bx=color, cx=dx, sp1=dy
+    jcxz hlexit
+
+Routine Size: 22 bytes,    Routine Base: _TEXT + 0146
+
+015C                          fillrect_:
+015C    E3 15                     jcxz        L$5 
+
+    push bp
+015E    55                        push        bp 
+
+    mov bp,sp
+015F    8B EC                     mov         bp,sp 
+
+    jmp ent
+0161    EB 0A                     jmp         L$4 
+
+ nextln:   
+    push ax
+0163                          L$3:
+0163    50                        push        ax 
+
+    push cx
+0164    51                        push        cx 
+
+    push dx
+0165    52                        push        dx 
+
+    call hrzline_
+0166    E8 0D 00                  call        hrzline_ 
+
+    pop dx
+0169    5A                        pop         dx 
+
+    pop cx
+016A    59                        pop         cx 
+
+    pop ax
+016B    58                        pop         ax 
+
+    inc dx
+016C    42                        inc         dx 
+
+ent:    
+    dec word ptr [bp+4]
+016D                          L$4:
+016D    FF 4E 04                  dec         word ptr 0x4[bp] 
+
+    jns nextln
+0170    79 F1                     jns         L$3 
+
+    leave
+0172    C9                        leave       
+
+hlexit:
+    ret 2
+0173                          L$5:
+0173    C2 02 00                  ret         0x0002 
+
+fillrect_ endp
+
+
+;------------------------------ horizontal  line ---------
+hrzline_ proc near  ; ax=x, dx=y, bl=color, cx=len
+    jcxz lexit
+
+Routine Size: 26 bytes,    Routine Base: _TEXT + 015C
+
+0176                          hrzline_:
+0176    E3 21                     jcxz        L$7 
+
+    push di
+0178    57                        push        di 
+
+    imul dx,20
+0179    6B D2 14                  imul        dx,0x0014 
+
+    add dh,byte ptr _SCREEN_SEGMENT + 1
+017C    02 36 03 00               add         dh,byte ptr DGROUP:L$2 
+
+    mov es,dx
+0180    8E C2                     mov         es,dx 
+
+    mov di,ax
+0182    8B F8                     mov         di,ax 
+
+    mov al,bl
+0184    8A C3                     mov         al,bl 
+
+    mov ah,bl
+0186    8A E3                     mov         ah,bl 
+
+    test di,1
+0188    F7 C7 01 00               test        di,0x0001 
+
+    jz xeven
+018C    74 02                     je          L$6 
+
+    stosb
+018E    AA                        stosb       
+
+    dec cx
+018F    49                        dec         cx 
+
+ xeven:
+    shr cx,1
+0190                          L$6:
+0190    D1 E9                     shr         cx,0x01 
+
+    rep stosw
+0192    F3 AB                     rep stosw   
+
+    adc cx,cx
+0194    13 C9                     adc         cx,cx 
+
+    rep stosb
+0196    F3 AA                     rep stosb   
+
+    pop di
+0198    5F                        pop         di 
+
+lexit:
+    ret
+0199                          L$7:
+0199    C3                        ret         
+
+hrzline_ endp
+
+;------------------------------ set default palette ---------
+LEDdisplay_ proc near
+    out 0,al
+
+Routine Size: 36 bytes,    Routine Base: _TEXT + 0176
+
+019A                          LEDdisplay_:
+019A    E6 00                     out         0x00,al 
+
+    ret
+019C    C3                        ret         
+
+LEDdisplay_ endp
+;------------------------------ set default palette ---------
+defpal_ proc near
+        push dx
+
+Routine Size: 3 bytes,    Routine Base: _TEXT + 019A
+
+019D                          defpal_:
+019D    52                        push        dx 
+
+        mov dx,3c8h
+019E    BA C8 03                  mov         dx,0x03c8 
+
+        xor ax,ax
+01A1    33 C0                     xor         ax,ax 
+
+        out dx,al
+01A3    EE                        out         dx,al 
+
+        inc dx
+01A4    42                        inc         dx 
+
+lop:    
+        mov al,ah
+01A5                          L$8:
+01A5    8A C4                     mov         al,ah 
+
+        and al,7
+01A7    24 07                     and         al,0x07 
+
+        shl al,3
+01A9    C0 E0 03                  shl         al,0x03 
+
+        out dx,al
+01AC    EE                        out         dx,al 
+
+        mov al,ah
+01AD    8A C4                     mov         al,ah 
+
+        and al,38h
+01AF    24 38                     and         al,0x38 
+
+        out dx,al
+01B1    EE                        out         dx,al 
+
+        mov al,ah
+01B2    8A C4                     mov         al,ah 
+
+        ror al,2
+01B4    C0 C8 02                  ror         al,0x02 
+
+        and al,30h
+01B7    24 30                     and         al,0x30 
+
+        cmp al,30h
+01B9    3C 30                     cmp         al,0x30 
+
+        jne nob
+01BB    75 02                     jne         L$9 
+
+        or al,8
+01BD    0C 08                     or          al,0x08 
+
+nob:
+        out dx,al
+01BF                          L$9:
+01BF    EE                        out         dx,al 
+
+        inc ah
+01C0    FE C4                     inc         ah 
+
+        jnz lop
+01C2    75 E1                     jne         L$8 
+
+        pop dx
+01C4    5A                        pop         dx 
+
+        ret
+01C5    C3                        ret         
+
+defpal_ endp
+
+;------------------------------ get palette ------------------
+getpal_ proc near    ; es:di = mem palette, al=start color, cx = num colors
+        push di
+
+Routine Size: 41 bytes,    Routine Base: _TEXT + 019D
+
+01C6                          getpal_:
+01C6    57                        push        di 
+
+        push cx
+01C7    51                        push        cx 
+
+        mov cx,dx
+01C8    8B CA                     mov         cx,dx 
+
+        mov di,bx
+01CA    8B FB                     mov         di,bx 
+
+        mov dx,3c7h
+01CC    BA C7 03                  mov         dx,0x03c7 
+
+        out dx,al
+01CF    EE                        out         dx,al 
+
+        inc dx
+01D0    42                        inc         dx 
+
+        inc dx
+01D1    42                        inc         dx 
+
+        imul cx,3
+01D2    6B C9 03                  imul        cx,0x0003 
+
+        push ds
+01D5    1E                        push        ds 
+
+        pop es
+01D6    07                        pop         es 
+
+        rep insb
+01D7    F3 6C                     rep insb    
+
+        pop cx
+01D9    59                        pop         cx 
+
+        pop di
+01DA    5F                        pop         di 
+
+        ret
+01DB    C3                        ret         
+
+getpal_ endp
+
+
+;------------------------------ set palette ------------------
+setpal_ proc near    ; ds:si = mem palette, al=start color, cx = num colors
+        push si
+
+Routine Size: 22 bytes,    Routine Base: _TEXT + 01C6
+
+01DC                          setpal_:
+01DC    56                        push        si 
+
+        push cx
+01DD    51                        push        cx 
+
+        mov cx,dx
+01DE    8B CA                     mov         cx,dx 
+
+        mov si,bx
+01E0    8B F3                     mov         si,bx 
+
+        mov dx, 3c8h
+01E2    BA C8 03                  mov         dx,0x03c8 
+
+        out dx,al
+01E5    EE                        out         dx,al 
+
+        inc dx
+01E6    42                        inc         dx 
+
+        imul cx,3
+01E7    6B C9 03                  imul        cx,0x0003 
+
+        rep outsb
+01EA    F3 6E                     rep outsb   
+
+        pop cx
+01EC    59                        pop         cx 
+
+        pop si
+01ED    5E                        pop         si 
+
+        ret
+01EE    C3                        ret         
+
+setpal_ endp
+
+
+;------------------------------- copy screen ------------------
+copyscr_ proc near   ; ax = src screen segment
+        push ds
+01EF                          copyscr_:
+01EF    1E                        push        ds 
+
+        push cx
+01F0    51                        push        cx 
+
+        push si
+01F1    56                        push        si 
+
+        push di
+01F2    57                        push        di 
+
+        mov ds,ax
+01F3    8E D8                     mov         ds,ax 
+
+        mov ax,_SCREEN_SEGMENT
+01F5    A1 02 00                  mov         ax,word ptr DGROUP:_SCREEN_SEGMENT 
+
+        mov es,ax
+01F8    8E C0                     mov         es,ax 
+
+copy1:
+        mov cx,32000
+01FA    B9 00 7D                  mov         cx,0x7d00 
+
+        xor si,si
+01FD    33 F6                     xor         si,si 
+
+        xor di,di
+01FF    33 FF                     xor         di,di 
+
+        rep movsw
+0201    F3 A5                     rep movsw   
+
+        pop di
+0203    5F                        pop         di 
+
+        pop si
+0204    5E                        pop         si 
+
+        pop cx
+0205    59                        pop         cx 
+
+        pop ds
+0206    1F                        pop         ds 
+
+        ret
+0207    C3                        ret         
+
+
+copyscr_ endp
+
+;------------------------------- putpixel ----------------------
+cputpixel_:
+        cmp ax, 320
+
+Routine Size: 44 bytes,    Routine Base: _TEXT + 01DC
+
+0208                          cputpixel_:
+0208    3D 40 01                  cmp         ax,0x0140 
+
+        jae cppret
+020B    73 13                     jae         L$10 
+
+        cmp dx, 200
+020D    81 FA C8 00               cmp         dx,0x00c8 
+
+        jae cppret
+0211    73 0D                     jae         L$10 
+
+putpixel_:
+        imul dx,20
+
+Routine Size: 11 bytes,    Routine Base: _TEXT + 0208
+
+0213                          putpixel_:
+0213    6B D2 14                  imul        dx,0x0014 
+
+        add dh,byte ptr _SCREEN_SEGMENT+1
+0216    02 36 03 00               add         dh,byte ptr DGROUP:L$2 
+
+        mov es,dx
+021A    8E C2                     mov         es,dx 
+
+        xchg ax,bx
+021C    93                        xchg        ax,bx 
+
+        mov es:[bx],al
+021D    26 88 07                  mov         byte ptr es:[bx],al 
+
+cppret:
+        ret
+0220                          L$10:
+0220    C3                        ret         
+
+
+
+;------------------------------- flush --------------------------
+flush_  proc near 
+        push ds
+
+Routine Size: 14 bytes,    Routine Base: _TEXT + 0213
+
+0221                          flush_:
+0221    1E                        push        ds 
+
+        push bx
+0222    53                        push        bx 
+
+        mov bh,8
+0223    B7 08                     mov         bh,0x08 
+
+        mov ds,bx
+0225    8E DB                     mov         ds,bx 
+
+flush1:        
+        mov bl,[bx]
+0227                          L$11:
+0227    8A 1F                     mov         bl,byte ptr [bx] 
+
+        dec bh
+0229    FE CF                     dec         bh 
+
+        jnz flush1
+022B    75 FA                     jne         L$11 
+
+        pop bx
+022D    5B                        pop         bx 
+
+        pop ds
+022E    1F                        pop         ds 
+
+        ret  
+022F    C3                        ret         
+0230    26 FF                                           &.
+
+flush_ endp    
+
+; ----------------  serial receive byte 115200 bps --------------
+srecb_   dw  0ff26h  
+
+
+;----------------------------------- vertical scroll ------------------------
+vscroll_ proc near   ; ax = lines
+        push si
+
+Routine Size: 17 bytes,    Routine Base: _TEXT + 0221
+
+0232                          vscroll_:
+0232    56                        push        si 
+
+        push di
+0233    57                        push        di 
+
+        push cx
+0234    51                        push        cx 
+
+        push _SCREEN_SEGMENT
+0235    FF 36 02 00               push        word ptr DGROUP:_SCREEN_SEGMENT 
+
+        pop es
+0239    07                        pop         es 
+
+        imul si,ax,320
+023A    69 F0 40 01               imul        si,ax,0x0140 
+
+        xor di,di
+023E    33 FF                     xor         di,di 
+
+        imul cx,ax,-160
+0240    69 C8 60 FF               imul        cx,ax,0xff60 
+
+        add cx,32000
+0244    81 C1 00 7D               add         cx,0x7d00 
+
+        rep movs word ptr es:[di], word ptr es:[si]
+0248    F3 26 A5                  rep movs    word ptr [di],word ptr es:[si] 
+
+        pop cx
+024B    59                        pop         cx 
+
+        pop di
+024C    5F                        pop         di 
+
+        pop si
+024D    5E                        pop         si 
+
+        ret
+024E    C3                        ret         
+
+vscroll_ endp
+
+
+;----------------------------------- CLS -------------------------------------
+cls_ proc near   ; al = color
+        push di
+
+Routine Size: 29 bytes,    Routine Base: _TEXT + 0232
+
+024F                          cls_:
+024F    57                        push        di 
+
+        push cx
+0250    51                        push        cx 
+
+        xor di,di
+0251    33 FF                     xor         di,di 
+
+        push _SCREEN_SEGMENT
+0253    FF 36 02 00               push        word ptr DGROUP:_SCREEN_SEGMENT 
+
+        pop es
+0257    07                        pop         es 
+
+        mov cx,32000
+0258    B9 00 7D                  mov         cx,0x7d00 
+
+        mov ah,al
+025B    8A E0                     mov         ah,al 
+
+        rep stosw
+025D    F3 AB                     rep stosw   
+
+        pop cx
+025F    59                        pop         cx 
+
+        pop di
+0260    5F                        pop         di 
+
+        ret
+0261    C3                        ret         
+
+cls_ endp
+       
+
+
+;----------------------------------- LineDraw Abrash -------------------------------------
+SCREEN_WIDTH       equ 320
+; Parameters to call.
+parms   struc
+           dw    ?              ;pushed BP
+           dw    ?              ;pushed return address
+XStart     dw    ?              ;X start coordinate of line
+YStart     dw    ?              ;Y start coordinate of line
+XEnd       dw    ?              ;X end coordinate of line
+YEnd       dw    ?              ;Y end coordinate of line
+Color      db    ?              ;color in which to draw line
+           db    ?              ;dummy byte because Color is really a word
+parms ends
+
+;ASSUME bp:PTR parms
+; Local variables.
+AdjUp          equ -2          ;error term adjust up on each advance
+AdjDown        equ -4          ;error term adjust down when error term turns over
+WholeStep      equ -6          ;minimum run length
+XAdvance       equ -8          ;1 or -1, for direction in which X advances
+LOCAL_SIZE     equ  8
+_LineDraw   proc  near
+      cld
+
+Routine Size: 19 bytes,    Routine Base: _TEXT + 024F
+
+0262                          _LineDraw:
+0262    FC                        cld         
+
+      push        bp                  ;preserve caller’s stack frame
+0263    55                        push        bp 
+
+      mov         bp,sp               ;point to our stack frame
+0264    8B EC                     mov         bp,sp 
+
+      sub sp,     LOCAL_SIZE          ;allocate space for local variables
+0266    83 EC 08                  sub         sp,0x0008 
+
+      push        si                  ;preserve C register variables
+0269    56                        push        si 
+
+      push        di
+026A    57                        push        di 
+
+      push        ds                  ;preserve caller’s DS
+026B    1E                        push        ds 
+
+; We’ll draw top to bottom, to reduce the number of cases we have to handle,
+; and to make lines between the same endpoints always draw the same pixels.
+      mov         ax,[bp].YStart
+026C    8B 46 06                  mov         ax,word ptr 0x6[bp] 
+
+      cmp         ax,[bp].YEnd
+026F    3B 46 0A                  cmp         ax,word ptr 0xa[bp] 
+
+      jle         LineIsTopToBottom
+0272    7E 0F                     jle         L$12 
+
+      xchg        [bp].YEnd,ax;          swap endpoints
+0274    87 46 0A                  xchg        word ptr 0xa[bp],ax 
+
+      mov         [bp].YStart,ax
+0277    89 46 06                  mov         word ptr 0x6[bp],ax 
+
+      mov bx,      [bp].XStart
+027A    8B 5E 04                  mov         bx,word ptr 0x4[bp] 
+
+      xchg        [bp].XEnd,bx
+027D    87 5E 08                  xchg        word ptr 0x8[bp],bx 
+
+      mov         [bp].XStart,bx
+0280    89 5E 04                  mov         word ptr 0x4[bp],bx 
+
+LineIsTopToBottom:
+; Point DI to the first pixel to draw.
+      mov         dx,SCREEN_WIDTH
+0283                          L$12:
+0283    BA 40 01                  mov         dx,0x0140 
+
+      mul         dx                    ;YStart * SCREEN_WIDTH
+0286    F7 E2                     mul         dx 
+
+      mov         si,[bp].XStart
+0288    8B 76 04                  mov         si,word ptr 0x4[bp] 
+
+      mov         di,si
+028B    8B FE                     mov         di,si 
+
+      add         di,ax                 ;DI = YStart * SCREEN_WIDTH + XStart
+028D    03 F8                     add         di,ax 
+
+                                        ; = offset of initial pixel
+; Figure out how far we’re going vertically (guaranteed to be positive).
+      mov         cx,[bp].YEnd
+028F    8B 4E 0A                  mov         cx,word ptr 0xa[bp] 
+
+      sub         cx,[bp].YStart        ;CX = YDelta
+0292    2B 4E 06                  sub         cx,word ptr 0x6[bp] 
+
+; Figure out whether we’re going left or right, and how far we’re going
+; horizontally. In the process, special-case vertical lines, for speed and
+; to avoid nasty boundary conditions and division by 0.
+      mov         dx,[bp].XEnd
+0295    8B 56 08                  mov         dx,word ptr 0x8[bp] 
+
+      sub         dx,si                 ;XDelta
+0298    2B D6                     sub         dx,si 
+
+      jnz         NotVerticalLine       ;XDelta == 0 means vertical line
+029A    75 48                     jne         L$18 
+
+                                        ;it is a vertical line
+                                        ;yes, special case vertical line
+      mov         ax,_SCREEN_SEGMENT
+029C    A1 02 00                  mov         ax,word ptr DGROUP:_SCREEN_SEGMENT 
+
+      mov         ds,ax                 ;point DS:DI to the first byte to draw
+029F    8E D8                     mov         ds,ax 
+
+      mov         al,[bp].Color
+02A1    8A 46 0C                  mov         al,byte ptr 0xc[bp] 
+
+VLoop:
+      mov         [di],al
+02A4                          L$13:
+02A4    88 05                     mov         byte ptr [di],al 
+
+      add         di,SCREEN_WIDTH
+02A6    81 C7 40 01               add         di,0x0140 
+
+      dec         cx
+02AA    49                        dec         cx 
+
+      jns         VLoop
+02AB    79 F7                     jns         L$13 
+
+      jmp         Done
+02AD    E9 4E 01                  jmp         L$37 
+
+; Special-case code for horizontal lines.
+      align       2
+IsHorizontalLine:
+      mov         ax,_SCREEN_SEGMENT
+02B0                          L$14:
+02B0    A1 02 00                  mov         ax,word ptr DGROUP:_SCREEN_SEGMENT 
+
+      mov         es,ax                 ;point ES:DI to the first byte to draw
+02B3    8E C0                     mov         es,ax 
+
+      mov         al,[bp].Color
+02B5    8A 46 0C                  mov         al,byte ptr 0xc[bp] 
+
+      mov         ah,al                 ;duplicate in high byte for word access
+02B8    8A E0                     mov         ah,al 
+
+      and         bx,bx                 ;left to right?
+02BA    23 DB                     and         bx,bx 
+
+      jns         DirSet                ;yes
+02BC    79 02                     jns         L$15 
+
+      sub         di,dx                 ;currently right to left, point to left
+02BE    2B FA                     sub         di,dx 
+
+                                        ; end so we can go left to right
+                                        ; (avoids unpleasantness withright to
+                                        ;  left REP STOSW)
+DirSet:
+      mov         cx,dx
+02C0                          L$15:
+02C0    8B CA                     mov         cx,dx 
+
+      inc         cx                    ;# of pixels to draw
+02C2    41                        inc         cx 
+
+      shr         cx,1                  ;# of words to draw
+02C3    D1 E9                     shr         cx,0x01 
+
+      rep         stosw                 ;do as many words as possible
+02C5    F3 AB                     rep stosw   
+
+      adc         cx,cx
+02C7    13 C9                     adc         cx,cx 
+
+      rep         stosb                 ;do the odd byte, if there is one
+02C9    F3 AA                     rep stosb   
+
+      jmp         Done
+02CB    E9 30 01                  jmp         L$37 
+
+; Special-case code for diagonal lines.
+      align       2
+IsDiagonalLine:
+      mov         ax,_SCREEN_SEGMENT
+02CE                          L$16:
+02CE    A1 02 00                  mov         ax,word ptr DGROUP:_SCREEN_SEGMENT 
+
+      mov         ds,ax                 ;point DS:DI to the first byte to draw
+02D1    8E D8                     mov         ds,ax 
+
+      mov         al,[bp].Color
+02D3    8A 46 0C                  mov         al,byte ptr 0xc[bp] 
+
+      add         bx,SCREEN_WIDTH       ;advance distance from one pixel to next
+02D6    81 C3 40 01               add         bx,0x0140 
+
+DLoop:
+      mov         [di],al
+02DA                          L$17:
+02DA    88 05                     mov         byte ptr [di],al 
+
+      add         di,bx
+02DC    03 FB                     add         di,bx 
+
+      dec         cx
+02DE    49                        dec         cx 
+
+      jns         DLoop
+02DF    79 F9                     jns         L$17 
+
+      jmp         Done
+02E1    E9 1A 01                  jmp         L$37 
+
+
+      align       2
+NotVerticalLine:
+      mov         bx,1                  ;assume left to right, so XAdvance = 1
+02E4                          L$18:
+02E4    BB 01 00                  mov         bx,0x0001 
+
+                                        ;***leaves flags unchanged***
+      jns         LeftToRight           ;left to right, all set
+02E7    79 04                     jns         L$19 
+
+      neg         bx                    ;right to left, so XAdvance = -1
+02E9    F7 DB                     neg         bx 
+
+      neg         dx                    ;|XDelta|
+02EB    F7 DA                     neg         dx 
+
+LeftToRight:
+; Special-case horizontal lines.
+            and       cx,cx             ;YDelta == 0?
+02ED                          L$19:
+02ED    23 C9                     and         cx,cx 
+
+            jz        IsHorizontalLine  ;yes
+02EF    74 BF                     je          L$14 
+
+
+
+
+
+; Special-case diagonal lines.
+      cmp         cx,dx                 ;YDelta == XDelta?
+02F1    3B CA                     cmp         cx,dx 
+
+      jz         IsDiagonalLine         ;yes
+02F3    74 D9                     je          L$16 
+
+; Determine whether the line is X or Y major, and handle accordingly.
+      cmp         dx,cx
+02F5    3B D1                     cmp         dx,cx 
+
+      jae         XMajor
+02F7    73 03                     jae         L$20 
+
+           jmp         YMajor
+02F9    EB 79                     jmp         L$28 
+02FB    FC                        cld         
+
+; X-major (more horizontal than vertical) line.
+      align       2
+XMajor:
+      mov         ax,_SCREEN_SEGMENT
+02FC                          L$20:
+02FC    A1 02 00                  mov         ax,word ptr DGROUP:_SCREEN_SEGMENT 
+
+      mov         es,ax                 ;point ES:DI to the first byte to draw
+02FF    8E C0                     mov         es,ax 
+
+      and         bx,bx                 ;left to right?
+0301    23 DB                     and         bx,bx 
+
+      jns         DFSet                 ;yes, CLD is already set
+0303    79 01                     jns         L$21 
+
+      std                               ;right to left, so draw backwards
+0305    FD                        std         
+
+DFSet:
+      mov         ax,dx                 ;XDelta
+0306                          L$21:
+0306    8B C2                     mov         ax,dx 
+
+      sub         dx,dx                 ;prepare for division
+0308    2B D2                     sub         dx,dx 
+
+      div         cx                    ;AX = XDelta/YDelta
+030A    F7 F1                     div         cx 
+
+                                        ; (minimum # of pixels in a run in this line)
+                                        ;DX = XDelta % YDelta
+      mov         bx,dx                 ;error term adjust each time Y steps by 1;
+030C    8B DA                     mov         bx,dx 
+
+      add         bx,bx                 ; used to tell when one extra pixel should be
+030E    03 DB                     add         bx,bx 
+
+      mov         word ptr AdjUp[bp],bx         ; drawn as part of a run, to account for
+0310    89 5E FE                  mov         word ptr -0x2[bp],bx 
+
+                                        ; fractional steps along the X axis per
+                                        ; 1-pixel steps along Y
+      mov         si,cx                 ;error term adjust when the error term turns
+0313    8B F1                     mov         si,cx 
+
+      add         si,si                 ; over, used to factor out the X step made at
+0315    03 F6                     add         si,si 
+
+      mov         word ptr AdjDown[bp],si       ; that time
+0317    89 76 FC                  mov         word ptr -0x4[bp],si 
+
+; Initial error term; reflects an initial step of 0.5 along the Y axis.
+      sub         dx,si                 ;(XDelta % YDelta) - (YDelta * 2)
+031A    2B D6                     sub         dx,si 
+
+                                        ;DX = initial error term
+; The initial and last runs are partial, because Y advances only 0.5 for
+; these runs, rather than 1. Divide one full run, plus the initial pixel,
+; between the initial and last runs.
+      mov         si,cx                 ;SI = YDelta
+031C    8B F1                     mov         si,cx 
+
+      mov         cx,ax                 ;whole step (minimum run length)
+031E    8B C8                     mov         cx,ax 
+
+      shr         cx,1
+0320    D1 E9                     shr         cx,0x01 
+
+      inc         cx                    ;initial pixel count = (whole step / 2) + 1;
+0322    41                        inc         cx 
+
+                                        ; (may be adjusted later). This is also the
+                                        ; final run pixel count
+      push        cx                    ;remember final run pixel count for later
+0323    51                        push        cx 
+
+; If the basic run length is even and there’s no fractional advance, we have
+; one pixel that could go to either the initial or last partial run, which
+; we’ll arbitrarily allocate to the last run.
+; If there is an odd number of pixels per run, we have one pixel that can’t
+; be allocated to either the initial or last partial run, so we’ll add 0.5 to
+; the error term so this pixel will be handled by the normal full-run loop.
+      add         dx,si                 ;assume odd length, add YDelta to error term
+0324    03 D6                     add         dx,si 
+
+                                        ; (add 0.5 of a pixel to the error term)
+      test        al,1                  ;is run length even?
+0326    A8 01                     test        al,0x01 
+
+      jnz         XMajorAdjustDone      ;no, already did work for odd case, all set
+0328    75 07                     jne         L$22 
+
+      sub         dx,si                 ;length is even, undo odd stuff we just did
+032A    2B D6                     sub         dx,si 
+
+      and         bx,bx                 ;is the adjust up equal to 0?
+032C    23 DB                     and         bx,bx 
+
+      jnz         XMajorAdjustDone      ;no (don’t need to check for odd length,
+032E    75 01                     jne         L$22 
+
+                                        ; because of the above test)
+      dec         cx                    ;both conditions met; make initial run 1
+0330    49                        dec         cx 
+
+                                        ; shorter
+XMajorAdjustDone:
+      mov         word ptr WholeStep[bp],ax     ;whole step (minimum run length)
+0331                          L$22:
+0331    89 46 FA                  mov         word ptr -0x6[bp],ax 
+
+      mov         al,[bp].Color         ;AL = drawing color
+0334    8A 46 0C                  mov         al,byte ptr 0xc[bp] 
+
+; Draw the first, partial run of pixels.
+      rep         stosb                 ;draw the final run
+0337    F3 AA                     rep stosb   
+
+      add         di,SCREEN_WIDTH       ;advance along the minor axis (Y)
+0339    81 C7 40 01               add         di,0x0140 
+
+; Draw all full runs.
+      cmp         si,1                  ;are there more than 2 scans, so there are
+033D    83 FE 01                  cmp         si,0x0001 
+
+                                        ; some full runs? (SI = # scans - 1)
+      jna         XMajorDrawLast        ;no, no full runs
+0340    76 2A                     jbe         L$27 
+
+      dec         dx                    ;adjust error term by -1 so we can use
+0342    4A                        dec         dx 
+
+                                        ; carry test
+      shr         si,1                  ;convert from scan to scan-pair count
+0343    D1 EE                     shr         si,0x01 
+
+      jnc         XMajorFullRunsOddEntry ;if there is an odd umber of scans,
+0345    73 11                     jae         L$25 
+
+                                        ; do the odd scan now
+XMajorFullRunsLoop:
+      mov         cx, word ptr WholeStep[bp]     ;run is at least this long
+0347                          L$23:
+0347    8B 4E FA                  mov         cx,word ptr -0x6[bp] 
+
+      add         dx,bx                 ;advance the error term and add an extra
+034A    03 D3                     add         dx,bx 
+
+      jnc         XMajorNoExtra         ; pixel if the error term so indicates
+034C    73 04                     jae         L$24 
+
+      inc         cx                    ;one extra pixel in run
+034E    41                        inc         cx 
+
+      sub         dx, word ptr AdjDown[bp]       ;reset the error term
+034F    2B 56 FC                  sub         dx,word ptr -0x4[bp] 
+
+XMajorNoExtra:
+      rep         stosb                 ;draw this scan line’s run
+0352                          L$24:
+0352    F3 AA                     rep stosb   
+
+      add         di,SCREEN_WIDTH       ;advance along the minor axis (Y)
+0354    81 C7 40 01               add         di,0x0140 
+
+XMajorFullRunsOddEntry:                 ;enter loop here if there is an odd number
+                                        ; of full runs
+      mov         cx,word ptr WholeStep[bp]     ;run is at least this long
+0358                          L$25:
+0358    8B 4E FA                  mov         cx,word ptr -0x6[bp] 
+
+      add         dx,bx                 ;advance the error term and add an extra
+035B    03 D3                     add         dx,bx 
+
+      jnc         XMajorNoExtra2        ; pixel if the error term so indicates
+035D    73 04                     jae         L$26 
+
+      inc         cx                    ;one extra pixel in run
+035F    41                        inc         cx 
+
+      sub         dx,word ptr AdjDown[bp]       ;reset the error term
+0360    2B 56 FC                  sub         dx,word ptr -0x4[bp] 
+
+XMajorNoExtra2:
+      rep         stosb                 ;draw this scan line’s run
+0363                          L$26:
+0363    F3 AA                     rep stosb   
+
+      add         di,SCREEN_WIDTH       ;advance along the minor axis (Y)
+0365    81 C7 40 01               add         di,0x0140 
+
+
+      dec         si
+0369    4E                        dec         si 
+
+      jnz         XMajorFullRunsLoop
+036A    75 DB                     jne         L$23 
+
+; Draw the final run of pixels.
+XMajorDrawLast:
+      pop         cx                    ;get back the final run pixel length
+036C                          L$27:
+036C    59                        pop         cx 
+
+      rep         stosb                 ;draw the final run
+036D    F3 AA                     rep stosb   
+
+
+      cld                               ;restore normal direction flag
+036F    FC                        cld         
+
+      jmp         Done
+0370    E9 8B 00                  jmp         L$37 
+0373    FC                        cld         
+
+; Y-major (more vertical than horizontal) line.
+      align       2
+YMajor:
+      mov         word ptr XAdvance[bp],bx      ;remember which way X advances
+0374                          L$28:
+0374    89 5E F8                  mov         word ptr -0x8[bp],bx 
+
+      mov         ax,_SCREEN_SEGMENT
+0377    A1 02 00                  mov         ax,word ptr DGROUP:_SCREEN_SEGMENT 
+
+      mov         ds,ax                 ;point DS:DI to the first byte to draw
+037A    8E D8                     mov         ds,ax 
+
+      mov         ax,cx                 ;YDelta
+037C    8B C1                     mov         ax,cx 
+
+      mov         cx,dx                 ;XDelta
+037E    8B CA                     mov         cx,dx 
+
+      sub         dx,dx                 ;prepare for division
+0380    2B D2                     sub         dx,dx 
+
+      div         cx                    ;AX = YDelta/XDelta
+0382    F7 F1                     div         cx 
+
+                                        ; (minimum # of pixels in a run in this line)
+                                        ;DX = YDelta % XDelta
+      mov         bx,dx                 ;error term adjust each time X steps by 1;
+0384    8B DA                     mov         bx,dx 
+
+      add         bx,bx                 ; used to tell when one extra pixel should be
+0386    03 DB                     add         bx,bx 
+
+      mov         word ptr AdjUp[bp],bx         ; drawn as part of a run, to account for
+0388    89 5E FE                  mov         word ptr -0x2[bp],bx 
+
+                                        ; fractional steps along the Y axis per
+                                        ; 1-pixel steps along X
+      mov         si,cx                 ;error term adjust when the error term turns
+038B    8B F1                     mov         si,cx 
+
+      add         si,si                 ; over, used to factor out the Y step made at
+038D    03 F6                     add         si,si 
+
+      mov         word ptr AdjDown[bp],si       ; that time
+038F    89 76 FC                  mov         word ptr -0x4[bp],si 
+
+
+; Initial error term; reflects an initial step of 0.5 along the X axis.
+      sub         dx,si                 ;(YDelta % XDelta) - (XDelta * 2)
+0392    2B D6                     sub         dx,si 
+
+                                        ;DX = initial error term
+; The initial and last runs are partial, because X advances only 0.5 for
+; these runs, rather than 1. Divide one full run, plus the initial pixel,
+; between the initial and last runs.
+      mov         si,cx                 ;SI = XDelta
+0394    8B F1                     mov         si,cx 
+
+      mov         cx,ax                 ;whole step (minimum run length)
+0396    8B C8                     mov         cx,ax 
+
+      shr         cx,1
+0398    D1 E9                     shr         cx,0x01 
+
+      inc         cx                    ;initial pixel count = (whole step / 2) + 1;
+039A    41                        inc         cx 
+
+                                        ; (may be adjusted later)
+      push         cx                   ;remember final run pixel count for later
+039B    51                        push        cx 
+
+
+; If the basic run length is even and there’s no fractional advance, we have
+; one pixel that could go to either the initial or last partial run, which
+; we’ll arbitrarily allocate to the last run.
+; If there is an odd number of pixels per run, we have one pixel that can’t
+; be allocated to either the initial or last partial run, so we’ll add 0.5 to
+; the error term so this pixel will be handled by the normal full-run loop.
+      add         dx,si                 ;assume odd length, add XDelta to error term
+039C    03 D6                     add         dx,si 
+
+      test        al,1                  ;is run length even?
+039E    A8 01                     test        al,0x01 
+
+      jnz         YMajorAdjustDone      ;no, already did work for odd case, all set
+03A0    75 07                     jne         L$29 
+
+      sub         dx,si                 ;length is even, undo odd stuff we just did
+03A2    2B D6                     sub         dx,si 
+
+      and         bx,bx                 ;is the adjust up equal to 0?
+03A4    23 DB                     and         bx,bx 
+
+      jnz         YMajorAdjustDone      ;no (don’t need to check for odd length,
+03A6    75 01                     jne         L$29 
+
+                                        ; because of the above test)
+      dec         cx                    ;both conditions met; make initial run 1
+03A8    49                        dec         cx 
+
+                                        ; shorter
+YMajorAdjustDone:
+      mov         word ptr WholeStep[bp],ax     ;whole step (minimum run length)
+03A9                          L$29:
+03A9    89 46 FA                  mov         word ptr -0x6[bp],ax 
+
+      mov         al,[bp].Color         ;AL = drawing color
+03AC    8A 46 0C                  mov         al,byte ptr 0xc[bp] 
+
+      mov         bx,word ptr XAdvance[bp]      ;which way X advances
+03AF    8B 5E F8                  mov         bx,word ptr -0x8[bp] 
+
+; Draw the first, partial run of pixels.
+YMajorFirstLoop:
+      mov         [di],al               ;draw the pixel
+03B2                          L$30:
+03B2    88 05                     mov         byte ptr [di],al 
+
+      add         di,SCREEN_WIDTH       ;advance along the major axis (Y)
+03B4    81 C7 40 01               add         di,0x0140 
+
+      loop         YMajorFirstLoop
+03B8    E2 F8                     loop        L$30 
+
+      add         di,bx                 ;advance along the minor axis (X)
+03BA    03 FB                     add         di,bx 
+
+        ; Draw all full runs.
+      cmp         si,1                  ;# of full runs. Are there more than 2
+03BC    83 FE 01                  cmp         si,0x0001 
+
+                                        ; columns, so there are some full runs?
+                                        ; (SI = # columns - 1)
+      jna         YMajorDrawLast        ;no, no full runs
+03BF    76 34                     jbe         L$35 
+
+      dec         dx                    ;adjust error term by -1 so we can use
+03C1    4A                        dec         dx 
+
+                                        ; carry test
+      shr         si,1                  ;convert from column to column-pair count
+03C2    D1 EE                     shr         si,0x01 
+
+      jnc         YMajorFullRunsOddEntry ;if there is an odd number of
+03C4    73 16                     jae         L$33 
+
+                                        ; columns, do the odd column now
+YMajorFullRunsLoop:
+      mov         cx,word ptr WholeStep[bp]     ;run is at least this long
+03C6                          L$31:
+03C6    8B 4E FA                  mov         cx,word ptr -0x6[bp] 
+
+      add         dx,word ptr AdjUp[bp]         ;advance the error term and add an extra
+03C9    03 56 FE                  add         dx,word ptr -0x2[bp] 
+
+      jnc         YMajorNoExtra         ; pixel if the error term so indicates
+03CC    73 04                     jae         L$32 
+
+      inc         cx                    ;one extra pixel in run
+03CE    41                        inc         cx 
+
+      sub         dx,word ptr AdjDown[bp]       ;reset the error term
+03CF    2B 56 FC                  sub         dx,word ptr -0x4[bp] 
+
+YMajorNoExtra:
+  ;draw the run
+YMajorRunLoop:
+      mov         [di],al               ;draw the pixel
+03D2                          L$32:
+03D2    88 05                     mov         byte ptr [di],al 
+
+      add         di,SCREEN_WIDTH       ;advance along the major axis (Y)
+03D4    81 C7 40 01               add         di,0x0140 
+
+      loop         YMajorRunLoop
+03D8    E2 F8                     loop        L$32 
+
+      add         di,bx                 ;advance along the minor axis (X)
+03DA    03 FB                     add         di,bx 
+
+YMajorFullRunsOddEntry:                 ;enter loop here if there is an odd number
+                                        ; of full runs
+      mov         cx,word ptr WholeStep[bp]     ;run is at least this long
+03DC                          L$33:
+03DC    8B 4E FA                  mov         cx,word ptr -0x6[bp] 
+
+      add         dx,word ptr AdjUp[bp]         ;advance the error term and add an extra
+03DF    03 56 FE                  add         dx,word ptr -0x2[bp] 
+
+      jnc         YMajorNoExtra2        ; pixel if the error term so indicates
+03E2    73 04                     jae         L$34 
+
+      inc         cx                    ;one extra pixel in run
+03E4    41                        inc         cx 
+
+      sub         dx,word ptr AdjDown[bp]       ;reset the error term
+03E5    2B 56 FC                  sub         dx,word ptr -0x4[bp] 
+
+YMajorNoExtra2:
+  ;draw the run
+YMajorRunLoop2:
+      mov         [di],al               ;draw the pixel
+03E8                          L$34:
+03E8    88 05                     mov         byte ptr [di],al 
+
+      add         di,SCREEN_WIDTH       ;advance along the major axis (Y)
+03EA    81 C7 40 01               add         di,0x0140 
+
+      loop         YMajorRunLoop2
+03EE    E2 F8                     loop        L$34 
+
+      add         di,bx                 ;advance along the minor axis (X)
+03F0    03 FB                     add         di,bx 
+
+
+      dec         si
+03F2    4E                        dec         si 
+
+      jnz         YMajorFullRunsLoop
+03F3    75 D1                     jne         L$31 
+
+; Draw the final run of pixels.
+YMajorDrawLast:
+      pop         cx                    ;get back the final run pixel length
+03F5                          L$35:
+03F5    59                        pop         cx 
+
+YMajorLastLoop:
+      mov         [di],al               ;draw the pixel
+03F6                          L$36:
+03F6    88 05                     mov         byte ptr [di],al 
+
+      add         di,SCREEN_WIDTH       ;advance along the major axis (Y)
+03F8    81 C7 40 01               add         di,0x0140 
+
+      loop         YMajorLastLoop
+03FC    E2 F8                     loop        L$36 
+
+Done:
+      pop         ds                    ;restore caller’s DS
+03FE                          L$37:
+03FE    1F                        pop         ds 
+
+      pop         di
+03FF    5F                        pop         di 
+
+      pop         si                    ;restore C register variables
+0400    5E                        pop         si 
+
+      mov         sp,bp                 ;deallocate local variables
+0401    8B E5                     mov         sp,bp 
+
+      pop         bp                    ;restore caller’s stack frame
+0403    5D                        pop         bp 
+
+      ret ;10
+0404    C3                        ret         
+0405                          _small_code_:
+0405    00                                              .
+0406                          __compiled_under_generic:
+0406    00                                              .
+0407                          ___wcpp_4_data_init_fs_root_:
+0407    00                                              .
+0408                          __ppfltused_:
+0408    00                                              .
+0409                          _Not_Enough_Memory_:
+0409    00                                              .
+040A                          __GETDS:
+040A    00                                              .
+040B                          ___begtext:
+040B    00                                              .
+040C                          __do_exit_with_msg__:
+040C    00                                              .
+040D                          __exit_:
+040D    00                                              .
+040E                          __nullarea:
+040E    00                                              .
+
+Routine Size: 429 bytes,    Routine Base: _TEXT + 0262
+
+No disassembly errors
+
+Segment: CONST WORD USE16 00000000 bytes
+
+Segment: _BSS WORD USE16 00000800 bytes
+0800                          L$38:
+
+BSS Size: 2048 bytes
+

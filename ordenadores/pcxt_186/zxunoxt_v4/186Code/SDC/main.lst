@@ -1,0 +1,331 @@
+Module: D:\work\xilinx\ddr_186\ddr_186\186Code\watcom\SDC\main.cpp
+GROUP: 'DGROUP' CONST,CONST2,_DATA,_BSS
+
+File contains no line numbers.
+Segment: _TEXT BYTE USE16 00000226 bytes
+0000                          void near dispstr( char near * ):
+0000    53                        push        bx 
+0001    51                        push        cx 
+0002    52                        push        dx 
+0003    56                        push        si 
+0004    57                        push        di 
+0005    8B D0                     mov         dx,ax 
+0007    B4 09                     mov         ah,0x09 
+0009    CD 21                     int         0x21 
+000B    5F                        pop         di 
+000C    5E                        pop         si 
+000D                          L$1:
+000D    5A                        pop         dx 
+000E    59                        pop         cx 
+000F    5B                        pop         bx 
+0010    C3                        ret         
+
+Routine Size: 17 bytes,    Routine Base: _TEXT + 0000
+
+0011                          long unsigned near HCS_to_LBA( int unsigned, int unsigned ):
+0011    53                        push        bx 
+0012    51                        push        cx 
+0013    56                        push        si 
+0014    57                        push        di 
+0015    89 C6                     mov         si,ax 
+0017    89 D7                     mov         di,dx 
+0019    89 D3                     mov         bx,dx 
+001B    89 D0                     mov         ax,dx 
+001D    30 F7                     xor         bh,dh 
+001F    31 C9                     xor         cx,cx 
+0021    80 E3 C0                  and         bl,0xc0 
+0024    C1 E8 08                  shr         ax,0x08 
+0027    C1 E3 02                  shl         bx,0x02 
+002A    31 D2                     xor         dx,dx 
+002C    09 D8                     or          ax,bx 
+002E    BB FF 00                  mov         bx,0x00ff 
+0031    83 E7 3F                  and         di,0x003f 
+0034    E8 00 00                  call        __I4M 
+0037    31 DB                     xor         bx,bx 
+0039    01 F0                     add         ax,si 
+003B    11 DA                     adc         dx,bx 
+003D    BB 3F 00                  mov         bx,0x003f 
+0040    31 C9                     xor         cx,cx 
+0042    E8 00 00                  call        __I4M 
+0045    31 DB                     xor         bx,bx 
+0047    01 F8                     add         ax,di 
+0049    11 DA                     adc         dx,bx 
+004B    05 FF FF                  add         ax,0xffff 
+004E    83 D2 FF                  adc         dx,0xffff 
+0051    5F                        pop         di 
+0052                          L$2:
+0052    5E                        pop         si 
+0053    59                        pop         cx 
+0054    5B                        pop         bx 
+0055    C3                        ret         
+
+Routine Size: 69 bytes,    Routine Base: _TEXT + 0011
+
+0056                          void near showpartinfo( sPartInfo near *, int ):
+0056    53                        push        bx 
+0057    51                        push        cx 
+0058    56                        push        si 
+0059    89 C3                     mov         bx,ax 
+005B    89 D6                     mov         si,dx 
+005D    8B 47 0C                  mov         ax,word ptr 0xc[bx] 
+0060    8B 57 0E                  mov         dx,word ptr 0xe[bx] 
+0063    B9 0B 00                  mov         cx,0x000b 
+0066                          L$3:
+0066    D1 EA                     shr         dx,0x01 
+0068    D1 D8                     rcr         ax,0x01 
+006A    E2 FA                     loop        L$3 
+006C    52                        push        dx 
+006D    50                        push        ax 
+006E    8A 47 04                  mov         al,byte ptr 0x4[bx] 
+0071    30 E4                     xor         ah,ah 
+0073    50                        push        ax 
+0074    80 3F 80                  cmp         byte ptr [bx],0x80 
+0077    75 72                     jne         L$5 
+0079    B8 00 00                  mov         ax,offset DGROUP:L$19 
+007C                          L$4:
+007C    50                        push        ax 
+007D    56                        push        si 
+007E    68 10 00                  push        offset DGROUP:L$21 
+0081    68 00 00                  push        offset char near c[] 
+0084    E8 00 00                  call        sprintf_ 
+0087    83 C4 0E                  add         sp,0x000e 
+008A    B8 00 00                  mov         ax,offset char near c[] 
+008D    E8 00 00                  call        void near dispstr( char near * ) 
+0090    8A 47 01                  mov         al,byte ptr 0x1[bx] 
+0093    8B 57 02                  mov         dx,word ptr 0x2[bx] 
+0096    30 E4                     xor         ah,ah 
+0098    E8 00 00                  call        long unsigned near HCS_to_LBA( int unsigned, int unsigned ) 
+009B    50                        push        ax 
+009C    52                        push        dx 
+009D    68 3D 00                  push        offset DGROUP:L$22 
+00A0    68 00 00                  push        offset char near c[] 
+00A3    E8 00 00                  call        sprintf_ 
+00A6    83 C4 08                  add         sp,0x0008 
+00A9    B8 00 00                  mov         ax,offset char near c[] 
+00AC    E8 00 00                  call        void near dispstr( char near * ) 
+00AF    8A 47 05                  mov         al,byte ptr 0x5[bx] 
+00B2    8B 57 06                  mov         dx,word ptr 0x6[bx] 
+00B5    30 E4                     xor         ah,ah 
+00B7    E8 00 00                  call        long unsigned near HCS_to_LBA( int unsigned, int unsigned ) 
+00BA    50                        push        ax 
+00BB    52                        push        dx 
+00BC    68 53 00                  push        offset DGROUP:L$23 
+00BF    68 00 00                  push        offset char near c[] 
+00C2    E8 00 00                  call        sprintf_ 
+00C5    83 C4 08                  add         sp,0x0008 
+00C8    B8 00 00                  mov         ax,offset char near c[] 
+00CB    E8 00 00                  call        void near dispstr( char near * ) 
+00CE    8B 47 08                  mov         ax,word ptr 0x8[bx] 
+00D1    50                        push        ax 
+00D2    8B 47 0A                  mov         ax,word ptr 0xa[bx] 
+00D5    50                        push        ax 
+00D6    68 67 00                  push        offset DGROUP:L$24 
+00D9    68 00 00                  push        offset char near c[] 
+00DC    E8 00 00                  call        sprintf_ 
+00DF    83 C4 08                  add         sp,0x0008 
+00E2    B8 00 00                  mov         ax,offset char near c[] 
+00E5    E8 00 00                  call        void near dispstr( char near * ) 
+00E8    E9 67 FF                  jmp         L$2 
+00EB                          L$5:
+00EB    B8 07 00                  mov         ax,offset DGROUP:L$20 
+00EE    EB 8C                     jmp         L$4 
+
+Routine Size: 154 bytes,    Routine Base: _TEXT + 0056
+
+00F0                          void near diskinfo( long unsigned, int ):
+00F0    51                        push        cx 
+00F1    56                        push        si 
+00F2    57                        push        di 
+00F3    55                        push        bp 
+00F4    89 E5                     mov         bp,sp 
+00F6    81 EC 00 02               sub         sp,0x0200 
+00FA    89 DF                     mov         di,bx 
+00FC    6A 01                     push        0x0001 
+00FE    8D 9E 00 FE               lea         bx,-0x200[bp] 
+0102    8C D9                     mov         cx,ds 
+0104    E8 00 00                  call        sdread_ 
+0107    81 7E FE 55 AA            cmp         word ptr -0x2[bp],0xaa55 
+010C    75 32                     jne         L$10 
+010E    8D 76 BE                  lea         si,-0x42[bp] 
+0111                          L$6:
+0111    8A 44 04                  mov         al,byte ptr 0x4[si] 
+0114    84 C0                     test        al,al 
+0116    74 2E                     je          L$11 
+0118    3C 05                     cmp         al,0x05 
+011A    74 04                     je          L$7 
+011C    3C 0F                     cmp         al,0x0f 
+011E    75 16                     jne         L$9 
+0120                          L$7:
+0120    89 FB                     mov         bx,di 
+0122    8A 44 01                  mov         al,byte ptr 0x1[si] 
+0125    8B 54 02                  mov         dx,word ptr 0x2[si] 
+0128    30 E4                     xor         ah,ah 
+012A    47                        inc         di 
+012B    E8 00 00                  call        long unsigned near HCS_to_LBA( int unsigned, int unsigned ) 
+012E    E8 00 00                  call        void near diskinfo( long unsigned, int ) 
+0131                          L$8:
+0131    83 C6 10                  add         si,0x0010 
+0134    EB DB                     jmp         L$6 
+0136                          L$9:
+0136    89 FA                     mov         dx,di 
+0138    89 F0                     mov         ax,si 
+013A    E8 00 00                  call        void near showpartinfo( sPartInfo near *, int ) 
+013D    47                        inc         di 
+013E    EB F1                     jmp         L$8 
+0140                          L$10:
+0140    B8 89 00                  mov         ax,offset DGROUP:L$25 
+0143    E8 00 00                  call        void near dispstr( char near * ) 
+0146                          L$11:
+0146    C9                        leave       
+0147    5F                        pop         di 
+0148    5E                        pop         si 
+0149    59                        pop         cx 
+014A    C3                        ret         
+
+Routine Size: 91 bytes,    Routine Base: _TEXT + 00F0
+
+014B                          main_:
+014B    53                        push        bx 
+014C    51                        push        cx 
+014D    52                        push        dx 
+014E    E8 00 00                  call        void near initTTY() 
+0151    B8 00 07                  mov         ax,0x0700 
+0154    BB 00 00                  mov         bx,offset char near pal[] 
+0157    BA 08 00                  mov         dx,0x0008 
+015A    E8 00 00                  call        cls_ 
+015D    31 C0                     xor         ax,ax 
+015F    E8 00 00                  call        setpal_ 
+0162    31 DB                     xor         bx,bx 
+0164                          L$12:
+0164    43                        inc         bx 
+0165    D0 A7 FF FF               shl         byte ptr char near pal[]-0x1[bx],0x01 
+0169    83 FB 18                  cmp         bx,0x0018 
+016C    72 F6                     jb          L$12 
+016E    BA 08 00                  mov         dx,0x0008 
+0171    BB 00 00                  mov         bx,offset char near pal[] 
+0174    89 D0                     mov         ax,dx 
+0176    E8 00 00                  call        setpal_ 
+0179    B8 07 00                  mov         ax,0x0007 
+017C    E8 00 00                  call        void near SetTextColor( char unsigned ) 
+017F    B8 01 00                  mov         ax,0x0001 
+0182    BA 03 00                  mov         dx,0x0003 
+0185    E8 00 00                  call        showcursor_ 
+0188    B8 17 00                  mov         ax,0x0017 
+018B    E8 00 00                  call        setcursor_ 
+018E    E8 00 00                  call        flush_ 
+0191    E8 00 00                  call        sdinit_ 
+0194    85 C0                     test        ax,ax 
+0196    74 66                     je          L$14 
+0198    89 C2                     mov         dx,ax 
+019A    30 E6                     xor         dh,ah 
+019C    80 E2 3F                  and         dl,0x3f 
+019F    C1 E2 0A                  shl         dx,0x0a 
+01A2    52                        push        dx 
+01A3    C1 F8 06                  sar         ax,0x06 
+01A6    50                        push        ax 
+01A7    68 9C 00                  push        offset DGROUP:L$26 
+01AA    68 00 00                  push        offset char near c[] 
+01AD    31 DB                     xor         bx,bx 
+01AF    E8 00 00                  call        sprintf_ 
+01B2    B8 00 00                  mov         ax,offset char near c[] 
+01B5    83 C4 08                  add         sp,0x0008 
+01B8    31 D2                     xor         dx,dx 
+01BA    E8 00 00                  call        void near dispstr( char near * ) 
+01BD    31 C0                     xor         ax,ax 
+01BF    8C D9                     mov         cx,ds 
+01C1    E8 00 00                  call        void near diskinfo( long unsigned, int ) 
+01C4    6A 03                     push        0x0003 
+01C6    BB 00 00                  mov         bx,offset char near buf[] 
+01C9    B8 FD 2B                  mov         ax,0x2bfd 
+01CC    BA 76 00                  mov         dx,0x0076 
+01CF    E8 00 00                  call        sdread_ 
+01D2    3D 03 00                  cmp         ax,0x0003 
+01D5    75 29                     jne         L$15 
+01D7    89 C2                     mov         dx,ax 
+01D9    31 DB                     xor         bx,bx 
+01DB    C1 E2 09                  shl         dx,0x09 
+01DE                          L$13:
+01DE    39 D3                     cmp         bx,dx 
+01E0    7D 31                     jge         L$16 
+01E2    8A 87 00 00               mov         al,byte ptr char near buf[][bx] 
+01E6    30 E4                     xor         ah,ah 
+01E8    50                        push        ax 
+01E9    68 BB 00                  push        offset DGROUP:L$27 
+01EC    68 00 00                  push        offset char near c[] 
+01EF    E8 00 00                  call        sprintf_ 
+01F2    B8 00 00                  mov         ax,offset char near c[] 
+01F5    83 C4 06                  add         sp,0x0006 
+01F8    43                        inc         bx 
+01F9    E8 00 00                  call        void near dispstr( char near * ) 
+01FC    EB E0                     jmp         L$13 
+01FE                          L$14:
+01FE    EB 1E                     jmp         L$18 
+0200                          L$15:
+0200    50                        push        ax 
+0201    68 BE 00                  push        offset DGROUP:L$28 
+0204    68 00 00                  push        offset char near c[] 
+0207    E8 00 00                  call        sprintf_ 
+020A    83 C4 06                  add         sp,0x0006 
+020D    B8 00 00                  mov         ax,offset char near c[] 
+0210    E8 00 00                  call        void near dispstr( char near * ) 
+0213                          L$16:
+0213    E8 00 00                  call        defpal_ 
+0216                          L$17:
+0216    E8 00 00                  call        flush_ 
+0219    31 C0                     xor         ax,ax 
+021B    E9 EF FD                  jmp         L$1 
+021E                          L$18:
+021E    B8 D5 00                  mov         ax,offset DGROUP:L$29 
+0221    E8 00 00                  call        void near dispstr( char near * ) 
+0224    EB F0                     jmp         L$17 
+
+Routine Size: 219 bytes,    Routine Base: _TEXT + 014B
+
+No disassembly errors
+
+Segment: CONST BYTE USE16 000000E4 bytes
+0000                          L$19:
+0000    41 63 74 69 76 65 00                            Active.
+0007                          L$20:
+0007    49 6E 61 63 74 69 76 65 00                      Inactive.
+0010                          L$21:
+0010    0A 50 61 72 74 69 74 69 6F 6E 20 25 64 20 2D 20 .Partition %d - 
+0020    25 73 2C 20 54 79 70 65 3A 20 25 30 32 78 68 2C %s, Type: %02xh,
+0030    20 53 69 7A 65 20 25 64 20 4D 42 0A 00           Size %d MB..
+003D                          L$22:
+003D    53 74 61 72 74 20 73 65 63 74 6F 72 20 3D 20 25 Start sector = %
+004D    78 25 78 68 0A 00                               x%xh..
+0053                          L$23:
+0053    45 6E 64 20 73 65 63 74 6F 72 20 3D 20 25 78 25 End sector = %x%
+0063    78 68 0A 00                                     xh..
+0067                          L$24:
+0067    4D 42 52 20 74 6F 20 70 61 72 74 69 74 69 6F 6E MBR to partition
+0077    20 73 65 63 74 6F 72 73 20 3D 20 25 78 25 78 68  sectors = %x%xh
+0087    0A 00                                           ..
+0089                          L$25:
+0089    55 6E 66 6F 72 6D 61 74 74 65 64 20 64 69 73 6B Unformatted disk
+0099    2E 0A 00                                        ...
+009C                          L$26:
+009C    25 58 25 58 68 20 61 76 61 69 6C 61 62 6C 65 20 %X%Xh available 
+00AC    35 31 32 62 20 73 65 63 74 6F 72 73 20 0A 00    512b sectors ..
+00BB                          L$27:
+00BB    25 78 00                                        %x.
+00BE                          L$28:
+00BE    53 65 63 74 6F 72 20 72 65 61 64 20 65 72 72 6F Sector read erro
+00CE    72 3A 20 25 78 0A 00                            r: %x..
+00D5                          L$29:
+00D5    53 44 20 69 6E 69 74 20 65 72 72 6F 72 0A 00    SD init error..
+
+Segment: CONST2 BYTE USE16 00000000 bytes
+
+Segment: _DATA PARA USE16 00000018 bytes
+0000                          char near pal[]:
+0000    00 00 00 1F 00 00 00 1F 00 1F 1F 00 00 00 1F 1F ................
+0010    00 1F 00 1F 1F 1F 1F 1F                         ........
+
+Segment: _BSS PARA USE16 00004080 bytes
+0000                          char near c[]:
+0080                          char near buf[]:
+
+BSS Size: 16512 bytes
+
