@@ -80,7 +80,6 @@ module opl3(
     reg [1:0]tmr_cnt_smp = 2'b00;
     reg [7:0]tmr_cnt = 0;
     reg tmr_addr = 1'b0;
-	 reg tmr_enable = 1'b0;
     assign dout = {(addr == 2'b00 ? status : 3'b000),  5'b00000};
     wire [7:0]InPort = CPU_ADDR[0] ? qdata[7:0] : {4'b0000, qdata[9:8], qempty, ready};
   
@@ -140,13 +139,13 @@ module opl3(
     
 
 	always @ (posedge clk) begin
-	    CE <= !CE;
-	    read <= {read[0], stb44100};
-	    tmr_cnt_50 <= tmr_cnt_50 + 1'b1;
+	  CE <= !CE;
+      read <= {read[0], stb44100};
+      tmr_cnt_50 <= tmr_cnt_50 + 1'b1;
 	end
 	
 	always @(posedge cpu_clk) begin
-	    tmr_cnt_smp <= {tmr_cnt_smp[0], tmr_cnt_50[4] & tmr_enable};
+	    tmr_cnt_smp <= {tmr_cnt_smp[0], tmr_cnt_50[4]};
 	    if(tmr_cnt_smp == 2'b01 || (ce && !wr && addr == 2'b00)) tmr_cnt <= tmr_cnt + 1'b1; // simulate Adlib <IN> delay
 	    status <= {status[2] | tmr_cnt[7], status[1] | tmr_cnt[7], 1'b0};
 	    
@@ -156,11 +155,6 @@ module opl3(
                     if(tmr_addr && din[7]) begin
                         status <= 3'b000; // reset status
                         tmr_cnt <= 0;
-                        tmr_enable <= 0;
-                    end
-                    else if (tmr_addr && !din[7] && ! din[6] && din[0]) begin
-                        tmr_cnt <= 0;
-                        tmr_enable <= 1;
                     end
                 end else tmr_addr <= addr == 2'b00 && din == 8'h04;
             end   
