@@ -146,21 +146,36 @@ module opl3(
 	end
 	
 	always @(posedge cpu_clk) begin
-	    tmr_cnt_smp <= {tmr_cnt_smp[0], tmr_cnt_50[4] & tmr_enable};
-	    if(tmr_cnt_smp == 2'b01 || (ce && !wr && addr == 2'b00)) tmr_cnt <= tmr_cnt + 1'b1; // simulate Adlib <IN> delay
-	    status <= {status[2] | tmr_cnt[7], status[1] | tmr_cnt[7], 1'b0};
+	    //tmr_cnt_smp <= {tmr_cnt_smp[0], tmr_cnt_50[4] & tmr_enable};
+	    //if(tmr_cnt_smp == 2'b01 || (ce && !wr && addr == 2'b00)) tmr_cnt <= tmr_cnt + 1'b1; // simulate Adlib <IN> delay
+	    //status <= {status[2] | tmr_cnt[7], status[1] | tmr_cnt[7], 1'b0};
 	    
 	    if(ce)
             if(wr) begin
                 if(addr[0]) begin // data
-                    if(tmr_addr && din[7]) begin
+// bluesbrothers:
+// envia 0x0463 (01100011) (usa loops cortos para los out)
+// loop de 2000h haciendo in al,dx, and al,60h, debe ser 0
+// envia 0x0423 (00100011) b5=1 (ignora b1), b0=1
+// loop de 9FFFh, hasta que in al,dx, and al,60h sea 40h
+// envia 0x0443 (01000011) b6=1 (ignora b0), b1=1
+// loop de 9FFFh, hasta que in al,dx, and al,60h sea 20h
+//
+                    if(tmr_addr && (din[7] || (din[6] && din[5]))) begin // 0480h -> reset flags, 0460h -> también reset (fix F15II,F117,GS2K,etc)
                         status <= 3'b000; // reset status
-                        tmr_cnt <= 0;
+                        tmr_cnt <= 0;  // QUITAR ESTO y el "simulate in delay", dará problemas si hacemos muchos "in" (>127) en vez de loop (status terminará valiendo C0h)
                         tmr_enable <= 0;
-                    end
-                    else if (tmr_addr && !din[7] && ! din[6] && din[0]) begin
-                        tmr_cnt <= 0;
-                        tmr_enable <= 1;
+                    end else if (tmr_addr) begin
+								if (!din[6] && din[0]) begin // 0421h -> inicia timer1
+									status <= 3'b110; // timer1 terminado directamente
+									//tmr_cnt <= 0; //AITD: NO, LHX:NO
+									//tmr_cnt <= 8'h1f; //AITD: SI, LHX:NO, aitd posiblemente usa "loop", lhx posiblemente usa varios "in" y necesita que en 35 llegue a b110
+									//tmr_cnt <= 8'h5f; //AITD: SI, LHX:SI
+									tmr_enable <= 1;
+                        end else if (!din[5] && din[1]) begin // 0442h -> inicia timer2 (usado por el bluesb)
+									status <= 3'b101; // timer2 terminado directamente
+									tmr_enable <= 1;
+								end
                     end
                 end else tmr_addr <= addr == 2'b00 && din == 8'h04;
             end   
