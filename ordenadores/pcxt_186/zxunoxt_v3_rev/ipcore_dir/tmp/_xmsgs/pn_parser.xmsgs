@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/repos/lx16/zxunoxt_v2_rev/ipcore_dir/dcm_dsp.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Cores/lx16/zxunoxt_v3_rev/ipcore_dir/cache.v&quot; into library work</arg>
 </msg>
 
 </messages>

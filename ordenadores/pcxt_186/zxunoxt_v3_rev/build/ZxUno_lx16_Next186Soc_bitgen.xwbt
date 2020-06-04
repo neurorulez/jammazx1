@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Cores\lx16\zxunoxt_v3_rev\build\ZxUno_lx16_Next186Soc.ncd
+OUTFILE=C:\Cores\lx16\zxunoxt_v3_rev\build\ZxUno_lx16_Next186Soc.bit
+FAMILY=Spartan6
+PART=xc6slx16-2ftg256
+WORKINGDIR=C:\Cores\lx16\zxunoxt_v3_rev\build
+LICENSE=WebPack
+USER_INFO=__0_0_0
