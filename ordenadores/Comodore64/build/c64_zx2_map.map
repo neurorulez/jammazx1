@@ -1,0 +1,222 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'c64_zx2'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol
+high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir
+off -pr b -lc off -power off -o c64_zx2_map.ncd c64_zx2.ngd c64_zx2.pcf 
+Target Device  : xc6slx16
+Target Package : ftg256
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Wed Jul 03 10:04:52 2019
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 43 secs 
+Total CPU  time at the beginning of Placer: 42 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:a8de5a47) REAL time: 48 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:a8de5a47) REAL time: 49 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:a8de5a47) REAL time: 49 secs 
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+(Checksum:377f7a87) REAL time: 1 mins 11 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:377f7a87) REAL time: 1 mins 11 secs 
+
+Phase 6.30  Global Clock Region Assignment
+Phase 6.30  Global Clock Region Assignment (Checksum:377f7a87) REAL time: 1 mins 11 secs 
+
+Phase 7.3  Local Placement Optimization
+Phase 7.3  Local Placement Optimization (Checksum:377f7a87) REAL time: 1 mins 12 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:377f7a87) REAL time: 1 mins 12 secs 
+
+Phase 9.8  Global Placement
+.................................
+.....................................................................................
+..........................................................................................................
+................................................................................
+............................................................
+Phase 9.8  Global Placement (Checksum:b69f487b) REAL time: 4 mins 46 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:b69f487b) REAL time: 4 mins 47 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:8db02c44) REAL time: 5 mins 44 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:8db02c44) REAL time: 5 mins 44 secs 
+
+Phase 13.34  Placement Validation
+Phase 13.34  Placement Validation (Checksum:8db02c44) REAL time: 5 mins 45 secs 
+
+Total REAL time to Placer completion: 5 mins 47 secs 
+Total CPU  time to Placer completion: 5 mins 43 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   c1541_sd/c1541/cpu/Res_n_i_inv is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net fpga64/cpu/cpu/Res_n_i_inv
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<0>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<1>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<2>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<3>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<4>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<5>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<6>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<7>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<8>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<9>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<10>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<11>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<12>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<13>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<14>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<15>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<16>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<17>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<18>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/Madd_n0210[17:0]_lut<0>_FRB> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   23
+Slice Logic Utilization:
+  Number of Slice Registers:                 5,490 out of  18,224   30%
+    Number used as Flip Flops:               5,455
+    Number used as Latches:                      2
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:               33
+  Number of Slice LUTs:                      8,662 out of   9,112   95%
+    Number used as logic:                    8,564 out of   9,112   93%
+      Number using O6 output only:           7,054
+      Number using O5 output only:             177
+      Number using O5 and O6:                1,333
+      Number used as ROM:                        0
+    Number used as Memory:                      76 out of   2,176    3%
+      Number used as Dual Port RAM:              4
+        Number using O6 output only:             4
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:            72
+        Number using O6 output only:            41
+        Number using O5 output only:             0
+        Number using O5 and O6:                 31
+    Number used exclusively as route-thrus:     22
+      Number with same-slice register load:      2
+      Number with same-slice carry load:        20
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 2,277 out of   2,278   99%
+  Number of MUXCYs used:                     1,392 out of   4,556   30%
+  Number of LUT Flip Flop pairs used:        8,924
+    Number with an unused Flip Flop:         3,662 out of   8,924   41%
+    Number with an unused LUT:                 262 out of   8,924    2%
+    Number of fully used LUT-FF pairs:       5,000 out of   8,924   56%
+    Number of unique control sets:             438
+    Number of slice register sites lost
+      to control set restrictions:             924 out of  18,224    5%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        97 out of     186   52%
+    Number of LOCed IOBs:                       97 out of      97  100%
+    IOB Flip Flops:                             35
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        28 out of      32   87%
+  Number of RAMB8BWERs:                          3 out of      64    4%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
+    Number used as BUFIO2FBs:                    1
+    Number used as BUFIO2FB_2CLKs:               0
+  Number of BUFG/BUFGMUXs:                       7 out of      16   43%
+    Number used as BUFGs:                        7
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                  10 out of     248    4%
+    Number used as ILOGIC2s:                    10
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                  25 out of     248   10%
+    Number used as OLOGIC2s:                    25
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                           14 out of      32   43%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       2   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                4.31
+
+Peak Memory Usage:  574 MB
+Total REAL time to MAP completion:  6 mins 2 secs 
+Total CPU time to MAP completion:   5 mins 58 secs 
+
+Mapping completed.
+See MAP report file "c64_zx2_map.mrp" for details.

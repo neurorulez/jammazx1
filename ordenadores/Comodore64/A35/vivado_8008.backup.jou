@@ -1,0 +1,86 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat May  4 08:52:14 2019
+# Process ID: 8008
+# Current directory: F:/repos/a35/NUEVO/comodore64_beta_7/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7524 F:\repos\a35\NUEVO\comodore64_beta_7\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/comodore64_beta_7/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/comodore64_beta_7/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.xpr
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.runs/impl_1/c64_zx3.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.runs/impl_1/c64_zx3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.runs/impl_1/c64_zx3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.runs/impl_1/c64_zx3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property -dict [list CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {32} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {64.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {20.000} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.MMCM_CLKOUT2_DIVIDE {10} CONFIG.MMCM_CLKOUT3_DIVIDE {10} CONFIG.MMCM_CLKOUT3_PHASE {-58.500} CONFIG.MMCM_CLKOUT4_DIVIDE {20} CONFIG.CLKOUT1_JITTER {717.639} CONFIG.CLKOUT1_PHASE_ERROR {919.522} CONFIG.CLKOUT2_JITTER {717.639} CONFIG.CLKOUT2_PHASE_ERROR {919.522} CONFIG.CLKOUT3_JITTER {651.823} CONFIG.CLKOUT3_PHASE_ERROR {919.522} CONFIG.CLKOUT4_JITTER {651.823} CONFIG.CLKOUT4_PHASE_ERROR {919.522} CONFIG.CLKOUT5_JITTER {717.639} CONFIG.CLKOUT5_PHASE_ERROR {919.522}] [get_ips relojes]
+generate_target all [get_files  F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.srcs/sources_1/ip/relojes/relojes.xci]
+catch { config_ip_cache -export [get_ips -all relojes] }
+export_ip_user_files -of_objects [get_files F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -no_script -sync -force -quiet
+reset_run relojes_synth_1
+launch_runs  relojes_synth_1
+export_simulation -of_objects [get_files F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -directory F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.ip_user_files/sim_scripts -ip_user_files_dir F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.ip_user_files -ipstatic_source_dir F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.cache/compile_simlib/modelsim} {questa=F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.cache/compile_simlib/questa} {riviera=F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.cache/compile_simlib/riviera} {activehdl=F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.runs/impl_1/c64_zx3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property -dict [list CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {64} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKOUT4_DIVIDE {10} CONFIG.CLKOUT5_JITTER {651.823}] [get_ips relojes]
+generate_target all [get_files  F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.srcs/sources_1/ip/relojes/relojes.xci]
+catch { config_ip_cache -export [get_ips -all relojes] }
+export_ip_user_files -of_objects [get_files F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -no_script -sync -force -quiet
+reset_run relojes_synth_1
+launch_runs  relojes_synth_1
+export_simulation -of_objects [get_files F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -directory F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.ip_user_files/sim_scripts -ip_user_files_dir F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.ip_user_files -ipstatic_source_dir F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.cache/compile_simlib/modelsim} {questa=F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.cache/compile_simlib/questa} {riviera=F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.cache/compile_simlib/riviera} {activehdl=F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.runs/impl_1/c64_zx3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

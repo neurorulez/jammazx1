@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Thu May  2 13:46:35 2019
+# Process ID: 2668
+# Current directory: F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.runs/DualPortRAM_Block_synth_1
+# Command line: vivado.exe -log DualPortRAM_Block.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DualPortRAM_Block.tcl
+# Log file: F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.runs/DualPortRAM_Block_synth_1/DualPortRAM_Block.vds
+# Journal file: F:/repos/a35/NUEVO/comodore64_beta_7/A35/A35.runs/DualPortRAM_Block_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DualPortRAM_Block.tcl -notrace

@@ -1,0 +1,557 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Thu May  2 13:46:20 2019
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a35tftg256-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'DualPortRAM_Block'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of DualPortRAM_Block from xilinx.com:ip:blk_mem_gen:7.3 to xilinx.com:ip:blk_mem_gen:8.4 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Thu May  2 13:43:50 2019
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a35tftg256-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'relojes'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of relojes from xilinx.com:ip:clk_wiz:3.6 to xilinx.com:ip:clk_wiz:6.0 (Rev. 2)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Upgrade messages
+-------------------
+
+Removed parameter Override_Dcm
+Removed parameter Override_Dcm_Clkgen
+Removed parameter Dcm_Clk_Feedback
+Removed parameter Dcm_Clk_Out1_Port
+Removed parameter Dcm_Clk_Out2_Port
+Removed parameter Dcm_Clk_Out3_Port
+Removed parameter Dcm_Clk_Out4_Port
+Removed parameter Dcm_Clk_Out5_Port
+Removed parameter Dcm_Clk_Out6_Port
+Removed parameter Dcm_Clkdv_Divide
+Removed parameter Dcm_Clkfx_Divide
+Removed parameter Dcm_Clkfx_Multiply
+Removed parameter Dcm_Clkgen_Clk_Out1_Port
+Removed parameter Dcm_Clkgen_Clk_Out2_Port
+Removed parameter Dcm_Clkgen_Clk_Out3_Port
+Removed parameter Dcm_Clkgen_Clkfx_Divide
+Removed parameter Dcm_Clkgen_Clkfx_Md_Max
+Removed parameter Dcm_Clkgen_Clkfx_Multiply
+Removed parameter Dcm_Clkgen_Clkfxdv_Divide
+Removed parameter Dcm_Clkgen_Clkin_Period
+Removed parameter Dcm_Clkgen_Startup_Wait
+Removed parameter Dcm_Clkin_Divide_By_2
+Removed parameter Dcm_Clkout_Phase_Shift
+Removed parameter Dcm_Deskew_Adjust
+Removed parameter Dcm_Phase_Shift
+Removed parameter Dcm_Startup_Wait
+Removed parameter Dcm_Clkgen_Notes
+Removed parameter Dcm_Clkgen_Spread_Spectrum
+Removed parameter Dcm_Clkin_Period
+Removed parameter Dcm_Notes
+Removed parameter dcm_pll_cascade
+Added parameter Reset_Type with value ACTIVE_HIGH (source 'default')
+Added parameter USE_SAFE_CLOCK_STARTUP with value false (source 'default')
+Added parameter USE_CLOCK_SEQUENCING with value false (source 'default')
+Added parameter CLKOUT1_SEQUENCE_NUMBER with value 1 (source 'default')
+Added parameter CLKOUT2_SEQUENCE_NUMBER with value 1 (source 'default')
+Added parameter CLKOUT3_SEQUENCE_NUMBER with value 1 (source 'default')
+Added parameter CLKOUT4_SEQUENCE_NUMBER with value 1 (source 'default')
+Added parameter CLKOUT5_SEQUENCE_NUMBER with value 1 (source 'default')
+Added parameter CLKOUT6_SEQUENCE_NUMBER with value 1 (source 'default')
+Added parameter CLKOUT7_SEQUENCE_NUMBER with value 1 (source 'default')
+Renamed parameter Reset_Type to RESET_TYPE
+Renamed parameter clock_mgr_type to CLOCK_MGR_TYPE
+Renamed parameter Use_Freq_Synth to USE_FREQ_SYNTH
+Renamed parameter Use_Spread_Spectrum to USE_SPREAD_SPECTRUM
+Renamed parameter Use_Phase_Alignment to USE_PHASE_ALIGNMENT
+Renamed parameter Use_Min_Power to USE_MIN_POWER
+Renamed parameter Use_Dyn_Phase_Shift to USE_DYN_PHASE_SHIFT
+Renamed parameter Use_Dyn_Reconfig to USE_DYN_RECONFIG
+Renamed parameter Jitter_Sel to JITTER_SEL
+Renamed parameter Prim_In_Freq to PRIM_IN_FREQ
+Renamed parameter In_Freq_Units to IN_FREQ_UNITS
+Renamed parameter In_Jitter_Units to IN_JITTER_UNITS
+Renamed parameter Relative_Inclk to RELATIVE_INCLK
+Renamed parameter Use_Inclk_Switchover to USE_INCLK_SWITCHOVER
+Renamed parameter Secondary_In_Freq to SECONDARY_IN_FREQ
+Renamed parameter secondary_port to SECONDARY_PORT
+Renamed parameter Secondary_Source to SECONDARY_SOURCE
+Renamed parameter Jitter_Options to JITTER_OPTIONS
+Renamed parameter Clkin1_UI_Jitter to CLKIN1_UI_JITTER
+Renamed parameter Clkin2_UI_Jitter to CLKIN2_UI_JITTER
+Renamed parameter Prim_In_Jitter to PRIM_IN_JITTER
+Renamed parameter Secondary_In_Jitter to SECONDARY_IN_JITTER
+Renamed parameter Clkin1_Jitter_Ps to CLKIN1_JITTER_PS
+Renamed parameter Clkin2_Jitter_Ps to CLKIN2_JITTER_PS
+Renamed parameter Clkout2_Used to CLKOUT2_USED
+Renamed parameter Clkout3_Used to CLKOUT3_USED
+Renamed parameter Clkout4_Used to CLKOUT4_USED
+Renamed parameter Clkout5_Used to CLKOUT5_USED
+Renamed parameter Clkout6_Used to CLKOUT6_USED
+Renamed parameter Clkout7_Used to CLKOUT7_USED
+Renamed parameter Num_Out_Clks to NUM_OUT_CLKS
+Renamed parameter Clk_Out1_Use_Fine_Ps_GUI to CLK_OUT1_USE_FINE_PS_GUI
+Renamed parameter Clk_Out2_Use_Fine_Ps_GUI to CLK_OUT2_USE_FINE_PS_GUI
+Renamed parameter Clk_Out3_Use_Fine_Ps_GUI to CLK_OUT3_USE_FINE_PS_GUI
+Renamed parameter Clk_Out4_Use_Fine_Ps_GUI to CLK_OUT4_USE_FINE_PS_GUI
+Renamed parameter Clk_Out5_Use_Fine_Ps_GUI to CLK_OUT5_USE_FINE_PS_GUI
+Renamed parameter Clk_Out6_Use_Fine_Ps_GUI to CLK_OUT6_USE_FINE_PS_GUI
+Renamed parameter Clk_Out7_Use_Fine_Ps_GUI to CLK_OUT7_USE_FINE_PS_GUI
+Renamed parameter primary_port to PRIMARY_PORT
+Renamed parameter CLK_OUT1_port to CLK_OUT1_PORT
+Renamed parameter CLK_OUT2_port to CLK_OUT2_PORT
+Renamed parameter CLK_OUT3_port to CLK_OUT3_PORT
+Renamed parameter CLK_OUT4_port to CLK_OUT4_PORT
+Renamed parameter CLK_OUT5_port to CLK_OUT5_PORT
+Renamed parameter CLK_OUT6_port to CLK_OUT6_PORT
+Renamed parameter CLK_OUT7_port to CLK_OUT7_PORT
+Renamed parameter DADDR_port to DADDR_PORT
+Renamed parameter DCLK_port to DCLK_PORT
+Renamed parameter DRDY_port to DRDY_PORT
+Renamed parameter DWE_port to DWE_PORT
+Renamed parameter DIN_port to DIN_PORT
+Renamed parameter DOUT_port to DOUT_PORT
+Renamed parameter DEN_port to DEN_PORT
+Renamed parameter PSCLK_port to PSCLK_PORT
+Renamed parameter PSEN_port to PSEN_PORT
+Renamed parameter PSINCDEC_port to PSINCDEC_PORT
+Renamed parameter PSDONE_port to PSDONE_PORT
+Renamed parameter Clkout1_Requested_Out_Freq to CLKOUT1_REQUESTED_OUT_FREQ
+Renamed parameter Clkout1_Requested_Phase to CLKOUT1_REQUESTED_PHASE
+Renamed parameter Clkout1_Requested_Duty_Cycle to CLKOUT1_REQUESTED_DUTY_CYCLE
+Renamed parameter Clkout2_Requested_Out_Freq to CLKOUT2_REQUESTED_OUT_FREQ
+Renamed parameter Clkout2_Requested_Phase to CLKOUT2_REQUESTED_PHASE
+Renamed parameter Clkout2_Requested_Duty_Cycle to CLKOUT2_REQUESTED_DUTY_CYCLE
+Renamed parameter Clkout3_Requested_Out_Freq to CLKOUT3_REQUESTED_OUT_FREQ
+Renamed parameter Clkout3_Requested_Phase to CLKOUT3_REQUESTED_PHASE
+Renamed parameter Clkout3_Requested_Duty_Cycle to CLKOUT3_REQUESTED_DUTY_CYCLE
+Renamed parameter Clkout4_Requested_Out_Freq to CLKOUT4_REQUESTED_OUT_FREQ
+Renamed parameter Clkout4_Requested_Phase to CLKOUT4_REQUESTED_PHASE
+Renamed parameter Clkout4_Requested_Duty_Cycle to CLKOUT4_REQUESTED_DUTY_CYCLE
+Renamed parameter Clkout5_Requested_Out_Freq to CLKOUT5_REQUESTED_OUT_FREQ
+Renamed parameter Clkout5_Requested_Phase to CLKOUT5_REQUESTED_PHASE
+Renamed parameter Clkout5_Requested_Duty_Cycle to CLKOUT5_REQUESTED_DUTY_CYCLE
+Renamed parameter Clkout6_Requested_Out_Freq to CLKOUT6_REQUESTED_OUT_FREQ
+Renamed parameter Clkout6_Requested_Phase to CLKOUT6_REQUESTED_PHASE
+Renamed parameter Clkout6_Requested_Duty_Cycle to CLKOUT6_REQUESTED_DUTY_CYCLE
+Renamed parameter Clkout7_Requested_Out_Freq to CLKOUT7_REQUESTED_OUT_FREQ
+Renamed parameter Clkout7_Requested_Phase to CLKOUT7_REQUESTED_PHASE
+Renamed parameter Clkout7_Requested_Duty_Cycle to CLKOUT7_REQUESTED_DUTY_CYCLE
+Renamed parameter Use_Max_I_Jitter to USE_MAX_I_JITTER
+Renamed parameter Use_Min_O_Jitter to USE_MIN_O_JITTER
+Renamed parameter Prim_Source to PRIM_SOURCE
+Renamed parameter Clkout1_Drives to CLKOUT1_DRIVES
+Renamed parameter Clkout2_Drives to CLKOUT2_DRIVES
+Renamed parameter Clkout3_Drives to CLKOUT3_DRIVES
+Renamed parameter Clkout4_Drives to CLKOUT4_DRIVES
+Renamed parameter Clkout5_Drives to CLKOUT5_DRIVES
+Renamed parameter Clkout6_Drives to CLKOUT6_DRIVES
+Renamed parameter Clkout7_Drives to CLKOUT7_DRIVES
+Renamed parameter Feedback_Source to FEEDBACK_SOURCE
+Renamed parameter Clkfb_In_Signaling to CLKFB_IN_SIGNALING
+Renamed parameter CLKFB_IN_port to CLKFB_IN_PORT
+Renamed parameter CLKFB_IN_P_port to CLKFB_IN_P_PORT
+Renamed parameter CLKFB_IN_N_port to CLKFB_IN_N_PORT
+Renamed parameter CLKFB_OUT_port to CLKFB_OUT_PORT
+Renamed parameter CLKFB_OUT_P_port to CLKFB_OUT_P_PORT
+Renamed parameter CLKFB_OUT_N_port to CLKFB_OUT_N_PORT
+Renamed parameter Platform to PLATFORM
+Renamed parameter Summary_Strings to SUMMARY_STRINGS
+Renamed parameter Use_Locked to USE_LOCKED
+Renamed parameter calc_done to CALC_DONE
+Renamed parameter Use_Reset to USE_RESET
+Renamed parameter Use_Power_Down to USE_POWER_DOWN
+Renamed parameter Use_Status to USE_STATUS
+Renamed parameter Use_Freeze to USE_FREEZE
+Renamed parameter Use_Clk_Valid to USE_CLK_VALID
+Renamed parameter Use_Inclk_Stopped to USE_INCLK_STOPPED
+Renamed parameter Use_Clkfb_Stopped to USE_CLKFB_STOPPED
+Renamed parameter RESET_port to RESET_PORT
+Renamed parameter LOCKED_port to LOCKED_PORT
+Renamed parameter Power_Down_port to POWER_DOWN_PORT
+Renamed parameter CLK_VALID_port to CLK_VALID_PORT
+Renamed parameter STATUS_port to STATUS_PORT
+Renamed parameter CLK_IN_SEL_port to CLK_IN_SEL_PORT
+Renamed parameter INPUT_CLK_STOPPED_port to INPUT_CLK_STOPPED_PORT
+Renamed parameter CLKFB_STOPPED_port to CLKFB_STOPPED_PORT
+Renamed parameter Override_Mmcm to OVERRIDE_MMCM
+Renamed parameter Mmcm_Notes to MMCM_NOTES
+Renamed parameter Mmcm_Divclk_Divide to MMCM_DIVCLK_DIVIDE
+Renamed parameter Mmcm_Bandwidth to MMCM_BANDWIDTH
+Renamed parameter Mmcm_Clkfbout_Mult_F to MMCM_CLKFBOUT_MULT_F
+Renamed parameter Mmcm_Clkfbout_Phase to MMCM_CLKFBOUT_PHASE
+Renamed parameter Mmcm_Clkfbout_Use_Fine_Ps to MMCM_CLKFBOUT_USE_FINE_PS
+Renamed parameter Mmcm_Clkin1_Period to MMCM_CLKIN1_PERIOD
+Renamed parameter Mmcm_Clkin2_Period to MMCM_CLKIN2_PERIOD
+Renamed parameter Mmcm_Clkout4_Cascade to MMCM_CLKOUT4_CASCADE
+Renamed parameter Mmcm_Clock_Hold to MMCM_CLOCK_HOLD
+Renamed parameter Mmcm_Compensation to MMCM_COMPENSATION
+Renamed parameter Mmcm_Ref_Jitter1 to MMCM_REF_JITTER1
+Renamed parameter Mmcm_Ref_Jitter2 to MMCM_REF_JITTER2
+Renamed parameter Mmcm_Startup_Wait to MMCM_STARTUP_WAIT
+Renamed parameter Mmcm_Clkout0_Divide_F to MMCM_CLKOUT0_DIVIDE_F
+Renamed parameter Mmcm_Clkout0_Duty_Cycle to MMCM_CLKOUT0_DUTY_CYCLE
+Renamed parameter Mmcm_Clkout0_Phase to MMCM_CLKOUT0_PHASE
+Renamed parameter Mmcm_Clkout0_Use_Fine_Ps to MMCM_CLKOUT0_USE_FINE_PS
+Renamed parameter Mmcm_Clkout1_Divide to MMCM_CLKOUT1_DIVIDE
+Renamed parameter Mmcm_Clkout1_Duty_Cycle to MMCM_CLKOUT1_DUTY_CYCLE
+Renamed parameter Mmcm_Clkout1_Phase to MMCM_CLKOUT1_PHASE
+Renamed parameter Mmcm_Clkout1_Use_Fine_Ps to MMCM_CLKOUT1_USE_FINE_PS
+Renamed parameter Mmcm_Clkout2_Divide to MMCM_CLKOUT2_DIVIDE
+Renamed parameter Mmcm_Clkout2_Duty_Cycle to MMCM_CLKOUT2_DUTY_CYCLE
+Renamed parameter Mmcm_Clkout2_Phase to MMCM_CLKOUT2_PHASE
+Renamed parameter Mmcm_Clkout2_Use_Fine_Ps to MMCM_CLKOUT2_USE_FINE_PS
+Renamed parameter Mmcm_Clkout3_Divide to MMCM_CLKOUT3_DIVIDE
+Renamed parameter Mmcm_Clkout3_Duty_Cycle to MMCM_CLKOUT3_DUTY_CYCLE
+Renamed parameter Mmcm_Clkout3_Phase to MMCM_CLKOUT3_PHASE
+Renamed parameter Mmcm_Clkout3_Use_Fine_Ps to MMCM_CLKOUT3_USE_FINE_PS
+Renamed parameter Mmcm_Clkout4_Divide to MMCM_CLKOUT4_DIVIDE
+Renamed parameter Mmcm_Clkout4_Duty_Cycle to MMCM_CLKOUT4_DUTY_CYCLE
+Renamed parameter Mmcm_Clkout4_Phase to MMCM_CLKOUT4_PHASE
+Renamed parameter Mmcm_Clkout4_Use_Fine_Ps to MMCM_CLKOUT4_USE_FINE_PS
+Renamed parameter Mmcm_Clkout5_Divide to MMCM_CLKOUT5_DIVIDE
+Renamed parameter Mmcm_Clkout5_Duty_Cycle to MMCM_CLKOUT5_DUTY_CYCLE
+Renamed parameter Mmcm_Clkout5_Phase to MMCM_CLKOUT5_PHASE
+Renamed parameter Mmcm_Clkout5_Use_Fine_Ps to MMCM_CLKOUT5_USE_FINE_PS
+Renamed parameter Mmcm_Clkout6_Divide to MMCM_CLKOUT6_DIVIDE
+Renamed parameter Mmcm_Clkout6_Duty_Cycle to MMCM_CLKOUT6_DUTY_CYCLE
+Renamed parameter Mmcm_Clkout6_Phase to MMCM_CLKOUT6_PHASE
+Renamed parameter Mmcm_Clkout6_Use_Fine_Ps to MMCM_CLKOUT6_USE_FINE_PS
+Renamed parameter Override_Pll to OVERRIDE_PLL
+Renamed parameter Pll_Notes to PLL_NOTES
+Renamed parameter Pll_Bandwidth to PLL_BANDWIDTH
+Renamed parameter Pll_Clkfbout_Mult to PLL_CLKFBOUT_MULT
+Renamed parameter Pll_Clkfbout_Phase to PLL_CLKFBOUT_PHASE
+Renamed parameter Pll_Clk_Feedback to PLL_CLK_FEEDBACK
+Renamed parameter Pll_Divclk_Divide to PLL_DIVCLK_DIVIDE
+Renamed parameter Pll_Clkin_Period to PLL_CLKIN_PERIOD
+Renamed parameter Pll_Compensation to PLL_COMPENSATION
+Renamed parameter Pll_Ref_Jitter to PLL_REF_JITTER
+Renamed parameter Pll_Clkout0_Divide to PLL_CLKOUT0_DIVIDE
+Renamed parameter Pll_Clkout0_Duty_Cycle to PLL_CLKOUT0_DUTY_CYCLE
+Renamed parameter Pll_Clkout0_Phase to PLL_CLKOUT0_PHASE
+Renamed parameter Pll_Clkout1_Divide to PLL_CLKOUT1_DIVIDE
+Renamed parameter Pll_Clkout1_Duty_Cycle to PLL_CLKOUT1_DUTY_CYCLE
+Renamed parameter Pll_Clkout1_Phase to PLL_CLKOUT1_PHASE
+Renamed parameter Pll_Clkout2_Divide to PLL_CLKOUT2_DIVIDE
+Renamed parameter Pll_Clkout2_Duty_Cycle to PLL_CLKOUT2_DUTY_CYCLE
+Renamed parameter Pll_Clkout2_Phase to PLL_CLKOUT2_PHASE
+Renamed parameter Pll_Clkout3_Divide to PLL_CLKOUT3_DIVIDE
+Renamed parameter Pll_Clkout3_Duty_Cycle to PLL_CLKOUT3_DUTY_CYCLE
+Renamed parameter Pll_Clkout3_Phase to PLL_CLKOUT3_PHASE
+Renamed parameter Pll_Clkout4_Divide to PLL_CLKOUT4_DIVIDE
+Renamed parameter Pll_Clkout4_Duty_Cycle to PLL_CLKOUT4_DUTY_CYCLE
+Renamed parameter Pll_Clkout4_Phase to PLL_CLKOUT4_PHASE
+Renamed parameter Pll_Clkout5_Divide to PLL_CLKOUT5_DIVIDE
+Renamed parameter Pll_Clkout5_Duty_Cycle to PLL_CLKOUT5_DUTY_CYCLE
+Renamed parameter Pll_Clkout5_Phase to PLL_CLKOUT5_PHASE
+Renamed parameter primitive to PRIMITIVE
+Renamed parameter primtype_sel to PRIMTYPE_SEL
+Set parameter PRIMITIVE to value MMCM (source 'default')
+Added parameter ENABLE_CDDC with value false (source 'default')
+Added parameter CDDCDONE_PORT with value cddcdone (source 'default')
+Added parameter CDDCREQ_PORT with value cddcreq (source 'default')
+Added parameter CLKOUT1_JITTER with value 0.0 (source 'default')
+Added parameter CLKOUT1_PHASE_ERROR with value 0.0 (source 'default')
+Added parameter CLKOUT2_JITTER with value 0.0 (source 'default')
+Added parameter CLKOUT2_PHASE_ERROR with value 0.0 (source 'default')
+Added parameter CLKOUT3_JITTER with value 0.0 (source 'default')
+Added parameter CLKOUT3_PHASE_ERROR with value 0.0 (source 'default')
+Added parameter CLKOUT4_JITTER with value 0.0 (source 'default')
+Added parameter CLKOUT4_PHASE_ERROR with value 0.0 (source 'default')
+Added parameter CLKOUT5_JITTER with value 0.0 (source 'default')
+Added parameter CLKOUT5_PHASE_ERROR with value 0.0 (source 'default')
+Added parameter CLKOUT6_JITTER with value 0.0 (source 'default')
+Added parameter CLKOUT6_PHASE_ERROR with value 0.0 (source 'default')
+Added parameter CLKOUT7_JITTER with value 0.0 (source 'default')
+Added parameter CLKOUT7_PHASE_ERROR with value 0.0 (source 'default')
+Added parameter INTERFACE_SELECTION with value Enable_AXI (source 'default')
+Set parameter USE_SPREAD_SPECTRUM to value false (source 'default')
+Removed parameter Use_Spread_Spectrum_1
+Set parameter PRIMTYPE_SEL to value MMCM_ADV (source 'default')
+
+3. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'SECONDARY_PORT' from 'clk_in2' to 'CLK_IN2' has been ignored for IP 'relojes'
+
+An attempt to modify the value of disabled parameter 'CLK_OUT6_PORT' from 'clk_out6' to 'CLK_OUT6' has been ignored for IP 'relojes'
+
+An attempt to modify the value of disabled parameter 'CLK_OUT7_PORT' from 'clk_out7' to 'CLK_OUT7' has been ignored for IP 'relojes'
+
+An attempt to modify the value of disabled parameter 'PLATFORM' from 'UNKNOWN' to 'nt64' has been ignored for IP 'relojes'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKFBOUT_MULT_F' from '23.125' to '4.000' has been ignored for IP 'relojes'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKIN1_PERIOD' from '20.000' to '10.000' has been ignored for IP 'relojes'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKIN2_PERIOD' from '10.0' to '10.000' has been ignored for IP 'relojes'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKOUT0_DIVIDE_F' from '36.125' to '4.000' has been ignored for IP 'relojes'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKOUT1_DIVIDE' from '36' to '1' has been ignored for IP 'relojes'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKOUT1_PHASE' from '180.000' to '0.000' has been ignored for IP 'relojes'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKOUT2_DIVIDE' from '18' to '1' has been ignored for IP 'relojes'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKOUT3_DIVIDE' from '18' to '1' has been ignored for IP 'relojes'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKOUT3_PHASE' from '-60.000' to '0.000' has been ignored for IP 'relojes'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKOUT4_DIVIDE' from '23' to '1' has been ignored for IP 'relojes'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:clk_wiz:6.0 -user_name relojes
+set_property -dict "\
+  CONFIG.CALC_DONE {DONE} \
+  CONFIG.CDDCDONE_PORT {cddcdone} \
+  CONFIG.CDDCREQ_PORT {cddcreq} \
+  CONFIG.CLKFB_IN_N_PORT {CLKFB_IN_N} \
+  CONFIG.CLKFB_IN_PORT {CLKFB_IN} \
+  CONFIG.CLKFB_IN_P_PORT {CLKFB_IN_P} \
+  CONFIG.CLKFB_IN_SIGNALING {SINGLE} \
+  CONFIG.CLKFB_OUT_N_PORT {CLKFB_OUT_N} \
+  CONFIG.CLKFB_OUT_PORT {CLKFB_OUT} \
+  CONFIG.CLKFB_OUT_P_PORT {CLKFB_OUT_P} \
+  CONFIG.CLKFB_STOPPED_PORT {CLKFB_STOPPED} \
+  CONFIG.CLKIN1_JITTER_PS {200.0} \
+  CONFIG.CLKIN1_UI_JITTER {0.010} \
+  CONFIG.CLKIN2_JITTER_PS {100.0} \
+  CONFIG.CLKIN2_UI_JITTER {0.010} \
+  CONFIG.CLKOUT1_DRIVES {BUFG} \
+  CONFIG.CLKOUT1_JITTER {0.0} \
+  CONFIG.CLKOUT1_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT1_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {32} \
+  CONFIG.CLKOUT1_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT1_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT2_DRIVES {BUFG} \
+  CONFIG.CLKOUT2_JITTER {0.0} \
+  CONFIG.CLKOUT2_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT2_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {32} \
+  CONFIG.CLKOUT2_REQUESTED_PHASE {180} \
+  CONFIG.CLKOUT2_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT2_USED {true} \
+  CONFIG.CLKOUT3_DRIVES {BUFG} \
+  CONFIG.CLKOUT3_JITTER {0.0} \
+  CONFIG.CLKOUT3_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT3_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {64} \
+  CONFIG.CLKOUT3_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT3_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT3_USED {true} \
+  CONFIG.CLKOUT4_DRIVES {BUFG} \
+  CONFIG.CLKOUT4_JITTER {0.0} \
+  CONFIG.CLKOUT4_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT4_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {64} \
+  CONFIG.CLKOUT4_REQUESTED_PHASE {-60} \
+  CONFIG.CLKOUT4_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT4_USED {true} \
+  CONFIG.CLKOUT5_DRIVES {BUFG} \
+  CONFIG.CLKOUT5_JITTER {0.0} \
+  CONFIG.CLKOUT5_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT5_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {50} \
+  CONFIG.CLKOUT5_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT5_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT5_USED {true} \
+  CONFIG.CLKOUT6_DRIVES {BUFG} \
+  CONFIG.CLKOUT6_JITTER {0.0} \
+  CONFIG.CLKOUT6_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT6_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT6_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT6_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT6_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT6_USED {false} \
+  CONFIG.CLKOUT7_DRIVES {BUFG} \
+  CONFIG.CLKOUT7_JITTER {0.0} \
+  CONFIG.CLKOUT7_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT7_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT7_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT7_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT7_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT7_USED {false} \
+  CONFIG.CLK_IN_SEL_PORT {CLK_IN_SEL} \
+  CONFIG.CLK_OUT1_PORT {clk32} \
+  CONFIG.CLK_OUT1_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT2_PORT {clk32n} \
+  CONFIG.CLK_OUT2_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT3_PORT {clk64} \
+  CONFIG.CLK_OUT3_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT4_PORT {clk64ps} \
+  CONFIG.CLK_OUT4_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT5_PORT {clk_ctrl} \
+  CONFIG.CLK_OUT5_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT6_PORT {CLK_OUT6} \
+  CONFIG.CLK_OUT6_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT7_PORT {CLK_OUT7} \
+  CONFIG.CLK_OUT7_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_VALID_PORT {CLK_VALID} \
+  CONFIG.CLOCK_MGR_TYPE {AUTO} \
+  CONFIG.Component_Name {relojes} \
+  CONFIG.DADDR_PORT {DADDR} \
+  CONFIG.DCLK_PORT {DCLK} \
+  CONFIG.DEN_PORT {DEN} \
+  CONFIG.DIN_PORT {DIN} \
+  CONFIG.DOUT_PORT {DOUT} \
+  CONFIG.DRDY_PORT {DRDY} \
+  CONFIG.DWE_PORT {DWE} \
+  CONFIG.ENABLE_CDDC {false} \
+  CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} \
+  CONFIG.INPUT_CLK_STOPPED_PORT {INPUT_CLK_STOPPED} \
+  CONFIG.INTERFACE_SELECTION {Enable_AXI} \
+  CONFIG.IN_FREQ_UNITS {Units_MHz} \
+  CONFIG.IN_JITTER_UNITS {Units_UI} \
+  CONFIG.JITTER_OPTIONS {UI} \
+  CONFIG.JITTER_SEL {No_Jitter} \
+  CONFIG.LOCKED_PORT {locked} \
+  CONFIG.MMCM_BANDWIDTH {OPTIMIZED} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {4.000} \
+  CONFIG.MMCM_CLKFBOUT_PHASE {0.000} \
+  CONFIG.MMCM_CLKFBOUT_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKIN1_PERIOD {10.000} \
+  CONFIG.MMCM_CLKIN2_PERIOD {10.000} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {4.000} \
+  CONFIG.MMCM_CLKOUT0_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT0_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT0_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT1_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT1_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT1_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT1_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT2_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT2_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT2_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT2_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT3_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT3_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT3_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT3_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT4_CASCADE {false} \
+  CONFIG.MMCM_CLKOUT4_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT4_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT4_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT4_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT5_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT5_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT5_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT5_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT6_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT6_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT6_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT6_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLOCK_HOLD {false} \
+  CONFIG.MMCM_COMPENSATION {ZHOLD} \
+  CONFIG.MMCM_DIVCLK_DIVIDE {1} \
+  CONFIG.MMCM_NOTES {None} \
+  CONFIG.MMCM_REF_JITTER1 {0.010} \
+  CONFIG.MMCM_REF_JITTER2 {0.010} \
+  CONFIG.MMCM_STARTUP_WAIT {false} \
+  CONFIG.NUM_OUT_CLKS {5} \
+  CONFIG.OVERRIDE_MMCM {false} \
+  CONFIG.OVERRIDE_PLL {false} \
+  CONFIG.PLATFORM {nt64} \
+  CONFIG.PLL_BANDWIDTH {OPTIMIZED} \
+  CONFIG.PLL_CLKFBOUT_MULT {9} \
+  CONFIG.PLL_CLKFBOUT_PHASE {0.000} \
+  CONFIG.PLL_CLKIN_PERIOD {20.000} \
+  CONFIG.PLL_CLKOUT0_DIVIDE {14} \
+  CONFIG.PLL_CLKOUT0_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT0_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT1_DIVIDE {14} \
+  CONFIG.PLL_CLKOUT1_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT1_PHASE {180.000} \
+  CONFIG.PLL_CLKOUT2_DIVIDE {7} \
+  CONFIG.PLL_CLKOUT2_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT2_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT3_DIVIDE {7} \
+  CONFIG.PLL_CLKOUT3_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT3_PHASE {-57.857} \
+  CONFIG.PLL_CLKOUT4_DIVIDE {9} \
+  CONFIG.PLL_CLKOUT4_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT4_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT5_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT5_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT5_PHASE {0.000} \
+  CONFIG.PLL_CLK_FEEDBACK {CLKFBOUT} \
+  CONFIG.PLL_COMPENSATION {SYSTEM_SYNCHRONOUS} \
+  CONFIG.PLL_DIVCLK_DIVIDE {1} \
+  CONFIG.PLL_NOTES {None} \
+  CONFIG.PLL_REF_JITTER {0.010} \
+  CONFIG.POWER_DOWN_PORT {POWER_DOWN} \
+  CONFIG.PRIMARY_PORT {clock_50} \
+  CONFIG.PRIMITIVE {MMCM} \
+  CONFIG.PRIMTYPE_SEL {MMCM_ADV} \
+  CONFIG.PRIM_IN_FREQ {50} \
+  CONFIG.PRIM_IN_JITTER {0.010} \
+  CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin} \
+  CONFIG.PSCLK_PORT {PSCLK} \
+  CONFIG.PSDONE_PORT {PSDONE} \
+  CONFIG.PSEN_PORT {PSEN} \
+  CONFIG.PSINCDEC_PORT {PSINCDEC} \
+  CONFIG.RELATIVE_INCLK {REL_PRIMARY} \
+  CONFIG.RESET_PORT {RESET} \
+  CONFIG.RESET_TYPE {ACTIVE_HIGH} \
+  CONFIG.SECONDARY_IN_FREQ {100.000} \
+  CONFIG.SECONDARY_IN_JITTER {0.010} \
+  CONFIG.SECONDARY_PORT {CLK_IN2} \
+  CONFIG.SECONDARY_SOURCE {Single_ended_clock_capable_pin} \
+  CONFIG.SS_MODE {CENTER_HIGH} \
+  CONFIG.SS_MOD_FREQ {250} \
+  CONFIG.STATUS_PORT {STATUS} \
+  CONFIG.SUMMARY_STRINGS {empty} \
+  CONFIG.USE_CLKFB_STOPPED {false} \
+  CONFIG.USE_CLK_VALID {false} \
+  CONFIG.USE_CLOCK_SEQUENCING {false} \
+  CONFIG.USE_DYN_PHASE_SHIFT {false} \
+  CONFIG.USE_DYN_RECONFIG {false} \
+  CONFIG.USE_FREEZE {false} \
+  CONFIG.USE_FREQ_SYNTH {true} \
+  CONFIG.USE_INCLK_STOPPED {false} \
+  CONFIG.USE_INCLK_SWITCHOVER {false} \
+  CONFIG.USE_LOCKED {true} \
+  CONFIG.USE_MAX_I_JITTER {false} \
+  CONFIG.USE_MIN_O_JITTER {false} \
+  CONFIG.USE_MIN_POWER {false} \
+  CONFIG.USE_PHASE_ALIGNMENT {true} \
+  CONFIG.USE_POWER_DOWN {false} \
+  CONFIG.USE_RESET {false} \
+  CONFIG.USE_SAFE_CLOCK_STARTUP {false} \
+  CONFIG.USE_SPREAD_SPECTRUM {false} \
+  CONFIG.USE_STATUS {false} " [get_ips relojes]
+
+

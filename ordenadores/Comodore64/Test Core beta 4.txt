@@ -1,0 +1,15 @@
+Testeando Modulos
+SID = OK
+T65 = OK
+Floppy_c1541:
+ c1541_logic : OK (Ampliada con FD-IDNUM y Rom Swap)
+ c1541_sd    : Pdte Revisar
+ c1541_m6522 = OK
+ gcr_floppy  = OK
+Core C64:
+ cia6526 = OK
+ cpu_6510 = OK
+ video_vicII_656x = OK
+ fpga64_rgbcolor = OK (Ampliada paleta alternativa)
+ fpga64_keyboard = OK (Ampliadas teclas especiales)
+

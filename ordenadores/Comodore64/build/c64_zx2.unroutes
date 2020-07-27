@@ -1,0 +1,32 @@
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Wed Jul 03 10:13:10 2019
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 20 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   dac/Madd_n0210[17:0]_lut<0>_FRB
+   dac/sd_l_aca1<0>_FRB
+   dac/sd_l_aca1<10>_FRB
+   dac/sd_l_aca1<11>_FRB
+   dac/sd_l_aca1<12>_FRB
+   dac/sd_l_aca1<13>_FRB
+   dac/sd_l_aca1<14>_FRB
+   dac/sd_l_aca1<15>_FRB
+   dac/sd_l_aca1<16>_FRB
+   dac/sd_l_aca1<17>_FRB
+   dac/sd_l_aca1<18>_FRB
+   dac/sd_l_aca1<1>_FRB
+   dac/sd_l_aca1<2>_FRB
+   dac/sd_l_aca1<3>_FRB
+   dac/sd_l_aca1<4>_FRB
+   dac/sd_l_aca1<5>_FRB
+   dac/sd_l_aca1<6>_FRB
+   dac/sd_l_aca1<7>_FRB
+   dac/sd_l_aca1<8>_FRB
+   dac/sd_l_aca1<9>_FRB
+
+

@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "F:/repos/a35/comodore64_beta_7.2/build/c64_zx2.xst" -ofn "F:/repos/a35/comodore64_beta_7.2/build/c64_zx2.syr" 
+xst -intstyle ise -ifn "F:/repos/a35/comodore64_beta_7.2/build/c64_zx2.xst" -ofn "F:/repos/a35/comodore64_beta_7.2/build/c64_zx2.syr" 
+xst -intstyle ise -ifn "F:/repos/a35/comodore64_beta_7.2/build/c64_zx2.xst" -ofn "F:/repos/a35/comodore64_beta_7.2/build/c64_zx2.syr" 
+xst -intstyle ise -ifn "F:/repos/a35/comodore64_beta_7.2/build/c64_zx2.xst" -ofn "F:/repos/a35/comodore64_beta_7.2/build/c64_zx2.syr" 
+xst -intstyle ise -ifn "F:/repos/a35/comodore64_beta_7.2/build/c64_zx2.xst" -ofn "F:/repos/a35/comodore64_beta_7.2/build/c64_zx2.syr" 
+xst -intstyle ise -ifn "F:/repos/a35/comodore64_beta_7.2/build/c64_zx2.xst" -ofn "F:/repos/a35/comodore64_beta_7.2/build/c64_zx2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../src/CtrlModule/CtrlModule/RTL/DualPortRam -sd ../ipcore_dir -nt timestamp -uc F:/repos/a35/comodore64_beta_7.2/pines_zxuno_lx16.ucf -p xc6slx16-ftg256-2 c64_zx2.ngc c64_zx2.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o c64_zx2_map.ncd c64_zx2.ngd c64_zx2.pcf 
+par -w -intstyle ise -ol high -xe n -mt off c64_zx2_map.ncd c64_zx2.ncd c64_zx2.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml c64_zx2.twx c64_zx2.ncd -o c64_zx2.twr c64_zx2.pcf 
+bitgen -intstyle ise -f c64_zx2.ut c64_zx2.ncd 

@@ -1,0 +1,542 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Sat May  4 13:11:28 2019
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file c64_zx3_control_sets_placed.rpt
+| Design       : c64_zx3
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   464 |
+| Unused register locations in slices containing registers |   735 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            7 |
+|      3 |            1 |
+|      4 |           68 |
+|      5 |           16 |
+|      6 |           16 |
+|      7 |           15 |
+|      8 |          231 |
+|      9 |            7 |
+|     10 |            6 |
+|     11 |            2 |
+|     12 |           15 |
+|     13 |            2 |
+|     14 |            3 |
+|     15 |            5 |
+|    16+ |           70 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             858 |          369 |
+| No           | No                    | Yes                    |              63 |           40 |
+| No           | Yes                   | No                     |             294 |           95 |
+| Yes          | No                    | No                     |            1473 |          492 |
+| Yes          | No                    | Yes                    |             450 |          172 |
+| Yes          | Yes                   | No                     |            2319 |          756 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+------------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+|    Clock Signal    |                           Enable Signal                          |                      Set/Reset Signal                     | Slice Load Count | Bel Load Count |
++--------------------+------------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+|  pll/inst/clk_ctrl | MyCtrlModule/spi/mosi0                                           |                                                           |                1 |              1 |
+|  pll/inst/clk32    | fpga64/sid/osc/enable_o                                          | fpga64/sid/adsr/state_array[2][29]_i_1_n_0                |                1 |              1 |
+|  JOY_CLK_OBUF      |                                                                  | joy_renew                                                 |                1 |              1 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/out_mem_addr_reg[6]_0                           |                                                           |                1 |              1 |
+|  pll/inst/clk64    |                                                                  | sdram/sd_cmd[1]_i_1_n_0                                   |                1 |              1 |
+|  pll/inst/clk_ctrl | MyCtrlModule/mykeyboard/waitCount[12]_i_2_n_0                    |                                                           |                1 |              1 |
+|  pll/inst/clk_ctrl |                                                                  | MyCtrlModule/myosd/osd_enable_reg_0                       |                1 |              1 |
+|  pll/inst/clk64    |                                                                  | sdram/sd_cmd[3]_i_1_n_0                                   |                2 |              3 |
+|  pll/inst/clk32    |                                                                  | fpga64/vic/MXE_ff[2]_i_1_n_0                              |                1 |              4 |
+|  pll/inst/clk_ctrl | MyCtrlModule/mykeyboard/sel                                      | MyCtrlModule/mykeyboard/clear                             |                1 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/Set_Addr_To_r_reg[0]_16[0]                        | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/Set_Addr_To_r_reg[0]_17[0]                        | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_11[0]                               | fpga64/reset_reg_n_0                                      |                2 |              4 |
+|  pll/inst/clk32    |                                                                  | fpga64/buslogic/reset_reg                                 |                2 |              4 |
+|  pll/inst/clk_ctrl |                                                                  | MyCtrlModule/myosd/clear                                  |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[10]_154                               | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/crb_alarm_reg_5[0]                                | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | ps2_in/bit_count                                                 | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                1 |              4 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc3_via6522_inst/clk_4M_en                        | c1541_sd/c1541/uc1_via6522_inst/SS[0]                     |                1 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/ELP                                               | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia2Reg_reg_13[0]                              | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[9]_155                                | fpga64/reset_reg_n_0                                      |                2 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[8]_156                                | fpga64/reset_reg_n_0                                      |                2 |              4 |
+|  pll/inst/clk32    |                                                                  | fpga64/myScanConverter/video_out[3]_i_1_n_0               |                2 |              4 |
+|  pll/inst/clk32    |                                                                  | fpga64/vic/MXE_ff[0]_i_1_n_0                              |                2 |              4 |
+|  pll/inst/clk32    |                                                                  | fpga64/vic/MXE_ff[1]_i_1_n_0                              |                1 |              4 |
+|  pll/inst/clk_ctrl | MyCtrlModule/mykeyboard/bitCount[3]_i_2_n_0                      | MyCtrlModule/mykeyboard/bitCount[3]_i_1_n_0               |                1 |              4 |
+|  pll/inst/clk32    |                                                                  | fpga64/vic/MXE_ff[3]_i_1_n_0                              |                1 |              4 |
+|  pll/inst/clk32    |                                                                  | fpga64/vic/MXE_ff[4]_i_1_n_0                              |                1 |              4 |
+|  pll/inst/clk32    |                                                                  | fpga64/vic/MXE_ff[5]_i_1_n_0                              |                1 |              4 |
+|  pll/inst/clk32    |                                                                  | fpga64/vic/MXE_ff[6]_i_1_n_0                              |                1 |              4 |
+|  pll/inst/clk32    |                                                                  | fpga64/vic/MXE_ff[7]_i_1_n_0                              |                1 |              4 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/out_mem_addr_reg[2]_0[0]                        |                                                           |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[7]_157                                | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_ctrl/voice_cnt[3]_i_1_n_0                           | fpga64/sid_8580/v1/reset_reg                              |                2 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[6]_158                                | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    |                                                                  | fpga64/sid/i_regs/voice_o_reg[3][2]                       |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[5]_159                                | fpga64/reset_reg_n_0                                      |                3 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/filter_res_l[3]_i_1_n_0                        |                                                           |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[4]_160                                | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc3_via6522_inst/sr_cnt                           | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[11]_153                               | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | c1541_sd/floppy/gcr_bit_cnt                                      | c1541_sd/floppy/gcr_bit_cnt[3]_i_1_n_0                    |                1 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_2[0]                               | fpga64/reset_reg_n_0                                      |                2 |              4 |
+|  pll/inst/clk32    | c1541_sd/floppy/ram_di[3]_i_1_n_0                                |                                                           |                1 |              4 |
+|  pll/inst/clk32    | c1541_sd/floppy/ram_di[7]_i_1_n_0                                |                                                           |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/osc/enable_o                                          | fpga64/sid/i_regs/enable_o_reg                            |                2 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[3]_161                                | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[2]_162                                | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[1]_163                                | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[15]_149                               | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[14]_150                               | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_3[0]                               | fpga64/reset_reg_n_0                                      |                2 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_10[0]                               | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[0]_164                                | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc1_via6522_inst/sr_cnt                           | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[13]_151                               | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_hi[12]_152                               | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/myScanConverter/vSyncCount                                | fpga64/vic/SS[0]                                          |                2 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_12[0]                               | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_15[0]                                  | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_13[0]                               | fpga64/reset_reg_n_0                                      |                2 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_4[0]                               | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/vic/vicCycle[3]_i_1_n_0                                   |                                                           |                2 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_2[0]                                   | fpga64/reset_reg_n_0                                      |                2 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_2[0]                                | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_21[0]                                  | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/enableCia                                                 |                                                           |                4 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_25[0]                                  | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_8[0]                                | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/enablePixel                                               | fpga64/vic/pixelColor                                     |                4 |              4 |
+|  pll/inst/clk32    | fpga64/sid_8580/filters/state[3]_i_1_n_0                         | fpga64/reset_reg_n_0                                      |                3 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_1[0]                               | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_10[0]                              | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/out_mem_addr_reg[5]_0[0]                        |                                                           |                2 |              4 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_11[0]                              | fpga64/reset_reg_n_0                                      |                1 |              4 |
+|  pll/inst/clk64    |                                                                  |                                                           |                2 |              5 |
+|  pll/inst/clk64    | sdram/reset0                                                     | sdram/SS[0]                                               |                1 |              5 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/p_0_in__0[3]                                   | fpga64/reset_reg_n_0                                      |                2 |              5 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/volume_l[3]_i_1_n_0                            | fpga64/reset_reg_n_0                                      |                4 |              5 |
+|  pll/inst/clk32    | fpga64/sid_8580/v2/adsr/exponential_counter_period[4]_i_1__0_n_0 | fpga64/reset_reg_n_0                                      |                3 |              5 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia1Reg_reg                                    | fpga64/reset_reg_n_0                                      |                2 |              5 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/p_0_in__0[11]                                  | fpga64/reset_reg_n_0                                      |                1 |              5 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia2Reg_reg_2                                  | fpga64/reset_reg_n_0                                      |                2 |              5 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cra_pbon_0                                        | fpga64/reset_reg_n_0                                      |                2 |              5 |
+|  pll/inst/clk32    | c1541_sd/floppy/sector_dbl                                       | c1541_sd/floppy/sector_dbl[4]_i_1_n_0                     |                1 |              5 |
+|  pll/inst/clk32    | c1541_sd/floppy/gcr_bit_cnt                                      |                                                           |                2 |              5 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia2Reg_reg_3                                  | fpga64/reset_reg_n_0                                      |                1 |              5 |
+|  pll/inst/clk32    | fpga64/sid_8580/v1/adsr/exponential_counter_period[4]_i_1_n_0    | fpga64/reset_reg_n_0                                      |                3 |              5 |
+|  pll/inst/clk32    |                                                                  | clk32_div[4]_i_1_n_0                                      |                1 |              5 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/state[4]_i_1_n_0                                |                                                           |                3 |              5 |
+|  pll/inst/clk32    | fpga64/sid_8580/v3/adsr/exponential_counter_period[4]_i_1__1_n_0 | fpga64/reset_reg_n_0                                      |                3 |              5 |
+|  pll/inst/clk32    | fpga64/vic/MCnt[2][5]_i_1_n_0                                    |                                                           |                2 |              6 |
+|  pll/inst/clk32    | fpga64/vic/MCnt[0][5]_i_1_n_0                                    |                                                           |                3 |              6 |
+|  pll/inst/clk32    | c1541_sd/floppy/sync_cnt[5]_i_2_n_0                              | c1541_sd/floppy/sync_cnt[5]_i_1_n_0                       |                2 |              6 |
+|  pll/inst/clk32    | fpga64/myScanConverter/hSyncCount[5]_i_2_n_0                     | fpga64/myScanConverter/hSyncCount[5]_i_1_n_0              |                2 |              6 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia2Reg_reg_10[0]                              | fpga64/reset_reg_n_0                                      |                3 |              6 |
+|  pll/inst/clk32    | fpga64/vic/MCnt[7][5]_i_1_n_0                                    |                                                           |                3 |              6 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia2Reg_reg_12[0]                              | fpga64/reset_reg_n_0                                      |                2 |              6 |
+|  pll/inst/clk32    | fpga64/vic/MCnt[5][5]_i_1_n_0                                    |                                                           |                2 |              6 |
+|  pll/inst/clk32    | fpga64/vic/MCnt[1][5]_i_1_n_0                                    |                                                           |                3 |              6 |
+|  pll/inst/clk32    | fpga64/vic/MCnt[6][5]_i_1_n_0                                    |                                                           |                3 |              6 |
+|  pll/inst/clk32    | fpga64/vic/MCnt[4][5]_i_1_n_0                                    |                                                           |                2 |              6 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/crb_alarm_reg_4[0]                                | fpga64/reset_reg_n_0                                      |                2 |              6 |
+|  pll/inst/clk32    | fpga64/vic/MCnt[3][5]_i_1_n_0                                    |                                                           |                2 |              6 |
+|  pll/inst/clk32    | fpga64/vic/shiftingPixels[7]                                     |                                                           |                2 |              6 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_6[0]                               | fpga64/reset_reg_n_0                                      |                3 |              6 |
+|  pll/inst/clk32    |                                                                  | fpga64/sid/i_filt_left/instruction[7]_i_1_n_0             |                1 |              6 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/Set_Addr_To_r_reg[0]_15[0]                        | fpga64/reset_reg_n_0                                      |                4 |              7 |
+|  pll/inst/clk32    | c1541_sd/floppy/bit_clk_en                                       | c1541_sd/floppy/gcr_byte[6]_i_1_n_0                       |                1 |              7 |
+|  pll/inst/clk32    | fpga64/vic/p_126_in                                              | fpga64/vic/rasterX[9]_i_1_n_0                             |                3 |              7 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/crb_alarm_reg_3[0]                                | fpga64/reset_reg_n_0                                      |                2 |              7 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc3_via6522_inst/E[0]                             | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                3 |              7 |
+|  pll/inst/clk32    |                                                                  | fpga64/buslogic/p_18_in                                   |                3 |              7 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/crb_alarm_reg_6[0]                                | fpga64/reset_reg_n_0                                      |                2 |              7 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia2Reg_reg_15[0]                              | fpga64/reset_reg_n_0                                      |                2 |              7 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc1_via6522_inst/r_sr[7]_i_1_n_0                  | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                1 |              7 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc3_via6522_inst/r_ier                            | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                2 |              7 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc1_via6522_inst/r_ier                            | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                2 |              7 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc3_via6522_inst/r_sr[7]_i_1__0_n_0               | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                1 |              7 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/count_reg[0]_1[0]                             | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                1 |              7 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia2Reg_reg_8[0]                               | fpga64/reset_reg_n_0                                      |                2 |              7 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/count_reg[0]_0[0]                             | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                4 |              7 |
+|  pll/inst/clk32    | c1541_sd/floppy/dout[7]_i_2_n_0                                  | c1541_sd/floppy/dout[7]_i_1_n_0                           |                1 |              8 |
+|  pll/inst/clk32    | c1541_sd/floppy/gcr_byte_out                                     |                                                           |                1 |              8 |
+|  pll/inst/clk32    | MyCtrlModule/host_loadrom_reg_0[0]                               |                                                           |                4 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc3_via6522_inst/r_ira                            | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                2 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/ABC[7]_i_1__0_n_0                             |                                                           |                4 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/AD                                            | c1541_sd/c1541/cpu/MCycle[2]_i_2__0_n_0                   |                2 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/BAH[7]_i_1__0_n_0                             | c1541_sd/c1541/cpu/MCycle[2]_i_2__0_n_0                   |                5 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/BAL[7]_i_1__0_n_0                             | c1541_sd/c1541/cpu/MCycle[2]_i_2__0_n_0                   |                4 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/BusB_r[7]_i_1__0_n_0                          | c1541_sd/c1541/cpu/MCycle[2]_i_2__0_n_0                   |                3 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/DL                                            | c1541_sd/c1541/cpu/MCycle[2]_i_2__0_n_0                   |                3 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/IR[7]_i_1__0_n_0                              | c1541_sd/c1541/cpu/MCycle[2]_i_2__0_n_0                   |                2 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/PC[15]_i_1__0_n_0                             | c1541_sd/c1541/cpu/MCycle[2]_i_2__0_n_0                   |                3 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/PC[7]_i_1__0_n_0                              | c1541_sd/c1541/cpu/MCycle[2]_i_2__0_n_0                   |                4 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/S[7]_i_1__0_n_0                               | c1541_sd/c1541/cpu/MCycle[2]_i_2__0_n_0                   |                3 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/Y[7]_i_1__0_n_0                               |                                                           |                3 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/BAL_reg[0]_1[0]                               | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                1 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/BAL_reg[0]_2[0]                               | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                2 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/E[0]                                          | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                1 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/WRn_i_reg_10[0]                               | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                2 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/WRn_i_reg_11[0]                               | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                4 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/WRn_i_reg_12[0]                               | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                3 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/WRn_i_reg_13[0]                               | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                2 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/WRn_i_reg_6[0]                                | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                3 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/WRn_i_reg_7[0]                                | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                4 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/WRn_i_reg_8[0]                                | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                2 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/WRn_i_reg_9[0]                                | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                3 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/count_reg[0]_2[0]                             | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                2 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/count_reg[0]_3[0]                             | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                3 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/count_reg[2][0]                               | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                2 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/count_reg[2]_0[0]                             | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                3 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/count_reg[2]_1[0]                             | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                2 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/count_reg[2]_2[0]                             | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                4 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/count_reg[2]_3[0]                             | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                4 |              8 |
+|  pll/inst/clk32    | c1541_sd/c1541/cpu/p_2_out[4]                                    |                                                           |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/ABC[7]_i_1_n_0                                    |                                                           |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/AD                                                | fpga64/cpu/cpu/MCycle[2]_i_2_n_0                          |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAH[7]_i_1_n_0                                    | fpga64/cpu/cpu/MCycle[2]_i_2_n_0                          |                4 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL[7]_i_1_n_0                                    | fpga64/cpu/cpu/MCycle[2]_i_2_n_0                          |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BusB_r[7]_i_1_n_0                                 | fpga64/cpu/cpu/MCycle[2]_i_2_n_0                          |                5 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/DL                                                | fpga64/cpu/cpu/MCycle[2]_i_2_n_0                          |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/IR[7]_i_1_n_0                                     | fpga64/cpu/cpu/MCycle[2]_i_2_n_0                          |                1 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/PC[15]_i_1_n_0                                    | fpga64/cpu/cpu/MCycle[2]_i_2_n_0                          |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/PC[7]_i_1_n_0                                     | fpga64/cpu/cpu/MCycle[2]_i_2_n_0                          |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/Y[7]_i_1_n_0                                      |                                                           |                4 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg                                     | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_4                                   | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_10[0]                                  | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_11[0]                                  | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_14[0]                                  | fpga64/reset_reg_n_0                                      |                5 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_12[0]                                  | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_13[0]                                  | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_16[0]                                  | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_17[0]                                  | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_18[0]                                  | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_19[0]                                  | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_20[0]                                  | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_22[0]                                  | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_23[0]                                  | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_24[0]                                  | fpga64/reset_reg_n_0                                      |                5 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_26[0]                                  | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_27[0]                                  | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_4[0]                                   | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_5[0]                                   | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_6[0]                                   | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_7[0]                                   | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_8[0]                                   | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/BAL_reg[0]_9[0]                                   | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/E[0]                                              | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia1Reg_reg_0[0]                               |                                                           |                1 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia2Reg_reg[0]                                 | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia2Reg_reg_0[0]                               | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia2Reg_reg_11[0]                              |                                                           |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia2Reg_reg_14[0]                              | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia2Reg_reg_7[0]                               |                                                           |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_cia2Reg_reg_9[0]                               |                                                           |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_0[0]                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_1[0]                                | fpga64/reset_reg_n_0                                      |                5 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_14[0]                               | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_15[0]                               | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_16[0]                               | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_3[0]                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_5[0]                                | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_6[0]                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/cs_vicReg_reg_7[0]                                | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/enableCpu_reg[0]                                  |                                                           |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/enableCpu_reg_0[0]                                | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/p_2_out[7]                                        |                                                           |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_0[0]                               | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_12[0]                              |                                                           |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_14[0]                              | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_15[0]                              |                                                           |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_16[0]                              |                                                           |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_17[0]                              |                                                           |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_18[0]                              | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_19[0]                              | fpga64/reset_reg_n_0                                      |                5 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_5[0]                               | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_7[0]                               | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_8[0]                               | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/pulseWrRam_reg_9[0]                               | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/reset_reg_1[0]                                    |                                                           |                4 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/reset_reg_2[0]                                    |                                                           |                2 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/reset_reg_3[0]                                    |                                                           |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/reset_reg_4[0]                                    |                                                           |                4 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/reset_reg_5[0]                                    |                                                           |                4 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/reset_reg_6[0]                                    |                                                           |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/reset_reg_7[0]                                    |                                                           |                4 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/reset_reg_8[0]                                    |                                                           |                3 |              8 |
+|  pll/inst/clk32    | fpga64/phi0_vic_reg_n_0                                          |                                                           |                5 |              8 |
+|  pll/inst/clk32    | fpga64/ramDataReg0                                               |                                                           |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[10]_225                               | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid_8580/v1/adsr/exponential_counter                      | fpga64/sid_8580/v1/adsr/exponential_counter[7]_i_1_n_0    |                4 |              8 |
+|  pll/inst/clk32    | fpga64/sid_8580/v1/adsr/E[0]                                     | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid_8580/v2/adsr/exponential_counter                      | fpga64/sid_8580/v2/adsr/exponential_counter[7]_i_1__0_n_0 |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid_8580/v2/adsr/E[0]                                     | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/vic/IMMC1                                                 | fpga64/cpu/cpu/SR[0]                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/vic/MPtr[7]_i_1_n_0                                       |                                                           |                3 |              8 |
+|  pll/inst/clk32    | fpga64/vic/p_122_in                                              |                                                           |                2 |              8 |
+|  pll/inst/clk32    | fpga64/vic/p_126_in                                              | fpga64/vic/readPixels[7]_i_1_n_0                          |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid_8580/v3/adsr/exponential_counter                      | fpga64/sid_8580/v3/adsr/exponential_counter[7]_i_1__1_n_0 |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid_8580/v3/adsr/E[0]                                     | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | ps2_in/DATA[7]_i_1_n_0                                           | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/osc/enable_o                                          | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[0]_166                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[10]_226                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[11]_232                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[12]_238                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[13]_244                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[14]_250                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[15]_256                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[1]_172                                 | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[2]_178                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[3]_184                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[4]_190                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[5]_196                                 | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[6]_202                                 | fpga64/reset_reg_n_0                                      |                5 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[7]_208                                 | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[8]_214                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/att_dec[9]_220                                 | fpga64/reset_reg_n_0                                      |                6 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[0]_168                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[10]_228                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[11]_234                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[12]_240                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[13]_246                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[14]_252                                | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[15]_258                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[1]_174                                 | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[2]_180                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[3]_186                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[4]_192                                 | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[5]_198                                 | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[6]_204                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[7]_210                                 | fpga64/reset_reg_n_0                                      |                5 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[8]_216                                 | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/control[9]_222                                 | fpga64/reset_reg_n_0                                      |                6 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[0]_169                                 | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[10]_229                                | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[11]_235                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[12]_241                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[13]_247                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[14]_253                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[15]_259                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[1]_175                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[2]_181                                 | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[3]_187                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[4]_193                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[5]_199                                 | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[6]_205                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[7]_211                                 | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[8]_217                                 | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_hi[9]_223                                 | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[0]_170                                 | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[10]_230                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[11]_236                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[12]_242                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[13]_248                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[14]_254                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[15]_260                                | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[1]_176                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[2]_182                                 | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[3]_188                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[4]_194                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[5]_200                                 | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[6]_206                                 | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[7]_212                                 | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[8]_218                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/freq_lo[9]_224                                 | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[0]_167                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[10]_227                               | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[11]_233                               | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[12]_239                               | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[13]_245                               | fpga64/reset_reg_n_0                                      |                6 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[14]_251                               | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[15]_257                               | fpga64/reset_reg_n_0                                      |                6 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[1]_173                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[2]_179                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[3]_185                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[4]_191                                | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[5]_197                                | fpga64/reset_reg_n_0                                      |                6 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[6]_203                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[7]_209                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[8]_215                                | fpga64/reset_reg_n_0                                      |                6 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/phase_lo[9]_221                                | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[0]_165                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[11]_231                               | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[12]_237                               | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[13]_243                               | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[14]_249                               | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[15]_255                               | fpga64/reset_reg_n_0                                      |                5 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[1]_171                                | fpga64/reset_reg_n_0                                      |                2 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[2]_177                                | fpga64/reset_reg_n_0                                      |                5 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[3]_183                                | fpga64/reset_reg_n_0                                      |                4 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[4]_189                                | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[5]_195                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[6]_201                                | fpga64/reset_reg_n_0                                      |                3 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[7]_207                                | fpga64/reset_reg_n_0                                      |                1 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[8]_213                                | fpga64/reset_reg_n_0                                      |                6 |              8 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/sust_rel[9]_219                                | fpga64/reset_reg_n_0                                      |                5 |              8 |
+|  pll/inst/clk32n   |                                                                  | MyCtrlModule/LED_OBUF                                     |                3 |              8 |
+|  pll/inst/clk32    | fpga64/cpu/cpu/S[7]_i_1_n_0                                      | fpga64/cpu/cpu/MCycle[2]_i_2_n_0                          |                3 |              8 |
+|  pll/inst/clk_ctrl | MyCtrlModule/myosd/vframe[15]_i_1_n_0                            |                                                           |                2 |              8 |
+|  pll/inst/clk_ctrl | MyCtrlModule/myosd/vframe[7]_i_1_n_0                             |                                                           |                1 |              8 |
+|  pll/inst/clk32    |                                                                  | fpga64/cpu/cpu/Set_Addr_To_r_reg[0]_0                     |                2 |              8 |
+|  pll/inst/clk32    |                                                                  | fpga64/cpu/cpu/Set_Addr_To_r_reg[0]_18[0]                 |                4 |              8 |
+|  pll/inst/clk_ctrl | MyCtrlModule/spi/sd_shift[7]_i_1_n_0                             |                                                           |                2 |              8 |
+|  pll/inst/clk32    |                                                                  | fpga64/cpu/cpu/Set_Addr_To_r_reg[0]_20[0]                 |                3 |              8 |
+|  pll/inst/clk32    |                                                                  | dac/ldata_int[3]_i_1_n_0                                  |                2 |              8 |
+|  pll/inst/clk32    | c1541_sd/floppy/byte_addr[7]_i_1_n_0                             |                                                           |                4 |              8 |
+|  pll/inst/clk32    | c1541_sd/floppy/data_cks[7]_i_2_n_0                              | c1541_sd/floppy/data_cks[7]_i_1_n_0                       |                5 |              8 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/out_mem_writeEnable_reg_1[0]                    |                                                           |                1 |              8 |
+|  pll/inst/clk_ctrl | fpga64/vic/hsync_r_reg[0]                                        |                                                           |                2 |              8 |
+|  pll/inst/clk_ctrl | fpga64/vic/hsync_r_reg[1]                                        |                                                           |                1 |              8 |
+|  pll/inst/clk32n   |                                                                  |                                                           |                2 |              9 |
+|  pll/inst/clk32    | fpga64/sid/i_regs/filter_co_l[10]_i_1_n_0                        |                                                           |                4 |              9 |
+|  pll/inst/clk32    | ps2_in/shiftreg                                                  | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                3 |              9 |
+|  pll/inst/clk32    | fpga64/vic/rasterY[8]_i_2_n_0                                    | fpga64/vic/rasterY[8]_i_1_n_0                             |                3 |              9 |
+|  pll/inst/clk_ctrl |                                                                  | MyCtrlModule/spiclk_in_i_1_n_0                            |                2 |              9 |
+|  pll/inst/clk32    | c1541_sd/floppy/byte_cnt[8]_i_1_n_0                              |                                                           |                3 |              9 |
+|  pll/inst/clk32    |                                                                  | c1541_sd/c1541/cpu/MCycle[2]_i_2__0_n_0                   |                7 |              9 |
+|  pll/inst/clk32    | fpga64/vic/idle16_out                                            | fpga64/vic/ColRestart[9]_i_1_n_0                          |                3 |             10 |
+|  pll/inst/clk32    | fpga64/vic/ColCounter                                            |                                                           |                3 |             10 |
+|  pll/inst/clk_ctrl | MyCtrlModule/mykeyboard/recvByteLoc[10]_i_1_n_0                  |                                                           |                2 |             10 |
+|  pll/inst/clk_ctrl | MyCtrlModule/mykeyboard/recvByte[10]_i_1_n_0                     |                                                           |                3 |             10 |
+|  pll/inst/clk_ctrl | MyCtrlModule/mykeyboard/waitCount[12]_i_2_n_0                    | MyCtrlModule/mykeyboard/waitCount[12]_i_1_n_0             |                3 |             10 |
+|  pll/inst/clk32    |                                                                  | c1541_sd/c1541/uc3_via6522_inst/SR[0]                     |                3 |             10 |
+|  pll/inst/clk_ctrl | MyCtrlModule/myosd/newline                                       | MyCtrlModule/myosd/vcounter                               |                3 |             11 |
+|  pll/inst/clk32    |                                                                  | fpga64/cpu/cpu/MCycle[2]_i_2_n_0                          |                9 |             11 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc3_via6522_inst/clk_4M_en                        |                                                           |                6 |             12 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/memAAddr[13]                                    |                                                           |                5 |             12 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/sp[13]_i_1_n_0                                  |                                                           |                5 |             12 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/out_mem_addr[20]_i_1_n_0                        |                                                           |                3 |             12 |
+|  pll/inst/clk32    | fpga64/vic/readChar                                              | fpga64/vic/readChar[11]_i_1_n_0                           |                4 |             12 |
+|  pll/inst/clk32    | fpga64/vic/shiftingPixels[0]                                     |                                                           |                3 |             12 |
+|  pll/inst/clk32    | fpga64/reset_cnt[0]_i_2_n_0                                      | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                3 |             12 |
+|  pll/inst/clk32    | fpga64/myScanConverter/readIndex[11]_i_1_n_0                     |                                                           |                4 |             12 |
+|  pll/inst/clk32    |                                                                  | fpga64/myScanConverter/prescale1                          |                3 |             12 |
+|  pll/inst/clk_ctrl | MyCtrlModule/myosd/ypixelpos[0]_i_1_n_0                          |                                                           |                3 |             12 |
+|  pll/inst/clk32    |                                                                  | fpga64/sid/i_regs/reset_reg                               |                3 |             12 |
+|  pll/inst/clk_ctrl | MyCtrlModule/myosd/xpixelpos[0]_i_1_n_0                          |                                                           |                3 |             12 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/memBAddr[13]                                    |                                                           |                7 |             12 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/out_mem_addr_reg[0]_0[0]                        |                                                           |                3 |             12 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/out_mem_addr_reg[3]_0[0]                        |                                                           |                3 |             12 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc3_via6522_inst/count_reg[0]                     | c1541_sd/c1541/cpu/t1_w_reset_int038_out_0                |                2 |             13 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc3_via6522_inst/count_reg[0]                     | c1541_sd/c1541/cpu/t1_w_reset_int038_out                  |                3 |             13 |
+|  pll/inst/clk32    | fpga64/sid/osc/enable_o                                          | fpga64/sid/osc/SR[0]                                      |                4 |             14 |
+|  pll/inst/clk_ctrl |                                                                  | overlay/hsync_r_reg_1                                     |                4 |             14 |
+|  pll/inst/clk32    | fpga64/myKeyboardMatrix/rom_reset_reg_5                          | sdram/SS[0]                                               |                6 |             14 |
+|  pll/inst/clk32    | fpga64/sid_8580/filters/sound[15]_i_1_n_0                        |                                                           |                4 |             15 |
+|  pll/inst/clk32    | fpga64/clk_1MHz[31]                                              | fpga64/sid_8580/v2/adsr/rate_counter[14]_i_1__0_n_0       |                3 |             15 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/idim_flag                                       |                                                           |                9 |             15 |
+|  pll/inst/clk32    | fpga64/clk_1MHz[31]                                              | fpga64/sid_8580/v3/adsr/rate_counter[14]_i_1__1_n_0       |                4 |             15 |
+|  pll/inst/clk32    | fpga64/clk_1MHz[31]                                              | fpga64/sid_8580/v1/adsr/rate_counter[14]_i_1_n_0          |                2 |             15 |
+|  pll/inst/clk32    | fpga64/cia1/timerB[0]_i_1__0_n_0                                 |                                                           |                4 |             16 |
+|  pll/inst/clk32    | fpga64/enablePixel                                               |                                                           |                6 |             16 |
+|  pll/inst/clk32    | fpga64/sid_8580/filters/Vi[17]_i_2_n_0                           | fpga64/sid_8580/filters/Vi[17]_i_1_n_0                    |                5 |             16 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc3_via6522_inst/t2c                              |                                                           |                4 |             16 |
+|  pll/inst/clk32    | fpga64/sid_8580/filters/Vnf[17]_i_2_n_0                          | fpga64/sid_8580/filters/Vnf[17]_i_1_n_0                   |                5 |             16 |
+|  pll/inst/clk32    | fpga64/sid/sum/osc3_n_0                                          | fpga64/reset_reg_n_0                                      |                3 |             16 |
+|  pll/inst/clk32    | fpga64/cia2/timerA[0]_i_1_n_0                                    |                                                           |                4 |             16 |
+|  pll/inst/clk32    | fpga64/cia2/timerB[0]_i_1_n_0                                    |                                                           |                4 |             16 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc3_via6522_inst/t1c                              |                                                           |                4 |             16 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc1_via6522_inst/t1c                              |                                                           |                4 |             16 |
+|  pll/inst/clk32    | fpga64/sid_8580/filters/mulr                                     |                                                           |                5 |             16 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc1_via6522_inst/t2c                              |                                                           |                4 |             16 |
+|  pll/inst/clk32    | fpga64/cia1/timerA[0]_i_1__0_n_0                                 |                                                           |                4 |             16 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/shiftcnt_reg[3][0]                              |                                                           |                7 |             16 |
+|  pll/inst/clk32    | fpga64/vic/lpX                                                   |                                                           |                7 |             16 |
+|  pll/inst/clk32    | fpga64/sid/i_filt_left/p_0_in                                    | fpga64/reset_reg_n_0                                      |                9 |             18 |
+|  pll/inst/clk32    | fpga64/sid_8580/filters/Vlp[17]_i_1_n_0                          | fpga64/reset_reg_n_0                                      |                5 |             18 |
+|  pll/inst/clk32    | fpga64/sid_8580/filters/Vf[17]_i_1_n_0                           |                                                           |                6 |             18 |
+|  pll/inst/clk32    | reset_counter                                                    | fpga64/myKeyboardMatrix/rom_reset_reg_6                   |                7 |             18 |
+|  JOY_CLK_OBUF      |                                                                  |                                                           |                6 |             18 |
+|  pll/inst/clk32    | fpga64/sid/sum/accu_fl                                           | fpga64/sid/sum/accu_fl[17]_i_1_n_0                        |                6 |             18 |
+|  pll/inst/clk32    | fpga64/sid/sum/accu_ul                                           | fpga64/sid/sum/accu_ul[17]_i_1_n_0                        |                5 |             18 |
+|  pll/inst/clk32    | fpga64/sid/i_filt_left/instruction_reg_n_0_[4]                   | fpga64/reset_reg_n_0                                      |                8 |             18 |
+|  pll/inst/clk32    | fpga64/sid/i_filt_left/instruction_reg_n_0_[6]                   | fpga64/reset_reg_n_0                                      |                9 |             18 |
+|  pll/inst/clk32    | fpga64/sid/mix/mix_i[17]_i_1_n_0                                 | fpga64/reset_reg_n_0                                      |                9 |             18 |
+|  pll/inst/clk32    | fpga64/sid_8580/filters/q                                        | fpga64/reset_reg_n_0                                      |                5 |             18 |
+|  pll/inst/clk32    | fpga64/sid_8580/filters/CEB2                                     | fpga64/reset_reg_n_0                                      |                5 |             18 |
+|  pll/inst/clk32    | cart_wr                                                          | MyCtrlModule/clear                                        |                5 |             19 |
+|  pll/inst/clk32    |                                                                  | dac/p_0_in                                                |                5 |             19 |
+|  pll/inst/clk32    | c1541_sd/c1541/uc3_via6522_inst/clk_4M_en                        | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |                7 |             19 |
+|  pll/inst/clk32    | fpga64/vic/p_126_in                                              |                                                           |                6 |             20 |
+|  pll/inst/clk32    | fpga64/sid/i_ctrl/enable_osc                                     | fpga64/sid/i_regs/enable_reg                              |                6 |             23 |
+|  pll/inst/clk32    | fpga64/sid_8580/v1/lfsr_noise[22]_i_1_n_0                        | fpga64/reset_reg_n_0                                      |                5 |             23 |
+|  pll/inst/clk32    | fpga64/sid_8580/v2/lfsr_noise[22]_i_1__0_n_0                     | fpga64/reset_reg_n_0                                      |                6 |             23 |
+|  pll/inst/clk32    | fpga64/sid_8580/v3/lfsr_noise[22]_i_1__1_n_0                     | fpga64/reset_reg_n_0                                      |                6 |             23 |
+|  pll/inst/clk32    | fpga64/vic/MPixels[1][23]_i_1_n_0                                |                                                           |                5 |             24 |
+|  pll/inst/clk32    | fpga64/vic/MPixels[7][23]_i_1_n_0                                |                                                           |               11 |             24 |
+|  pll/inst/clk32    | fpga64/vic/MPixels[0][23]_i_1_n_0                                |                                                           |                7 |             24 |
+|  pll/inst/clk32    | fpga64/clk_1MHz[31]                                              | fpga64/sid_8580/v3/oscillator                             |                6 |             24 |
+|  pll/inst/clk32    | fpga64/vic/MPixels[4][23]_i_1_n_0                                |                                                           |                6 |             24 |
+|  pll/inst/clk32    | fpga64/vic/MPixels[3][23]_i_1_n_0                                |                                                           |                7 |             24 |
+|  pll/inst/clk32    | fpga64/clk_1MHz[31]                                              | fpga64/sid_8580/v1/oscillator                             |                6 |             24 |
+|  pll/inst/clk32    | fpga64/vic/MPixels[6][23]_i_1_n_0                                |                                                           |               11 |             24 |
+|  pll/inst/clk32    |                                                                  | dac/seed1[23]_i_1_n_0                                     |                6 |             24 |
+|  pll/inst/clk32    | fpga64/vic/MPixels[2][23]_i_1_n_0                                |                                                           |                6 |             24 |
+|  pll/inst/clk32    | fpga64/cia2/p_0_in                                               |                                                           |                5 |             24 |
+|  pll/inst/clk32    | fpga64/clk_1MHz[31]                                              | fpga64/sid_8580/v2/oscillator                             |                6 |             24 |
+|  pll/inst/clk32    | fpga64/cia1/p_0_in                                               |                                                           |                7 |             24 |
+|  pll/inst/clk32    | fpga64/vic/MPixels[5][23]_i_1_n_0                                |                                                           |                9 |             24 |
+|  comp_sync/dot_clk |                                                                  |                                                           |               10 |             25 |
+|  pll/inst/clk32    | dac/ldata_int[3]_i_1_n_0                                         |                                                           |                8 |             30 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/cachedprogramword[31]_i_1_n_0                   |                                                           |               11 |             32 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/E[0]                                            |                                                           |                8 |             32 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/mem_write[31]_i_1_n_0                           |                                                           |               11 |             32 |
+|  pll/inst/clk32    | c1541_sd/c1541/clk_1M_pulse                                      | c1541_sd/c1541/cpu/MCycle[2]_i_2__0_n_0                   |               20 |             32 |
+|  pll/inst/clk32    | fpga64/enableCpu_reg_n_0                                         | fpga64/cpu/cpu/MCycle[2]_i_2_n_0                          |               23 |             32 |
+|  pll/inst/clk32    | MyCtrlModule/E[0]                                                | MyCtrlModule/clear                                        |                7 |             32 |
+|  pll/inst/clk32    | c1541_sd/sel                                                     | c1541_sd/ch_timeout0                                      |                8 |             32 |
+|  pll/inst/clk32    | fpga64/sid/sum/direct_out_L[17]_i_1_n_0                          | fpga64/reset_reg_n_0                                      |               15 |             35 |
+|  pll/inst/clk32    | fpga64/myScanConverter/prescale1                                 |                                                           |               10 |             36 |
+|  pll/inst/clk_ctrl | MyCtrlModule/zpu/shift_count[5]_i_1_n_0                          |                                                           |               17 |             38 |
+|  pll/inst/clk32    |                                                                  | c1541_sd/c1541/uc3_via6522_inst/reset_n_reg               |               23 |             41 |
+|  pll/inst/clk32    | fpga64/sid_8580/v3/adsr/clk_1MHz_reg[31][0]                      |                                                           |               33 |             45 |
+|  pll/inst/clk32    | fpga64/vic/nextChar0                                             |                                                           |               16 |             48 |
+|  pll/inst/clk32    | fpga64/sid/i_ctrl/enable_osc                                     |                                                           |                8 |             48 |
+|  pll/inst/clk32    |                                                                  | fpga64/reset_reg_n_0                                      |               31 |             84 |
+|  pll/inst/clk32    | fpga64/clk_1MHz[31]                                              | fpga64/reset_reg_n_0                                      |               40 |             93 |
+|  pll/inst/clk32    | fpga64/sid/osc/enable_o                                          |                                                           |               19 |            135 |
+|  pll/inst/clk_ctrl |                                                                  |                                                           |               85 |            199 |
+|  pll/inst/clk32    |                                                                  |                                                           |              264 |            602 |
++--------------------+------------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+
+

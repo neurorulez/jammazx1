@@ -1,0 +1,293 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+W7-PC::  Wed Jul 03 10:11:03 2019
+
+par -w -intstyle ise -ol high -xe n -mt off c64_zx2_map.ncd c64_zx2.ncd
+c64_zx2.pcf 
+
+
+Constraints file: c64_zx2.pcf.
+Loading device for application Rf_Device from file '6slx16.nph' in environment F:\Xilinx\14.7\ISE_DS\ISE\.
+   "c64_zx2" is an NCD, version 3.2, device xc6slx16, package ftg256, speed -2
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.23 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                 5,490 out of  18,224   30%
+    Number used as Flip Flops:               5,455
+    Number used as Latches:                      2
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:               33
+  Number of Slice LUTs:                      8,662 out of   9,112   95%
+    Number used as logic:                    8,564 out of   9,112   93%
+      Number using O6 output only:           7,054
+      Number using O5 output only:             177
+      Number using O5 and O6:                1,333
+      Number used as ROM:                        0
+    Number used as Memory:                      76 out of   2,176    3%
+      Number used as Dual Port RAM:              4
+        Number using O6 output only:             4
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:            72
+        Number using O6 output only:            41
+        Number using O5 output only:             0
+        Number using O5 and O6:                 31
+    Number used exclusively as route-thrus:     22
+      Number with same-slice register load:      2
+      Number with same-slice carry load:        20
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 2,277 out of   2,278   99%
+  Number of MUXCYs used:                     1,392 out of   4,556   30%
+  Number of LUT Flip Flop pairs used:        8,924
+    Number with an unused Flip Flop:         3,662 out of   8,924   41%
+    Number with an unused LUT:                 262 out of   8,924    2%
+    Number of fully used LUT-FF pairs:       5,000 out of   8,924   56%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  18,224    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        97 out of     186   52%
+    Number of LOCed IOBs:                       97 out of      97  100%
+    IOB Flip Flops:                             35
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        28 out of      32   87%
+  Number of RAMB8BWERs:                          3 out of      64    4%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
+    Number used as BUFIO2FBs:                    1
+    Number used as BUFIO2FB_2CLKs:               0
+  Number of BUFG/BUFGMUXs:                       7 out of      16   43%
+    Number used as BUFGs:                        7
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                  10 out of     248    4%
+    Number used as ILOGIC2s:                    10
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                  25 out of     248   10%
+    Number used as OLOGIC2s:                    25
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                           14 out of      32   43%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       2   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 17 secs 
+Finished initial Timing Analysis.  REAL time: 18 secs 
+
+WARNING:Par:288 - The signal dac/sd_l_aca1<0>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<1>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<2>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<3>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<4>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<5>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<6>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<7>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<8>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<9>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<10>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<11>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<12>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<13>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<14>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<15>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<16>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<17>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/sd_l_aca1<18>_FRB has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dac/Madd_n0210[17:0]_lut<0>_FRB has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 55646 unrouted;      REAL time: 19 secs 
+
+Phase  2  : 50048 unrouted;      REAL time: 22 secs 
+
+Phase  3  : 26598 unrouted;      REAL time: 46 secs 
+
+Phase  4  : 26608 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 48 secs 
+
+Updating file: c64_zx2.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 55 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 55 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 55 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 55 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 55 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 
+Total REAL time to Router completion: 2 mins 
+Total CPU time to Router completion: 2 mins 4 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|               clk32 | BUFGMUX_X2Y12| No   | 1591 |  0.639     |  1.712      |
++---------------------+--------------+------+------+------------+-------------+
+|            clk_ctrl | BUFGMUX_X3Y13| No   |  250 |  0.641     |  1.713      |
++---------------------+--------------+------+------+------------+-------------+
+|             clk_ram |  BUFGMUX_X2Y4| No   |    7 |  0.668     |  1.763      |
++---------------------+--------------+------+------+------------+-------------+
+|comp_sync/clk_cnt_1_ |              |      |      |            |             |
+|                BUFG | BUFGMUX_X2Y10| No   |   12 |  0.018     |  1.095      |
++---------------------+--------------+------+------+------------+-------------+
+|              clk32n |  BUFGMUX_X2Y1| No   |    4 |  0.014     |  1.128      |
++---------------------+--------------+------+------+------------+-------------+
+|             SDR_CLK |  BUFGMUX_X2Y2| No   |    2 |  0.000     |  1.790      |
++---------------------+--------------+------+------+------------+-------------+
+|c1541_sd/c1541/cpu/R |              |      |      |            |             |
+|          es_n_i_inv |         Local|      |   47 |  0.000     |  1.910      |
++---------------------+--------------+------+------+------------+-------------+
+|fpga64/cpu/cpu/Res_n |              |      |      |            |             |
+|              _i_inv |         Local|      |   52 |  0.000     |  2.976      |
++---------------------+--------------+------+------+------------+-------------+
+|       clk32_div_4_1 |         Local|      |    8 |  2.007     |  2.844      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 6
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  NET "clk_ctrl" PERIOD = 16.666 ns HIGH 50 | SETUP       |     0.253ns|    16.413ns|       0|           0
+  %                                         | HOLD        |     0.296ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  NET "clk_ram" PERIOD = 15.625 ns HIGH 50% | SETUP       |     9.212ns|     6.413ns|       0|           0
+                                            | HOLD        |     0.428ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  NET "clk32" PERIOD = 31 ns HIGH 50%       | SETUP       |     9.582ns|    21.418ns|       0|           0
+                                            | HOLD        |     0.227ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  NET "pll/clkin1" PERIOD = 20 ns HIGH 50%  | MINLOWPULSE |    15.000ns|     5.000ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "pll/clkout2" der | MINPERIOD   |    12.986ns|     2.666ns|       0|           0
+  ived from  NET "pll/clkin1" PERIOD = 20 n |             |            |            |        |            
+  s HIGH 50%                                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "pll/clkout3" der | MINPERIOD   |    12.986ns|     2.666ns|       0|           0
+  ived from  NET "pll/clkin1" PERIOD = 20 n |             |            |            |        |            
+  s HIGH 50%                                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "pll/clkout4" der | MINPERIOD   |    12.986ns|     2.666ns|       0|           0
+  ived from  NET "pll/clkin1" PERIOD = 20 n |             |            |            |        |            
+  s HIGH 50%                                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "pll/clkout0" der | MINPERIOD   |    28.638ns|     2.666ns|       0|           0
+  ived from  NET "pll/clkin1" PERIOD = 20 n |             |            |            |        |            
+  s HIGH 50%                                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "pll/clkout1" der | MINPERIOD   |    28.638ns|     2.666ns|       0|           0
+  ived from  NET "pll/clkin1" PERIOD = 20 n |             |            |            |        |            
+  s HIGH 50%                                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for pll/clkin1
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|pll/clkin1                     |     20.000ns|      5.000ns|      3.407ns|            0|            0|            0|            0|
+| pll/clkout0                   |     31.304ns|      2.666ns|          N/A|            0|            0|            0|            0|
+| pll/clkout1                   |     31.304ns|      2.666ns|          N/A|            0|            0|            0|            0|
+| pll/clkout2                   |     15.652ns|      2.666ns|          N/A|            0|            0|            0|            0|
+| pll/clkout3                   |     15.652ns|      2.666ns|          N/A|            0|            0|            0|            0|
+| pll/clkout4                   |     15.652ns|      2.666ns|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 20 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 2 mins 6 secs 
+Total CPU time to PAR completion: 2 mins 11 secs 
+
+Peak Memory Usage:  540 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 22
+Number of info messages: 0
+
+Writing design to file c64_zx2.ncd
+
+
+
+PAR done!

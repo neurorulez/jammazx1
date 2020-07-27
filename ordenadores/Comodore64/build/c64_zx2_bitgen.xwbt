@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\repos\a35\comodore64_beta_7.2\build\c64_zx2.ncd
+OUTFILE=F:\repos\a35\comodore64_beta_7.2\build\c64_zx2.bit
+FAMILY=Spartan6
+PART=xc6slx16-2ftg256
+WORKINGDIR=F:\repos\a35\comodore64_beta_7.2\build
+LICENSE=WebPack
+USER_INFO=211127010_0_0_736

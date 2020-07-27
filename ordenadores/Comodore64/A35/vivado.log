@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Jun 25 11:46:45 2019
+# Process ID: 12004
+# Current directory: F:/repos/a35/comodore64_beta_7.1/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13292 F:\repos\a35\comodore64_beta_7.1\A35\A35.xpr
+# Log file: F:/repos/a35/comodore64_beta_7.1/A35/vivado.log
+# Journal file: F:/repos/a35/comodore64_beta_7.1/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/comodore64_beta_7.1/A35/A35.xpr
+INFO: [Project 1-313] Project file moved from 'F:/repos/a35/NUEVO/comodore64_beta_7/A35' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 679.020 ; gain = 92.371
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 25 11:49:51 2019...

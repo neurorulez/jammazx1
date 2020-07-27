@@ -1,0 +1,456 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'c64_zx2'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol
+high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir
+off -pr b -lc off -power off -o c64_zx2_map.ncd c64_zx2.ngd c64_zx2.pcf 
+Target Device  : xc6slx16
+Target Package : ftg256
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Wed Jul 03 10:04:52 2019
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   23
+Slice Logic Utilization:
+  Number of Slice Registers:                 5,490 out of  18,224   30%
+    Number used as Flip Flops:               5,455
+    Number used as Latches:                      2
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:               33
+  Number of Slice LUTs:                      8,662 out of   9,112   95%
+    Number used as logic:                    8,564 out of   9,112   93%
+      Number using O6 output only:           7,054
+      Number using O5 output only:             177
+      Number using O5 and O6:                1,333
+      Number used as ROM:                        0
+    Number used as Memory:                      76 out of   2,176    3%
+      Number used as Dual Port RAM:              4
+        Number using O6 output only:             4
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:            72
+        Number using O6 output only:            41
+        Number using O5 output only:             0
+        Number using O5 and O6:                 31
+    Number used exclusively as route-thrus:     22
+      Number with same-slice register load:      2
+      Number with same-slice carry load:        20
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 2,277 out of   2,278   99%
+  Number of MUXCYs used:                     1,392 out of   4,556   30%
+  Number of LUT Flip Flop pairs used:        8,924
+    Number with an unused Flip Flop:         3,662 out of   8,924   41%
+    Number with an unused LUT:                 262 out of   8,924    2%
+    Number of fully used LUT-FF pairs:       5,000 out of   8,924   56%
+    Number of unique control sets:             438
+    Number of slice register sites lost
+      to control set restrictions:             924 out of  18,224    5%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        97 out of     186   52%
+    Number of LOCed IOBs:                       97 out of      97  100%
+    IOB Flip Flops:                             35
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        28 out of      32   87%
+  Number of RAMB8BWERs:                          3 out of      64    4%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
+    Number used as BUFIO2FBs:                    1
+    Number used as BUFIO2FB_2CLKs:               0
+  Number of BUFG/BUFGMUXs:                       7 out of      16   43%
+    Number used as BUFGs:                        7
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                  10 out of     248    4%
+    Number used as ILOGIC2s:                    10
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                  25 out of     248   10%
+    Number used as OLOGIC2s:                    25
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                           14 out of      32   43%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       2   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                4.31
+
+Peak Memory Usage:  574 MB
+Total REAL time to MAP completion:  6 mins 2 secs 
+Total CPU time to MAP completion:   5 mins 58 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   c1541_sd/c1541/cpu/Res_n_i_inv is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net fpga64/cpu/cpu/Res_n_i_inv
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<0>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<1>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<2>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<3>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<4>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<5>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<6>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<7>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<8>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<9>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<10>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<11>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<12>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<13>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<14>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<15>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<16>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<17>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/sd_l_aca1<18>_FRB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dac/Madd_n0210[17:0]_lut<0>_FRB> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network fpga64/sid_6581/osc/Mram_car_register/SPO has no
+   load.
+INFO:LIT:395 - The above info message is repeated 2 more times for the following
+   (max. 5 shown):
+   fpga64/sid_6581/osc/Mram_msb_register/SPO,
+   MyCtrlModule/myosd/charram/douta<7>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal clock_50 are pushed forward
+   through input buffer.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  46 block(s) removed
+   4 block(s) optimized away
+  23 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "MyCtrlModule/zpu/Madd_memARead[31]_GND_128_o_add_179_OUT15"
+(ROM) removed.
+Loadless block "dac/Msub_n019721" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>1" (ROM) removed.
+ The signal "dac/Madd_n0210[17:0]_cy<1>" is loadless and has been removed.
+  Loadless block "dac/Madd_n0210[17:0]_cy<1>1_INV_0" (BUF) removed.
+ The signal "dac/Msub_n0197" is loadless and has been removed.
+  Loadless block "dac/Msub_n0197" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>10" (ROM) removed.
+ The signal "dac/Msub_n01979" is loadless and has been removed.
+  Loadless block "dac/Msub_n01979" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>11" (ROM) removed.
+ The signal "dac/Msub_n019710" is loadless and has been removed.
+  Loadless block "dac/Msub_n019710" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>12" (ROM) removed.
+ The signal "dac/Msub_n019711" is loadless and has been removed.
+  Loadless block "dac/Msub_n019711" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>13" (ROM) removed.
+ The signal "dac/Msub_n019712" is loadless and has been removed.
+  Loadless block "dac/Msub_n019712" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>14" (ROM) removed.
+ The signal "dac/Msub_n019713" is loadless and has been removed.
+  Loadless block "dac/Msub_n019713" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>15" (ROM) removed.
+ The signal "dac/Msub_n019714" is loadless and has been removed.
+  Loadless block "dac/Msub_n019714" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>16" (ROM) removed.
+ The signal "dac/Msub_n019715" is loadless and has been removed.
+  Loadless block "dac/Msub_n019715" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>17" (ROM) removed.
+ The signal "dac/Msub_n019716" is loadless and has been removed.
+  Loadless block "dac/Msub_n019716" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>18" (ROM) removed.
+ The signal "dac/Msub_n019717" is loadless and has been removed.
+  Loadless block "dac/Msub_n019717" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>19" (ROM) removed.
+ The signal "dac/Msub_n019718" is loadless and has been removed.
+  Loadless block "dac/Msub_n019718" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>2" (ROM) removed.
+ The signal "dac/Msub_n01971" is loadless and has been removed.
+  Loadless block "dac/Msub_n01971" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>20" (ROM) removed.
+ The signal "dac/Msub_n019719" is loadless and has been removed.
+  Loadless block "dac/Msub_n019719" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>21" (ROM) removed.
+ The signal "dac/Msub_n019720" is loadless and has been removed.
+  Loadless block "dac/Msub_n019720" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>3" (ROM) removed.
+ The signal "dac/Msub_n01972" is loadless and has been removed.
+  Loadless block "dac/Msub_n01972" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>4" (ROM) removed.
+ The signal "dac/Msub_n01973" is loadless and has been removed.
+  Loadless block "dac/Msub_n01973" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>5" (ROM) removed.
+ The signal "dac/Msub_n01974" is loadless and has been removed.
+  Loadless block "dac/Msub_n01974" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>6" (ROM) removed.
+ The signal "dac/Msub_n01975" is loadless and has been removed.
+  Loadless block "dac/Msub_n01975" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>7" (ROM) removed.
+ The signal "dac/Msub_n01976" is loadless and has been removed.
+  Loadless block "dac/Msub_n01976" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>8" (ROM) removed.
+ The signal "dac/Msub_n01977" is loadless and has been removed.
+  Loadless block "dac/Msub_n01977" (ROM) removed.
+Loadless block "dac/Msub_n0197_lut<0>9" (ROM) removed.
+ The signal "dac/Msub_n01978" is loadless and has been removed.
+  Loadless block "dac/Msub_n01978" (ROM) removed.
+Loadless block "dac/Msub_n020021" (ROM) removed.
+The signal "MyCtrlModule/myosd/charram/douta<7>" is sourceless and has been
+removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		MyCtrlModule/myosd/charram/XST_GND
+VCC 		MyCtrlModule/myosd/charram/XST_VCC
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| BTN                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| JOY_CLK                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| JOY_DATA                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| JOY_LOAD                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| LED<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| LED<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SDRAM_A<0>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_A<1>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_A<2>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_A<3>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_A<4>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_A<5>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_A<6>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_A<7>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_A<8>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_A<9>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_A<10>                        | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_A<11>                        | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_A<12>                        | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_BA<0>                        | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_BA<1>                        | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_CKE                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_CLK                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | ODDR         |          |          |
+| SDRAM_DQ<0>                        | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW | IFF          |          |          |
+| SDRAM_DQ<1>                        | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW | IFF          |          |          |
+| SDRAM_DQ<2>                        | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW | IFF          |          |          |
+| SDRAM_DQ<3>                        | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW | IFF          |          |          |
+| SDRAM_DQ<4>                        | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW | IFF          |          |          |
+| SDRAM_DQ<5>                        | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW | IFF          |          |          |
+| SDRAM_DQ<6>                        | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW | IFF          |          |          |
+| SDRAM_DQ<7>                        | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW | IFF          |          |          |
+| SDRAM_DQ<8>                        | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_DQ<9>                        | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_DQ<10>                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_DQ<11>                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_DQ<12>                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_DQ<13>                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_DQ<14>                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_DQ<15>                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_DQMH                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_DQML                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| SDRAM_nCAS                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF          |          |          |
+| SDRAM_nCS                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF          |          |          |
+| SDRAM_nRAS                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF          |          |          |
+| SDRAM_nWE                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF          |          |          |
+| VCOMP                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| clock_50                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ps2_clk                            | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+| ps2_dat                            | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+| pwm_audio_out_l                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| pwm_audio_out_r                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| sd_spi_cs_n                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| sd_spi_miso                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sd_spi_mosi                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| sd_spi_sclk                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| sram_addr<0>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<1>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<2>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<3>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<4>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<5>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<6>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<7>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<8>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<9>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<10>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<11>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<12>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<13>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<14>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<15>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<16>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<17>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr<18>                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data<0>                       | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data<1>                       | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data<2>                       | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data<3>                       | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data<4>                       | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data<5>                       | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data<6>                       | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data<7>                       | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_we_n                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_b<0>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| vga_b<1>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| vga_b<2>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| vga_b<3>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| vga_g<0>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| vga_g<1>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| vga_g<2>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| vga_g<3>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| vga_hs                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_r<0>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| vga_r<1>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| vga_r<2>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| vga_r<3>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| vga_vs                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
