@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue May 28 09:28:43 2019
+# Process ID: 9080
+# Current directory: F:/jammaZX1/arcades/defender/mayday/A35/A35.runs/impl_1
+# Command line: vivado.exe -log mayday_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mayday_top.tcl -notrace
+# Log file: F:/jammaZX1/arcades/defender/mayday/A35/A35.runs/impl_1/mayday_top.vdi
+# Journal file: F:/jammaZX1/arcades/defender/mayday/A35/A35.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source mayday_top.tcl -notrace

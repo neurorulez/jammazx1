@@ -1,0 +1,1513 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Jun 25 10:31:42 2018
+# Process ID: 3052
+# Current directory: F:/jammaZX1/-hw ckong/ckong/A35/A35.runs/synth_1
+# Command line: vivado.exe -log ckong_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ckong_top.tcl
+# Log file: F:/jammaZX1/-hw ckong/ckong/A35/A35.runs/synth_1/ckong_top.vds
+# Journal file: F:/jammaZX1/-hw ckong/ckong/A35/A35.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ckong_top.tcl -notrace
+Command: synth_design -top ckong_top -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3576 
+WARNING: [Synth 8-1652] attribute target identifier fdb not found in this scope [F:/jammaZX1/-hw ckong/ckong/src/synchro.v:87]
+WARNING: [Synth 8-1652] attribute target identifier fda not found in this scope [F:/jammaZX1/-hw ckong/ckong/src/synchro.v:82]
+WARNING: [Synth 8-1652] attribute target identifier fdb not found in this scope [F:/jammaZX1/-hw ckong/ckong/src/synchro.v:83]
+WARNING: [Synth 8-1652] attribute target identifier fda not found in this scope [F:/jammaZX1/-hw ckong/ckong/src/synchro.v:84]
+WARNING: [Synth 8-1652] attribute target identifier fdb not found in this scope [F:/jammaZX1/-hw ckong/ckong/src/synchro.v:85]
+WARNING: [Synth 8-1652] attribute target identifier fda not found in this scope [F:/jammaZX1/-hw ckong/ckong/src/synchro.v:86]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 364.438 ; gain = 108.625
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port i_a8 is neither a static name nor a globally static expression [F:/jammaZX1/-hw ckong/ckong/src/ckong_sound.vhd:129]
+WARNING: [Synth 8-1565] actual for formal port i_bdir is neither a static name nor a globally static expression [F:/jammaZX1/-hw ckong/ckong/src/ckong_sound.vhd:130]
+WARNING: [Synth 8-1565] actual for formal port i_bc2 is neither a static name nor a globally static expression [F:/jammaZX1/-hw ckong/ckong/src/ckong_sound.vhd:131]
+WARNING: [Synth 8-1565] actual for formal port i_bc1 is neither a static name nor a globally static expression [F:/jammaZX1/-hw ckong/ckong/src/ckong_sound.vhd:132]
+WARNING: [Synth 8-1565] actual for formal port scanlines is neither a static name nor a globally static expression [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:700]
+INFO: [Synth 8-6157] synthesizing module 'ckong_top' [F:/jammaZX1/-hw ckong/ckong/src/modulo_top_a35t.v:9]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'PLL_BASE' [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:40508]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 12 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN_PERIOD bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLK_FEEDBACK bound to: CLKFBOUT - type: string 
+	Parameter COMPENSATION bound to: INTERNAL - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER bound to: 0.100000 - type: float 
+	Parameter RESET_ON_LOSS_OF_LOCK bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLL_BASE' (2#1) [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:40508]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/jammaZX1/-hw ckong/ckong/src/modulo_top_a35t.v:143]
+INFO: [Synth 8-638] synthesizing module 'ckong' [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'DEBOUNCE' [F:/jammaZX1/-hw ckong/ckong/src/debounce.vhd:60]
+	Parameter G_WIDTH bound to: 16 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element tick_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/debounce.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'DEBOUNCE' (3#1) [F:/jammaZX1/-hw ckong/ckong/src/debounce.vhd:60]
+INFO: [Synth 8-226] default block is never used [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:460]
+INFO: [Synth 8-638] synthesizing module 'video_gen' [F:/jammaZX1/-hw ckong/ckong/src/video_gen.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'video_gen' (4#1) [F:/jammaZX1/-hw ckong/ckong/src/video_gen.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'line_doubler' [F:/jammaZX1/-hw ckong/ckong/src/line_doubler.vhd:20]
+WARNING: [Synth 8-614] signal 'scanline' is read in the process but is not in the sensitivity list [F:/jammaZX1/-hw ckong/ckong/src/line_doubler.vhd:77]
+WARNING: [Synth 8-614] signal 'scanlines' is read in the process but is not in the sensitivity list [F:/jammaZX1/-hw ckong/ckong/src/line_doubler.vhd:77]
+WARNING: [Synth 8-614] signal 'video' is read in the process but is not in the sensitivity list [F:/jammaZX1/-hw ckong/ckong/src/line_doubler.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'line_doubler' (5#1) [F:/jammaZX1/-hw ckong/ckong/src/line_doubler.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'ckong_palette' [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_palette.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ckong_palette' (6#1) [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_palette.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'ckong_big_sprite_palette' [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_big_sprite_palette.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ckong_big_sprite_palette' (7#1) [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_big_sprite_palette.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'T80s' [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80s.vhd:100]
+	Parameter Mode bound to: 0 - type: integer 
+	Parameter T2Write bound to: 1 - type: integer 
+	Parameter IOWait bound to: 1 - type: integer 
+	Parameter Mode bound to: 0 - type: integer 
+	Parameter IOWait bound to: 1 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'T80' declared at 'F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80.vhd:75' bound to instance 'u0' of component 'T80' [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80s.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'T80' [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80.vhd:115]
+	Parameter Mode bound to: 0 - type: integer 
+	Parameter IOWait bound to: 1 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+	Parameter Mode bound to: 0 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'T80_MCode' declared at 'F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80_MCode.vhd:68' bound to instance 'mcode' of component 'T80_MCode' [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'T80_MCode' [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80_MCode.vhd:137]
+	Parameter Mode bound to: 0 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'T80_MCode' (8#1) [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80_MCode.vhd:137]
+	Parameter Mode bound to: 0 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'T80_ALU' declared at 'F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80_ALU.vhd:62' bound to instance 'alu' of component 'T80_ALU' [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80.vhd:309]
+INFO: [Synth 8-638] synthesizing module 'T80_ALU' [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80_ALU.vhd:88]
+	Parameter Mode bound to: 0 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'T80_ALU' (9#1) [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80_ALU.vhd:88]
+INFO: [Synth 8-3491] module 'T80_Reg' declared at 'F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80_Reg.vhd:56' bound to instance 'Regs' of component 'T80_Reg' [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80.vhd:819]
+INFO: [Synth 8-638] synthesizing module 'T80_Reg' [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80_Reg.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'T80_Reg' (10#1) [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80_Reg.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'T80' (11#1) [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'T80s' (12#1) [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80s.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'ckong_program' [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_program.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ckong_program' (13#1) [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_program.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'gen_ram' [F:/jammaZX1/-hw ckong/ckong/src/gen_ram.vhd:45]
+	Parameter dWidth bound to: 8 - type: integer 
+	Parameter aWidth bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_ram' (14#1) [F:/jammaZX1/-hw ckong/ckong/src/gen_ram.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'gen_ram__parameterized0' [F:/jammaZX1/-hw ckong/ckong/src/gen_ram.vhd:45]
+	Parameter dWidth bound to: 8 - type: integer 
+	Parameter aWidth bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_ram__parameterized0' (14#1) [F:/jammaZX1/-hw ckong/ckong/src/gen_ram.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'gen_ram__parameterized1' [F:/jammaZX1/-hw ckong/ckong/src/gen_ram.vhd:45]
+	Parameter dWidth bound to: 8 - type: integer 
+	Parameter aWidth bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_ram__parameterized1' (14#1) [F:/jammaZX1/-hw ckong/ckong/src/gen_ram.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'ckong_tile_bit0' [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_tile_bit0.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ckong_tile_bit0' (15#1) [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_tile_bit0.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'ckong_tile_bit1' [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_tile_bit1.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ckong_tile_bit1' (16#1) [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_tile_bit1.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'ckong_big_sprite_tile_bit0' [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_big_sprite_tile_bit0.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ckong_big_sprite_tile_bit0' (17#1) [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_big_sprite_tile_bit0.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'ckong_big_sprite_tile_bit1' [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_big_sprite_tile_bit1.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ckong_big_sprite_tile_bit1' (18#1) [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_big_sprite_tile_bit1.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'ckong_sound' [F:/jammaZX1/-hw ckong/ckong/src/ckong_sound.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'ckong_samples' [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_samples.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ckong_samples' (19#1) [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_samples.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'YM2149' [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:92]
+INFO: [Synth 8-226] default block is never used [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:175]
+INFO: [Synth 8-226] default block is never used [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:223]
+INFO: [Synth 8-226] default block is never used [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:299]
+WARNING: [Synth 8-614] signal 'ioa_inreg' is read in the process but is not in the sensitivity list [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:295]
+WARNING: [Synth 8-614] signal 'iob_inreg' is read in the process but is not in the sensitivity list [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:295]
+WARNING: [Synth 8-614] signal 'reg' is read in the process but is not in the sensitivity list [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:440]
+INFO: [Synth 8-226] default block is never used [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:537]
+INFO: [Synth 8-226] default block is never used [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:575]
+WARNING: [Synth 8-6014] Unused sequential element noise_gen_comp_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:357]
+WARNING: [Synth 8-6014] Unused sequential element poly17_zero_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:362]
+WARNING: [Synth 8-6014] Unused sequential element tone_gen_freq_reg[1] was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:387]
+WARNING: [Synth 8-6014] Unused sequential element tone_gen_freq_reg[2] was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:387]
+WARNING: [Synth 8-6014] Unused sequential element tone_gen_freq_reg[3] was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:387]
+WARNING: [Synth 8-6014] Unused sequential element tone_gen_comp_reg[1] was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:393]
+WARNING: [Synth 8-6014] Unused sequential element tone_gen_comp_reg[2] was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:393]
+WARNING: [Synth 8-6014] Unused sequential element tone_gen_comp_reg[3] was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:393]
+WARNING: [Synth 8-6014] Unused sequential element env_gen_freq_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:419]
+WARNING: [Synth 8-6014] Unused sequential element env_gen_comp_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:422]
+WARNING: [Synth 8-6014] Unused sequential element is_bot_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:479]
+WARNING: [Synth 8-6014] Unused sequential element is_bot_p1_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:480]
+WARNING: [Synth 8-6014] Unused sequential element is_top_m1_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:481]
+WARNING: [Synth 8-6014] Unused sequential element is_top_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:482]
+WARNING: [Synth 8-6014] Unused sequential element chan_mixed_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:559]
+WARNING: [Synth 8-6014] Unused sequential element chan_amp_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:561]
+INFO: [Synth 8-256] done synthesizing module 'YM2149' (20#1) [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:92]
+WARNING: [Synth 8-6014] Unused sequential element scs_n_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ckong_sound.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element sample_volume_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ckong_sound.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'ckong_sound' (21#1) [F:/jammaZX1/-hw ckong/ckong/src/ckong_sound.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'dac' [F:/jammaZX1/-hw ckong/ckong/src/dac.vhd:37]
+	Parameter msbi_g bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dac' (22#1) [F:/jammaZX1/-hw ckong/ckong/src/dac.vhd:37]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'buttons_reg' in module 'ckong' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:257]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'buttons_reg' in module 'ckong' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:258]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'buttons_reg' in module 'ckong' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:259]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'buttons_reg' in module 'ckong' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:260]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'buttons_reg' in module 'ckong' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:261]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'buttons_reg' in module 'ckong' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:263]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'buttons_reg' in module 'ckong' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:264]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'buttons_reg' in module 'ckong' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:265]
+INFO: [Synth 8-256] done synthesizing module 'ckong' (23#1) [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:37]
+WARNING: [Synth 8-350] instance 'pm' of module 'ckong' requires 19 connections, but only 18 given [F:/jammaZX1/-hw ckong/ckong/src/modulo_top_a35t.v:173]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [F:/jammaZX1/-hw ckong/ckong/src/keyb/keyboard.vhd:20]
+	Parameter filter_length bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ps2_intf' declared at 'F:/jammaZX1/-hw ckong/ckong/src/keyb/ps2_intf.vhd:44' bound to instance 'ps2' of component 'ps2_intf' [F:/jammaZX1/-hw ckong/ckong/src/keyb/keyboard.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ps2_intf' [F:/jammaZX1/-hw ckong/ckong/src/keyb/ps2_intf.vhd:62]
+	Parameter filter_length bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ps2_intf' (24#1) [F:/jammaZX1/-hw ckong/ckong/src/keyb/ps2_intf.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (25#1) [F:/jammaZX1/-hw ckong/ckong/src/keyb/keyboard.vhd:20]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/jammaZX1/-hw ckong/ckong/src/modulo_top_a35t.v:211]
+INFO: [Synth 8-6157] synthesizing module 'multiboot' [F:/jammaZX1/-hw ckong/ckong/src/multiboot_1x.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/jammaZX1/-hw ckong/ckong/src/multiboot_1x.v:19]
+INFO: [Synth 8-6157] synthesizing module 'multiboot_spartan6' [F:/jammaZX1/-hw ckong/ckong/src/multiboot_1x.v:27]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SYNC_H bound to: 1 - type: integer 
+	Parameter SYNC_L bound to: 2 - type: integer 
+	Parameter CWD_H bound to: 3 - type: integer 
+	Parameter CWD_L bound to: 4 - type: integer 
+	Parameter GEN1_H bound to: 5 - type: integer 
+	Parameter GEN1_L bound to: 6 - type: integer 
+	Parameter GEN2_H bound to: 7 - type: integer 
+	Parameter GEN2_L bound to: 8 - type: integer 
+	Parameter GEN3_H bound to: 9 - type: integer 
+	Parameter GEN3_L bound to: 10 - type: integer 
+	Parameter GEN4_H bound to: 11 - type: integer 
+	Parameter GEN4_L bound to: 12 - type: integer 
+	Parameter GEN5_H bound to: 13 - type: integer 
+	Parameter GEN5_L bound to: 14 - type: integer 
+	Parameter NUL_H bound to: 15 - type: integer 
+	Parameter NUL_L bound to: 16 - type: integer 
+	Parameter MOD_H bound to: 17 - type: integer 
+	Parameter MOD_L bound to: 18 - type: integer 
+	Parameter HCO_H bound to: 19 - type: integer 
+	Parameter HCO_L bound to: 20 - type: integer 
+	Parameter RBT_H bound to: 21 - type: integer 
+	Parameter RBT_L bound to: 22 - type: integer 
+	Parameter NOOP_0 bound to: 23 - type: integer 
+	Parameter NOOP_1 bound to: 24 - type: integer 
+	Parameter NOOP_2 bound to: 25 - type: integer 
+	Parameter NOOP_3 bound to: 26 - type: integer 
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/jammaZX1/-hw ckong/ckong/src/multiboot_1x.v:43]
+INFO: [Synth 8-6157] synthesizing module 'ICAP_SPARTAN6' [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:21309]
+	Parameter DEVICE_ID bound to: 67109011 - type: integer 
+	Parameter SIM_CFG_FILE_NAME bound to: NONE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ICAP_SPARTAN6' (26#1) [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:21309]
+WARNING: [Synth 8-350] instance 'ICAP_SPARTAN6_inst' of module 'ICAP_SPARTAN6' requires 6 connections, but only 4 given [F:/jammaZX1/-hw ckong/ckong/src/multiboot_1x.v:43]
+INFO: [Synth 8-4471] merging register 'ff_icap_wr_reg' into 'ff_icap_ce_reg' [F:/jammaZX1/-hw ckong/ckong/src/multiboot_1x.v:48]
+WARNING: [Synth 8-6014] Unused sequential element ff_icap_wr_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/multiboot_1x.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'multiboot_spartan6' (27#1) [F:/jammaZX1/-hw ckong/ckong/src/multiboot_1x.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'multiboot' (28#1) [F:/jammaZX1/-hw ckong/ckong/src/multiboot_1x.v:1]
+WARNING: [Synth 8-6014] Unused sequential element pm_reset_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/modulo_top_a35t.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'ckong_top' (29#1) [F:/jammaZX1/-hw ckong/ckong/src/modulo_top_a35t.v:9]
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[18] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[17] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[16] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[15] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[14] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[13] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[12] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[11] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[10] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[9] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[8] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[7] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[6] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[5] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[4] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[3] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[2] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[1] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[0] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_we_n driven by constant 1
+WARNING: [Synth 8-3331] design ckong_sound has unconnected port cpu_addr[15]
+WARNING: [Synth 8-3331] design ckong_sound has unconnected port cpu_addr[14]
+WARNING: [Synth 8-3331] design ckong_sound has unconnected port cpu_addr[13]
+WARNING: [Synth 8-3331] design ckong_sound has unconnected port cpu_addr[12]
+WARNING: [Synth 8-3331] design ckong_sound has unconnected port cpu_addr[11]
+WARNING: [Synth 8-3331] design ckong_sound has unconnected port cpu_addr[10]
+WARNING: [Synth 8-3331] design ckong_sound has unconnected port cpu_addr[9]
+WARNING: [Synth 8-3331] design ckong_sound has unconnected port cpu_addr[8]
+WARNING: [Synth 8-3331] design ckong_sound has unconnected port cpu_addr[7]
+WARNING: [Synth 8-3331] design ckong_sound has unconnected port cpu_addr[6]
+WARNING: [Synth 8-3331] design ckong_sound has unconnected port cpu_addr[5]
+WARNING: [Synth 8-3331] design ckong_sound has unconnected port cpu_addr[4]
+WARNING: [Synth 8-3331] design ckong_sound has unconnected port reg6_we_n
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[5]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[4]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[3]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[1]
+WARNING: [Synth 8-3331] design ckong has unconnected port scanSW[10]
+WARNING: [Synth 8-3331] design ckong has unconnected port scanSW[7]
+WARNING: [Synth 8-3331] design ckong has unconnected port scanSW[6]
+WARNING: [Synth 8-3331] design ckong has unconnected port resetKey
+WARNING: [Synth 8-3331] design ckong has unconnected port scandblctrl[0]
+WARNING: [Synth 8-3331] design ckong_top has unconnected port sram_data[7]
+WARNING: [Synth 8-3331] design ckong_top has unconnected port sram_data[6]
+WARNING: [Synth 8-3331] design ckong_top has unconnected port sram_data[5]
+WARNING: [Synth 8-3331] design ckong_top has unconnected port sram_data[4]
+WARNING: [Synth 8-3331] design ckong_top has unconnected port sram_data[3]
+WARNING: [Synth 8-3331] design ckong_top has unconnected port sram_data[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 497.578 ; gain = 241.766
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 497.578 ; gain = 241.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 497.578 ; gain = 241.766
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/jammaZX1/-hw ckong/ckong/pines_zxuno_a35t.xdc]
+Finished Parsing XDC File [F:/jammaZX1/-hw ckong/ckong/pines_zxuno_a35t.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/jammaZX1/-hw ckong/ckong/pines_zxuno_a35t.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ckong_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ckong_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  ICAP_SPARTAN6 => ICAPE2: 1 instances
+  PLL_BASE => MMCME2_ADV: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 799.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 799.695 ; gain = 543.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 799.695 ; gain = 543.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 799.695 ; gain = 543.883
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'vcnt_r_reg' and it is trimmed from '9' to '8' bits. [F:/jammaZX1/-hw ckong/ckong/src/video_gen.vhd:46]
+INFO: [Synth 8-5546] ROM "vcnt_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hblank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hblank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vblank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vblank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_7_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "scanline" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_o" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element hcnt_o_reg_rep was removed.  [F:/jammaZX1/-hw ckong/ckong/src/line_doubler.vhd:60]
+INFO: [Synth 8-5587] ROM size for "MCycles" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "MCycles" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "TStates" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Prefix" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "LDZ" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Inc_PC" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NoRead" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Inc_PC" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IncDec_16" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IncDec_16" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Read_To_Acc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "I_RLD" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Jump" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "JumpXY" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "NoRead" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "LDSPHL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Special_LD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExchangeDH" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExchangeRp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExchangeAF" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExchangeRS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "I_DJNZ" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "I_CPL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I_CCF" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I_SCF" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SetDI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SetEI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IMode" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Halt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80.vhd:572]
+INFO: [Synth 8-5544] ROM "ISet" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "XY_State" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "XY_Ind" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "IncDecZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "BusA" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Auto_Wait" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "F" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ISet" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "XY_State" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "XY_Ind" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "IncDecZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "BusA" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Auto_Wait" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "F" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "XY_State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "F" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "I" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegAddrA_r" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegAddrB_r" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element data_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_program.vhd:1555]
+WARNING: [Synth 8-6014] Unused sequential element data_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_tile_bit0.vhd:531]
+WARNING: [Synth 8-6014] Unused sequential element data_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_tile_bit1.vhd:531]
+WARNING: [Synth 8-6014] Unused sequential element data_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_big_sprite_tile_bit0.vhd:147]
+WARNING: [Synth 8-6014] Unused sequential element data_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_big_sprite_tile_bit1.vhd:147]
+WARNING: [Synth 8-6014] Unused sequential element data_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_samples.vhd:531]
+INFO: [Synth 8-5546] ROM "frequency_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sample_cnt" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'attr_sp_bg_reg' and it is trimmed from '8' to '6' bits. [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:399]
+INFO: [Synth 8-5544] ROM "tile_ram_we" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tile_graph_rom_addr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "big_sprite_ram_we" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element big_sprite_graph1_delay_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:645]
+WARNING: [Synth 8-6014] Unused sequential element big_sprite_graph2_delay_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:646]
+INFO: [Synth 8-5546] ROM "ps2_clk_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "release" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_11_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_7_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_6_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "joy_renew" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:21 ; elapsed = 00:01:26 . Memory (MB): peak = 799.695 ; gain = 543.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 8     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 8     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 5     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      5 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 5     
+	   8 Input      1 Bit         XORs := 5     
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 67    
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 77    
++---RAMs : 
+	              16K Bit         RAMs := 1     
+	               8K Bit         RAMs := 3     
+	               4K Bit         RAMs := 2     
+	               2K Bit         RAMs := 1     
+	               1K Bit         RAMs := 1     
+	               64 Bit         RAMs := 2     
++---ROMs : 
+	                              ROMs := 6     
++---Muxes : 
+	  29 Input     21 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 28    
+	  18 Input     16 Bit        Muxes := 1     
+	   4 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	  25 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 5     
+	   2 Input      9 Bit        Muxes := 5     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 67    
+	   8 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 9     
+	   4 Input      5 Bit        Muxes := 1     
+	  19 Input      5 Bit        Muxes := 1     
+	  59 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 57    
+	   4 Input      4 Bit        Muxes := 14    
+	   6 Input      4 Bit        Muxes := 4     
+	   8 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 8     
+	   9 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 5     
+	  23 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 10    
+	   2 Input      3 Bit        Muxes := 85    
+	   5 Input      3 Bit        Muxes := 19    
+	  59 Input      3 Bit        Muxes := 2     
+	  25 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 19    
+	   6 Input      3 Bit        Muxes := 5     
+	  11 Input      3 Bit        Muxes := 1     
+	  23 Input      3 Bit        Muxes := 4     
+	   8 Input      3 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 9     
+	   3 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 2     
+	  61 Input      2 Bit        Muxes := 1     
+	  25 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 266   
+	   4 Input      1 Bit        Muxes := 24    
+	   3 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 17    
+	   6 Input      1 Bit        Muxes := 9     
+	  59 Input      1 Bit        Muxes := 17    
+	  23 Input      1 Bit        Muxes := 16    
+	   8 Input      1 Bit        Muxes := 6     
+	  25 Input      1 Bit        Muxes := 1     
+	  61 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 16    
+	  29 Input      1 Bit        Muxes := 9     
+	  19 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ckong_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  25 Input     12 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module DEBOUNCE 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module video_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module line_doubler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	               4K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module ckong_palette 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module ckong_big_sprite_palette 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module T80_MCode 
+Detailed RTL Component Info : 
++---Muxes : 
+	  59 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 49    
+	   4 Input      4 Bit        Muxes := 14    
+	   6 Input      4 Bit        Muxes := 4     
+	   8 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 8     
+	   9 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 5     
+	  23 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 10    
+	   2 Input      3 Bit        Muxes := 68    
+	   5 Input      3 Bit        Muxes := 19    
+	  59 Input      3 Bit        Muxes := 2     
+	  25 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 19    
+	   6 Input      3 Bit        Muxes := 5     
+	  11 Input      3 Bit        Muxes := 1     
+	  23 Input      3 Bit        Muxes := 4     
+	   8 Input      3 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 2     
+	  61 Input      2 Bit        Muxes := 1     
+	  25 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 70    
+	   4 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 11    
+	   6 Input      1 Bit        Muxes := 7     
+	  59 Input      1 Bit        Muxes := 17    
+	  23 Input      1 Bit        Muxes := 16    
+	   8 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	  25 Input      1 Bit        Muxes := 1     
+	  61 Input      1 Bit        Muxes := 12    
+Module T80_ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
+	   8 Input      1 Bit         XORs := 4     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   8 Input      1 Bit        Muxes := 1     
+Module T80_Reg 
+Detailed RTL Component Info : 
++---RAMs : 
+	               64 Bit         RAMs := 2     
+Module T80 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 7     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 3     
++---XORs : 
+	   8 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 10    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 26    
+	   2 Input      8 Bit        Muxes := 47    
+	   6 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 10    
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 110   
+	   4 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module T80s 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 11    
+Module ckong_program 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module gen_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module gen_ram__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module gen_ram__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
+Module ckong_tile_bit0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module ckong_tile_bit1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module ckong_big_sprite_tile_bit0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module ckong_big_sprite_tile_bit1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module ckong_samples 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module YM2149 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 21    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 3     
+	  16 Input      1 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 3     
+Module ckong_sound 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module dac 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ckong 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 2     
++---XORs : 
+	   2 Input      5 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 15    
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---RAMs : 
+	               1K Bit         RAMs := 1     
++---Muxes : 
+	   4 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 5     
+	   2 Input      9 Bit        Muxes := 1     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 20    
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 5     
+Module ps2_intf 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 2     
+Module keyboard 
+Detailed RTL Component Info : 
++---Registers : 
+	               21 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	  29 Input     21 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+Module multiboot_spartan6 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	  18 Input     16 Bit        Muxes := 1     
+	  19 Input      5 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 1     
+Module multiboot 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "MCycles" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IncDecZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IncDecZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "F" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'ckong_sound/ym2149/iob_inreg_reg[7:0]' into 'ckong_sound/ym2149/ioa_inreg_reg[7:0]' [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:643]
+WARNING: [Synth 8-6014] Unused sequential element Z80/RD_n_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/rtl_T80/T80s.vhd:145]
+WARNING: [Synth 8-6014] Unused sequential element ckong_sound/ym2149/iob_inreg_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ym_2149_linmix.vhd:643]
+INFO: [Synth 8-5546] ROM "video/hsync0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "video/vcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "video/vsync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "video/vsync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "video/p_7_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "video/hsync2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "video/vblank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "video/vblank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "video/hblank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "video/hblank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "video/vcnt_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "line_doubler/scanline" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "line_doubler/hsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "line_doubler/hsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "line_doubler/vsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "line_doubler/vsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ckong_sound/frequency_tick" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element program/data_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_program.vhd:1555]
+WARNING: [Synth 8-6014] Unused sequential element big_sprite_tile_bit0/data_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_big_sprite_tile_bit0.vhd:147]
+WARNING: [Synth 8-6014] Unused sequential element big_sprite_tile_bit1/data_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_big_sprite_tile_bit1.vhd:147]
+WARNING: [Synth 8-6014] Unused sequential element ckong_sound/sample_rom/data_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/roms/ckong_samples.vhd:531]
+WARNING: [Synth 8-6014] Unused sequential element tile_graph_rom_addr_reg was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:461]
+WARNING: [Synth 8-6014] Unused sequential element tile_graph_rom_addr_reg_rep was removed.  [F:/jammaZX1/-hw ckong/ckong/src/ckong.vhd:461]
+INFO: [Synth 8-5546] ROM "ps2_clk_in0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ps2/ps2_clk_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_11_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "release" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_7_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_6_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_in" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[18] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[17] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[16] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[15] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[14] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[13] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[12] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[11] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[10] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[9] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[8] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[7] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[6] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[5] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[4] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[3] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[2] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[1] driven by constant 0
+WARNING: [Synth 8-3917] design ckong_top has port sram_addr[0] driven by constant 1
+WARNING: [Synth 8-3917] design ckong_top has port sram_we_n driven by constant 1
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[5]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[4]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[3]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[1]
+WARNING: [Synth 8-3331] design ckong has unconnected port scanSW[10]
+WARNING: [Synth 8-3331] design ckong has unconnected port scanSW[7]
+WARNING: [Synth 8-3331] design ckong has unconnected port scanSW[6]
+WARNING: [Synth 8-3331] design ckong has unconnected port resetKey
+WARNING: [Synth 8-3331] design ckong has unconnected port scandblctrl[0]
+WARNING: [Synth 8-3331] design ckong_top has unconnected port sram_data[7]
+WARNING: [Synth 8-3331] design ckong_top has unconnected port sram_data[6]
+WARNING: [Synth 8-3331] design ckong_top has unconnected port sram_data[5]
+WARNING: [Synth 8-3331] design ckong_top has unconnected port sram_data[4]
+WARNING: [Synth 8-3331] design ckong_top has unconnected port sram_data[3]
+WARNING: [Synth 8-3331] design ckong_top has unconnected port sram_data[2]
+INFO: [Synth 8-3886] merging instance 'pm/Z80/u0/INT_s_reg' (FDCE) to 'pm/Z80/u0/BusReq_s_reg'
+INFO: [Synth 8-3886] merging instance 'pm/ckong_sound/ym2149/ioa_inreg_reg[1]' (FD) to 'pm/ckong_sound/ym2149/ioa_inreg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/ckong_sound/ym2149/ioa_inreg_reg[7]' (FD) to 'pm/ckong_sound/ym2149/ioa_inreg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/ckong_sound/ym2149/ioa_inreg_reg[0]' (FD) to 'pm/ckong_sound/ym2149/ioa_inreg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/ckong_sound/ym2149/ioa_inreg_reg[3]' (FD) to 'pm/ckong_sound/ym2149/ioa_inreg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/ckong_sound/ym2149/ioa_inreg_reg[6]' (FD) to 'pm/ckong_sound/ym2149/ioa_inreg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/ckong_sound/ym2149/ioa_inreg_reg[4]' (FD) to 'pm/ckong_sound/ym2149/ioa_inreg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/ckong_sound/ym2149/ioa_inreg_reg[5]' (FD) to 'pm/ckong_sound/ym2149/ioa_inreg_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/ckong_sound/ym2149/ioa_inreg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/Z80/u0 /BusReq_s_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_114/\pm/u_dac/sig_in_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_114/\pm/u_dac/sig_in_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_114/\pm/u_dac/sig_in_reg[3] )
+INFO: [Synth 8-3886] merging instance 'pm/big_sprite_palette/data_reg[1]' (FD) to 'pm/big_sprite_palette/data_reg[2]'
+WARNING: [Synth 8-3332] Sequential element (BusAck_reg) is unused and will be removed from module T80.
+WARNING: [Synth 8-3332] Sequential element (IStatus_reg[1]) is unused and will be removed from module T80.
+WARNING: [Synth 8-3332] Sequential element (IStatus_reg[0]) is unused and will be removed from module T80.
+WARNING: [Synth 8-3332] Sequential element (IntE_FF1_reg) is unused and will be removed from module T80.
+WARNING: [Synth 8-3332] Sequential element (IntCycle_reg) is unused and will be removed from module T80.
+WARNING: [Synth 8-3332] Sequential element (M1_n_reg) is unused and will be removed from module T80.
+WARNING: [Synth 8-3332] Sequential element (RFSH_n_reg) is unused and will be removed from module T80.
+WARNING: [Synth 8-3332] Sequential element (BusReq_s_reg) is unused and will be removed from module T80.
+WARNING: [Synth 8-3332] Sequential element (pm/debounce/button_reg[14]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/debounce/button_reg[5]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/attr_big_sprite_reg[3]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[1][7]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[1][6]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[1][5]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[1][4]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[3][7]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[3][6]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[3][5]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[3][4]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[5][7]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[5][6]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[5][5]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[5][4]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[6][7]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[6][6]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[6][5]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[8][7]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[8][6]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[8][5]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[9][7]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[9][6]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[9][5]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[10][7]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[10][6]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[10][5]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[13][7]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[13][6]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[13][5]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/reg_reg[13][4]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/ioa_inreg_reg[2]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/audio_final_reg[0]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (keyb/TABLE_reg) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (keyb/PAUSE_reg) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (keyb/scanSW_reg[19]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (keyb/scanSW_reg[10]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (keyb/scanSW_reg[7]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (keyb/scanSW_reg[5]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (joy1_reg[10]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (joy1_reg[7]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (joy1_reg[6]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (joy1_reg[5]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (joy2_reg[10]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (joy2_reg[7]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (joy2_reg[6]) is unused and will be removed from module ckong_top.
+WARNING: [Synth 8-3332] Sequential element (joy2_reg[5]) is unused and will be removed from module ckong_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:10:05 ; elapsed = 00:10:16 . Memory (MB): peak = 830.480 ; gain = 574.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------------+---------------------------------+---------------+----------------+
+|Module Name                | RTL Object                      | Depth x Width | Implemented As | 
++---------------------------+---------------------------------+---------------+----------------+
+|ckong_palette              | p_0_out                         | 64x8          | LUT            | 
+|ckong_big_sprite_palette   | p_0_out                         | 32x8          | LUT            | 
+|ckong_program              | data_reg                        | 32768x8       | Block RAM      | 
+|ckong_tile_bit0            | data_reg                        | 8192x8        | Block RAM      | 
+|ckong_tile_bit1            | data_reg                        | 8192x8        | Block RAM      | 
+|ckong_big_sprite_tile_bit0 | data_reg                        | 2048x8        | Block RAM      | 
+|ckong_big_sprite_tile_bit1 | data_reg                        | 2048x8        | Block RAM      | 
+|ckong_samples              | data_reg                        | 8192x8        | Block RAM      | 
+|YM2149                     | dac_amp                         | 32x8          | LUT            | 
+|ckong                      | p_0_out                         | 32x8          | LUT            | 
+|ckong                      | p_0_out                         | 64x8          | LUT            | 
+|ckong                      | program/data_reg                | 32768x8       | Block RAM      | 
+|ckong                      | ckong_sound/ym2149/dac_amp      | 32x8          | LUT            | 
+|ckong                      | big_sprite_tile_bit1/data_reg   | 2048x8        | Block RAM      | 
+|ckong                      | big_sprite_tile_bit0/data_reg   | 2048x8        | Block RAM      | 
+|ckong                      | tile_graph_rom_addr_reg_rep     | 8192x8        | Block RAM      | 
+|ckong                      | tile_graph_rom_addr_reg         | 8192x8        | Block RAM      | 
+|ckong                      | ckong_sound/sample_rom/data_reg | 8192x8        | Block RAM      | 
++---------------------------+---------------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++-------------------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name              | RTL Object     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|gen_ram:                 | ram_reg        | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|gen_ram__parameterized0: | ram_reg        | 2 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|gen_ram:                 | ram_reg        | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|gen_ram:                 | ram_reg        | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|gen_ram__parameterized1: | ram_reg        | 256 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ckong:                   | ram_sprite_reg | 256 x 6(READ_FIRST)    | W |   | 256 x 6(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-------------------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------+-----------+----------------------+------------------------------+
+|Module Name | RTL Object               | Inference | Size (Depth x Width) | Primitives                   | 
++------------+--------------------------+-----------+----------------------+------------------------------+
+|\pm/Z80/u0  | Regs/RegsH_reg           | Implied   | 8 x 8                | RAM32M x 4                   | 
+|\pm/Z80/u0  | Regs/RegsL_reg           | Implied   | 8 x 8                | RAM32M x 4                   | 
+|ckong_top   | pm/line_doubler/ram1_reg | Implied   | 512 x 8              | RAM64X1D x 16  RAM64M x 16   | 
+|ckong_top   | pm/line_doubler/ram2_reg | Implied   | 512 x 8              | RAM64X1D x 16  RAM64M x 16   | 
++------------+--------------------------+-----------+----------------------+------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance i_0/pm/wram1/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/pm/wram2/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/pm/tile_ram/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_3/pm/color_ram/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_4/pm/big_sprite_tile_ram/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_7/pm/ram_sprite_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_59/pm/program/data_reg_0_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_59/pm/program/data_reg_0_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_59/pm/program/data_reg_0_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_59/pm/program/data_reg_0_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_59/pm/program/data_reg_0_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_59/pm/program/data_reg_0_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_59/pm/program/data_reg_0_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_59/pm/program/data_reg_0_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_82/pm/big_sprite_tile_bit1/data_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_84/pm/big_sprite_tile_bit0/data_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_94/pm/tile_graph_rom_addr_reg_rep_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_94/pm/tile_graph_rom_addr_reg_rep_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_97/pm/tile_graph_rom_addr_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_97/pm/tile_graph_rom_addr_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_112/pm/ckong_sound/sample_rom/data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_112/pm/ckong_sound/sample_rom/data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:10:31 ; elapsed = 00:10:42 . Memory (MB): peak = 853.414 ; gain = 597.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:10:32 ; elapsed = 00:10:43 . Memory (MB): peak = 856.723 ; gain = 600.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++-------------------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name              | RTL Object     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|gen_ram:                 | ram_reg        | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|gen_ram__parameterized0: | ram_reg        | 2 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|gen_ram:                 | ram_reg        | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|gen_ram:                 | ram_reg        | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|gen_ram__parameterized1: | ram_reg        | 256 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|ckong:                   | ram_sprite_reg | 256 x 6(READ_FIRST)    | W |   | 256 x 6(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-------------------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping  Report
++------------+--------------------------+-----------+----------------------+------------------------------+
+|Module Name | RTL Object               | Inference | Size (Depth x Width) | Primitives                   | 
++------------+--------------------------+-----------+----------------------+------------------------------+
+|\pm/Z80/u0  | Regs/RegsH_reg           | Implied   | 8 x 8                | RAM32M x 4                   | 
+|\pm/Z80/u0  | Regs/RegsL_reg           | Implied   | 8 x 8                | RAM32M x 4                   | 
+|ckong_top   | pm/line_doubler/ram1_reg | Implied   | 512 x 8              | RAM64X1D x 16  RAM64M x 16   | 
+|ckong_top   | pm/line_doubler/ram2_reg | Implied   | 512 x 8              | RAM64X1D x 16  RAM64M x 16   | 
++------------+--------------------------+-----------+----------------------+------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (pm/ckong_sound/ym2149/cnt_div_reg[3]) is unused and will be removed from module ckong_top.
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[0]' (FDR) to 'pm/line_doubler/hcnt_o_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[1]' (FDR) to 'pm/line_doubler/hcnt_o_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[2]' (FDR) to 'pm/line_doubler/hcnt_o_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[3]' (FDR) to 'pm/line_doubler/hcnt_o_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[4]' (FDR) to 'pm/line_doubler/hcnt_o_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[5]' (FDR) to 'pm/line_doubler/hcnt_o_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[6]' (FDR) to 'pm/line_doubler/hcnt_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[8]' (FDR) to 'pm/line_doubler/hcnt_o_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[7]' (FDR) to 'pm/line_doubler/hcnt_o_reg[7]'
+INFO: [Synth 8-4480] The timing for the instance pm/wram1/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/wram2/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/tile_ram/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/color_ram/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/big_sprite_tile_ram/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/ram_sprite_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/program/data_reg_0_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/program/data_reg_0_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/program/data_reg_0_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/program/data_reg_0_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/program/data_reg_0_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/program/data_reg_0_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/program/data_reg_0_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/program/data_reg_0_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/big_sprite_tile_bit1/data_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/big_sprite_tile_bit0/data_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/tile_graph_rom_addr_reg_rep_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/tile_graph_rom_addr_reg_rep_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/tile_graph_rom_addr_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/tile_graph_rom_addr_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/ckong_sound/sample_rom/data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance pm/ckong_sound/sample_rom/data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:10:36 ; elapsed = 00:10:47 . Memory (MB): peak = 911.168 ; gain = 655.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:10:38 ; elapsed = 00:10:50 . Memory (MB): peak = 911.168 ; gain = 655.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:10:38 ; elapsed = 00:10:50 . Memory (MB): peak = 911.168 ; gain = 655.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:10:38 ; elapsed = 00:10:50 . Memory (MB): peak = 911.168 ; gain = 655.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:10:39 ; elapsed = 00:10:50 . Memory (MB): peak = 911.168 ; gain = 655.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:10:39 ; elapsed = 00:10:50 . Memory (MB): peak = 911.168 ; gain = 655.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:10:39 ; elapsed = 00:10:50 . Memory (MB): peak = 911.168 ; gain = 655.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        |          | 8      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__1     |          | 8      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     4|
+|2     |CARRY4        |    92|
+|3     |ICAP_SPARTAN6 |     1|
+|4     |LUT1          |    87|
+|5     |LUT2          |   270|
+|6     |LUT3          |   245|
+|7     |LUT4          |   233|
+|8     |LUT5          |   441|
+|9     |LUT6          |   928|
+|10    |MUXF7         |    41|
+|11    |MUXF8         |     8|
+|12    |PLL_BASE      |     1|
+|13    |RAM32M        |     8|
+|14    |RAM64M        |    32|
+|15    |RAM64X1D      |    32|
+|16    |RAMB18E1      |     4|
+|17    |RAMB18E1_1    |     1|
+|18    |RAMB18E1_2    |     1|
+|19    |RAMB18E1_3    |     1|
+|20    |RAMB18E1_4    |     1|
+|21    |RAMB36E1      |     1|
+|22    |RAMB36E1_1    |     1|
+|23    |RAMB36E1_10   |     1|
+|24    |RAMB36E1_11   |     1|
+|25    |RAMB36E1_12   |     1|
+|26    |RAMB36E1_13   |     1|
+|27    |RAMB36E1_2    |     1|
+|28    |RAMB36E1_3    |     1|
+|29    |RAMB36E1_4    |     1|
+|30    |RAMB36E1_5    |     1|
+|31    |RAMB36E1_6    |     1|
+|32    |RAMB36E1_7    |     1|
+|33    |RAMB36E1_8    |     1|
+|34    |RAMB36E1_9    |     1|
+|35    |SRL16E        |     2|
+|36    |FDCE          |   153|
+|37    |FDPE          |    60|
+|38    |FDRE          |   722|
+|39    |FDSE          |     5|
+|40    |LDC           |     2|
+|41    |IBUF          |     7|
+|42    |OBUF          |    36|
++------+--------------+------+
+
+Report Instance Areas: 
++------+-------------------------+---------------------------+------+
+|      |Instance                 |Module                     |Cells |
++------+-------------------------+---------------------------+------+
+|1     |top                      |                           |  3432|
+|2     |  el_multiboot           |multiboot                  |    52|
+|3     |    multiboot            |multiboot_spartan6         |    45|
+|4     |  keyb                   |keyboard                   |   131|
+|5     |    ps2                  |ps2_intf                   |    95|
+|6     |  pm                     |ckong                      |  3142|
+|7     |    Z80                  |T80s                       |  1671|
+|8     |      u0                 |T80                        |  1652|
+|9     |        Regs             |T80_Reg                    |   487|
+|10    |    big_sprite_palette   |ckong_big_sprite_palette   |    14|
+|11    |    big_sprite_tile_bit0 |ckong_big_sprite_tile_bit0 |     9|
+|12    |    big_sprite_tile_bit1 |ckong_big_sprite_tile_bit1 |     9|
+|13    |    big_sprite_tile_ram  |gen_ram__parameterized1    |     1|
+|14    |    ckong_sound          |ckong_sound                |   636|
+|15    |      sample_rom         |ckong_samples              |     5|
+|16    |      ym2149             |YM2149                     |   576|
+|17    |    color_ram            |gen_ram                    |     1|
+|18    |    debounce             |DEBOUNCE                   |    70|
+|19    |    line_doubler         |line_doubler               |   230|
+|20    |    palette              |ckong_palette              |    16|
+|21    |    program              |ckong_program              |     8|
+|22    |    tile_bit0            |ckong_tile_bit0            |    16|
+|23    |    tile_bit1            |ckong_tile_bit1            |    16|
+|24    |    tile_ram             |gen_ram_0                  |     1|
+|25    |    u_dac                |dac                        |    25|
+|26    |    video                |video_gen                  |   185|
+|27    |    wram1                |gen_ram_1                  |     1|
+|28    |    wram2                |gen_ram__parameterized0    |     1|
++------+-------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:10:39 ; elapsed = 00:10:50 . Memory (MB): peak = 911.168 ; gain = 655.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 110 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:09:57 ; elapsed = 00:10:32 . Memory (MB): peak = 911.168 ; gain = 353.238
+Synthesis Optimization Complete : Time (s): cpu = 00:10:39 ; elapsed = 00:10:51 . Memory (MB): peak = 911.168 ; gain = 655.355
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 246 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 25 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 76 instances were transformed.
+  ICAP_SPARTAN6 => ICAPE2: 1 instances
+  LDC => LDCE: 2 instances
+  PLL_BASE => MMCME2_ADV: 1 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 8 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+306 Infos, 209 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:10:44 ; elapsed = 00:10:59 . Memory (MB): peak = 911.168 ; gain = 667.824
+INFO: [Common 17-1381] The checkpoint 'F:/jammaZX1/-hw ckong/ckong/A35/A35.runs/synth_1/ckong_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ckong_top_utilization_synth.rpt -pb ckong_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 911.168 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 25 10:42:55 2018...

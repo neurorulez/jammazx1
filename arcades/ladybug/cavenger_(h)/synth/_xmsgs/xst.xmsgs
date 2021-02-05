@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="946" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\zxuno_ladybug.vhd" Line 165: Actual for formal port <arg fmt="%s" index="1">hsync</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\zxuno_ladybug.vhd" Line 166: Actual for formal port <arg fmt="%s" index="1">vsync</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\zxuno_ladybug.vhd" Line 238: Actual for formal port <arg fmt="%s" index="1">scanlines</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\build\rom_sprite_l.vhd" Line 112: &lt;<arg fmt="%s" index="1">ramb16_s4</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\build\rom_sprite_u.vhd" Line 112: &lt;<arg fmt="%s" index="1">ramb16_s4</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\build\rom_char_l.vhd" Line 112: &lt;<arg fmt="%s" index="1">ramb16_s4</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\build\rom_char_u.vhd" Line 112: &lt;<arg fmt="%s" index="1">ramb16_s4</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\build\rom_cpu1.vhd" Line 112: &lt;<arg fmt="%s" index="1">ramb16_s2</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\build\rom_cpu2.vhd" Line 112: &lt;<arg fmt="%s" index="1">ramb16_s2</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\build\rom_cpu3.vhd" Line 112: &lt;<arg fmt="%s" index="1">ramb16_s2</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\zxuno_ladybug.vhd" Line 130: Net &lt;<arg fmt="%s" index="1">vid_rgb[15]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\multiboot.v" Line 6: Using initial value of <arg fmt="%s" index="1">spi_addr</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\multiboot.v" Line 38: Port <arg fmt="%s" index="1">BUSY</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="new" >"A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\modulo_top.v" Line 112: Input port <arg fmt="%s" index="1">I_RESET</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">I_RESET</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">pm</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\modulo_top.v</arg>&quot; line <arg fmt="%s" index="2">112</arg>: Output port &lt;<arg fmt="%s" index="3">O_AUDIO_R</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pm</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\modulo_top.v</arg>&quot; line <arg fmt="%s" index="2">112</arg>: Output port &lt;<arg fmt="%s" index="3">JOYSTICK_A_GND</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pm</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\modulo_top.v</arg>&quot; line <arg fmt="%s" index="2">112</arg>: Output port &lt;<arg fmt="%s" index="3">JOYSTICK_B_GND</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pm</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">scanSW&lt;7:7&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">scanSW&lt;10:10&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">I_RESET</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\zxuno_ladybug.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">blank</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">composite_sync</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\zxuno_ladybug.vhd</arg>&quot; line <arg fmt="%s" index="2">208</arg>: Output port &lt;<arg fmt="%s" index="3">O_CMPBLK_N</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">dblscan_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\zxuno_ladybug.vhd</arg>&quot; line <arg fmt="%s" index="2">267</arg>: Output port &lt;<arg fmt="%s" index="3">clk_en_10mhz_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">machine_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">vid_rgb&lt;15:6&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">cavenger_zxuno</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0000000000</arg>).
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\ladybug_cpu_unit.vhd</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">IORQ_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">T80a_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\ladybug_cpu_unit.vhd</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">HALT_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">T80a_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\ladybug_cpu_unit.vhd</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">BUSAK_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">T80a_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\ladybug_cpu_unit.vhd</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">ram_cpu_cs_n_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">addr_dec_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\T80a\T80a.vhd</arg>&quot; line <arg fmt="%s" index="2">157</arg>: Output port &lt;<arg fmt="%s" index="3">IntE</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\T80a\T80a.vhd</arg>&quot; line <arg fmt="%s" index="2">157</arg>: Output port &lt;<arg fmt="%s" index="3">Stop</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">F&lt;1:1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">F&lt;5:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\ladybug_sprite_ctrl.vhd</arg>&quot; line <arg fmt="%s" index="2">207</arg>: Output port &lt;<arg fmt="%s" index="3">da_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">f7_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\ladybug_sprite_ctrl.vhd</arg>&quot; line <arg fmt="%s" index="2">207</arg>: Output port &lt;<arg fmt="%s" index="3">dc_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">f7_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\ladybug_sprite_ctrl.vhd</arg>&quot; line <arg fmt="%s" index="2">207</arg>: Output port &lt;<arg fmt="%s" index="3">dd_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">f7_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\sound\sn76489\sn76489_top.vhd</arg>&quot; line <arg fmt="%s" index="2">140</arg>: Output port &lt;<arg fmt="%s" index="3">ff_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tone1_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">A:\_Downloads\jammazx1\arcades\hw ladybug\cavenger (h)\src\sound\sn76489\sn76489_top.vhd</arg>&quot; line <arg fmt="%s" index="2">155</arg>: Output port &lt;<arg fmt="%s" index="3">ff_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tone2_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">d_i&lt;4:7&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">d_i&lt;1:1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">d_i&lt;0:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">O_VIDEO_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dblscan_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">O_VIDEO_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dblscan_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">O_VIDEO_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dblscan_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">O_VIDEO_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dblscan_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">O_VIDEO_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dblscan_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">O_VIDEO_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dblscan_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">O_VIDEO_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dblscan_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">O_VIDEO_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dblscan_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">O_VIDEO_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dblscan_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">O_VIDEO_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dblscan_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cs_n_o_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">addr_dec_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DATA_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">prom_C4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DATA_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">prom_C4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DATA_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rgb_prom_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DATA_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rgb_prom_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rgb_n_q_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rgb_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rgb_n_q_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rgb_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">scanSW_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">keyb</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">PAUSE</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">keyb</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_RegsH1</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_RegsL1</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_RegsH</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_RegsL</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_ADDR[4]_GND_78_o_wide_mux_0_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_ADDR[4]_GND_83_o_wide_mux_0_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_ADDR[4]_GND_79_o_wide_mux_0_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_ADDR[7]_PWR_37_o_wide_mux_0_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rgb_n_q_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ladybug_rgb</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rgb_n_q_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ladybug_rgb</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prom_10_3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">DATA_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prom_10_3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prom_10_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">DATA_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">prom_10_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_spritel/rom1.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_spritel/rom0.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_spriteu/rom1.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_spriteu/rom0.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_charl/rom1.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_charl/rom0.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_charu/rom1.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_charu/rom0.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_cpu1/rom3.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_cpu1/rom2.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_cpu1/rom1.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_cpu1/rom0.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_cpu2/rom3.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_cpu2/rom2.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_cpu2/rom1.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_cpu2/rom0.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_cpu3/rom3.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_cpu3/rom2.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_cpu3/rom1.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">inst_rom_cpu3/rom0.inst</arg> in unit <arg fmt="%s" index="2">cavenger_zxuno</arg> of type <arg fmt="%s" index="3">RAMB16_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">u_ram</arg> in unit <arg fmt="%s" index="2">VGA_SCANCONV</arg> of type <arg fmt="%s" index="3">RAMB16_S18_S18</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAMB16_S9_1</arg> in unit <arg fmt="%s" index="2">ladybug_cpu_ram</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAMB16_S9_2</arg> in unit <arg fmt="%s" index="2">ladybug_cpu_ram</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">char_ram_b/RAMB16_S9_inst</arg> in unit <arg fmt="%s" index="2">ladybug_char</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">col_ram_b/RAMB16_S4_inst</arg> in unit <arg fmt="%s" index="2">ladybug_char</arg> of type <arg fmt="%s" index="3">RAMB16_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">sprite_ram_b/RAMB16_S9_inst</arg> in unit <arg fmt="%s" index="2">ladybug_sprite</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">vram_d6_b/RAMB16_S4_inst</arg> in unit <arg fmt="%s" index="2">ladybug_sprite</arg> of type <arg fmt="%s" index="3">RAMB16_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">vram_c6_b/RAMB16_S4_inst</arg> in unit <arg fmt="%s" index="2">ladybug_sprite</arg> of type <arg fmt="%s" index="3">RAMB16_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">vram_b6_b/RAMB16_S4_inst</arg> in unit <arg fmt="%s" index="2">ladybug_sprite</arg> of type <arg fmt="%s" index="3">RAMB16_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">vram_a6_b/RAMB16_S4_inst</arg> in unit <arg fmt="%s" index="2">ladybug_sprite</arg> of type <arg fmt="%s" index="3">RAMB16_S4</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_en_10mhz_n_o</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ladybug_clk</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clk_cnt_5mhz_q_0&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan_b/O_VIDEO_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan_b/O_VIDEO_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan_b/O_VIDEO_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan_b/O_VIDEO_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan_b/O_VIDEO_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan_b/O_VIDEO_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan_b/O_VIDEO_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan_b/O_VIDEO_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan_b/O_VIDEO_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan_b/O_VIDEO_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan_b/O_CMPBLK_N</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan_b/out_cmpblk1_n</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan_b/out_cmpblk_n</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/machine_b/cpu_b/T80a_b/IORQ_n_i</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/machine_b/cpu_b/addr_dec_b/cs_n_o_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/machine_b/video_b/char_b/h_ctrl_b/flops_q_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/machine_b/video_b/sprite_b/sprite_ctrl_b/e7_b/flops_q_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/machine_b/video_b/sprite_b/sprite_ctrl_b/j5_b/cnt_q_1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/machine_b/video_b/sprite_b/sprite_ctrl_b/f7_b/cnt_q_1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/machine_b/video_b/sprite_b/sprite_ctrl_b/f7_b/cnt_q_1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/composite_sync/hblank</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/composite_sync/vblank</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/TABLE</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/PAUSE</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/scanSW_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/scanSW_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2398" delta="new" >RAMs &lt;<arg fmt="%s" index="1">pm/inst_rom_spriteu/rom0.inst</arg>&gt;, &lt;<arg fmt="%s" index="2">pm/inst_rom_spritel/rom0.inst</arg>&gt; are equivalent
+</msg>
+
+<msg type="warning" file="Xst" num="2398" delta="new" >RAMs &lt;<arg fmt="%s" index="1">pm/inst_rom_spriteu/rom1.inst</arg>&gt;, &lt;<arg fmt="%s" index="2">pm/inst_rom_spritel/rom1.inst</arg>&gt; are equivalent
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">keyb/VFREQ</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;keyb/scanSW_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">keyb/VIDEO</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;keyb/scanSW_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pm/machine_b/sound_b/snd_c1_b/clock_div_b/cnt_q_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pm/machine_b/sound_b/snd_b1_b/clock_div_b/cnt_q_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pm/machine_b/sound_b/snd_c1_b/clock_div_b/cnt_q_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pm/machine_b/sound_b/snd_b1_b/clock_div_b/cnt_q_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pm/machine_b/sound_b/snd_c1_b/clock_div_b/cnt_q_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pm/machine_b/sound_b/snd_b1_b/clock_div_b/cnt_q_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pm/machine_b/sound_b/snd_c1_b/clock_div_b/cnt_q_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pm/machine_b/sound_b/snd_b1_b/clock_div_b/cnt_q_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="3203" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pm/dac_l_b/SigmaLatch_q_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cavenger_top</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pm/dac_l_b/SigmaLatch_q_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

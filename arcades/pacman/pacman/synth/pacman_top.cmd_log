@@ -1,0 +1,7 @@
+xst -intstyle ise -filter "E:/jammaZX1/arcades/pacman/pacman/iseconfig/filter.filter" -ifn "E:/jammaZX1/arcades/pacman/pacman/synth/pacman_top.xst" -ofn "E:/jammaZX1/arcades/pacman/pacman/synth/pacman_top.syr" 
+xst -intstyle ise -filter "E:/jammaZX1/arcades/pacman/pacman/iseconfig/filter.filter" -ifn "E:/jammaZX1/arcades/pacman/pacman/synth/pacman_top.xst" -ofn "E:/jammaZX1/arcades/pacman/pacman/synth/pacman_top.syr" 
+ngdbuild -filter "E:/jammaZX1/arcades/pacman/pacman/iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc E:/jammaZX1/arcades/pacman/pacman/pines_zxuno_lx25.ucf -p xc6slx25-ftg256-2 pacman_top.ngc pacman_top.ngd  
+map -filter "E:/jammaZX1/arcades/pacman/pacman/iseconfig/filter.filter" -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -detail -ir off -pr off -lc off -power off -o pacman_top_map.ncd pacman_top.ngd pacman_top.pcf 
+par -filter "E:/jammaZX1/arcades/pacman/pacman/iseconfig/filter.filter" -w -intstyle ise -ol high -mt 4 pacman_top_map.ncd pacman_top.ncd pacman_top.pcf 
+trce -filter E:/jammaZX1/arcades/pacman/pacman/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml pacman_top.twx pacman_top.ncd -o pacman_top.twr pacman_top.pcf 
+bitgen -filter "E:/jammaZX1/arcades/pacman/pacman/iseconfig/filter.filter" -intstyle ise -f pacman_top.ut pacman_top.ncd 

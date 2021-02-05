@@ -1,0 +1,1495 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Jun 22 14:30:32 2019
+# Process ID: 12292
+# Current directory: F:/repos/a35/NUEVO/pleiads/a35/a35.runs/synth_1
+# Command line: vivado.exe -log pleiads_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pleiads_top.tcl
+# Log file: F:/repos/a35/NUEVO/pleiads/a35/a35.runs/synth_1/pleiads_top.vds
+# Journal file: F:/repos/a35/NUEVO/pleiads/a35/a35.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pleiads_top.tcl -notrace
+Command: synth_design -top pleiads_top -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15300 
+WARNING: [Synth 8-1652] attribute target identifier fdb not found in this scope [F:/repos/a35/NUEVO/pleiads/src/synchro.v:87]
+WARNING: [Synth 8-1652] attribute target identifier fda not found in this scope [F:/repos/a35/NUEVO/pleiads/src/synchro.v:82]
+WARNING: [Synth 8-1652] attribute target identifier fdb not found in this scope [F:/repos/a35/NUEVO/pleiads/src/synchro.v:83]
+WARNING: [Synth 8-1652] attribute target identifier fda not found in this scope [F:/repos/a35/NUEVO/pleiads/src/synchro.v:84]
+WARNING: [Synth 8-1652] attribute target identifier fdb not found in this scope [F:/repos/a35/NUEVO/pleiads/src/synchro.v:85]
+WARNING: [Synth 8-1652] attribute target identifier fda not found in this scope [F:/repos/a35/NUEVO/pleiads/src/synchro.v:86]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 370.082 ; gain = 111.324
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port dac_i is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/pleiads/src/phoenix_zxuno.vhd:106]
+WARNING: [Synth 8-1565] actual for formal port btn_coin is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/pleiads/src/phoenix_zxuno.vhd:124]
+WARNING: [Synth 8-1565] actual for formal port btn_player_start is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/pleiads/src/phoenix_zxuno.vhd:125]
+WARNING: [Synth 8-1565] actual for formal port btn_player_start is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/pleiads/src/phoenix_zxuno.vhd:126]
+WARNING: [Synth 8-1565] actual for formal port btn_left is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/pleiads/src/phoenix_zxuno.vhd:127]
+WARNING: [Synth 8-1565] actual for formal port btn_right is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/pleiads/src/phoenix_zxuno.vhd:128]
+WARNING: [Synth 8-1565] actual for formal port btn_barrier is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/pleiads/src/phoenix_zxuno.vhd:129]
+WARNING: [Synth 8-1565] actual for formal port btn_fire is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/pleiads/src/phoenix_zxuno.vhd:130]
+INFO: [Synth 8-6157] synthesizing module 'pleiads_top' [F:/repos/a35/NUEVO/pleiads/src/modulo_top_a35.v:9]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'PLL_BASE' [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41499]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 15 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN_PERIOD bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 2 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 34 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 17 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLK_FEEDBACK bound to: CLKFBOUT - type: string 
+	Parameter COMPENSATION bound to: INTERNAL - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER bound to: 0.100000 - type: float 
+	Parameter RESET_ON_LOSS_OF_LOCK bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLL_BASE' (2#1) [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41499]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/repos/a35/NUEVO/pleiads/src/modulo_top_a35.v:145]
+INFO: [Synth 8-638] synthesizing module 'phoenix_zxuno' [F:/repos/a35/NUEVO/pleiads/src/phoenix_zxuno.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac' [F:/repos/a35/NUEVO/pleiads/src/dac.vhd:33]
+	Parameter C_bits bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dac' (3#1) [F:/repos/a35/NUEVO/pleiads/src/dac.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'phoenix' [F:/repos/a35/NUEVO/pleiads/src/phoenix.vhd:49]
+	Parameter C_test_picture bound to: 0 - type: bool 
+	Parameter C_tile_rom bound to: 1 - type: bool 
+	Parameter C_autofire bound to: 1 - type: bool 
+	Parameter C_prog_rom_addr_bits bound to: 14 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'phoenix_video' [F:/repos/a35/NUEVO/pleiads/src/phoenix_video.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'phoenix_video' (4#1) [F:/repos/a35/NUEVO/pleiads/src/phoenix_video.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'T8080se' [F:/repos/a35/NUEVO/pleiads/src/cpu/T8080se.vhd:88]
+	Parameter Mode bound to: 2 - type: integer 
+	Parameter T2Write bound to: 0 - type: integer 
+	Parameter Mode bound to: 2 - type: integer 
+	Parameter IOWait bound to: 0 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'T80' declared at 'F:/repos/a35/NUEVO/pleiads/src/cpu/T80.vhd:75' bound to instance 'u0' of component 'T80' [F:/repos/a35/NUEVO/pleiads/src/cpu/T8080se.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'T80' [F:/repos/a35/NUEVO/pleiads/src/cpu/T80.vhd:115]
+	Parameter Mode bound to: 2 - type: integer 
+	Parameter IOWait bound to: 0 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+	Parameter Mode bound to: 2 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'T80_MCode' declared at 'F:/repos/a35/NUEVO/pleiads/src/cpu/T80_MCode.vhd:68' bound to instance 'mcode' of component 'T80_MCode' [F:/repos/a35/NUEVO/pleiads/src/cpu/T80.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'T80_MCode' [F:/repos/a35/NUEVO/pleiads/src/cpu/T80_MCode.vhd:137]
+	Parameter Mode bound to: 2 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'T80_MCode' (5#1) [F:/repos/a35/NUEVO/pleiads/src/cpu/T80_MCode.vhd:137]
+	Parameter Mode bound to: 2 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'T80_ALU' declared at 'F:/repos/a35/NUEVO/pleiads/src/cpu/T80_ALU.vhd:62' bound to instance 'alu' of component 'T80_ALU' [F:/repos/a35/NUEVO/pleiads/src/cpu/T80.vhd:309]
+INFO: [Synth 8-638] synthesizing module 'T80_ALU' [F:/repos/a35/NUEVO/pleiads/src/cpu/T80_ALU.vhd:88]
+	Parameter Mode bound to: 2 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'T80_ALU' (6#1) [F:/repos/a35/NUEVO/pleiads/src/cpu/T80_ALU.vhd:88]
+INFO: [Synth 8-3491] module 'T80_Reg' declared at 'F:/repos/a35/NUEVO/pleiads/src/cpu/T80_Reg.vhd:56' bound to instance 'Regs' of component 'T80_Reg' [F:/repos/a35/NUEVO/pleiads/src/cpu/T80.vhd:819]
+INFO: [Synth 8-638] synthesizing module 'T80_Reg' [F:/repos/a35/NUEVO/pleiads/src/cpu/T80_Reg.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'T80_Reg' (7#1) [F:/repos/a35/NUEVO/pleiads/src/cpu/T80_Reg.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'T80' (8#1) [F:/repos/a35/NUEVO/pleiads/src/cpu/T80.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'T8080se' (9#1) [F:/repos/a35/NUEVO/pleiads/src/cpu/T8080se.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'prom_ic39' [F:/repos/a35/NUEVO/pleiads/src/ROM/prom_ic39.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'prom_ic39' (10#1) [F:/repos/a35/NUEVO/pleiads/src/ROM/prom_ic39.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'prom_ic40' [F:/repos/a35/NUEVO/pleiads/src/ROM/prom_ic40.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'prom_ic40' (11#1) [F:/repos/a35/NUEVO/pleiads/src/ROM/prom_ic40.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'prom_ic23' [F:/repos/a35/NUEVO/pleiads/src/ROM/prom_ic23.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'prom_ic23' (12#1) [F:/repos/a35/NUEVO/pleiads/src/ROM/prom_ic23.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'prom_ic24' [F:/repos/a35/NUEVO/pleiads/src/ROM/prom_ic24.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'prom_ic24' (13#1) [F:/repos/a35/NUEVO/pleiads/src/ROM/prom_ic24.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'prom_palette_ic40' [F:/repos/a35/NUEVO/pleiads/src/ROM/prom_palette_ic40.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'prom_palette_ic40' (14#1) [F:/repos/a35/NUEVO/pleiads/src/ROM/prom_palette_ic40.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'prom_palette_ic41' [F:/repos/a35/NUEVO/pleiads/src/ROM/prom_palette_ic41.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'prom_palette_ic41' (15#1) [F:/repos/a35/NUEVO/pleiads/src/ROM/prom_palette_ic41.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'pleiads_prog' [F:/repos/a35/NUEVO/pleiads/src/ROM/pleiads_prog.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'pleiads_prog' (16#1) [F:/repos/a35/NUEVO/pleiads/src/ROM/pleiads_prog.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'gen_ram' [F:/repos/a35/NUEVO/pleiads/src/gen_ram.vhd:45]
+	Parameter dWidth bound to: 8 - type: integer 
+	Parameter aWidth bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_ram' (17#1) [F:/repos/a35/NUEVO/pleiads/src/gen_ram.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'phoenix_effect1' [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect1.vhd:61]
+	Parameter Cmd_Fs bound to: 11.000000 - type: float 
+	Parameter Cmd_V bound to: 12.000000 - type: float 
+	Parameter Cmd_Vd bound to: 0.460000 - type: float 
+	Parameter Cmd_Vce bound to: 0.200000 - type: float 
+	Parameter Cmd_R1 bound to: 100.000000 - type: float 
+	Parameter Cmd_R2 bound to: 33.000000 - type: float 
+	Parameter Cmd_R3 bound to: 0.470000 - type: float 
+	Parameter Cmd_C bound to: 6.800000 - type: float 
+	Parameter Cmd_Div2n bound to: 8 - type: integer 
+	Parameter Cmd_bits bound to: 16 - type: integer 
+	Parameter Osc_Fs bound to: 11.000000 - type: float 
+	Parameter Osc_Vb bound to: 5.000000 - type: float 
+	Parameter Osc_Vce bound to: 0.200000 - type: float 
+	Parameter Osc_R1 bound to: 47.000000 - type: float 
+	Parameter Osc_R2 bound to: 47.000000 - type: float 
+	Parameter Osc_C bound to: 0.001000 - type: float 
+	Parameter Osc_Div2n bound to: 7 - type: integer 
+	Parameter Osc_bits bound to: 6 - type: integer 
+	Parameter Filt_Fs bound to: 11.000000 - type: float 
+	Parameter Filt_V1 bound to: 5.000000 - type: float 
+	Parameter Filt_V2 bound to: 0.000000 - type: float 
+	Parameter Filt_R1 bound to: 100.000000 - type: float 
+	Parameter Filt_R2 bound to: 10.000000 - type: float 
+	Parameter Filt_C bound to: 0.047000 - type: float 
+	Parameter Filt_Div2n bound to: 7 - type: integer 
+	Parameter Filt_bits bound to: 8 - type: integer 
+	Parameter Vmax bound to: 5.000000 - type: float 
+	Parameter Vmax_bits bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'phoenix_effect1' (18#1) [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect1.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'phoenix_effect2' [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect2.vhd:82]
+	Parameter Osc1_Fs bound to: 11.000000 - type: float 
+	Parameter Osc1_Vb bound to: 5.000000 - type: float 
+	Parameter Osc1_Vce bound to: 0.200000 - type: float 
+	Parameter Osc1_R1 bound to: 47.000000 - type: float 
+	Parameter Osc1_R2 bound to: 100.000000 - type: float 
+	Parameter Osc1_C1 bound to: 0.010000 - type: float 
+	Parameter Osc1_C2 bound to: 0.470000 - type: float 
+	Parameter Osc1_C3 bound to: 1.000000 - type: float 
+	Parameter Osc1_Div2n bound to: 8 - type: integer 
+	Parameter Osc1_bits bound to: 16 - type: integer 
+	Parameter Osc2_Fs bound to: 11.000000 - type: float 
+	Parameter Osc2_Vb bound to: 5.000000 - type: float 
+	Parameter Osc2_Vce bound to: 0.200000 - type: float 
+	Parameter Osc2_R1 bound to: 510.000000 - type: float 
+	Parameter Osc2_R2 bound to: 510.000000 - type: float 
+	Parameter Osc2_C bound to: 1.000000 - type: float 
+	Parameter Osc2_Div2n bound to: 8 - type: integer 
+	Parameter Osc2_bits bound to: 17 - type: integer 
+	Parameter Filt2_Fs bound to: 11.000000 - type: float 
+	Parameter Filt2_V bound to: 5.000000 - type: float 
+	Parameter Filt2_R1 bound to: 10.000000 - type: float 
+	Parameter Filt2_R2 bound to: 5.100000 - type: float 
+	Parameter Filt2_R3 bound to: 5.100000 - type: float 
+	Parameter Filt2_R4 bound to: 5.000000 - type: float 
+	Parameter Filt2_R5 bound to: 10.000000 - type: float 
+	Parameter Filt2_C bound to: 100.000000 - type: float 
+	Parameter Filt2_Div2n bound to: 8 - type: integer 
+	Parameter Filt2_bits bound to: 16 - type: integer 
+	Parameter Osc3_Fs bound to: 11.000000 - type: float 
+	Parameter Osc3_Vb bound to: 5.000000 - type: float 
+	Parameter Osc3_Vce bound to: 0.200000 - type: float 
+	Parameter Osc3_R1 bound to: 20.000000 - type: float 
+	Parameter Osc3_R2 bound to: 20.000000 - type: float 
+	Parameter Osc3_C bound to: 0.001000 - type: float 
+	Parameter Osc3_Div2n bound to: 6 - type: integer 
+	Parameter Osc3_bits bound to: 6 - type: integer 
+	Parameter C_flip1_0 bound to: 22020 - type: integer 
+	Parameter C_flip1_1 bound to: 33063 - type: integer 
+	Parameter C_flip1_scale bound to: 84 - type: integer 
+	Parameter Vmax bound to: 5.000000 - type: float 
+	Parameter Vmax_bits bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'phoenix_effect2' (19#1) [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect2.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'phoenix_effect3' [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect3.vhd:67]
+	Parameter Cmd1_Fs bound to: 11.000000 - type: float 
+	Parameter Cmd1_V bound to: 5.000000 - type: float 
+	Parameter Cmd1_Vd bound to: 0.460000 - type: float 
+	Parameter Cmd1_Vce bound to: 0.200000 - type: float 
+	Parameter Cmd1_R1 bound to: 1.000000 - type: float 
+	Parameter Cmd1_R2 bound to: 0.330000 - type: float 
+	Parameter Cmd1_R3 bound to: 20.000000 - type: float 
+	Parameter Cmd1_C bound to: 6.800000 - type: float 
+	Parameter Cmd1_Div2n bound to: 8 - type: integer 
+	Parameter Cmd2_Fs bound to: 11.000000 - type: float 
+	Parameter Cmd2_V bound to: 5.000000 - type: float 
+	Parameter Cmd2_Vd bound to: 0.460000 - type: float 
+	Parameter Cmd2_Vce bound to: 0.200000 - type: float 
+	Parameter Cmd2_R1 bound to: 1.000000 - type: float 
+	Parameter Cmd2_R2 bound to: 0.330000 - type: float 
+	Parameter Cmd2_R3 bound to: 47.000000 - type: float 
+	Parameter Cmd2_C bound to: 6.800000 - type: float 
+	Parameter Cmd2_Div2n bound to: 8 - type: integer 
+	Parameter Osc_Fs bound to: 11.000000 - type: float 
+	Parameter Osc_Vb bound to: 5.000000 - type: float 
+	Parameter Osc_Vce bound to: 0.200000 - type: float 
+	Parameter Oscmin_R1a bound to: 47.000000 - type: float 
+	Parameter Oscmin_R2 bound to: 0.330000 - type: float 
+	Parameter Oscmin_C bound to: 0.050000 - type: float 
+	Parameter Oscmin_bits bound to: 16 - type: integer 
+	Parameter Oscmax_R1a bound to: 2.553000 - type: float 
+	Parameter Oscmax_R2 bound to: 1.000000 - type: float 
+	Parameter Oscmax_C bound to: 0.050000 - type: float 
+	Parameter Osc_Div2n bound to: 7 - type: integer 
+	Parameter C_commande2_chop_k bound to: 62500 - type: integer 
+	Parameter Vmax bound to: 5.000000 - type: float 
+	Parameter Vmax_bits bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'phoenix_effect3' (20#1) [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect3.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'phoenix_music' [F:/repos/a35/NUEVO/pleiads/src/phoenix_music.vhd:25]
+	Parameter C_clk_freq bound to: 11.000000 - type: float 
+INFO: [Synth 8-256] done synthesizing module 'phoenix_music' (21#1) [F:/repos/a35/NUEVO/pleiads/src/phoenix_music.vhd:25]
+INFO: [Synth 8-4471] merging register 'hclk_n_reg' into 'hclk_reg' [F:/repos/a35/NUEVO/pleiads/src/phoenix.vhd:314]
+WARNING: [Synth 8-6014] Unused sequential element hclk_n_reg was removed.  [F:/repos/a35/NUEVO/pleiads/src/phoenix.vhd:314]
+INFO: [Synth 8-256] done synthesizing module 'phoenix' (22#1) [F:/repos/a35/NUEVO/pleiads/src/phoenix.vhd:49]
+INFO: [Synth 8-6157] synthesizing module 'scandoubler' [F:/repos/a35/NUEVO/pleiads/src/scandoubler.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'scandoubler' (23#1) [F:/repos/a35/NUEVO/pleiads/src/scandoubler.v:23]
+INFO: [Synth 8-638] synthesizing module 'DEBOUNCE' [F:/repos/a35/NUEVO/pleiads/src/debounce.vhd:60]
+	Parameter G_WIDTH bound to: 16 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element tick_reg was removed.  [F:/repos/a35/NUEVO/pleiads/src/debounce.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'DEBOUNCE' (24#1) [F:/repos/a35/NUEVO/pleiads/src/debounce.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'phoenix_zxuno' (25#1) [F:/repos/a35/NUEVO/pleiads/src/phoenix_zxuno.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [F:/repos/a35/NUEVO/pleiads/src/keyb/keyboard.vhd:20]
+	Parameter filter_length bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ps2_intf' declared at 'F:/repos/a35/NUEVO/pleiads/src/keyb/ps2_intf.vhd:44' bound to instance 'ps2' of component 'ps2_intf' [F:/repos/a35/NUEVO/pleiads/src/keyb/keyboard.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ps2_intf' [F:/repos/a35/NUEVO/pleiads/src/keyb/ps2_intf.vhd:62]
+	Parameter filter_length bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ps2_intf' (26#1) [F:/repos/a35/NUEVO/pleiads/src/keyb/ps2_intf.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (27#1) [F:/repos/a35/NUEVO/pleiads/src/keyb/keyboard.vhd:20]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/repos/a35/NUEVO/pleiads/src/modulo_top_a35.v:213]
+INFO: [Synth 8-6157] synthesizing module 'multiboot' [F:/repos/a35/NUEVO/pleiads/src/multiboot_1x.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/repos/a35/NUEVO/pleiads/src/multiboot_1x.v:19]
+INFO: [Synth 8-6157] synthesizing module 'multiboot_spartan6' [F:/repos/a35/NUEVO/pleiads/src/multiboot_1x.v:27]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SYNC_H bound to: 1 - type: integer 
+	Parameter SYNC_L bound to: 2 - type: integer 
+	Parameter CWD_H bound to: 3 - type: integer 
+	Parameter CWD_L bound to: 4 - type: integer 
+	Parameter GEN1_H bound to: 5 - type: integer 
+	Parameter GEN1_L bound to: 6 - type: integer 
+	Parameter GEN2_H bound to: 7 - type: integer 
+	Parameter GEN2_L bound to: 8 - type: integer 
+	Parameter GEN3_H bound to: 9 - type: integer 
+	Parameter GEN3_L bound to: 10 - type: integer 
+	Parameter GEN4_H bound to: 11 - type: integer 
+	Parameter GEN4_L bound to: 12 - type: integer 
+	Parameter GEN5_H bound to: 13 - type: integer 
+	Parameter GEN5_L bound to: 14 - type: integer 
+	Parameter NUL_H bound to: 15 - type: integer 
+	Parameter NUL_L bound to: 16 - type: integer 
+	Parameter MOD_H bound to: 17 - type: integer 
+	Parameter MOD_L bound to: 18 - type: integer 
+	Parameter HCO_H bound to: 19 - type: integer 
+	Parameter HCO_L bound to: 20 - type: integer 
+	Parameter RBT_H bound to: 21 - type: integer 
+	Parameter RBT_L bound to: 22 - type: integer 
+	Parameter NOOP_0 bound to: 23 - type: integer 
+	Parameter NOOP_1 bound to: 24 - type: integer 
+	Parameter NOOP_2 bound to: 25 - type: integer 
+	Parameter NOOP_3 bound to: 26 - type: integer 
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/repos/a35/NUEVO/pleiads/src/multiboot_1x.v:43]
+INFO: [Synth 8-6157] synthesizing module 'ICAP_SPARTAN6' [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22266]
+	Parameter DEVICE_ID bound to: 67109011 - type: integer 
+	Parameter SIM_CFG_FILE_NAME bound to: NONE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ICAP_SPARTAN6' (28#1) [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22266]
+WARNING: [Synth 8-350] instance 'ICAP_SPARTAN6_inst' of module 'ICAP_SPARTAN6' requires 6 connections, but only 4 given [F:/repos/a35/NUEVO/pleiads/src/multiboot_1x.v:43]
+INFO: [Synth 8-4471] merging register 'ff_icap_wr_reg' into 'ff_icap_ce_reg' [F:/repos/a35/NUEVO/pleiads/src/multiboot_1x.v:48]
+WARNING: [Synth 8-6014] Unused sequential element ff_icap_wr_reg was removed.  [F:/repos/a35/NUEVO/pleiads/src/multiboot_1x.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'multiboot_spartan6' (29#1) [F:/repos/a35/NUEVO/pleiads/src/multiboot_1x.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'multiboot' (30#1) [F:/repos/a35/NUEVO/pleiads/src/multiboot_1x.v:1]
+WARNING: [Synth 8-6014] Unused sequential element pm_reset_reg was removed.  [F:/repos/a35/NUEVO/pleiads/src/modulo_top_a35.v:95]
+INFO: [Synth 8-6155] done synthesizing module 'pleiads_top' (31#1) [F:/repos/a35/NUEVO/pleiads/src/modulo_top_a35.v:9]
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[18] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[17] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[16] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[15] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[14] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[13] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[12] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[11] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[10] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[9] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[8] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[7] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[6] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[5] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[4] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[3] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[2] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[1] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[0] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_we_n driven by constant 1
+WARNING: [Synth 8-3331] design scandoubler has unconnected port r_in[0]
+WARNING: [Synth 8-3331] design scandoubler has unconnected port g_in[0]
+WARNING: [Synth 8-3331] design scandoubler has unconnected port b_in[0]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[5]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[4]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[3]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[1]
+WARNING: [Synth 8-3331] design phoenix_zxuno has unconnected port scanSW[10]
+WARNING: [Synth 8-3331] design phoenix_zxuno has unconnected port scanSW[7]
+WARNING: [Synth 8-3331] design pleiads_top has unconnected port sram_data[7]
+WARNING: [Synth 8-3331] design pleiads_top has unconnected port sram_data[6]
+WARNING: [Synth 8-3331] design pleiads_top has unconnected port sram_data[5]
+WARNING: [Synth 8-3331] design pleiads_top has unconnected port sram_data[4]
+WARNING: [Synth 8-3331] design pleiads_top has unconnected port sram_data[3]
+WARNING: [Synth 8-3331] design pleiads_top has unconnected port sram_data[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 478.684 ; gain = 219.926
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 478.684 ; gain = 219.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 478.684 ; gain = 219.926
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/repos/a35/NUEVO/pleiads/pines_zxuno_a35t.xdc]
+Finished Parsing XDC File [F:/repos/a35/NUEVO/pleiads/pines_zxuno_a35t.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/repos/a35/NUEVO/pleiads/pines_zxuno_a35t.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pleiads_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pleiads_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 793.977 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 793.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  ICAP_SPARTAN6 => ICAPE2: 1 instances
+  PLL_BASE => MMCME2_ADV: 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 793.977 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 793.977 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 793.977 ; gain = 535.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 793.977 ; gain = 535.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 793.977 ; gain = 535.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vcnt_i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sync_hs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sync_hs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sync_vs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sync_vs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "MCycles" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "MCycles" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "TStates" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Inc_PC" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LDZ" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NoRead" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Inc_PC" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IncDec_16" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IncDec_16" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Read_To_Acc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "I_RLD" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Jump" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "JumpXY" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "NoRead" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "LDSPHL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Special_LD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExchangeDH" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExchangeRp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I_CPL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I_CCF" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I_SCF" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SetDI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SetEI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IMode" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Halt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/pleiads/src/cpu/T80.vhd:572]
+INFO: [Synth 8-5544] ROM "ISet" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "XY_State" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "XY_Ind" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "IncDecZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "BusA" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Auto_Wait" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "F" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ISet" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "XY_State" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "XY_Ind" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "IncDecZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "BusA" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Auto_Wait" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "F" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "XY_State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "F" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "I" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegAddrA_r" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegAddrB_r" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SYNC" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "VAIT" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DO" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect1.vhd:136]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect1.vhd:183]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect1.vhd:213]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect2.vhd:234]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect2.vhd:266]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect2.vhd:312]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect2.vhd:370]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect3.vhd:190]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect3.vhd:154]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect3.vhd:247]
+INFO: [Synth 8-5546] ROM "rom_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rom_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bkgnd_offset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sound_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sound_a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "player2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bkgnd_offset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sound_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sound_a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "player2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ps2_clk_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "release" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_11_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_7_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_6_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "joy_renew" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 793.977 ; gain = 535.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 27    
+	   3 Input     16 Bit       Adders := 11    
+	   2 Input     15 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 1     
+	   4 Input     12 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 13    
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 10    
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 10    
+	   8 Input      1 Bit         XORs := 5     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 17    
+	               15 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	                9 Bit    Registers := 11    
+	                8 Bit    Registers := 33    
+	                7 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 16    
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 77    
++---RAMs : 
+	              16K Bit         RAMs := 2     
+	               9K Bit         RAMs := 1     
+	               64 Bit         RAMs := 2     
++---ROMs : 
+	                              ROMs := 5     
++---Muxes : 
+	  29 Input     21 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 33    
+	   4 Input     16 Bit        Muxes := 1     
+	  18 Input     16 Bit        Muxes := 1     
+	   4 Input     15 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 1     
+	   4 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	  25 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 66    
+	   8 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	 257 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 17    
+	   3 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 3     
+	  19 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 55    
+	   4 Input      4 Bit        Muxes := 13    
+	   6 Input      4 Bit        Muxes := 4     
+	   8 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 8     
+	  59 Input      4 Bit        Muxes := 3     
+	   9 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 5     
+	  23 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 10    
+	   2 Input      3 Bit        Muxes := 73    
+	   5 Input      3 Bit        Muxes := 19    
+	  59 Input      3 Bit        Muxes := 4     
+	  25 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 17    
+	   6 Input      3 Bit        Muxes := 5     
+	  23 Input      3 Bit        Muxes := 4     
+	   8 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 12    
+	   4 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 2     
+	  25 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 260   
+	   4 Input      1 Bit        Muxes := 15    
+	   5 Input      1 Bit        Muxes := 16    
+	   6 Input      1 Bit        Muxes := 9     
+	  59 Input      1 Bit        Muxes := 14    
+	  23 Input      1 Bit        Muxes := 16    
+	   8 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 6     
+	  25 Input      1 Bit        Muxes := 1     
+	  61 Input      1 Bit        Muxes := 10    
+	   7 Input      1 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 9     
+	  19 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pleiads_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  25 Input     12 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dac 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module phoenix_video 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module T80_MCode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 47    
+	   4 Input      4 Bit        Muxes := 13    
+	   6 Input      4 Bit        Muxes := 4     
+	   8 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 8     
+	  59 Input      4 Bit        Muxes := 3     
+	   9 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 5     
+	  23 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 10    
+	   2 Input      3 Bit        Muxes := 57    
+	   5 Input      3 Bit        Muxes := 19    
+	  59 Input      3 Bit        Muxes := 4     
+	  25 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 17    
+	   6 Input      3 Bit        Muxes := 5     
+	  23 Input      3 Bit        Muxes := 4     
+	   8 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 2     
+	  25 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 59    
+	   4 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 11    
+	   6 Input      1 Bit        Muxes := 7     
+	  59 Input      1 Bit        Muxes := 14    
+	  23 Input      1 Bit        Muxes := 16    
+	   8 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	  25 Input      1 Bit        Muxes := 1     
+	  61 Input      1 Bit        Muxes := 10    
+Module T80_ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
+	   8 Input      1 Bit         XORs := 4     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   8 Input      1 Bit        Muxes := 1     
+Module T80_Reg 
+Detailed RTL Component Info : 
++---RAMs : 
+	               64 Bit         RAMs := 2     
+Module T80 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 3     
++---XORs : 
+	   8 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 10    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 17    
+	   2 Input      8 Bit        Muxes := 42    
+	   6 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 109   
+	   4 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module T8080se 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+Module pleiads_prog 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module gen_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module phoenix_effect1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 5     
+	   3 Input     16 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module phoenix_effect2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 6     
+	   3 Input     16 Bit       Adders := 5     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 1     
+	   4 Input     13 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module phoenix_effect3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 7     
+	   3 Input     16 Bit       Adders := 3     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module phoenix_music 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      7 Bit       Adders := 3     
++---Registers : 
+	               15 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 7     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     15 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 12    
+	   2 Input      7 Bit        Muxes := 17    
+	   3 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+Module prom_ic39 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module prom_ic40 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module prom_ic23 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module prom_ic24 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module prom_palette_ic40 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	 257 Input      8 Bit        Muxes := 1     
+Module prom_palette_ic41 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	 257 Input      8 Bit        Muxes := 1     
+Module phoenix 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 7     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 4     
+Module scandoubler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 5     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---RAMs : 
+	               9K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+Module DEBOUNCE 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module phoenix_zxuno 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 9     
+Module ps2_intf 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 2     
+Module keyboard 
+Detailed RTL Component Info : 
++---Registers : 
+	               21 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	  29 Input     21 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+Module multiboot_spartan6 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	  18 Input     16 Bit        Muxes := 1     
+	  19 Input      5 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 1     
+Module multiboot 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "vcnt_i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sync_hs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sync_hs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sync_vs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sync_vs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCycles" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IncDecZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'u_cf_reg[15:0]' into 'u_cf_reg[15:0]' [F:/repos/a35/NUEVO/pleiads/src/phoenix_effect2.vhd:309]
+DSP Report: Generating DSP u_cf_scaled, operation Mode is: A2*(B:0x54).
+DSP Report: register u_cf_reg is absorbed into DSP u_cf_scaled.
+DSP Report: operator u_cf_scaled is absorbed into DSP u_cf_scaled.
+DSP Report: Generating DSP ARG, operation Mode is: (D+A2)*(B:0xbc).
+DSP Report: register A is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: operator ARG0 is absorbed into DSP ARG.
+WARNING: [Synth 8-3936] Found unconnected internal register 'voice1_code_reg' and it is trimmed from '7' to '6' bits. [F:/repos/a35/NUEVO/pleiads/src/phoenix_music.vhd:135]
+WARNING: [Synth 8-3936] Found unconnected internal register 'voice2_code_reg' and it is trimmed from '7' to '6' bits. [F:/repos/a35/NUEVO/pleiads/src/phoenix_music.vhd:136]
+INFO: [Synth 8-5546] ROM "joy_renew" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ps2_clk_in0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/ps2/ps2_clk_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_11_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/release" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_7_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_6_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_0_in" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[18] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[17] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[16] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[15] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[14] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[13] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[12] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[11] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[10] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[9] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[8] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[7] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[6] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[5] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[4] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[3] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[2] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[1] driven by constant 0
+WARNING: [Synth 8-3917] design pleiads_top has port sram_addr[0] driven by constant 1
+WARNING: [Synth 8-3917] design pleiads_top has port sram_we_n driven by constant 1
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[5]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[4]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[3]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[1]
+WARNING: [Synth 8-3331] design pleiads_top has unconnected port sram_data[7]
+WARNING: [Synth 8-3331] design pleiads_top has unconnected port sram_data[6]
+WARNING: [Synth 8-3331] design pleiads_top has unconnected port sram_data[5]
+WARNING: [Synth 8-3331] design pleiads_top has unconnected port sram_data[4]
+WARNING: [Synth 8-3331] design pleiads_top has unconnected port sram_data[3]
+WARNING: [Synth 8-3331] design pleiads_top has unconnected port sram_data[2]
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM pm/vga/sd_buffer_reg to conserve power
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Fp_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Fp_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Ap_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Ap_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Ap_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Ap_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Ap_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Ap_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Ap_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Ap_reg[6] )
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/cpu8085/u0/OldNMI_n_reg' (FDCE) to 'pm/phoenix/cpu8085/u0/INT_s_reg'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Fp_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Fp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/phoenix/cpu8085/u0 /Alternate_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Fp_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Fp_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Fp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/cpu8085/u0 /\Fp_reg[6] )
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/tempo_period_reg[0]' (FDRE) to 'pm/phoenix/music/tempo_period_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/tempo_period_reg[1]' (FDRE) to 'pm/phoenix/music/max_step_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/phoenix/cpu8085/u0 /NMI_s_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/phoenix/cpu8085/u0 /BusReq_s_reg)
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/cpu8085/u0/XY_State_reg[0]' (FDCE) to 'pm/phoenix/cpu8085/u0/XY_State_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/phoenix/cpu8085/u0 /\XY_State_reg[1] )
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/max_step_reg[0]' (FDRE) to 'pm/phoenix/music/tempo_period_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/max_step_reg[1]' (FDSE) to 'pm/phoenix/music/max_step_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/max_step_reg[2]' (FDSE) to 'pm/phoenix/music/max_step_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/max_step_reg[3]' (FDSE) to 'pm/phoenix/music/tempo_period_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/max_step_reg[4]' (FDSE) to 'pm/phoenix/music/max_step_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/tempo_period_reg[2]' (FDSE) to 'pm/phoenix/music/tempo_period_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/tempo_period_reg[3]' (FDSE) to 'pm/phoenix/music/tempo_period_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/tempo_period_reg[4]' (FDRE) to 'pm/phoenix/music/tempo_period_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/tempo_period_reg[5]' (FDRE) to 'pm/phoenix/music/tempo_period_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/tempo_period_reg[6]' (FDRE) to 'pm/phoenix/music/tempo_period_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/tempo_period_reg[7]' (FDRE) to 'pm/phoenix/music/tempo_period_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/tempo_period_reg[9]' (FDRE) to 'pm/phoenix/music/tempo_period_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/tempo_period_reg[10]' (FDRE) to 'pm/phoenix/music/tempo_period_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/tempo_period_reg[11]' (FDSE) to 'pm/phoenix/music/tempo_period_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/phoenix/music/tempo_period_reg[13] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/phoenix/music/tempo_period_reg[14] )
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/cpu8085/u0/ISet_reg[0]' (FDCE) to 'pm/phoenix/cpu8085/u0/ISet_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/phoenix/cpu8085/u0 /\ISet_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/phoenix/effect3/u_ctrl2_f_reg[7] )
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/cpu8085/u0/RegAddrA_r_reg[2]' (FDE) to 'pm/phoenix/cpu8085/u0/RegAddrB_r_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/phoenix/cpu8085/u0 /\RegAddrB_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/phoenix/cpu8085/u0 /i_2/\RegAddrC_reg[2] )
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/max_step_reg[5]' (FDRE) to 'pm/phoenix/music/tempo_period_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pm/phoenix/music/max_step_reg[6]' (FDSE) to 'pm/phoenix/music/tempo_period_reg[8]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 793.977 ; gain = 535.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+------------------------------------+---------------+----------------+
+|Module Name   | RTL Object                         | Depth x Width | Implemented As | 
++--------------+------------------------------------+---------------+----------------+
+|phoenix_music | voice3[0]                          | 64x7          | LUT            | 
+|phoenix_music | voice2[0]                          | 128x7         | LUT            | 
+|phoenix_music | voice3[0]                          | 64x7          | LUT            | 
+|phoenix_music | voice2[0]                          | 128x7         | LUT            | 
+|phoenix_music | voice3[0]                          | 64x7          | LUT            | 
+|phoenix_music | voice2[0]                          | 128x7         | LUT            | 
+|phoenix_music | voice3[0]                          | 64x7          | LUT            | 
+|phoenix_music | voice1[0]                          | 128x7         | LUT            | 
+|phoenix_music | voice3[0]                          | 64x7          | LUT            | 
+|phoenix_music | voice1[0]                          | 128x7         | LUT            | 
+|phoenix_music | voice3[0]                          | 64x7          | LUT            | 
+|phoenix_music | voice1[0]                          | 128x7         | LUT            | 
+|phoenix_music | voice3[0]                          | 64x7          | LUT            | 
+|phoenix_music | voice2[0]                          | 128x7         | LUT            | 
+|phoenix_music | voice1[0]                          | 128x7         | LUT            | 
+|phoenix       | G_yes_tile_rom.frgnd_bit0/data_reg | 2048x8        | Block RAM      | 
+|phoenix       | G_yes_tile_rom.frgnd_bit1/data_reg | 2048x8        | Block RAM      | 
+|phoenix       | G_yes_tile_rom.bkgnd_bit0/data_reg | 2048x8        | Block RAM      | 
+|phoenix       | G_yes_tile_rom.bkgnd_bit1/data_reg | 2048x8        | Block RAM      | 
+|phoenix       | prog/data_reg                      | 16384x8       | Block RAM      | 
++--------------+------------------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++-------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|gen_ram:     | ram_reg       | 2 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|gen_ram:     | ram_reg       | 2 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|scandoubler: | sd_buffer_reg | 1 K x 9(READ_FIRST)    | W |   | 1 K x 9(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------------------+----------------+-----------+----------------------+--------------+
+|Module Name             | RTL Object     | Inference | Size (Depth x Width) | Primitives   | 
++------------------------+----------------+-----------+----------------------+--------------+
+|\pm/phoenix/cpu8085/u0  | Regs/RegsH_reg | Implied   | 8 x 8                | RAM32M x 4   | 
+|\pm/phoenix/cpu8085/u0  | Regs/RegsL_reg | Implied   | 8 x 8                | RAM32M x 4   | 
++------------------------+----------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|phoenix_effect2 | A2*(B:0x54)     | 16     | 7      | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|phoenix_effect3 | (D+A2)*(B:0xbc) | 15     | 8      | -      | 15     | 24     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
++----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/i_/pm/phoenix/frgnd_ram/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/i___0/pm/phoenix/bkgnd_ram/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/i_/i___2/pm/phoenix/G_yes_tile_rom.frgnd_bit0/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/i_/i___3/pm/phoenix/G_yes_tile_rom.frgnd_bit1/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/i_/i___4/pm/phoenix/G_yes_tile_rom.bkgnd_bit0/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/i_/i___5/pm/phoenix/G_yes_tile_rom.bkgnd_bit1/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/i_/i___6/pm/phoenix/prog/data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/i_/i___6/pm/phoenix/prog/data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/i_/i___6/pm/phoenix/prog/data_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/i_/i___6/pm/phoenix/prog/data_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_78/pm/vga/sd_buffer_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:03 ; elapsed = 00:02:07 . Memory (MB): peak = 872.063 ; gain = 613.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:08 . Memory (MB): peak = 875.137 ; gain = 616.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++-------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|gen_ram:     | ram_reg       | 2 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|gen_ram:     | ram_reg       | 2 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|scandoubler: | sd_buffer_reg | 1 K x 9(READ_FIRST)    | W |   | 1 K x 9(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping  Report
++------------------------+----------------+-----------+----------------------+--------------+
+|Module Name             | RTL Object     | Inference | Size (Depth x Width) | Primitives   | 
++------------------------+----------------+-----------+----------------------+--------------+
+|\pm/phoenix/cpu8085/u0  | Regs/RegsH_reg | Implied   | 8 x 8                | RAM32M x 4   | 
+|\pm/phoenix/cpu8085/u0  | Regs/RegsL_reg | Implied   | 8 x 8                | RAM32M x 4   | 
++------------------------+----------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/frgnd_ram/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/bkgnd_ram/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/G_yes_tile_rom.frgnd_bit0/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/G_yes_tile_rom.frgnd_bit1/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/G_yes_tile_rom.bkgnd_bit0/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/G_yes_tile_rom.bkgnd_bit1/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/prog/data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/prog/data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/prog/data_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/phoenix/prog/data_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/vga/sd_buffer_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:07 ; elapsed = 00:02:11 . Memory (MB): peak = 919.043 ; gain = 660.285
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:10 ; elapsed = 00:02:14 . Memory (MB): peak = 919.043 ; gain = 660.285
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:10 ; elapsed = 00:02:14 . Memory (MB): peak = 919.043 ; gain = 660.285
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:10 ; elapsed = 00:02:14 . Memory (MB): peak = 919.043 ; gain = 660.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:10 ; elapsed = 00:02:14 . Memory (MB): peak = 919.043 ; gain = 660.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 919.043 ; gain = 660.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 919.043 ; gain = 660.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|pleiads_top | pm/phoenix/effect3/shift_reg_reg[16] | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     4|
+|2     |CARRY4        |   253|
+|3     |DSP48E1       |     1|
+|4     |DSP48E1_1     |     1|
+|5     |ICAP_SPARTAN6 |     1|
+|6     |LUT1          |   185|
+|7     |LUT2          |   422|
+|8     |LUT3          |   235|
+|9     |LUT4          |   340|
+|10    |LUT5          |   284|
+|11    |LUT6          |   655|
+|12    |MUXF7         |    23|
+|13    |PLL_BASE      |     1|
+|14    |RAM32M        |     8|
+|15    |RAMB18E1      |     2|
+|16    |RAMB18E1_1    |     1|
+|17    |RAMB18E1_2    |     1|
+|18    |RAMB18E1_3    |     1|
+|19    |RAMB18E1_4    |     1|
+|20    |RAMB18E1_5    |     1|
+|21    |RAMB36E1      |     1|
+|22    |RAMB36E1_1    |     1|
+|23    |RAMB36E1_2    |     1|
+|24    |RAMB36E1_3    |     1|
+|25    |SRL16E        |     1|
+|26    |FDCE          |   106|
+|27    |FDPE          |    34|
+|28    |FDRE          |   780|
+|29    |FDSE          |     1|
+|30    |IBUF          |     7|
+|31    |OBUF          |    36|
++------+--------------+------+
+
+Report Instance Areas: 
++------+----------------------------------+-------------------+------+
+|      |Instance                          |Module             |Cells |
++------+----------------------------------+-------------------+------+
+|1     |top                               |                   |  3389|
+|2     |  el_multiboot                    |multiboot          |    52|
+|3     |    multiboot                     |multiboot_spartan6 |    45|
+|4     |  keyb                            |keyboard           |   113|
+|5     |    ps2                           |ps2_intf           |    73|
+|6     |  pm                              |phoenix_zxuno      |  3129|
+|7     |    dac                           |dac                |    13|
+|8     |    debounce                      |DEBOUNCE           |    58|
+|9     |    phoenix                       |phoenix            |  2927|
+|10    |      \G_yes_tile_rom.palette_0   |prom_palette_ic40  |     3|
+|11    |      \G_yes_tile_rom.palette_1   |prom_palette_ic41  |     3|
+|12    |      \G_yes_tile_rom.bkgnd_bit0  |prom_ic23          |     1|
+|13    |      \G_yes_tile_rom.bkgnd_bit1  |prom_ic24          |     1|
+|14    |      \G_yes_tile_rom.frgnd_bit0  |prom_ic39          |     1|
+|15    |      \G_yes_tile_rom.frgnd_bit1  |prom_ic40          |     1|
+|16    |      bkgnd_ram                   |gen_ram            |     1|
+|17    |      cpu8085                     |T8080se            |  1065|
+|18    |        u0                        |T80                |  1049|
+|19    |          Regs                    |T80_Reg            |   373|
+|20    |      effect1                     |phoenix_effect1    |   281|
+|21    |      effect2                     |phoenix_effect2    |   474|
+|22    |      effect3                     |phoenix_effect3    |   392|
+|23    |      frgnd_ram                   |gen_ram_0          |     1|
+|24    |      music                       |phoenix_music      |   431|
+|25    |      prog                        |pleiads_prog       |     4|
+|26    |      video                       |phoenix_video      |   141|
+|27    |    vga                           |scandoubler        |   112|
++------+----------------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 919.043 ; gain = 660.285
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:45 ; elapsed = 00:02:01 . Memory (MB): peak = 919.043 ; gain = 344.992
+Synthesis Optimization Complete : Time (s): cpu = 00:02:11 ; elapsed = 00:02:15 . Memory (MB): peak = 919.043 ; gain = 660.285
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 299 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 919.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  ICAP_SPARTAN6 => ICAPE2: 1 instances
+  PLL_BASE => MMCME2_ADV: 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+290 Infos, 89 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:15 ; elapsed = 00:02:20 . Memory (MB): peak = 919.043 ; gain = 664.805
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 919.043 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/repos/a35/NUEVO/pleiads/a35/a35.runs/synth_1/pleiads_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pleiads_top_utilization_synth.rpt -pb pleiads_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 22 14:33:00 2019...

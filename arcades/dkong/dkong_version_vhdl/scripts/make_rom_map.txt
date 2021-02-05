@@ -1,0 +1,29 @@
+DKONG  ROM ADDRESS MAP
+
+ADDR       FILE          SIZE
+
+00000   c_5et_g.bin    4096*8bit   CPU_ROM(Z80)
+01000   c_5ct_g.bin    4096*8bit   CPU_ROM(Z80)
+02000   c_5bt_g.bin    4096*8bit   CPU_ROM(Z80)
+03000   c_5at_g.bin    4096*8bit   CPU_ROM(Z80)
+04000   NOT USE        8192*8bit
+06000   v_3pt.bin      2048*8bit   VIDEO-ROM (ROM_3P)
+06800   NOT USE        2048*8bit
+07000   v_5h_b.bin     2048*8bit   VIDEO-ROM (ROM_3N)
+07800   NOT USE        2048*8bit
+08000   NOT USE        8192*8bit
+0A000   l_4m_b.bin     2048*8bit   OBJ-ROM (ROM_7C)
+0A800   NOT USE        2048*8bit
+0B000   l_4n_b.bin     2048*8bit   OBJ-ROM (ROM_7D)
+0B800   NOT USE        2048*8bit
+0C000   l_4r_b.bin     2048*8bit   OBJ-ROM (ROM_7E)
+0C800   NOT USE        2048*8bit
+0D000   l_4s_b.bin     2048*8bit   OBJ-ROM (ROM_7F)
+0D800   NOT USE        2048*8bit
+0E000   s_3i_b.bin     2048*8bit   CPU_ROM(I8035)
+0E800   NOT USE        2048*8bit
+0F000   s_3j_b.bin     2048*8bit   CPU_ROM(I8035)
+0F800   NOT USE        2048*8bit
+10000   dk_wave.bin           ANALOG SOUND (WAV) DATA
+20000
+30000

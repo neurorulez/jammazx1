@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jun 14 22:52:35 2019
+# Process ID: 2088
+# Current directory: D:/repos/a35t/arkanoid/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1252 D:\repos\a35t\arkanoid\A35\A35.xpr
+# Log file: D:/repos/a35t/arkanoid/A35/vivado.log
+# Journal file: D:/repos/a35t/arkanoid/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+oopen_project D:/repos/a35t/arkanoid/A35/A35.xprINFO: [Project 1-313] Project file moved from 'F:/repos/a35/NUEVO/arkanoid/A35' since last save.
+Scanning sources...
+FFinished scanning sourcesWWARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'D:/repos/a35/defender/a35t/a35t.ip_user_files', nor could it be found using path 'F:/repos/repos/a35/defender/a35t/a35t.ip_user_files'.IINFO: [IP_Flow 19-234] Refreshing IP repositoriesIINFO: [IP_Flow 19-1704] No user IP repositories specifiedINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+oopen_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 633.137 ; gain = 80.656rexit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 14 22:54:48 2019...
+s appears to be on host 'W7-PC' and cannot be killed from host 'DESKTOP-QDU895T'
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/repos/a35t/arkanoid/A35/A35.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jun 14 22:53:52 2019] Launched synth_1...
+Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/synth_1/runme.log
+[Fri Jun 14 22:53:52 2019] Launched impl_1...
+Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jun 14 22:58:16 2019] Launched synth_1...
+Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/synth_1/runme.log
+[Fri Jun 14 22:58:16 2019] Launched impl_1...
+Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 14 23:22:22 2019...

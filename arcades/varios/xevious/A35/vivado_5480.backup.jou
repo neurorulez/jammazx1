@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Apr 30 13:55:33 2019
+# Process ID: 5480
+# Current directory: F:/repos/a35/NUEVO/xevious/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6640 F:\repos\a35\NUEVO\xevious\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/xevious/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/xevious/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/xevious/A35/A35.xpr
+add_files -norecurse F:/repos/a35/NUEVO/xevious/src/scandoubler.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/xevious/A35/A35.runs/impl_1/xevious_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/xevious/A35/A35.runs/impl_1/xevious_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/xevious/A35/A35.runs/impl_1/xevious_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/xevious/src/rtl_mio/line_doubler.vhd] -no_script -reset -force -quiet
+remove_files  F:/repos/a35/NUEVO/xevious/src/rtl_mio/line_doubler.vhd

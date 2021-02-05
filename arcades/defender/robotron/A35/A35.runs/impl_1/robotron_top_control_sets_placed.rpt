@@ -1,0 +1,179 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Sat May 25 14:06:46 2019
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file robotron_top_control_sets_placed.rpt
+| Design       : robotron_top
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   103 |
+| Unused register locations in slices containing registers |   245 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           20 |
+|      4 |            3 |
+|      5 |            2 |
+|      6 |           10 |
+|      7 |            5 |
+|      8 |           42 |
+|      9 |            3 |
+|     10 |            1 |
+|     11 |            2 |
+|     12 |            2 |
+|     14 |            1 |
+|     15 |            2 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             152 |           74 |
+| No           | No                    | Yes                    |              39 |           15 |
+| No           | Yes                   | No                     |              12 |            8 |
+| Yes          | No                    | No                     |             396 |          187 |
+| Yes          | No                    | Yes                    |             132 |           41 |
+| Yes          | Yes                   | No                     |             176 |           52 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+--------------------------------------------------+--------------------------------------------------+------------------+----------------+
+|       Clock Signal      |                   Enable Signal                  |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++-------------------------+--------------------------------------------------+--------------------------------------------------+------------------+----------------+
+|  JOY_CLK_OBUF           | joy2[1]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           |                                                  | joy_renew_i_1_n_0                                |                1 |              1 |
+|  JOY_CLK_OBUF           | joy1[0]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy1[1]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy1[2]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy1[3]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy1[4]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy1[8]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy1[9]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy1[11]                                         |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy2[0]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy2[2]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy2[3]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy2[4]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy2[8]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy2[9]                                          |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF           | joy2[11]                                         |                                                  |                1 |              1 |
+| ~clk0p89_BUFG           | pm/audio/main_cpu/sp[15]_i_2__0_n_0              |                                                  |                1 |              1 |
+|  clk_p0                 |                                                  | pm/reset                                         |                1 |              1 |
+|  clk12                  | pm/inst_blitter/screen_control                   |                                                  |                1 |              1 |
+|  clk12                  | pm/inst_blitter/blt_shift[3]_i_2_n_0             | pm/inst_cpu09/ba_reg_1                           |                1 |              4 |
+|  clk12                  | pm/inst_cpu09/state_stack[2][5]_i_2_n_0          | pm/inst_cpu09/state_stack[2][5]_i_1_n_0          |                2 |              4 |
+|  clk12                  | keyb/ps2/bit_count                               |                                                  |                1 |              4 |
+|  JOY_CLK_OBUF           |                                                  | joy_count[4]_i_1_n_0                             |                1 |              5 |
+|  clk7p16                |                                                  | delay_count[4]_i_2_n_0                           |                1 |              5 |
+|  clk1p79_BUFG           | pm/audio/main_cpu/delay_count_reg[2]_1[0]        | pm/reset                                         |                2 |              6 |
+|  clk1p79_BUFG           | pm/audio/main_cpu/delay_count_reg[2]_0[0]        | pm/reset                                         |                2 |              6 |
+|  clk_p0                 | pm/inst_cpu09/porta_ctrl[5]_i_2__0[0]            | pm/reset                                         |                2 |              6 |
+| ~clk0p89_BUFG           |                                                  | pm/reset                                         |                6 |              6 |
+|  clk12                  | pm/inst_cpu09/op_code[7]_i_2_n_0                 | pm/inst_cpu09/op_code[7]_i_1__0_n_0              |                2 |              6 |
+|  clk12                  | pm/clock_12_phase_reg_n_0_[11]                   | pm/video_address[13]_i_1_n_0                     |                2 |              6 |
+| ~clk0p89_BUFG           | pm/audio/main_cpu/xreg[15]                       | pm/audio/main_cpu/xreg[14]_i_1__0_n_0            |                1 |              6 |
+|  clk_p0                 | pm/inst_cpu09/portb_ctrl[5]_i_4[0]               | pm/reset                                         |                1 |              6 |
+|  clk_p0                 | pm/inst_blitter/E[0]                             | pm/reset                                         |                2 |              6 |
+|  clk_p0                 | pm/inst_blitter/porta_ctrl[5]_i_2__0_0[0]        | pm/reset                                         |                2 |              6 |
+| ~clk0p89_BUFG           | pm/audio/main_cpu/op_code[7]_i_2__0_n_0          | pm/audio/main_cpu/op_code[7]_i_1_n_0             |                2 |              7 |
+|  clk12                  | pm/inst_cpu09/xreg[8]                            | pm/inst_cpu09/xreg[15]_i_1_n_0                   |                3 |              7 |
+| ~clk1p79_BUFG           |                                                  | pm/reset                                         |                2 |              7 |
+|  clk12                  | pm/inst_blitter/reg_ctrl                         |                                                  |                3 |              7 |
+|  clk12                  | pm/inst_cpu09/yreg[8]                            | pm/inst_cpu09/yreg[15]_i_1_n_0                   |                2 |              7 |
+| ~clk0p89_BUFG           | pm/audio/main_cpu/cc[7]_i_1__0_n_0               |                                                  |                5 |              8 |
+| ~clk0p89_BUFG           | pm/audio/main_cpu/xreg[7]                        |                                                  |                6 |              8 |
+|  clk12                  | keyb/ps2/DATA[7]_i_1_n_0                         |                                                  |                1 |              8 |
+|  clk12                  | pm/inst_cpu09/acca                               |                                                  |                7 |              8 |
+|  clk12                  | pm/inst_cpu09/accb[7]_i_1__0_n_0                 |                                                  |                5 |              8 |
+|  clk12                  | pm/inst_cpu09/bs_reg_7                           | pm/inst_blitter/y_count[7]_i_1_n_0               |                2 |              8 |
+|  clk12                  | pm/inst_cpu09/dp[7]_i_1_n_0                      |                                                  |                3 |              8 |
+|  clk12                  | pm/inst_cpu09/pc[15]_i_1_n_0                     |                                                  |                3 |              8 |
+|  clk12                  | pm/inst_cpu09/pc[7]_i_1_n_0                      |                                                  |                3 |              8 |
+|  clk12                  | pm/inst_cpu09/pre_code                           | pm/inst_cpu09/pre_code[7]_i_1_n_0                |                3 |              8 |
+|  clk12                  | pm/inst_cpu09/sp[7]_i_1__0_n_0                   |                                                  |                5 |              8 |
+|  clk_p0                 | pm/inst_blitter/portb_ctrl_reg[2]_2[0]           | pm/reset                                         |                3 |              8 |
+|  clk12                  | pm/inst_cpu09/up[7]_i_1_n_0                      |                                                  |                3 |              8 |
+|  clk12                  | pm/inst_cpu09/clock_12_phase_reg[8][0]           |                                                  |                5 |              8 |
+|  clk12                  | pm/inst_cpu09/sp[14]                             | pm/inst_cpu09/sp[15]_i_1__0_n_0                  |                3 |              8 |
+|  clk12                  | pm/inst_cpu09/up[14]                             | pm/inst_cpu09/up[15]_i_1_n_0                     |                2 |              8 |
+|  clk12                  | pm/inst_cpu09/xreg[7]                            |                                                  |                4 |              8 |
+|  clk12                  | pm/inst_cpu09/yreg[7]                            |                                                  |                4 |              8 |
+|  clk12                  | pm/inst_blitter/reg_dst_base[15]_i_1_n_0         |                                                  |                4 |              8 |
+|  clk12                  | pm/inst_blitter/reg_dst_base[7]_i_1_n_0          |                                                  |                5 |              8 |
+|  clk12                  | pm/inst_blitter/reg_height                       |                                                  |                2 |              8 |
+|  clk12                  | pm/inst_blitter/reg_solid                        |                                                  |                3 |              8 |
+|  clk12                  | pm/inst_blitter/reg_src_base[15]_i_1_n_0         |                                                  |                2 |              8 |
+|  clk12                  | pm/inst_blitter/reg_src_base[7]_i_1_n_0          |                                                  |                3 |              8 |
+|  clk12                  | pm/inst_blitter/reg_width                        |                                                  |                3 |              8 |
+|  clk12                  | pm/inst_blitter/y_count[7]_i_2_n_0               | pm/inst_blitter/y_count[7]_i_1_n_0               |                3 |              8 |
+|  clk12                  | pm/ltOp                                          | keyb/resetKey_reg_0[0]                           |                2 |              8 |
+|  clk12                  | pm/p_1_in14_in                                   |                                                  |                7 |              8 |
+|  clk1p79_BUFG           | pm/audio/main_cpu/E[0]                           | pm/reset                                         |                1 |              8 |
+|  clk1p79_BUFG           | pm/audio/main_cpu/porta_ctrl_reg[2][0]           | pm/reset                                         |                2 |              8 |
+|  clk1p79_BUFG           | pm/audio/main_cpu/portb_ctrl_reg[2][0]           | pm/reset                                         |                2 |              8 |
+|  clk1p79_BUFG           | pm/audio/main_cpu/portb_ctrl_reg[2]_0[0]         | pm/reset                                         |                4 |              8 |
+|  clk_p0                 | pm/inst_cpu09/porta_ctrl_reg[2][0]               | pm/reset                                         |                3 |              8 |
+|  clk_p0                 | pm/inst_cpu09/porta_ctrl_reg[2]_0[0]             | pm/reset                                         |                2 |              8 |
+|  clk12                  | pm/inst_blitter/blt_src_data                     |                                                  |                3 |              8 |
+| ~clk0p89_BUFG           | pm/audio/main_cpu/acca[7]_i_1__0_n_0             |                                                  |                5 |              8 |
+| ~clk0p89_BUFG           | pm/audio/main_cpu/accb[7]_i_1_n_0                |                                                  |                3 |              8 |
+|  clk_p0                 | pm/inst_blitter/porta_ctrl_reg[2][0]             | pm/reset                                         |                3 |              8 |
+|  clk_p0                 | pm/inst_blitter/porta_ctrl_reg[2]_0[0]           | pm/reset                                         |                3 |              8 |
+|  clk_p0                 | pm/inst_blitter/portb_ctrl_reg[2][0]             | pm/reset                                         |                2 |              8 |
+|  clk_p0                 | pm/inst_blitter/portb_ctrl_reg[2]_0[0]           | pm/reset                                         |                3 |              8 |
+|  clk_p0                 | pm/inst_blitter/portb_ctrl_reg[2]_1[0]           | pm/reset                                         |                2 |              8 |
+|  clk12                  | el_multiboot/el_multiboot/Q[0]                   | keyb/SR[0]                                       |                2 |              9 |
+|  clk12                  | keyb/ps2/shiftreg                                |                                                  |                2 |              9 |
+|  clk12                  | pm/vgaB                                          | pm/vgaR[2]_i_1_n_0                               |                2 |              9 |
+|  clk12                  | pm/p_0_in80_in                                   | pm/reset                                         |                4 |             10 |
+|  clk12                  | el_multiboot/el_multiboot/icap_data0[33]_i_1_n_0 |                                                  |                3 |             11 |
+|  clk12                  | pm/inst_cpu09/E[0]                               |                                                  |                4 |             11 |
+|  clk12                  |                                                  | pm/reset                                         |                5 |             12 |
+|  clk12                  | pm/inst_cpu09/state_stack[2][5]_i_2_n_0          |                                                  |                4 |             12 |
+|  pm/inst_pia_rom/clk_n0 |                                                  | pm/reset                                         |                6 |             14 |
+| ~clk0p89_BUFG           | pm/audio/main_cpu/sp[15]_i_2__0_n_0              | pm/audio/main_cpu/sp[15]_i_1_n_0                 |                7 |             15 |
+|  clk12                  | pm/clock_12_phase_reg_n_0_[11]                   | pm/video_count[14]_i_1_n_0                       |                4 |             15 |
+|  clk12                  | pm/inst_cpu09/ea[15]_i_1_n_0                     |                                                  |                8 |             16 |
+| ~clk0p89_BUFG           | pm/audio/main_cpu/md[15]_i_1_n_0                 |                                                  |                7 |             16 |
+|  clk12                  | pm/inst_cpu09/md[15]_i_1__0_n_0                  |                                                  |                8 |             16 |
+|  clk12                  | el_multiboot/el_multiboot/icap_data0[33]_i_1_n_0 | el_multiboot/el_multiboot/icap_data0[31]_i_1_n_0 |                3 |             23 |
+|  clk12                  | pm/vgaR1                                         |                                                  |                7 |             24 |
+|  clk12                  | pm/inst_cpu09/out0                               |                                                  |               14 |             28 |
+|  clk12                  | pm/inst_cpu09/bs_reg_7                           |                                                  |               14 |             32 |
+|  clk12                  | pm/inst_blitter/clock_12_phase_reg[7]            |                                                  |                4 |             32 |
+| ~clk0p89_BUFG           |                                                  |                                                  |               13 |             37 |
+|  clk12                  |                                                  |                                                  |               61 |            115 |
++-------------------------+--------------------------------------------------+--------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1558951793">
+  <File Type="BITSTR-BMM" Name="colony7_top_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="colony7_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="colony7_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="colony7_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="colony7_top.tcl"/>
+  <File Type="OPT-TIMING" Name="colony7_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="colony7_top_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="colony7_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="colony7_top_reports.tcl"/>
+  <File Type="OPT-DRC" Name="colony7_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="colony7_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="colony7_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="colony7_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="colony7_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="colony7_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="colony7_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="colony7_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="colony7_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="colony7_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="colony7_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="colony7_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="colony7_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="colony7_top.bgn"/>
+  <File Type="PLACE-TIMING" Name="colony7_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="colony7_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="colony7_top.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="colony7_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="colony7_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="colony7_top_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="colony7_top.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="colony7_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="colony7_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="colony7_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="colony7_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="colony7_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="colony7_top_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="colony7_top.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="colony7_top_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="colony7_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="colony7_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="colony7_top_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="colony7_top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="colony7_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="colony7_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="colony7_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="colony7_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="colony7_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="colony7_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="colony7_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="colony7_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="colony7_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="colony7_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="colony7_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="colony7_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="colony7_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="colony7_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="colony7_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="colony7_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="colony7_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="colony7_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="colony7_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="colony7_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="colony7_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="colony7_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="colony7_top.nky"/>
+  <File Type="BG-DRC" Name="colony7_top.drc"/>
+  <File Type="RDI-RDI" Name="colony7_top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../src/rtl_mio/keyb/ps2_intf.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/rtl_mio/debounce.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/rtl_mio/dac.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/rtl_mio/keyb/keyboard.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/modulo_top_a35t.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/import_ise_summary.txt"/>
+    <File Path="$PPRDIR/../src/rtl_mio/line_doubler.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/multiboot_artix7.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/roms/colony7_decoder_3.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/roms/colony7_sound.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/roms/colony7_decoder_2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/rtl/gen_ram.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/roms/colony7_prog.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/rtl/cpu09l_128.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/rtl/pia6821.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/rtl/Williams_sound_board.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/rtl/cpu68.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/rtl/defender.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="colony7_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../pines_zxuno_a35t.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

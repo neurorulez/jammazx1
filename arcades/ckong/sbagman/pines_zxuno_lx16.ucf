@@ -1,0 +1,74 @@
+# ZX-UNO LX16 UCF
+
+# Clocks
+NET "clk50mhz"         LOC="A10" | IOSTANDARD = LVCMOS33 | PERIOD = 50 MHz;
+
+# Leds
+NET LED<0>            LOC="T9"  | IOSTANDARD = LVCMOS33;
+NET LED<1>            LOC="R9"  | IOSTANDARD = LVCMOS33;
+NET BTN<0>            LOC="T8"  | IOSTANDARD = LVCMOS33;
+NET BTN<1>            LOC="R7"  | IOSTANDARD = LVCMOS33;
+
+# Keyboard and mouse
+NET "ps2_clk"         LOC="M11" | IOSTANDARD = LVCMOS33 | PULLUP;
+NET "ps2_data"        LOC="P12" | IOSTANDARD = LVCMOS33 | PULLUP;
+
+# Video output
+NET "hsync"           LOC="G12"  | IOSTANDARD = LVCMOS33;
+NET "vsync"           LOC="H16"  | IOSTANDARD = LVCMOS33;
+NET "blue<2>"         LOC="E12"   | IOSTANDARD = LVCMOS33;
+NET "blue<1>"         LOC="B15"   | IOSTANDARD = LVCMOS33;
+NET "blue<0>"         LOC="C15"   | IOSTANDARD = LVCMOS33;
+NET "red<2>"          LOC="G11"   | IOSTANDARD = LVCMOS33;
+NET "red<1>"          LOC="F13"   | IOSTANDARD = LVCMOS33;
+NET "red<0>"          LOC="F14"   | IOSTANDARD = LVCMOS33;
+NET "green<2>"        LOC="B16"   | IOSTANDARD = LVCMOS33;
+NET "green<1>"        LOC="C16"   | IOSTANDARD = LVCMOS33;
+NET "green<0>"        LOC="D16"   | IOSTANDARD = LVCMOS33;
+
+# Audio
+NET "audio_l"  LOC="H11"  | IOSTANDARD = LVCMOS33;
+NET "audio_r"  LOC="H13"  | IOSTANDARD = LVCMOS33;
+
+# SRAM
+NET "sram_addr<0>"    LOC="H14"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<1>"    LOC="J16"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<2>"    LOC="J11"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<3>"    LOC="J13"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<4>"    LOC="K16"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<5>"    LOC="K11"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<6>"    LOC="L12"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<7>"    LOC="M13"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<8>"    LOC="M15"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<9>"    LOC="N14"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<10>"   LOC="L14"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<11>"   LOC="M14"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<12>"   LOC="K14"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<13>"   LOC="L13"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<14>"   LOC="J12"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<15>"   LOC="T14"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<16>"   LOC="T15"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<17>"   LOC="R14"  | IOSTANDARD = LVCMOS33;
+NET "sram_addr<18>"   LOC="R16"  | IOSTANDARD = LVCMOS33;
+
+NET "sram_data<0>"    LOC="K15"  | IOSTANDARD = LVCMOS33;
+NET "sram_data<1>"    LOC="N16"  | IOSTANDARD = LVCMOS33;
+NET "sram_data<2>"    LOC="L16"  | IOSTANDARD = LVCMOS33;
+NET "sram_data<3>"    LOC="K12"  | IOSTANDARD = LVCMOS33;
+NET "sram_data<4>"    LOC="J14"  | IOSTANDARD = LVCMOS33;
+NET "sram_data<5>"    LOC="P15"  | IOSTANDARD = LVCMOS33;
+NET "sram_data<6>"    LOC="P16"  | IOSTANDARD = LVCMOS33;
+NET "sram_data<7>"    LOC="R15"  | IOSTANDARD = LVCMOS33;
+
+NET "sram_we_n"       LOC="M16"  | IOSTANDARD = LVCMOS33;
+
+# SD/MMC
+NET "spi_cs"         LOC="N9"   | IOSTANDARD = LVCMOS33; #sd_spi_cs_n #sd_dat3
+NET "spi_clk"        LOC="T6"   | IOSTANDARD = LVCMOS33; #sd_spi_sclk #sd_clk
+NET "spi_mosi"       LOC="M9"   | IOSTANDARD = LVCMOS33; #sd_spi_mosi #sd_cmd
+NET "spi_miso"       LOC="T7"   | IOSTANDARD = LVCMOS33 | PULLUP; #sd_spi_miso #sd_dat
+
+#Joystick
+NET "JOY_CLK"  LOC="R12" | IOSTANDARD = LVCMOS33; 
+NET "JOY_LOAD" LOC="T12" | IOSTANDARD = LVCMOS33;
+NET "JOY_DATA" LOC="T13" | IOSTANDARD = LVCMOS33;

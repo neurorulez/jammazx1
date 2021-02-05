@@ -1,0 +1,165 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Sat Jun 22 14:34:27 2019
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file pleiads_top_control_sets_placed.rpt
+| Design       : pleiads_top
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    89 |
+| Unused register locations in slices containing registers |   278 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           16 |
+|      3 |            2 |
+|      4 |            8 |
+|      5 |            3 |
+|      6 |            2 |
+|      7 |            2 |
+|      8 |           16 |
+|      9 |            8 |
+|     12 |            1 |
+|     13 |            2 |
+|     14 |            2 |
+|     15 |            2 |
+|    16+ |           25 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             197 |           90 |
+| No           | No                    | Yes                    |              41 |           24 |
+| No           | Yes                   | No                     |             169 |           48 |
+| Yes          | No                    | No                     |             346 |          116 |
+| Yes          | No                    | Yes                    |              99 |           46 |
+| Yes          | Yes                   | No                     |              70 |           33 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+-------------------------------------------+----------------------------------------------+------------------+----------------+
+|   Clock Signal   |               Enable Signal               |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++------------------+-------------------------------------------+----------------------------------------------+------------------+----------------+
+|  JOY_CLK_OBUF    | joy1[9]                                   |                                              |                1 |              1 |
+| ~ena11           |                                           |                                              |                1 |              1 |
+|  JOY_CLK_OBUF    |                                           | joy_renew_i_1_n_0                            |                1 |              1 |
+|  JOY_CLK_OBUF    | joy1[0]                                   |                                              |                1 |              1 |
+|  JOY_CLK_OBUF    | joy1[1]                                   |                                              |                1 |              1 |
+|  JOY_CLK_OBUF    | joy1[2]                                   |                                              |                1 |              1 |
+|  JOY_CLK_OBUF    | joy1[3]                                   |                                              |                1 |              1 |
+|  JOY_CLK_OBUF    | joy1[4]                                   |                                              |                1 |              1 |
+|  JOY_CLK_OBUF    | joy1[5]                                   |                                              |                1 |              1 |
+|  JOY_CLK_OBUF    | joy1[8]                                   |                                              |                1 |              1 |
+|  JOY_CLK_OBUF    | joy2[8]                                   |                                              |                1 |              1 |
+|  pclkx2          |                                           | keyb/scanSW_reg[6]_0                         |                1 |              1 |
+|  JOY_CLK_OBUF    | joy1[11]                                  |                                              |                1 |              1 |
+|  JOY_CLK_OBUF    | joy2[9]                                   |                                              |                1 |              1 |
+|  JOY_CLK_OBUF    | joy2[11]                                  |                                              |                1 |              1 |
+|  ena11           | pm/phoenix/cpu8085/u0/player2             |                                              |                1 |              1 |
+|  ena11           | pm/phoenix/video/hclk_i_reg_n_0           | pm/phoenix/video/hcnt_i[7]_i_1_n_0           |                3 |              3 |
+|  ena11           | pm/phoenix/effect3/shift_reg              |                                              |                2 |              3 |
+|  ena11           |                                           | pm/phoenix/effect1/u_c2[15]_i_1_n_0          |                1 |              4 |
+|  ena22           | pm/vga/ce_x2                              | pm/vga/hs_sd6_out                            |                2 |              4 |
+|  ena11           | pm/phoenix/effect1/cnt2[3]_i_1__0_n_0     |                                              |                1 |              4 |
+|  pclkx2          |                                           | pm/PLL_OSERDES                               |                1 |              4 |
+|  ena11           | pm/phoenix/music/tempo[14]_i_1_n_0        | pm/phoenix/music/tempo[10]_i_1_n_0           |                4 |              4 |
+|  pclk            | keyb/ps2/bit_count                        |                                              |                1 |              4 |
+|  ena11           | pm/phoenix/cpu8085/u0/F[5]_i_1_n_0        | pm/phoenix/cpu8085/resetHW                   |                3 |              4 |
+|  ena11           | pm/phoenix/effect2/cnt2[3]_i_1_n_0        |                                              |                2 |              4 |
+|  JOY_CLK_OBUF    |                                           | joy_count[4]_i_1_n_0                         |                2 |              5 |
+|  ena11           | pm/phoenix/music/step[6]_i_1_n_0          |                                              |                3 |              5 |
+|  pclk            |                                           | pm/PLL_OSERDES                               |                1 |              5 |
+|  ena11           | pm/phoenix/video/hclk_i_reg_n_0           |                                              |                2 |              6 |
+|  pm/phoenix/hclk |                                           |                                              |                3 |              6 |
+|  ena11           |                                           | pm/phoenix/music/step[6]_i_1_n_0             |                2 |              7 |
+|  ena11           | pm/phoenix/effect3/u_ctrl2_f[6]_i_2_n_0   | pm/phoenix/effect3/u_ctrl2_f[6]_i_1_n_0      |                1 |              7 |
+|  ena11           | pm/phoenix/music/voice1_vol               | pm/phoenix/music/cnt1                        |                4 |              8 |
+|  pclk            | keyb/ps2/DATA[7]_i_1_n_0                  |                                              |                2 |              8 |
+|  ena11           | pm/phoenix/cpu8085/u0/ACC[7]_i_1_n_0      | pm/phoenix/cpu8085/resetHW                   |                1 |              8 |
+|  ena11           | pm/phoenix/cpu8085/u0/BusA[7]_i_1_n_0     |                                              |                5 |              8 |
+|  ena11           | pm/phoenix/cpu8085/u0/DO[7]_i_1_n_0       | pm/phoenix/cpu8085/resetHW                   |                4 |              8 |
+|  ena11           | pm/phoenix/cpu8085/u0/IR[7]_i_1_n_0       | pm/phoenix/cpu8085/resetHW                   |                4 |              8 |
+|  ena11           | pm/phoenix/cpu8085/u0/SP[15]_i_1_n_0      | pm/phoenix/cpu8085/resetHW                   |                3 |              8 |
+|  ena11           | pm/phoenix/cpu8085/u0/SP[7]_i_1_n_0       | pm/phoenix/cpu8085/resetHW                   |                2 |              8 |
+|  ena11           | pm/phoenix/cpu8085/u0/TmpAddr[15]_i_1_n_0 | pm/phoenix/cpu8085/resetHW                   |                4 |              8 |
+|  ena11           | pm/phoenix/cpu8085/u0/TmpAddr[7]_i_1_n_0  | pm/phoenix/cpu8085/resetHW                   |                4 |              8 |
+|  ena11           | pm/phoenix/cpu8085/u0/A_reg[11]_0[0]      |                                              |                5 |              8 |
+|  ena11           | pm/phoenix/cpu8085/u0/A_reg[12]_1[0]      |                                              |                2 |              8 |
+|  ena11           | pm/phoenix/cpu8085/u0/E[0]                | pm/phoenix/cpu8085/resetHW                   |                4 |              8 |
+|  ena11           | pm/phoenix/cpu8085/u0/WR_n_reg[0]         |                                              |                1 |              8 |
+|  ena11           | pm/phoenix/music/voice2_vol[7]_i_2_n_0    | pm/phoenix/music/cnt1                        |                5 |              8 |
+|  ena22           |                                           |                                              |                3 |              8 |
+|  ena11           |                                           | pm/phoenix/effect3/u_c3[15]_i_1_n_0          |                3 |              9 |
+|  ena11           | pm/phoenix/video/vcnt_i[9]_i_1_n_0        | pm/phoenix/video/hcnt_i[7]_i_1_n_0           |                5 |              9 |
+|  ena11           | pm/phoenix/music/voice1_down_rate         | pm/phoenix/music/voice1_down_rate[8]_i_1_n_0 |                4 |              9 |
+|  ena11           | pm/phoenix/music/voice2_down_rate         | pm/phoenix/music/voice2_down_rate[8]_i_1_n_0 |                3 |              9 |
+|  ena22           | pm/vga/ce_x1                              | pm/vga/line_toggle                           |                2 |              9 |
+|  ena22           | pm/vga/hs_rise_0                          |                                              |                3 |              9 |
+|  ena22           | pm/vga/line_toggle                        |                                              |                2 |              9 |
+|  pclk            | keyb/ps2/shiftreg                         |                                              |                2 |              9 |
+|  ena11           | pm/phoenix/music/voice1_code              |                                              |                8 |             12 |
+|  ena11           | pm/phoenix/music/tempo[14]_i_1_n_0        |                                              |                5 |             13 |
+|  ena11           |                                           | pm/phoenix/effect1/u_c1[15]_i_1_n_0          |                4 |             13 |
+|  ena11           |                                           | pm/phoenix/effect3/u_c1[15]_i_1__1_n_0       |                4 |             14 |
+|  ena11           |                                           | pm/phoenix/effect2/u_c1[15]_i_1__0_n_0       |                4 |             14 |
+|  ena11           | pm/phoenix/cpu8085/u0/A[14]_i_1_n_0       | pm/phoenix/cpu8085/resetHW                   |               11 |             15 |
+|  ena11           |                                           | pm/phoenix/effect3/u_c2[15]_i_1__1_n_0       |                4 |             15 |
+|  ena11           | pm/phoenix/effect2/load                   |                                              |                4 |             16 |
+|  ena11           | pm/phoenix/effect2/u_c1[15]_i_1__0_n_0    |                                              |                4 |             16 |
+|  ena11           | pm/phoenix/effect2/u_c2[15]_i_1__0_n_0    |                                              |                4 |             16 |
+|  ena11           | pm/phoenix/cpu8085/u0/PC[15]_i_1_n_0      | pm/phoenix/cpu8085/resetHW                   |                6 |             16 |
+|  ena11           | pm/phoenix/effect3/u_c1[15]_i_1__1_n_0    |                                              |                4 |             16 |
+|  ena11           | pm/phoenix/effect3/u_c2[15]_i_1__1_n_0    |                                              |                4 |             16 |
+|  ena11           | pm/phoenix/effect3/u_c3[15]_i_1_n_0       |                                              |                4 |             16 |
+|  ena11           |                                           | pm/phoenix/music/cnt01_in                    |                4 |             16 |
+|  ena11           |                                           | pm/phoenix/music/cnt0                        |                4 |             16 |
+|  ena11           |                                           | pm/phoenix/effect3/u_ctrl2_f[6]_i_2_n_0      |                4 |             16 |
+|  ena11           | pm/phoenix/effect1/load                   |                                              |                4 |             16 |
+|  ena11           | pm/phoenix/effect1/u_c1[15]_i_1_n_0       |                                              |                4 |             16 |
+|  ena11           |                                           | pm/phoenix/effect2/u_c2[15]_i_1__0_n_0       |                4 |             16 |
+|  ena11           | pm/phoenix/effect1/u_c2[15]_i_1_n_0       |                                              |                4 |             16 |
+|  ena11           | pm/phoenix/effect2/u_c3                   |                                              |                5 |             17 |
+|  ena22           | pm/vga/ce_x2                              |                                              |                4 |             17 |
+|  ena11           | pm/phoenix/video/E[0]                     |                                              |                5 |             19 |
+|  ena11           | pm/phoenix/video/hcnt_i_reg[4]_0[0]       |                                              |                7 |             19 |
+|  ena11           |                                           | pm/debounce/button_debounced[2]              |                6 |             22 |
+|  ena11           | pm/phoenix/cpu8085/u0/Regs/WEH            |                                              |                4 |             32 |
+|  ena11           | pm/phoenix/cpu8085/u0/Regs/WEL            |                                              |                4 |             32 |
+|  ena11           |                                           | pm/phoenix/cpu8085/resetHW                   |               22 |             32 |
+|  pclkx2          |                                           |                                              |               19 |             45 |
+|  pclk            |                                           |                                              |               22 |             62 |
+|  ena11           |                                           |                                              |               42 |             75 |
++------------------+-------------------------------------------+----------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,1 @@
+Solo funciona en placa A35T las otras no tienen memoria bram suficiente

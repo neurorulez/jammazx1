@@ -1,0 +1,60 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Aug 15 15:58:58 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "JOY_LOAD" LOCATE = SITE "T12" LEVEL 1;
+COMP "blue<0>" LOCATE = SITE "C15" LEVEL 1;
+COMP "blue<1>" LOCATE = SITE "B15" LEVEL 1;
+COMP "blue<2>" LOCATE = SITE "E12" LEVEL 1;
+COMP "ps2_clk" LOCATE = SITE "M11" LEVEL 1;
+COMP "audio_l" LOCATE = SITE "H11" LEVEL 1;
+COMP "audio_r" LOCATE = SITE "H13" LEVEL 1;
+COMP "hsync" LOCATE = SITE "G12" LEVEL 1;
+COMP "vsync" LOCATE = SITE "H16" LEVEL 1;
+COMP "sram_addr<0>" LOCATE = SITE "H14" LEVEL 1;
+COMP "sram_addr<1>" LOCATE = SITE "J16" LEVEL 1;
+COMP "sram_addr<2>" LOCATE = SITE "J11" LEVEL 1;
+COMP "sram_addr<3>" LOCATE = SITE "J13" LEVEL 1;
+COMP "sram_addr<4>" LOCATE = SITE "K16" LEVEL 1;
+COMP "sram_addr<5>" LOCATE = SITE "K11" LEVEL 1;
+COMP "sram_addr<6>" LOCATE = SITE "L12" LEVEL 1;
+COMP "sram_addr<7>" LOCATE = SITE "M13" LEVEL 1;
+COMP "sram_addr<8>" LOCATE = SITE "M15" LEVEL 1;
+COMP "sram_addr<9>" LOCATE = SITE "N14" LEVEL 1;
+COMP "sram_data<0>" LOCATE = SITE "K15" LEVEL 1;
+COMP "sram_data<1>" LOCATE = SITE "N16" LEVEL 1;
+COMP "sram_data<2>" LOCATE = SITE "L16" LEVEL 1;
+COMP "sram_data<3>" LOCATE = SITE "K12" LEVEL 1;
+COMP "sram_data<4>" LOCATE = SITE "J14" LEVEL 1;
+COMP "sram_data<5>" LOCATE = SITE "P15" LEVEL 1;
+COMP "sram_data<6>" LOCATE = SITE "P16" LEVEL 1;
+COMP "sram_data<7>" LOCATE = SITE "R15" LEVEL 1;
+COMP "LED<0>" LOCATE = SITE "T9" LEVEL 1;
+COMP "BTN<0>" LOCATE = SITE "T8" LEVEL 1;
+COMP "LED<1>" LOCATE = SITE "R9" LEVEL 1;
+COMP "BTN<1>" LOCATE = SITE "R7" LEVEL 1;
+COMP "clk50mhz" LOCATE = SITE "A10" LEVEL 1;
+COMP "ps2_data" LOCATE = SITE "P12" LEVEL 1;
+COMP "red<0>" LOCATE = SITE "F14" LEVEL 1;
+COMP "red<1>" LOCATE = SITE "F13" LEVEL 1;
+COMP "red<2>" LOCATE = SITE "G11" LEVEL 1;
+COMP "green<0>" LOCATE = SITE "D16" LEVEL 1;
+COMP "green<1>" LOCATE = SITE "C16" LEVEL 1;
+COMP "green<2>" LOCATE = SITE "B16" LEVEL 1;
+COMP "sram_we_n" LOCATE = SITE "M16" LEVEL 1;
+COMP "sram_addr<10>" LOCATE = SITE "L14" LEVEL 1;
+COMP "sram_addr<11>" LOCATE = SITE "M14" LEVEL 1;
+COMP "sram_addr<12>" LOCATE = SITE "K14" LEVEL 1;
+COMP "sram_addr<13>" LOCATE = SITE "L13" LEVEL 1;
+COMP "sram_addr<14>" LOCATE = SITE "J12" LEVEL 1;
+COMP "sram_addr<15>" LOCATE = SITE "T14" LEVEL 1;
+COMP "sram_addr<16>" LOCATE = SITE "T15" LEVEL 1;
+COMP "sram_addr<17>" LOCATE = SITE "R14" LEVEL 1;
+COMP "sram_addr<18>" LOCATE = SITE "R16" LEVEL 1;
+COMP "JOY_DATA" LOCATE = SITE "T13" LEVEL 1;
+COMP "JOY_CLK" LOCATE = SITE "R12" LEVEL 1;
+NET "clk_12" PERIOD = 83.3333 ns HIGH 50%;
+NET "relojes/clkin1" PERIOD = 20 ns HIGH 50%;
+SCHEMATIC END;
+

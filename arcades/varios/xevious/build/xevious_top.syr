@@ -1,0 +1,2246 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: xevious_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "xevious_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "xevious_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-ftg256
+
+---- Source Options
+Top Module Name                    : xevious_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\repos\a35\xevious\src\multiboot.v" into library work
+Parsing module <multiboot>.
+Parsing module <multiboot_spartan6>.
+Analyzing Verilog file "F:\repos\a35\xevious\src\modulo_top_a35t.v" into library work
+Parsing module <xevious_top>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_T80\T80_Reg.vhd" into library work
+Parsing entity <T80_Reg>.
+Parsing architecture <rtl> of entity <t80_reg>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_T80\T80_Pack.vhd" into library work
+Parsing package <T80_Pack>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_T80\T80_MCode.vhd" into library work
+Parsing entity <T80_MCode>.
+Parsing architecture <rtl> of entity <t80_mcode>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_T80\T80_ALU.vhd" into library work
+Parsing entity <T80_ALU>.
+Parsing architecture <rtl> of entity <t80_alu>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_T80\T80.vhd" into library work
+Parsing entity <T80>.
+Parsing architecture <rtl> of entity <t80>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_dar\gen_ram.vhd" into library work
+Parsing entity <gen_ram>.
+Parsing architecture <rtl> of entity <gen_ram>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\sound_seq.vhd" into library work
+Parsing entity <sound_seq>.
+Parsing architecture <prom> of entity <sound_seq>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\sound_samples.vhd" into library work
+Parsing entity <sound_samples>.
+Parsing architecture <prom> of entity <sound_samples>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_T80\T80se.vhd" into library work
+Parsing entity <T80se>.
+Parsing architecture <rtl> of entity <t80se>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_mio\line_doubler.vhd" into library work
+Parsing entity <line_doubler>.
+Parsing architecture <struct> of entity <line_doubler>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_mio\keyb\ps2_intf.vhd" into library work
+Parsing entity <ps2_intf>.
+Parsing architecture <ps2_intf_arch> of entity <ps2_intf>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_mio\debounce.vhd" into library work
+Parsing entity <DEBOUNCE>.
+Parsing architecture <RTL> of entity <debounce>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_mio\dac.vhd" into library work
+Parsing entity <dac>.
+Parsing architecture <rtl> of entity <dac>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_dar\sound_machine.vhd" into library work
+Parsing entity <sound_machine>.
+Parsing architecture <struct> of entity <sound_machine>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_dar\mb88.vhd" into library work
+Parsing entity <mb88>.
+Parsing architecture <struct> of entity <mb88>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_dar\gen_video.vhd" into library work
+Parsing entity <gen_video>.
+Parsing architecture <struct> of entity <gen_video>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\xevious_cpu_gfx_8bits.vhd" into library work
+Parsing entity <xevious_cpu_gfx_8bits>.
+Parsing architecture <prom> of entity <xevious_cpu_gfx_8bits>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\terrain_2c.vhd" into library work
+Parsing entity <terrain_2c>.
+Parsing architecture <prom> of entity <terrain_2c>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\terrain_2b.vhd" into library work
+Parsing entity <terrain_2b>.
+Parsing architecture <prom> of entity <terrain_2b>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\terrain_2a.vhd" into library work
+Parsing entity <terrain_2a>.
+Parsing architecture <prom> of entity <terrain_2a>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\sp_palette_msb.vhd" into library work
+Parsing entity <sp_palette_msb>.
+Parsing architecture <prom> of entity <sp_palette_msb>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\sp_palette_lsb.vhd" into library work
+Parsing entity <sp_palette_lsb>.
+Parsing architecture <prom> of entity <sp_palette_lsb>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\red.vhd" into library work
+Parsing entity <red>.
+Parsing architecture <prom> of entity <red>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\green.vhd" into library work
+Parsing entity <green>.
+Parsing architecture <prom> of entity <green>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\cs54xx_prog.vhd" into library work
+Parsing entity <cs54xx_prog>.
+Parsing architecture <prom> of entity <cs54xx_prog>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\cs50xx_prog.vhd" into library work
+Parsing entity <cs50xx_prog>.
+Parsing architecture <prom> of entity <cs50xx_prog>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\blue.vhd" into library work
+Parsing entity <blue>.
+Parsing architecture <prom> of entity <blue>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\bg_palette_msb.vhd" into library work
+Parsing entity <bg_palette_msb>.
+Parsing architecture <prom> of entity <bg_palette_msb>.
+Parsing VHDL file "F:\repos\a35\xevious\src\roms\bg_palette_lsb.vhd" into library work
+Parsing entity <bg_palette_lsb>.
+Parsing architecture <prom> of entity <bg_palette_lsb>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_mio\keyb\keyboard.vhd" into library work
+Parsing entity <keyboard>.
+Parsing architecture <rtl> of entity <keyboard>.
+Parsing VHDL file "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" into library work
+Parsing entity <xevious>.
+Parsing architecture <struct> of entity <xevious>.
+WARNING:HDLCompiler:946 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" Line 1525: Actual for formal port r2_port_in is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <xevious_top>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <PLL_BASE(CLKIN_PERIOD=20,CLKFBOUT_MULT=18,CLKOUT0_DIVIDE=50,COMPENSATION="INTERNAL")>.
+Going to vhdl side to elaborate module xevious
+
+Elaborating entity <xevious> (architecture <struct>) from library <work>.
+WARNING:HDLCompiler:92 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" Line 731: vcnt should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" Line 758: Assignment to fg_code ignored, since the identifier is never used
+
+Elaborating entity <line_doubler> (architecture <struct>) from library <work>.
+WARNING:HDLCompiler:92 - "F:\repos\a35\xevious\src\rtl_mio\line_doubler.vhd" Line 91: scanline should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\repos\a35\xevious\src\rtl_mio\line_doubler.vhd" Line 92: video should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\repos\a35\xevious\src\rtl_mio\line_doubler.vhd" Line 94: video should be on the sensitivity list of the process
+
+Elaborating entity <sound_machine> (architecture <struct>) from library <work>.
+WARNING:HDLCompiler:92 - "F:\repos\a35\xevious\src\rtl_dar\sound_machine.vhd" Line 74: ena should be on the sensitivity list of the process
+
+Elaborating entity <gen_ram> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <sound_samples> (architecture <prom>) from library <work>.
+
+Elaborating entity <sound_seq> (architecture <prom>) from library <work>.
+WARNING:HDLCompiler:1127 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" Line 1028: Assignment to cs50xx_cmd ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" Line 1321: Assignment to cs50xx_cmd_80_do ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" Line 1328: Assignment to cs50xx_cmd_e5_do ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" Line 1352: ena_vidgen should be on the sensitivity list of the process
+
+Elaborating entity <gen_video> (architecture <struct>) from library <work>.
+WARNING:HDLCompiler:92 - "F:\repos\a35\xevious\src\rtl_dar\gen_video.vhd" Line 54: enable should be on the sensitivity list of the process
+
+Elaborating entity <T80se> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <T80> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <T80_MCode> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <T80_ALU> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <T80_Reg> (architecture <rtl>) from library <work>.
+
+Elaborating entity <mb88> (architecture <struct>) from library <work>.
+WARNING:HDLCompiler:1127 - "F:\repos\a35\xevious\src\rtl_dar\mb88.vhd" Line 227: Assignment to a_p1_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\repos\a35\xevious\src\rtl_dar\mb88.vhd" Line 228: Assignment to a_p1_c ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\repos\a35\xevious\src\rtl_dar\mb88.vhd" Line 231: Assignment to a_m1_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\repos\a35\xevious\src\rtl_dar\mb88.vhd" Line 232: Assignment to a_m1_c ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\repos\a35\xevious\src\rtl_dar\mb88.vhd" Line 309: Assignment to daa_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\repos\a35\xevious\src\rtl_dar\mb88.vhd" Line 313: Assignment to das_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\repos\a35\xevious\src\rtl_dar\mb88.vhd" Line 317: Assignment to dca_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\repos\a35\xevious\src\rtl_dar\mb88.vhd" Line 318: Assignment to dca_c ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\repos\a35\xevious\src\rtl_dar\mb88.vhd" Line 352: Assignment to r_tp ignored, since the identifier is never used
+
+Elaborating entity <cs54xx_prog> (architecture <prom>) from library <work>.
+
+Elaborating entity <cs50xx_prog> (architecture <prom>) from library <work>.
+
+Elaborating entity <terrain_2a> (architecture <prom>) from library <work>.
+
+Elaborating entity <terrain_2b> (architecture <prom>) from library <work>.
+
+Elaborating entity <terrain_2c> (architecture <prom>) from library <work>.
+
+Elaborating entity <gen_ram> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <gen_ram> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <bg_palette_lsb> (architecture <prom>) from library <work>.
+
+Elaborating entity <bg_palette_msb> (architecture <prom>) from library <work>.
+
+Elaborating entity <red> (architecture <prom>) from library <work>.
+
+Elaborating entity <green> (architecture <prom>) from library <work>.
+
+Elaborating entity <blue> (architecture <prom>) from library <work>.
+
+Elaborating entity <gen_ram> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <sp_palette_lsb> (architecture <prom>) from library <work>.
+
+Elaborating entity <sp_palette_msb> (architecture <prom>) from library <work>.
+
+Elaborating entity <xevious_cpu_gfx_8bits> (architecture <prom>) from library <work>.
+
+Elaborating entity <dac> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <DEBOUNCE> (architecture <RTL>) with generics from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module keyboard
+
+Elaborating entity <keyboard> (architecture <rtl>) from library <work>.
+
+Elaborating entity <ps2_intf> (architecture <ps2_intf_arch>) with generics from library <work>.
+Back to verilog to continue elaboration
+
+Elaborating module <multiboot>.
+WARNING:HDLCompiler:872 - "F:\repos\a35\xevious\src\multiboot.v" Line 6: Using initial value of spi_addr since it is never assigned
+WARNING:HDLCompiler:1016 - "F:\repos\a35\xevious\src\multiboot.v" Line 38: Port BUSY is not connected to this instance
+
+Elaborating module <multiboot_spartan6>.
+
+Elaborating module <ICAP_SPARTAN6>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <xevious_top>.
+    Related source file is "F:\repos\a35\xevious\src\modulo_top_a35t.v".
+WARNING:Xst:647 - Input <sram_data<7:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\modulo_top_a35t.v" line 170: Output port <JOYSTICK_A_GND> of the instance <pm> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\modulo_top_a35t.v" line 170: Output port <JOYSTICK_B_GND> of the instance <pm> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <pm_reset>.
+    Found 8-bit register for signal <delay_count>.
+    Found 1-bit register for signal <JOY_LOAD>.
+    Found 5-bit register for signal <joy_count>.
+    Found 1-bit register for signal <joystick1<11>>.
+    Found 1-bit register for signal <joy1<9>>.
+    Found 1-bit register for signal <joy1<8>>.
+    Found 1-bit register for signal <joy1<5>>.
+    Found 1-bit register for signal <joy1<4>>.
+    Found 1-bit register for signal <joy1<3>>.
+    Found 1-bit register for signal <joy1<2>>.
+    Found 1-bit register for signal <joy1<1>>.
+    Found 1-bit register for signal <joy1<0>>.
+    Found 1-bit register for signal <joystick2<11>>.
+    Found 1-bit register for signal <joy2<9>>.
+    Found 1-bit register for signal <joy2<8>>.
+    Found 1-bit register for signal <joy2<5>>.
+    Found 1-bit register for signal <joy2<4>>.
+    Found 1-bit register for signal <joy2<3>>.
+    Found 1-bit register for signal <joy2<2>>.
+    Found 1-bit register for signal <joy2<1>>.
+    Found 1-bit register for signal <joy2<0>>.
+    Found 8-bit adder for signal <delay_count[7]_GND_1_o_add_0_OUT> created at line 90.
+    Found 5-bit adder for signal <joy_count[4]_GND_1_o_add_9_OUT> created at line 136.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+Unit <xevious_top> synthesized.
+
+Synthesizing Unit <xevious>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd".
+WARNING:Xst:647 - Input <I_TABLE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <scanSW<7:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <scanSW<10:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <scandblctrl<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tv15Khz_mode> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <resetKey> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1389: Output port <csync> of the instance <gen_video> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1402: Output port <M1_n> of the instance <cpu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1402: Output port <IORQ_n> of the instance <cpu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1402: Output port <RD_n> of the instance <cpu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1402: Output port <RFSH_n> of the instance <cpu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1402: Output port <HALT_n> of the instance <cpu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1402: Output port <BUSAK_n> of the instance <cpu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1426: Output port <M1_n> of the instance <cpu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1426: Output port <IORQ_n> of the instance <cpu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1426: Output port <RD_n> of the instance <cpu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1426: Output port <RFSH_n> of the instance <cpu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1426: Output port <HALT_n> of the instance <cpu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1426: Output port <BUSAK_n> of the instance <cpu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1451: Output port <M1_n> of the instance <cpu3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1451: Output port <IORQ_n> of the instance <cpu3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1451: Output port <RD_n> of the instance <cpu3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1451: Output port <RFSH_n> of the instance <cpu3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1451: Output port <HALT_n> of the instance <cpu3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1451: Output port <BUSAK_n> of the instance <cpu3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1476: Output port <r0_port_out> of the instance <mb88_54xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1476: Output port <r1_port_out> of the instance <mb88_54xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1476: Output port <r2_port_out> of the instance <mb88_54xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1476: Output port <r3_port_out> of the instance <mb88_54xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1476: Output port <p_port_out> of the instance <mb88_54xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1476: Output port <sc_out_n> of the instance <mb88_54xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1476: Output port <so_n> of the instance <mb88_54xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1476: Output port <to_n> of the instance <mb88_54xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1517: Output port <r0_port_out> of the instance <mb88_50xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1517: Output port <r1_port_out> of the instance <mb88_50xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1517: Output port <r2_port_out> of the instance <mb88_50xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1517: Output port <r3_port_out> of the instance <mb88_50xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1517: Output port <p_port_out> of the instance <mb88_50xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1517: Output port <sc_out_n> of the instance <mb88_50xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1517: Output port <so_n> of the instance <mb88_50xx> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_dar\xevious.vhd" line 1517: Output port <to_n> of the instance <mb88_50xx> is unconnected or connected to loadless signal.
+    Register <sp_ram_clr> equivalent to <ena_vidgen> has been removed
+    Found 1-bit register for signal <cpu2_irq_n>.
+    Found 1-bit register for signal <cs54xx_irq_n>.
+    Found 1-bit register for signal <cs50xx_irq_n>.
+    Found 1-bit register for signal <cpu1_irq_n>.
+    Found 4-bit register for signal <cs54xx_irq_cnt>.
+    Found 4-bit register for signal <cs50xx_irq_cnt>.
+    Found 4-bit register for signal <cs50xx_k_port_in>.
+    Found 4-bit register for signal <cs50xx_r0_port_in>.
+    Found 3-bit register for signal <cs51XX_coin_mode_cnt>.
+    Found 2-bit register for signal <cs51XX_data_cnt>.
+    Found 1-bit register for signal <irq1_clr_n>.
+    Found 1-bit register for signal <irq2_clr_n>.
+    Found 1-bit register for signal <nmion_n>.
+    Found 1-bit register for signal <reset_cpu_n>.
+    Found 1-bit register for signal <flip_h>.
+    Found 3-bit register for signal <slot>.
+    Found 1-bit register for signal <ena_vidgen>.
+    Found 1-bit register for signal <ena_snd_machine>.
+    Found 1-bit register for signal <cpu1_ena>.
+    Found 1-bit register for signal <cpu2_ena>.
+    Found 1-bit register for signal <cpu3_ena>.
+    Found 1-bit register for signal <ena_sprite>.
+    Found 1-bit register for signal <ena_sprite_grph0>.
+    Found 1-bit register for signal <ena_sprite_grph1>.
+    Found 1-bit register for signal <cs54xx_ena>.
+    Found 6-bit register for signal <sprite_num>.
+    Found 3-bit register for signal <sprite_state>.
+    Found 9-bit register for signal <sp_ram_rd_addr>.
+    Found 8-bit register for signal <sprite_code>.
+    Found 8-bit register for signal <sprite_attr>.
+    Found 5-bit register for signal <sprite_vcnt>.
+    Found 8-bit register for signal <sprite_color>.
+    Found 9-bit register for signal <sp_ram_wr_addr>.
+    Found 5-bit register for signal <sprite_hcnt>.
+    Found 8-bit register for signal <sp_grphx_0>.
+    Found 4-bit register for signal <sp_grphx_1>.
+    Found 7-bit register for signal <sp_color_rd>.
+    Found 9-bit register for signal <bg_offset_hs>.
+    Found 9-bit register for signal <bg_offset_vs>.
+    Found 8-bit register for signal <fg_code_p>.
+    Found 8-bit register for signal <fg_attr_p>.
+    Found 8-bit register for signal <fg_grphx_p>.
+    Found 8-bit register for signal <bg_code_p>.
+    Found 8-bit register for signal <bg_attr_p>.
+    Found 8-bit register for signal <bg_grphx_0_p>.
+    Found 8-bit register for signal <bg_grphx_1_p>.
+    Found 8-bit register for signal <fg_attr>.
+    Found 8-bit register for signal <bg_attr>.
+    Found 8-bit register for signal <bg_code>.
+    Found 8-bit register for signal <fg_grphx>.
+    Found 8-bit register for signal <bg_grphx_0>.
+    Found 8-bit register for signal <bg_grphx_1>.
+    Found 8-bit register for signal <bg_color_delay_0>.
+    Found 8-bit register for signal <bg_color_delay_1>.
+    Found 8-bit register for signal <bg_color_delay_2>.
+    Found 8-bit register for signal <bg_color_delay_3>.
+    Found 8-bit register for signal <bg_color_delay_4>.
+    Found 8-bit register for signal <bg_color_delay_5>.
+    Found 6-bit register for signal <bg_color>.
+    Found 7-bit register for signal <fg_color>.
+    Found 8-bit register for signal <rgb_palette_addr>.
+    Found 8-bit register for signal <n0862[7:0]>.
+    Found 8-bit register for signal <terrain_bb0>.
+    Found 8-bit register for signal <terrain_bb1>.
+    Found 6-bit register for signal <hcnt_r<5:0>>.
+    Found 9-bit register for signal <bg_offset_h>.
+    Found 9-bit register for signal <fg_offset_h>.
+    Found 9-bit register for signal <bg_offset_v>.
+    Found 9-bit register for signal <fg_offset_v>.
+    Found 8-bit register for signal <terrain_bs0>.
+    Found 8-bit register for signal <terrain_bs1>.
+    Found 4-bit register for signal <cs54xx_k_port_in>.
+    Found 4-bit register for signal <cs54xx_r0_port_in>.
+    Found 1-bit register for signal <cs51XX_switch_mode>.
+    Found 1-bit register for signal <cs51XX_credit_mode>.
+    Found 1-bit register for signal <cs5Xxx_rw>.
+    Found 8-bit register for signal <cs06XX_control>.
+    Found 14-bit register for signal <cs06XX_nmi_cnt>.
+    Found 1-bit register for signal <cpu1_nmi_n>.
+    Found 1-bit register for signal <change_next>.
+    Found 1-bit register for signal <coin_r>.
+    Found 1-bit register for signal <start1_r>.
+    Found 1-bit register for signal <start2_r>.
+    Found 4-bit register for signal <credit_bcd_1>.
+    Found 4-bit register for signal <credit_bcd_0>.
+    Found 1-bit register for signal <cpu3_nmi_n>.
+    Found 1-bit register for signal <b_svce>.
+    Found 1-bit register for signal <b_test>.
+    Found 1-bit register for signal <coin>.
+    Found 1-bit register for signal <start1>.
+    Found 1-bit register for signal <start2>.
+    Found 1-bit register for signal <fire>.
+    Found 1-bit register for signal <bomb>.
+    Found 1-bit register for signal <right>.
+    Found 1-bit register for signal <left>.
+    Found 1-bit register for signal <down>.
+    Found 1-bit register for signal <up>.
+    Found 5-bit register for signal <slot24>.
+    Found finite state machine <FSM_0> for signal <sprite_state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clock_18 (rising_edge)                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit adder for signal <n1173> created at line 449.
+    Found 11-bit adder for signal <audio> created at line 449.
+    Found 5-bit adder for signal <slot24[4]_GND_9_o_add_7_OUT> created at line 486.
+    Found 3-bit adder for signal <slot[2]_GND_9_o_add_8_OUT> created at line 487.
+    Found 8-bit adder for signal <sp_line> created at line 570.
+    Found 6-bit adder for signal <sprite_num[5]_GND_9_o_add_39_OUT> created at line 601.
+    Found 5-bit adder for signal <sprite_hcnt[4]_GND_9_o_add_63_OUT> created at line 645.
+    Found 9-bit adder for signal <sp_ram_wr_addr[8]_GND_9_o_add_64_OUT> created at line 646.
+    Found 9-bit adder for signal <sp_ram_rd_addr[8]_GND_9_o_add_87_OUT> created at line 677.
+    Found 9-bit adder for signal <bg_offset_h[8]_PWR_9_o_add_126_OUT> created at line 738.
+    Found 9-bit adder for signal <bg_offset_v[8]_GND_9_o_add_127_OUT> created at line 739.
+    Found 9-bit adder for signal <bg_scan_h> created at line 747.
+    Found 9-bit adder for signal <bg_scan_v> created at line 748.
+    Found 9-bit adder for signal <fg_offset_hs> created at line 751.
+    Found 9-bit adder for signal <fg_scan_h> created at line 754.
+    Found 9-bit adder for signal <fg_scan_v> created at line 755.
+    Found 17-bit adder for signal <GND_9_o_GND_9_o_add_239_OUT> created at line 985.
+    Found 17-bit adder for signal <GND_9_o_GND_9_o_add_241_OUT> created at line 984.
+    Found 14-bit adder for signal <cs06XX_nmi_cnt[13]_GND_9_o_add_360_OUT> created at line 1184.
+    Found 2-bit adder for signal <cs51XX_data_cnt[1]_GND_9_o_add_367_OUT> created at line 1204.
+    Found 4-bit adder for signal <credit_bcd_1[3]_GND_9_o_add_381_OUT> created at line 1226.
+    Found 4-bit adder for signal <credit_bcd_0[3]_GND_9_o_add_384_OUT> created at line 1230.
+    Found 4-bit subtractor for signal <GND_9_o_GND_9_o_sub_299_OUT<3:0>> created at line 1083.
+    Found 4-bit subtractor for signal <GND_9_o_GND_9_o_sub_303_OUT<3:0>> created at line 1091.
+    Found 3-bit subtractor for signal <GND_9_o_GND_9_o_sub_318_OUT<2:0>> created at line 1131.
+    Found 4-bit subtractor for signal <GND_9_o_GND_9_o_sub_392_OUT<3:0>> created at line 1242.
+    Found 4-bit subtractor for signal <GND_9_o_GND_9_o_sub_395_OUT<3:0>> created at line 1246.
+    Found 4-bit subtractor for signal <GND_9_o_GND_9_o_sub_408_OUT<3:0>> created at line 1264.
+    Found 16x4-bit Read Only RAM for signal <joy>
+    Found 15-bit 4-to-1 multiplexer for signal <sp_grphx_addr> created at line 709.
+    Found 1-bit 4-to-1 multiplexer for signal <sp_palette_addr<2>> created at line 717.
+    Found 1-bit 8-to-1 multiplexer for signal <sp_palette_addr<1>> created at line 718.
+    Found 1-bit 8-to-1 multiplexer for signal <sp_palette_addr<0>> created at line 719.
+    Found 1-bit 8-to-1 multiplexer for signal <bg_bits<1>> created at line 823.
+    Found 1-bit 8-to-1 multiplexer for signal <bg_bits<0>> created at line 824.
+    Found 1-bit 8-to-1 multiplexer for signal <fg_bit> created at line 827.
+    Found 8-bit 3-to-1 multiplexer for signal <cs51XX_switch_mode_do> created at line 1294.
+    Found 8-bit 4-to-1 multiplexer for signal <cs51XX_non_switch_mode_do> created at line 1304.
+    Found 6-bit 8-to-1 multiplexer for signal <n1114> created at line 834.
+    Found 14-bit comparator greater for signal <n0498> created at line 1178
+    Found 14-bit comparator greater for signal <cs06XX_nmi_cnt[13]_GND_9_o_LessThan_360_o> created at line 1183
+    Summary:
+	inferred   1 RAM(s).
+	inferred  27 Adder/Subtractor(s).
+	inferred 455 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred 189 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <xevious> synthesized.
+
+Synthesizing Unit <line_doubler>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_mio\line_doubler.vhd".
+WARNING:Xst:3015 - Contents of array <ram1> may be accessed with an index that does not cover the full array size or with a negative index. The RAM size is reduced to the index upper access or for only positive index values.
+    Found 512x8-bit dual-port RAM <Mram_ram1> for signal <ram1>.
+WARNING:Xst:3015 - Contents of array <ram2> may be accessed with an index that does not cover the full array size or with a negative index. The RAM size is reduced to the index upper access or for only positive index values.
+    Found 512x8-bit dual-port RAM <Mram_ram2> for signal <ram2>.
+    Found 1-bit register for signal <vsync_i_reg>.
+    Found 9-bit register for signal <vcnt_i>.
+    Found 1-bit register for signal <flip_flop>.
+    Found 10-bit register for signal <hcnt_i>.
+    Found 9-bit register for signal <hcnt_o>.
+    Found 1-bit register for signal <hsync_o>.
+    Found 1-bit register for signal <vsync_o>.
+    Found 8-bit register for signal <video>.
+    Found 1-bit register for signal <scanline>.
+    Found 1-bit register for signal <hsync_i_reg>.
+    Found 9-bit adder for signal <vcnt_i[8]_GND_10_o_add_0_OUT> created at line 49.
+    Found 10-bit adder for signal <hcnt_i[9]_GND_10_o_add_3_OUT> created at line 57.
+    Found 9-bit adder for signal <hcnt_o[8]_GND_10_o_add_6_OUT> created at line 63.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  42 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <line_doubler> synthesized.
+
+Synthesizing Unit <sound_machine>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_dar\sound_machine.vhd".
+    Found 1-bit register for signal <sum_3_rr>.
+    Found 8-bit register for signal <snd_samples_addr>.
+    Found 4-bit register for signal <samples_ch0>.
+    Found 4-bit register for signal <volume_ch0>.
+    Found 4-bit register for signal <samples_ch1>.
+    Found 4-bit register for signal <volume_ch1>.
+    Found 4-bit register for signal <samples_ch2>.
+    Found 4-bit register for signal <volume_ch2>.
+    Found 10-bit register for signal <audio>.
+    Found 5-bit register for signal <sum_r>.
+    Found 5-bit adder for signal <n0124> created at line 70.
+    Found 5-bit adder for signal <sum> created at line 70.
+    Found 10-bit adder for signal <n0130> created at line 100.
+    Found 10-bit adder for signal <GND_11_o_GND_11_o_add_25_OUT> created at line 100.
+    Found 4x4-bit multiplier for signal <samples_ch0[3]_volume_ch0[3]_MuLt_21_OUT> created at line 100.
+    Found 4x4-bit multiplier for signal <samples_ch1[3]_volume_ch1[3]_MuLt_22_OUT> created at line 101.
+    Found 4x4-bit multiplier for signal <samples_ch2[3]_volume_ch2[3]_MuLt_24_OUT> created at line 102.
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  48 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <sound_machine> synthesized.
+
+Synthesizing Unit <gen_ram_1>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_dar\gen_ram.vhd".
+        dWidth = 4
+        aWidth = 4
+    Found 16x4-bit single-port RAM <Mram_ram> for signal <ram>.
+    Found 4-bit register for signal <q>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 D-type flip-flop(s).
+Unit <gen_ram_1> synthesized.
+
+Synthesizing Unit <sound_samples>.
+    Related source file is "F:\repos\a35\xevious\src\roms\sound_samples.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'sound_samples', is tied to its initial value.
+    Found 256x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <sound_samples> synthesized.
+
+Synthesizing Unit <sound_seq>.
+    Related source file is "F:\repos\a35\xevious\src\roms\sound_seq.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'sound_seq', is tied to its initial value.
+    Found 256x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <sound_seq> synthesized.
+
+Synthesizing Unit <gen_video>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_dar\gen_video.vhd".
+    Found 9-bit register for signal <vcntReg>.
+    Found 1-bit register for signal <hsync0>.
+    Found 1-bit register for signal <hsync1>.
+    Found 1-bit register for signal <hsync2>.
+    Found 1-bit register for signal <csync>.
+    Found 1-bit register for signal <vsync>.
+    Found 1-bit register for signal <hblank>.
+    Found 1-bit register for signal <vblank>.
+    Found 1-bit register for signal <blankn>.
+    Found 9-bit register for signal <hcntReg>.
+    Found 9-bit adder for signal <hcntReg[8]_GND_16_o_add_3_OUT> created at line 1241.
+    Found 9-bit adder for signal <vcntReg[8]_GND_16_o_add_7_OUT> created at line 1241.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <gen_video> synthesized.
+
+Synthesizing Unit <T80se>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_T80\T80se.vhd".
+        Mode = 0
+        T2Write = 1
+        IOWait = 1
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_T80\T80se.vhd" line 107: Output port <IntE> of the instance <u0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\repos\a35\xevious\src\rtl_T80\T80se.vhd" line 107: Output port <Stop> of the instance <u0> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <WR_n>.
+    Found 1-bit register for signal <IORQ_n>.
+    Found 1-bit register for signal <MREQ_n>.
+    Found 1-bit register for signal <RD_n>.
+    Found 8-bit register for signal <DI_Reg>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred  11 Multiplexer(s).
+Unit <T80se> synthesized.
+
+Synthesizing Unit <T80>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_T80\T80.vhd".
+        Mode = 0
+        IOWait = 1
+        Flag_C = 0
+        Flag_N = 1
+        Flag_P = 2
+        Flag_X = 3
+        Flag_H = 4
+        Flag_Y = 5
+        Flag_Z = 6
+        Flag_S = 7
+    Found 1-bit register for signal <RFSH_n>.
+    Found 1-bit register for signal <M1_n>.
+    Found 1-bit register for signal <Alternate>.
+    Found 1-bit register for signal <Arith16_r>.
+    Found 1-bit register for signal <BTR_r>.
+    Found 1-bit register for signal <Z16_r>.
+    Found 1-bit register for signal <Save_ALU_r>.
+    Found 1-bit register for signal <PreserveC_r>.
+    Found 1-bit register for signal <XY_Ind>.
+    Found 1-bit register for signal <BusReq_s>.
+    Found 1-bit register for signal <INT_s>.
+    Found 1-bit register for signal <NMI_s>.
+    Found 1-bit register for signal <OldNMI_n>.
+    Found 1-bit register for signal <Halt_FF>.
+    Found 1-bit register for signal <BusAck>.
+    Found 1-bit register for signal <NMICycle>.
+    Found 1-bit register for signal <IntCycle>.
+    Found 1-bit register for signal <IntE_FF1>.
+    Found 1-bit register for signal <IntE_FF2>.
+    Found 1-bit register for signal <No_BTR>.
+    Found 1-bit register for signal <Auto_Wait_t1>.
+    Found 1-bit register for signal <Auto_Wait_t2>.
+    Found 16-bit register for signal <SP>.
+    Found 8-bit register for signal <F>.
+    Found 8-bit register for signal <Ap>.
+    Found 8-bit register for signal <Fp>.
+    Found 8-bit register for signal <ACC>.
+    Found 16-bit register for signal <A>.
+    Found 16-bit register for signal <TmpAddr>.
+    Found 16-bit register for signal <PC>.
+    Found 8-bit register for signal <IR>.
+    Found 8-bit register for signal <DO>.
+    Found 8-bit register for signal <I>.
+    Found 8-bit register for signal <R>.
+    Found 2-bit register for signal <ISet>.
+    Found 2-bit register for signal <XY_State>.
+    Found 2-bit register for signal <IStatus>.
+    Found 3-bit register for signal <MCycles>.
+    Found 3-bit register for signal <TState>.
+    Found 3-bit register for signal <Pre_XY_F_M>.
+    Found 5-bit register for signal <Read_To_Reg_r>.
+    Found 4-bit register for signal <ALU_Op_r>.
+    Found 3-bit register for signal <MCycle>.
+    Found 3-bit register for signal <RegAddrA_r>.
+    Found 3-bit register for signal <RegAddrB_r>.
+    Found 3-bit register for signal <RegAddrC>.
+    Found 1-bit register for signal <IncDecZ>.
+    Found 16-bit register for signal <RegBusA_r>.
+    Found 8-bit register for signal <BusB>.
+    Found 8-bit register for signal <BusA>.
+    Found 7-bit adder for signal <R[6]_GND_19_o_add_15_OUT> created at line 1241.
+    Found 16-bit adder for signal <TmpAddr[15]_GND_19_o_add_46_OUT> created at line 1241.
+    Found 16-bit adder for signal <PC[15]_DI_Reg[7]_add_69_OUT> created at line 554.
+    Found 16-bit adder for signal <PC[15]_GND_19_o_add_70_OUT> created at line 1241.
+    Found 16-bit adder for signal <RegBusC[15]_DI_Reg[7]_add_81_OUT> created at line 567.
+    Found 16-bit adder for signal <SP[15]_GND_19_o_add_88_OUT> created at line 1241.
+    Found 16-bit adder for signal <RegBusA[15]_GND_19_o_add_214_OUT> created at line 1253.
+    Found 3-bit adder for signal <Pre_XY_F_M[2]_GND_19_o_add_265_OUT> created at line 1241.
+    Found 3-bit adder for signal <MCycle[2]_GND_19_o_add_270_OUT> created at line 1241.
+    Found 3-bit adder for signal <TState[2]_GND_19_o_add_278_OUT> created at line 1241.
+    Found 16-bit subtractor for signal <GND_19_o_GND_19_o_sub_74_OUT<15:0>> created at line 1308.
+    Found 16-bit subtractor for signal <GND_19_o_GND_19_o_sub_88_OUT<15:0>> created at line 1308.
+    Found 16-bit subtractor for signal <RegBusA[15]_GND_19_o_sub_216_OUT<15:0>> created at line 1320.
+    Found 16-bit 7-to-1 multiplexer for signal <Set_Addr_To[2]_PC[15]_wide_mux_48_OUT> created at line 474.
+    Found 8-bit 3-to-1 multiplexer for signal <Special_LD[1]_ACC[7]_wide_mux_110_OUT> created at line 603.
+    Found 8-bit 11-to-1 multiplexer for signal <Set_BusB_To[3]_X_18_o_wide_mux_242_OUT> created at line 846.
+    Found 8-bit 3-to-1 multiplexer for signal <_n1666> created at line 603.
+    Found 3-bit comparator equal for signal <T_Res> created at line 334
+    Found 3-bit comparator equal for signal <MCycles[2]_MCycle[2]_equal_267_o> created at line 1030
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred 219 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred 257 Multiplexer(s).
+Unit <T80> synthesized.
+
+Synthesizing Unit <T80_MCode>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_T80\T80_MCode.vhd".
+        Mode = 0
+        Flag_C = 0
+        Flag_N = 1
+        Flag_P = 2
+        Flag_X = 3
+        Flag_H = 4
+        Flag_Y = 5
+        Flag_Z = 6
+        Flag_S = 7
+WARNING:Xst:647 - Input <F<1:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <F<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 256x25-bit Read Only RAM for signal <_n2095>
+    Found 1-bit 8-to-1 multiplexer for signal <IR[5]_F[7]_Mux_192_o> created at line 171.
+    Found 4-bit 3-to-1 multiplexer for signal <ISet[1]_IR[7]_wide_mux_462_OUT> created at line 248.
+    Found 4-bit 3-to-1 multiplexer for signal <Set_BusA_To> created at line 248.
+    Found 1-bit 3-to-1 multiplexer for signal <Read_To_Reg> created at line 248.
+    Found 3-bit 3-to-1 multiplexer for signal <MCycles> created at line 248.
+    Found 1-bit 3-to-1 multiplexer for signal <ISet[1]_IR[7]_Mux_467_o> created at line 248.
+    Found 3-bit 3-to-1 multiplexer for signal <ISet[1]_IR[7]_wide_mux_468_OUT> created at line 248.
+    Found 1-bit 3-to-1 multiplexer for signal <Write> created at line 248.
+    Found 1-bit 3-to-1 multiplexer for signal <Read_To_Acc> created at line 248.
+    Found 1-bit 3-to-1 multiplexer for signal <LDZ> created at line 248.
+    Found 1-bit 3-to-1 multiplexer for signal <LDW> created at line 248.
+    Found 1-bit 3-to-1 multiplexer for signal <Inc_WZ> created at line 248.
+    Found 3-bit 3-to-1 multiplexer for signal <ISet[1]_IR[7]_wide_mux_474_OUT> created at line 248.
+    Found 4-bit 3-to-1 multiplexer for signal <IncDec_16> created at line 248.
+    Found 1-bit 3-to-1 multiplexer for signal <Save_ALU> created at line 248.
+    Found 1-bit 3-to-1 multiplexer for signal <PreserveC> created at line 248.
+    Found 4-bit 3-to-1 multiplexer for signal <ALU_Op> created at line 248.
+    Found 1-bit 3-to-1 multiplexer for signal <Jump> created at line 248.
+    Found 1-bit 3-to-1 multiplexer for signal <ISet[1]_IR[7]_Mux_490_o> created at line 248.
+    Found 1-bit 3-to-1 multiplexer for signal <IORQ> created at line 248.
+    Summary:
+	inferred   1 RAM(s).
+	inferred 383 Multiplexer(s).
+Unit <T80_MCode> synthesized.
+
+Synthesizing Unit <T80_ALU>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_T80\T80_ALU.vhd".
+        Mode = 0
+        Flag_C = 0
+        Flag_N = 1
+        Flag_P = 2
+        Flag_X = 3
+        Flag_H = 4
+        Flag_Y = 5
+        Flag_Z = 6
+        Flag_S = 7
+    Found 6-bit adder for signal <n0124> created at line 104.
+    Found 5-bit adder for signal <n0123> created at line 104.
+    Found 3-bit adder for signal <n0122> created at line 104.
+    Found 9-bit adder for signal <GND_21_o_GND_21_o_add_21_OUT> created at line 1241.
+    Found 9-bit adder for signal <GND_21_o_GND_21_o_add_24_OUT> created at line 1241.
+    Found 8-bit subtractor for signal <GND_21_o_GND_21_o_sub_29_OUT<7:0>> created at line 1308.
+    Found 9-bit subtractor for signal <GND_21_o_GND_21_o_sub_32_OUT<8:0>> created at line 1308.
+    Found 8-bit 8-to-1 multiplexer for signal <IR[5]_GND_21_o_wide_mux_42_OUT> created at line 288.
+    Found 5-bit comparator greater for signal <GND_21_o_GND_21_o_LessThan_24_o> created at line 214
+    Found 4-bit comparator greater for signal <PWR_22_o_BusA[3]_LessThan_27_o> created at line 219
+    Found 4-bit comparator greater for signal <GND_21_o_BusA[3]_LessThan_28_o> created at line 220
+    Found 8-bit comparator greater for signal <PWR_22_o_BusA[7]_LessThan_31_o> created at line 225
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred  57 Multiplexer(s).
+Unit <T80_ALU> synthesized.
+
+Synthesizing Unit <T80_Reg>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_T80\T80_Reg.vhd".
+    Found 8x8-bit dual-port RAM <Mram_RegsH> for signal <RegsH>.
+    Found 8x8-bit dual-port RAM <Mram_RegsL> for signal <RegsL>.
+    Summary:
+	inferred   4 RAM(s).
+Unit <T80_Reg> synthesized.
+
+Synthesizing Unit <mb88>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_dar\mb88.vhd".
+WARNING:Xst:647 - Input <stby_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tc_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sc_in_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <si_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <sc_out_n> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <so_n> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <to_n> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 128x4-bit single-port RAM <Mram_ram> for signal <ram>.
+    Register <m_p1_c> equivalent to <m_p1_z> has been removed
+    Found 1-bit register for signal <mem_z>.
+    Found 1-bit register for signal <m_p1_z>.
+    Found 1-bit register for signal <m_m1_z>.
+    Found 1-bit register for signal <m_m1_c>.
+    Found 1-bit register for signal <irq_n_r>.
+    Found 1-bit register for signal <r_nf>.
+    Found 1-bit register for signal <interrupt_pending>.
+    Found 6-bit register for signal <r_pc>.
+    Found 5-bit register for signal <r_pa>.
+    Found 2-bit register for signal <r_si>.
+    Found 4-bit register for signal <r_a>.
+    Found 4-bit register for signal <r_x>.
+    Found 4-bit register for signal <r_y>.
+    Found 1-bit register for signal <r_stf>.
+    Found 1-bit register for signal <r_zf>.
+    Found 1-bit register for signal <r_cf>.
+    Found 1-bit register for signal <r_vf>.
+    Found 1-bit register for signal <r_sf>.
+    Found 8-bit register for signal <r_pio>.
+    Found 4-bit register for signal <r_th>.
+    Found 4-bit register for signal <r_tl>.
+    Found 4-bit register for signal <r_sb>.
+    Found 16-bit register for signal <stack<0>>.
+    Found 16-bit register for signal <stack<1>>.
+    Found 16-bit register for signal <stack<2>>.
+    Found 16-bit register for signal <stack<3>>.
+    Found 1-bit register for signal <single_byte_op>.
+    Found 8-bit register for signal <op_code>.
+    Found 4-bit register for signal <ol_port_out>.
+    Found 4-bit register for signal <oh_port_out>.
+    Found 4-bit register for signal <p_port_out>.
+    Found 4-bit register for signal <r0_port_out>.
+    Found 4-bit register for signal <r1_port_out>.
+    Found 4-bit register for signal <r2_port_out>.
+    Found 4-bit register for signal <r3_port_out>.
+    Found 4-bit register for signal <mem>.
+    Found 4-bit adder for signal <y_p1> created at line 234.
+    Found 4-bit adder for signal <m_p1> created at line 242.
+    Found 4-bit adder for signal <nega> created at line 270.
+    Found 5-bit adder for signal <n1045> created at line 273.
+    Found 5-bit adder for signal <adc> created at line 273.
+    Found 5-bit adder for signal <a_pim> created at line 285.
+    Found 4-bit adder for signal <daa> created at line 308.
+    Found 4-bit adder for signal <das> created at line 312.
+    Found 5-bit adder for signal <r_pa[4]_GND_25_o_add_122_OUT> created at line 395.
+    Found 6-bit adder for signal <r_pc[5]_GND_25_o_add_123_OUT> created at line 397.
+    Found 11-bit adder for signal <r_pa[4]_GND_25_o_add_252_OUT> created at line 548.
+    Found 2-bit adder for signal <r_si[1]_GND_25_o_add_254_OUT> created at line 551.
+    Found 4-bit subtractor for signal <y_m1> created at line 122.
+    Found 4-bit subtractor for signal <m_m1> created at line 128.
+    Found 5-bit subtractor for signal <cma> created at line 137.
+    Found 5-bit subtractor for signal <sbc> created at line 134.
+    Found 5-bit subtractor for signal <im_my> created at line 143.
+    Found 5-bit subtractor for signal <im_ma> created at line 146.
+    Found 2-bit subtractor for signal <GND_25_o_GND_25_o_sub_192_OUT<1:0>> created at line 491.
+    Found 4x4-bit Read Only RAM for signal <sel_bit_y>
+    Found 256x1-bit Read Only RAM for signal <rom_data[7]_PWR_35_o_Mux_232_o>
+    Found 1-bit 4-to-1 multiplexer for signal <m_tst_bit> created at line 262.
+    Found 1-bit 4-to-1 multiplexer for signal <r_y[1]_r0_port_in[3]_Mux_177_o> created at line 468.
+    Found 1-bit 4-to-1 multiplexer for signal <r_y[1]_r1_port_in[3]_Mux_179_o> created at line 469.
+    Found 1-bit 4-to-1 multiplexer for signal <r_y[1]_r2_port_in[3]_Mux_181_o> created at line 470.
+    Found 1-bit 4-to-1 multiplexer for signal <r_y[1]_r3_port_in[3]_Mux_183_o> created at line 471.
+    Found 16-bit 4-to-1 multiplexer for signal <n0885> created at line 491.
+    Found 1-bit 4-to-1 multiplexer for signal <rom_data[1]_r2_port_in[3]_Mux_208_o> created at line 508.
+    Found 1-bit 4-to-1 multiplexer for signal <rom_data[1]_r_a[3]_Mux_209_o> created at line 510.
+    Found 4-bit 4-to-1 multiplexer for signal <_n1261> created at line 442.
+    Found 1-bit 4-to-1 multiplexer for signal <_n1264> created at line 442.
+    Found 1-bit 4-to-1 multiplexer for signal <r_stf_r_y[1]_MUX_930_o> created at line 471.
+    Found 8-bit comparator lessequal for signal <n0003> created at line 199
+    Found 8-bit comparator lessequal for signal <n0005> created at line 199
+    Found 8-bit comparator lessequal for signal <n0022> created at line 205
+    Found 8-bit comparator lessequal for signal <n0024> created at line 205
+    Found 4-bit comparator greater for signal <daa_c> created at line 306
+    Found 4-bit comparator greater for signal <das_c> created at line 314
+    Summary:
+	inferred   3 RAM(s).
+	inferred  18 Adder/Subtractor(s).
+	inferred 160 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred 530 Multiplexer(s).
+Unit <mb88> synthesized.
+
+Synthesizing Unit <cs54xx_prog>.
+    Related source file is "F:\repos\a35\xevious\src\roms\cs54xx_prog.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'cs54xx_prog', is tied to its initial value.
+    Found 1024x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <cs54xx_prog> synthesized.
+
+Synthesizing Unit <cs50xx_prog>.
+    Related source file is "F:\repos\a35\xevious\src\roms\cs50xx_prog.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'cs50xx_prog', is tied to its initial value.
+    Found 2048x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <cs50xx_prog> synthesized.
+
+Synthesizing Unit <terrain_2a>.
+    Related source file is "F:\repos\a35\xevious\src\roms\terrain_2a.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'terrain_2a', is tied to its initial value.
+    Found 4096x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <terrain_2a> synthesized.
+
+Synthesizing Unit <terrain_2b>.
+    Related source file is "F:\repos\a35\xevious\src\roms\terrain_2b.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'terrain_2b', is tied to its initial value.
+    Found 8192x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <terrain_2b> synthesized.
+
+Synthesizing Unit <terrain_2c>.
+    Related source file is "F:\repos\a35\xevious\src\roms\terrain_2c.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'terrain_2c', is tied to its initial value.
+    Found 4096x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <terrain_2c> synthesized.
+
+Synthesizing Unit <gen_ram_2>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_dar\gen_ram.vhd".
+        dWidth = 8
+        aWidth = 12
+    Found 4096x8-bit single-port RAM <Mram_ram> for signal <ram>.
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <gen_ram_2> synthesized.
+
+Synthesizing Unit <gen_ram_3>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_dar\gen_ram.vhd".
+        dWidth = 8
+        aWidth = 11
+    Found 2048x8-bit single-port RAM <Mram_ram> for signal <ram>.
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <gen_ram_3> synthesized.
+
+Synthesizing Unit <bg_palette_lsb>.
+    Related source file is "F:\repos\a35\xevious\src\roms\bg_palette_lsb.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'bg_palette_lsb', is tied to its initial value.
+    Found 512x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <bg_palette_lsb> synthesized.
+
+Synthesizing Unit <bg_palette_msb>.
+    Related source file is "F:\repos\a35\xevious\src\roms\bg_palette_msb.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'bg_palette_msb', is tied to its initial value.
+    Found 512x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <bg_palette_msb> synthesized.
+
+Synthesizing Unit <red>.
+    Related source file is "F:\repos\a35\xevious\src\roms\red.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'red', is tied to its initial value.
+    Found 256x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <red> synthesized.
+
+Synthesizing Unit <green>.
+    Related source file is "F:\repos\a35\xevious\src\roms\green.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'green', is tied to its initial value.
+    Found 256x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <green> synthesized.
+
+Synthesizing Unit <blue>.
+    Related source file is "F:\repos\a35\xevious\src\roms\blue.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'blue', is tied to its initial value.
+    Found 256x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <blue> synthesized.
+
+Synthesizing Unit <gen_ram_4>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_dar\gen_ram.vhd".
+        dWidth = 7
+        aWidth = 9
+    Found 512x7-bit single-port RAM <Mram_ram> for signal <ram>.
+    Found 7-bit register for signal <q>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   7 D-type flip-flop(s).
+Unit <gen_ram_4> synthesized.
+
+Synthesizing Unit <sp_palette_lsb>.
+    Related source file is "F:\repos\a35\xevious\src\roms\sp_palette_lsb.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'sp_palette_lsb', is tied to its initial value.
+    Found 512x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <sp_palette_lsb> synthesized.
+
+Synthesizing Unit <sp_palette_msb>.
+    Related source file is "F:\repos\a35\xevious\src\roms\sp_palette_msb.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'sp_palette_msb', is tied to its initial value.
+    Found 512x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <sp_palette_msb> synthesized.
+
+Synthesizing Unit <xevious_cpu_gfx_8bits>.
+    Related source file is "F:\repos\a35\xevious\src\roms\xevious_cpu_gfx_8bits.vhd".
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'xevious_cpu_gfx_8bits', is tied to its initial value.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <rom_data>, simulation mismatch.
+    Found 69632x8-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <xevious_cpu_gfx_8bits> synthesized.
+
+Synthesizing Unit <dac>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_mio\dac.vhd".
+        msbi_g = 10
+    Found 13-bit register for signal <sig_in>.
+    Found 1-bit register for signal <dac_o>.
+    Found 13-bit adder for signal <sig_in[12]_sig_in[12]_add_0_OUT> created at line 47.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  14 D-type flip-flop(s).
+Unit <dac> synthesized.
+
+Synthesizing Unit <DEBOUNCE>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_mio\debounce.vhd".
+        G_WIDTH = 16
+    Found 13-bit register for signal <tick_counter>.
+    Found 16-bit register for signal <button>.
+    Found 13-bit subtractor for signal <GND_75_o_GND_75_o_sub_1_OUT<12:0>> created at line 79.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred  33 Multiplexer(s).
+Unit <DEBOUNCE> synthesized.
+
+Synthesizing Unit <keyboard>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_mio\keyb\keyboard.vhd".
+    Found 1-bit register for signal <resetKey>.
+    Found 1-bit register for signal <MRESET>.
+    Found 1-bit register for signal <CTRL>.
+    Found 1-bit register for signal <ALT>.
+    Found 21-bit register for signal <scanSW>.
+    Found 1-bit register for signal <VIDEO>.
+    Found 1-bit register for signal <PAUSE>.
+    Found 1-bit register for signal <SCANL>.
+    Found 1-bit register for signal <VFREQ>.
+    Found 1-bit register for signal <TABLE>.
+    Found 1-bit register for signal <release>.
+    Summary:
+	inferred  31 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <keyboard> synthesized.
+
+Synthesizing Unit <ps2_intf>.
+    Related source file is "F:\repos\a35\xevious\src\rtl_mio\keyb\ps2_intf.vhd".
+        filter_length = 8
+    Found 1-bit register for signal <ps2_dat_in>.
+    Found 8-bit register for signal <clk_filter>.
+    Found 1-bit register for signal <clk_edge>.
+    Found 4-bit register for signal <bit_count>.
+    Found 9-bit register for signal <shiftreg>.
+    Found 1-bit register for signal <parity>.
+    Found 8-bit register for signal <DATA>.
+    Found 1-bit register for signal <VALID>.
+    Found 1-bit register for signal <ps2_clk_in>.
+    Found 4-bit adder for signal <bit_count[3]_GND_78_o_add_7_OUT> created at line 1241.
+    Found 4-bit comparator greater for signal <bit_count[3]_PWR_59_o_LessThan_7_o> created at line 131
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <ps2_intf> synthesized.
+
+Synthesizing Unit <multiboot>.
+    Related source file is "F:\repos\a35\xevious\src\multiboot.v".
+    Found 1-bit register for signal <reboot_ff>.
+    Found 5-bit register for signal <q>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <multiboot> synthesized.
+
+Synthesizing Unit <multiboot_spartan6>.
+    Related source file is "F:\repos\a35\xevious\src\multiboot.v".
+        IDLE = 0
+        SYNC_H = 1
+        SYNC_L = 2
+        CWD_H = 3
+        CWD_L = 4
+        GEN1_H = 5
+        GEN1_L = 6
+        GEN2_H = 7
+        GEN2_L = 8
+        GEN3_H = 9
+        GEN3_L = 10
+        GEN4_H = 11
+        GEN4_L = 12
+        GEN5_H = 13
+        GEN5_L = 14
+        NUL_H = 15
+        NUL_L = 16
+        MOD_H = 17
+        MOD_L = 18
+        HCO_H = 19
+        HCO_L = 20
+        RBT_H = 21
+        RBT_L = 22
+        NOOP_0 = 23
+        NOOP_1 = 24
+        NOOP_2 = 25
+        NOOP_3 = 26
+    Register <ff_icap_wr> equivalent to <ff_icap_ce> has been removed
+    Found 16-bit register for signal <icapd_r>.
+    Found 1-bit register for signal <ff_icap_ce>.
+    Found 5-bit register for signal <state>.
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <state> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred  22 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <multiboot_spartan6> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 49
+ 1024x8-bit single-port Read Only RAM                  : 1
+ 128x4-bit single-port RAM                             : 2
+ 16x4-bit single-port RAM                              : 2
+ 16x4-bit single-port Read Only RAM                    : 1
+ 2048x8-bit single-port RAM                            : 4
+ 2048x8-bit single-port Read Only RAM                  : 1
+ 256x1-bit single-port Read Only RAM                   : 2
+ 256x25-bit single-port Read Only RAM                  : 3
+ 256x8-bit single-port Read Only RAM                   : 5
+ 4096x8-bit single-port RAM                            : 2
+ 4096x8-bit single-port Read Only RAM                  : 2
+ 4x4-bit single-port Read Only RAM                     : 2
+ 512x7-bit single-port RAM                             : 2
+ 512x8-bit dual-port RAM                               : 2
+ 512x8-bit single-port Read Only RAM                   : 4
+ 69632x8-bit single-port Read Only RAM                 : 1
+ 8192x8-bit single-port Read Only RAM                  : 1
+ 8x8-bit dual-port RAM                                 : 12
+# Multipliers                                          : 3
+ 4x4-bit multiplier                                    : 3
+# Adders/Subtractors                                   : 128
+ 10-bit adder                                          : 3
+ 11-bit adder                                          : 4
+ 13-bit adder                                          : 1
+ 13-bit subtractor                                     : 1
+ 14-bit adder                                          : 1
+ 16-bit adder                                          : 12
+ 16-bit addsub                                         : 6
+ 16-bit subtractor                                     : 3
+ 17-bit adder                                          : 1
+ 2-bit adder                                           : 3
+ 2-bit subtractor                                      : 2
+ 3-bit adder                                           : 10
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 11
+ 4-bit subtractor                                      : 9
+ 5-bit adder                                           : 16
+ 5-bit subtractor                                      : 8
+ 6-bit adder                                           : 6
+ 7-bit adder                                           : 3
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 3
+ 9-bit adder                                           : 19
+ 9-bit subtractor                                      : 3
+# Registers                                            : 431
+ 1-bit register                                        : 190
+ 10-bit register                                       : 2
+ 11-bit register                                       : 2
+ 13-bit register                                       : 2
+ 14-bit register                                       : 1
+ 16-bit register                                       : 25
+ 2-bit register                                        : 12
+ 21-bit register                                       : 1
+ 3-bit register                                        : 23
+ 4-bit register                                        : 50
+ 5-bit register                                        : 10
+ 6-bit register                                        : 3
+ 7-bit register                                        : 4
+ 8-bit register                                        : 93
+ 9-bit register                                        : 13
+# Comparators                                          : 33
+ 14-bit comparator greater                             : 2
+ 3-bit comparator equal                                : 6
+ 4-bit comparator greater                              : 11
+ 5-bit comparator greater                              : 3
+ 8-bit comparator greater                              : 3
+ 8-bit comparator lessequal                            : 8
+# Multiplexers                                         : 3440
+ 1-bit 2-to-1 multiplexer                              : 1930
+ 1-bit 3-to-1 multiplexer                              : 36
+ 1-bit 4-to-1 multiplexer                              : 19
+ 1-bit 8-to-1 multiplexer                              : 8
+ 13-bit 2-to-1 multiplexer                             : 1
+ 14-bit 2-to-1 multiplexer                             : 4
+ 15-bit 4-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 121
+ 16-bit 4-to-1 multiplexer                             : 2
+ 16-bit 7-to-1 multiplexer                             : 3
+ 17-bit 2-to-1 multiplexer                             : 10
+ 2-bit 2-to-1 multiplexer                              : 28
+ 3-bit 2-to-1 multiplexer                              : 335
+ 3-bit 3-to-1 multiplexer                              : 9
+ 4-bit 2-to-1 multiplexer                              : 621
+ 4-bit 3-to-1 multiplexer                              : 12
+ 4-bit 4-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 16
+ 6-bit 2-to-1 multiplexer                              : 24
+ 6-bit 8-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 5
+ 8-bit 11-to-1 multiplexer                             : 3
+ 8-bit 2-to-1 multiplexer                              : 220
+ 8-bit 3-to-1 multiplexer                              : 7
+ 8-bit 4-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 3
+ 9-bit 2-to-1 multiplexer                              : 18
+# FSMs                                                 : 1
+# Xors                                                 : 40
+ 1-bit xor2                                            : 14
+ 1-bit xor8                                            : 15
+ 15-bit xor2                                           : 4
+ 2-bit xor2                                            : 1
+ 3-bit xor2                                            : 1
+ 4-bit xor2                                            : 2
+ 8-bit xor2                                            : 3
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <BusReq_s> in Unit <u0> is equivalent to the following FF/Latch, which will be removed : <INT_s> 
+INFO:Xst:2261 - The FF/Latch <stack_0_14> in Unit <mb88_54xx> is equivalent to the following 7 FFs/Latches, which will be removed : <stack_0_15> <stack_1_14> <stack_1_15> <stack_2_14> <stack_2_15> <stack_3_14> <stack_3_15> 
+INFO:Xst:2261 - The FF/Latch <stack_0_14> in Unit <mb88_50xx> is equivalent to the following 7 FFs/Latches, which will be removed : <stack_0_15> <stack_1_14> <stack_1_15> <stack_2_14> <stack_2_15> <stack_3_14> <stack_3_15> 
+WARNING:Xst:1710 - FF/Latch <BusReq_s> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <BusReq_s> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <BusReq_s> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <stack_0_14> has a constant value of 0 in block <mb88_54xx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <stack_0_14> has a constant value of 0 in block <mb88_50xx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <scanSW_7> of sequential type is unconnected in block <keyb>.
+WARNING:Xst:2677 - Node <PAUSE> of sequential type is unconnected in block <keyb>.
+WARNING:Xst:2677 - Node <data_4> of sequential type is unconnected in block <sound_seq>.
+WARNING:Xst:2677 - Node <data_5> of sequential type is unconnected in block <sound_seq>.
+WARNING:Xst:2677 - Node <data_6> of sequential type is unconnected in block <sound_seq>.
+WARNING:Xst:2677 - Node <data_7> of sequential type is unconnected in block <sound_seq>.
+WARNING:Xst:2677 - Node <data_4> of sequential type is unconnected in block <sound_samples>.
+WARNING:Xst:2677 - Node <data_5> of sequential type is unconnected in block <sound_samples>.
+WARNING:Xst:2677 - Node <data_6> of sequential type is unconnected in block <sound_samples>.
+WARNING:Xst:2677 - Node <data_7> of sequential type is unconnected in block <sound_samples>.
+WARNING:Xst:2677 - Node <r_pio_0> of sequential type is unconnected in block <mb88_54xx>.
+WARNING:Xst:2677 - Node <r_pio_1> of sequential type is unconnected in block <mb88_54xx>.
+WARNING:Xst:2677 - Node <r_pio_3> of sequential type is unconnected in block <mb88_54xx>.
+WARNING:Xst:2677 - Node <r_pio_4> of sequential type is unconnected in block <mb88_54xx>.
+WARNING:Xst:2677 - Node <r_pio_5> of sequential type is unconnected in block <mb88_54xx>.
+WARNING:Xst:2677 - Node <r_pio_6> of sequential type is unconnected in block <mb88_54xx>.
+WARNING:Xst:2677 - Node <r_pio_7> of sequential type is unconnected in block <mb88_54xx>.
+WARNING:Xst:2677 - Node <r_pio_0> of sequential type is unconnected in block <mb88_50xx>.
+WARNING:Xst:2677 - Node <r_pio_1> of sequential type is unconnected in block <mb88_50xx>.
+WARNING:Xst:2677 - Node <r_pio_3> of sequential type is unconnected in block <mb88_50xx>.
+WARNING:Xst:2677 - Node <r_pio_4> of sequential type is unconnected in block <mb88_50xx>.
+WARNING:Xst:2677 - Node <r_pio_5> of sequential type is unconnected in block <mb88_50xx>.
+WARNING:Xst:2677 - Node <r_pio_6> of sequential type is unconnected in block <mb88_50xx>.
+WARNING:Xst:2677 - Node <r_pio_7> of sequential type is unconnected in block <mb88_50xx>.
+WARNING:Xst:2677 - Node <data_0> of sequential type is unconnected in block <red_palette>.
+WARNING:Xst:2677 - Node <data_4> of sequential type is unconnected in block <red_palette>.
+WARNING:Xst:2677 - Node <data_5> of sequential type is unconnected in block <red_palette>.
+WARNING:Xst:2677 - Node <data_6> of sequential type is unconnected in block <red_palette>.
+WARNING:Xst:2677 - Node <data_7> of sequential type is unconnected in block <red_palette>.
+WARNING:Xst:2677 - Node <data_0> of sequential type is unconnected in block <green_palette>.
+WARNING:Xst:2677 - Node <data_4> of sequential type is unconnected in block <green_palette>.
+WARNING:Xst:2677 - Node <data_5> of sequential type is unconnected in block <green_palette>.
+WARNING:Xst:2677 - Node <data_6> of sequential type is unconnected in block <green_palette>.
+WARNING:Xst:2677 - Node <data_7> of sequential type is unconnected in block <green_palette>.
+WARNING:Xst:2677 - Node <data_0> of sequential type is unconnected in block <blue_palette>.
+WARNING:Xst:2677 - Node <data_1> of sequential type is unconnected in block <blue_palette>.
+WARNING:Xst:2677 - Node <data_4> of sequential type is unconnected in block <blue_palette>.
+WARNING:Xst:2677 - Node <data_5> of sequential type is unconnected in block <blue_palette>.
+WARNING:Xst:2677 - Node <data_6> of sequential type is unconnected in block <blue_palette>.
+WARNING:Xst:2677 - Node <data_7> of sequential type is unconnected in block <blue_palette>.
+WARNING:Xst:2677 - Node <data_3> of sequential type is unconnected in block <terrain_2a>.
+WARNING:Xst:2677 - Node <data_7> of sequential type is unconnected in block <terrain_2a>.
+WARNING:Xst:2677 - Node <data_4> of sequential type is unconnected in block <bg_palette_lsb>.
+WARNING:Xst:2677 - Node <data_5> of sequential type is unconnected in block <bg_palette_lsb>.
+WARNING:Xst:2677 - Node <data_6> of sequential type is unconnected in block <bg_palette_lsb>.
+WARNING:Xst:2677 - Node <data_7> of sequential type is unconnected in block <bg_palette_lsb>.
+WARNING:Xst:2677 - Node <data_2> of sequential type is unconnected in block <bg_palette_msb>.
+WARNING:Xst:2677 - Node <data_3> of sequential type is unconnected in block <bg_palette_msb>.
+WARNING:Xst:2677 - Node <data_4> of sequential type is unconnected in block <bg_palette_msb>.
+WARNING:Xst:2677 - Node <data_5> of sequential type is unconnected in block <bg_palette_msb>.
+WARNING:Xst:2677 - Node <data_6> of sequential type is unconnected in block <bg_palette_msb>.
+WARNING:Xst:2677 - Node <data_7> of sequential type is unconnected in block <bg_palette_msb>.
+WARNING:Xst:2677 - Node <data_4> of sequential type is unconnected in block <sp_palette_lsb>.
+WARNING:Xst:2677 - Node <data_5> of sequential type is unconnected in block <sp_palette_lsb>.
+WARNING:Xst:2677 - Node <data_6> of sequential type is unconnected in block <sp_palette_lsb>.
+WARNING:Xst:2677 - Node <data_7> of sequential type is unconnected in block <sp_palette_lsb>.
+WARNING:Xst:2677 - Node <data_4> of sequential type is unconnected in block <sp_palette_msb>.
+WARNING:Xst:2677 - Node <data_5> of sequential type is unconnected in block <sp_palette_msb>.
+WARNING:Xst:2677 - Node <data_6> of sequential type is unconnected in block <sp_palette_msb>.
+WARNING:Xst:2677 - Node <data_7> of sequential type is unconnected in block <sp_palette_msb>.
+WARNING:Xst:2677 - Node <sprite_color_7> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <sprite_attr_4> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <sprite_attr_5> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <sprite_attr_6> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <fg_attr_6> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <fg_attr_7> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <bg_attr_6> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <bg_attr_7> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <bg_code_0> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <bg_code_1> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <bg_code_2> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <bg_code_3> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <bg_code_4> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <bg_code_5> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <bg_code_6> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <terrain_bs1_7> of sequential type is unconnected in block <pm>.
+WARNING:Xst:2677 - Node <IntE_FF1> of sequential type is unconnected in block <u0>.
+
+Synthesizing (advanced) Unit <DEBOUNCE>.
+The following registers are absorbed into counter <tick_counter>: 1 register on signal <tick_counter>.
+Unit <DEBOUNCE> synthesized (advanced).
+
+Synthesizing (advanced) Unit <T80>.
+The following registers are absorbed into counter <TState>: 1 register on signal <TState>.
+Unit <T80> synthesized (advanced).
+
+Synthesizing (advanced) Unit <T80_MCode>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n2095> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 25-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <IR>            |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <T80_MCode> synthesized (advanced).
+
+Synthesizing (advanced) Unit <T80_Reg>.
+INFO:Xst:3231 - The small RAM <Mram_RegsH1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <WEH_1>         | high     |
+    |     addrA          | connected to signal <AddrA>         |          |
+    |     diA            | connected to signal <DIH>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     addrB          | connected to signal <AddrC>         |          |
+    |     doB            | connected to signal <DOCH>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_RegsL1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <WEL_1>         | high     |
+    |     addrA          | connected to signal <AddrA>         |          |
+    |     diA            | connected to signal <DIL>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     addrB          | connected to signal <AddrC>         |          |
+    |     doB            | connected to signal <DOCL>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RegsH> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <WEH_0>         | high     |
+    |     addrA          | connected to signal <AddrA>         |          |
+    |     diA            | connected to signal <DIH>           |          |
+    |     doA            | connected to signal <DOAH>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     addrB          | connected to signal <AddrB>         |          |
+    |     doB            | connected to signal <DOBH>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RegsL> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <WEL_0>         | high     |
+    |     addrA          | connected to signal <AddrA>         |          |
+    |     diA            | connected to signal <DIL>           |          |
+    |     doA            | connected to signal <DOAL>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     addrB          | connected to signal <AddrB>         |          |
+    |     doB            | connected to signal <DOBL>          |          |
+    -----------------------------------------------------------------------
+Unit <T80_Reg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <bg_palette_lsb>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <bg_palette_lsb> synthesized (advanced).
+
+Synthesizing (advanced) Unit <bg_palette_msb>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <bg_palette_msb> synthesized (advanced).
+
+Synthesizing (advanced) Unit <dac>.
+The following registers are absorbed into accumulator <sig_in>: 1 register on signal <sig_in>.
+Unit <dac> synthesized (advanced).
+
+Synthesizing (advanced) Unit <gen_ram_1>.
+INFO:Xst:3231 - The small RAM <Mram_ram> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <d>             |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <gen_ram_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <gen_ram_2>.
+INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <q>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <d>             |          |
+    |     doA            | connected to signal <q>             |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <gen_ram_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <gen_ram_3>.
+INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <q>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <d>             |          |
+    |     doA            | connected to signal <q>             |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <gen_ram_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <gen_ram_4>.
+INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <q>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 7-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <d>             |          |
+    |     doA            | connected to signal <q>             |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <gen_ram_4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <gen_video>.
+The following registers are absorbed into counter <vcntReg>: 1 register on signal <vcntReg>.
+The following registers are absorbed into counter <hcntReg>: 1 register on signal <hcntReg>.
+Unit <gen_video> synthesized (advanced).
+
+Synthesizing (advanced) Unit <line_doubler>.
+The following registers are absorbed into counter <hcnt_i>: 1 register on signal <hcnt_i>.
+The following registers are absorbed into counter <hcnt_o>: 1 register on signal <hcnt_o>.
+The following registers are absorbed into counter <vcnt_i>: 1 register on signal <vcnt_i>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     clkA           | connected to signal <clock_12mhz>   | rise     |
+    |     weA            | connected to signal <flip_flop>     | low      |
+    |     addrA          | connected to signal <hcnt_i<9:1>>   |          |
+    |     diA            | connected to signal <video_i>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     addrB          | connected to signal <hcnt_o>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram2> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     clkA           | connected to signal <clock_12mhz>   | rise     |
+    |     weA            | connected to signal <flip_flop>     | high     |
+    |     addrA          | connected to signal <hcnt_i<9:1>>   |          |
+    |     diA            | connected to signal <video_i>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     addrB          | connected to signal <hcnt_o>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <line_doubler> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mb88>.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <r_y> prevents it from being combined with the RAM <Mram_sel_bit_y> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <r_y<1:0>>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <sel_bit_y>     |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_rom_data[7]_PWR_35_o_Mux_232_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 1-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <rom_data>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <mb88> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ps2_intf>.
+The following registers are absorbed into counter <bit_count>: 1 register on signal <bit_count>.
+Unit <ps2_intf> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sound_machine>.
+	Multiplier <Mmult_samples_ch2[3]_volume_ch2[3]_MuLt_24_OUT> in block <sound_machine> and adder/subtractor <Madd_GND_11_o_GND_11_o_add_25_OUT> in block <sound_machine> are combined into a MAC<Maddsub_samples_ch2[3]_volume_ch2[3]_MuLt_24_OUT>.
+	The following registers are also absorbed by the MAC: <audio> in block <sound_machine>.
+	Multiplier <Mmult_samples_ch0[3]_volume_ch0[3]_MuLt_21_OUT> in block <sound_machine> and adder/subtractor <Madd_n0130> in block <sound_machine> are combined into a MAC<Maddsub_samples_ch0[3]_volume_ch0[3]_MuLt_21_OUT>.
+INFO:Xst:3226 - The RAM <sound_samples/Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <sound_samples/data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clock_18>      | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <snd_samples_addr> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <snd_samples_do> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <sound_machine> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sound_seq>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <sound_seq> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sp_palette_lsb>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <sp_palette_lsb> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sp_palette_msb>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <sp_palette_msb> synthesized (advanced).
+
+Synthesizing (advanced) Unit <terrain_2a>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <terrain_2a> synthesized (advanced).
+
+Synthesizing (advanced) Unit <terrain_2b>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8192-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <terrain_2b> synthesized (advanced).
+
+Synthesizing (advanced) Unit <terrain_2c>.
+INFO:Xst:3226 - The RAM <Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <terrain_2c> synthesized (advanced).
+
+Synthesizing (advanced) Unit <xevious>.
+The following registers are absorbed into counter <slot24>: 1 register on signal <slot24>.
+The following registers are absorbed into counter <slot>: 1 register on signal <slot>.
+The following registers are absorbed into counter <cs51XX_coin_mode_cnt>: 1 register on signal <cs51XX_coin_mode_cnt>.
+The following registers are absorbed into counter <sp_ram_wr_addr>: 1 register on signal <sp_ram_wr_addr>.
+The following registers are absorbed into counter <sprite_hcnt>: 1 register on signal <sprite_hcnt>.
+The following registers are absorbed into counter <sp_ram_rd_addr>: 1 register on signal <sp_ram_rd_addr>.
+INFO:Xst:3231 - The small RAM <Mram_joy> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(left,down,right,up)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <joy>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <red_palette/Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <red_palette/data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clock_18>      | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <rgb_palette_addr> |          |
+    |     diA            | connected to signal <GND>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <green_palette/Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <green_palette/data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clock_18>      | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <rgb_palette_addr> |          |
+    |     diA            | connected to signal <GND>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <blue_palette/Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <blue_palette/data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clock_18>      | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <rgb_palette_addr> |          |
+    |     diA            | connected to signal <GND>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <mb88_50xx/r_pa,r_pc> prevents it from being combined with the RAM <cs50xx_prog/Mram_rom_data> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cs50xx_rom_addr> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <cs50xx_prog/Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <cs50xx_prog/data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to internal node          | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cs50xx_rom_addr> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <cs50xx_rom_do> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <mb88_54xx/r_pa,r_pc> prevents it from being combined with the RAM <cs54xx_prog/Mram_rom_data> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 8-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cs54xx_rom_addr> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <cs54xx_prog/Mram_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <cs54xx_prog/data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to internal node          | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cs54xx_rom_addr> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <cs54xx_rom_do> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <mb88_50xx/Mram_ram> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 4-bit                    |          |
+    |     clkA           | connected to signal <clock_18>      | fall     |
+    |     weA            | connected to signal <mb88_50xx/ram_we> | high     |
+    |     addrA          | connected to signal <mb88_50xx/ram_addr> |          |
+    |     diA            | connected to signal <mb88_50xx/ram_di> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <mb88_54xx/Mram_ram> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 4-bit                    |          |
+    |     clkA           | connected to signal <clock_18>      | fall     |
+    |     weA            | connected to signal <mb88_54xx/ram_we> | high     |
+    |     addrA          | connected to signal <mb88_54xx/ram_addr> |          |
+    |     diA            | connected to signal <mb88_54xx/ram_di> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <xevious> synthesized (advanced).
+
+Synthesizing (advanced) Unit <xevious_cpu_gfx_8bits>.
+INFO:Xst:3230 - The RAM description <Mram_rom_data> will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 69632-word x 8-bit                  |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <xevious_cpu_gfx_8bits> synthesized (advanced).
+
+Synthesizing (advanced) Unit <xevious_top>.
+The following registers are absorbed into counter <delay_count>: 1 register on signal <delay_count>.
+The following registers are absorbed into counter <joy_count>: 1 register on signal <joy_count>.
+Unit <xevious_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <xevious>.
+	Found 8-bit dynamic shift register for signal <n1114<0>>.
+	Found 8-bit dynamic shift register for signal <n1114<3>>.
+	Found 8-bit dynamic shift register for signal <n1114<1>>.
+	Found 8-bit dynamic shift register for signal <n1114<2>>.
+	Found 8-bit dynamic shift register for signal <n1114<4>>.
+	Found 8-bit dynamic shift register for signal <n1114<5>>.
+Unit <xevious> synthesized (advanced).
+WARNING:Xst:2677 - Node <fg_offset_v_8> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <terrain_bs1_7> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <sprite_attr_4> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <sprite_attr_5> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <sprite_attr_6> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <sprite_color_7> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_50xx/r_pio_0> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_50xx/r_pio_1> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_50xx/r_pio_3> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_50xx/r_pio_4> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_50xx/r_pio_5> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_50xx/r_pio_6> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_50xx/r_pio_7> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_54xx/r_pio_0> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_54xx/r_pio_1> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_54xx/r_pio_3> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_54xx/r_pio_4> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_54xx/r_pio_5> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_54xx/r_pio_6> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_54xx/r_pio_7> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <bg_offset_vs_8> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <bg_code_0> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <bg_code_1> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <bg_code_2> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <bg_code_3> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <bg_code_4> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <bg_code_5> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <bg_code_6> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <fg_attr_6> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <fg_attr_7> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <bg_attr_6> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <bg_attr_7> of sequential type is unconnected in block <xevious>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 47
+ 1024x8-bit single-port block Read Only RAM            : 1
+ 128x4-bit single-port distributed RAM                 : 2
+ 16x4-bit single-port distributed RAM                  : 2
+ 16x4-bit single-port distributed Read Only RAM        : 1
+ 2048x8-bit single-port block RAM                      : 4
+ 2048x8-bit single-port block Read Only RAM            : 1
+ 256x1-bit single-port distributed Read Only RAM       : 2
+ 256x25-bit single-port distributed Read Only RAM      : 3
+ 256x8-bit single-port block Read Only RAM             : 5
+ 4096x8-bit single-port block RAM                      : 2
+ 4096x8-bit single-port block Read Only RAM            : 2
+ 512x7-bit single-port block RAM                       : 2
+ 512x8-bit dual-port distributed RAM                   : 2
+ 512x8-bit single-port block Read Only RAM             : 4
+ 69632x8-bit single-port distributed Read Only RAM     : 1
+ 8192x8-bit single-port block Read Only RAM            : 1
+ 8x8-bit dual-port distributed RAM                     : 12
+# MACs                                                 : 2
+ 4x4-to-10-bit MAC                                     : 2
+# Multipliers                                          : 1
+ 4x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 104
+ 11-bit adder                                          : 4
+ 14-bit adder                                          : 1
+ 16-bit adder                                          : 12
+ 16-bit addsub                                         : 6
+ 16-bit subtractor                                     : 3
+ 17-bit adder                                          : 1
+ 2-bit adder                                           : 3
+ 2-bit subtractor                                      : 2
+ 3-bit adder                                           : 6
+ 4-bit adder                                           : 10
+ 4-bit subtractor                                      : 9
+ 5-bit adder                                           : 7
+ 5-bit adder carry in                                  : 3
+ 5-bit subtractor                                      : 8
+ 6-bit adder                                           : 6
+ 7-bit adder                                           : 3
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 3
+ 9-bit adder                                           : 11
+ 9-bit subtractor                                      : 3
+# Counters                                             : 18
+ 10-bit up counter                                     : 1
+ 13-bit down counter                                   : 1
+ 3-bit down counter                                    : 1
+ 3-bit up counter                                      : 4
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 3
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 6
+# Accumulators                                         : 1
+ 13-bit up accumulator                                 : 1
+# Registers                                            : 1507
+ Flip-Flops                                            : 1507
+# Shift Registers                                      : 6
+ 8-bit dynamic shift register                          : 6
+# Comparators                                          : 33
+ 14-bit comparator greater                             : 2
+ 3-bit comparator equal                                : 6
+ 4-bit comparator greater                              : 11
+ 5-bit comparator greater                              : 3
+ 8-bit comparator greater                              : 3
+ 8-bit comparator lessequal                            : 8
+# Multiplexers                                         : 3410
+ 1-bit 2-to-1 multiplexer                              : 1950
+ 1-bit 3-to-1 multiplexer                              : 36
+ 1-bit 4-to-1 multiplexer                              : 19
+ 1-bit 8-to-1 multiplexer                              : 8
+ 14-bit 2-to-1 multiplexer                             : 3
+ 15-bit 4-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 121
+ 16-bit 4-to-1 multiplexer                             : 2
+ 16-bit 7-to-1 multiplexer                             : 3
+ 17-bit 2-to-1 multiplexer                             : 10
+ 2-bit 2-to-1 multiplexer                              : 28
+ 3-bit 2-to-1 multiplexer                              : 331
+ 3-bit 3-to-1 multiplexer                              : 9
+ 4-bit 2-to-1 multiplexer                              : 580
+ 4-bit 3-to-1 multiplexer                              : 12
+ 4-bit 4-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 16
+ 6-bit 2-to-1 multiplexer                              : 24
+ 7-bit 2-to-1 multiplexer                              : 5
+ 8-bit 11-to-1 multiplexer                             : 3
+ 8-bit 2-to-1 multiplexer                              : 219
+ 8-bit 3-to-1 multiplexer                              : 7
+ 8-bit 4-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 3
+ 9-bit 2-to-1 multiplexer                              : 17
+# FSMs                                                 : 1
+# Xors                                                 : 40
+ 1-bit xor2                                            : 14
+ 1-bit xor8                                            : 15
+ 15-bit xor2                                           : 4
+ 2-bit xor2                                            : 1
+ 3-bit xor2                                            : 1
+ 4-bit xor2                                            : 2
+ 8-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <mb88_50xx/stack_2_14> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_50xx/stack_2_15> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_50xx/stack_3_14> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_50xx/stack_3_15> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_50xx/stack_1_14> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_50xx/stack_1_15> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_50xx/stack_0_14> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_50xx/stack_0_15> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_54xx/stack_3_14> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_54xx/stack_3_15> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_54xx/stack_0_14> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_54xx/stack_0_15> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_54xx/stack_2_14> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_54xx/stack_2_15> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_54xx/stack_1_14> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mb88_54xx/stack_1_15> has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <pm/FSM_0> on signal <sprite_state[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 010   | 000
+ 100   | 001
+ 011   | 010
+ 001   | 011
+ 000   | 100
+ 111   | 101
+-------------------
+WARNING:Xst:1710 - FF/Latch <rgb_palette_addr_7> (without init value) has a constant value of 0 in block <xevious>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <bg_offset_v_8> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_54xx/stack_3_10> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_54xx/stack_0_10> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_54xx/stack_2_10> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <mb88_54xx/stack_1_10> of sequential type is unconnected in block <xevious>.
+WARNING:Xst:2677 - Node <r_pa_41> of sequential type is unconnected in block <xevious>.
+INFO:Xst:1901 - Instance PLL_OSERDES in unit PLL_OSERDES of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <xevious_top> ...
+
+Optimizing unit <keyboard> ...
+
+Optimizing unit <ps2_intf> ...
+
+Optimizing unit <xevious> ...
+INFO:Xst:2261 - The FF/Latch <mb88_54xx/m_m1_c> in Unit <xevious> is equivalent to the following FF/Latch, which will be removed : <mb88_54xx/mem_z> 
+INFO:Xst:2261 - The FF/Latch <mb88_50xx/m_m1_c> in Unit <xevious> is equivalent to the following FF/Latch, which will be removed : <mb88_50xx/mem_z> 
+
+Optimizing unit <line_doubler> ...
+
+Optimizing unit <sound_machine> ...
+
+Optimizing unit <gen_video> ...
+
+Optimizing unit <T80se> ...
+
+Optimizing unit <T80> ...
+
+Optimizing unit <T80_ALU> ...
+
+Optimizing unit <T80_MCode> ...
+
+Optimizing unit <DEBOUNCE> ...
+
+Optimizing unit <xevious_cpu_gfx_8bits> ...
+
+Optimizing unit <multiboot> ...
+
+Optimizing unit <multiboot_spartan6> ...
+WARNING:Xst:1710 - FF/Latch <pm/cpu1/u0/BusAck> (without init value) has a constant value of 0 in block <xevious_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pm/cpu1/u0/BusReq_s> (without init value) has a constant value of 0 in block <xevious_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pm/cpu2/u0/BusAck> (without init value) has a constant value of 0 in block <xevious_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pm/cpu2/u0/BusReq_s> (without init value) has a constant value of 0 in block <xevious_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pm/cpu3/u0/BusAck> (without init value) has a constant value of 0 in block <xevious_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pm/cpu3/u0/IntCycle> (without init value) has a constant value of 0 in block <xevious_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pm/cpu3/u0/INT_s> (without init value) has a constant value of 0 in block <xevious_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pm/cpu3/u0/BusReq_s> (without init value) has a constant value of 0 in block <xevious_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <joy1_11> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <joy2_4> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <joy2_3> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <joy2_2> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <joy2_1> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <joy2_0> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <keyb/TABLE> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <keyb/PAUSE> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_18> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_17> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_16> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_15> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_14> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_10> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_7> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <keyb/resetKey> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/gen_video/csync> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/gen_video/hsync1> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/gen_video/hsync2> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/cpu3/IORQ_n> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/cpu3/RD_n> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/cpu2/IORQ_n> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/cpu2/RD_n> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/cpu1/IORQ_n> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/cpu1/RD_n> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/cpu1/u0/M1_n> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/cpu1/u0/RFSH_n> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/cpu2/u0/M1_n> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/cpu2/u0/RFSH_n> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/cpu3/u0/M1_n> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/cpu3/u0/RFSH_n> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_13> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_12> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_11> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_10> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_9> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <pm/cpu3/u0/IntE_FF1> is unconnected in block <xevious_top>.
+WARNING:Xst:2677 - Node <pm/cpu2/u0/OldNMI_n> of sequential type is unconnected in block <xevious_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <pm/cpu3/u0/IStatus_1> is unconnected in block <xevious_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <pm/cpu3/u0/IStatus_0> is unconnected in block <xevious_top>.
+WARNING:Xst:1710 - FF/Latch <pm/cs50xx_irq_cnt_3> (without init value) has a constant value of 0 in block <xevious_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pm/cs54xx_irq_cnt_3> (without init value) has a constant value of 0 in block <xevious_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pm/cpu2/u0/NMICycle> (without init value) has a constant value of 0 in block <xevious_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pm/cpu2/u0/NMI_s> (without init value) has a constant value of 0 in block <xevious_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <pm/cpu2/u0/IntE_FF1> in Unit <xevious_top> is equivalent to the following FF/Latch, which will be removed : <pm/cpu2/u0/IntE_FF2> 
+INFO:Xst:2261 - The FF/Latch <keyb/VFREQ> in Unit <xevious_top> is equivalent to the following FF/Latch, which will be removed : <keyb/scanSW_9> 
+INFO:Xst:2261 - The FF/Latch <keyb/VIDEO> in Unit <xevious_top> is equivalent to the following FF/Latch, which will be removed : <keyb/scanSW_6> 
+INFO:Xst:2261 - The FF/Latch <pm/cs06XX_nmi_cnt_13> in Unit <xevious_top> is equivalent to the following 3 FFs/Latches, which will be removed : <pm/cs06XX_nmi_cnt_12> <pm/cs06XX_nmi_cnt_11> <pm/cs06XX_nmi_cnt_10> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block xevious_top, actual ratio is 383.
+Optimizing block <xevious_top> to meet ratio 100 (+ 5) of 2278 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <xevious_top>, final ratio is 361.

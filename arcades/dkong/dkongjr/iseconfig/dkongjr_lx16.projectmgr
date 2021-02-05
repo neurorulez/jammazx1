@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="dkongjr_lx16" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/dkong_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/MyCtrlModule - CtrlModule - rtl</ClosedNode>
+         <ClosedNode>/dkong_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/el_multiboot - multiboot</ClosedNode>
+         <ClosedNode>/dkong_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/joy - joy_zx2</ClosedNode>
+         <ClosedNode>/dkong_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/keyb - keyboard - rtl</ClosedNode>
+         <ClosedNode>/dkong_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkong_main - RTL</ClosedNode>
+         <ClosedNode>/dkongjr_adec F:|repos|lx16|dkongjr|source|dkongjr_verilog|dkongjr_adec.v</ClosedNode>
+         <ClosedNode>/dkongjr_col_pal F:|repos|lx16|dkongjr|source|dkongjr_verilog|dkongjr_col_pal.v</ClosedNode>
+         <ClosedNode>/dkongjr_obj F:|repos|lx16|dkongjr|source|dkongjr_verilog|dkongjr_obj.v</ClosedNode>
+         <ClosedNode>/dkongjr_sound F:|repos|lx16|dkongjr|source|dkongjr_verilog|dkongjr_sound.v</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/MyCtrlModule - CtrlModule - rtl</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/el_multiboot - multiboot</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/joy - joy_zx2</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/keyb - keyboard - rtl</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main - RTL/U_3A4A - ram_1024_8_8</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main - RTL/U_3B4B - ram_1024_8</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main - RTL/U_3C4C - ram_1024_8</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main - RTL/U_6PR - ram_1024_8_8</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main - RTL/adec - dkongjr_adec</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main - RTL/cpal - dkongjr_col_pal</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main - RTL/cpu - T80as - rtl</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main - RTL/digital_sound - dkongjr_sound</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main - RTL/obj - dkongjr_obj</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main - RTL/sound_cpu - I8035IP</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main - RTL/vram - dkongjr_vram</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main/Digtal_sound - dkongjr_sound</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main/SOUND_CPU - I8035IP</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main/SOUND_CPU - I8035IP/t48_core - t48_core - struct</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main/SOUND_CPU - I8035IP/t48_ram - ram_64_8</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main/U_3A4A - ram_1024_8_8</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main/U_3B4B - ram_1024_8</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main/U_3C4C - ram_1024_8</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main/U_6PR - ram_1024_8_8</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main/adec - dkongjr_adec</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main/cpal - dkongjr_col_pal</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main/obj - dkongjr_obj</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main/vram - dkongjr_vram</ClosedNode>
+         <ClosedNode>/dkongjr_top F:|repos|lx16|dkongjr|source|modulo_top_lx16.v/pm - dkongjr_main/z80core - T80as - rtl</ClosedNode>
+         <ClosedNode>/dkongjr_vram F:|repos|lx16|dkongjr|source|dkongjr_verilog|dkongjr_vram.v</ClosedNode>
+         <ClosedNode>/double_scan F:|repos|lx16|dkongjr|source|dkong_verilog|dkong_rams.v</ClosedNode>
+         <ClosedNode>/double_scan F:|repos|lx16|dkongjr|source|dkongjr_verilog|dkongjr_rams.v</ClosedNode>
+         <ClosedNode>/ram_2048_8 F:|repos|lx16|dkongjr|source|dkongjr_verilog|dkongjr_rams.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>dkongjr_top (F:/repos/lx16/dkongjr/source/modulo_top_lx16.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000259000000020000000000000000000000000200000064ffffffff000000810000000300000002000002590000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>dkongjr_top (F:/repos/lx16/dkongjr/source/modulo_top_lx16.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Synthesize - XST</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000258000000010000000100000000000000000000000064ffffffff000000810000000000000001000002580000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Synthesize - XST</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff0000008100000000000000040000016b0000000100000000000000d70000000100000000000000660000000100000000000000ea0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>F:\repos\lx16\dkongjr\source\CtrlModule\CtrlROM_ROM.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a30000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>CORE Generator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000258000000010000000100000000000000000000000064ffffffff000000810000000000000001000002580000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000258000000010000000100000000000000000000000064ffffffff000000810000000000000001000002580000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

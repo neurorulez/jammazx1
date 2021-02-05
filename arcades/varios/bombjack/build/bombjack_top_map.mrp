@@ -1,0 +1,769 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'bombjack_top'
+
+Design Information
+------------------
+Command Line   : map -filter F:/repos/a35/bombjack/iseconfig/filter.filter
+-intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0
+-register_duplication off -r 4 -global_opt off -mt 2 -detail -ir off -pr off -lc
+off -power off -o bombjack_top_map.ncd bombjack_top.ngd bombjack_top.pcf 
+Target Device  : xc6slx16
+Target Package : ftg256
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Mon Jun 25 14:17:40 2018
+
+Interim Summary
+---------------
+Slice Logic Utilization:
+  Number of Slice Registers:                 1,710 out of  18,224    9%
+    Number used as Flip Flops:               1,704
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                6
+  Number of Slice LUTs:                      4,192 out of   9,112   46%
+    Number used as logic:                    4,079 out of   9,112   44%
+      Number using O6 output only:           3,065
+      Number using O5 output only:             211
+      Number using O5 and O6:                  803
+      Number used as ROM:                        0
+    Number used as Memory:                      89 out of   2,176    4%
+      Number used as Dual Port RAM:             88
+        Number using O6 output only:            36
+        Number using O5 output only:            12
+        Number using O5 and O6:                 40
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             1
+        Number using O6 output only:             1
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:     24
+      Number with same-slice register load:      0
+      Number with same-slice carry load:        24
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of MUXCYs used:                       764 out of   4,556   16%
+  Number of LUT Flip Flop pairs used:        5,008
+    Number with an unused Flip Flop:         3,343 out of   5,008   66%
+    Number with an unused LUT:                 816 out of   5,008   16%
+    Number of fully used LUT-FF pairs:         849 out of   5,008   16%
+    Number of unique control sets:             201
+    Number of slice register sites lost
+      to control set restrictions:             631 out of  18,224    3%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        45 out of     186   24%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        65 out of      32  203% (OVERMAPPED)
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       4 out of      16   25%
+    Number used as BUFGs:                        4
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      32    0%
+  Number of ICAPs:                               1 out of       1  100%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       2   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+
+Mapping completed.
+See MAP report file "bombjack_top_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   0
+
+Section 1 - Errors
+------------------
+ERROR:Pack:2310 - Too many comps of type "RAMB16BWER" found to fit this device.
+ERROR:Map:237 - The design is too large to fit the device.  Please check the Design Summary section to see which resource requirement for
+   your design exceeds the resources available in the device. Note that the number of slices reported may not be reflected accurately as
+   their packing might not have been completed.
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:Map:284 - Map is running with the multi-threading option on. Map currently
+   supports the use of up to 2 processors. Based on the the user options and
+   machine load, Map will use 2 processors during this run.
+INFO:LIT:243 - Logical network sram_data<7> has no load.
+INFO:LIT:243 - Logical network sram_data<6> has no load.
+INFO:LIT:243 - Logical network sram_data<5> has no load.
+INFO:LIT:243 - Logical network sram_data<4> has no load.
+INFO:LIT:243 - Logical network sram_data<3> has no load.
+INFO:LIT:243 - Logical network sram_data<2> has no load.
+INFO:LIT:243 - Logical network sram_data<1> has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[7].Reg2L/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[7].Reg2H/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[6].Reg2L/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[6].Reg2H/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[5].Reg2L/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[5].Reg2H/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[4].Reg2L/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[4].Reg2H/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[3].Reg2L/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[3].Reg2H/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[2].Reg2L/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[2].Reg2H/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[1].Reg2L/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[1].Reg2H/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[0].Reg2L/SPO has no load.
+INFO:LIT:243 - Logical network pm/cpu_3K/u0/Regs/bG1[0].Reg2H/SPO has no load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[0].Reg2H/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[0].Reg2L/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[1].Reg2H/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[1].Reg2L/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[2].Reg2H/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[2].Reg2L/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[3].Reg2H/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[3].Reg2L/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[4].Reg2H/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[4].Reg2L/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[5].Reg2H/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[5].Reg2L/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[6].Reg2H/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[6].Reg2L/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[7].Reg2H/SPO has no
+   load.
+INFO:LIT:243 - Logical network pm/p9/cpu_34F/u0/Regs/bG1[7].Reg2L/SPO has no
+   load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   1 block(s) removed
+   2 block(s) optimized away
+   1 signal(s) removed
+ 234 Block(s) redundant
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "pclkbufg2" (CKBUF) removed.
+ The signal "pllclk2" is loadless and has been removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+Redundant Block(s):
+TYPE 		BLOCK
+LUT1 		Mcount_delay_count_cy<1>_rt
+LUT1 		Mcount_delay_count_cy<2>_rt
+LUT1 		Mcount_delay_count_cy<3>_rt
+LUT1 		Mcount_delay_count_cy<4>_rt
+LUT1 		Mcount_delay_count_cy<5>_rt
+LUT1 		Mcount_delay_count_cy<6>_rt
+LUT1 		pm/cpu_3K/u0/Msub_GND_103_o_GND_103_o_sub_74_OUT<15:0>_cy<1>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<1>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<14>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<13>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<12>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<11>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<10>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<9>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<8>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<7>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<6>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<5>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<4>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<3>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<2>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<14>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<13>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<12>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<11>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<10>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<9>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<8>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<7>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<6>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<5>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<4>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<3>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<2>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<1>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<1>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<2>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<3>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<4>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<5>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<6>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<7>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<8>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<9>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<10>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<11>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<12>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_cy<13>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<1>_rt
+LUT1 		pm/p9/cpu_34F/u0/Msub_GND_103_o_GND_103_o_sub_74_OUT<15:0>_cy<1>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<2>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<3>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<4>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<5>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<6>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<7>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<8>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<9>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<10>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<11>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<12>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<13>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_cy<14>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<14>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<13>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<12>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<11>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<10>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<9>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<8>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<7>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<6>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<5>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<4>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<3>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<2>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_cy<1>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_2_cy<10>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_2_cy<9>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_2_cy<8>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_2_cy<7>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_2_cy<6>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_2_cy<5>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_2_cy<4>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_2_cy<3>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_2_cy<2>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_2_cy<1>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_1_cy<10>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_1_cy<9>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_1_cy<8>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_1_cy<7>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_1_cy<6>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_1_cy<5>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_1_cy<4>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_1_cy<3>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_1_cy<2>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_1_cy<1>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_3_cy<10>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_3_cy<9>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_3_cy<8>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_3_cy<7>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_3_cy<6>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_3_cy<5>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_3_cy<4>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_3_cy<3>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_3_cy<2>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_3_cy<1>_rt
+LUT1 		pm/p10/U34A/Maccum_audio_mix_cy<8>_rt
+LUT1 		pm/p10/U34A/Msub_GND_360_o_GND_360_o_sub_132_OUT<15:0>_cy<0>_rt
+LUT1 		pm/p10/U34A/Msub_GND_360_o_GND_360_o_sub_103_OUT<11:0>_cy<0>_rt
+LUT1 		pm/p10/U34A/Msub_GND_360_o_GND_360_o_sub_97_OUT<11:0>_cy<0>_rt
+LUT1 		pm/p10/U34A/Msub_GND_360_o_GND_360_o_sub_100_OUT<11:0>_cy<0>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<14>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<13>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<12>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<11>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<10>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<9>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<8>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<7>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<6>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<5>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<4>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<3>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<2>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_cy<1>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_2_cy<10>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_2_cy<9>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_2_cy<8>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_2_cy<7>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_2_cy<6>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_2_cy<5>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_2_cy<4>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_2_cy<3>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_2_cy<2>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_2_cy<1>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_1_cy<10>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_1_cy<9>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_1_cy<8>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_1_cy<7>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_1_cy<6>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_1_cy<5>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_1_cy<4>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_1_cy<3>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_1_cy<2>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_1_cy<1>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_3_cy<10>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_3_cy<9>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_3_cy<8>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_3_cy<7>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_3_cy<6>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_3_cy<5>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_3_cy<4>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_3_cy<3>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_3_cy<2>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_3_cy<1>_rt
+LUT1 		pm/p10/U34C/Maccum_audio_mix_cy<8>_rt
+LUT1 		pm/p10/U34C/Msub_GND_360_o_GND_360_o_sub_132_OUT<15:0>_cy<0>_rt
+LUT1 		pm/p10/U34C/Msub_GND_360_o_GND_360_o_sub_103_OUT<11:0>_cy<0>_rt
+LUT1 		pm/p10/U34C/Msub_GND_360_o_GND_360_o_sub_97_OUT<11:0>_cy<0>_rt
+LUT1 		pm/p10/U34C/Msub_GND_360_o_GND_360_o_sub_100_OUT<11:0>_cy<0>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<14>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<13>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<12>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<11>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<10>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<9>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<8>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<7>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<6>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<5>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<4>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<3>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<2>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_cy<1>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_2_cy<10>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_2_cy<9>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_2_cy<8>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_2_cy<7>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_2_cy<6>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_2_cy<5>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_2_cy<4>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_2_cy<3>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_2_cy<2>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_2_cy<1>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_1_cy<10>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_1_cy<9>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_1_cy<8>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_1_cy<7>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_1_cy<6>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_1_cy<5>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_1_cy<4>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_1_cy<3>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_1_cy<2>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_1_cy<1>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_3_cy<10>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_3_cy<9>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_3_cy<8>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_3_cy<7>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_3_cy<6>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_3_cy<5>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_3_cy<4>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_3_cy<3>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_3_cy<2>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_3_cy<1>_rt
+LUT1 		pm/p10/U34D/Maccum_audio_mix_cy<8>_rt
+LUT1 		pm/p10/U34D/Msub_GND_360_o_GND_360_o_sub_132_OUT<15:0>_cy<0>_rt
+LUT1 		pm/p10/U34D/Msub_GND_360_o_GND_360_o_sub_103_OUT<11:0>_cy<0>_rt
+LUT1 		pm/p10/U34D/Msub_GND_360_o_GND_360_o_sub_97_OUT<11:0>_cy<0>_rt
+LUT1 		pm/p10/U34D/Msub_GND_360_o_GND_360_o_sub_100_OUT<11:0>_cy<0>_rt
+LUT1 		Mcount_delay_count_xor<7>_rt
+LUT1 		pm/cpu_3K/u0/Madd_PC[15]_GND_103_o_add_70_OUT_xor<15>_rt
+LUT1 		pm/cpu_3K/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_xor<15>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_TmpAddr[15]_GND_103_o_add_46_OUT_xor<14>_rt
+LUT1 		pm/p9/cpu_34F/u0/Madd_PC[15]_GND_103_o_add_70_OUT_xor<15>_rt
+LUT1 		pm/p10/U34A/Mcount_env_gen_cnt_xor<15>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_2_xor<11>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_1_xor<11>_rt
+LUT1 		pm/p10/U34A/Mcount_tone_gen_cnt_3_xor<11>_rt
+LUT1 		pm/p10/U34A/Maccum_audio_mix_xor<9>_rt
+LUT1 		pm/p10/U34C/Mcount_env_gen_cnt_xor<15>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_2_xor<11>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_1_xor<11>_rt
+LUT1 		pm/p10/U34C/Mcount_tone_gen_cnt_3_xor<11>_rt
+LUT1 		pm/p10/U34C/Maccum_audio_mix_xor<9>_rt
+LUT1 		pm/p10/U34D/Mcount_env_gen_cnt_xor<15>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_2_xor<11>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_1_xor<11>_rt
+LUT1 		pm/p10/U34D/Mcount_tone_gen_cnt_3_xor<11>_rt
+LUT1 		pm/p10/U34D/Maccum_audio_mix_xor<9>_rt
+LUT1 		pm/p3/Mcount_hcount_cy<7>_rt
+INV 		pm/clk_12M_inv1_INV_0
+INV 		pm/p9/s_swr1_INV_0
+INV 		pm/p9/cpu_34F/u0/mcode/Mmux_Set_BusB_To2527_G_INV_0
+
+Section 12 - Configuration String Details
+-----------------------------------------
+PLL_ADV "PLL_OSERDES/PLL_ADV":
+BANDWIDTH:OPTIMIZED
+CLK_FEEDBACK:CLKFBOUT
+COMPENSATION:INTERNAL
+PLL_ADD_LEAKAGE:2
+PLL_AVDD_COMP_SET:2
+PLL_CLAMP_BYPASS:FALSE
+PLL_CLAMP_REF_SEL:1
+PLL_CLK0MX:0
+PLL_CLK1MX:0
+PLL_CLK2MX:0
+PLL_CLK3MX:0
+PLL_CLK4MX:0
+PLL_CLK5MX:0
+PLL_CLKBURST_CNT:0
+PLL_CLKBURST_ENABLE:TRUE
+PLL_CLKCNTRL:0
+PLL_CLKFBMX:0
+PLL_CLKFBOUT2_EDGE:TRUE
+PLL_CLKFBOUT2_NOCOUNT:TRUE
+PLL_CLKFBOUT_EDGE:TRUE
+PLL_CLKFBOUT_EN:FALSE
+PLL_CLKFBOUT_NOCOUNT:TRUE
+PLL_CLKOUT0_EDGE:TRUE
+PLL_CLKOUT0_EN:FALSE
+PLL_CLKOUT0_NOCOUNT:TRUE
+PLL_CLKOUT1_EDGE:TRUE
+PLL_CLKOUT1_EN:FALSE
+PLL_CLKOUT1_NOCOUNT:TRUE
+PLL_CLKOUT2_EDGE:TRUE
+PLL_CLKOUT2_EN:FALSE
+PLL_CLKOUT2_NOCOUNT:TRUE
+PLL_CLKOUT3_EDGE:TRUE
+PLL_CLKOUT3_EN:FALSE
+PLL_CLKOUT3_NOCOUNT:TRUE
+PLL_CLKOUT4_EDGE:TRUE
+PLL_CLKOUT4_EN:FALSE
+PLL_CLKOUT4_NOCOUNT:TRUE
+PLL_CLKOUT5_EDGE:TRUE
+PLL_CLKOUT5_EN:FALSE
+PLL_CLKOUT5_NOCOUNT:TRUE
+PLL_CLK_LOST_DETECT:FALSE
+PLL_CP:1
+PLL_CP_BIAS_TRIP_SHIFT:TRUE
+PLL_CP_REPL:1
+PLL_CP_RES:0
+PLL_DIRECT_PATH_CNTRL:TRUE
+PLL_DIVCLK_EDGE:TRUE
+PLL_DIVCLK_NOCOUNT:TRUE
+PLL_DVDD_COMP_SET:2
+PLL_EN:FALSE
+PLL_EN_DLY:TRUE
+PLL_EN_LEAKAGE:2
+PLL_EN_TCLK0:TRUE
+PLL_EN_TCLK1:TRUE
+PLL_EN_TCLK2:TRUE
+PLL_EN_TCLK3:TRUE
+PLL_EN_VCO0:FALSE
+PLL_EN_VCO1:FALSE
+PLL_EN_VCO2:FALSE
+PLL_EN_VCO3:FALSE
+PLL_EN_VCO4:FALSE
+PLL_EN_VCO5:FALSE
+PLL_EN_VCO6:FALSE
+PLL_EN_VCO7:FALSE
+PLL_EN_VCO_DIV1:FALSE
+PLL_EN_VCO_DIV6:TRUE
+PLL_INTFB:0
+PLL_IO_CLKSRC:0
+PLL_LFHF:3
+PLL_LOCK_FB_DLY:3
+PLL_LOCK_REF_DLY:5
+PLL_MAN_LF_EN:TRUE
+PLL_NBTI_EN:TRUE
+PLL_PFD_CNTRL:8
+PLL_PFD_DLY:1
+PLL_PWRD_CFG:FALSE
+PLL_REG_INPUT:TRUE
+PLL_RES:1
+PLL_SEL_SLIPD:FALSE
+PLL_SKEW_CNTRL:0
+PLL_TEST_IN_WINDOW:FALSE
+PLL_VDD_SEL:0
+PLL_VLFHIGH_DIS:TRUE
+CLKFBOUT_MULT = 12
+CLKFBOUT_PHASE = 0.0
+CLKIN1_PERIOD = 20
+CLKIN2_PERIOD = 20
+CLKOUT0_DIVIDE = 50
+CLKOUT0_DUTY_CYCLE = 0.5
+CLKOUT0_PHASE = 0.0
+CLKOUT1_DIVIDE = 75
+CLKOUT1_DUTY_CYCLE = 0.5
+CLKOUT1_PHASE = 0.0
+CLKOUT2_DIVIDE = 13
+CLKOUT2_DUTY_CYCLE = 0.5
+CLKOUT2_PHASE = 0.0
+CLKOUT3_DIVIDE = 1
+CLKOUT3_DUTY_CYCLE = 0.5
+CLKOUT3_PHASE = 0.0
+CLKOUT4_DIVIDE = 1
+CLKOUT4_DUTY_CYCLE = 0.5
+CLKOUT4_PHASE = 0.0
+CLKOUT5_DIVIDE = 1
+CLKOUT5_DUTY_CYCLE = 0.5
+CLKOUT5_PHASE = 0.0
+DIVCLK_DIVIDE = 1
+REF_JITTER = 0.1
+
+
+
+Section 13 - Control Set Information
+------------------------------------
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Clock Signal       | Reset Signal                                    | Set Signal | Enable Signal                          | Slice Load Count | Bel Load Count |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| clk8               | pll_lckd_inv                                    |            |                                        | 2                | 8              |
+| clk8               | pll_lckd_inv                                    |            | delay_count[7]_PWR_1_o_equal_2_o       | 1                | 1              |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| delay_count_4_BUFG |                                                 |            |                                        | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | Mcount_joy_count_xor<4>13              | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0197                                 | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0201                                 | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0208                                 | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0216                                 | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0222                                 | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0226                                 | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0230                                 | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0252                                 | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0262                                 | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0268                                 | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0280                                 | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0286                                 | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0292                                 | 1                | 1              |
+| delay_count_4_BUFG |                                                 |            | _n0297                                 | 1                | 1              |
+| delay_count_4_BUFG | joy_count[4]_PWR_1_o_equal_9_o                  |            |                                        | 4                | 5              |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pclk               |                                                 |            |                                        | 56               | 71             |
+| pclk               |                                                 |            | Mcount_delay_count_lut<0>              | 1                | 1              |
+| pclk               |                                                 |            | delay_count<0>                         | 20               | 26             |
+| pclk               |                                                 |            | keyb/_n01631                           | 14               | 14             |
+| pclk               |                                                 |            | keyb/_n0249_inv                        | 1                | 1              |
+| pclk               |                                                 |            | keyb/_n0259_inv                        | 1                | 1              |
+| pclk               |                                                 |            | keyb/_n0269_inv                        | 1                | 1              |
+| pclk               |                                                 |            | keyb/_n0290_inv                        | 1                | 1              |
+| pclk               |                                                 |            | keyb/ps2/_n0081_inv                    | 9                | 9              |
+| pclk               |                                                 |            | keyb/ps2/_n0094_inv                    | 8                | 8              |
+| pclk               |                                                 |            | pm/clk_6M_en                           | 65               | 71             |
+| pclk               |                                                 |            | pm/cpu_3K/u0/Regs/ENH                  | 8                | 32             |
+| pclk               |                                                 |            | pm/cpu_3K/u0/Regs/ENL                  | 6                | 32             |
+| pclk               |                                                 |            | pm/cpu_3K/u0/_n1919_inv                | 1                | 1              |
+| pclk               |                                                 |            | pm/cpu_3K/u0/_n1945_inv                | 8                | 8              |
+| pclk               |                                                 |            | pm/p10/U34A/_n0550                     | 17               | 17             |
+| pclk               |                                                 |            | pm/p10/U34A/_n0590                     | 24               | 24             |
+| pclk               |                                                 |            | pm/p10/U34A/_n0747_inv                 | 1                | 1              |
+| pclk               |                                                 |            | pm/p10/U34C/_n0550                     | 17               | 17             |
+| pclk               |                                                 |            | pm/p10/U34D/_n0550                     | 17               | 17             |
+| pclk               |                                                 |            | pm/p2/_n0052_inv                       | 1                | 1              |
+| pclk               |                                                 |            | pm/p2/_n0056_inv                       | 1                | 1              |
+| pclk               |                                                 |            | pm/p3/_n0188_inv                       | 14               | 14             |
+| pclk               |                                                 |            | pm/p3/_n0204_inv                       | 4                | 4              |
+| pclk               |                                                 |            | pm/p3/_n0207_inv                       | 4                | 4              |
+| pclk               |                                                 |            | pm/p3/hcount<8>_inv                    | 2                | 2              |
+| pclk               |                                                 |            | pm/p3/s_8V_s_8V_t1_AND_154_o           | 1                | 1              |
+| pclk               |                                                 |            | pm/p4/I_CDL_n_inv                      | 6                | 6              |
+| pclk               |                                                 |            | pm/p4/I_MDL_n_inv                      | 8                | 8              |
+| pclk               |                                                 |            | pm/p4/I_VPL_n_inv                      | 2                | 8              |
+| pclk               |                                                 |            | pm/p6/I_SL1_n_inv                      | 8                | 8              |
+| pclk               |                                                 |            | pm/p6/I_SL2_n_inv                      | 15               | 15             |
+| pclk               |                                                 |            | pm/p7/_n0095_inv                       | 24               | 24             |
+| pclk               |                                                 |            | pm/p7/_n0120_inv                       | 4                | 4              |
+| pclk               |                                                 |            | pm/p9/cpu_34F/u0/ClkEn                 | 45               | 63             |
+| pclk               |                                                 |            | pm/p9/cpu_34F/u0/Regs/ENH              | 6                | 32             |
+| pclk               |                                                 |            | pm/p9/cpu_34F/u0/Regs/ENL              | 6                | 32             |
+| pclk               |                                                 |            | pm/p9/cpu_34F/u0/_n1919_inv            | 1                | 1              |
+| pclk               |                                                 |            | pm/p9/cpu_34F/u0/_n1945_inv            | 8                | 8              |
+| pclk               | keyb/_n0163                                     |            | keyb/_n01631                           | 1                | 1              |
+| pclk               | keyb/_n0183                                     |            | keyb/_n01631                           | 1                | 1              |
+| pclk               | keyb/ps2/Mmux_GND_373_o_ps2_clk_in_MUX_1020_o11 |            |                                        | 1                | 1              |
+| pclk               | keyb/ps2/PWR_81_o_clk_filter[7]_equal_1_o       |            |                                        | 1                | 1              |
+| pclk               | keyb/ps2/_n0068                                 |            | keyb/ps2/_n0099_inv                    | 3                | 4              |
+| pclk               | keyb/ps2/_n0070                                 |            | keyb/ps2/_n0103_inv                    | 1                | 1              |
+| pclk               | keyb/ps2/clk_edge_inv                           |            |                                        | 1                | 1              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            |                                        | 1                | 1              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | delay_count<0>                         | 69               | 73             |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/_n0068_inv                   | 8                | 8              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1045_inv11              | 12               | 12             |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1052_inv                | 1                | 1              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1083_inv                | 1                | 1              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1091_inv                | 1                | 1              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1116_inv                | 1                | 1              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1618_inv                | 1                | 1              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1633_inv                | 16               | 16             |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1716_inv                | 8                | 8              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1716_inv1               | 1                | 1              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1730_inv                | 16               | 16             |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1783_inv                | 16               | 16             |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1794_inv                | 30               | 30             |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1808_inv                | 8                | 8              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1818_inv                | 8                | 8              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1835_inv                | 4                | 4              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1850_inv                | 1                | 2              |
+| pclk               | pm/cpu_3K/RESET_n_inv                           |            | pm/cpu_3K/u0/_n1868_inv                | 3                | 3              |
+| pclk               | pm/cpu_3K/u0/_n0991                             |            | delay_count<0>                         | 8                | 8              |
+| pclk               | pm/p10/U34A/_n0546                              |            | pm/p9/cpu_34F/u0/ClkEn                 | 1                | 1              |
+| pclk               | pm/p10/U34A/_n0550                              |            | pm/p10/U34A/_n0764_inv                 | 3                | 5              |
+| pclk               | pm/p10/U34A/_n0554                              |            | pm/p10/U34A/_n0768_inv                 | 3                | 12             |
+| pclk               | pm/p10/U34A/_n0558                              |            | pm/p10/U34A/_n0768_inv                 | 3                | 12             |
+| pclk               | pm/p10/U34A/_n0562                              |            | pm/p10/U34A/_n0768_inv                 | 3                | 12             |
+| pclk               | pm/p10/U34A/_n0565                              |            | pm/p9/cpu_34F/u0/ClkEn                 | 3                | 3              |
+| pclk               | pm/p10/U34A/_n0569                              |            | pm/p10/U34A/_n0768_inv                 | 4                | 16             |
+| pclk               | pm/p10/U34A/_n0574                              |            |                                        | 4                | 5              |
+| pclk               | pm/p10/U34A/_n0588                              |            |                                        | 1                | 1              |
+| pclk               | pm/p10/U34A/_n0590                              |            | pm/p10/U34A/_n0801_inv                 | 9                | 30             |
+| pclk               | pm/p10/U34A/env_reset                           |            |                                        | 1                | 1              |
+| pclk               | pm/p10/U34C/_n0550                              |            | pm/p10/U34A/_n0764_inv                 | 3                | 5              |
+| pclk               | pm/p10/U34C/_n0554                              |            | pm/p10/U34A/_n0768_inv                 | 3                | 12             |
+| pclk               | pm/p10/U34C/_n0558                              |            | pm/p10/U34A/_n0768_inv                 | 3                | 12             |
+| pclk               | pm/p10/U34C/_n0562                              |            | pm/p10/U34A/_n0768_inv                 | 3                | 12             |
+| pclk               | pm/p10/U34C/_n0569                              |            | pm/p10/U34A/_n0768_inv                 | 4                | 16             |
+| pclk               | pm/p10/U34C/_n0574                              |            |                                        | 4                | 5              |
+| pclk               | pm/p10/U34C/_n0588                              |            |                                        | 1                | 1              |
+| pclk               | pm/p10/U34C/env_reset                           |            |                                        | 1                | 1              |
+| pclk               | pm/p10/U34D/_n0550                              |            | pm/p10/U34A/_n0764_inv                 | 3                | 5              |
+| pclk               | pm/p10/U34D/_n0554                              |            | pm/p10/U34A/_n0768_inv                 | 3                | 12             |
+| pclk               | pm/p10/U34D/_n0558                              |            | pm/p10/U34A/_n0768_inv                 | 3                | 12             |
+| pclk               | pm/p10/U34D/_n0562                              |            | pm/p10/U34A/_n0768_inv                 | 3                | 12             |
+| pclk               | pm/p10/U34D/_n0569                              |            | pm/p10/U34A/_n0768_inv                 | 4                | 16             |
+| pclk               | pm/p10/U34D/_n0574                              |            |                                        | 4                | 5              |
+| pclk               | pm/p10/U34D/_n0588                              |            |                                        | 1                | 1              |
+| pclk               | pm/p10/U34D/env_reset                           |            |                                        | 1                | 1              |
+| pclk               | pm/p3/hcount<8>                                 |            | pm/p3/s_16H_s_16H_t1_AND_152_o         | 1                | 1              |
+| pclk               | pm/p3/hcount<8>                                 |            | pm/p3/s_2H_s_2H_t1_AND_172_o           | 1                | 1              |
+| pclk               | pm/p8/I_VBLANK_n_inv                            |            | delay_count<0>                         | 1                | 1              |
+| pclk               | pm/p8/I_VBLANK_n_inv                            |            | pm/clk_6M_en                           | 9                | 9              |
+| pclk               | pm/p8/s_8G6_inv                                 |            | pm/clk_6M_en                           | 6                | 8              |
+| pclk               | pm/p9/cpu_34F/u0/_n0991                         |            | pm/p9/cpu_34F/u0/ClkEn                 | 8                | 8              |
+| pclk               | pm/p9/s_2F6_inv                                 |            | pm/p9/s_2F3_re                         | 1                | 1              |
+| pclk               | pm/p9/s_2J6_n_inv                               |            | pm/p9/s_b800_wr_n_re                   | 8                | 8              |
+| pclk               | pm/p9/s_2M3_n_inv                               |            | pm/p9/s_vsync_n_re                     | 1                | 1              |
+| pclk               | pm_reset                                        |            |                                        | 7                | 14             |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0630_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0637_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0644_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0651_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0658_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0665_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0672_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0679_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0686_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0693_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0700_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0707_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0714_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0721_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0728_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0735_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34A/_n0740_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0630_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0637_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0644_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0651_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0658_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0665_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0672_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0679_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0686_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0693_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0700_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0707_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0714_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0721_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0728_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0735_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34C/_n0740_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0630_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0637_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0644_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0651_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0658_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0665_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0672_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0679_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0686_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0693_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0700_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0707_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0714_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0721_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0728_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0735_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p10/U34D/_n0740_inv                 | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/_n0068_inv               | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/ClkEn                 | 97               | 100            |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1045_inv11          | 12               | 12             |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1052_inv            | 1                | 1              |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1083_inv            | 1                | 1              |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1091_inv            | 1                | 1              |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1618_inv            | 1                | 1              |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1633_inv            | 16               | 16             |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1716_inv            | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1716_inv1           | 1                | 1              |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1730_inv            | 15               | 15             |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1783_inv            | 16               | 16             |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1794_inv            | 30               | 30             |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1808_inv            | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1818_inv            | 8                | 8              |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1835_inv            | 4                | 4              |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1850_inv            | 1                | 2              |
+| pclk               | pm_reset                                        |            | pm/p9/cpu_34F/u0/_n1868_inv            | 3                | 3              |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pm/clk_6M_en_BUFG  | pm/p5/u_even/s_6x_clr_I_CTRL_LOAD_AND_194_o     |            | pm/p5/u_even/_n0057_inv                | 2                | 8              |
+| pm/clk_6M_en_BUFG  | pm/p5/u_odd/s_6x_clr_I_CTRL_LOAD_AND_194_o      |            | pm/p5/u_odd/_n0057_inv                 | 2                | 8              |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ~pclk              |                                                 |            |                                        | 10               | 12             |
+| ~pclk              |                                                 |            | pm/p3/s_256H_n_s_256H_n_t1_AND_150_o   | 3                | 9              |
+| ~pclk              |                                                 |            | pm/p7/I_SLOAD_n_s_sload_n_t1_AND_206_o | 5                | 5              |
+| ~pclk              |                                                 |            | pm/s_wdclr_inv                         | 1                | 1              |
+| ~pclk              | pm/s_nmion_inv                                  |            | pm/s_vblank_t0_s_vblank_t1_AND_14_o    | 1                | 1              |
+| ~pclk              | pm/s_wdclr                                      |            | pm/s_vblank_t0_s_vblank_t1_AND_9_o     | 3                | 4              |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ~pm/clk_6M_en_BUFG |                                                 |            |                                        | 8                | 16             |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+

@@ -1,0 +1,1 @@
+Para ZX1 y ZX2 hace falta meter en la SD el fichero DEFENDER.ROM del directorio TOOLS

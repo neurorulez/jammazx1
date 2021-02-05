@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun 16 14:53:14 2019
+# Process ID: 5752
+# Current directory: D:/repos/a35t/arkanoid/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16012 D:\repos\a35t\arkanoid\A35\A35.xpr
+# Log file: D:/repos/a35t/arkanoid/A35/vivado.log
+# Journal file: D:/repos/a35t/arkanoid/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/repos/a35t/arkanoid/A35/A35.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 644.148 ; gain = 83.367
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jun 16 14:56:20 2019] Launched synth_1...
+Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/synth_1/runme.log
+[Sun Jun 16 14:56:21 2019] Launched impl_1...
+Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jun 16 14:59:05 2019] Launched synth_1...
+Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/synth_1/runme.log
+[Sun Jun 16 14:59:05 2019] Launched impl_1...
+Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jun 16 14:59:33 2019] Launched synth_1...
+Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/synth_1/runme.log
+[Sun Jun 16 14:59:33 2019] Launched impl_1...
+Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/impl_1/runme.log

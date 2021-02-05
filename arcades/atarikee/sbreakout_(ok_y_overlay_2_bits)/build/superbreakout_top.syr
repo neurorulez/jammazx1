@@ -1,0 +1,2604 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> Reading design: superbreakout_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "superbreakout_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "superbreakout_top"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : superbreakout_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\ipcore_dir\ram1k_dp.v" into library work
+Parsing module <ram1k_dp>.
+Analyzing Verilog file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v" into library work
+Parsing module <synchro>.
+WARNING:HDLCompiler:924 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v" Line 87: Attribute target identifier fdb not found in this scope
+WARNING:HDLCompiler:924 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v" Line 82: Attribute target identifier fda not found in this scope
+WARNING:HDLCompiler:924 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v" Line 83: Attribute target identifier fdb not found in this scope
+WARNING:HDLCompiler:924 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v" Line 84: Attribute target identifier fda not found in this scope
+WARNING:HDLCompiler:924 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v" Line 85: Attribute target identifier fdb not found in this scope
+WARNING:HDLCompiler:924 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v" Line 86: Attribute target identifier fda not found in this scope
+Analyzing Verilog file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\multiboot.v" into library work
+Parsing module <multiboot>.
+Parsing module <multiboot_spartan6>.
+Analyzing Verilog file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" into library work
+Parsing module <superbreakout_top>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\T65\T65_Pack.vhd" into library work
+Parsing package <T65_Pack>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\T65\T65_MCode.vhd" into library work
+Parsing entity <T65_MCode>.
+Parsing architecture <rtl> of entity <t65_mcode>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\T65\T65_ALU.vhd" into library work
+Parsing entity <T65_ALU>.
+Parsing architecture <rtl> of entity <t65_alu>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\T65\T65.vhd" into library work
+Parsing entity <T65>.
+Parsing architecture <rtl> of entity <t65>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\r4-char_MSB.vhd" into library work
+Parsing entity <char_MSB>.
+Parsing architecture <RTL> of entity <char_msb>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\p4-char_LSB.vhd" into library work
+Parsing entity <char_LSB>.
+Parsing architecture <RTL> of entity <char_lsb>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\m2-sync_prom.vhd" into library work
+Parsing entity <sync_prom>.
+Parsing architecture <RTL> of entity <sync_prom>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\e2-addec_prom.vhd" into library work
+Parsing entity <addec_prom>.
+Parsing architecture <RTL> of entity <addec_prom>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\e1-prog_rom4.vhd" into library work
+Parsing entity <prog_rom4>.
+Parsing architecture <RTL> of entity <prog_rom4>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\d1-prog_rom3.vhd" into library work
+Parsing entity <prog_rom3>.
+Parsing architecture <RTL> of entity <prog_rom3>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\c1-prog_rom2.vhd" into library work
+Parsing entity <prog_rom2>.
+Parsing architecture <RTL> of entity <prog_rom2>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\quadrature_decoder.vhd" into library work
+Parsing entity <quadrature_decoder>.
+INFO:HDLCompiler:1676 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\quadrature_decoder.vhd" Line 37. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+Parsing architecture <logic> of entity <quadrature_decoder>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\K6_PROM.vhd" into library work
+Parsing entity <K6_PROM>.
+Parsing architecture <rtl> of entity <k6_prom>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\deltasigma.vhd" into library work
+Parsing entity <deltasigma>.
+Parsing architecture <Behavioral> of entity <deltasigma>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" into library work
+Parsing entity <synchronizer>.
+Parsing architecture <rtl> of entity <synchronizer>.
+WARNING:HDLCompiler:946 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 105: Actual for formal port addr is neither a static name nor a globally static expression
+WARNING:HDLCompiler:701 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 106: Partially associated formal data cannot have actual OPEN
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\playfield.vhd" into library work
+Parsing entity <playfield>.
+Parsing architecture <rtl> of entity <playfield>.
+WARNING:HDLCompiler:701 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\playfield.vhd" Line 84: Partially associated formal data cannot have actual OPEN
+WARNING:HDLCompiler:701 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\playfield.vhd" Line 92: Partially associated formal data cannot have actual OPEN
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\paddle.vhd" into library work
+Parsing entity <paddle>.
+Parsing architecture <rtl> of entity <paddle>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\motion.vhd" into library work
+Parsing entity <motion>.
+Parsing architecture <rtl> of entity <motion>.
+WARNING:HDLCompiler:946 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\motion.vhd" Line 126: Actual for formal port address is neither a static name nor a globally static expression
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\line_doubler.vhd" into library work
+Parsing entity <line_doubler>.
+Parsing architecture <struct> of entity <line_doubler>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\keyb\ps2_intf.vhd" into library work
+Parsing entity <ps2_intf>.
+Parsing architecture <ps2_intf_arch> of entity <ps2_intf>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\IO.vhd" into library work
+Parsing entity <IO>.
+Parsing architecture <rtl> of entity <io>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\debounce.vhd" into library work
+Parsing entity <DEBOUNCE>.
+Parsing architecture <RTL> of entity <debounce>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" into library work
+Parsing entity <CPU_mem>.
+Parsing architecture <rtl> of entity <cpu_mem>.
+WARNING:HDLCompiler:701 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" Line 161: Partially associated formal a cannot have actual OPEN
+WARNING:HDLCompiler:946 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" Line 232: Actual for formal port addr is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" Line 239: Actual for formal port addr is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" Line 246: Actual for formal port addr is neither a static name nor a globally static expression
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\audio.vhd" into library work
+Parsing entity <audio>.
+Parsing architecture <rtl> of entity <audio>.
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" into library work
+Parsing entity <super_breakout>.
+Parsing architecture <rtl> of entity <super_breakout>.
+WARNING:HDLCompiler:701 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 225: Partially associated formal video_o cannot have actual OPEN
+WARNING:HDLCompiler:946 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 231: Actual for formal port scanlines is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 397: Actual for formal port hsync_n is neither a static name nor a globally static expression
+Parsing VHDL file "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\keyb\keyboard.vhd" into library work
+Parsing entity <keyboard>.
+Parsing architecture <rtl> of entity <keyboard>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <superbreakout_top>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <PLL_BASE(CLKIN_PERIOD=20,CLKFBOUT_MULT=20,CLKOUT0_DIVIDE=4,CLKOUT1_DIVIDE=41,CLKOUT2_DIVIDE=20,COMPENSATION="INTERNAL")>.
+
+Elaborating module <BUFPLL(DIVIDE=5)>.
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" Line 93: Assignment to pclkx10 ignored, since the identifier is never used
+
+Elaborating module <synchro(INITIALIZE="LOGIC1")>.
+
+Elaborating module <FDP>.
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" Line 96: Assignment to reset ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" Line 108: Assignment to pm_reset ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" Line 120: Assignment to ena_6 ignored, since the identifier is never used
+Going to vhdl side to elaborate module super_breakout
+
+Elaborating entity <super_breakout> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:871 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 53: Using initial value '1' for test_i since it is never assigned
+WARNING:HDLCompiler:871 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 54: Using initial value '1' for slam_i since it is never assigned
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 173: hcount should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 177: hcount should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 181: hcount should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 185: hcount should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 189: hcount should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 193: hcount should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 200: overlay_r1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 202: overlay_g1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 204: overlay_b1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 206: overlay_a1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 208: overlay_c1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 210: overlay_m1 should be on the sensitivity list of the process
+
+Elaborating entity <line_doubler> (architecture <struct>) from library <work>.
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\line_doubler.vhd" Line 91: scanline should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\line_doubler.vhd" Line 92: video should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\line_doubler.vhd" Line 94: video should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 246: Assignment to reset_h ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 247: Assignment to vblank_o ignored, since the identifier is never used
+
+Elaborating entity <DEBOUNCE> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <synchronizer> (architecture <rtl>) from library <work>.
+
+Elaborating entity <sync_prom> (architecture <RTL>) from library <work>.
+WARNING:HDLCompiler:89 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\m2-sync_prom.vhd" Line 121: <ramb16_s9> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 151: Assignment to h1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 152: Assignment to h2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 155: Assignment to h16 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 158: Assignment to h128 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 160: Assignment to h4_n ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 161: Assignment to h8_n ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 169: Assignment to v32 ignored, since the identifier is never used
+
+Elaborating entity <playfield> (architecture <rtl>) from library <work>.
+
+Elaborating entity <char_LSB> (architecture <RTL>) from library <work>.
+WARNING:HDLCompiler:89 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\p4-char_LSB.vhd" Line 121: <ramb16_s9> remains a black-box since it has no binding entity.
+
+Elaborating entity <char_MSB> (architecture <RTL>) from library <work>.
+WARNING:HDLCompiler:89 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\r4-char_MSB.vhd" Line 121: <ramb16_s9> remains a black-box since it has no binding entity.
+
+Elaborating entity <motion> (architecture <rtl>) from library <work>.
+
+Elaborating entity <K6_PROM> (architecture <rtl>) from library <work>.
+
+Elaborating entity <audio> (architecture <rtl>) from library <work>.
+
+Elaborating entity <deltasigma> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <paddle> (architecture <rtl>) from library <work>.
+
+Elaborating entity <quadrature_decoder> (architecture <logic>) with generics from library <work>.
+
+Elaborating entity <CPU_mem> (architecture <rtl>) from library <work>.
+
+Elaborating entity <T65> (architecture <rtl>) from library <work>.
+
+Elaborating entity <T65_MCode> (architecture <rtl>) from library <work>.
+INFO:HDLCompiler:679 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\T65\T65_MCode.vhd" Line 945. Case statement is complete. others clause is never selected
+
+Elaborating entity <T65_ALU> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\T65\T65.vhd" Line 232: Assignment to d ignored, since the identifier is never used
+
+Elaborating entity <prog_rom2> (architecture <RTL>) from library <work>.
+WARNING:HDLCompiler:89 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\c1-prog_rom2.vhd" Line 121: <ramb16_s9> remains a black-box since it has no binding entity.
+
+Elaborating entity <prog_rom3> (architecture <RTL>) from library <work>.
+WARNING:HDLCompiler:89 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\d1-prog_rom3.vhd" Line 121: <ramb16_s9> remains a black-box since it has no binding entity.
+
+Elaborating entity <prog_rom4> (architecture <RTL>) from library <work>.
+WARNING:HDLCompiler:89 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\e1-prog_rom4.vhd" Line 121: <ramb16_s9> remains a black-box since it has no binding entity.
+Going to verilog side to elaborate module ram1k_dp
+
+Elaborating module <ram1k_dp>.
+WARNING:HDLCompiler:1499 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\ipcore_dir\ram1k_dp.v" Line 39: Empty module <ram1k_dp> remains a black box.
+Back to vhdl to continue elaboration
+
+Elaborating entity <addec_prom> (architecture <RTL>) from library <work>.
+WARNING:HDLCompiler:89 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\e2-addec_prom.vhd" Line 121: <ramb16_s9> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" Line 350: Assignment to ram_n ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" Line 352: Assignment to sync1 ignored, since the identifier is never used
+
+Elaborating entity <IO> (architecture <rtl>) from library <work>.
+INFO:HDLCompiler:679 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\IO.vhd" Line 74. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\IO.vhd" Line 112. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\IO.vhd" Line 168. Case statement is complete. others clause is never selected
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module keyboard
+
+Elaborating entity <keyboard> (architecture <rtl>) from library <work>.
+
+Elaborating entity <ps2_intf> (architecture <ps2_intf_arch>) with generics from library <work>.
+Back to verilog to continue elaboration
+
+Elaborating module <multiboot>.
+WARNING:HDLCompiler:872 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\multiboot.v" Line 6: Using initial value of spi_addr since it is never assigned
+WARNING:HDLCompiler:1016 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\multiboot.v" Line 38: Port BUSY is not connected to this instance
+
+Elaborating module <multiboot_spartan6>.
+
+Elaborating module <ICAP_SPARTAN6>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <superbreakout_top>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v".
+        joyType = 1
+WARNING:Xst:647 - Input <sram_dq<7:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" line 96: Output port <sync> of the instance <synchro_reset> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" line 190: Output port <JOYSTICK_A_GND> of the instance <pm> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" line 190: Output port <JOYSTICK_B_GND> of the instance <pm> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" line 190: Output port <Video_O> of the instance <pm> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" line 190: Output port <CompSync_O> of the instance <pm> is unconnected or connected to loadless signal.
+    Found 8-bit register for signal <delay_count>.
+    Found 1-bit register for signal <JSELECT>.
+    Found 8-bit register for signal <joy1>.
+    Found 8-bit register for signal <joy2>.
+    Found 8-bit adder for signal <delay_count[7]_GND_1_o_add_1_OUT> created at line 113.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+Unit <superbreakout_top> synthesized.
+
+Synthesizing Unit <synchro>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v".
+        INITIALIZE = "LOGIC1"
+    Summary:
+	no macro.
+Unit <synchro> synthesized.
+
+Synthesizing Unit <super_breakout>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd".
+WARNING:Xst:647 - Input <scanSW<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <scanSW<10:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tv15Khz_mode> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" line 320: Output port <vblank_s> of the instance <Vid_sync> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" line 320: Output port <vreset> of the instance <Vid_sync> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" line 335: Output port <CompBlank_s> of the instance <PF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" line 407: Output port <Lamp1> of the instance <Input_Output> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" line 407: Output port <Lamp2> of the instance <Input_Output> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" line 407: Output port <Serv_LED_n> of the instance <Input_Output> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" line 407: Output port <Counter> of the instance <Input_Output> is unconnected or connected to loadless signal.
+    Found 9-bit comparator lessequal for signal <n0001> created at line 173
+    Found 9-bit comparator greater for signal <Hcount[8]_GND_11_o_LessThan_3_o> created at line 173
+    Found 9-bit comparator greater for signal <n0005> created at line 177
+    Found 9-bit comparator greater for signal <n0008> created at line 181
+    Found 9-bit comparator greater for signal <n0012> created at line 185
+    Found 9-bit comparator greater for signal <n0016> created at line 189
+    Found 9-bit comparator lessequal for signal <n0020> created at line 193
+    Summary:
+	inferred   7 Comparator(s).
+	inferred  17 Multiplexer(s).
+Unit <super_breakout> synthesized.
+
+Synthesizing Unit <line_doubler>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\line_doubler.vhd".
+WARNING:Xst:3015 - Contents of array <ram1> may be accessed with an index that does not cover the full array size or with a negative index. The RAM size is reduced to the index upper access or for only positive index values.
+    Found 512x8-bit dual-port RAM <Mram_ram1> for signal <ram1>.
+WARNING:Xst:3015 - Contents of array <ram2> may be accessed with an index that does not cover the full array size or with a negative index. The RAM size is reduced to the index upper access or for only positive index values.
+    Found 512x8-bit dual-port RAM <Mram_ram2> for signal <ram2>.
+    Found 1-bit register for signal <vsync_i_reg>.
+    Found 9-bit register for signal <vcnt_i>.
+    Found 1-bit register for signal <flip_flop>.
+    Found 10-bit register for signal <hcnt_i>.
+    Found 9-bit register for signal <hcnt_o>.
+    Found 1-bit register for signal <hsync_o>.
+    Found 1-bit register for signal <vsync_o>.
+    Found 8-bit register for signal <video>.
+    Found 1-bit register for signal <scanline>.
+    Found 1-bit register for signal <hsync_i_reg>.
+    Found 9-bit adder for signal <vcnt_i[8]_GND_13_o_add_0_OUT> created at line 49.
+    Found 10-bit adder for signal <hcnt_i[9]_GND_13_o_add_3_OUT> created at line 57.
+    Found 9-bit adder for signal <hcnt_o[8]_GND_13_o_add_6_OUT> created at line 63.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  42 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <line_doubler> synthesized.
+
+Synthesizing Unit <DEBOUNCE>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\debounce.vhd".
+        G_WIDTH = 16
+    Found 13-bit register for signal <tick_counter>.
+    Found 16-bit register for signal <button>.
+    Found 13-bit subtractor for signal <GND_14_o_GND_14_o_sub_1_OUT<12:0>> created at line 79.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred  32 Multiplexer(s).
+Unit <DEBOUNCE> synthesized.
+
+Synthesizing Unit <synchronizer>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd".
+    Found 1-bit register for signal <hblank_int>.
+    Found 1-bit register for signal <hsync_int>.
+    Found 8-bit register for signal <v_counter>.
+    Found 4-bit register for signal <sync_reg>.
+    Found 10-bit register for signal <h_counter>.
+    Found 10-bit adder for signal <h_counter[9]_GND_15_o_add_1_OUT> created at line 83.
+    Found 8-bit adder for signal <v_counter[7]_GND_15_o_add_4_OUT> created at line 95.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+Unit <synchronizer> synthesized.
+
+Synthesizing Unit <sync_prom>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\m2-sync_prom.vhd".
+    Set property "INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_03 = 0800000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_04 = 00000000000000000000000000000000000000000000000000000E0A0A0A0A0A" for instance <rom0.inst>.
+    Set property "INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_07 = 0A0A0A0A0A0A0A0A0A0A0A0B0B0B0A0A0A080808080808080808080808080808" for instance <rom0.inst>.
+    Set property "INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_0A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_0B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_0C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_0D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_0E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_0F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\m2-sync_prom.vhd" line 288: Output port <DOP> of the instance <rom0.inst> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <sync_prom> synthesized.
+
+Synthesizing Unit <playfield>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\playfield.vhd".
+WARNING:Xst:647 - Input <Display<6:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <HCount<7:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <VCount<7:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <shift_data>.
+    Found 1-bit register for signal <QH>.
+    Found 1-bit register for signal <H256_s>.
+    Found 1-bit register for signal <Display7_s>.
+    Found 1-bit register for signal <CompBlank_s>.
+    Found 1-bit register for signal <CompSync_n_s>.
+    Summary:
+	inferred  13 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <playfield> synthesized.
+
+Synthesizing Unit <char_LSB>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\p4-char_LSB.vhd".
+    Set property "INIT_00 = 00040C08080C070300060F0909090F0F000F0F0202020F0F0000000000000000" for instance <rom0.inst>.
+    Set property "INIT_01 = 000F0F09080C07030000010101010F0F0008080909090F0F0003070C08080F0F" for instance <rom0.inst>.
+    Set property "INIT_02 = 00080C0E07030F0F00070F0808080C04000008080F0F0808000F0F0101010F0F" for instance <rom0.inst>.
+    Set property "INIT_03 = 00070F0808080F07000F0F0703010F0F000F0F0103010F0F0008080808080F0F" for instance <rom0.inst>.
+    Set property "INIT_04 = 00060F0909090D0400090D0F06020F0F000B070E0A080F070001030202020F0F" for instance <rom0.inst>.
+    Set property "INIT_05 = 000F0F0703070F0F000103070E07030100070F0808080F07000000000F0F0000" for instance <rom0.inst>.
+    Set property "INIT_06 = 0000000000000000000808090B0F0E0C000000010F0F0100000C0E0703070E0C" for instance <rom0.inst>.
+    Set property "INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_08 = 0000000000030303000000000000030300000000000000030000000000000000" for instance <rom0.inst>.
+    Set property "INIT_09 = 0003030303030303000003030303030300000003030303030000000003030303" for instance <rom0.inst>.
+    Set property "INIT_0A = 0303030303000000030303030303000003030303030303000303030303030303" for instance <rom0.inst>.
+    Set property "INIT_0B = 0300000000000000030300000000000003030300000000000303030300000000" for instance <rom0.inst>.
+    Set property "INIT_0C = 00060F0909090C040008090B0B0F0E0C000008080F0F080800030708080C0703" for instance <rom0.inst>.
+    Set property "INIT_0D = 000000010F0E000000060F0909090F0700070F0808080C0400020F0F02020303" for instance <rom0.inst>.
+    Set property "INIT_0E = 0F0F0F0F0F0F000300000000000000000003070D0909090000060E0B0B090906" for instance <rom0.inst>.
+    Set property "INIT_0F = 0F0F0F0F0F0F0F0F0F0F0F0F0F0F00000F0F0F0F0F0F00000F0F0F0F0F0F0303" for instance <rom0.inst>.
+    Set property "INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\p4-char_LSB.vhd" line 288: Output port <DOP> of the instance <rom0.inst> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <char_LSB> synthesized.
+
+Synthesizing Unit <char_MSB>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\r4-char_MSB.vhd".
+    Set property "INIT_00 = 0004060202060C08000C0E0202020E0E00080C0602060C080000000000000000" for instance <rom0.inst>.
+    Set property "INIT_01 = 0002020202060C080002020202020E0E0000020202020E0E00080C0602020E0E" for instance <rom0.inst>.
+    Set property "INIT_02 = 0002060C08000E0E000E0E0000000000000002020E0E0202000E0E0000000E0E" for instance <rom0.inst>.
+    Set property "INIT_03 = 000C0E0202020E0C000E0E00080C0E0E000E0E0C080C0E0E0000000000000E0E" for instance <rom0.inst>.
+    Set property "INIT_04 = 0000040602020E0C000C0E0202020E0E000C0E0202020E0C000C0E0202020E0E" for instance <rom0.inst>.
+    Set property "INIT_05 = 000E0E0008000E0E000E0E0000000E0E000E0E0000000E0E000002020E0E0202" for instance <rom0.inst>.
+    Set property "INIT_06 = 000000000000000000060E0E0A02020200000E0E00000E0E00060E0C080C0E06" for instance <rom0.inst>.
+    Set property "INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_08 = 00000000000F0F0F0000000000000F0F000000000000000F0000000000000000" for instance <rom0.inst>.
+    Set property "INIT_09 = 000F0F0F0F0F0F0F00000F0F0F0F0F0F0000000F0F0F0F0F000000000F0F0F0F" for instance <rom0.inst>.
+    Set property "INIT_0A = 0F0F0F0F0F0000000F0F0F0F0F0F00000F0F0F0F0F0F0F000F0F0F0F0F0F0F0F" for instance <rom0.inst>.
+    Set property "INIT_0B = 0F000000000000000F0F0000000000000F0F0F00000000000F0F0F0F00000000" for instance <rom0.inst>.
+    Set property "INIT_0C = 0002060E0A020200000C0E0A02020604000000000E0E040000080C0602020C08" for instance <rom0.inst>.
+    Set property "INIT_0D = 00060E0A020206060000020202060C0800000A0A0A0A0E0E00000E0E060C0800" for instance <rom0.inst>.
+    Set property "INIT_0E = 0F0F0F0F0F0F000F0000000000000000000C0E0202020E0C00000C02020A0E0C" for instance <rom0.inst>.
+    Set property "INIT_0F = 0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000F0F0F0F0F0F00000F0F0F0F0F0F0F0F" for instance <rom0.inst>.
+    Set property "INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\r4-char_MSB.vhd" line 288: Output port <DOP> of the instance <rom0.inst> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <char_MSB> synthesized.
+
+Synthesizing Unit <motion>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\motion.vhd".
+WARNING:Xst:647 - Input <HCount<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <HCount<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <K8_out>.
+    Found 1-bit register for signal <LDV3A_n>.
+    Found 1-bit register for signal <LDV2A_n>.
+    Found 1-bit register for signal <LDV1A_n>.
+    Found 8-bit register for signal <Ball1_Hpos>.
+    Found 8-bit register for signal <Ball2_Hpos>.
+    Found 8-bit register for signal <Ball3_Hpos>.
+    Found 5-bit register for signal <L5_reg>.
+    Found 1-bit register for signal <Ball1_reg<7>>.
+    Found 1-bit register for signal <Ball1_reg<6>>.
+    Found 1-bit register for signal <Ball1_reg<5>>.
+    Found 1-bit register for signal <Ball1_reg<4>>.
+    Found 1-bit register for signal <Ball1_reg<3>>.
+    Found 1-bit register for signal <Ball1_reg<2>>.
+    Found 1-bit register for signal <Ball1_reg<1>>.
+    Found 1-bit register for signal <Ball1_reg<0>>.
+    Found 1-bit register for signal <Ball2_reg<7>>.
+    Found 1-bit register for signal <Ball2_reg<6>>.
+    Found 1-bit register for signal <Ball2_reg<5>>.
+    Found 1-bit register for signal <Ball2_reg<4>>.
+    Found 1-bit register for signal <Ball2_reg<3>>.
+    Found 1-bit register for signal <Ball2_reg<2>>.
+    Found 1-bit register for signal <Ball2_reg<1>>.
+    Found 1-bit register for signal <Ball2_reg<0>>.
+    Found 1-bit register for signal <Ball3_reg<7>>.
+    Found 1-bit register for signal <Ball3_reg<6>>.
+    Found 1-bit register for signal <Ball3_reg<5>>.
+    Found 1-bit register for signal <Ball3_reg<4>>.
+    Found 1-bit register for signal <Ball3_reg<3>>.
+    Found 1-bit register for signal <Ball3_reg<2>>.
+    Found 1-bit register for signal <Ball3_reg<1>>.
+    Found 1-bit register for signal <Ball3_reg<0>>.
+    Found 8-bit adder for signal <LM4_sum> created at line 112.
+    Found 8-bit adder for signal <Ball1_Hpos[7]_GND_54_o_add_6_OUT> created at line 191.
+    Found 8-bit adder for signal <Ball2_Hpos[7]_GND_54_o_add_12_OUT> created at line 223.
+    Found 8-bit adder for signal <Ball3_Hpos[7]_GND_54_o_add_18_OUT> created at line 255.
+    Found 16x10-bit Read Only RAM for signal <n0154>
+    Found 16x10-bit Read Only RAM for signal <D7_out>
+    Summary:
+	inferred   2 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  59 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <motion> synthesized.
+
+Synthesizing Unit <K6_PROM>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\K6_PROM.vhd".
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <K6_PROM> synthesized.
+
+Synthesizing Unit <audio>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\audio.vhd".
+WARNING:Xst:647 - Input <VCount<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <VCount<7:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <tone_reg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tone_reg<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tone_reg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tone_reg<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   4 Latch(s).
+Unit <audio> synthesized.
+
+Synthesizing Unit <deltasigma>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\deltasigma.vhd".
+        width = 8
+    Found 10-bit register for signal <reg>.
+    Found 1-bit register for signal <output>.
+    Found 10-bit adder for signal <reg_d> created at line 59.
+    Found 10-bit subtractor for signal <n0015> created at line 0.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+Unit <deltasigma> synthesized.
+
+Synthesizing Unit <paddle>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\paddle.vhd".
+WARNING:Xst:647 - Input <Mask2_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\paddle.vhd" line 87: Output port <direction> of the instance <encoder> is unconnected or connected to loadless signal.
+    Found 17-bit register for signal <ramp>.
+    Found 1-bit register for signal <comp1_n>.
+    Found 17-bit adder for signal <ramp[16]_GND_62_o_add_0_OUT> created at line 61.
+    Found 18-bit adder for signal <n0017> created at line 82.
+    Found 12x6-bit multiplier for signal <pad_pos[11]_PWR_30_o_MuLt_2_OUT> created at line 64.
+    Found 18-bit comparator greater for signal <pad_pos[11]_GND_62_o_LessThan_4_o> created at line 64
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <paddle> synthesized.
+
+Synthesizing Unit <quadrature_decoder>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\quadrature_decoder.vhd".
+        positions = 2000
+        debounce_time = 500
+        set_origin_debounce_time = 50000
+    Found 2-bit register for signal <b_new>.
+    Found 9-bit register for signal <debounce_cnt>.
+    Found 1-bit register for signal <a_prev>.
+    Found 1-bit register for signal <b_prev>.
+    Found 2-bit register for signal <set_origin_n_new>.
+    Found 16-bit register for signal <set_origin_cnt>.
+    Found 1-bit register for signal <set_origin_n_int>.
+    Found 11-bit register for signal <position>.
+    Found 1-bit register for signal <direction>.
+    Found 2-bit register for signal <a_new>.
+    Found 9-bit adder for signal <debounce_cnt[8]_GND_64_o_add_1_OUT> created at line 64.
+    Found 16-bit adder for signal <set_origin_cnt[15]_GND_64_o_add_5_OUT> created at line 74.
+    Found 11-bit adder for signal <position[10]_GND_64_o_add_10_OUT> created at line 85.
+    Found 11-bit subtractor for signal <GND_64_o_GND_64_o_sub_14_OUT<10:0>> created at line 92.
+    Found 11-bit comparator lessequal for signal <position[10]_PWR_31_o_LessThan_10_o> created at line 84
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  46 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <quadrature_decoder> synthesized.
+
+Synthesizing Unit <CPU_mem>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd".
+WARNING:Xst:647 - Input <HCount<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Timer_Reset_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" line 141: Output port <Sync> of the instance <CPU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" line 141: Output port <EF> of the instance <CPU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" line 141: Output port <MF> of the instance <CPU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" line 141: Output port <XF> of the instance <CPU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" line 141: Output port <ML_n> of the instance <CPU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" line 141: Output port <VP_n> of the instance <CPU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" line 141: Output port <VDA> of the instance <CPU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" line 141: Output port <VPA> of the instance <CPU> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <IRQ_n>.
+    Found 1-bit register for signal <J6_5>.
+    Found 1-bit register for signal <Q6>.
+    Found 1-bit register for signal <A7_2>.
+    Found 1-bit register for signal <A7_5>.
+    Found 1-bit register for signal <A7_7>.
+    Found 1-bit register for signal <WRITE_n>.
+    Found 8-bit register for signal <Display>.
+    Found 6-bit register for signal <D2_out>.
+    Found 1-bit register for signal <J6_9>.
+    Found 1-bit register for signal <Q5>.
+    Found 16x10-bit Read Only RAM for signal <F2_out>
+    Found 16x10-bit Read Only RAM for signal <n0114>
+    Summary:
+	inferred   2 RAM(s).
+	inferred  23 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <CPU_mem> synthesized.
+
+Synthesizing Unit <T65>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\T65\T65.vhd".
+WARNING:Xst:647 - Input <Abort_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <XF_i> equivalent to <EF_i> has been removed
+    Register <MF_i> equivalent to <EF_i> has been removed
+    Register <DBR> equivalent to <PBR> has been removed
+    Found 1-bit register for signal <IRQCycle>.
+    Found 1-bit register for signal <NMICycle>.
+    Found 1-bit register for signal <NMIAct>.
+    Found 1-bit register for signal <R_W_n_i>.
+    Found 1-bit register for signal <EF_i>.
+    Found 1-bit register for signal <RstCycle>.
+    Found 8-bit register for signal <IR>.
+    Found 8-bit register for signal <PBR>.
+    Found 8-bit register for signal <BusA_r>.
+    Found 8-bit register for signal <BusB>.
+    Found 8-bit register for signal <AD>.
+    Found 8-bit register for signal <BAH>.
+    Found 8-bit register for signal <DL>.
+    Found 16-bit register for signal <S>.
+    Found 16-bit register for signal <PC>.
+    Found 2-bit register for signal <Mode_r>.
+    Found 2-bit register for signal <Set_Addr_To_r>.
+    Found 3-bit register for signal <Write_Data_r>.
+    Found 9-bit register for signal <BAL>.
+    Found 3-bit register for signal <MCycle>.
+    Found 4-bit register for signal <ALU_Op_r>.
+    Found 1-bit register for signal <ABC<7>>.
+    Found 1-bit register for signal <ABC<6>>.
+    Found 1-bit register for signal <ABC<5>>.
+    Found 1-bit register for signal <ABC<4>>.
+    Found 1-bit register for signal <ABC<3>>.
+    Found 1-bit register for signal <ABC<2>>.
+    Found 1-bit register for signal <ABC<1>>.
+    Found 1-bit register for signal <ABC<0>>.
+    Found 1-bit register for signal <X<7>>.
+    Found 1-bit register for signal <X<6>>.
+    Found 1-bit register for signal <X<5>>.
+    Found 1-bit register for signal <X<4>>.
+    Found 1-bit register for signal <X<3>>.
+    Found 1-bit register for signal <X<2>>.
+    Found 1-bit register for signal <X<1>>.
+    Found 1-bit register for signal <X<0>>.
+    Found 1-bit register for signal <Y<7>>.
+    Found 1-bit register for signal <Y<6>>.
+    Found 1-bit register for signal <Y<5>>.
+    Found 1-bit register for signal <Y<4>>.
+    Found 1-bit register for signal <Y<3>>.
+    Found 1-bit register for signal <Y<2>>.
+    Found 1-bit register for signal <Y<1>>.
+    Found 1-bit register for signal <Y<0>>.
+    Found 8-bit register for signal <P>.
+    Found 1-bit register for signal <B_o>.
+    Found 1-bit register for signal <IRQ_n_o>.
+    Found 1-bit register for signal <NMI_n_o>.
+    Found 16-bit adder for signal <PC[15]_GND_74_o_add_7_OUT> created at line 1241.
+    Found 16-bit adder for signal <S[15]_GND_74_o_add_14_OUT> created at line 1241.
+    Found 8-bit adder for signal <PC[15]_GND_74_o_add_23_OUT> created at line 1241.
+    Found 9-bit adder for signal <GND_74_o_DL[7]_add_56_OUT> created at line 326.
+    Found 8-bit adder for signal <AD[7]_GND_74_o_add_76_OUT> created at line 1241.
+    Found 9-bit adder for signal <BAL[8]_GND_74_o_add_77_OUT> created at line 1241.
+    Found 9-bit adder for signal <GND_74_o_GND_74_o_add_78_OUT> created at line 427.
+    Found 8-bit adder for signal <BAH[7]_GND_74_o_add_79_OUT> created at line 1241.
+    Found 8-bit adder for signal <AD[7]_Y[7]_add_84_OUT> created at line 439.
+    Found 8-bit adder for signal <AD[7]_X[7]_add_85_OUT> created at line 441.
+    Found 3-bit adder for signal <MCycle[2]_GND_74_o_add_120_OUT> created at line 1241.
+    Found 16-bit subtractor for signal <GND_74_o_GND_74_o_sub_17_OUT<15:0>> created at line 1308.
+    Found 8-bit subtractor for signal <GND_74_o_GND_74_o_sub_25_OUT<7:0>> created at line 1308.
+    Found 16-bit 4-to-1 multiplexer for signal <PC[15]_PC[15]_mux_40_OUT> created at line 302.
+    Found 9-bit 4-to-1 multiplexer for signal <BAAdd[1]_BAL[8]_wide_mux_82_OUT> created at line 420.
+    Found 8-bit 6-to-1 multiplexer for signal <BusA> created at line 484.
+    Found 24-bit 4-to-1 multiplexer for signal <A> created at line 493.
+    Found 8-bit 8-to-1 multiplexer for signal <DO> created at line 499.
+    Found 3-bit comparator equal for signal <LCycle[2]_MCycle[2]_equal_120_o> created at line 526
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred 150 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  80 Multiplexer(s).
+Unit <T65> synthesized.
+
+Synthesizing Unit <T65_MCode>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\T65\T65_MCode.vhd".
+WARNING:Xst:647 - Input <P<5:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit 8-to-1 multiplexer for signal <Branch> created at line 109.
+    Found 4-bit 4-to-1 multiplexer for signal <ALU_Op> created at line 953.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0712> created at line 209.
+    Summary:
+	inferred 227 Multiplexer(s).
+Unit <T65_MCode> synthesized.
+
+Synthesizing Unit <T65_ALU>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\T65\T65_ALU.vhd".
+WARNING:Xst:647 - Input <Mode> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit subtractor for signal <n0089> created at line 140.
+    Found 7-bit subtractor for signal <n0091> created at line 141.
+    Found 7-bit adder for signal <n0084> created at line 97.
+    Found 7-bit adder for signal <n0085> created at line 98.
+    Found 6-bit adder for signal <GND_76_o_GND_76_o_add_5_OUT> created at line 1241.
+    Found 7-bit adder for signal <n0087> created at line 116.
+    Found 6-bit adder for signal <GND_76_o_GND_76_o_add_8_OUT> created at line 1241.
+    Found 8-bit adder for signal <BusA[7]_GND_76_o_add_23_OUT> created at line 1241.
+    Found 4-bit subtractor for signal <GND_76_o_GND_76_o_sub_15_OUT<3:0>> created at line 1308.
+    Found 6-bit subtractor for signal <GND_76_o_GND_76_o_sub_16_OUT<5:0>> created at line 162.
+    Found 5-bit subtractor for signal <GND_76_o_GND_76_o_sub_17_OUT<4:0>> created at line 1308.
+    Found 8-bit subtractor for signal <GND_76_o_GND_76_o_sub_23_OUT<7:0>> created at line 1308.
+    Found 8-bit 14-to-1 multiplexer for signal <Q_t> created at line 180.
+    Found 5-bit comparator greater for signal <GND_76_o_GND_76_o_LessThan_5_o> created at line 111
+    Found 5-bit comparator greater for signal <GND_76_o_GND_76_o_LessThan_8_o> created at line 125
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  72 Multiplexer(s).
+Unit <T65_ALU> synthesized.
+
+Synthesizing Unit <prog_rom2>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\c1-prog_rom2.vhd".
+    Set property "INIT_00 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_01 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_02 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_03 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_04 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_05 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_06 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_07 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_08 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_09 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_0A = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_0B = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_0C = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_0D = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_0E = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_0F = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_10 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_11 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_12 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_13 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_14 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_15 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_16 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_17 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_18 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_19 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_1A = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_1B = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_1C = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_1D = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_1E = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_1F = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <rom0.inst>.
+    Set property "INIT_20 = 20B505900022D920B507D000279911900027D925B51BF003A506A401A23C8D4C" for instance <rom0.inst>.
+    Set property "INIT_21 = 203E8503A906A2388539A9398539A904E60C408D0C308D344F20E510CA002299" for instance <rom0.inst>.
+    Set property "INIT_22 = F003A5E8D005A53152203224202F082036C920D9D00EA504D003A5362F2035B0" for instance <rom0.inst>.
+    Set property "INIT_23 = 02A534F22002E6118500A9F2D03F2900A50630082E2C36C9200085118508A9C5" for instance <rom0.inst>.
+    Set property "INIT_24 = 381F2938A53369202C034C9AB004C502A9021008322C04A9028500A9AD9003C5" for instance <rom0.inst>.
+    Set property "INIT_25 = 102AB5241038B138853BA939852DA9A838050A0A0A06A538854A00A902100FE9" for instance <rom0.inst>.
+    Set property "INIT_26 = 9509A92A953A0B2003903AA580C92AB53A85335CAD0390335BAD40C93A0B2003" for instance <rom0.inst>.
+    Set property "INIT_27 = 6507F08805A41838A5F8098520A9029020C909651838857F2938B153F003A52B" for instance <rom0.inst>.
+    Set property "INIT_28 = 691802A51BD00AC500259900257900A9279000209900207902A4386502F08838" for instance <rom0.inst>.
+    Set property "INIT_29 = 8503030101600DC6D80EE60EE60885078510A917851705980FD017250A0AA801" for instance <rom0.inst>.
+    Set property "INIT_2A = 8539A9398539A91EA23E8500A900008785030100000000878503010000878785" for instance <rom0.inst>.
+    Set property "INIT_2B = 01C904A56CD002A50AF003A535B04C3E85AA1FA9398539A9388556A935B02038" for instance <rom0.inst>.
+    Set property "INIT_2C = A9068509F006C502A9029003C92A2A8029082FAD2A0828AD60D00F2900A566D0" for instance <rom0.inst>.
+    Set property "INIT_2D = F00A852DE9BDAA2A2A2A06050A260A26C0290833AD0A850832AD31824C408500" for instance <rom0.inst>.
+    Set property "INIT_2E = B0A93A9120A03EAA200AA53A9100A03EAA2003F04A4A4A4A0AA537492044A927" for instance <rom0.inst>.
+    Set property "INIT_2F = 1109070403020015121008060402002016120906040200603A9160A03A9140A0" for instance <rom0.inst>.
+    Set property "INIT_30 = 2A1805E606904A1BA50B9064C9049024C912A56036974C02A205B002C937A514" for instance <rom0.inst>.
+    Set property "INIT_31 = CDB0C3F001C906A5601D852A1805E606904A1DA50B9064C9049024C914A51B85" for instance <rom0.inst>.
+    Set property "INIT_32 = 30C9679007C937A53785029037C51CA9089008C92BA500A025D00BA504D003A5" for instance <rom0.inst>.
+    Set property "INIT_33 = E63A86388624A23C8506A93B85398504A956D003292E6D4C0129059014C90DB0" for instance <rom0.inst>.
+    Set property "INIT_34 = 290CA5F0901FC91F293AA53AE638E638913AB136B060C938A5069007C939A53A" for instance <rom0.inst>.
+    Set property "INIT_35 = E639E6BE90AA3C651838A53891BEA902D0BFA904D0202938A50EF0389104D004" for instance <rom0.inst>.
+    Set property "INIT_36 = 8D03D004C908F0072900A50E8504A90430067008312C0BD00FA5600CE6B8D03B" for instance <rom0.inst>.
+    Set property "INIT_37 = C90EA50C718D0FC60EE60EE600100EE60EE60830085008312CFBF00FA5600C70" for instance <rom0.inst>.
+    Set property "INIT_38 = 9040C92AB51DB01AC910B0E8C918B52FE34C031019B504A2600E851EA9DF901E" for instance <rom0.inst>.
+    Set property "INIT_39 = 1F302AB523D010B508E62A953A01200790C0C9049040C92AB50AD013B0C0C917" for instance <rom0.inst>.
+    Set property "INIT_3A = B5168508A904F003A51995802919B505E602F0012919B5368523A92A953A0B20" for instance <rom0.inst>.
+    Set property "INIT_3B = 5CD0022919B52E382003D002C906A5199580A905C602D0012919B51590F0C910" for instance <rom0.inst>.
+    Set property "INIT_3C = 39D0012919B539C602B0388520E93838A54DD0BFC90FF0BEC938B100A0336920" for instance <rom0.inst>.
+    Set property "INIT_3D = 38A51E9004C939AD2036E5381F2938A50E3036A512D01995020919B508F006A5" for instance <rom0.inst>.
+    Set property "INIT_3E = 76203F862FEB202C9820389120A0389100A900A00DD00BA504D003A536851F29" for instance <rom0.inst>.
+    Set property "INIT_3F = 4C03B080C92AB506D01EC936A510B00EF001C906A5602F0A4C0330CACA3FA632" for instance <rom0.inst>.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\c1-prog_rom2.vhd" line 288: Output port <DOP> of the instance <rom0.inst> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <prog_rom2> synthesized.
+
+Synthesizing Unit <prog_rom3>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\d1-prog_rom3.vhd".
+    Set property "INIT_00 = B02AB504C9072910B500A059B00CC95D9006C90F2918B5F6F0012919B5603082" for instance <rom0.inst>.
+    Set property "INIT_01 = 21E93838A5336920A8600998483A012068099009C90F2918B54802A03A0B2005" for instance <rom0.inst>.
+    Set property "INIT_02 = F01F2938B1A801096029983A842F9040C94330684ED01F2938B139C602B03885" for instance <rom0.inst>.
+    Set property "INIT_03 = 80C92AB50E9004C9072910B50ED002C906A52DD01F2938B1A8200902293AA531" for instance <rom0.inst>.
+    Set property "INIT_04 = 8069182AB568602A953A01202AB5F0B0F99080C92AB5602A953A0B202AB507B0" for instance <rom0.inst>.
+    Set property "INIT_05 = 2040092A2A0A09F0C0290831AD10B004C90EA516F0402900A51BD003A5602A95" for instance <rom0.inst>.
+    Set property "INIT_06 = 85B0A939853BA538853AA537492040A918F0221527B506A6374920C1A9603749" for instance <rom0.inst>.
+    Set property "INIT_07 = 493A14203E86482AB538852BB55A3019B562F005A504A26035F220E8E806A63A" for instance <rom0.inst>.
+    Set property "INIT_08 = 109500A902302AB40690F0C910753BA530953075183AA53EA639B520016918FF" for instance <rom0.inst>.
+    Set property "INIT_09 = C918753BA531953175183AA53EA639B520016918FF493A11203E866838852BB5" for instance <rom0.inst>.
+    Set property "INIT_0A = 11A507904A09904A00A50EF003A5609E10CACA189519A902B019C9E8A90290E8" for instance <rom0.inst>.
+    Set property "INIT_0B = 85010907C604F007A6020908C604F008A6040909C604F009A600A96011850329" for instance <rom0.inst>.
+    Set property "INIT_0C = 21F001C90BF006A540F602A62D5320118500A91D851B85198580A90C808D6011" for instance <rom0.inst>.
+    Set property "INIT_0D = AC4C16A235B0203E851BA91EA2388573A9398539A90D8568A93C8D4C24F002C9" for instance <rom0.inst>.
+    Set property "INIT_0E = A918A2388590A9398539A91D851B8501A935A2200D8560A935A24C0D8568A935" for instance <rom0.inst>.
+    Set property "INIT_0F = 2D8504A9148512853CA91C85A0A91A8558A92E8529A92C85D7A935B0203E8517" for instance <rom0.inst>.
+    Set property "INIT_10 = C91F293AA53AE638E600A03A9100A938913AB120A03A9100A938913AB1602F85" for instance <rom0.inst>.
+    Set property "INIT_11 = 19B504A2061019B502A234D001C905A528D002C93EF006A542D00DA560E0D01F" for instance <rom0.inst>.
+    Set property "INIT_12 = 2AB5083019B504A22A852AB52B852BB5188518B5108510B5199580A919851630" for instance <rom0.inst>.
+    Set property "INIT_13 = 15D0E02901A520D003A531944CF7B003C940B502A660F010CACA053010B50430" for instance <rom0.inst>.
+    Set property "INIT_14 = 06A5FB3019B560058500A9429030C937A52A953A0B200F102AB51390E0C910B5" for instance <rom0.inst>.
+    Set property "INIT_15 = 9018D50469181EA5E1B0E7C9E590DDC910B50A90BFC90490B5C910B50AD001C9" for instance <rom0.inst>.
+    Set property "INIT_16 = E6378580A904D037E6C29080C92AB5C8B018D51E65183E85016918FF4916A5D8" for instance <rom0.inst>.
+    Set property "INIT_17 = A514F000A904D003A52B953365B905B008C92BB5A803A9029004C94A4A37A507" for instance <rom0.inst>.
+    Set property "INIT_18 = A51DD002A9049008C92BB53E8500A902B001A93C8518F5381E650169186A383E" for instance <rom0.inst>.
+    Set property "INIT_19 = B9A83E053D0502A902B000A903C939AD203CA53D8511F000A904900CC9FC2937" for instance <rom0.inst>.
+    Set property "INIT_1A = 3058285828641C2E384C368580A91995802919B505E602F0012919B52A953359" for instance <rom0.inst>.
+    Set property "INIT_1B = 1818B53A8500A9398504A938851F494A4A4A08691810B5070606057010701050" for instance <rom0.inst>.
+    Set property "INIT_1C = 04A938853A8502A960398539653AA538853865183A260A3A260AFF4907090F69" for instance <rom0.inst>.
+    Set property "INIT_1D = 852069183AA53C8405A002D001C906A500A01AA207678D07628DBDA939853B85" for instance <rom0.inst>.
+    Set property "INIT_1E = A5CACAAA4A4A4AFF491EA579F016A5E9D0CA3A913CA43A91A800A93BE602903A" for instance <rom0.inst>.
+    Set property "INIT_1F = 38913CA4389100A0B069183B85FF4907291EA5F2D0CA39E60290388520691838" for instance <rom0.inst>.
+    Set property "INIT_20 = A03891A8A93B8508E9381A9009C93CF03B651816A539E60290388520691838A5" for instance <rom0.inst>.
+    Set property "INIT_21 = 05D007C939A50B9060C938A5AAA0691839E602903BA5388520691838A5389100" for instance <rom0.inst>.
+    Set property "INIT_22 = 8516854185408500A948854785198580A96038913CA4389100A08AAA1A69188A" for instance <rom0.inst>.
+    Set property "INIT_23 = 31824C068502A9041006C60BD00BC604F00BA514D00EA5018504850285058503" for instance <rom0.inst>.
+    Set property "INIT_24 = A510F00C408D0C308D08D0102900A52D742036C92017850A0A17A516850EA960" for instance <rom0.inst>.
+    Set property "INIT_25 = A90E8504E938D19004C90EA5223008802C0C418D039004C90C318D0A9002C90E" for instance <rom0.inst>.
+    Set property "INIT_26 = 0EC6AD9002C90EA5B37031824C4085268525852185208500A90B8502A9038502" for instance <rom0.inst>.
+    Set property "INIT_27 = A50CA60D8500A96001B002C903A5D1D0178504A9D7F0082917A5038501A90EC6" for instance <rom0.inst>.
+    Set property "INIT_28 = 3A8549A93B8400A031E62048861D8548A51DA647861B8547A51BA60C85468646" for instance <rom0.inst>.
+    Set property "INIT_29 = 38E63C661801B03803D0BEC938B13D853AB13C8500A907A2398504A9388527A9" for instance <rom0.inst>.
+    Set property "INIT_2A = A93891BEA90DE60CD0389120A0389100A90AB03D2638C607A23A913CA5EF10CA" for instance <rom0.inst>.
+    Set property "INIT_2B = 1838A5ABD01FC91F2939E60290388508691838A53AE6DF10CA00A0389120A0BF" for instance <rom0.inst>.
+    Set property "INIT_2C = 824C03D002C507D001C904A5949060C938A59A9007C939A539E6029038852869" for instance <rom0.inst>.
+    Set property "INIT_2D = CAAA6837492060A9483A858A3B8504A93E8513A91AA2388573A9398539A96031" for instance <rom0.inst>.
+    Set property "INIT_2E = 0AD0AA3A848A00A002D0102900A508F003A5AA0ED002C5B0A060EAB03EE40430" for instance <rom0.inst>.
+    Set property "INIT_2F = 16F025B5389100A0389120A000A93885A0A9398506A908D0398504A9388560A9" for instance <rom0.inst>.
+    Set property "INIT_30 = 3A054A4A4A4AF02920B5389120A03A050F2925B538913A054A4A4A4A08F0F029" for instance <rom0.inst>.
+    Set property "INIT_31 = 2036C920374920C1A916850EA922F003A560389160A03A050F2920B5389140A0" for instance <rom0.inst>.
+    Set property "INIT_32 = 4920C4A90C118D378500A9E7D00C108DECF00C118D102900A50E30082E2C2D74" for instance <rom0.inst>.
+    Set property "INIT_33 = D00FA536C9200085E129800900A53A9160A03A9140A03A9120A03A91A800A937" for instance <rom0.inst>.
+    Set property "INIT_34 = 02B020C939E22005E609860886078600A20C8500A904D001C904A5F5D000A504" for instance <rom0.inst>.
+    Set property "INIT_35 = 199502A9109580A92A95A06918F7F020C9382939E2201895E0A90290E0C920A9" for instance <rom0.inst>.
+    Set property "INIT_36 = 0C808D01E602D000E6F990D8C90C00ADF9B0D8C90C00AD60368580A92B9504A9" for instance <rom0.inst>.
+    Set property "INIT_37 = AD20A81EE538AA14D0E7A20490E8C91C903EA604B03EC51FA53E8515691816A5" for instance <rom0.inst>.
+    Set property "INIT_38 = 8DB0090F2904A506F003A533982030E9201E86E8E8021098CA06D00A9002C939" for instance <rom0.inst>.
+    Set property "INIT_39 = 0C518D30A3202EC62039E22035C72003F003C504F003A601A935C72000A905A0" for instance <rom0.inst>.
+    Set property "INIT_3A = D1BD26D04029AA4A3D262A3C262A183D863C8600A000A2603CB14C033008C0AD" for instance <rom0.inst>.
+    Set property "INIT_3B = BD388537A9BDAA38054A4A4A4A4AC0290830AD38850A0A8A3B8537D2BD3A8537" for instance <rom0.inst>.
+    Set property "INIT_3C = 852069183AA53A8100A2800902F03DA606F000A904F03CA620F038B1398537AA" for instance <rom0.inst>.
+    Set property "INIT_3D = 9B388738723861384D383938243813380937F937E837DB60DC10C83BE602903A" for instance <rom0.inst>.
+    Set property "INIT_3E = 4847494820048404A104A104A104A139293918390938FA38E738D338BE38AD38" for instance <rom0.inst>.
+    Set property "INIT_3F = 55454C4C49454D00204C48415A544B4E5550204554534542002045524F435320" for instance <rom0.inst>.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\d1-prog_rom3.vhd" line 288: Output port <DOP> of the instance <rom0.inst> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <prog_rom3> synthesized.
+
+Synthesizing Unit <prog_rom4>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\e1-prog_rom4.vhd".
+    Set property "INIT_00 = 59414C502032204E494F432031002044524F4345522020002045524F43532052" for instance <rom0.inst>.
+    Set property "INIT_01 = 4345495020312000202052454C45495053203220455A4E45554D203100535245" for instance <rom0.inst>.
+    Set property "INIT_02 = 5345524F444147554A20322041484349462031002053525545554F4A20322045" for instance <rom0.inst>.
+    Set property "INIT_03 = 505320312020455A4E45554D203100524559414C50203120204E494F43203100" for instance <rom0.inst>.
+    Set property "INIT_04 = 43494620310020525545554F4A203120204543454950203120002052454C4549" for instance <rom0.inst>.
+    Set property "INIT_05 = 203200524559414C50203120534E494F43203200524F444147554A2031204148" for instance <rom0.inst>.
+    Set property "INIT_06 = 4A203120534543454950203220002052454C454950532031204E455A4E45554D" for instance <rom0.inst>.
+    Set property "INIT_07 = 4F422020202000524F444147554A20312053414843494620320020525545554F" for instance <rom0.inst>.
+    Set property "INIT_08 = 472045495452415000204C4549505320534549455246200020524F462053554E" for instance <rom0.inst>.
+    Set property "INIT_09 = 2020202020203D0020534954415247204F444954524150002045544955544152" for instance <rom0.inst>.
+    Set property "INIT_0A = 7F7F7F7F7F7F7F7F7F3E003D2020202020202020202020202020202020202020" for instance <rom0.inst>.
+    Set property "INIT_0B = 3F3E3F3E3F3E3F3E3F3E3F3E3D003F7F7F7F7F7F7F7F7F7F7F7F7F7F7F7F7F7F" for instance <rom0.inst>.
+    Set property "INIT_0C = 3E3F3E3F3E202020203F3E3F3E3F3E3D003D3F3E3F3E3F3E3F3E3F3E3F3E3F3E" for instance <rom0.inst>.
+    Set property "INIT_0D = A53B853A853D8500A93C8560016918FF490510003D3F3E3F3E3F3E202020203F" for instance <rom0.inst>.
+    Set property "INIT_0E = 4C3D263C063B853D653BA53A853C653AA518600ED003B038463D85FFA904103C" for instance <rom0.inst>.
+    Set property "INIT_0F = 13A513E602D0130515A51385014913A506F0022913A513E602101526130639C7" for instance <rom0.inst>.
+    Set property "INIT_10 = 3125190D00603A1BBDAA4A4A40E93860016918FF49604069183A0B2040E93860" for instance <rom0.inst>.
+    Set property "INIT_11 = CFDBE7F3000D1925313C47515B636A71767A7E7F7F7F7E7A76716A635B51473C" for instance <rom0.inst>.
+    Set property "INIT_12 = 0000000000F3E7DBCFC4B9AFA59D968F8A868281818182868A8F969DA5AFB9C4" for instance <rom0.inst>.
+    Set property "INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_20 = 0840AD41B044C945902CC90105BDBAD8488A406802F020290C00AD580E008D48" for instance <rom0.inst>.
+    Set property "INIT_21 = 44B50AD0F8C9FC2910D00FE614D044D618F044B50CD042B542262A43262A01A2" for instance <rom0.inst>.
+    Set property "INIT_22 = 8D4C4068AA68458544854385428508D0402908C0ADDD10CA449520A90FE602F0" for instance <rom0.inst>.
+    Set property "INIT_23 = 1000AD1F850AD01F85FFA9061012F01F8500A906B048E938FF490C00ADD8483C" for instance <rom0.inst>.
+    Set property "INIT_24 = E80095AA0C708D0C608D0C508D00A99A7FA2D840680C608D0C508D1F262AFF49" for instance <rom0.inst>.
+    Set property "INIT_25 = 009D0469188A0C608E0C508E00A2782C034C58041008C0AD1D851B85FFA9FBD0" for instance <rom0.inst>.
+    Set property "INIT_26 = 04005D0469188AE1D0E80C808D07009D01691806009D01691805009D01691804" for instance <rom0.inst>.
+    Set property "INIT_27 = 0C808D18D007005D0769188A21D006005D0669188A2AD005005D0569188A33D0" for instance <rom0.inst>.
+    Set property "INIT_28 = 8601A2029008A223F06A3832F0F1D0E807009D06009D05009D04009D8AD6D0E8" for instance <rom0.inst>.
+    Set property "INIT_29 = 2C0C808DDAF018F7D0C80C808DFDD0E81186F7D0C80C808DFDD0E800A000A211" for instance <rom0.inst>.
+    Set property "INIT_2A = 3F852CA93B8504A93A85E4A90C108D0C418D0C318D118500A93C8D4CF81008C0" for instance <rom0.inst>.
+    Set property "INIT_2B = 3CF03EA4DDF2D038C63FE60C808DFBD0C83E5155A9A83E8500A9388504A900A2" for instance <rom0.inst>.
+    Set property "INIT_2C = 8D92A93AE600A03A9120A03EAA203CA53A913AC63EAA204A4A4A4A3C853EA45D" for instance <rom0.inst>.
+    Set property "INIT_2D = D005E0E83BE602903A856069183AA53A91B0098A04A48D8DA904848D8FA90464" for instance <rom0.inst>.
+    Set property "INIT_2E = 8500A93A9184A940A03A9181A920A03A9182A910F0E4C93AA506D004C93BA5A1" for instance <rom0.inst>.
+    Set property "INIT_2F = 850840AD3B85C0296A082FAD2A0828AD3A850880AD3985082EAD388508C0AD3C" for instance <rom0.inst>.
+    Set property "INIT_30 = A505C08D3EAA201FA50C518D0C808D00E6F990FAC90C00ADF9B0FAC90C00AD3D" for instance <rom0.inst>.
+    Set property "INIT_31 = AA01A902D00F290A8A12D01F2900A511D03CA511A605A08D3EAA204A4A4A4A1F" for instance <rom0.inst>.
+    Set property "INIT_32 = AD82A202F080293945082EAD81A202F04029384508C0ADAA51D0012900A507D0" for instance <rom0.inst>.
+    Set property "INIT_33 = 10A9AA2A2A0A0DF03B853BC5C0296A082FAD2A0828AD84A202F0C0293A450880" for instance <rom0.inst>.
+    Set property "INIT_34 = 014C033008C02C3C8502108A118688A202F0C0293D450840ADAA8009FC10CA4A" for instance <rom0.inst>.
+    Set property "INIT_35 = 000000000000000000006039E9380390BAC9B0090F2916AA34D2D8923C8D4C3E" for instance <rom0.inst>.
+    Set property "INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3F = 3C003C8D3C610000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\e1-prog_rom4.vhd" line 288: Output port <DOP> of the instance <rom0.inst> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <prog_rom4> synthesized.
+
+Synthesizing Unit <addec_prom>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\e2-addec_prom.vhd".
+    Set property "INIT_00 = EEEEE6E6EAEAE2E2ECECE4E4E8E8E0E0E1E1E1E12121C1C18181414101011111" for instance <rom0.inst>.
+    Set property "INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_0A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_0B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_0C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_0D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_0E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_0F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+    Set property "INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom0.inst>.
+INFO:Xst:3210 - "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\e2-addec_prom.vhd" line 288: Output port <DOP> of the instance <rom0.inst> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <addec_prom> synthesized.
+
+Synthesizing Unit <IO>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\IO.vhd".
+    Found 1-bit register for signal <Lamp1>.
+    Found 1-bit register for signal <Lamp2>.
+    Found 1-bit register for signal <Mask1_n>.
+    Found 1-bit register for signal <Mask2_n>.
+    Found 1-bit register for signal <Counter>.
+    Found 1-bit register for signal <Serv_LED_n>.
+    Found 16x10-bit Read Only RAM for signal <E8_out>
+    Found 2-bit 4-to-1 multiplexer for signal <Inputs> created at line 69.
+    Found 1-bit 7-to-1 multiplexer for signal <Adr[2]_Select2_n_Mux_1_o> created at line 85.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   6 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <IO> synthesized.
+
+Synthesizing Unit <keyboard>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\keyb\keyboard.vhd".
+    Found 1-bit register for signal <resetKey>.
+    Found 1-bit register for signal <MRESET>.
+    Found 1-bit register for signal <CTRL>.
+    Found 1-bit register for signal <ALT>.
+    Found 21-bit register for signal <scanSW>.
+    Found 1-bit register for signal <VIDEO>.
+    Found 1-bit register for signal <PAUSE>.
+    Found 1-bit register for signal <SCANL>.
+    Found 1-bit register for signal <VFREQ>.
+    Found 1-bit register for signal <TABLE>.
+    Found 1-bit register for signal <release>.
+    Summary:
+	inferred  31 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <keyboard> synthesized.
+
+Synthesizing Unit <ps2_intf>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\keyb\ps2_intf.vhd".
+        filter_length = 8
+    Found 1-bit register for signal <ps2_dat_in>.
+    Found 8-bit register for signal <clk_filter>.
+    Found 1-bit register for signal <clk_edge>.
+    Found 4-bit register for signal <bit_count>.
+    Found 9-bit register for signal <shiftreg>.
+    Found 1-bit register for signal <parity>.
+    Found 8-bit register for signal <DATA>.
+    Found 1-bit register for signal <VALID>.
+    Found 1-bit register for signal <ps2_clk_in>.
+    Found 4-bit adder for signal <bit_count[3]_GND_133_o_add_7_OUT> created at line 1241.
+    Found 4-bit comparator greater for signal <bit_count[3]_PWR_70_o_LessThan_7_o> created at line 131
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <ps2_intf> synthesized.
+
+Synthesizing Unit <multiboot>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\multiboot.v".
+    Found 1-bit register for signal <reboot_ff>.
+    Found 5-bit register for signal <q>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <multiboot> synthesized.
+
+Synthesizing Unit <multiboot_spartan6>.
+    Related source file is "F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\multiboot.v".
+        IDLE = 0
+        SYNC_H = 1
+        SYNC_L = 2
+        CWD_H = 3
+        CWD_L = 4
+        GEN1_H = 5
+        GEN1_L = 6
+        GEN2_H = 7
+        GEN2_L = 8
+        GEN3_H = 9
+        GEN3_L = 10
+        GEN4_H = 11
+        GEN4_L = 12
+        GEN5_H = 13
+        GEN5_L = 14
+        NUL_H = 15
+        NUL_L = 16
+        MOD_H = 17
+        MOD_L = 18
+        HCO_H = 19
+        HCO_L = 20
+        RBT_H = 21
+        RBT_L = 22
+        NOOP_0 = 23
+        NOOP_1 = 24
+        NOOP_2 = 25
+        NOOP_3 = 26
+    Register <ff_icap_wr> equivalent to <ff_icap_ce> has been removed
+    Found 16-bit register for signal <icapd_r>.
+    Found 1-bit register for signal <ff_icap_ce>.
+    Found 5-bit register for signal <state>.
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <state> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred  22 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <multiboot_spartan6> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x10-bit single-port Read Only RAM                   : 5
+ 512x8-bit dual-port RAM                               : 2
+# Multipliers                                          : 1
+ 12x6-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 39
+ 10-bit adder                                          : 3
+ 10-bit subtractor                                     : 1
+ 11-bit addsub                                         : 1
+ 13-bit subtractor                                     : 1
+ 16-bit adder                                          : 2
+ 16-bit addsub                                         : 1
+ 17-bit adder                                          : 1
+ 18-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 2
+ 6-bit subtractor                                      : 1
+ 7-bit adder                                           : 3
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 9
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 2
+ 9-bit adder                                           : 5
+# Registers                                            : 143
+ 1-bit register                                        : 88
+ 10-bit register                                       : 3
+ 11-bit register                                       : 1
+ 13-bit register                                       : 1
+ 16-bit register                                       : 5
+ 17-bit register                                       : 1
+ 2-bit register                                        : 4
+ 21-bit register                                       : 1
+ 3-bit register                                        : 3
+ 4-bit register                                        : 3
+ 5-bit register                                        : 3
+ 6-bit register                                        : 1
+ 8-bit register                                        : 24
+ 9-bit register                                        : 5
+# Latches                                              : 4
+ 1-bit latch                                           : 4
+# Comparators                                          : 13
+ 11-bit comparator lessequal                           : 1
+ 18-bit comparator greater                             : 1
+ 3-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 1
+ 5-bit comparator greater                              : 2
+ 9-bit comparator greater                              : 5
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 485
+ 1-bit 2-to-1 multiplexer                              : 289
+ 1-bit 4-to-1 multiplexer                              : 1
+ 1-bit 7-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 19
+ 16-bit 4-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 46
+ 2-bit 4-to-1 multiplexer                              : 1
+ 24-bit 4-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 53
+ 4-bit 2-to-1 multiplexer                              : 13
+ 4-bit 4-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 6
+ 8-bit 2-to-1 multiplexer                              : 42
+ 8-bit 6-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 8
+# Xors                                                 : 13
+ 1-bit xor2                                            : 12
+ 8-bit xor2                                            : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../ipcore_dir/ram1k_dp.ngc>.
+Loading core <ram1k_dp> for timing and area information for instance <RAM>.
+INFO:Xst:2261 - The FF/Latch <PBR_0> in Unit <CPU> is equivalent to the following 7 FFs/Latches, which will be removed : <PBR_1> <PBR_2> <PBR_3> <PBR_4> <PBR_5> <PBR_6> <PBR_7> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <K6> is equivalent to the following 2 FFs/Latches, which will be removed : <q_6> <q_7> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <K6> is equivalent to the following 4 FFs/Latches, which will be removed : <q_1> <q_2> <q_3> <q_4> 
+WARNING:Xst:1426 - The value init of the FF/Latch P_5 hinder the constant cleaning in the block CPU.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <set_origin_n_new_0> (without init value) has a constant value of 1 in block <encoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_0> (without init value) has a constant value of 0 in block <K6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <set_origin_n_new_1> (without init value) has a constant value of 1 in block <encoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <set_origin_n_int> (without init value) has a constant value of 1 in block <encoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <video_6> of sequential type is unconnected in block <dblscan>.
+WARNING:Xst:2677 - Node <video_7> of sequential type is unconnected in block <dblscan>.
+WARNING:Xst:2677 - Node <scanSW_7> of sequential type is unconnected in block <keyb>.
+WARNING:Xst:2677 - Node <PAUSE> of sequential type is unconnected in block <keyb>.
+WARNING:Xst:2677 - Node <joy2_6> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <joy1_6> of sequential type is unconnected in block <superbreakout_top>.
+
+Synthesizing (advanced) Unit <CPU_mem>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_F2_out> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 10-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Addec_bus<0:3>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_n0114> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 10-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(RnW,Addec_bus<5:7>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <CPU_mem> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DEBOUNCE>.
+The following registers are absorbed into counter <tick_counter>: 1 register on signal <tick_counter>.
+Unit <DEBOUNCE> synthesized (advanced).
+
+Synthesizing (advanced) Unit <IO>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_E8_out> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 10-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(IO_wr,Adr<9:7>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <E8_out>        |          |
+    -----------------------------------------------------------------------
+Unit <IO> synthesized (advanced).
+
+Synthesizing (advanced) Unit <T65>.
+The following registers are absorbed into accumulator <AD>: 1 register on signal <AD>.
+The following registers are absorbed into counter <MCycle>: 1 register on signal <MCycle>.
+Unit <T65> synthesized (advanced).
+
+Synthesizing (advanced) Unit <deltasigma>.
+The following registers are absorbed into accumulator <reg>: 1 register on signal <reg>.
+Unit <deltasigma> synthesized (advanced).
+
+Synthesizing (advanced) Unit <line_doubler>.
+The following registers are absorbed into counter <hcnt_i>: 1 register on signal <hcnt_i>.
+The following registers are absorbed into counter <hcnt_o>: 1 register on signal <hcnt_o>.
+The following registers are absorbed into counter <vcnt_i>: 1 register on signal <vcnt_i>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     clkA           | connected to signal <clock_12mhz>   | rise     |
+    |     weA            | connected to signal <flip_flop>     | low      |
+    |     addrA          | connected to signal <hcnt_i<9:1>>   |          |
+    |     diA            | connected to signal <video_i>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     addrB          | connected to signal <hcnt_o>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram2> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     clkA           | connected to signal <clock_12mhz>   | rise     |
+    |     weA            | connected to signal <flip_flop>     | high     |
+    |     addrA          | connected to signal <hcnt_i<9:1>>   |          |
+    |     diA            | connected to signal <video_i>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     addrB          | connected to signal <hcnt_o>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <line_doubler> synthesized (advanced).
+
+Synthesizing (advanced) Unit <motion>.
+The following registers are absorbed into counter <Ball2_Hpos>: 1 register on signal <Ball2_Hpos>.
+The following registers are absorbed into counter <Ball1_Hpos>: 1 register on signal <Ball1_Hpos>.
+The following registers are absorbed into counter <Ball3_Hpos>: 1 register on signal <Ball3_Hpos>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_n0154> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 10-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(J8_3,HCount<5:4>,K8_in)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_D7_out> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 10-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(J8_6,HCount<5:3>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    -----------------------------------------------------------------------
+Unit <motion> synthesized (advanced).
+
+Synthesizing (advanced) Unit <paddle>.
+The following registers are absorbed into counter <ramp>: 1 register on signal <ramp>.
+	Adder/Subtractor <Madd_n0017_Madd> in block <paddle> and  <Mmult_pad_pos[11]_PWR_30_o_MuLt_2_OUT> in block <paddle> are combined into a MULT with pre-adder <Mmult_pad_pos[11]_PWR_30_o_MuLt_2_OUT1>.
+Unit <paddle> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ps2_intf>.
+The following registers are absorbed into counter <bit_count>: 1 register on signal <bit_count>.
+Unit <ps2_intf> synthesized (advanced).
+
+Synthesizing (advanced) Unit <quadrature_decoder>.
+The following registers are absorbed into counter <position>: 1 register on signal <position>.
+The following registers are absorbed into counter <set_origin_cnt>: 1 register on signal <set_origin_cnt>.
+The following registers are absorbed into counter <debounce_cnt>: 1 register on signal <debounce_cnt>.
+Unit <quadrature_decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <superbreakout_top>.
+The following registers are absorbed into counter <delay_count>: 1 register on signal <delay_count>.
+Unit <superbreakout_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <synchronizer>.
+The following registers are absorbed into counter <h_counter>: 1 register on signal <h_counter>.
+The following registers are absorbed into counter <v_counter>: 1 register on signal <v_counter>.
+Unit <synchronizer> synthesized (advanced).
+WARNING:Xst:2677 - Node <joy2_6> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <joy1_6> of sequential type is unconnected in block <superbreakout_top>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x10-bit single-port distributed Read Only RAM       : 5
+ 512x8-bit dual-port distributed RAM                   : 2
+# MACs                                                 : 1
+ 6x12-to-18-bit Mult with pre-adder                    : 1
+# Adders/Subtractors                                   : 20
+ 10-bit subtractor                                     : 1
+ 16-bit adder                                          : 1
+ 16-bit addsub                                         : 1
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 2
+ 6-bit subtractor                                      : 2
+ 7-bit adder                                           : 2
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 3
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 2
+# Counters                                             : 16
+ 10-bit up counter                                     : 2
+ 11-bit updown counter                                 : 1
+ 13-bit down counter                                   : 1
+ 16-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 5
+ 9-bit up counter                                      : 3
+# Accumulators                                         : 2
+ 10-bit up accumulator                                 : 1
+ 8-bit up loadable accumulator                         : 1
+# Registers                                            : 378
+ Flip-Flops                                            : 378
+# Comparators                                          : 13
+ 11-bit comparator lessequal                           : 1
+ 18-bit comparator greater                             : 1
+ 3-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 1
+ 5-bit comparator greater                              : 2
+ 9-bit comparator greater                              : 5
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 494
+ 1-bit 2-to-1 multiplexer                              : 289
+ 1-bit 4-to-1 multiplexer                              : 1
+ 1-bit 6-to-1 multiplexer                              : 8
+ 1-bit 7-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 9
+ 16-bit 2-to-1 multiplexer                             : 19
+ 16-bit 4-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 46
+ 2-bit 4-to-1 multiplexer                              : 1
+ 24-bit 4-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 52
+ 4-bit 2-to-1 multiplexer                              : 13
+ 4-bit 4-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 6
+ 8-bit 2-to-1 multiplexer                              : 38
+ 9-bit 2-to-1 multiplexer                              : 8
+# Xors                                                 : 13
+ 1-bit xor2                                            : 12
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch P_5 hinder the constant cleaning in the block T65.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <set_origin_n_new_0> (without init value) has a constant value of 1 in block <quadrature_decoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <set_origin_n_new_1> (without init value) has a constant value of 1 in block <quadrature_decoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <set_origin_n_int> (without init value) has a constant value of 1 in block <quadrature_decoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_0> (without init value) has a constant value of 0 in block <K6_PROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q_1> (without init value) has a constant value of 0 in block <K6_PROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q_2> (without init value) has a constant value of 0 in block <K6_PROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q_3> (without init value) has a constant value of 0 in block <K6_PROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q_4> (without init value) has a constant value of 0 in block <K6_PROM>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <PBR_0> in Unit <T65> is equivalent to the following 7 FFs/Latches, which will be removed : <PBR_1> <PBR_2> <PBR_3> <PBR_4> <PBR_5> <PBR_6> <PBR_7> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <K6_PROM> is equivalent to the following 2 FFs/Latches, which will be removed : <q_6> <q_7> 
+WARNING:Xst:2677 - Node <DAC/reg_9> of sequential type is unconnected in block <audio>.
+WARNING:Xst:2677 - Node <S_8> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_9> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_10> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_11> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_12> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_13> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_14> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <S_15> of sequential type is unconnected in block <T65>.
+WARNING:Xst:2677 - Node <delay_count_1> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <delay_count_2> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <delay_count_3> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <delay_count_4> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <delay_count_5> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <delay_count_6> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <delay_count_7> of sequential type is unconnected in block <superbreakout_top>.
+INFO:Xst:1901 - Instance M2/rom0.inst in unit synchronizer of type RAMB16_S9 has been replaced by RAMB16BWER
+INFO:Xst:1901 - Instance C1/rom0.inst in unit CPU_mem of type RAMB16_S9 has been replaced by RAMB16BWER
+INFO:Xst:1901 - Instance D1/rom0.inst in unit CPU_mem of type RAMB16_S9 has been replaced by RAMB16BWER
+INFO:Xst:1901 - Instance E1/rom0.inst in unit CPU_mem of type RAMB16_S9 has been replaced by RAMB16BWER
+INFO:Xst:1901 - Instance E2/rom0.inst in unit CPU_mem of type RAMB16_S9 has been replaced by RAMB16BWER
+INFO:Xst:1901 - Instance P4/rom0.inst in unit playfield of type RAMB16_S9 has been replaced by RAMB16BWER
+INFO:Xst:1901 - Instance R4/rom0.inst in unit playfield of type RAMB16_S9 has been replaced by RAMB16BWER
+INFO:Xst:1901 - Instance PLL_OSERDES in unit PLL_OSERDES of type PLL_BASE has been replaced by PLL_ADV
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    Ball3_reg_7 in unit <motion>
+    Ball2_reg_7 in unit <motion>
+    Ball1_reg_7 in unit <motion>
+    Ball3_reg_5 in unit <motion>
+    Ball3_reg_6 in unit <motion>
+    Ball2_reg_5 in unit <motion>
+    Ball2_reg_6 in unit <motion>
+    Ball1_reg_5 in unit <motion>
+    Ball1_reg_6 in unit <motion>
+
+
+Optimizing unit <superbreakout_top> ...
+
+Optimizing unit <super_breakout> ...
+
+Optimizing unit <audio> ...
+
+Optimizing unit <line_doubler> ...
+
+Optimizing unit <DEBOUNCE> ...
+
+Optimizing unit <synchronizer> ...
+
+Optimizing unit <CPU_mem> ...
+
+Optimizing unit <T65> ...
+
+Optimizing unit <T65_ALU> ...
+
+Optimizing unit <T65_MCode> ...
+
+Optimizing unit <paddle> ...
+
+Optimizing unit <quadrature_decoder> ...
+
+Optimizing unit <playfield> ...
+
+Optimizing unit <motion> ...
+
+Optimizing unit <IO> ...
+
+Optimizing unit <keyboard> ...
+
+Optimizing unit <ps2_intf> ...
+
+Optimizing unit <multiboot> ...
+
+Optimizing unit <multiboot_spartan6> ...
+WARNING:Xst:2677 - Node <joy2_0> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <joy2_1> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <joy2_2> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <joy2_3> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <joy2_4> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <joy2_5> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <joy1_5> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2241> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2232> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2242> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2231> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2222> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2221> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2202> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2201> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2192> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2191> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2212> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2211> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2182> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2181> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2172> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram2171> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1242> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1241> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1232> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1231> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1222> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1221> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1212> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1211> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1192> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1191> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1182> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1181> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1202> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1201> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1172> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/Mram_ram1171> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/video_7> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/dblscan/video_6> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_14> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_13> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_12> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_11> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_10> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_9> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_5> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_3> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/debounce/button_2> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/CPU/CPU/BAH_7> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/CPU/CPU/BAH_6> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/CPU/CPU/PBR_0> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/CPU/CPU/EF_i> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/Knob/encoder/direction> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/PF/CompBlank_s> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/Input_Output/Serv_LED_n> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/Input_Output/Counter> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/Input_Output/Mask2_n> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/Input_Output/Lamp2> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <pm/Input_Output/Lamp1> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <keyb/TABLE> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <keyb/PAUSE> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_19> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_18> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_17> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_16> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_15> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_14> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_10> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_7> of sequential type is unconnected in block <superbreakout_top>.
+WARNING:Xst:2677 - Node <keyb/scanSW_5> of sequential type is unconnected in block <superbreakout_top>.
+INFO:Xst:2261 - The FF/Latch <keyb/VFREQ> in Unit <superbreakout_top> is equivalent to the following FF/Latch, which will be removed : <keyb/scanSW_9> 
+INFO:Xst:2261 - The FF/Latch <keyb/VIDEO> in Unit <superbreakout_top> is equivalent to the following FF/Latch, which will be removed : <keyb/scanSW_6> 
+INFO:Xst:2261 - The FF/Latch <keyb/SCANL> in Unit <superbreakout_top> is equivalent to the following FF/Latch, which will be removed : <keyb/scanSW_8> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block superbreakout_top, actual ratio is 24.
+WARNING:Xst:2957 - There are clock and non-clock loads on clock signal SYS_CLK_BUFGP. This is not a recommended design practice, that may cause excessive delay, skew or unroutable situations.
+FlipFlop keyb/ps2/DATA_0 has been replicated 1 time(s)
+FlipFlop keyb/ps2/DATA_1 has been replicated 1 time(s)
+FlipFlop keyb/ps2/DATA_3 has been replicated 1 time(s)
+FlipFlop pm/CPU/CPU/ALU_Op_r_0 has been replicated 1 time(s)
+FlipFlop pm/CPU/CPU/BusA_r_0 has been replicated 1 time(s)
+FlipFlop pm/CPU/CPU/IR_0 has been replicated 3 time(s)
+FlipFlop pm/CPU/CPU/IR_1 has been replicated 2 time(s)
+FlipFlop pm/CPU/CPU/IR_2 has been replicated 2 time(s)
+FlipFlop pm/CPU/CPU/IR_3 has been replicated 2 time(s)
+FlipFlop pm/CPU/CPU/IR_4 has been replicated 3 time(s)
+FlipFlop pm/CPU/CPU/IR_5 has been replicated 2 time(s)
+FlipFlop pm/CPU/CPU/IR_6 has been replicated 3 time(s)
+FlipFlop pm/CPU/CPU/IR_7 has been replicated 2 time(s)
+FlipFlop pm/CPU/CPU/MCycle_0 has been replicated 2 time(s)
+FlipFlop pm/CPU/CPU/MCycle_1 has been replicated 2 time(s)
+FlipFlop pm/CPU/CPU/MCycle_2 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <superbreakout_top> :
+	Found 3-bit shift register for signal <pm/CPU/WRITE_n>.
+	Found 2-bit shift register for signal <keyb/ps2/shiftreg_7>.
+Unit <superbreakout_top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 489
+ Flip-Flops                                            : 489
+# Shift Registers                                      : 2
+ 2-bit shift register                                  : 1
+ 3-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : superbreakout_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1515
+#      GND                         : 2
+#      INV                         : 41
+#      LUT1                        : 85
+#      LUT2                        : 86
+#      LUT3                        : 140
+#      LUT4                        : 131
+#      LUT5                        : 199
+#      LUT6                        : 409
+#      MUXCY                       : 178
+#      MUXF7                       : 54
+#      VCC                         : 2
+#      XORCY                       : 188
+# FlipFlops/Latches                : 498
+#      FD                          : 102
+#      FDC                         : 110
+#      FDCE                        : 52
+#      FDE                         : 98
+#      FDP                         : 17
+#      FDPE                        : 1
+#      FDR                         : 63
+#      FDRE                        : 37
+#      FDS                         : 11
+#      LD_1                        : 4
+#      LDC                         : 3
+# RAMS                             : 40
+#      RAM64M                      : 32
+#      RAMB16BWER                  : 7
+#      RAMB8BWER                   : 1
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
+# Clock Buffers                    : 6
+#      BUFG                        : 5
+#      BUFGP                       : 1
+# IO Buffers                       : 73
+#      IBUF                        : 19
+#      OBUF                        : 54
+# DSPs                             : 1
+#      DSP48A1                     : 1
+# Others                           : 3
+#      BUFPLL                      : 1
+#      ICAP_SPARTAN6               : 1
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             498  out of  11440     4%  
+ Number of Slice LUTs:                 1221  out of   5720    21%  
+    Number used as Logic:              1091  out of   5720    19%  
+    Number used as Memory:              130  out of   1440     9%  
+       Number used as RAM:              128
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1328
+   Number with an unused Flip Flop:     830  out of   1328    62%  
+   Number with an unused LUT:           107  out of   1328     8%  
+   Number of fully used LUT-FF pairs:   391  out of   1328    29%  
+   Number of unique control sets:        80
+
+IO Utilization: 
+ Number of IOs:                          83
+ Number of bonded IOBs:                  74  out of    102    72%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                8  out of     32    25%  
+    Number using Block RAM only:          8
+ Number of BUFG/BUFGCTRLs:                6  out of     16    37%  
+ Number of DSP48A1s:                      1  out of     16     6%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------+----------------------------------------+-------+
+Clock Signal                                                                       | Clock buffer(FF name)                  | Load  |
+-----------------------------------------------------------------------------------+----------------------------------------+-------+
+PLL_OSERDES/CLKOUT1                                                                | BUFG                                   | 93    |
+SYS_CLK                                                                            | BUFGP                                  | 10    |
+pm/Tones_n(pm/Ball_motion/Mram_D7_out111:O)                                        | NONE(*)(pm/Sounds/tone_reg_3)          | 4     |
+delay_count_0                                                                      | BUFG                                   | 108   |
+pm/Vid_sync/hsync_int                                                              | NONE(pm/Vid_sync/v_counter_7)          | 12    |
+pm/Vid_sync/h_counter_4                                                            | NONE(pm/Vid_sync/hsync_int)            | 1     |
+pm/Vid_sync/h_counter_6                                                            | NONE(pm/Vid_sync/hblank_int)           | 1     |
+pm/CPU/D2_out_1                                                                    | NONE(pm/CPU/J6_9)                      | 1     |
+pm/Vid_sync/h_counter_0                                                            | BUFG                                   | 135   |
+pm/phi2(pm/CPU/PHI21:O)                                                            | NONE(*)(pm/CPU/Display_7)              | 13    |
+pm/Vid_sync/v_counter_4                                                            | NONE(pm/CPU/IRQ_n)                     | 1     |
+pm/Vid_sync/h_counter_8                                                            | NONE(pm/CPU/J6_5)                      | 1     |
+pm/CPU/PHI1(pm/CPU/PHI11:O)                                                        | BUFG(*)(pm/CPU/CPU/AD_7)               | 158   |
+pm/Ball_motion/LDV3A_n_Vid[5]_AND_116_o(pm/Ball_motion/LDV3A_n_Vid[5]_AND_116_o1:O)| NONE(*)(pm/Ball_motion/Ball3_reg_7_LDC)| 1     |
+pm/Ball_motion/LDV2A_n_Vid[5]_AND_100_o(pm/Ball_motion/LDV2A_n_Vid[5]_AND_100_o1:O)| NONE(*)(pm/Ball_motion/Ball2_reg_7_LDC)| 1     |
+pm/Ball_motion/LDV1A_n_Vid[5]_AND_84_o(pm/Ball_motion/LDV1A_n_Vid[5]_AND_84_o1:O)  | NONE(*)(pm/Ball_motion/Ball1_reg_7_LDC)| 1     |
+-----------------------------------------------------------------------------------+----------------------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 10.274ns (Maximum Frequency: 97.331MHz)
+   Minimum input arrival time before clock: 5.137ns
+   Maximum output required time after clock: 11.715ns
+   Maximum combinational path delay: 7.025ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PLL_OSERDES/CLKOUT1'
+  Clock period: 9.745ns (frequency: 102.617MHz)
+  Total number of paths / destination ports: 3536 / 143
+-------------------------------------------------------------------------
+Delay:               9.745ns (Levels of Logic = 8)
+  Source:            keyb/ps2/DATA_4 (FF)
+  Destination:       keyb/scanSW_12 (FF)
+  Source Clock:      PLL_OSERDES/CLKOUT1 rising
+  Destination Clock: PLL_OSERDES/CLKOUT1 rising
+
+  Data Path: keyb/ps2/DATA_4 to keyb/scanSW_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             12   0.525   1.297  keyb/ps2/DATA_4 (keyb/ps2/DATA_4)
+     LUT4:I1->O           11   0.235   1.039  keyb/GND_132_o_keyb_data[7]_equal_10_o<7>11 (keyb/GND_132_o_keyb_data[7]_equal_10_o<7>1)
+     LUT5:I4->O            2   0.254   1.002  keyb/GND_132_o_keyb_data[7]_equal_12_o<7>1 (keyb/GND_132_o_keyb_data[7]_equal_12_o)
+     LUT6:I2->O            1   0.254   0.910  keyb/_n03695 (keyb/_n03695)
+     LUT5:I2->O            2   0.235   0.726  keyb/_n03697 (keyb/_n0369)
+     LUT6:I5->O            2   0.254   0.726  keyb/GND_132_o_scanSW[20]_select_33_OUT<14>1111 (keyb/GND_132_o_scanSW[20]_select_33_OUT<14>1111)
+     LUT5:I4->O            2   0.254   0.726  keyb/GND_132_o_scanSW[20]_select_33_OUT<16>1111 (keyb/GND_132_o_scanSW[20]_select_33_OUT<16>111)
+     LUT3:I2->O            2   0.254   0.726  keyb/GND_132_o_scanSW[20]_select_33_OUT<17>111 (keyb/GND_132_o_scanSW[20]_select_33_OUT<17>11)
+     LUT5:I4->O            1   0.254   0.000  keyb/GND_132_o_scanSW[20]_select_33_OUT<17>1 (keyb/GND_132_o_scanSW[20]_select_33_OUT<3>)
+     FDE:D                     0.074          keyb/scanSW_3
+    ----------------------------------------
+    Total                      9.745ns (2.593ns logic, 7.152ns route)
+                                       (26.6% logic, 73.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYS_CLK'
+  Clock period: 2.305ns (frequency: 433.934MHz)
+  Total number of paths / destination ports: 90 / 10
+-------------------------------------------------------------------------
+Delay:               2.305ns (Levels of Logic = 9)
+  Source:            pm/Sounds/DAC/reg_1 (FF)
+  Destination:       pm/Sounds/DAC/reg_8 (FF)
+  Source Clock:      SYS_CLK rising
+  Destination Clock: SYS_CLK rising
+
+  Data Path: pm/Sounds/DAC/reg_1 to pm/Sounds/DAC/reg_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.525   0.910  pm/Sounds/DAC/reg_1 (pm/Sounds/DAC/reg_1)
+     LUT3:I0->O            1   0.235   0.000  pm/Sounds/DAC/Maccum_reg_lut<1> (pm/Sounds/DAC/Maccum_reg_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  pm/Sounds/DAC/Maccum_reg_cy<1> (pm/Sounds/DAC/Maccum_reg_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Sounds/DAC/Maccum_reg_cy<2> (pm/Sounds/DAC/Maccum_reg_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Sounds/DAC/Maccum_reg_cy<3> (pm/Sounds/DAC/Maccum_reg_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Sounds/DAC/Maccum_reg_cy<4> (pm/Sounds/DAC/Maccum_reg_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Sounds/DAC/Maccum_reg_cy<5> (pm/Sounds/DAC/Maccum_reg_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Sounds/DAC/Maccum_reg_cy<6> (pm/Sounds/DAC/Maccum_reg_cy<6>)
+     MUXCY:CI->O           0   0.023   0.000  pm/Sounds/DAC/Maccum_reg_cy<7> (pm/Sounds/DAC/Maccum_reg_cy<7>)
+     XORCY:CI->O           1   0.206   0.000  pm/Sounds/DAC/Maccum_reg_xor<8> (pm/Sounds/Result<8>)
+     FDC:D                     0.074          pm/Sounds/DAC/reg_8
+    ----------------------------------------
+    Total                      2.305ns (1.395ns logic, 0.910ns route)
+                                       (60.5% logic, 39.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'delay_count_0'
+  Clock period: 7.878ns (frequency: 126.936MHz)
+  Total number of paths / destination ports: 2773 / 424
+-------------------------------------------------------------------------
+Delay:               7.878ns (Levels of Logic = 6)
+  Source:            pm/Vid_sync/h_counter_4 (FF)
+  Destination:       pm/dblscan/Mram_ram28 (RAM)
+  Source Clock:      delay_count_0 rising
+  Destination Clock: delay_count_0 rising
+
+  Data Path: pm/Vid_sync/h_counter_4 to pm/dblscan/Mram_ram28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             11   0.525   1.315  pm/Vid_sync/h_counter_4 (pm/Vid_sync/h_counter_4)
+     LUT4:I0->O            2   0.254   0.726  pm/n00161_SW0 (N8)
+     LUT6:I5->O            2   0.254   1.156  pm/n00161 (pm/n0016)
+     LUT6:I1->O            1   0.254   0.000  pm/Mmux_Overlay_B11_G (N276)
+     MUXF7:I1->O           3   0.175   0.766  pm/Mmux_Overlay_B11 (pm/Overlay_B1)
+     LUT6:I5->O            1   0.254   0.682  pm/Mmux_Video_RGB21 (pm/Mmux_Video_RGB2)
+     LUT6:I5->O           17   0.254   1.208  pm/Mmux_Video_RGB22 (pm/Video_RGB<1>)
+     RAM64M:DIB                0.055          pm/dblscan/Mram_ram11
+    ----------------------------------------
+    Total                      7.878ns (2.025ns logic, 5.853ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pm/Vid_sync/hsync_int'
+  Clock period: 2.290ns (frequency: 436.777MHz)
+  Total number of paths / destination ports: 44 / 16
+-------------------------------------------------------------------------
+Delay:               2.290ns (Levels of Logic = 9)
+  Source:            pm/Vid_sync/v_counter_0 (FF)
+  Destination:       pm/Vid_sync/v_counter_7 (FF)
+  Source Clock:      pm/Vid_sync/hsync_int rising
+  Destination Clock: pm/Vid_sync/hsync_int rising
+
+  Data Path: pm/Vid_sync/v_counter_0 to pm/Vid_sync/v_counter_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.525   0.875  pm/Vid_sync/v_counter_0 (pm/Vid_sync/v_counter_0)
+     INV:I->O              1   0.255   0.000  pm/Vid_sync/Mcount_v_counter_lut<0>_INV_0 (pm/Vid_sync/Mcount_v_counter_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  pm/Vid_sync/Mcount_v_counter_cy<0> (pm/Vid_sync/Mcount_v_counter_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Vid_sync/Mcount_v_counter_cy<1> (pm/Vid_sync/Mcount_v_counter_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Vid_sync/Mcount_v_counter_cy<2> (pm/Vid_sync/Mcount_v_counter_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Vid_sync/Mcount_v_counter_cy<3> (pm/Vid_sync/Mcount_v_counter_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Vid_sync/Mcount_v_counter_cy<4> (pm/Vid_sync/Mcount_v_counter_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Vid_sync/Mcount_v_counter_cy<5> (pm/Vid_sync/Mcount_v_counter_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  pm/Vid_sync/Mcount_v_counter_cy<6> (pm/Vid_sync/Mcount_v_counter_cy<6>)
+     XORCY:CI->O           1   0.206   0.000  pm/Vid_sync/Mcount_v_counter_xor<7> (pm/Vid_sync/Result<7>1)
+     FDR:D                     0.074          pm/Vid_sync/v_counter_7
+    ----------------------------------------
+    Total                      2.290ns (1.415ns logic, 0.875ns route)
+                                       (61.8% logic, 38.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pm/Vid_sync/h_counter_0'
+  Clock period: 7.478ns (frequency: 133.721MHz)
+  Total number of paths / destination ports: 1839 / 232
+-------------------------------------------------------------------------
+Delay:               7.478ns (Levels of Logic = 11)
+  Source:            pm/Knob/Mmult_pad_pos[11]_PWR_30_o_MuLt_2_OUT1 (DSP)
+  Destination:       pm/Knob/comp1_n (FF)
+  Source Clock:      pm/Vid_sync/h_counter_0 rising
+  Destination Clock: pm/Vid_sync/h_counter_0 rising
+
+  Data Path: pm/Knob/Mmult_pad_pos[11]_PWR_30_o_MuLt_2_OUT1 to pm/Knob/comp1_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48A1:CLK->M1       2   5.519   1.002  pm/Knob/Mmult_pad_pos[11]_PWR_30_o_MuLt_2_OUT1 (pm/Knob/pad_pos[11]_PWR_30_o_MuLt_2_OUT<1>)
+     LUT4:I0->O            0   0.254   0.000  pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_lutdi (pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<0> (pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<1> (pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<2> (pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<3> (pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<4> (pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<5> (pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<6> (pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<7> (pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<8> (pm/Knob/Mcompar_pad_pos[11]_GND_62_o_LessThan_4_o_cy<8>)
+     MUXCY:CI->O           1   0.262   0.000  pm/Knob/comp1_n_rstpot_cy (pm/Knob/comp1_n_rstpot)
+     FD:D                      0.074          pm/Knob/comp1_n
+    ----------------------------------------
+    Total                      7.478ns (6.476ns logic, 1.002ns route)
+                                       (86.6% logic, 13.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pm/CPU/PHI1'
+  Clock period: 10.274ns (frequency: 97.331MHz)
+  Total number of paths / destination ports: 59314 / 225
+-------------------------------------------------------------------------
+Delay:               10.274ns (Levels of Logic = 11)
+  Source:            pm/CPU/CPU/MCycle_2_1 (FF)
+  Destination:       pm/CPU/CPU/BAL_8 (FF)
+  Source Clock:      pm/CPU/PHI1 rising
+  Destination Clock: pm/CPU/PHI1 rising
+
+  Data Path: pm/CPU/CPU/MCycle_2_1 to pm/CPU/CPU/BAL_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.525   1.104  pm/CPU/CPU/MCycle_2_1 (pm/CPU/CPU/MCycle_2_1)
+     LUT3:I0->O           12   0.235   1.069  pm/CPU/CPU/mcode/_n2003<2>1 (pm/CPU/CPU/mcode/_n2003)
+     LUT6:I5->O            1   0.254   0.790  pm/CPU/CPU/mcode/Mmux_Set_BusA_To2132 (pm/CPU/CPU/mcode/Mmux_Set_BusA_To2132)
+     LUT6:I4->O            2   0.250   0.726  pm/CPU/CPU/mcode/Mmux_Set_BusA_To2139 (pm/CPU/CPU/mcode/Mmux_Set_BusA_To213)
+     LUT6:I5->O           18   0.254   1.343  pm/CPU/CPU/mcode/Mmux_Set_BusA_To46 (pm/CPU/CPU/Set_BusA_To<1>)
+     LUT6:I4->O            1   0.250   0.790  pm/CPU/Mmux_cpuDin76_SW0 (N182)
+     LUT6:I4->O            2   0.250   0.726  pm/CPU/CPU/mux1151 (pm/CPU/CPU/mux115)
+     LUT6:I5->O            1   0.254   0.000  pm/CPU/CPU/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_lut<6> (pm/CPU/CPU/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_lut<6>)
+     MUXCY:S->O            1   0.215   0.000  pm/CPU/CPU/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<6> (pm/CPU/CPU/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<6>)
+     MUXCY:CI->O           0   0.023   0.000  pm/CPU/CPU/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<7> (pm/CPU/CPU/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_cy<7>)
+     XORCY:CI->O           1   0.206   0.682  pm/CPU/CPU/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_rs_xor<8> (pm/CPU/CPU/Mmux_BAAdd[1]_BAL[8]_wide_mux_82_OUT3_split<8>)
+     LUT2:I1->O            1   0.254   0.000  pm/CPU/CPU/Mmux_BAAdd[1]_PWR_36_o_mux_92_OUT11 (pm/CPU/CPU/BAAdd[1]_PWR_36_o_mux_92_OUT<8>)
+     FDC:D                     0.074          pm/CPU/CPU/BAL_8
+    ----------------------------------------
+    Total                     10.274ns (3.044ns logic, 7.230ns route)
+                                       (29.6% logic, 70.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pm/phi2'
+  Clock period: 3.819ns (frequency: 261.883MHz)
+  Total number of paths / destination ports: 64 / 5
+-------------------------------------------------------------------------
+Delay:               3.819ns (Levels of Logic = 10)
+  Source:            pm/CPU/Display_0 (FF)
+  Destination:       pm/Ball_motion/L5_reg_4 (FF)
+  Source Clock:      pm/phi2 rising
+  Destination Clock: pm/phi2 rising
+
+  Data Path: pm/CPU/Display_0 to pm/Ball_motion/L5_reg_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.525   1.018  pm/CPU/Display_0 (pm/CPU/Display_0)
+     LUT2:I0->O            1   0.250   0.000  pm/Ball_motion/Madd_LM4_sum_lut<0> (pm/Ball_motion/Madd_LM4_sum_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  pm/Ball_motion/Madd_LM4_sum_cy<0> (pm/Ball_motion/Madd_LM4_sum_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Ball_motion/Madd_LM4_sum_cy<1> (pm/Ball_motion/Madd_LM4_sum_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Ball_motion/Madd_LM4_sum_cy<2> (pm/Ball_motion/Madd_LM4_sum_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Ball_motion/Madd_LM4_sum_cy<3> (pm/Ball_motion/Madd_LM4_sum_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Ball_motion/Madd_LM4_sum_cy<4> (pm/Ball_motion/Madd_LM4_sum_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  pm/Ball_motion/Madd_LM4_sum_cy<5> (pm/Ball_motion/Madd_LM4_sum_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  pm/Ball_motion/Madd_LM4_sum_cy<6> (pm/Ball_motion/Madd_LM4_sum_cy<6>)
+     XORCY:CI->O           1   0.206   1.137  pm/Ball_motion/Madd_LM4_sum_xor<7> (pm/Ball_motion/LM4_sum<7>)
+     LUT6:I0->O            1   0.254   0.000  pm/Ball_motion/N4_8 (pm/Ball_motion/N4_8)
+     FD:D                      0.074          pm/Ball_motion/L5_reg_4
+    ----------------------------------------
+    Total                      3.819ns (1.664ns logic, 2.155ns route)
+                                       (43.6% logic, 56.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PLL_OSERDES/CLKOUT1'
+  Total number of paths / destination ports: 15 / 10
+-------------------------------------------------------------------------
+Offset:              2.442ns (Levels of Logic = 2)
+  Source:            JJOY<0> (PAD)
+  Destination:       joy1_0 (FF)
+  Destination Clock: PLL_OSERDES/CLKOUT1 rising
+
+  Data Path: JJOY<0> to joy1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.790  JJOY_0_IBUF (JJOY_0_IBUF)
+     LUT2:I0->O            1   0.250   0.000  JJOY[7]_PWR_1_o_and_13_OUT<0>1 (JJOY[7]_PWR_1_o_and_13_OUT<0>)
+     FDE:D                     0.074          joy1_0
+    ----------------------------------------
+    Total                      2.442ns (1.652ns logic, 0.790ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SYS_CLK'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              5.137ns (Levels of Logic = 2)
+  Source:            JTEST (PAD)
+  Destination:       pm/Sounds/DAC/reg_8 (FF)
+  Destination Clock: SYS_CLK rising
+
+  Data Path: JTEST to pm/Sounds/DAC/reg_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.790  JTEST_IBUF (JTEST_IBUF)
+     LUT2:I0->O          133   0.250   2.310  pm/Sounds/reset1 (pm/CPU/CPU/Res_n_inv)
+     FDC:CLR                   0.459          pm/Sounds/DAC/output
+    ----------------------------------------
+    Total                      5.137ns (2.037ns logic, 3.100ns route)
+                                       (39.7% logic, 60.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'delay_count_0'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.442ns (Levels of Logic = 2)
+  Source:            JCOIN<1> (PAD)
+  Destination:       pm/debounce/button_15 (FF)
+  Destination Clock: delay_count_0 rising
+
+  Data Path: JCOIN<1> to pm/debounce/button_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.790  JCOIN_1_IBUF (JCOIN_1_IBUF)
+     LUT4:I2->O            1   0.250   0.000  pm/debounce/Mmux_button[15]_PWR_14_o_MUX_111_o11 (pm/debounce/button[15]_PWR_14_o_MUX_111_o)
+     FD:D                      0.074          pm/debounce/button_15
+    ----------------------------------------
+    Total                      2.442ns (1.652ns logic, 0.790ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pm/CPU/PHI1'
+  Total number of paths / destination ports: 123 / 123
+-------------------------------------------------------------------------
+Offset:              5.137ns (Levels of Logic = 2)
+  Source:            JTEST (PAD)
+  Destination:       pm/CPU/CPU/AD_7 (FF)
+  Destination Clock: pm/CPU/PHI1 rising
+
+  Data Path: JTEST to pm/CPU/CPU/AD_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.790  JTEST_IBUF (JTEST_IBUF)
+     LUT2:I0->O          133   0.250   2.310  pm/Sounds/reset1 (pm/CPU/CPU/Res_n_inv)
+     FDC:CLR                   0.459          pm/CPU/CPU/BusB_0
+    ----------------------------------------
+    Total                      5.137ns (2.037ns logic, 3.100ns route)
+                                       (39.7% logic, 60.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PLL_OSERDES/CLKOUT1'
+  Total number of paths / destination ports: 48 / 42
+-------------------------------------------------------------------------
+Offset:              6.410ns (Levels of Logic = 3)
+  Source:            keyb/SCANL (FF)
+  Destination:       O_VIDEO_R<2> (PAD)
+  Source Clock:      PLL_OSERDES/CLKOUT1 rising
+
+  Data Path: keyb/SCANL to O_VIDEO_R<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.525   0.874  keyb/SCANL (keyb/SCANL)
+     LUT2:I0->O            3   0.250   0.874  pm/Mxor_scandblctrl[1]_scanSW[8]_XOR_70_o_xo<0>1 (pm/scandblctrl[1]_scanSW[8]_XOR_70_o)
+     LUT6:I4->O            2   0.250   0.725  pm/Mmux_Video_OUT21 (JB_3_OBUF)
+     OBUF:I->O                 2.912          O_VIDEO_B_2_OBUF (O_VIDEO_B<2>)
+    ----------------------------------------
+    Total                      6.410ns (3.937ns logic, 2.473ns route)
+                                       (61.4% logic, 38.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'delay_count_0'
+  Total number of paths / destination ports: 248 / 22
+-------------------------------------------------------------------------
+Offset:              11.715ns (Levels of Logic = 8)
+  Source:            pm/Vid_sync/h_counter_4 (FF)
+  Destination:       O_VIDEO_B<2> (PAD)
+  Source Clock:      delay_count_0 rising
+
+  Data Path: pm/Vid_sync/h_counter_4 to O_VIDEO_B<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             11   0.525   1.315  pm/Vid_sync/h_counter_4 (pm/Vid_sync/h_counter_4)
+     LUT4:I0->O            2   0.254   0.726  pm/n00161_SW0 (N8)
+     LUT6:I5->O            2   0.254   1.156  pm/n00161 (pm/n0016)
+     LUT6:I1->O            1   0.254   0.000  pm/Mmux_Overlay_B11_G (N276)
+     MUXF7:I1->O           3   0.175   0.766  pm/Mmux_Overlay_B11 (pm/Overlay_B1)
+     LUT6:I5->O            1   0.254   0.682  pm/Mmux_Video_RGB21 (pm/Mmux_Video_RGB2)
+     LUT6:I5->O           17   0.254   1.209  pm/Mmux_Video_RGB22 (pm/Video_RGB<1>)
+     LUT6:I5->O            2   0.254   0.725  pm/Mmux_Video_OUT21 (JB_3_OBUF)
+     OBUF:I->O                 2.912          O_VIDEO_B_2_OBUF (O_VIDEO_B<2>)
+    ----------------------------------------
+    Total                     11.715ns (5.136ns logic, 6.579ns route)
+                                       (43.8% logic, 56.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pm/Vid_sync/h_counter_0'
+  Total number of paths / destination ports: 92 / 20
+-------------------------------------------------------------------------
+Offset:              8.989ns (Levels of Logic = 4)
+  Source:            pm/Ball_motion/Ball1_reg_0 (FF)
+  Destination:       O_VIDEO_B<1> (PAD)
+  Source Clock:      pm/Vid_sync/h_counter_0 rising
+
+  Data Path: pm/Ball_motion/Ball1_reg_0 to O_VIDEO_B<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.525   1.196  pm/Ball_motion/Ball1_reg_0 (pm/Ball_motion/Ball1_reg_0)
+     LUT5:I0->O            6   0.254   1.306  pm/Playfield_n_Ball3_n_AND_24_o1 (pm/Playfield_n_Ball3_n_AND_24_o)
+     LUT5:I0->O           17   0.254   1.485  pm/Mmux_Video_RGB11 (pm/Video_RGB<0>)
+     LUT4:I0->O            4   0.254   0.803  pm/Mmux_Video_OUT11 (JB_1_OBUF)
+     OBUF:I->O                 2.912          O_VIDEO_B_1_OBUF (O_VIDEO_B<1>)
+    ----------------------------------------
+    Total                      8.989ns (4.199ns logic, 4.790ns route)
+                                       (46.7% logic, 53.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SYS_CLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.202ns (Levels of Logic = 1)
+  Source:            pm/Sounds/DAC/output (FF)
+  Destination:       O_AUDIO_L (PAD)
+  Source Clock:      SYS_CLK rising
+
+  Data Path: pm/Sounds/DAC/output to O_AUDIO_L
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.525   0.765  pm/Sounds/DAC/output (pm/Sounds/DAC/output)
+     OBUF:I->O                 2.912          O_AUDIO_L_OBUF (O_AUDIO_L)
+    ----------------------------------------
+    Total                      4.202ns (3.437ns logic, 0.765ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 28 / 22
+-------------------------------------------------------------------------
+Delay:               7.025ns (Levels of Logic = 4)
+  Source:            sram_dq<1> (PAD)
+  Destination:       O_VIDEO_R<2> (PAD)
+
+  Data Path: sram_dq<1> to O_VIDEO_R<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.682  sram_dq_1_IBUF (sram_dq_1_IBUF)
+     LUT2:I1->O            3   0.254   0.874  pm/Mxor_scandblctrl[1]_scanSW[8]_XOR_70_o_xo<0>1 (pm/scandblctrl[1]_scanSW[8]_XOR_70_o)
+     LUT6:I4->O            2   0.250   0.725  pm/Mmux_Video_OUT21 (JB_3_OBUF)
+     OBUF:I->O                 2.912          O_VIDEO_B_2_OBUF (O_VIDEO_B<2>)
+    ----------------------------------------
+    Total                      7.025ns (4.744ns logic, 2.281ns route)
+                                       (67.5% logic, 32.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock PLL_OSERDES/CLKOUT1
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+PLL_OSERDES/CLKOUT1|    9.745|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SYS_CLK
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+PLL_OSERDES/CLKOUT1  |    4.230|         |         |         |
+SYS_CLK              |    2.305|         |         |         |
+pm/Tones_n           |    2.255|         |         |         |
+pm/Vid_sync/hsync_int|    2.277|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock delay_count_0
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+PLL_OSERDES/CLKOUT1    |    3.005|         |         |         |
+delay_count_0          |    7.878|         |         |         |
+pm/CPU/PHI1            |    3.259|         |         |         |
+pm/Vid_sync/h_counter_0|    5.137|         |         |         |
+pm/Vid_sync/h_counter_4|    5.414|         |         |         |
+pm/Vid_sync/hsync_int  |    2.979|         |         |         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/Ball_motion/LDV1A_n_Vid[5]_AND_84_o
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+pm/Vid_sync/h_counter_0|         |         |    2.917|         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/Ball_motion/LDV2A_n_Vid[5]_AND_100_o
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+pm/Vid_sync/h_counter_0|         |         |    2.917|         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/Ball_motion/LDV3A_n_Vid[5]_AND_116_o
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+pm/Vid_sync/h_counter_0|         |         |    2.917|         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/CPU/D2_out_1
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+pm/Vid_sync/h_counter_8|    1.280|         |         |         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/CPU/PHI1
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+PLL_OSERDES/CLKOUT1    |    4.230|         |         |         |
+delay_count_0          |    6.705|         |         |         |
+pm/CPU/D2_out_1        |    5.456|         |         |         |
+pm/CPU/PHI1            |   10.274|         |         |         |
+pm/Vid_sync/h_counter_0|   10.264|         |         |         |
+pm/Vid_sync/hsync_int  |    7.015|         |         |         |
+pm/Vid_sync/v_counter_4|    1.280|         |         |         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/Tones_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+pm/phi2        |    1.470|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/Vid_sync/h_counter_0
+---------------------------------------+---------+---------+---------+---------+
+                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------+---------+---------+---------+---------+
+PLL_OSERDES/CLKOUT1                    |    1.324|         |         |         |
+delay_count_0                          |    5.307|         |         |         |
+pm/Ball_motion/LDV1A_n_Vid[5]_AND_84_o |         |    3.319|         |         |
+pm/Ball_motion/LDV2A_n_Vid[5]_AND_100_o|         |    3.319|         |         |
+pm/Ball_motion/LDV3A_n_Vid[5]_AND_116_o|         |    3.319|         |         |
+pm/CPU/PHI1                            |    7.243|         |         |         |
+pm/Vid_sync/h_counter_0                |    7.478|         |         |         |
+pm/Vid_sync/h_counter_4                |    2.139|         |         |         |
+pm/Vid_sync/hsync_int                  |    2.874|         |         |         |
+pm/phi2                                |    3.071|         |         |         |
+---------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/Vid_sync/h_counter_4
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+delay_count_0          |    1.884|         |         |         |
+pm/Vid_sync/h_counter_6|    2.601|         |         |         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/Vid_sync/h_counter_6
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+delay_count_0  |    2.743|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/Vid_sync/h_counter_8
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+pm/Vid_sync/h_counter_4|    2.165|         |         |         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/Vid_sync/hsync_int
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+delay_count_0        |    2.855|         |         |         |
+pm/Vid_sync/hsync_int|    2.290|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/Vid_sync/v_counter_4
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+delay_count_0          |    2.723|         |         |         |
+pm/CPU/PHI1            |    7.550|         |         |         |
+pm/Vid_sync/h_counter_0|    6.585|         |         |         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pm/phi2
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+delay_count_0          |    3.380|         |         |         |
+pm/Vid_sync/h_counter_0|    3.791|         |         |         |
+pm/Vid_sync/hsync_int  |    3.681|         |         |         |
+pm/phi2                |    3.819|         |         |         |
+-----------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 60.00 secs
+Total CPU time to Xst completion: 60.39 secs
+ 
+--> 
+
+Total memory usage is 312888 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  196 (   0 filtered)
+Number of infos    :   53 (   0 filtered)
+

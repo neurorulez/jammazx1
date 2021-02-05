@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=A:\_Downloads\jammazx1\arcades\hw galaxian\blackhole\build\blackhole_top.ncd
+OUTFILE=A:\_Downloads\jammazx1\arcades\hw galaxian\blackhole\build\blackhole_top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=A:\_Downloads\jammazx1\arcades\hw galaxian\blackhole\build
+LICENSE=WebPack
+USER_INFO=206763183_0_0_033

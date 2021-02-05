@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Apr 27 11:50:53 2019
+# Process ID: 1464
+# Current directory: F:/repos/a35/NUEVO/defender/A35/A35.runs/synth_1
+# Command line: vivado.exe -log defender_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source defender_top.tcl
+# Log file: F:/repos/a35/NUEVO/defender/A35/A35.runs/synth_1/defender_top.vds
+# Journal file: F:/repos/a35/NUEVO/defender/A35/A35.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source defender_top.tcl -notrace

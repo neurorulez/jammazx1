@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon May 27 14:31:28 2019
+# Process ID: 9636
+# Current directory: F:/repos/a35/NUEVO/sinistar/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8224 F:\repos\a35\NUEVO\sinistar\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/sinistar/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/sinistar/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/sinistar/A35/A35.xpr
+INFO: [Project 1-313] Project file moved from 'F:/repos/a35/NUEVO/bubbles/A35' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_sound.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/bubbles/src/roms/bubbles_sound.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_prog.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/bubbles/src/roms/bubbles_prog.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_decoder_4.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/bubbles/src/roms/bubbles_decoder_4.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_decoder_6.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/bubbles/src/roms/bubbles_decoder_6.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 686.668 ; gain = 107.871
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_decoder_4.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_decoder_6.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_prog.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_sound.vhd] -no_script -reset -force -quiet
+remove_files  {F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_decoder_4.vhd F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_decoder_6.vhd F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_prog.vhd F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_sound.vhd}
+add_files -norecurse {F:/repos/a35/NUEVO/sinistar/src/rtl/cmos_ram.v F:/repos/a35/NUEVO/sinistar/src/roms/sinistar_prog.vhd F:/repos/a35/NUEVO/sinistar/src/roms/sinistar_sound.vhd F:/repos/a35/NUEVO/sinistar/src/roms/sinistar_decoder_6.vhd F:/repos/a35/NUEVO/sinistar/src/roms/sinistar_decoder_4.vhd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon May 27 14:34:27 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/sinistar/A35/A35.runs/synth_1/runme.log
+[Mon May 27 14:34:27 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/sinistar/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon May 27 14:35:58 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/sinistar/A35/A35.runs/synth_1/runme.log
+[Mon May 27 14:35:58 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/sinistar/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon May 27 14:36:50 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/sinistar/A35/A35.runs/synth_1/runme.log
+[Mon May 27 14:36:50 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/sinistar/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon May 27 14:42:32 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/sinistar/A35/A35.runs/synth_1/runme.log
+[Mon May 27 14:42:33 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/sinistar/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon May 27 14:44:40 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/sinistar/A35/A35.runs/synth_1/runme.log
+[Mon May 27 14:44:40 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/sinistar/A35/A35.runs/impl_1/runme.log
+set_property top sinistar_top [current_fileset]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/repos/a35/NUEVO/sinistar/src/modulo_top_a35t.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:/repos/a35/NUEVO/sinistar/src/rtl/williams_cpu.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/sinistar/src/rtl/bubbles_cmos_ram.vhd] -no_script -reset -force -quiet
+remove_files  F:/repos/a35/NUEVO/sinistar/src/rtl/bubbles_cmos_ram.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon May 27 14:46:40 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/sinistar/A35/A35.runs/synth_1/runme.log
+[Mon May 27 14:46:40 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/sinistar/A35/A35.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 169 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3.1
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1686.918 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1686.918 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1686.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+open_run: Time (s): cpu = 00:00:57 ; elapsed = 00:00:50 . Memory (MB): peak = 1787.102 ; gain = 897.734
+open_report: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1796.914 ; gain = 2.113
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3.1
+  **** Build date : Mar 26 2019-05:02:51
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2781.293 ; gain = 926.289
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/sinistar/A35/A35.runs/impl_1/sinistar_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/sinistar/A35/A35.runs/impl_1/sinistar_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 27 15:03:20 2019...

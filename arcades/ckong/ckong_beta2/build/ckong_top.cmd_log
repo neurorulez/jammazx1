@@ -1,0 +1,71 @@
+xst -intstyle ise -filter "D:/repos/lx16/ckong/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong/build/ckong_top.syr" 
+xst -intstyle ise -filter "D:/repos/lx16/ckong/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong/build/ckong_top.syr" 
+xst -intstyle ise -filter "D:/repos/lx16/ckong/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong/build/ckong_top.syr" 
+ngdbuild -filter "D:/repos/lx16/ckong/iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc D:/repos/lx16/ckong/pines_zxuno_lx16.ucf -p xc6slx16-ftg256-2 ckong_top.ngc ckong_top.ngd  
+map -filter "D:/repos/lx16/ckong/iseconfig/filter.filter" -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ckong_top_map.ncd ckong_top.ngd ckong_top.pcf 
+par -filter "D:/repos/lx16/ckong/iseconfig/filter.filter" -w -intstyle ise -ol high -xe n -mt off ckong_top_map.ncd ckong_top.ncd ckong_top.pcf 
+trce -filter D:/repos/lx16/ckong/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ckong_top.twx ckong_top.ncd -o ckong_top.twr ckong_top.pcf 
+bitgen -filter "D:/repos/lx16/ckong/iseconfig/filter.filter" -intstyle ise -f ckong_top.ut ckong_top.ncd 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+ngdbuild -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc D:/repos/lx16/ckong_beta2/pines_zxuno_lx16.ucf -p xc6slx16-ftg256-2 ckong_top.ngc ckong_top.ngd  
+map -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ckong_top_map.ncd ckong_top.ngd ckong_top.pcf 
+par -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -w -intstyle ise -ol high -xe n -mt off ckong_top_map.ncd ckong_top.ncd ckong_top.pcf 
+trce -filter D:/repos/lx16/ckong_beta2/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ckong_top.twx ckong_top.ncd -o ckong_top.twr ckong_top.pcf 
+bitgen -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -f ckong_top.ut ckong_top.ncd 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+ngdbuild -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc D:/repos/lx16/ckong_beta2/pines_zxuno_lx16.ucf -p xc6slx16-ftg256-2 ckong_top.ngc ckong_top.ngd  
+map -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ckong_top_map.ncd ckong_top.ngd ckong_top.pcf 
+par -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -w -intstyle ise -ol high -xe n -mt off ckong_top_map.ncd ckong_top.ncd ckong_top.pcf 
+trce -filter D:/repos/lx16/ckong_beta2/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ckong_top.twx ckong_top.ncd -o ckong_top.twr ckong_top.pcf 
+bitgen -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -f ckong_top.ut ckong_top.ncd 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+ngdbuild -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc D:/repos/lx16/ckong_beta2/pines_zxuno_lx16.ucf -p xc6slx16-ftg256-2 ckong_top.ngc ckong_top.ngd  
+map -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ckong_top_map.ncd ckong_top.ngd ckong_top.pcf 
+par -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -w -intstyle ise -ol high -xe n -mt off ckong_top_map.ncd ckong_top.ncd ckong_top.pcf 
+trce -filter D:/repos/lx16/ckong_beta2/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ckong_top.twx ckong_top.ncd -o ckong_top.twr ckong_top.pcf 
+bitgen -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -f ckong_top.ut ckong_top.ncd 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+ngdbuild -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc D:/repos/lx16/ckong_beta2/pines_zxuno_lx16.ucf -p xc6slx16-ftg256-2 ckong_top.ngc ckong_top.ngd  
+map -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ckong_top_map.ncd ckong_top.ngd ckong_top.pcf 
+par -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -w -intstyle ise -ol high -xe n -mt off ckong_top_map.ncd ckong_top.ncd ckong_top.pcf 
+trce -filter D:/repos/lx16/ckong_beta2/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ckong_top.twx ckong_top.ncd -o ckong_top.twr ckong_top.pcf 
+bitgen -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -f ckong_top.ut ckong_top.ncd 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+ngdbuild -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc D:/repos/lx16/ckong_beta2/pines_zxuno_lx16.ucf -p xc6slx16-ftg256-2 ckong_top.ngc ckong_top.ngd  
+map -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ckong_top_map.ncd ckong_top.ngd ckong_top.pcf 
+par -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -w -intstyle ise -ol high -xe n -mt off ckong_top_map.ncd ckong_top.ncd ckong_top.pcf 
+trce -filter D:/repos/lx16/ckong_beta2/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ckong_top.twx ckong_top.ncd -o ckong_top.twr ckong_top.pcf 
+bitgen -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -f ckong_top.ut ckong_top.ncd 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+ngdbuild -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc D:/repos/lx16/ckong_beta2/pines_zxuno_lx16.ucf -p xc6slx16-ftg256-2 ckong_top.ngc ckong_top.ngd  
+map -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ckong_top_map.ncd ckong_top.ngd ckong_top.pcf 
+par -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -w -intstyle ise -ol high -xe n -mt off ckong_top_map.ncd ckong_top.ncd ckong_top.pcf 
+trce -filter D:/repos/lx16/ckong_beta2/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ckong_top.twx ckong_top.ncd -o ckong_top.twr ckong_top.pcf 
+bitgen -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -f ckong_top.ut ckong_top.ncd 
+bitgen -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -f ckong_top.ut ckong_top.ncd 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+ngdbuild -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc D:/repos/lx16/ckong_beta2/pines_zxuno_lx16.ucf -p xc6slx16-ftg256-2 ckong_top.ngc ckong_top.ngd  
+map -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ckong_top_map.ncd ckong_top.ngd ckong_top.pcf 
+par -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -w -intstyle ise -ol high -xe n -mt off ckong_top_map.ncd ckong_top.ncd ckong_top.pcf 
+trce -filter D:/repos/lx16/ckong_beta2/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ckong_top.twx ckong_top.ncd -o ckong_top.twr ckong_top.pcf 
+bitgen -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -f ckong_top.ut ckong_top.ncd 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+ngdbuild -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc D:/repos/lx16/ckong_beta2/pines_zxuno_lx16.ucf -p xc6slx16-ftg256-2 ckong_top.ngc ckong_top.ngd  
+map -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ckong_top_map.ncd ckong_top.ngd ckong_top.pcf 
+par -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -w -intstyle ise -ol high -xe n -mt off ckong_top_map.ncd ckong_top.ncd ckong_top.pcf 
+trce -filter D:/repos/lx16/ckong_beta2/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ckong_top.twx ckong_top.ncd -o ckong_top.twr ckong_top.pcf 
+bitgen -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -f ckong_top.ut ckong_top.ncd 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+xst -intstyle ise -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -ifn "D:/repos/lx16/ckong_beta2/build/ckong_top.xst" -ofn "D:/repos/lx16/ckong_beta2/build/ckong_top.syr" 
+ngdbuild -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc D:/repos/lx16/ckong_beta2/pines_zxuno_lx16.ucf -p xc6slx16-ftg256-2 ckong_top.ngc ckong_top.ngd  
+map -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o ckong_top_map.ncd ckong_top.ngd ckong_top.pcf 
+par -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -w -intstyle ise -ol high -xe n -mt off ckong_top_map.ncd ckong_top.ncd ckong_top.pcf 
+trce -filter D:/repos/lx16/ckong_beta2/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ckong_top.twx ckong_top.ncd -o ckong_top.twr ckong_top.pcf 
+bitgen -filter "D:/repos/lx16/ckong_beta2/iseconfig/filter.filter" -intstyle ise -f ckong_top.ut ckong_top.ncd 

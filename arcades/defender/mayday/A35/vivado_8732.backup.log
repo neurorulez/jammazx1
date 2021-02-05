@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon May 27 09:48:36 2019
+# Process ID: 8732
+# Current directory: F:/repos/a35/NUEVO/colony 7/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1568 F:\repos\a35\NUEVO\colony 7\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/colony 7/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/colony 7/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/repos/a35/NUEVO/colony 7/A35/A35.xpr}
+INFO: [Project 1-313] Project file moved from 'F:/repos/a35/NUEVO/defender/A35' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/colony 7/src/rtl_pace/pia6821.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/defender/src/rtl_pace/pia6821.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/colony 7/src/rtl_jkent/cpu68.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/defender/src/rtl_jkent/cpu68.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/colony 7/src/rtl_dar/gen_ram.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/defender/src/rtl_dar/gen_ram.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/colony 7/src/roms/defender_sound.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/defender/src/roms/defender_sound.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/colony 7/src/rtl_jkent/cpu09l_128.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/defender/src/rtl_jkent/cpu09l_128.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/colony 7/src/rtl_dar/defender_sound_board.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/defender/src/rtl_dar/defender_sound_board.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/colony 7/src/rtl_dar/defender_cmos_ram.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/defender/src/rtl_dar/defender_cmos_ram.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/colony 7/src/roms/defender_prog.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/defender/src/roms/defender_prog.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/colony 7/src/roms/defender_decoder_3.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/defender/src/roms/defender_decoder_3.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/colony 7/src/roms/defender_decoder_2.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/defender/src/roms/defender_decoder_2.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/repos/a35/NUEVO/colony 7/src/rtl_dar/defender.vhd', nor could it be found using path 'F:/repos/a35/NUEVO/defender/src/rtl_dar/defender.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 700.461 ; gain = 125.445
+export_ip_user_files -of_objects  [get_files {{F:/repos/a35/NUEVO/colony 7/src/rtl_jkent/cpu09l_128.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{F:/repos/a35/NUEVO/colony 7/src/rtl_jkent/cpu68.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{F:/repos/a35/NUEVO/colony 7/src/rtl_dar/defender.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{F:/repos/a35/NUEVO/colony 7/src/rtl_dar/defender_cmos_ram.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{F:/repos/a35/NUEVO/colony 7/src/roms/defender_decoder_2.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{F:/repos/a35/NUEVO/colony 7/src/roms/defender_decoder_3.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{F:/repos/a35/NUEVO/colony 7/src/roms/defender_prog.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{F:/repos/a35/NUEVO/colony 7/src/roms/defender_sound.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{F:/repos/a35/NUEVO/colony 7/src/rtl_dar/defender_sound_board.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{F:/repos/a35/NUEVO/colony 7/src/rtl_dar/gen_ram.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{F:/repos/a35/NUEVO/colony 7/src/rtl_pace/pia6821.vhd}}] -no_script -reset -force -quiet
+remove_files  {{F:/repos/a35/NUEVO/colony 7/src/rtl_jkent/cpu09l_128.vhd} {F:/repos/a35/NUEVO/colony 7/src/rtl_jkent/cpu68.vhd} {F:/repos/a35/NUEVO/colony 7/src/rtl_dar/defender.vhd} {F:/repos/a35/NUEVO/colony 7/src/rtl_dar/defender_cmos_ram.vhd} {F:/repos/a35/NUEVO/colony 7/src/roms/defender_decoder_2.vhd} {F:/repos/a35/NUEVO/colony 7/src/roms/defender_decoder_3.vhd} {F:/repos/a35/NUEVO/colony 7/src/roms/defender_prog.vhd} {F:/repos/a35/NUEVO/colony 7/src/roms/defender_sound.vhd} {F:/repos/a35/NUEVO/colony 7/src/rtl_dar/defender_sound_board.vhd} {F:/repos/a35/NUEVO/colony 7/src/rtl_dar/gen_ram.vhd} {F:/repos/a35/NUEVO/colony 7/src/rtl_pace/pia6821.vhd}}
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 27 09:50:44 2019...

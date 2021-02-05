@@ -1,0 +1,108 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'bombjack_top'
+
+Design Information
+------------------
+Command Line   : map -filter F:/repos/a35/bombjack/iseconfig/filter.filter
+-intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0
+-register_duplication off -r 4 -global_opt off -mt 2 -detail -ir off -pr off -lc
+off -power off -o bombjack_top_map.ncd bombjack_top.ngd bombjack_top.pcf 
+Target Device  : xc6slx16
+Target Package : ftg256
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Mon Jun 25 14:17:40 2018
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+ERROR:Pack:2310 - Too many comps of type "RAMB16BWER" found to fit this device.
+ERROR:Map:237 - The design is too large to fit the device.  Please check the Design Summary section to see which resource requirement for
+   your design exceeds the resources available in the device. Note that the number of slices reported may not be reflected accurately as
+   their packing might not have been completed.
+
+Interim Summary
+---------------
+Slice Logic Utilization:
+  Number of Slice Registers:                 1,710 out of  18,224    9%
+    Number used as Flip Flops:               1,704
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                6
+  Number of Slice LUTs:                      4,192 out of   9,112   46%
+    Number used as logic:                    4,079 out of   9,112   44%
+      Number using O6 output only:           3,065
+      Number using O5 output only:             211
+      Number using O5 and O6:                  803
+      Number used as ROM:                        0
+    Number used as Memory:                      89 out of   2,176    4%
+      Number used as Dual Port RAM:             88
+        Number using O6 output only:            36
+        Number using O5 output only:            12
+        Number using O5 and O6:                 40
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             1
+        Number using O6 output only:             1
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:     24
+      Number with same-slice register load:      0
+      Number with same-slice carry load:        24
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of MUXCYs used:                       764 out of   4,556   16%
+  Number of LUT Flip Flop pairs used:        5,008
+    Number with an unused Flip Flop:         3,343 out of   5,008   66%
+    Number with an unused LUT:                 816 out of   5,008   16%
+    Number of fully used LUT-FF pairs:         849 out of   5,008   16%
+    Number of unique control sets:             201
+    Number of slice register sites lost
+      to control set restrictions:             631 out of  18,224    3%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        45 out of     186   24%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        65 out of      32  203% (OVERMAPPED)
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       4 out of      16   25%
+    Number used as BUFGs:                        4
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      32    0%
+  Number of ICAPs:                               1 out of       1  100%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       2   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+
+Mapping completed.
+See MAP report file "bombjack_top_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   0

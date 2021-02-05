@@ -1,0 +1,4 @@
+# Timing constraints
+NET "clk50mhz" PERIOD=20 ns;
+NET "clk_sys"  PERIOD=40.69 ns;
+

@@ -1,0 +1,48 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: A:\ZZ\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ..\pines_zxuno_v4.ucf -p
+xc6slx9-tqg144-2 blackhole_top.ngc blackhole_top.ngd
+
+Reading NGO file "A:/_Downloads/jammazx1/arcades/hw
+galaxian/blackhole/build/blackhole_top.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "../pines_zxuno_v4.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'clk_ref_grp', used in period specification
+   'TS01', was traced into DCM_SP instance pm/mc_clocks/dcm_inst. The following
+   new TNM groups and period specifications were generated at the DCM_SP
+   output(s): 
+   CLKFX: <TIMESPEC TS_pm_mc_clocks_CLKFX_BUF = PERIOD "pm_mc_clocks_CLKFX_BUF"
+   TS01 / 0.727272727 HIGH 50% PRIORITY 1>
+
+INFO:ConstraintSystem - The Period constraint <PERIOD = 50 MHz;>
+   [../pines_zxuno_v4.ucf(7)], is specified using the Net Period method which is
+   not recommended. Please use the Timespec PERIOD method.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 175752 kilobytes
+
+Writing NGD file "blackhole_top.ngd" ...
+Total REAL time to NGDBUILD completion:  26 sec
+Total CPU time to NGDBUILD completion:   25 sec
+
+Writing NGDBUILD log file "blackhole_top.bld"...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Jun 22 14:33:09 2019
+# Process ID: 15484
+# Current directory: F:/repos/a35/NUEVO/pleiads/a35/a35.runs/impl_1
+# Command line: vivado.exe -log pleiads_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pleiads_top.tcl -notrace
+# Log file: F:/repos/a35/NUEVO/pleiads/a35/a35.runs/impl_1/pleiads_top.vdi
+# Journal file: F:/repos/a35/NUEVO/pleiads/a35/a35.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source pleiads_top.tcl -notrace

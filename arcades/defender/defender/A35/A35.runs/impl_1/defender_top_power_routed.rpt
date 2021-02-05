@@ -1,0 +1,244 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date             : Sat Apr 27 12:11:07 2019
+| Host             : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command          : report_power -file defender_top_power_routed.rpt -pb defender_top_power_summary_routed.pb -rpx defender_top_power_routed.rpx
+| Design           : defender_top
+| Device           : xc7a35tftg256-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 83.003 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 82.503                           |
+| Device Static (W)        | 0.501                            |
+| Effective TJA (C/W)      | 4.9                              |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Slice Logic              |    27.511 |     4221 |       --- |             --- |
+|   LUT as Logic           |    26.691 |     2615 |     20800 |           12.57 |
+|   LUT as Distributed RAM |     0.227 |      200 |      9600 |            2.08 |
+|   Register               |     0.200 |      753 |     41600 |            1.81 |
+|   CARRY4                 |     0.196 |       35 |      8150 |            0.43 |
+|   BUFG                   |     0.106 |        7 |        32 |           21.88 |
+|   F7/F8 Muxes            |     0.091 |       91 |     32600 |            0.28 |
+|   Others                 |     0.000 |       49 |       --- |             --- |
+| Signals                  |    31.222 |     3521 |       --- |             --- |
+| Block RAM                |     1.252 |     22.5 |        50 |           45.00 |
+| MMCM                     |     4.130 |        1 |         5 |           20.00 |
+| I/O                      |    18.387 |       43 |       170 |           25.29 |
+| Static Power             |     0.501 |          |           |                 |
+| Total                    |    83.003 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |    60.321 |      59.973 |      0.348 |
+| Vccaux    |       1.800 |     2.992 |       2.938 |      0.053 |
+| Vcco33    |       3.300 |     5.198 |       5.197 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.110 |       0.093 |      0.017 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------------+-----------+
+| Name                        | Power (W) |
++-----------------------------+-----------+
+| defender_top                |    82.503 |
+|   el_multiboot              |     0.648 |
+|     el_multiboot            |     0.648 |
+|   keyb                      |     0.064 |
+|     ps2                     |     0.041 |
+|   pm                        |    58.464 |
+|     cmos_ram                |     0.024 |
+|     cpu_prog_rom            |     0.213 |
+|     cpu_video_addr_decoder  |     0.695 |
+|     cpu_video_ram0          |     0.224 |
+|     cpu_video_ram1          |     0.282 |
+|     cpu_video_ram2          |     0.312 |
+|     dac                     |     0.204 |
+|     debounce                |     0.363 |
+|     defender_sound_board    |    17.766 |
+|       cpu_prog_rom          |     0.564 |
+|       cpu_ram               |     0.599 |
+|       main_cpu              |    16.392 |
+|       pia                   |     0.145 |
+|     line_doubler            |     2.119 |
+|       ram1_reg_0_63_0_2     |     0.006 |
+|       ram1_reg_0_63_3_5     |     0.009 |
+|       ram1_reg_0_63_6_6     |     0.004 |
+|       ram1_reg_0_63_7_7     |     0.003 |
+|       ram1_reg_128_191_0_2  |     0.006 |
+|       ram1_reg_128_191_3_5  |     0.007 |
+|       ram1_reg_128_191_6_6  |     0.003 |
+|       ram1_reg_128_191_7_7  |     0.003 |
+|       ram1_reg_192_255_0_2  |     0.005 |
+|       ram1_reg_192_255_3_5  |     0.007 |
+|       ram1_reg_192_255_6_6  |     0.004 |
+|       ram1_reg_192_255_7_7  |     0.004 |
+|       ram1_reg_256_319_0_2  |     0.007 |
+|       ram1_reg_256_319_3_5  |     0.006 |
+|       ram1_reg_256_319_6_6  |     0.004 |
+|       ram1_reg_256_319_7_7  |     0.003 |
+|       ram1_reg_320_383_0_2  |     0.007 |
+|       ram1_reg_320_383_3_5  |     0.006 |
+|       ram1_reg_320_383_6_6  |     0.003 |
+|       ram1_reg_320_383_7_7  |     0.004 |
+|       ram1_reg_384_447_0_2  |     0.005 |
+|       ram1_reg_384_447_3_5  |     0.006 |
+|       ram1_reg_384_447_6_6  |     0.004 |
+|       ram1_reg_384_447_7_7  |     0.003 |
+|       ram1_reg_448_511_0_2  |     0.006 |
+|       ram1_reg_448_511_3_5  |     0.006 |
+|       ram1_reg_448_511_6_6  |     0.003 |
+|       ram1_reg_448_511_7_7  |     0.003 |
+|       ram1_reg_64_127_0_2   |     0.007 |
+|       ram1_reg_64_127_3_5   |     0.008 |
+|       ram1_reg_64_127_6_6   |     0.004 |
+|       ram1_reg_64_127_7_7   |     0.005 |
+|       ram2_reg_0_63_0_2     |     0.006 |
+|       ram2_reg_0_63_3_5     |     0.006 |
+|       ram2_reg_0_63_6_6     |     0.003 |
+|       ram2_reg_0_63_7_7     |     0.004 |
+|       ram2_reg_128_191_0_2  |     0.005 |
+|       ram2_reg_128_191_3_5  |     0.007 |
+|       ram2_reg_128_191_6_6  |     0.004 |
+|       ram2_reg_128_191_7_7  |     0.004 |
+|       ram2_reg_192_255_0_2  |     0.007 |
+|       ram2_reg_192_255_3_5  |     0.007 |
+|       ram2_reg_192_255_6_6  |     0.003 |
+|       ram2_reg_192_255_7_7  |     0.004 |
+|       ram2_reg_256_319_0_2  |     0.006 |
+|       ram2_reg_256_319_3_5  |     0.007 |
+|       ram2_reg_256_319_6_6  |     0.003 |
+|       ram2_reg_256_319_7_7  |     0.003 |
+|       ram2_reg_320_383_0_2  |     0.007 |
+|       ram2_reg_320_383_3_5  |     0.006 |
+|       ram2_reg_320_383_6_6  |     0.004 |
+|       ram2_reg_320_383_7_7  |     0.003 |
+|       ram2_reg_384_447_0_2  |     0.006 |
+|       ram2_reg_384_447_3_5  |     0.006 |
+|       ram2_reg_384_447_6_6  |     0.003 |
+|       ram2_reg_384_447_7_7  |     0.003 |
+|       ram2_reg_448_511_0_2  |     0.006 |
+|       ram2_reg_448_511_3_5  |     0.008 |
+|       ram2_reg_448_511_6_6  |     0.003 |
+|       ram2_reg_448_511_7_7  |     0.003 |
+|       ram2_reg_64_127_0_2   |     0.006 |
+|       ram2_reg_64_127_3_5   |     0.008 |
+|       ram2_reg_64_127_6_6   |     0.004 |
+|       ram2_reg_64_127_7_7   |     0.003 |
+|     main_cpu                |    35.292 |
+|     palette_ram             |     0.178 |
+|       ram_reg_0_15_0_0      |     0.002 |
+|       ram_reg_0_15_1_1      |     0.001 |
+|       ram_reg_0_15_2_2      |     0.001 |
+|       ram_reg_0_15_3_3      |     0.002 |
+|       ram_reg_0_15_4_4      |     0.002 |
+|       ram_reg_0_15_5_5      |     0.002 |
+|       ram_reg_0_15_6_6      |     0.002 |
+|       ram_reg_0_15_7_7      |     0.002 |
+|     pia_io                  |     0.128 |
+|     pia_rom                 |     0.170 |
+|     video_scan_addr_decoder |     0.054 |
++-----------------------------+-----------+
+
+

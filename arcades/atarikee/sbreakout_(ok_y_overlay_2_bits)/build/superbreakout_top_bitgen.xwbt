@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\build\superbreakout_top.ncd
+OUTFILE=F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\build\superbreakout_top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\build
+LICENSE=WebPack
+USER_INFO=211127010_0_0_736

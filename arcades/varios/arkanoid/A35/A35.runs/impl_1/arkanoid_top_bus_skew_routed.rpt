@@ -1,0 +1,15 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Mon Jun 17 15:12:30 2019
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_bus_skew -warn_on_violation -file arkanoid_top_bus_skew_routed.rpt -pb arkanoid_top_bus_skew_routed.pb -rpx arkanoid_top_bus_skew_routed.rpx
+| Design       : arkanoid_top
+| Device       : 7a35t-ftg256
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

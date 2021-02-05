@@ -1,0 +1,28 @@
+@echo off
+
+set rom_path_src=..\roms\clubpacm
+set rom_path=..\build
+set romgen_path=..\romgen_source
+
+REM concatenate consecutive ROM regions
+copy /b/y %rom_path_src%\12.5e + %rom_path_src%\14.5h + %rom_path_src%\13.5f + %rom_path_src%\15.5j %rom_path%\gfx1.bin 
+copy /b/y %rom_path_src%\prg0.6f %rom_path%\main.bin 
+copy /b/y %rom_path_src%\prg1.6f %rom_path%\main2.bin 
+
+REM generate RTL code for small PROMS
+%romgen_path%\romgen %rom_path_src%\m7611.1m         PROM1_DST  9 l r e     > %rom_path%\prom1_dst.vhd
+%romgen_path%\romgen %rom_path_src%\m7611.4a         PROM4_DST  8 c     > %rom_path%\prom4_dst.vhd
+%romgen_path%\romgen %rom_path_src%\n82s123n.7f         PROM7_DST  4 c    > %rom_path%\prom7_dst.vhd
+REM %romgen_path%\romgen %rom_path_src%\82s126.1m     PROM1_DST  9 c     > %rom_path%\prom1_dst.vhd
+REM %romgen_path%\romgen %rom_path_src%\82s126.4a     PROM4_DST  8 c     > %rom_path%\prom4_dst.vhd
+REM %romgen_path%\romgen %rom_path_src%\82s123.7f     PROM7_DST  4 c     > %rom_path%\prom7_dst.vhd
+
+REM generate RAMB structures for larger ROMS
+%romgen_path%\romgen %rom_path%\gfx1.bin          GFX1      13 l r e > %rom_path%\gfx1.vhd
+%romgen_path%\romgen %rom_path%\main.bin          ROM_PGM_0 14 l r e > %rom_path%\rom0.vhd
+
+REM this is ROM area not used but required
+%romgen_path%\romgen %rom_path%\main2.bin         ROM_PGM_1 14 l r e > %rom_path%\rom1.vhd
+
+echo done
+pause

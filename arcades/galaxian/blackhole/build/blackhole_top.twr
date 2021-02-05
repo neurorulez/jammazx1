@@ -1,0 +1,433 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+A:\ZZ\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s
+2 -n 3 -fastpaths -xml blackhole_top.twx blackhole_top.ncd -o blackhole_top.twr
+blackhole_top.pcf
+
+Design file:              blackhole_top.ncd
+Physical constraint file: blackhole_top.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "pm/mc_clocks/CLKIN_IBUFG" PERIOD = 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   8.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "pm/mc_clocks/CLKIN_IBUFG" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: pm/mc_clocks/dcm_inst/CLKIN
+  Logical resource: pm/mc_clocks/dcm_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: pm/mc_clocks/dcm_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: pm/mc_clocks/dcm_inst/CLKIN
+  Logical resource: pm/mc_clocks/dcm_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: pm/mc_clocks/dcm_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 16.000ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 4.000ns (250.000MHz) (Tdcmper_CLKIN)
+  Physical resource: pm/mc_clocks/dcm_inst/CLKIN
+  Logical resource: pm/mc_clocks/dcm_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: pm/mc_clocks/dcm_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net "pm/mc_clocks/CLKFX_BUF" derived 
+from  NET "pm/mc_clocks/CLKIN_IBUFG" PERIOD = 20 ns HIGH 50%;  multiplied by 
+1.38 to 27.500 nS and duty cycle corrected to HIGH 13.750 nS  
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 4 paths analyzed, 4 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.000ns.
+--------------------------------------------------------------------------------
+
+Paths for end point pm/mc_clocks/state_FSM_FFd3 (SLICE_X8Y22.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     25.519ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/mc_clocks/state_FSM_FFd1 (FF)
+  Destination:          pm/mc_clocks/state_FSM_FFd3 (FF)
+  Requirement:          27.500ns
+  Data Path Delay:      1.606ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         pm/W_CLK_36M rising at 0.000ns
+  Destination Clock:    pm/W_CLK_36M rising at 27.500ns
+  Clock Uncertainty:    0.375ns
+
+  Clock Uncertainty:          0.375ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.000ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.750ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pm/mc_clocks/state_FSM_FFd1 to pm/mc_clocks/state_FSM_FFd3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y22.AQ       Tcko                  0.525   pm/mc_clocks/state_FSM_FFd3
+                                                       pm/mc_clocks/state_FSM_FFd1
+    SLICE_X8Y22.BX       net (fanout=1)        0.996   pm/mc_clocks/state_FSM_FFd1
+    SLICE_X8Y22.CLK      Tdick                 0.085   pm/mc_clocks/state_FSM_FFd3
+                                                       pm/mc_clocks/state_FSM_FFd3
+    -------------------------------------------------  ---------------------------
+    Total                                      1.606ns (0.610ns logic, 0.996ns route)
+                                                       (38.0% logic, 62.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/mc_clocks/state_FSM_FFd1 (SLICE_X8Y22.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     25.555ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/mc_clocks/state_FSM_FFd2 (FF)
+  Destination:          pm/mc_clocks/state_FSM_FFd1 (FF)
+  Requirement:          27.500ns
+  Data Path Delay:      1.559ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.011ns (0.185 - 0.196)
+  Source Clock:         pm/W_CLK_36M rising at 0.000ns
+  Destination Clock:    pm/W_CLK_36M rising at 27.500ns
+  Clock Uncertainty:    0.375ns
+
+  Clock Uncertainty:          0.375ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.000ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.750ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pm/mc_clocks/state_FSM_FFd2 to pm/mc_clocks/state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y22.AQ       Tcko                  0.430   pm/mc_clocks/state_FSM_FFd1-In
+                                                       pm/mc_clocks/state_FSM_FFd2
+    SLICE_X8Y22.AX       net (fanout=1)        1.044   pm/mc_clocks/state_FSM_FFd1-In
+    SLICE_X8Y22.CLK      Tdick                 0.085   pm/mc_clocks/state_FSM_FFd3
+                                                       pm/mc_clocks/state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.559ns (0.515ns logic, 1.044ns route)
+                                                       (33.0% logic, 67.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/mc_clocks/state_FSM_FFd2 (SLICE_X9Y22.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     25.924ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/mc_clocks/state_FSM_FFd3 (FF)
+  Destination:          pm/mc_clocks/state_FSM_FFd2 (FF)
+  Requirement:          27.500ns
+  Data Path Delay:      1.190ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.011ns (0.185 - 0.196)
+  Source Clock:         pm/W_CLK_36M rising at 0.000ns
+  Destination Clock:    pm/W_CLK_36M rising at 27.500ns
+  Clock Uncertainty:    0.375ns
+
+  Clock Uncertainty:          0.375ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.000ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.750ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pm/mc_clocks/state_FSM_FFd3 to pm/mc_clocks/state_FSM_FFd2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y22.BQ       Tcko                  0.525   pm/mc_clocks/state_FSM_FFd3
+                                                       pm/mc_clocks/state_FSM_FFd3
+    SLICE_X9Y22.AX       net (fanout=3)        0.551   pm/mc_clocks/state_FSM_FFd3
+    SLICE_X9Y22.CLK      Tdick                 0.114   pm/mc_clocks/state_FSM_FFd1-In
+                                                       pm/mc_clocks/state_FSM_FFd2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.190ns (0.639ns logic, 0.551ns route)
+                                                       (53.7% logic, 46.3% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PERIOD analysis for net "pm/mc_clocks/CLKFX_BUF" derived from
+ NET "pm/mc_clocks/CLKIN_IBUFG" PERIOD = 20 ns HIGH 50%;
+ multiplied by 1.38 to 27.500 nS and duty cycle corrected to HIGH 13.750 nS 
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/mc_clocks/CLK_18M (SLICE_X10Y17.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.426ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               pm/mc_clocks/CLK_18M (FF)
+  Destination:          pm/mc_clocks/CLK_18M (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.426ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         pm/W_CLK_36M rising at 27.500ns
+  Destination Clock:    pm/W_CLK_36M rising at 27.500ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: pm/mc_clocks/CLK_18M to pm/mc_clocks/CLK_18M
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y17.AQ      Tcko                  0.200   pm/mc_clocks/CLK_18M
+                                                       pm/mc_clocks/CLK_18M
+    SLICE_X10Y17.A6      net (fanout=4)        0.036   pm/mc_clocks/CLK_18M
+    SLICE_X10Y17.CLK     Tah         (-Th)    -0.190   pm/mc_clocks/CLK_18M
+                                                       pm/mc_clocks/CLK_18M_INV_12_o1_INV_0
+                                                       pm/mc_clocks/CLK_18M
+    -------------------------------------------------  ---------------------------
+    Total                                      0.426ns (0.390ns logic, 0.036ns route)
+                                                       (91.5% logic, 8.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/mc_clocks/state_FSM_FFd2 (SLICE_X9Y22.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.492ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               pm/mc_clocks/state_FSM_FFd3 (FF)
+  Destination:          pm/mc_clocks/state_FSM_FFd2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.494ns (Levels of Logic = 0)
+  Clock Path Skew:      0.002ns (0.033 - 0.031)
+  Source Clock:         pm/W_CLK_36M rising at 27.500ns
+  Destination Clock:    pm/W_CLK_36M rising at 27.500ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: pm/mc_clocks/state_FSM_FFd3 to pm/mc_clocks/state_FSM_FFd2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y22.BQ       Tcko                  0.234   pm/mc_clocks/state_FSM_FFd3
+                                                       pm/mc_clocks/state_FSM_FFd3
+    SLICE_X9Y22.AX       net (fanout=3)        0.201   pm/mc_clocks/state_FSM_FFd3
+    SLICE_X9Y22.CLK      Tckdi       (-Th)    -0.059   pm/mc_clocks/state_FSM_FFd1-In
+                                                       pm/mc_clocks/state_FSM_FFd2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.494ns (0.293ns logic, 0.201ns route)
+                                                       (59.3% logic, 40.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/mc_clocks/state_FSM_FFd1 (SLICE_X8Y22.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.786ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               pm/mc_clocks/state_FSM_FFd2 (FF)
+  Destination:          pm/mc_clocks/state_FSM_FFd1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.788ns (Levels of Logic = 0)
+  Clock Path Skew:      0.002ns (0.033 - 0.031)
+  Source Clock:         pm/W_CLK_36M rising at 27.500ns
+  Destination Clock:    pm/W_CLK_36M rising at 27.500ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: pm/mc_clocks/state_FSM_FFd2 to pm/mc_clocks/state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y22.AQ       Tcko                  0.198   pm/mc_clocks/state_FSM_FFd1-In
+                                                       pm/mc_clocks/state_FSM_FFd2
+    SLICE_X8Y22.AX       net (fanout=1)        0.549   pm/mc_clocks/state_FSM_FFd1-In
+    SLICE_X8Y22.CLK      Tckdi       (-Th)    -0.041   pm/mc_clocks/state_FSM_FFd3
+                                                       pm/mc_clocks/state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.788ns (0.239ns logic, 0.549ns route)
+                                                       (30.3% logic, 69.7% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "pm/mc_clocks/CLKFX_BUF" derived from
+ NET "pm/mc_clocks/CLKIN_IBUFG" PERIOD = 20 ns HIGH 50%;
+ multiplied by 1.38 to 27.500 nS and duty cycle corrected to HIGH 13.750 nS 
+
+--------------------------------------------------------------------------------
+Slack: 24.500ns (period - min period limit)
+  Period: 27.500ns
+  Min period limit: 3.000ns (333.333MHz) (Tdcmper_CLKFX)
+  Physical resource: pm/mc_clocks/dcm_inst/CLKFX
+  Logical resource: pm/mc_clocks/dcm_inst/CLKFX
+  Location pin: DCM_X0Y1.CLKFX
+  Clock network: pm/mc_clocks/CLKFX_BUF
+--------------------------------------------------------------------------------
+Slack: 24.834ns (period - min period limit)
+  Period: 27.500ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: pm/mc_clocks/BUFG1/I0
+  Logical resource: pm/mc_clocks/BUFG1/I0
+  Location pin: BUFGMUX_X2Y12.I0
+  Clock network: pm/mc_clocks/CLKFX_BUF
+--------------------------------------------------------------------------------
+Slack: 25.251ns (period - min period limit)
+  Period: 27.500ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: pm/O_HSYNC_1/CLK0
+  Logical resource: pm/O_HSYNC_1/CK0
+  Location pin: OLOGIC_X12Y30.CLK0
+  Clock network: pm/W_CLK_36M
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS01 = PERIOD TIMEGRP "clk_ref_grp" 20 ns HIGH 50% PRIORITY 
+1;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   8.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS01 = PERIOD TIMEGRP "clk_ref_grp" 20 ns HIGH 50% PRIORITY 1;
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: pm/mc_clocks/dcm_inst/CLKIN
+  Logical resource: pm/mc_clocks/dcm_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: pm/mc_clocks/dcm_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: pm/mc_clocks/dcm_inst/CLKIN
+  Logical resource: pm/mc_clocks/dcm_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: pm/mc_clocks/dcm_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 16.000ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 4.000ns (250.000MHz) (Tdcmper_CLKIN)
+  Physical resource: pm/mc_clocks/dcm_inst/CLKIN
+  Logical resource: pm/mc_clocks/dcm_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: pm/mc_clocks/dcm_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_pm_mc_clocks_CLKFX_BUF = PERIOD TIMEGRP 
+"pm_mc_clocks_CLKFX_BUF" TS01 /         0.727272727 HIGH 50% PRIORITY 1;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   2.666ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_pm_mc_clocks_CLKFX_BUF = PERIOD TIMEGRP "pm_mc_clocks_CLKFX_BUF" TS01 /
+        0.727272727 HIGH 50% PRIORITY 1;
+--------------------------------------------------------------------------------
+Slack: 24.834ns (period - min period limit)
+  Period: 27.500ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: pm/mc_clocks/BUFG1/I0
+  Logical resource: pm/mc_clocks/BUFG1/I0
+  Location pin: BUFGMUX_X2Y12.I0
+  Clock network: pm/mc_clocks/CLKFX_BUF
+--------------------------------------------------------------------------------
+Slack: 25.251ns (period - min period limit)
+  Period: 27.500ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: pm/O_HSYNC_1/CLK0
+  Logical resource: pm/O_HSYNC_1/CK0
+  Location pin: OLOGIC_X12Y30.CLK0
+  Clock network: pm/W_CLK_36M
+--------------------------------------------------------------------------------
+Slack: 25.251ns (period - min period limit)
+  Period: 27.500ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: pm/O_VSYNC_1/CLK0
+  Logical resource: pm/O_VSYNC_1/CK0
+  Location pin: OLOGIC_X12Y29.CLK0
+  Clock network: pm/W_CLK_36M
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for pm/mc_clocks/CLKIN_IBUFG
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|pm/mc_clocks/CLKIN_IBUFG       |     20.000ns|      8.000ns|      2.182ns|            0|            0|            0|            4|
+| pm/mc_clocks/CLKFX_BUF        |     27.500ns|      3.000ns|          N/A|            0|            0|            4|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS01
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS01                           |     20.000ns|      8.000ns|      1.939ns|            0|            0|            0|            0|
+| TS_pm_mc_clocks_CLKFX_BUF     |     27.500ns|      2.666ns|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    1.981|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 4 paths, 0 nets, and 13 connections
+
+Design statistics:
+   Minimum period:   8.000ns{1}   (Maximum frequency: 125.000MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Jul 03 00:33:18 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 236 MB
+
+
+

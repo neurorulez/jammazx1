@@ -1,0 +1,1 @@
+Para ZX1 y ZX2 hace falta meter en la SD el fichero COLONY7.ROM del directorio TOOLS

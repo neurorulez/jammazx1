@@ -1,0 +1,430 @@
+/*
+
+Xilinx Vivado v2018.3.1 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2489853 on Tue Mar 26 04:20:25 MDT 2019
+IP Build: 2486929 on Tue Mar 26 06:44:21 MDT 2019
+
+Process ID (PID): 3060
+License: Customer
+
+Current time: 	Sat May 25 15:09:35 CEST 2019
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 32 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	F:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sysop
+User home directory: C:/Users/sysop
+User working directory: F:/repos/a35/NUEVO/joust/A35
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: F:/Xilinx/Vivado
+HDI_APPROOT: F:/Xilinx/Vivado/2018.3
+RDI_DATADIR: F:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: F:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	F:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/repos/a35/NUEVO/joust/A35/vivado.log
+Vivado journal file location: 	F:/repos/a35/NUEVO/joust/A35/vivado.jou
+Engine tmp dir: 	F:/repos/a35/NUEVO/joust/A35/.Xil/Vivado-3060-W7-PC
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: F:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: F:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: F:/Xilinx/Vivado/2018.3
+XILINX_SDK: F:/Xilinx/SDK/2018.3
+XILINX_VIVADO: F:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: F:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 543 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1225 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: F:\repos\a35\NUEVO\joust\A35\A35.xpr. Version: Vivado v2018.3.1 
+// bx (cp):  Open Project : addNotify
+// Tcl Message: open_project F:/repos/a35/NUEVO/joust/A35/A35.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project F:/repos/a35/NUEVO/joust/A35/A35.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'F:/repos/a35/NUEVO/robotron/A35' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 573 MB. GUI used memory: 43 MB. Current time: 5/25/19, 3:09:37 PM CEST
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 65 MB (+65631kb) [00:00:29]
+// [Engine Memory]: 603 MB (+480918kb) [00:00:29]
+// [GUI Memory]: 82 MB (+14378kb) [00:00:30]
+// [GUI Memory]: 101 MB (+15691kb) [00:00:32]
+// WARNING: HEventQueue.dispatchEvent() is taking  9386 ms.
+// [Engine Memory]: 663 MB (+31526kb) [00:00:37]
+// WARNING: HEventQueue.dispatchEvent() is taking  1245 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1011 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1038 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 694.059 ; gain = 116.379 
+// HMemoryUtils.trashcanNow. Engine heap size: 709 MB. GUI used memory: 49 MB. Current time: 5/25/19, 3:09:56 PM CEST
+// Project name: A35; location: F:/repos/a35/NUEVO/joust/A35; part: xc7a35tftg256-1
+// [Engine Memory]: 709 MB (+12713kb) [00:00:42]
+// [GUI Memory]: 108 MB (+1625kb) [00:00:42]
+dismissDialog("Open Project"); // bx (cp)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 450ms to process. Increasing delay to 3000 ms.
+// PAPropertyPanels.initPanels (modulo_top_a35t.v) elapsed time: 0.5s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, robotron_top (modulo_top_a35t.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, robotron_top (modulo_top_a35t.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// [Engine Memory]: 746 MB (+1678kb) [00:00:52]
+selectCodeEditor("modulo_top_a35t.v", 103, 144); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 759 MB. GUI used memory: 52 MB. Current time: 5/25/19, 3:10:14 PM CEST
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1048ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1049 ms.
+// WARNING: updateGUI() is taking  1373 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  2478 ms.
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "robotron_top"); // h (Q, cp)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2906 ms. Increasing delay to 3000 ms.
+// F (cp): Settings: addNotify
+// 'dy' command handler elapsed time: 5 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  5783 ms.
+// Elapsed time: 11 seconds
+setText(PAResourceQtoS.RTLOptionsPanel_SELECT_TOP_MODULE_OF_YOUR_DESIGN, "joust_top"); // Y (ah, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// [GUI Memory]: 131 MB (+19126kb) [00:01:20]
+// A (cp): Create New Run: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1153 ms.
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// b (cp): Create Run: addNotify
+dismissDialog("Create New Run"); // A (cp)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (b)
+dismissDialog("Create Run"); // b (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// A (cp): Create New Run: addNotify
+// [Engine Memory]: 787 MB (+4085kb) [00:01:28]
+// WARNING: HEventQueue.dispatchEvent() is taking  1014 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 835 MB. GUI used memory: 77 MB. Current time: 5/25/19, 3:10:45 PM CEST
+selectButton(RDIResource.BaseDialog_NO, "No"); // a (A)
+// [Engine Memory]: 835 MB (+9170kb) [00:01:31]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top joust_top [current_fileset] 
+dismissDialog("Create New Run"); // A (cp)
+dismissDialog("Settings"); // F (cp)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // i (N, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, robotron_decoder_6.vhd]", 24, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, robotron_decoder_4.vhd]", 23, false, false, true, false, false, false); // B (D, cp) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, robotron_sound.vhd]", 22, false, false, true, false, false, false); // B (D, cp) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, robotron_prog.vhd]", 21, false, false, true, false, false, false); // B (D, cp) - Control Key
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// aE (cp): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/joust/src/roms/robotron_decoder_6.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/joust/src/roms/robotron_decoder_4.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/joust/src/roms/robotron_sound.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/joust/src/roms/robotron_prog.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {F:/repos/a35/NUEVO/joust/src/roms/robotron_decoder_6.vhd F:/repos/a35/NUEVO/joust/src/roms/robotron_decoder_4.vhd F:/repos/a35/NUEVO/joust/src/roms/robotron_sound.vhd F:/repos/a35/NUEVO/joust/src/roms/robotron_prog.vhd} 
+dismissDialog("Remove Sources"); // bx (aE)
+// [GUI Memory]: 141 MB (+3539kb) [00:01:56]
+// WARNING: updateGUI() is taking  1288 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1401 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib]", 6, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 36 seconds
+dismissFileChooser();
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 40 seconds
+dismissDialog("Add Sources"); // c (cp)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 22 seconds
+String[] filenames31467 = {"F:/repos/a35/NUEVO/joust/src/roms/joust_decoder_4.vhd", "F:/repos/a35/NUEVO/joust/src/roms/joust_decoder_6.vhd", "F:/repos/a35/NUEVO/joust/src/roms/joust_prog.vhd", "F:/repos/a35/NUEVO/joust/src/roms/joust_sound.vhd"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 26 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {F:/repos/a35/NUEVO/joust/src/roms/joust_sound.vhd F:/repos/a35/NUEVO/joust/src/roms/joust_prog.vhd F:/repos/a35/NUEVO/joust/src/roms/joust_decoder_6.vhd F:/repos/a35/NUEVO/joust/src/roms/joust_decoder_4.vhd} 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd), inst_ROM : ROMS(RTL) (williams_rom.vhd)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd), inst_ROM : ROMS(RTL) (williams_rom.vhd)]", 5, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 22 seconds
+selectCodeEditor("williams_rom.vhd", 576, 415); // cl (w, cp)
+selectCodeEditor("williams_rom.vhd", 187, 366); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1970 ms. Increasing delay to 4000 ms.
+// WARNING: updateGUI() is taking  2150 ms.
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd), inst_ROM : ROMS(RTL) (williams_rom.vhd)]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd), audio : williams_sound_board(struct) (Williams_sound_board.vhd)]", 11, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd), audio : williams_sound_board(struct) (Williams_sound_board.vhd), pia : pia6821(RTL) (pia6821.vhd)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Williams_sound_board.vhd", 186, 302); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("williams_cpu.vhd", 259, 334); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 267, 467); // cl (w, cp)
+// Elapsed time: 32 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd)]", 2); // B (D, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("williams_cpu.vhd", 505, 358); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd), audio : williams_sound_board(struct) (Williams_sound_board.vhd)]", 11, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd), audio : williams_sound_board(struct) (Williams_sound_board.vhd)]", 11, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 16 seconds
+selectCodeEditor("Williams_sound_board.vhd", 304, 406); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("Williams_sound_board.vhd", 154, 331); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 152, 348); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 231, 436); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 388, 284); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("Williams_sound_board.vhd", 387, 398); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("Williams_sound_board.vhd", 0, 111); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 15, 474); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 0, 57, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Williams_sound_board.vhd", 4, 45); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 9, 471, true, false, false, false, false); // cl (w, cp) - Shift Key
+typeControlKey((HResource) null, "Williams_sound_board.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 398, 318); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("Williams_sound_board.vhd", 373, 312); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 2, 246); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 0, 264); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 1, 247); // cl (w, cp)
+typeControlKey((HResource) null, "Williams_sound_board.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 331, 294); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 276, 316); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 90, 162); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 90, 162, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Williams_sound_board.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 268, 405); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 549, 323); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 1, 10); // cl (w, cp)
+typeControlKey((HResource) null, "Williams_sound_board.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("Williams_sound_board.vhd", 409, 216); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 7, 102); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 11, 278, true, false, false, false, false); // cl (w, cp) - Shift Key
+typeControlKey((HResource) null, "Williams_sound_board.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("Williams_sound_board.vhd", 330, 283); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 1, 418); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("Williams_sound_board.vhd", 0, 300, true, false, false, false, false); // cl (w, cp) - Shift Key
+typeControlKey((HResource) null, "Williams_sound_board.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 1, 385); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 308, 214); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 337, 261); // cl (w, cp)
+selectCodeEditor("Williams_sound_board.vhd", 3, 214); // cl (w, cp)
+typeControlKey((HResource) null, "Williams_sound_board.vhd", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("Williams_sound_board.vhd", 611, 239); // cl (w, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 10 seconds
+selectCodeEditor("williams_cpu.vhd", 454, 65); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd), inst_ROM : ROMS(RTL) (williams_rom.vhd)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd), inst_ROM : ROMS(RTL) (williams_rom.vhd)]", 5, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("williams_rom.vhd", 244, 407); // cl (w, cp)
+selectCodeEditor("williams_rom.vhd", 468, 410); // cl (w, cp)
+selectCodeEditor("williams_rom.vhd", 386, 304); // cl (w, cp)
+selectCodeEditor("williams_rom.vhd", 5, 266); // cl (w, cp)
+typeControlKey((HResource) null, "williams_rom.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_rom.vhd", 442, 432); // cl (w, cp)
+selectCodeEditor("williams_rom.vhd", 449, 333); // cl (w, cp)
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cp)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("williams_cpu.vhd", 436, 333); // cl (w, cp)
+// Elapsed time: 33 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd), inst_ROM : ROMS(RTL) (williams_rom.vhd)]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 15 seconds
+selectCodeEditor("williams_cpu.vhd", 461, 415); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 6, 251); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 9, 317); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 149 MB (+962kb) [00:11:59]
+// Elapsed time: 18 seconds
+selectCodeEditor("williams_cpu.vhd", 408, 319); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 501, 224); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 0, 95); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("williams_cpu.vhd", 12, 333); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("williams_cpu.vhd", 2, 301, true, false, false, false, false); // cl (w, cp) - Shift Key
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("williams_cpu.vhd", 37, 245); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 407, 277); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 180, 197); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 90, 213); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 457, 305); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("williams_cpu.vhd", 8, 263); // cl (w, cp)
+// Elapsed time: 241 seconds
+selectCodeEditor("williams_cpu.vhd", 8, 198, true, false, false, false, false); // cl (w, cp) - Shift Key
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("williams_cpu.vhd", 3, 42); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  2039 ms.
+selectCodeEditor("williams_cpu.vhd", 146, 334); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 156, 57); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 153, 42); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 156, 317); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 153, 80); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 147, 370); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 153, 93); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 152, 109); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 151, 401); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 156, 110); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 156, 129); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("williams_cpu.vhd", 154, 130); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 153, 146); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 1, 446); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 11, 158); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 152, 487); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 142, 143); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 154, 452); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 156, 166); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 151, 177); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 304, 178); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 151, 451); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 156, 266); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 154, 284); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 310, 281); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 144, 248); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 301, 247); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 12, 317); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 2, 401, true, false, false, false, false); // cl (w, cp) - Shift Key
+// WARNING: HEventQueue.dispatchEvent() is taking  2036 ms.
+// Elapsed time: 16 seconds
+selectCodeEditor("williams_cpu.vhd", 16, 339); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 6, 213, true, false, false, false, false); // cl (w, cp) - Shift Key
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("williams_cpu.vhd", 16, 437); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  2141 ms.
+selectCodeEditor("williams_cpu.vhd", 76, 222); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 53, 255); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("williams_cpu.vhd", 11, 445); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 3, 364, true, false, false, false, false); // cl (w, cp) - Shift Key
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B

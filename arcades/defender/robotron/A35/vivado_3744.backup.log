@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Apr 27 11:45:27 2019
+# Process ID: 3744
+# Current directory: F:/repos/a35/NUEVO/defender/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1996 F:\repos\a35\NUEVO\defender\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/defender/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/defender/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/defender/A35/A35.xpr
+INFO: [Project 1-313] Project file moved from 'F:/jammaZX1/-hw defender/defender/A35' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'F:/repos/a35/defender/a35t/a35t.cache/ip'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'F:/repos/repos/a35/defender/a35t/a35t.ip_user_files', nor could it be found using path 'F:/repos/a35/defender/a35t/a35t.ip_user_files'.
+INFO: [Project 1-230] Project 'A35.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 663.797 ; gain = 86.813
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/defender/src/multiboot.v] -no_script -reset -force -quiet
+remove_files  F:/repos/a35/NUEVO/defender/src/multiboot.v
+add_files -norecurse F:/repos/a35/NUEVO/defender/src/multiboot_artix7.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Sat Apr 27 11:50:48 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/defender/A35/A35.runs/synth_1/runme.log
+[Sat Apr 27 11:50:49 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/defender/A35/A35.runs/impl_1/runme.log
+open_hw
+open_hw: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 780.496 ; gain = 0.000
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3.1
+  **** Build date : Mar 26 2019-05:02:51
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1683.324 ; gain = 902.828
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/defender/A35/A35.runs/impl_1/defender_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/defender/A35/A35.runs/impl_1/defender_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1702.699 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 27 12:34:02 2019...

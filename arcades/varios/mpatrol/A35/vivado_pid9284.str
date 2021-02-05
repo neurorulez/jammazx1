@@ -1,0 +1,2012 @@
+/*
+
+Xilinx Vivado v2018.3.1 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2489853 on Tue Mar 26 04:20:25 MDT 2019
+IP Build: 2486929 on Tue Mar 26 06:44:21 MDT 2019
+
+Process ID (PID): 9284
+License: Customer
+
+Current time: 	Wed May 29 08:31:48 CEST 2019
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 33 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	F:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sysop
+User home directory: C:/Users/sysop
+User working directory: F:/repos/a35/NUEVO/mpatrol/A35
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: F:/Xilinx/Vivado
+HDI_APPROOT: F:/Xilinx/Vivado/2018.3
+RDI_DATADIR: F:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: F:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	F:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/repos/a35/NUEVO/mpatrol/A35/vivado.log
+Vivado journal file location: 	F:/repos/a35/NUEVO/mpatrol/A35/vivado.jou
+Engine tmp dir: 	F:/repos/a35/NUEVO/mpatrol/A35/.Xil/Vivado-9284-W7-PC
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: F:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: F:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: F:/Xilinx/Vivado/2018.3
+XILINX_SDK: F:/Xilinx/SDK/2018.3
+XILINX_VIVADO: F:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: F:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 538 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1157 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: F:\repos\a35\NUEVO\mpatrol\A35\A35.xpr. Version: Vivado v2018.3.1 
+// bx (cp):  Open Project : addNotify
+// Tcl Message: open_project F:/repos/a35/NUEVO/mpatrol/A35/A35.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 572 MB. GUI used memory: 42 MB. Current time: 5/29/19, 8:31:50 AM CEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 97 MB (+99574kb) [00:00:28]
+// [Engine Memory]: 610 MB (+488327kb) [00:00:28]
+// [Engine Memory]: 660 MB (+20269kb) [00:00:31]
+// [GUI Memory]: 108 MB (+5639kb) [00:00:33]
+// WARNING: HEventQueue.dispatchEvent() is taking  9609 ms.
+// Tcl Message: open_project F:/repos/a35/NUEVO/mpatrol/A35/A35.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  3014 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1268 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1252 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 706.156 ; gain = 125.488 
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 53 MB. Current time: 5/29/19, 8:32:11 AM CEST
+// [Engine Memory]: 840 MB (+154477kb) [00:00:42]
+// Project name: A35; location: F:/repos/a35/NUEVO/mpatrol/A35; part: xc7a35tftg256-1
+dismissDialog("Open Project"); // bx (cp)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1682 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1467 ms.
+// Elapsed time: 190 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), moon_patrol_sound_board : moon_patrol_sound_board(struct) (moon_patrol_sound_board.vhd)]", 5); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), moon_patrol_sound_board : moon_patrol_sound_board(struct) (moon_patrol_sound_board.vhd)]", 5); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd)]", 7); // B (D, cp)
+// PAPropertyPanels.initPanels (platform.vhd) elapsed time: 0.5s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd), BLK_CPU_ROMS.rom3_inst : sprom (sprom.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1065 ms.
+// Elapsed time: 10 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, ".mem"); // l (aT, cp)
+selectCodeEditor("platform.vhd", 252, 29); // cl (w, cp)
+selectCodeEditor("platform.vhd", 252, 248); // cl (w, cp)
+selectCodeEditor("platform.vhd", 253, 219); // cl (w, cp)
+selectCodeEditor("platform.vhd", 255, 333); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("platform.vhd", 250, 337); // cl (w, cp)
+selectCodeEditor("platform.vhd", 259, 298); // cl (w, cp)
+selectCodeEditor("platform.vhd", 253, 350); // cl (w, cp)
+selectCodeEditor("platform.vhd", 252, 415); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("platform.vhd", 251, 314); // cl (w, cp)
+selectCodeEditor("platform.vhd", 255, 350); // cl (w, cp)
+selectCodeEditor("platform.vhd", 254, 281); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 690ms to process. Increasing delay to 3000 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v)]", 1, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 42 seconds
+String[] filenames31467 = {"F:/repos/a35/NUEVO/mpatrol/src/roms/mpa-1.3m.mem", "F:/repos/a35/NUEVO/mpatrol/src/roms/mpa-2.3l.mem", "F:/repos/a35/NUEVO/mpatrol/src/roms/mpa-3.3k.mem", "F:/repos/a35/NUEVO/mpatrol/src/roms/mpa-4.3j.mem", "F:/repos/a35/NUEVO/mpatrol/src/roms/mpb-1.3n.mem", "F:/repos/a35/NUEVO/mpatrol/src/roms/mpb-2.3m.mem", "F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-1.3l.mem", "F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-2.3k.mem", "F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-3.3h.mem", "F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-4.3f.mem", "F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-5.3e.mem"};
+setFileChooser(filenames31467);
+// [GUI Memory]: 114 MB (+1173kb) [00:06:28]
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 46 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c (cp)
+// bx (cp):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {F:/repos/a35/NUEVO/mpatrol/src/roms/mpb-1.3n.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-5.3e.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpb-2.3m.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-4.3f.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-3.3h.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpa-4.3j.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpa-2.3l.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpa-1.3m.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-1.3l.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-2.3k.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpa-3.3k.mem} 
+dismissDialog("Add Sources"); // bx (cp)
+// [GUI Memory]: 124 MB (+4152kb) [00:06:32]
+// Elapsed time: 11 seconds
+selectCodeEditor("platform.vhd", 319, 93); // cl (w, cp)
+selectCodeEditor("platform.vhd", 321, 337); // cl (w, cp)
+selectCodeEditor("platform.vhd", 304, 92); // cl (w, cp)
+selectCodeEditor("platform.vhd", 285, 64); // cl (w, cp)
+selectCodeEditor("platform.vhd", 334, 211); // cl (w, cp)
+selectCodeEditor("platform.vhd", 323, 199); // cl (w, cp)
+selectCodeEditor("platform.vhd", 335, 254); // cl (w, cp)
+selectCodeEditor("platform.vhd", 338, 27); // cl (w, cp)
+selectCodeEditor("platform.vhd", 324, 137); // cl (w, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 29 08:38:37 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/synth_1/runme.log [Wed May 29 08:38:37 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4); // B (D, cp)
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd), BLK_CPU_ROMS.rom1_inst : sprom (sprom.v)]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd), BLK_CPU_ROMS.rom1_inst : sprom (sprom.v)]", 12, false, false, false, false, false, true); // B (D, cp) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  2078 ms.
+// Elapsed time: 17 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd), BLK_CPU_ROMS.rom1_inst : sprom (sprom.v)]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd), BLK_CPU_ROMS.rom1_inst : sprom (sprom.v)]", 12, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "platform.vhd", 1); // k (j, cp)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sprom.v", 2); // k (j, cp)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 866ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1006 ms. Increasing delay to 3018 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1834 ms. Increasing delay to 5502 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1076 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2629 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 10722 ms. Increasing delay to 32166 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5729 ms. Increasing delay to 17187 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5023 ms. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1029 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31 ms. Decreasing delay to 2031 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6266 ms. Increasing delay to 18798 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5986 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6081 ms. Increasing delay to 18243 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 29 ms. Decreasing delay to 2029 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4948 ms. Increasing delay to 14844 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 75 ms. Decreasing delay to 2075 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5164 ms. Increasing delay to 15492 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 32 ms. Decreasing delay to 2032 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5723 ms. Increasing delay to 17169 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6656 ms. Increasing delay to 19968 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 29 ms. Decreasing delay to 2029 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5742 ms. Increasing delay to 17226 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 29 ms. Decreasing delay to 2029 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6287 ms. Increasing delay to 18861 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 29 ms. Decreasing delay to 2029 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3886 ms. Increasing delay to 11658 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 29 ms. Decreasing delay to 2029 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 8459 ms. Increasing delay to 25377 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4923 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 29 ms. Decreasing delay to 2029 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5493 ms. Increasing delay to 16479 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1010 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3415 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 32 ms. Decreasing delay to 2032 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4766 ms. Increasing delay to 14298 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 29 ms. Decreasing delay to 2029 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2330 ms. Increasing delay to 6990 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6178 ms. Increasing delay to 18534 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2012 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1129 ms. Increasing delay to 3387 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 61 MB. Current time: 5/29/19, 9:02:22 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  4971 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2244 ms. Increasing delay to 6732 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4999 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6017 ms. Increasing delay to 18051 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4339 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 7613 ms. Increasing delay to 22839 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4993 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5019 ms. Increasing delay to 15057 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1934 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4821 ms. Increasing delay to 14463 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5415 ms. Increasing delay to 16245 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31 ms. Decreasing delay to 2031 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1894 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6543 ms. Increasing delay to 19629 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31 ms. Decreasing delay to 2031 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5803 ms. Increasing delay to 17409 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3830 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3821 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 27 ms. Decreasing delay to 2027 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4960 ms. Increasing delay to 14880 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// Elapsed time: 1643 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 7031 ms. Increasing delay to 21093 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4819 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6026 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 66 ms. Decreasing delay to 2066 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4070 ms. Increasing delay to 12210 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31 ms. Decreasing delay to 2031 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6005 ms. Increasing delay to 18015 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5989 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5008 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 142 ms. Decreasing delay to 2142 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3021 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5856 ms. Increasing delay to 17568 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1996 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4953 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 27 ms. Decreasing delay to 2027 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 8082 ms. Increasing delay to 24246 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5846 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3872 ms. Increasing delay to 11616 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5748 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 29 ms. Decreasing delay to 2029 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5969 ms. Increasing delay to 17907 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4873 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4629 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31 ms. Decreasing delay to 2031 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4831 ms. Increasing delay to 14493 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 32 ms. Decreasing delay to 2032 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5991 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4594 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6094 ms. Increasing delay to 18282 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5964 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5958 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6983 ms to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6936 ms. Increasing delay to 20808 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 7131 ms. Increasing delay to 21393 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4378 ms. Increasing delay to 13134 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5013 ms. Increasing delay to 15039 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4742 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6532 ms. Increasing delay to 19596 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31 ms. Decreasing delay to 2031 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5881 ms. Increasing delay to 17643 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 32 ms. Decreasing delay to 2032 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4986 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5872 ms. Increasing delay to 17616 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3992 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 265 ms. Decreasing delay to 2265 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 10723 ms. Increasing delay to 32169 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 3914ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6751 ms. Increasing delay to 20253 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1216 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5862 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1495 ms. Decreasing delay to 3495 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 7467 ms. Increasing delay to 22401 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3770 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6002 ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4766 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 863 ms. Decreasing delay to 2863 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5101 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6024 ms. Increasing delay to 18072 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 30 ms. Decreasing delay to 2030 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5967 ms. Increasing delay to 17901 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5931 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4976 ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5809 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 10091 ms. Increasing delay to 30273 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1813 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2707 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 30 ms. Decreasing delay to 2030 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6850 ms. Increasing delay to 20550 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 29 ms. Decreasing delay to 2029 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2249 ms. Increasing delay to 6747 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5251 ms. Increasing delay to 15753 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9243 ms. Increasing delay to 27729 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31 ms. Decreasing delay to 2031 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6993 ms. Increasing delay to 20979 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 7005 ms to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 32 ms. Decreasing delay to 2032 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 8944 ms. Increasing delay to 26832 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1957 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6036 ms.
+// Elapsed time: 1483 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false, false, false, false, true, false); // u (Q, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SYNTH_SETTINGS, "Synthesis Settings..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SYNTH_SETTINGS
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 55 MB. Current time: 5/29/19, 9:32:31 AM CEST
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// F (cp): Settings: addNotify
+// 'dy' command handler elapsed time: 7 seconds
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 158 ms. Decreasing delay to 2158 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7765 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6816 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6934 ms. Increasing delay to 20802 ms.
+// Elapsed time: 43 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Settings"); // F (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1192 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3097 ms. Increasing delay to 9291 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4159 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4968 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4943 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5979 ms. Increasing delay to 17937 ms.
+// [GUI Memory]: 131 MB (+753kb) [01:03:51]
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 32 ms. Decreasing delay to 2032 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3207 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3133 ms. Increasing delay to 9399 ms.
+// [GUI Memory]: 138 MB (+867kb) [01:05:59]
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 556 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// PAPropertyPanels.initPanels (sprom.v) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  2579 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// 'Q' command handler elapsed time: 3 seconds
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3.1   **** Build date : Mar 26 2019-05:02:51     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  7810 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1728.957 ; gain = 760.992 
+// TclEventType: HW_DEVICE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,728 MB. GUI used memory: 74 MB. Current time: 5/29/19, 9:43:00 AM CEST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,729 MB (+887438kb) [01:11:32]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 13 seconds
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// PAPropertyPanels.initPanels (xc7a35t_0) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// Elapsed time: 22 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,748 MB. GUI used memory: 74 MB. Current time: 5/29/19, 9:43:41 AM CEST
+// Elapsed time: 11 seconds
+selectCodeEditor("platform.vhd", 189, 68); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false, false, false, false, true, false); // u (Q, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SYNTH_SETTINGS, "Synthesis Settings..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SYNTH_SETTINGS
+// F (cp): Settings: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// A (cp): Create New Run: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2155 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,816 MB. GUI used memory: 85 MB. Current time: 5/29/19, 9:44:03 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1165 ms.
+selectButton(RDIResource.BaseDialog_NO, "No"); // a (A)
+// [Engine Memory]: 1,848 MB (+34015kb) [01:12:37]
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_OPTIONS_MODIFIED
+// Tcl Message: set_property STEPS.SYNTH_DESIGN.ARGS.DIRECTIVE RuntimeOptimized [get_runs synth_1] 
+dismissDialog("Create New Run"); // A (cp)
+dismissDialog("Settings"); // F (cp)
+// [GUI Memory]: 150 MB (+5317kb) [01:13:56]
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 610 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+// [GUI Memory]: 164 MB (+6885kb) [01:22:50]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File]", 31); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, mpa-1.3m.mem]", 32, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, mpa-1.3m.mem]", 32, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectButton(PAResourceAtoD.AbstractFileView_CLOSE, (String) null); // k (B, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File]", 31); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Wed May 29 09:54:52 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/synth_1/runme.log [Wed May 29 09:54:52 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1716 ms.
+// Elapsed time: 169 seconds
+selectCodeEditor("platform.vhd", 293, 231); // cl (w, cp)
+selectCodeEditor("platform.vhd", 180, 390); // cl (w, cp)
+selectCodeEditor("platform.vhd", 252, 178); // cl (w, cp)
+selectCodeEditor("platform.vhd", 400, 395); // cl (w, cp)
+// Elapsed time: 92 seconds
+selectCodeEditor("platform.vhd", 293, 141); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("platform.vhd", 275, 168); // cl (w, cp)
+selectCodeEditor("platform.vhd", 282, 279); // cl (w, cp)
+selectCodeEditor("platform.vhd", 282, 279, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("platform.vhd", 332, 276); // cl (w, cp)
+selectCodeEditor("platform.vhd", 306, 280); // cl (w, cp)
+selectCodeEditor("platform.vhd", 313, 282); // cl (w, cp)
+// Elapsed time: 82 seconds
+selectCodeEditor("platform.vhd", 368, 171); // cl (w, cp)
+selectCodeEditor("platform.vhd", 352, 124); // cl (w, cp)
+// Elapsed time: 74 seconds
+selectCodeEditor("platform.vhd", 390, 151); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 66 seconds
+selectCodeEditor("platform.vhd", 372, 226); // cl (w, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 128 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd)]", 9); // B (D, cp)
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd)]", 7, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1197 ms.
+// Elapsed time: 35 seconds
+selectCodeEditor("pace.vhd", 183, 460); // cl (w, cp)
+// Elapsed time: 33 seconds
+selectCodeEditor("pace.vhd", 228, 398); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("pace.vhd", 252, 415); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("pace.vhd", 196, 308); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("pace.vhd", 25, 252); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("pace.vhd", 24, 215); // cl (w, cp)
+selectCodeEditor("pace.vhd", 26, 191); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("pace.vhd", 23, 215); // cl (w, cp)
+// Elapsed time: 179 seconds
+selectCodeEditor("pace.vhd", 336, 129); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "27", true); // l (aT, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd), BLK_GFX_ROMS.char2_rom_inst : sprom (sprom.v)]", 17, false, false, false, false, false, true); // B (D, cp) - Double Click
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "27", true); // l (aT, cp)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5662 ms. Increasing delay to 16986 ms.
+// Elapsed time: 20 seconds
+selectCodeEditor("platform.vhd", 373, 150); // cl (w, cp)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6988 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31 ms. Decreasing delay to 2031 ms.
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd), BLK_CPU.clk_en_inst : clk_div(SYN) (clk_div.vhd)]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd), BLK_CPU.clk_en_inst : clk_div(SYN) (clk_div.vhd)]", 10, false, false, false, false, false, true); // B (D, cp) - Double Click
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5994 ms. Increasing delay to 17982 ms.
+// WARNING: updateGUI() is taking  5815 ms.
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd), BLK_CPU.clk_en_inst : clk_div(SYN) (clk_div.vhd)]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd), BLK_CPU.clk_en_inst : clk_div(SYN) (clk_div.vhd)]", 10, false, false, false, false, false, true); // B (D, cp) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  5589 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,854 MB. GUI used memory: 80 MB. Current time: 5/29/19, 10:14:06 AM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31 ms. Decreasing delay to 2031 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5937 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5960 ms. Increasing delay to 17880 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 29 ms. Decreasing delay to 2029 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1681 ms. Increasing delay to 5043 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2704 ms. Increasing delay to 8112 ms.
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 901 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// Elapsed time: 22 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// Elapsed time: 128 seconds
+selectCodeEditor("clk_div.vhd", 15, 146); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pace.vhd", 1); // k (j, cp)
+// Elapsed time: 41 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "platform.vhd", 0); // k (j, cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_div.vhd", 2); // k (j, cp)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "platform.vhd", 0); // k (j, cp)
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// PAPropertyPanels.initPanels (relojes.xci) elapsed time: 0.2s
+// Elapsed time: 49 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), relojes : relojes (relojes.xci)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), relojes : relojes (relojes.xci)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cp):  Re-customize IP : addNotify
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,968 MB. GUI used memory: 78 MB. Current time: 5/29/19, 10:34:28 AM CEST
+// [Engine Memory]: 2,009 MB (+72387kb) [02:03:06]
+// r (cp): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4659 ms.
+// Elapsed time: 15 seconds
+dismissDialog("Re-customize IP"); // O (cp)
+// Elapsed time: 34 seconds
+setText("PRIM IN FREQ", "50.000"); // z (cU, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2095 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+// Elapsed time: 85 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cT (C, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 13 seconds
+selectRadioButton((HResource) null, "MMCM"); // cO
+// WARNING: HEventQueue.dispatchEvent() is taking  2511 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+// Elapsed time: 187 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cT (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,030 MB. GUI used memory: 99 MB. Current time: 5/29/19, 10:40:28 AM CEST
+// Elapsed time: 33 seconds
+setText("CLKOUT1 REQUESTED OUT FREQ", "7.164179"); // z (cU, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// r (cp): Re-customize IP: addNotify
+// bx (r):  Re-customize IP : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// aI (cp): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bx (r)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'relojes'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'relojes'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'relojes'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'relojes'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'relojes'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all relojes] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run relojes_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs  relojes_synth_1 
+// Tcl Message: [Wed May 29 10:40:50 2019] Launched relojes_synth_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/relojes_synth_1/runme.log 
+// Tcl Message: export_simulation -of_objects [get_files F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -directory F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files/sim_scripts -ip_user_files_dir F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files -ipstatic_source_dir F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/modelsim} {questa=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/questa} {riviera=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/riviera} {activehdl=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 19 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1096 ms.
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 23 seconds
+selectCodeEditor("modulo_top_lx35.v", 188, 179); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 37 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 14 seconds
+selectCodeEditor("mpatrol.vhd", 140, 161); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 147, 143); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 19, 146); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 2, 145); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 3, 145); // cl (w, cp)
+typeControlKey((HResource) null, "mpatrol.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 83, 199); // cl (w, cp)
+// Elapsed time: 63 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), inputs_inst : inputs(SYN) (Inputs.VHD)]", 8, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 119 seconds
+selectCodeEditor("pace.vhd", 101, 159); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("pace.vhd", 95, 221); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("pace.vhd", 97, 227); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("pace.vhd", 59, 312); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("pace.vhd", 94, 226); // cl (w, cp)
+selectCodeEditor("pace.vhd", 102, 228); // cl (w, cp)
+// Elapsed time: 170 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 29 10:50:16 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/synth_1/runme.log [Wed May 29 10:50:16 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 437 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd)]", 9); // B (D, cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 79 seconds
+selectCodeEditor("pace.vhd", 60, 244); // cl (w, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 561 ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 139 seconds
+selectCodeEditor("pace.vhd", 85, 230); // cl (w, cp)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+// aS (cp): Cancel Implementation: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aS)
+dismissDialog("Cancel Implementation"); // aS (cp)
+// Elapsed time: 33 seconds
+selectCodeEditor("pace.vhd", 37, 257); // cl (w, cp)
+selectCodeEditor("pace.vhd", 40, 172); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  2851 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5923 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3173 ms.
+// Elapsed time: 169 seconds
+selectCodeEditor("pace.vhd", 116, 232); // cl (w, cp)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+// aS (cp): Cancel Implementation: addNotify
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aS)
+dismissDialog("Cancel Implementation"); // aS (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  3405 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2848 ms.
+// [GUI Memory]: 173 MB (+227kb) [02:37:08]
+// Elapsed time: 206 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd)]", 9, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), platform_inst : platform(SYN) (platform.vhd)]", 9, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 43 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+// aS (cp): Cancel Implementation: addNotify
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4383 ms to process. Increasing delay to 2000 ms.
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a (aS)
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a (aS)
+// WARNING: updateGUI() is taking  1444 ms.
+// bx (cp):  Resetting Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1645 ms.
+// TclEventType: RUN_MODIFY
+dismissDialog("Cancel Implementation"); // aS (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pace.vhd", 1); // k (j, cp)
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (cp): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'cw' command handler elapsed time: 8 seconds
+dismissDialog("Resetting Runs"); // bx (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Wed May 29 11:10:16 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/synth_1/runme.log [Wed May 29 11:10:16 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,048 MB. GUI used memory: 101 MB. Current time: 5/29/19, 11:10:30 AM CEST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  3279 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2190 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2850 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1758 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1207 ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 1526 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// Elapsed time: 21 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// Elapsed time: 47 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "platform.vhd", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_div.vhd", 2); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "platform.vhd", 0); // k (j, cp)
+selectCodeEditor("platform.vhd", 304, 113); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "r"); // l (aT, cp)
+// Elapsed time: 10 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "video_"); // l (aT, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pace.vhd", 1); // k (j, cp)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("mpatrol.vhd", 269, 165); // cl (w, cp)
+// Elapsed time: 12 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "video"); // l (aT, cp)
+selectCodeEditor("mpatrol.vhd", 230, 315); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 295, 316); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 228, 331); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 293, 331); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 232, 346); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 293, 349); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 230, 346); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 295, 351); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Wed May 29 11:38:33 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/synth_1/runme.log [Wed May 29 11:38:33 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,048 MB. GUI used memory: 99 MB. Current time: 5/29/19, 11:40:35 AM CEST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  1673 ms.
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,048 MB. GUI used memory: 101 MB. Current time: 5/29/19, 12:10:35 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,048 MB. GUI used memory: 100 MB. Current time: 5/29/19, 12:40:36 PM CEST
+// Elapsed time: 3886 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 112 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// Elapsed time: 86 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "platform.vhd", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mpatrol.vhd", 2); // k (j, cp)
+selectCodeEditor("mpatrol.vhd", 254, 285); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 254, 285, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("mpatrol.vhd", 264, 418); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 264, 418, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "mpatrol.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 241, 369); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 241, 369, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("mpatrol.vhd", 198, 227); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("mpatrol.vhd", 62, 173); // cl (w, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, synchro (synchro.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, synchro (synchro.v)]", 7, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/mpatrol/src/synchro.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/repos/a35/NUEVO/mpatrol/src/synchro.v 
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), dac : dac(rtl) (dac.vhd)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), dac : dac(rtl) (dac.vhd)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mpatrol.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dac.vhd", 3); // k (j, cp)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mpatrol.vhd", 2); // k (j, cp)
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 13 seconds
+selectCodeEditor("modulo_top_lx35.v", 64, 337); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 64, 337, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("modulo_top_lx35.v", 65, 352); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 65, 352, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("modulo_top_lx35.v", 107, 330); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 107, 330, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("modulo_top_lx35.v", 118, 349); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 118, 349, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 27 seconds
+selectCodeEditor("modulo_top_lx35.v", 60, 350); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 60, 350, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("modulo_top_lx35.v", 127, 350); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 127, 350, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("modulo_top_lx35.v", 129, 364); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 129, 365, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("modulo_top_lx35.v", 60, 351); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 60, 351, false, false, false, false, true); // cl (w, cp) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mpatrol.vhd", 2); // k (j, cp)
+selectCodeEditor("mpatrol.vhd", 69, 144); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 69, 144, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("mpatrol.vhd", 96, 147); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 96, 147, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("mpatrol.vhd", 72, 144); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 72, 144, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("mpatrol.vhd", 73, 164); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 73, 164, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("mpatrol.vhd", 119, 313); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 119, 313, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("mpatrol.vhd", 203, 249); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 203, 249, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("mpatrol.vhd", 224, 251); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 225, 251, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dac.vhd", 3); // k (j, cp)
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mpatrol.vhd", 2); // k (j, cp)
+selectCodeEditor("mpatrol.vhd", 232, 278); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 232, 278, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("mpatrol.vhd", 89, 224); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 89, 224, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "mpatrol.vhd", 'c'); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("modulo_top_lx35.v", 133, 78); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 133, 78, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'c'); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("modulo_top_lx35.v", 176, 300); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 176, 300, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("modulo_top_lx35.v", 3, 130); // cl (w, cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 27 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 137 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), inputs_inst : inputs(SYN) (Inputs.VHD)]", 8, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 2,048 MB. GUI used memory: 102 MB. Current time: 5/29/19, 1:10:37 PM CEST
+// Elapsed time: 1906 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// Elapsed time: 41 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// Elapsed time: 79 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), graphics_inst : Graphics(SYN) (Graphics.VHD)]", 10); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), graphics_inst : Graphics(SYN) (Graphics.VHD), pace_video_controller_inst : pace_video_controller(SYN) (video_controller.vhd)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), graphics_inst : Graphics(SYN) (Graphics.VHD), pace_video_controller_inst : pace_video_controller(SYN) (video_controller.vhd)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("video_controller.vhd", 143, 127); // cl (w, cp)
+selectCodeEditor("video_controller.vhd", 143, 127, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("video_controller.vhd", 432, 174); // cl (w, cp)
+selectCodeEditor("video_controller.vhd", 432, 174, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "video_controller.vhd", 'c'); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), graphics_inst : Graphics(SYN) (Graphics.VHD)]", 10, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), graphics_inst : Graphics(SYN) (Graphics.VHD)]", 10, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("Graphics.VHD", 178, 94); // cl (w, cp)
+// Elapsed time: 10 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aT, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), graphics_inst : Graphics(SYN) (Graphics.VHD)]", 10, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd), graphics_inst : Graphics(SYN) (Graphics.VHD), sprites_inst : sprite_array(SYN) (sprite_array.vhd)]", 17, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("Graphics.VHD", 202, 261); // cl (w, cp)
+selectCodeEditor("Graphics.VHD", 312, 265); // cl (w, cp)
+selectCodeEditor("Graphics.VHD", 165, 267); // cl (w, cp)
+selectCodeEditor("Graphics.VHD", 205, 267); // cl (w, cp)
+selectCodeEditor("Graphics.VHD", 262, 264); // cl (w, cp)
+selectCodeEditor("Graphics.VHD", 314, 265); // cl (w, cp)
+selectCodeEditor("Graphics.VHD", 336, 268); // cl (w, cp)
+// Elapsed time: 154 seconds
+selectCodeEditor("Graphics.VHD", 161, 262); // cl (w, cp)
+// Elapsed time: 21 seconds
+typeControlKey((HResource) null, "Graphics.VHD", 'v'); // cl (w, cp)
+// Elapsed time: 114 seconds
+selectCodeEditor("Graphics.VHD", 221, 285); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("Graphics.VHD", 181, 298); // cl (w, cp)
+selectCodeEditor("Graphics.VHD", 182, 312); // cl (w, cp)
+selectCodeEditor("Graphics.VHD", 208, 331); // cl (w, cp)
+selectCodeEditor("Graphics.VHD", 214, 353); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("Graphics.VHD", 142, 331); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("Graphics.VHD", 78, 369); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("Graphics.VHD", 134, 364); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "video_controller.vhd", 5); // k (j, cp)
+// Elapsed time: 51 seconds
+selectCodeEditor("video_controller.vhd", 9, 367); // cl (w, cp)
+typeControlKey((HResource) null, "video_controller.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Graphics.VHD", 6); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,048 MB. GUI used memory: 103 MB. Current time: 5/29/19, 1:40:38 PM CEST
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "video_controller.vhd", 5); // k (j, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Wed May 29 13:40:48 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/synth_1/runme.log [Wed May 29 13:40:48 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Graphics.VHD", 6); // k (j, cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 57 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "video_controller.vhd", 5); // k (j, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 66 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bx (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 29 13:43:19 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/synth_1/runme.log [Wed May 29 13:43:19 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 5976 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4925 ms. Increasing delay to 14775 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31 ms. Decreasing delay to 2031 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5973 ms. Increasing delay to 17919 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5622 ms. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3061 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 29 ms. Decreasing delay to 2029 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1334 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3511 ms. Increasing delay to 10533 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31 ms. Decreasing delay to 2031 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5968 ms. Increasing delay to 17904 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4076 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 36 ms. Decreasing delay to 2036 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3499 ms. Increasing delay to 10497 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 32 ms. Decreasing delay to 2032 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3036 ms. Increasing delay to 9108 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5505 ms.
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 1218 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// Elapsed time: 17 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// Elapsed time: 181 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4); // B (D, cp)
+selectCodeEditor("mpatrol.vhd", 77, 249); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 77, 249, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 135 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modulo_top_lx35.v", 4); // k (j, cp)
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "video_controller.vhd", 5); // k (j, cp)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modulo_top_lx35.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mpatrol.vhd", 2); // k (j, cp)
+selectCodeEditor("mpatrol.vhd", 73, 230); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 73, 230, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "mpatrol.vhd", 'c'); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,048 MB. GUI used memory: 102 MB. Current time: 5/29/19, 2:10:38 PM CEST
+// Elapsed time: 16 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_vid"); // l (aT, cp)
+// Elapsed time: 66 seconds
+selectCodeEditor("mpatrol.vhd", 68, 161); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 68, 161, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modulo_top_lx35.v", 4); // k (j, cp)
+// Elapsed time: 40 seconds
+selectCodeEditor("modulo_top_lx35.v", 315, 129); // cl (w, cp)
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'c'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 316, 128); // cl (w, cp)
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'v'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 381, 211); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 120, 264); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), relojes : relojes (relojes.xci)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), relojes : relojes (relojes.xci)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2202 ms.
+dismissDialog("Re-customize IP"); // O (cp)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+setText("CLK OUT4 PORT", "clk12"); // z (cU)
+selectCheckBox((HResource) null, "clk_out5", true); // g (bL, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1103 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1423 ms.
+setText("CLKOUT4 REQUESTED OUT FREQ", "12.000"); // z (cU)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1225 ms.
+setText("CLK OUT5 PORT", (String) null); // z (cU, r)
+typeControlKey(null, null, 'z');
+setText("CLK OUT5 PORT", "clk_out5"); // z (cU, r)
+typeControlKey(null, null, 'z');
+setText("CLK OUT5 PORT", (String) null); // z (cU, r)
+typeControlKey(null, null, 'z');
+setText("CLK OUT5 PORT", "clk_out5"); // z (cU, r)
+typeControlKey(null, null, 'z');
+setText("CLK OUT5 PORT", (String) null); // z (cU, r)
+typeControlKey(null, null, 'z');
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1233 ms.
+setText("CLK OUT4 PORT", (String) null); // z (cU, r)
+typeControlKey(null, null, 'z');
+setText("CLK OUT4 PORT", "clk12"); // z (cU, r)
+typeControlKey(null, null, 'z');
+setText("CLK OUT4 PORT", (String) null); // z (cU, r)
+typeControlKey(null, null, 'z');
+setText("CLK OUT4 PORT", "clk12"); // z (cU, r)
+typeControlKey(null, null, 'z');
+setText("CLK OUT4 PORT", (String) null); // z (cU, r)
+typeControlKey(null, null, 'z');
+setText("CLK OUT4 PORT", "clk12"); // z (cU, r)
+typeControlKey(null, null, 'z');
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), relojes : relojes (relojes.xci)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), relojes : relojes (relojes.xci)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2101 ms.
+dismissDialog("Re-customize IP"); // O (cp)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cT (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+setText("CLK OUT4 PORT", "clk12"); // z (cU)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1108 ms.
+setText("CLKOUT4 REQUESTED OUT FREQ", "12.000"); // z (cU)
+selectCheckBox((HResource) null, "clk_out5", true); // g (bL, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1122 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1302 ms.
+setText("CLK OUT5 PORT", "clk6"); // z (cU)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1029 ms.
+setText("CLKOUT5 REQUESTED OUT FREQ", "6.000"); // z (cU)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1070 ms.
+selectCheckBox((HResource) null, "clk_out5", false); // g (bL, r): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1354 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// r (cp): Re-customize IP: addNotify
+// bx (r):  Re-customize IP : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// [GUI Memory]: 195 MB (+14525kb) [05:43:23]
+// PAPropertyPanels.initPanels (relojes.xci) elapsed time: 0.2s
+// aI (cp): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bx (r)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (C, J)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'relojes'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'relojes'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'relojes'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'relojes'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'relojes'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all relojes] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run relojes_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs  relojes_synth_1 
+// Tcl Message: [Wed May 29 14:15:04 2019] Launched relojes_synth_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/relojes_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -directory F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files/sim_scripts -ip_user_files_dir F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files -ipstatic_source_dir F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/modelsim} {questa=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/questa} {riviera=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/riviera} {activehdl=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 12 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+selectCodeEditor("modulo_top_lx35.v", 69, 262); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1137 ms.
+selectCodeEditor("modulo_top_lx35.v", 15, 363); // cl (w, cp)
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'c'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 11, 281); // cl (w, cp)
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'v'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 56, 298); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 253, 285); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 198, 281); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("modulo_top_lx35.v", 371, 76); // cl (w, cp)
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'c'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 212, 276); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 184, 278); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 23, 298); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 30, 297); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 96, 298, true, false, false, false, false); // cl (w, cp) - Shift Key
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'v'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 107, 293); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 230, 294, true, false, false, false, false); // cl (w, cp) - Shift Key
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'v'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 204, 296); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("modulo_top_lx35.v", 123, 343); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 75, 416); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 88, 300); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 220, 326); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 94, 293); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 85, 298); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 104, 315); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("modulo_top_lx35.v", 234, 303); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 59, 311); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 110, 383); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("modulo_top_lx35.v", 34, 265); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("modulo_top_lx35.v", 28, 296); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 120, 308); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("modulo_top_lx35.v", 39, 266); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 39, 266, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'c'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 27, 299); // cl (w, cp)
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'v'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 106, 298); // cl (w, cp)
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'v'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 152, 331); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 138, 331); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 58, 295); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 58, 295, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'c'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 143, 332); // cl (w, cp)
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'v'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 118, 340); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 115, 330); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 56, 351); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 4, 351); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 3, 366); // cl (w, cp)
+// Elapsed time: 47 seconds
+selectCodeEditor("modulo_top_lx35.v", 120, 162); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 104, 347); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 104, 347, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mpatrol.vhd", 2); // k (j, cp)
+selectCodeEditor("mpatrol.vhd", 91, 280); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 79, 245); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dac.vhd", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modulo_top_lx35.v", 4); // k (j, cp)
+selectCodeEditor("modulo_top_lx35.v", 113, 161); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 113, 161, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'c'); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("modulo_top_lx35.v", 95, 191); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 95, 191, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'c'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 96, 211); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 96, 211, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'v'); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("modulo_top_lx35.v", 149, 333); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 149, 333, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'c'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 107, 107); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 107, 107, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 29 14:21:34 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/synth_1/runme.log [Wed May 29 14:21:34 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 359 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd), pace_inst : PACE(SYN) (pace.vhd)]", 7); // B (D, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("modulo_top_lx35.v", 9, 102); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 2, 107); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 2, 94); // cl (w, cp)
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'c'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 123, 125); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 123, 125, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'c'); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_pix"); // l (aT, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("modulo_top_lx35.v", 195, 176); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), pm : mpatrol(SYN) (mpatrol.vhd)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("mpatrol.vhd", 69, 92); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 69, 92, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "mpatrol.vhd", 'c'); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("mpatrol.vhd", 99, 113); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 99, 113, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "mpatrol.vhd", 'c'); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clock_3p58"); // l (aT, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("mpatrol.vhd", 83, 47); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 85, 59); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 85, 59, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "mpatrol.vhd", 'c'); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 29 seconds
+selectCodeEditor("mpatrol.vhd", 165, 319); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 140, 299); // cl (w, cp)
+typeControlKey((HResource) null, "mpatrol.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 116, 320); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 116, 320, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("mpatrol.vhd", 141, 315); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 139, 314); // cl (w, cp)
+typeControlKey((HResource) null, "mpatrol.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 180, 345); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("mpatrol.vhd", 110, 245); // cl (w, cp)
+typeControlKey((HResource) null, "mpatrol.vhd", 'c'); // cl (w, cp)
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor("mpatrol.vhd", 152, 202); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1097 ms.
+// TclEventType: RUN_FAILED
+// ah (cp): Implementation Failed: addNotify
+// Elapsed time: 46 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cp)
+// Elapsed time: 21 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [IP_Flow 19-3541] IP Elaboration error: Failed to generate IP 'relojes'. Failed to generate 'Elaborate Ports' outputs: . ]", 7, false); // ah (Q, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("mpatrol.vhd", 77, 249); // cl (w, cp)
+selectCodeEditor("mpatrol.vhd", 77, 249, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "mpatrol.vhd", 'c'); // cl (w, cp)
+// Elapsed time: 14 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_pix"); // l (aT, cp)
+selectCodeEditor("mpatrol.vhd", 258, 197); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modulo_top_lx35.v", 4); // k (j, cp)
+selectCodeEditor("modulo_top_lx35.v", 176, 95); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("modulo_top_lx35.v", 243, 214); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 152, 301); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 153, 301, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("modulo_top_lx35.v", 89, 320); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 111, 319); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 111, 319, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'c'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 146, 264); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 162, 163); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 195, 168); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 188, 167); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 180, 162); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 206, 172); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 170, 166); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), relojes : relojes (relojes.xci)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mpatrol_top (modulo_top_lx35.v), relojes : relojes (relojes.xci)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1852 ms.
+dismissDialog("Re-customize IP"); // O (cp)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+setText("CLK OUT4 PORT", "clk12"); // z (cU)
+setText("CLK OUT2 PORT", "clk12"); // z (cU)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1018 ms.
+setText("CLKOUT2 REQUESTED OUT FREQ", "12"); // z (cU)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1081 ms.
+selectCheckBox((HResource) null, "clk_out4", false); // g (bL, r): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1197 ms.
+selectCheckBox((HResource) null, "clk_out4", true); // g (bL, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1388 ms.
+setText("CLK OUT4 PORT", (String) null); // z (cU)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1021 ms.
+setText("CLK OUT4 PORT", "clk_out4"); // z (cU)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1027 ms.
+setText("CLKOUT4 REQUESTED OUT FREQ", "100.000"); // z (cU)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1190 ms.
+selectCheckBox((HResource) null, "clk_out4", false); // g (bL, r): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1242 ms.
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// r (cp): Re-customize IP: addNotify
+// bx (r):  Re-customize IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.CLKOUT4_USED {false} CONFIG.CLK_OUT2_PORT {clk12} CONFIG.CLK_OUT4_PORT {clk_out4} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {12} CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {100.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT1_DIVIDE {75} CONFIG.MMCM_CLKOUT3_DIVIDE {1} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT2_JITTER {286.482} CONFIG.CLKOUT4_JITTER {175.200}] [get_ips relojes] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// [GUI Memory]: 220 MB (+16002kb) [06:03:17]
+// aI (cp): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bx (r)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,086 MB. GUI used memory: 169 MB. Current time: 5/29/19, 2:34:46 PM CEST
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'relojes'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'relojes'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'relojes'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'relojes'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'relojes'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all relojes] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run relojes_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs  relojes_synth_1 
+// Tcl Message: [Wed May 29 14:34:53 2019] Launched relojes_synth_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/relojes_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -directory F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files/sim_scripts -ip_user_files_dir F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files -ipstatic_source_dir F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/modelsim} {questa=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/questa} {riviera=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/riviera} {activehdl=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 14 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+selectCodeEditor("modulo_top_lx35.v", 163, 175); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 165, 205); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 156, 175); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 110, 174, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af (al, Popup.HeavyWeightWindow)
+// WARNING: HEventQueue.dispatchEvent() is taking  1018 ms.
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'v'); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1134 ms.
+// Elapsed time: 40 seconds
+selectCodeEditor("modulo_top_lx35.v", 195, 109); // cl (w, cp)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("modulo_top_lx35.v", 15, 127); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 22 seconds
+selectCodeEditor("modulo_top_lx35.v", 199, 228); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("modulo_top_lx35.v", 289, 298); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 151, 272); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 112, 257); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 310, 79); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 7, 279); // cl (w, cp)
+typeControlKey((HResource) null, "modulo_top_lx35.v", 'v'); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 52, 285); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 8, 278); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 96, 306); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("modulo_top_lx35.v", 29, 281); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+// [GUI Memory]: 235 MB (+3676kb) [06:06:24]
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 29 14:37:56 2019] Launched synth_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/synth_1/runme.log [Wed May 29 14:37:57 2019] Launched impl_1... Run output will be captured here: F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1934 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4885 ms. Increasing delay to 14655 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 62 ms. Decreasing delay to 2062 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5383 ms. Increasing delay to 16149 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 33 ms. Decreasing delay to 2033 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1304 ms. Increasing delay to 3912 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6078 ms. Increasing delay to 18234 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 30 ms. Decreasing delay to 2030 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1431 ms. Increasing delay to 4293 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5703 ms. Increasing delay to 17109 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31 ms. Decreasing delay to 2031 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5967 ms. Increasing delay to 17901 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6594 ms. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5027 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1389 ms. Decreasing delay to 3389 ms.
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 1336 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectCodeEditor("modulo_top_lx35.v", 6, 208); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 3, 191); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 1, 199); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 3, 214); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("modulo_top_lx35.v", 4, 201); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 4, 190); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 2, 187); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 6, 174); // cl (w, cp)
+selectCodeEditor("modulo_top_lx35.v", 2, 195); // cl (w, cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 86 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// n (cp): Close Hardware Target: addNotify
+// Elapsed time: 18 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)

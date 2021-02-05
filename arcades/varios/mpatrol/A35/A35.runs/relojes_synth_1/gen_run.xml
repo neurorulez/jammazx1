@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="relojes_synth_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1559133293">
+  <File Type="PA-TCL" Name="relojes.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="relojes_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="relojes_reports.tcl"/>
+  <File Type="RDS-RDS" Name="relojes.vds"/>
+  <File Type="RDS-UTIL" Name="relojes_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="relojes_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="relojes.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="relojes_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="relojes_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/relojes">
+    <File Path="$PSRCDIR/sources_1/ip/relojes/relojes.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="relojes"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/relojes">
+    <File Path="$PSRCDIR/sources_1/ip/relojes/relojes.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="relojes"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

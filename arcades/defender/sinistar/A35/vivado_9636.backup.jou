@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon May 27 14:31:28 2019
+# Process ID: 9636
+# Current directory: F:/repos/a35/NUEVO/sinistar/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8224 F:\repos\a35\NUEVO\sinistar\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/sinistar/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/sinistar/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/sinistar/A35/A35.xpr
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_decoder_4.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_decoder_6.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_prog.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_sound.vhd] -no_script -reset -force -quiet
+remove_files  {F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_decoder_4.vhd F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_decoder_6.vhd F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_prog.vhd F:/repos/a35/NUEVO/sinistar/src/roms/bubbles_sound.vhd}
+add_files -norecurse {F:/repos/a35/NUEVO/sinistar/src/rtl/cmos_ram.v F:/repos/a35/NUEVO/sinistar/src/roms/sinistar_prog.vhd F:/repos/a35/NUEVO/sinistar/src/roms/sinistar_sound.vhd F:/repos/a35/NUEVO/sinistar/src/roms/sinistar_decoder_6.vhd F:/repos/a35/NUEVO/sinistar/src/roms/sinistar_decoder_4.vhd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property top sinistar_top [current_fileset]
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/sinistar/src/rtl/bubbles_cmos_ram.vhd] -no_script -reset -force -quiet
+remove_files  F:/repos/a35/NUEVO/sinistar/src/rtl/bubbles_cmos_ram.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/sinistar/A35/A35.runs/impl_1/sinistar_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/sinistar/A35/A35.runs/impl_1/sinistar_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

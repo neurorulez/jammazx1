@@ -1,0 +1,516 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 6088
+License: Customer
+
+Current time: 	Sat Jun 16 12:25:01 CEST 2018
+Time zone: 	Central European Time (Europe/Paris)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 19 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	sysop
+User home directory: C:/Users/sysop
+User working directory: F:/repos/a35/ckong/A35
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.1
+RDI_DATADIR: C:/Xilinx/Vivado/2018.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.1/bin
+
+Vivado preferences file location: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.1/
+Vivado layouts directory: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	F:/repos/a35/ckong/A35/vivado.log
+Vivado journal file location: 	F:/repos/a35/ckong/A35/vivado.jou
+Engine tmp dir: 	F:/repos/a35/ckong/A35/.Xil/Vivado-6088-W7-PC
+
+GUI allocated memory:	200 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 486 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 52 MB (+51844kb) [00:00:16]
+// [Engine Memory]: 474 MB (+345520kb) [00:00:16]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bv (ch):  Open Project : addNotify
+// Opening Vivado Project: F:\repos\a35\ckong\A35\A35.xpr. Version: Vivado v2018.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 70 MB (+16158kb) [00:00:19]
+// Tcl Message: open_project F:/repos/a35/ckong/A35/A35.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project F:/repos/a35/ckong/A35/A35.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 39 MB. Current time: 6/16/18 12:25:04 PM CEST
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'. 
+// [Engine Memory]: 524 MB (+27577kb) [00:00:25]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 571 MB (+22083kb) [00:00:30]
+// [Engine Memory]: 601 MB (+1143kb) [00:00:34]
+// HMemoryUtils.trashcanNow. Engine heap size: 611 MB. GUI used memory: 41 MB. Current time: 6/16/18 12:25:19 PM CEST
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 797.168 ; gain = 92.285 
+// Project name: A35; location: F:/repos/a35/ckong/A35; part: xc7a35tftg256-1
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false, false, false, false, true, false); // u (O, ch) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS, "Bitstream Settings..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 79 MB (+6270kb) [00:01:31]
+// C (ch): Settings: addNotify
+// 'dw' command handler elapsed time: 5 seconds
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (C)
+dismissDialog("Settings"); // C (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false, false, false, false, true, false); // u (O, ch) - Popup Trigger
+selectMenuItem(PAResourceEtoH.FlowNavigatorTreePanel_LAUNCH_IMPLEMENTATION_RUN, "Launch Implementation Run..."); // ac (ai, ch)
+// f (ch): Launch Runs: addNotify
+// [GUI Memory]: 91 MB (+8566kb) [00:01:43]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bv (ch):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_COMPLETED_IMPLEMENTATION_RUN_EXISTS_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// [Engine Memory]: 641 MB (+10757kb) [00:01:46]
+// TclEventType: RUN_MODIFY
+// bv (ch):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 
+// TclEventType: RUN_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 653 MB. GUI used memory: 57 MB. Current time: 6/16/18 12:26:30 PM CEST
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Jun 16 12:26:30 2018] Launched impl_1... Run output will be captured here: F:/repos/a35/ckong/A35/A35.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 3000 ms.
+// ah (ch): Implementation Completed: addNotify
+// Elapsed time: 204 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Implementation Completed"); // ah (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false, false, false, false, true, false); // u (O, ch) - Popup Trigger
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u (O, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false, false, false, false, true, false); // u (O, ch) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS, "Bitstream Settings..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS
+// C (ch): Settings: addNotify
+// Elapsed time: 13 seconds
+selectButton(PAResourceQtoS.SettingsDialog_RESTORE, "Restore..."); // a (C)
+// cX (C): Restore Vivado Options: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (cX)
+dismissDialog("Restore Vivado Options"); // cX (C)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (C)
+dismissDialog("Settings"); // C (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, ch) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bv (ch):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 706 MB. GUI used memory: 57 MB. Current time: 6/16/18 12:30:29 PM CEST
+// [Engine Memory]: 706 MB (+34640kb) [00:05:47]
+// [Engine Memory]: 788 MB (+48928kb) [00:05:52]
+// [Engine Memory]: 831 MB (+2821kb) [00:05:57]
+// HMemoryUtils.trashcanNow. Engine heap size: 941 MB. GUI used memory: 57 MB. Current time: 6/16/18 12:30:43 PM CEST
+// [Engine Memory]: 960 MB (+91907kb) [00:06:02]
+// [Engine Memory]: 1,008 MB (+22kb) [00:06:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,037 MB. GUI used memory: 56 MB. Current time: 6/16/18 12:31:03 PM CEST
+// [Engine Memory]: 1,167 MB (+114531kb) [00:06:32]
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,439 MB (+223126kb) [00:06:37]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,439 MB. GUI used memory: 57 MB. Current time: 6/16/18 12:31:18 PM CEST
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2018.1/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_floorplan.xgd elapsed time: 1.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 3.4s
+// Xgd.load filename: C:/Xilinx/Vivado/2018.1/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 2.4s
+// [Engine Memory]: 1,520 MB (+9441kb) [00:06:43]
+// [GUI Memory]: 99 MB (+2757kb) [00:06:44]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 243 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Device 21-403] Loading part xc7a35tftg256-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.930 . Memory (MB): peak = 1610.813 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.931 . Memory (MB): peak = 1610.813 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 72 instances were transformed.   RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 8 instances   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances  
+// Tcl Message: open_run: Time (s): cpu = 00:01:03 ; elapsed = 00:01:00 . Memory (MB): peak = 1692.875 ; gain = 869.309 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// ExpRunCommands.openImplResults elapsed time: 61.3s
+// TclEventType: DRC_ADDED
+// Device view-level: 0,0
+// [GUI Memory]: 104 MB (+17kb) [00:06:47]
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// [GUI Memory]: 109 MB (+132kb) [00:06:49]
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 116 MB (+1457kb) [00:06:53]
+// [GUI Memory]: 122 MB (+514kb) [00:06:53]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,560 MB. GUI used memory: 99 MB. Current time: 6/16/18 12:31:41 PM CEST
+// 'dO' command handler elapsed time: 74 seconds
+// Elapsed time: 75 seconds
+dismissDialog("Open Implemented Design"); // bv (ch)
+// [GUI Memory]: 132 MB (+3611kb) [00:07:08]
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (O, ch)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (O, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false, false, false, false, true, false); // u (O, ch) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS, "Bitstream Settings..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS
+// C (ch): Settings: addNotify
+// Elapsed time: 25 seconds
+selectButton(PAResourceQtoS.SettingsProjectBitstreamPage_CONFIGURE_ADDITIONAL_BITSTREAM_SETTINGS, "Configure additional bitstream settings."); // h (cM, C)
+// Run Command: PAResourceCommand.PACommandNames_CONFIG_BITSTREAM
+// a (ch): Edit Device Properties: addNotify
+selectComboBox("Enable Bitstream Compression", "TRUE", 1); // e (Q, a)
+// Tcl Message: startgroup 
+// Tcl Message: set_property BITSTREAM.GENERAL.COMPRESS TRUE [get_designs impl_1] 
+// Elapsed time: 69 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// 'I' command handler elapsed time: 74 seconds
+// Tcl Message: endgroup 
+dismissDialog("Edit Device Properties"); // a (ch)
+selectButton(PAResourceQtoS.SettingsProjectBitstreamPage_CONFIGURE_ADDITIONAL_BITSTREAM_SETTINGS, "Configure additional bitstream settings."); // h (cM, C)
+// Run Command: PAResourceCommand.PACommandNames_CONFIG_BITSTREAM
+// [GUI Memory]: 140 MB (+1966kb) [00:08:54]
+// a (ch): Edit Device Properties: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+dismissDialog("Edit Device Properties"); // a (ch)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+// bv (ch):  Change Settings : addNotify
+dismissDialog("Change Settings"); // bv (ch)
+dismissDialog("Settings"); // C (ch)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false, false, false, false, true, false); // u (O, ch) - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// an (ch): Save Project: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,585 MB. GUI used memory: 104 MB. Current time: 6/16/18 12:33:49 PM CEST
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (an)
+// A (ch): Out of Date Design: addNotify
+dismissDialog("Save Project"); // an (ch)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// a (ch): Save Constraints: addNotify
+dismissDialog("Out of Date Design"); // A (ch)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (a)
+// 'cv' command handler elapsed time: 16 seconds
+dismissDialog("Save Constraints"); // a (ch)
+// [Engine Memory]: 1,596 MB (+318kb) [00:09:22]
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// an (ch): Save Project: addNotify
+// Elapsed time: 17 seconds
+selectButton(PAResourceQtoS.SaveProjectUtils_DONT_SAVE, "Don't Save"); // a (an)
+// f (ch): Launch Runs: addNotify
+dismissDialog("Save Project"); // an (ch)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 19 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (ch)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// bv (ch):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Jun 16 12:34:34 2018] Launched impl_1... Run output will be captured here: F:/repos/a35/ckong/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bv (ch)
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ch)
+selectTab((HResource) null, (HResource) null, "Methodology", 7); // aE (Q, ch)
+// [GUI Memory]: 151 MB (+3822kb) [00:10:42]
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B (D, ch)
+// PAPropertyPanels.initPanels (pines_zxuno_a35t.xdc) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, pines_zxuno_a35t.xdc]", 6, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, pines_zxuno_a35t.xdc]", 6, false, false, false, false, false, true); // B (D, ch) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// [GUI Memory]: 159 MB (+976kb) [00:11:00]
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,609 MB. GUI used memory: 106 MB. Current time: 6/16/18 12:36:00 PM CEST
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ch)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 4000 ms.
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 37 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bv (ch):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// PAPropertyPanels.initPanels (pines_zxuno_a35t.xdc) elapsed time: 0.2s
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bv (ch)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bv (ch):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.1   **** Build date : Apr  4 2018-19:32:53     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// [Engine Memory]: 2,218 MB (+569094kb) [00:12:34]
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,221 MB. GUI used memory: 109 MB. Current time: 6/16/18 12:37:17 PM CEST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2320.516 ; gain = 602.348 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/ckong/A35/A35.runs/impl_1/ckong_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// Elapsed time: 10 seconds
+dismissDialog("Auto Connect"); // bv (ch)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ch)
+// PAPropertyPanels.initPanels (xc7a35t_0) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+// Elapsed time: 21 seconds
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ch)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/ckong/A35/A35.runs/impl_1/ckong_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2366.492 ; gain = 31.277 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 27 seconds
+dismissDialog("Program Device"); // bv (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false, false, false, false, true, false); // u (O, ch) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 2,286 MB. GUI used memory: 109 MB. Current time: 6/16/18 12:37:50 PM CEST
+selectMenuItem(PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS, "Bitstream Settings..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS
+// C (ch): Settings: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (C)
+dismissDialog("Settings"); // C (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, ch) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, ch) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, ch) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, ch) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, ch) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true, false, false, false, false, true); // u (O, ch) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true, false, false, false, true, false); // u (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RELOAD_IMPL_DESIGN, "Reload Design"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_RELOAD_IMPL_DESIGN
+// HOptionPane Warning: 'There are unsaved changes in 'Implemented Design - impl_1' that would be lost. OK to reload? (Reload Design)'
+// bv (ch):  Reloading : addNotify
+selectButton("PAResourceQtoS.SaveProjectUtils_THERE_UNSAVED_CHANGES_THAT_WOULD_OK", "OK"); // JButton (A, G)
+// TclEventType: DESIGN_REFRESH
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,286 MB. GUI used memory: 95 MB. Current time: 6/16/18 12:38:10 PM CEST
+// Engine heap size: 2,286 MB. GUI used memory: 95 MB. Current time: 6/16/18 12:38:10 PM CEST
+// Tcl Message: refresh_design 
+// TclEventType: DEBUG_GRAPH_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,300 MB. GUI used memory: 69 MB. Current time: 6/16/18 12:38:15 PM CEST
+// Xgd.load filename: C:/Xilinx/Vivado/2018.1/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_floorplan.xgd elapsed time: 1s
+// Xgd.load filename: C:/Xilinx/Vivado/2018.1/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 0.8s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 3.6s
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2387.961 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2387.961 ; gain = 0.000 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 2412.027 ; gain = 24.066 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [Engine Memory]: 2,338 MB (+8910kb) [00:13:41]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'e' command handler elapsed time: 21 seconds
+// Elapsed time: 17 seconds
+dismissDialog("Reloading"); // bv (ch)
+// Elapsed time: 53 seconds
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (O, ch)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (O, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false, false, false, false, true, false); // u (O, ch) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS, "Bitstream Settings..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS
+// C (ch): Settings: addNotify
+selectButton(PAResourceQtoS.SettingsProjectBitstreamPage_CONFIGURE_ADDITIONAL_BITSTREAM_SETTINGS, "Configure additional bitstream settings."); // h (cM, C)
+// Run Command: PAResourceCommand.PACommandNames_CONFIG_BITSTREAM
+// a (ch): Edit Device Properties: addNotify
+selectComboBox("Enable Bitstream Compression", "TRUE", 1); // e (Q, a)
+// Tcl Message: startgroup 
+// Tcl Message: set_property BITSTREAM.GENERAL.COMPRESS TRUE [get_designs impl_1] 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// 'I' command handler elapsed time: 4 seconds
+// Tcl Message: endgroup 
+dismissDialog("Edit Device Properties"); // a (ch)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+// bv (ch):  Change Settings : addNotify
+dismissDialog("Change Settings"); // bv (ch)
+dismissDialog("Settings"); // C (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false, false, false, false, true, false); // u (O, ch) - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// an (ch): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (an)
+// A (ch): Out of Date Design: addNotify
+dismissDialog("Save Project"); // an (ch)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// a (ch): Save Constraints: addNotify
+dismissDialog("Out of Date Design"); // A (ch)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bv (ch):  Save Constraints : addNotify
+// Tcl Message: set_property target_constrs_file F:/repos/a35/ckong/A35/A35.srcs/constrs_1/new/pines_zxuno_a35t.xdc [current_fileset -constrset] 
+dismissDialog("Save Constraints"); // a (ch)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: save_constraints -force 
+// A (ch): Implementation is Out-of-date: addNotify
+dismissDialog("Save Constraints"); // bv (ch)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Implementation is Out-of-date"); // A (ch)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 27 seconds
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bv (ch):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Sat Jun 16 12:40:09 2018] Launched impl_1... Run output will be captured here: F:/repos/a35/ckong/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bv (ch)
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// [GUI Memory]: 169 MB (+1398kb) [00:19:34]
+// Elapsed time: 246 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Running write_bitstream... ; NA ; NA ; NA ; NA ; NA ; 46.40666580200195 ; 0 ; 2101 ; 941 ; 18.0 ; 0 ; 0 ; Sat Jun 16 12:40:31 CEST 2018 ; 00:03:27 ; Vivado Implementation Defaults (Vivado Implementation 2018) ; Vivado Implementation Default Reports (Vivado Implementation 2018) ; xc7a35tftg256-1 ; Default settings for Implementation.", 1, "941", 12, false); // ax (O, ch)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.8s
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.6s
+// [GUI Memory]: 181 MB (+3760kb) [00:19:54]
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ch)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/repos/a35/ckong/A35/A35.runs/impl_1/ckong_top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bv (ch)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,339 MB. GUI used memory: 118 MB. Current time: 6/16/18 1:08:17 PM CEST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 5000 ms.

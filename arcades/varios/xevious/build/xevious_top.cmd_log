@@ -1,0 +1,6 @@
+xst -intstyle ise -filter "F:/repos/a35/xevious/iseconfig/filter.filter" -ifn "F:/repos/a35/xevious/build/xevious_top.xst" -ofn "F:/repos/a35/xevious/build/xevious_top.syr" 
+xst -intstyle ise -filter "F:/repos/a35/xevious/iseconfig/filter.filter" -ifn "F:/repos/a35/xevious/build/xevious_top.xst" -ofn "F:/repos/a35/xevious/build/xevious_top.syr" 
+xst -intstyle ise -filter "F:/repos/a35/xevious/iseconfig/filter.filter" -ifn "F:/repos/a35/xevious/build/xevious_top.xst" -ofn "F:/repos/a35/xevious/build/xevious_top.syr" 
+xst -intstyle ise -filter "F:/repos/a35/xevious/iseconfig/filter.filter" -ifn "F:/repos/a35/xevious/build/xevious_top.xst" -ofn "F:/repos/a35/xevious/build/xevious_top.syr" 
+xst -intstyle ise -filter "F:/repos/a35/xevious/iseconfig/filter.filter" -ifn "F:/repos/a35/xevious/build/xevious_top.xst" -ofn "F:/repos/a35/xevious/build/xevious_top.syr" 
+xst -intstyle ise -filter "F:/repos/a35/xevious/iseconfig/filter.filter" -ifn "F:/repos/a35/xevious/build/xevious_top.xst" -ofn "F:/repos/a35/xevious/build/xevious_top.syr" 

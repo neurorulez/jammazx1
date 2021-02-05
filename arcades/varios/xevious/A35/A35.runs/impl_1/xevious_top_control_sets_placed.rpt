@@ -1,0 +1,241 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Tue Apr 30 14:34:06 2019
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file xevious_top_control_sets_placed.rpt
+| Design       : xevious_top
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   164 |
+| Unused register locations in slices containing registers |   417 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           14 |
+|      2 |            2 |
+|      4 |           25 |
+|      5 |            6 |
+|      6 |            2 |
+|      7 |            8 |
+|      8 |           49 |
+|      9 |            8 |
+|     10 |            6 |
+|     11 |            6 |
+|     12 |            1 |
+|     14 |            2 |
+|     15 |            1 |
+|    16+ |           34 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             213 |          123 |
+| No           | No                    | Yes                    |             133 |           80 |
+| No           | Yes                   | No                     |              51 |           28 |
+| Yes          | No                    | No                     |             545 |          225 |
+| Yes          | No                    | Yes                    |             464 |          235 |
+| Yes          | Yes                   | No                     |             257 |           98 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------+-----------------------------------------------------+--------------------------------------------------+------------------+----------------+
+|  Clock Signal |                    Enable Signal                    |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++---------------+-----------------------------------------------------+--------------------------------------------------+------------------+----------------+
+|  JOY_CLK_OBUF | joy1[5]                                             |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF |                                                     | joy_renew_i_1_n_0                                |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[0]                                             |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[1]                                             |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[2]                                             |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[3]                                             |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[4]                                             |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[8]                                             |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[9]                                             |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF | joy2[5]                                             |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF | joy2[8]                                             |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF | joy2[9]                                             |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF | joy2[11]                                            |                                                  |                1 |              1 |
+|  pclk         | pm/scandoubler/ce_x1                                |                                                  |                1 |              1 |
+|  pclk         | pm/cs54xx_ena                                       | pm/cpu2/u0/reset_cpu_n_reg                       |                2 |              2 |
+|  pclk         | pm/cpu1_ena                                         | pm_reset_reg_rep_n_0                             |                2 |              2 |
+| ~pclk         | pm/cpu2/u0/E[0]                                     | pm_reset_reg_rep_n_0                             |                1 |              4 |
+| ~pclk         | pm/cpu2/u0/snd_ram_1_we                             |                                                  |                1 |              4 |
+|  pclk         | pm/cs54xx_prog/data_reg_5[0]                        | pm/cpu2/u0/reset_cpu_n_reg                       |                1 |              4 |
+| ~pclk         | pm/cpu2/u0/cs54xx_ena_reg[0]                        | pm_reset_reg_rep_n_0                             |                1 |              4 |
+| ~pclk         | pm/sound_machine/sound_seq/snd_ram_0_we_0           |                                                  |                1 |              4 |
+|  pclk         | pm/gen_video/hcntReg_reg[0]_2                       | pm/wram1/sprite_num[5]_i_2                       |                1 |              4 |
+|  pclk         | pm/mb88_50xx/r_a[3]_i_1__0_n_0                      | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |              4 |
+|  pclk         | pm/cs54xx_prog/data_reg_9[0]                        | pm/cpu2/u0/reset_cpu_n_reg                       |                4 |              4 |
+|  pclk         | pm/cs54xx_prog/data_reg_12[0]                       | pm/cpu2/u0/reset_cpu_n_reg                       |                1 |              4 |
+|  pclk         | pm/cs54xx_prog/data_reg_11[0]                       | pm/cpu2/u0/reset_cpu_n_reg                       |                2 |              4 |
+|  pclk         | keyb/ps2/bit_count                                  |                                                  |                1 |              4 |
+|  pclk         | pm/cs54xx_prog/data_reg_4[0]                        |                                                  |                1 |              4 |
+|  pclk         | pm/cs50xx_prog/cs54xx_ena_reg[0]                    | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |              4 |
+|  pclk         | pm/mb88_54xx/r_pa[3]_i_2_n_0                        | pm/mb88_54xx/r_pa[3]_i_1__0_n_0                  |                3 |              4 |
+|  pclk         | pm/cs54xx_prog/data_reg_8[0]                        | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |              4 |
+|  pclk         | pm/cs54xx_prog/data_reg_3[0]                        |                                                  |                1 |              4 |
+|  pclk         | pm/cs50xx_prog/E[0]                                 |                                                  |                1 |              4 |
+|  pclk         | pm/cs50xx_prog/data_reg_10[0]                       | pm/cpu2/u0/reset_cpu_n_reg                       |                2 |              4 |
+|  pclk         | pm/cs50xx_prog/data_reg_15[0]                       | pm/cpu2/u0/reset_cpu_n_reg                       |                1 |              4 |
+|  pclk         | pm/cs50xx_prog/data_reg_3[0]                        |                                                  |                1 |              4 |
+|  pclk         | pm/cs50xx_prog/data_reg_4[0]                        | pm/cpu2/u0/reset_cpu_n_reg                       |                2 |              4 |
+|  pclk         | pm/cs50xx_prog/data_reg_7[0]                        | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |              4 |
+|  pclk         | pm/cs54xx_prog/E[0]                                 | pm/cpu2/u0/reset_cpu_n_reg                       |                2 |              4 |
+| ~pclk         | pm/credit_bcd_1[3]_i_1_n_0                          |                                                  |                2 |              4 |
+|  pclk         | pm/sprite_state188_out                              | pm/sp_grphx_1[3]_i_1_n_0                         |                2 |              4 |
+|  JOY_CLK_OBUF |                                                     | joy_count[4]_i_1_n_0                             |                1 |              5 |
+|  pclk         |                                                     | pm/gen_video/hcntReg_reg[0]_4[0]                 |                1 |              5 |
+|  pclk         | pm/cs54xx_ena                                       | pm/mb88_50xx/r_pa[4]_i_1_n_0                     |                4 |              5 |
+|  pclk         | pm/cs54xx_ena                                       | pm/mb88_54xx/r_pa[3]_i_1__0_n_0                  |                5 |              5 |
+|  pclk         | pm/eqOp83_in                                        | pm/sprite_state1                                 |                1 |              5 |
+|  pclk         | pm/mb88_50xx/r_pa[4]_i_2_n_0                        | pm/mb88_50xx/r_pa[4]_i_1_n_0                     |                3 |              5 |
+|  pclk         | pm/scandoubler/ce_x2                                | pm/scandoubler/hs_sd6_out                        |                3 |              6 |
+|  pclk         | pm/sound_machine/sound_seq/E[0]                     | pm/sound_machine/sound_seq/SR[0]                 |                1 |              6 |
+|  pclk         | pm/cpu2/u0/R[6]_i_1__0_n_0                          | pm/cpu2/u0/reset_cpu_n_reg                       |                2 |              7 |
+|  pclk         | pm/ena_vidgen                                       | pm/gen_video/SS[0]                               |                1 |              7 |
+|  pclk         | pm/sp_color_rd[6]_i_1_n_0                           |                                                  |                3 |              7 |
+|  pclk         | pm/cpu3/u0/R[6]_i_1__1_n_0                          | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |              7 |
+|  pclk         | pm/cpu1/u0/R[6]_i_1_n_0                             | pm_reset_reg_n_0                                 |                4 |              7 |
+| ~pclk         | pm/cpu3/u0/E[0]                                     |                                                  |                3 |              7 |
+| ~pclk         | pm/scandoubler/pixsz[6]_i_1_n_0                     |                                                  |                2 |              7 |
+|  pclk         | pm/sprite_state1                                    |                                                  |                2 |              7 |
+|  pclk         | pm/gfx_rom/eqOp                                     |                                                  |                2 |              8 |
+|  pclk         | pm/cpu2/u0/cpu2_ena_reg[0]                          | pm/cpu2/u0/reset_cpu_n_reg                       |                2 |              8 |
+|  pclk         | pm/cpu3/u0/ACC                                      | pm/cpu2/u0/reset_cpu_n_reg                       |                5 |              8 |
+|  pclk         | pm/cpu3/u0/BusA[7]_i_1__1_n_0                       |                                                  |                4 |              8 |
+|  pclk         | pm/cpu3/u0/DO[7]_i_1__1_n_0                         | pm/cpu2/u0/reset_cpu_n_reg                       |                2 |              8 |
+|  pclk         | pm/cpu3/u0/I                                        | pm/cpu2/u0/reset_cpu_n_reg                       |                5 |              8 |
+|  pclk         | pm/cpu3/u0/IR                                       | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |              8 |
+|  pclk         | pm/sound_machine/sound_seq/ena_snd_machine_reg_1[0] |                                                  |                3 |              8 |
+|  pclk         | pm/sound_machine/sound_seq/ena_snd_machine_reg_0[0] |                                                  |                3 |              8 |
+|  pclk         | pm/cpu3/u0/SP[15]_i_1__1_n_0                        | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |              8 |
+|  pclk         | pm/cpu3/u0/SP[7]_i_1__1_n_0                         | pm/cpu2/u0/reset_cpu_n_reg                       |                4 |              8 |
+|  pclk         | pm/cpu3/u0/TmpAddr[15]_i_1__1_n_0                   | pm/cpu2/u0/reset_cpu_n_reg                       |                4 |              8 |
+|  pclk         | pm/cpu3/u0/TmpAddr[7]_i_1__1_n_0                    | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |              8 |
+|  pclk         | pm/sound_machine/sound_seq/ena_snd_machine_reg[0]   |                                                  |                3 |              8 |
+|  pclk         | pm/cpu1/u0/TmpAddr[7]_i_1_n_0                       | pm_reset_reg_n_0                                 |                5 |              8 |
+|  pclk         | keyb/ps2/DATA[7]_i_1_n_0                            |                                                  |                2 |              8 |
+|  pclk         | pm/cpu1/u0/ACC                                      | pm_reset_reg_n_0                                 |                3 |              8 |
+|  pclk         | pm/cpu1/u0/BusA[7]_i_1_n_0                          |                                                  |                4 |              8 |
+|  pclk         | pm/cpu1/u0/DO[7]_i_1_n_0                            | pm_reset_reg_rep_n_0                             |                3 |              8 |
+|  pclk         | pm/cpu1/u0/I                                        | pm_reset_reg_n_0                                 |                2 |              8 |
+|  pclk         | pm/cpu1/u0/IR                                       | pm_reset_reg_n_0                                 |                3 |              8 |
+|  pclk         | pm/gfx_rom/E[0]                                     |                                                  |                2 |              8 |
+|  pclk         | pm/gfx_rom/slot24_reg[1][0]                         |                                                  |                2 |              8 |
+|  pclk         | pm/cpu1/u0/SP[15]_i_1_n_0                           | pm_reset_reg_n_0                                 |                3 |              8 |
+|  pclk         | pm/cpu1/u0/SP[7]_i_1_n_0                            | pm_reset_reg_n_0                                 |                3 |              8 |
+|  pclk         | pm/cpu1/u0/TmpAddr[15]_i_1_n_0                      | pm_reset_reg_n_0                                 |                5 |              8 |
+|  pclk         | pm/gen_video/hcntReg_reg[0]_3[0]                    |                                                  |                4 |              8 |
+|  pclk         | pm/cpu1/u0/E[0]                                     | pm_reset_reg_n_0                                 |                3 |              8 |
+|  pclk         | pm/cpu3/u0/cpu3_ena_reg_1[0]                        | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |              8 |
+|  pclk         | pm/gen_video/Q[0]                                   |                                                  |                5 |              8 |
+|  pclk         | pm/cpu2/u0/ACC                                      | pm/cpu2/u0/reset_cpu_n_reg                       |                2 |              8 |
+|  pclk         | pm/sprite_state186_out                              |                                                  |                2 |              8 |
+|  pclk         | pm/cpu2/u0/BusA[7]_i_1__0_n_0                       |                                                  |                6 |              8 |
+| ~pclk         | pm/cpu3/u0/pm_reset_reg_rep[0]                      |                                                  |                1 |              8 |
+|  pclk         | pm/cpu2/u0/DO[7]_i_1__0_n_0                         | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |              8 |
+|  pclk         | pm/cpu2/u0/TmpAddr[7]_i_1__0_n_0                    | pm/cpu2/u0/reset_cpu_n_reg                       |                4 |              8 |
+| ~pclk         | pm/cpu2/u0/cs06XX_control_reg[0][0]                 | pm_reset_reg_rep_n_0                             |                2 |              8 |
+|  pclk         | pm/cpu2/u0/I                                        | pm/cpu2/u0/reset_cpu_n_reg                       |                5 |              8 |
+| ~pclk         | pm/cpu2/u0/pm_reset_reg_rep[0]                      |                                                  |                2 |              8 |
+| ~pclk         | pm/cpu2/u0/pm_reset_reg_rep_0[0]                    |                                                  |                1 |              8 |
+| ~pclk         | pm/cpu2/u0/pm_reset_reg_rep_2[0]                    |                                                  |                2 |              8 |
+|  pclk         | pm/cpu2/u0/IR                                       | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |              8 |
+| ~pclk         | pm/cs50xx_prog/ram_we                               |                                                  |                2 |              8 |
+| ~pclk         | pm/cs54xx_prog/ram_we                               |                                                  |                2 |              8 |
+| ~pclk         | pm/gen_video/E[0]                                   |                                                  |                4 |              8 |
+| ~pclk         | pm/scandoubler/cnt[7]_i_1_n_0                       | pm/scandoubler/pixsz[6]_i_1_n_0                  |                3 |              8 |
+|  pclk         | pm/cpu2/u0/SP[15]_i_1__0_n_0                        | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |              8 |
+|  pclk         | pm/cpu2/u0/SP[7]_i_1__0_n_0                         | pm/cpu2/u0/reset_cpu_n_reg                       |                2 |              8 |
+|  pclk         | pm/cpu2/u0/TmpAddr[15]_i_1__0_n_0                   | pm/cpu2/u0/reset_cpu_n_reg                       |                2 |              8 |
+| ~pclk         | pm/cpu2/u0/A_reg[5]_0[0]                            |                                                  |                4 |              9 |
+|  pclk         | pm/sp_ram_wr_addr[8]_i_1_n_0                        |                                                  |                5 |              9 |
+|  pclk         | pm/scandoubler/ce_x1                                | pm/scandoubler/line_toggle                       |                2 |              9 |
+|  pclk         | keyb/ps2/shiftreg                                   |                                                  |                2 |              9 |
+|  pclk         | pm/gen_video/vcntReg0                               |                                                  |                3 |              9 |
+|  pclk         | el_multiboot/el_multiboot/Q[0]                      | keyb/SR[0]                                       |                3 |              9 |
+| ~pclk         | pm/cpu2/u0/pm_reset_reg_rep_1[0]                    |                                                  |                3 |              9 |
+|  pclk         | pm/sp_ram_rd_addr0                                  | pm/gen_video/slot_reg[2][0]                      |                2 |              9 |
+|  pclk         | pm/mb88_54xx/stack[2][9]_i_1_n_0                    | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |             10 |
+|  pclk         | pm/mb88_54xx/stack[3][9]_i_1_n_0                    | pm/cpu2/u0/reset_cpu_n_reg                       |                4 |             10 |
+|  pclk         | pm/scandoubler/hs_rise                              |                                                  |                4 |             10 |
+|  pclk         | pm/scandoubler/line_toggle                          |                                                  |                3 |             10 |
+|  pclk         | pm/mb88_54xx/stack[0][9]_i_1_n_0                    | pm/cpu2/u0/reset_cpu_n_reg                       |                4 |             10 |
+|  pclk         | pm/mb88_54xx/stack[1][9]_i_1_n_0                    | pm/cpu2/u0/reset_cpu_n_reg                       |                2 |             10 |
+|  pclk         |                                                     | pm_reset_i_2_n_0                                 |                3 |             11 |
+|  pclk         | el_multiboot/el_multiboot/icap_data0[33]_i_1_n_0    |                                                  |                2 |             11 |
+|  pclk         | pm/mb88_50xx/stack[0][10]_i_1_n_0                   | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |             11 |
+|  pclk         | pm/mb88_50xx/stack[1][10]_i_1_n_0                   | pm/cpu2/u0/reset_cpu_n_reg                       |                5 |             11 |
+|  pclk         | pm/mb88_50xx/stack[2][10]_i_1_n_0                   | pm/cpu2/u0/reset_cpu_n_reg                       |                4 |             11 |
+|  pclk         | pm/mb88_50xx/stack[3][10]_i_1_n_0                   | pm/cpu2/u0/reset_cpu_n_reg                       |                3 |             11 |
+|  pclk         | pm/scandoubler/ce_x2                                |                                                  |                5 |             12 |
+| ~pclk         | pm/reset_n                                          | pm/cpu2/u0/SS[0]                                 |                4 |             14 |
+| ~pclk         |                                                     | pm_reset_reg_rep_n_0                             |                9 |             14 |
+|  pclk         |                                                     | pm_reset_reg_rep__0_n_0                          |                5 |             15 |
+|  pclk         | pm/bg_code_p[7]_i_1_n_0                             |                                                  |                9 |             16 |
+|  pclk         | pm/cpu2/u0/A[15]_i_1__0_n_0                         | pm/cpu2/u0/reset_cpu_n_reg                       |               16 |             16 |
+|  pclk         | pm/cpu2/u0/Ap[7]_i_1__0_n_0                         | pm/cpu2/u0/reset_cpu_n_reg                       |                7 |             16 |
+|  pclk         | pm/cpu1/u0/A[15]_i_1_n_0                            | pm_reset_reg_rep_n_0                             |               15 |             16 |
+|  pclk         | pm/sound_machine/sound_ram_1/E[0]                   |                                                  |               10 |             16 |
+|  pclk         | pm/cpu2/u0/PC                                       | pm/cpu2/u0/reset_cpu_n_reg                       |                4 |             16 |
+|  pclk         | pm/cpu3/u0/Ap[7]_i_1__1_n_0                         | pm/cpu2/u0/reset_cpu_n_reg                       |                9 |             16 |
+|  pclk         | pm/cpu3/u0/PC                                       | pm/cpu2/u0/reset_cpu_n_reg                       |                4 |             16 |
+|  pclk         | pm/cpu1/u0/PC                                       | pm_reset_reg_n_0                                 |                4 |             16 |
+|  pclk         | pm/cpu1/u0/Ap[7]_i_1_n_0                            | pm_reset_reg_n_0                                 |                9 |             16 |
+|  pclk         | pm/cpu3/u0/A[15]_i_1__1_n_0                         | pm/cpu2/u0/reset_cpu_n_reg                       |               15 |             16 |
+|  pclk         | pm/mb88_50xx/E[0]                                   |                                                  |                4 |             16 |
+|  pclk         | pm/gen_video/vcntReg_reg[6]_1[0]                    |                                                  |                4 |             17 |
+|  pclk         | pm/sprite_num1                                      |                                                  |                4 |             18 |
+|  pclk         | pm/ena_snd_machine                                  |                                                  |                5 |             18 |
+|  pclk         | pm/cpu1_ena                                         | pm_reset_reg_n_0                                 |               16 |             21 |
+|  pclk         | pm/cpu2_ena                                         | pm/cpu2/u0/reset_cpu_n_reg                       |               15 |             22 |
+|  pclk         | pm/cpu3_ena                                         | pm/cpu2/u0/reset_cpu_n_reg                       |               18 |             22 |
+|  pclk         | el_multiboot/el_multiboot/icap_data0[33]_i_1_n_0    | el_multiboot/el_multiboot/icap_data0[31]_i_1_n_0 |                3 |             23 |
+|  pclk         | pm/ena_vidgen                                       |                                                  |                7 |             29 |
+|  pclk         | pm/cpu3_ena                                         |                                                  |               22 |             29 |
+|  pclk         | pm/cpu2_ena                                         |                                                  |               19 |             29 |
+|  pclk         | pm/cpu1_ena                                         |                                                  |               21 |             29 |
+|  pclk         | pm/cpu3/u0/Regs/p_0_in__1                           |                                                  |                4 |             32 |
+|  pclk         | pm/cpu1/u0/Regs/p_0_in__0                           |                                                  |                4 |             32 |
+|  pclk         | pm/cpu1/u0/Regs/p_0_in__1                           |                                                  |                4 |             32 |
+|  pclk         | pm/cpu2/u0/Regs/p_0_in__0                           |                                                  |                4 |             32 |
+|  pclk         | pm/cpu3/u0/Regs/p_0_in__0                           |                                                  |                4 |             32 |
+|  pclk         | pm/cpu2/u0/Regs/p_0_in__1                           |                                                  |                4 |             32 |
+|  pclk         |                                                     | pm_reset_reg_n_0                                 |               24 |             33 |
+|  pclk         | pm/fg_grphx[7]_i_1_n_0                              |                                                  |                7 |             37 |
+| ~pclk         |                                                     |                                                  |               55 |             72 |
+|  pclk         |                                                     | pm/cpu2/u0/reset_cpu_n_reg                       |               64 |            100 |
+|  pclk         |                                                     |                                                  |               68 |            141 |
++---------------+-----------------------------------------------------+--------------------------------------------------+------------------+----------------+
+
+

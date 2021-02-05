@@ -1,0 +1,420 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -filter
+D:/repos/lx16/ckong_beta2/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3
+-fastpaths -xml ckong_top.twx ckong_top.ncd -o ckong_top.twr ckong_top.pcf
+
+Design file:              ckong_top.ncd
+Physical constraint file: ckong_top.pcf
+Device,package,speed:     xc6slx16,ftg256,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "clk_12" PERIOD = 83.3333 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 8720 paths analyzed, 4138 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  50.000ns.
+--------------------------------------------------------------------------------
+
+Paths for end point el_multiboot/multiboot/ICAP_SPARTAN6_inst (ICAP_X0Y0.I8), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     71.804ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               el_multiboot/multiboot/ff_icap_din_reversed_8 (FF)
+  Destination:          el_multiboot/multiboot/ICAP_SPARTAN6_inst (OTHER)
+  Requirement:          83.333ns
+  Data Path Delay:      10.602ns (Levels of Logic = 0)
+  Clock Path Skew:      0.042ns (0.405 - 0.363)
+  Source Clock:         clk_12 rising at 0.000ns
+  Destination Clock:    clk_12 rising at 83.333ns
+  Clock Uncertainty:    0.969ns
+
+  Clock Uncertainty:          0.969ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.866ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: el_multiboot/multiboot/ff_icap_din_reversed_8 to el_multiboot/multiboot/ICAP_SPARTAN6_inst
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X34Y2.AMUX     Tshcko                0.576   el_multiboot/multiboot/ff_icap_din_reversed<15>
+                                                       el_multiboot/multiboot/ff_icap_din_reversed_8
+    ICAP_X0Y0.I8         net (fanout=1)        1.026   el_multiboot/multiboot/ff_icap_din_reversed<8>
+    ICAP_X0Y0.CLK        Tcapdck_I             9.000   el_multiboot/multiboot/ICAP_SPARTAN6_inst
+                                                       el_multiboot/multiboot/ICAP_SPARTAN6_inst
+    -------------------------------------------------  ---------------------------
+    Total                                     10.602ns (9.576ns logic, 1.026ns route)
+                                                       (90.3% logic, 9.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point el_multiboot/multiboot/ICAP_SPARTAN6_inst (ICAP_X0Y0.I15), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     71.840ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               el_multiboot/multiboot/ff_icap_din_reversed_15 (FF)
+  Destination:          el_multiboot/multiboot/ICAP_SPARTAN6_inst (OTHER)
+  Requirement:          83.333ns
+  Data Path Delay:      10.566ns (Levels of Logic = 0)
+  Clock Path Skew:      0.042ns (0.405 - 0.363)
+  Source Clock:         clk_12 rising at 0.000ns
+  Destination Clock:    clk_12 rising at 83.333ns
+  Clock Uncertainty:    0.969ns
+
+  Clock Uncertainty:          0.969ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.866ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: el_multiboot/multiboot/ff_icap_din_reversed_15 to el_multiboot/multiboot/ICAP_SPARTAN6_inst
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X34Y2.DQ       Tcko                  0.525   el_multiboot/multiboot/ff_icap_din_reversed<15>
+                                                       el_multiboot/multiboot/ff_icap_din_reversed_15
+    ICAP_X0Y0.I15        net (fanout=1)        1.041   el_multiboot/multiboot/ff_icap_din_reversed<15>
+    ICAP_X0Y0.CLK        Tcapdck_I             9.000   el_multiboot/multiboot/ICAP_SPARTAN6_inst
+                                                       el_multiboot/multiboot/ICAP_SPARTAN6_inst
+    -------------------------------------------------  ---------------------------
+    Total                                     10.566ns (9.525ns logic, 1.041ns route)
+                                                       (90.1% logic, 9.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point el_multiboot/multiboot/ICAP_SPARTAN6_inst (ICAP_X0Y0.I10), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     71.872ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               el_multiboot/multiboot/ff_icap_din_reversed_10 (FF)
+  Destination:          el_multiboot/multiboot/ICAP_SPARTAN6_inst (OTHER)
+  Requirement:          83.333ns
+  Data Path Delay:      10.534ns (Levels of Logic = 0)
+  Clock Path Skew:      0.042ns (0.405 - 0.363)
+  Source Clock:         clk_12 rising at 0.000ns
+  Destination Clock:    clk_12 rising at 83.333ns
+  Clock Uncertainty:    0.969ns
+
+  Clock Uncertainty:          0.969ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.866ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: el_multiboot/multiboot/ff_icap_din_reversed_10 to el_multiboot/multiboot/ICAP_SPARTAN6_inst
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X34Y2.AQ       Tcko                  0.525   el_multiboot/multiboot/ff_icap_din_reversed<15>
+                                                       el_multiboot/multiboot/ff_icap_din_reversed_10
+    ICAP_X0Y0.I10        net (fanout=1)        1.009   el_multiboot/multiboot/ff_icap_din_reversed<10>
+    ICAP_X0Y0.CLK        Tcapdck_I             9.000   el_multiboot/multiboot/ICAP_SPARTAN6_inst
+                                                       el_multiboot/multiboot/ICAP_SPARTAN6_inst
+    -------------------------------------------------  ---------------------------
+    Total                                     10.534ns (9.525ns logic, 1.009ns route)
+                                                       (90.4% logic, 9.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "clk_12" PERIOD = 83.3333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point el_multiboot/q_3 (SLICE_X36Y3.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.385ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               el_multiboot/q_2 (FF)
+  Destination:          el_multiboot/q_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.385ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_12 rising at 83.333ns
+  Destination Clock:    clk_12 rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: el_multiboot/q_2 to el_multiboot/q_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y3.CQ       Tcko                  0.200   el_multiboot/q<3>
+                                                       el_multiboot/q_2
+    SLICE_X36Y3.DX       net (fanout=2)        0.137   el_multiboot/q<2>
+    SLICE_X36Y3.CLK      Tckdi       (-Th)    -0.048   el_multiboot/q<3>
+                                                       el_multiboot/q_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.385ns (0.248ns logic, 0.137ns route)
+                                                       (64.4% logic, 35.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point el_multiboot/q_1 (SLICE_X36Y3.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.394ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               el_multiboot/q_0 (FF)
+  Destination:          el_multiboot/q_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.394ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_12 rising at 83.333ns
+  Destination Clock:    clk_12 rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: el_multiboot/q_0 to el_multiboot/q_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y3.AQ       Tcko                  0.200   el_multiboot/q<3>
+                                                       el_multiboot/q_0
+    SLICE_X36Y3.BX       net (fanout=1)        0.146   el_multiboot/q<0>
+    SLICE_X36Y3.CLK      Tckdi       (-Th)    -0.048   el_multiboot/q<3>
+                                                       el_multiboot/q_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.394ns (0.248ns logic, 0.146ns route)
+                                                       (62.9% logic, 37.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/big_sprite_tile_code_r_6 (SLICE_X5Y21.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.401ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               pm/big_sprite_tile_code_6 (FF)
+  Destination:          pm/big_sprite_tile_code_r_6 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.403ns (Levels of Logic = 0)
+  Clock Path Skew:      0.002ns (0.036 - 0.034)
+  Source Clock:         clk_12 rising at 83.333ns
+  Destination Clock:    clk_12 rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: pm/big_sprite_tile_code_6 to pm/big_sprite_tile_code_r_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y21.CQ       Tcko                  0.200   pm/big_sprite_tile_code<7>
+                                                       pm/big_sprite_tile_code_6
+    SLICE_X5Y21.CX       net (fanout=1)        0.144   pm/big_sprite_tile_code<6>
+    SLICE_X5Y21.CLK      Tckdi       (-Th)    -0.059   pm/big_sprite_tile_code_r<7>
+                                                       pm/big_sprite_tile_code_r_6
+    -------------------------------------------------  ---------------------------
+    Total                                      0.403ns (0.259ns logic, 0.144ns route)
+                                                       (64.3% logic, 35.7% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clk_12" PERIOD = 83.3333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 33.333ns (period - min period limit)
+  Period: 83.333ns
+  Min period limit: 50.000ns (20.000MHz) (Tcapper)
+  Physical resource: el_multiboot/multiboot/ICAP_SPARTAN6_inst/CLK
+  Logical resource: el_multiboot/multiboot/ICAP_SPARTAN6_inst/CLK
+  Location pin: ICAP_X0Y0.CLK
+  Clock network: clk_12
+--------------------------------------------------------------------------------
+Slack: 79.763ns (period - min period limit)
+  Period: 83.333ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: pm_tile_bit0/Mram_rom_data1/CLKA
+  Logical resource: pm_tile_bit0/Mram_rom_data1/CLKA
+  Location pin: RAMB16_X0Y18.CLKA
+  Clock network: clk_12
+--------------------------------------------------------------------------------
+Slack: 79.763ns (period - min period limit)
+  Period: 83.333ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: pm_tile_bit0/Mram_rom_data2/CLKA
+  Logical resource: pm_tile_bit0/Mram_rom_data2/CLKA
+  Location pin: RAMB16_X0Y22.CLKA
+  Clock network: clk_12
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "relojes/clkin1" PERIOD = 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   8.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "relojes/clkin1" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: relojes/dcm_sp_inst/CLKIN
+  Logical resource: relojes/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y2.CLKIN
+  Clock network: relojes/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: relojes/dcm_sp_inst/CLKIN
+  Logical resource: relojes/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y2.CLKIN
+  Clock network: relojes/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 16.000ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 4.000ns (250.000MHz) (Tdcmper_CLKIN)
+  Physical resource: relojes/dcm_sp_inst/CLKIN
+  Logical resource: relojes/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y2.CLKIN
+  Clock network: relojes/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net "relojes/clkfx180" derived from  NET 
+"relojes/clkin1" PERIOD = 20 ns HIGH 50%;  multiplied by 4.17 to 83.333 nS and 
+duty cycle corrected to HIGH 41.666 nS  
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.570ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "relojes/clkfx180" derived from
+ NET "relojes/clkin1" PERIOD = 20 ns HIGH 50%;
+ multiplied by 4.17 to 83.333 nS and duty cycle corrected to HIGH 41.666 nS 
+
+--------------------------------------------------------------------------------
+Slack: 79.763ns (period - min period limit)
+  Period: 83.333ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: pm_big_sprite_tile_bit1/Mram_rom_data/CLKA
+  Logical resource: pm_big_sprite_tile_bit1/Mram_rom_data/CLKA
+  Location pin: RAMB16_X0Y8.CLKA
+  Clock network: clk_12n
+--------------------------------------------------------------------------------
+Slack: 79.763ns (period - min period limit)
+  Period: 83.333ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: pm/tile_ram/Mram_ram/CLKAWRCLK
+  Logical resource: pm/tile_ram/Mram_ram/CLKAWRCLK
+  Location pin: RAMB8_X0Y13.CLKAWRCLK
+  Clock network: clk_12n
+--------------------------------------------------------------------------------
+Slack: 79.763ns (period - min period limit)
+  Period: 83.333ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: pm_big_sprite_tile_bit0/Mram_rom_data/CLKA
+  Logical resource: pm_big_sprite_tile_bit0/Mram_rom_data/CLKA
+  Location pin: RAMB16_X0Y10.CLKA
+  Clock network: clk_12n
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net "relojes/clkfx" derived from  NET 
+"relojes/clkin1" PERIOD = 20 ns HIGH 50%;  multiplied by 4.17 to 83.333 nS and 
+duty cycle corrected to HIGH 41.666 nS  
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "relojes/clkfx" derived from
+ NET "relojes/clkin1" PERIOD = 20 ns HIGH 50%;
+ multiplied by 4.17 to 83.333 nS and duty cycle corrected to HIGH 41.666 nS 
+
+--------------------------------------------------------------------------------
+Slack: 80.333ns (period - min period limit)
+  Period: 83.333ns
+  Min period limit: 3.000ns (333.333MHz) (Tdcmper_CLKFX)
+  Physical resource: relojes/dcm_sp_inst/CLKFX
+  Logical resource: relojes/dcm_sp_inst/CLKFX
+  Location pin: DCM_X0Y2.CLKFX
+  Clock network: relojes/clkfx
+--------------------------------------------------------------------------------
+Slack: 80.667ns (period - min period limit)
+  Period: 83.333ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: relojes/clkout1_buf/I0
+  Logical resource: relojes/clkout1_buf/I0
+  Location pin: BUFGMUX_X2Y12.I0
+  Clock network: relojes/clkfx
+--------------------------------------------------------------------------------
+Slack: 116.667ns (max period limit - period)
+  Period: 83.333ns
+  Max period limit: 200.000ns (5.000MHz) (Tdcmper_CLKFX)
+  Physical resource: relojes/dcm_sp_inst/CLKFX
+  Logical resource: relojes/dcm_sp_inst/CLKFX
+  Location pin: DCM_X0Y2.CLKFX
+  Clock network: relojes/clkfx
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for relojes/clkin1
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|relojes/clkin1                 |     20.000ns|      8.000ns|      0.857ns|            0|            0|            0|            0|
+| relojes/clkfx180              |     83.333ns|      3.570ns|          N/A|            0|            0|            0|            0|
+| relojes/clkfx                 |     83.333ns|      3.000ns|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk50mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk50mhz       |   11.529|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 8720 paths, 0 nets, and 3611 connections
+
+Design statistics:
+   Minimum period:  50.000ns{1}   (Maximum frequency:  20.000MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Aug 15 16:00:04 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4720 MB
+
+
+

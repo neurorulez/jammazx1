@@ -1,0 +1,222 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Thu May  2 09:40:42 2019
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file bagman_top_control_sets_placed.rpt
+| Design       : bagman_top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   146 |
+| Unused register locations in slices containing registers |   451 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           25 |
+|      2 |            3 |
+|      4 |            8 |
+|      5 |           12 |
+|      6 |            4 |
+|      7 |            2 |
+|      8 |           28 |
+|      9 |            5 |
+|     10 |           14 |
+|     11 |            1 |
+|     12 |           19 |
+|     13 |            1 |
+|    16+ |           24 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             231 |          101 |
+| No           | No                    | Yes                    |              79 |           44 |
+| No           | Yes                   | No                     |              47 |           18 |
+| Yes          | No                    | No                     |             577 |          210 |
+| Yes          | No                    | Yes                    |             137 |           66 |
+| Yes          | Yes                   | No                     |             302 |           70 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+-----------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|            Clock Signal            |                       Enable Signal                       |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++------------------------------------+-----------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  pm/clock_1mhz                     |                                                           |                                                        |                1 |              1 |
+|  x_pixel[1]                        | pm/ym2149/ena_div_noise                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      |                                                           | joy_renew_i_1_n_0                                      |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy1[0]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy1[1]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy1[2]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy1[3]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy1[4]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy1[8]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy1[9]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy1[11]                                                  |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy2[0]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy2[1]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy2[2]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy2[3]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy2[4]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy2[8]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy2[9]                                                   |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF                      | joy2[11]                                                  |                                                        |                1 |              1 |
+|  x_pixel[1]                        |                                                           | pm/ym2149/env_reset                                    |                1 |              1 |
+|  x_pixel[1]                        |                                                           | pm/ym2149/env_inc_reg_LDC_i_2_n_0                      |                1 |              1 |
+|  x_pixel[1]                        |                                                           | pm/ym2149/env_inc_reg_LDC_i_1_n_0                      |                1 |              1 |
+|  pm/ym2149/env_inc_reg_LDC_i_1_n_0 |                                                           | pm/ym2149/env_inc_reg_LDC_i_2_n_0                      |                1 |              1 |
+|  pm/ym2149/env_inc_reg_LDC_i_2_n_0 |                                                           | pm/ym2149/env_inc_reg_LDC_i_1_n_0                      |                1 |              1 |
+|  delay_count_reg_BUFG[0]           |                                                           | pm/cpu_int_n_i_2_n_0                                   |                1 |              1 |
+|  x_pixel[0]                        |                                                           |                                                        |                2 |              2 |
+| ~bagman_speech/Clk512kHz           |                                                           |                                                        |                1 |              2 |
+|  delay_count_reg_BUFG[0]           | pm/video/vcnt[8]_i_1_n_0                                  | pm/video/vcnt[6]_i_1_n_0                               |                1 |              2 |
+|  pclk                              | keyb/ps2/bit_count                                        |                                                        |                1 |              4 |
+|  x_pixel[1]                        | pm/ym2149/reg[5]_6                                        |                                                        |                1 |              4 |
+|  x_pixel[1]                        | pm/ym2149/reg[3]_11                                       |                                                        |                1 |              4 |
+|  x_pixel[1]                        | pm/ym2149/reg[1]_16                                       |                                                        |                1 |              4 |
+|  x_pixel[1]                        | pm/ym2149/reg[13][3]_i_1_n_0                              |                                                        |                2 |              4 |
+|  delay_count_reg_BUFG[0]           |                                                           | pm/clear                                               |                1 |              4 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/CodeEnergy             |                                                        |                2 |              4 |
+|  x_pixel[1]                        | pm/ym2149/ena_div_noise                                   | pm/ym2149/noise_gen_cnt                                |                1 |              4 |
+|  JOY_CLK_OBUF                      |                                                           | joy_count[4]_i_1_n_0                                   |                1 |              5 |
+|  bagman_speech/Clk512kHz           |                                                           |                                                        |                4 |              5 |
+| ~bagman_speech/Clk512kHz           | pm/bagman_speech/StartSpeak0__0                           |                                                        |                1 |              5 |
+|  x_pixel[1]                        | pm/ym2149/reg[9]_4                                        |                                                        |                3 |              5 |
+|  x_pixel[1]                        | pm/ym2149/reg[10]_13                                      |                                                        |                2 |              5 |
+|  pclk                              |                                                           | delay_count[4]_i_2_n_0                                 |                1 |              5 |
+|  x_pixel[1]                        | pm/ym2149/env_vol                                         | pm/ym2149/env_inc_reg_LDC_i_1_n_0                      |                2 |              5 |
+|  x_pixel[1]                        | pm/ym2149/env_vol                                         | pm/ym2149/env_inc_reg_LDC_i_2_n_0                      |                2 |              5 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/CodePitch              |                                                        |                2 |              5 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/GPA[11]_i_1_n_0        |                                                        |                3 |              5 |
+|  x_pixel[1]                        | pm/ym2149/reg[6]_14                                       |                                                        |                1 |              5 |
+|  x_pixel[1]                        | pm/ym2149/reg[8]_5                                        |                                                        |                3 |              5 |
+|  bagman_speech/Clk512kHz           |                                                           | pm/bagman_speech/LPC10_SpeechSynth/p_6_in              |                3 |              6 |
+|  delay_count_reg_BUFG[0]           | pm/video/hcnt_reg[2]_3[0]                                 |                                                        |                1 |              6 |
+|  pm/video/CLK                      |                                                           |                                                        |                2 |              6 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/E[0]                   |                                                        |                3 |              6 |
+| ~x_pixel[0]                        | pm/Z80/u0/R[6]_i_1_n_0                                    | keyb/resetKey_reg_0                                    |                3 |              7 |
+|  delay_count_reg_BUFG[0]           | pm/video/vcnt[8]_i_1_n_0                                  |                                                        |                2 |              7 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/CEA2                   | pm/bagman_speech/LPC10_SpeechSynth/PitchCnt[7]_i_1_n_0 |                2 |              8 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/CEA2                   | pm/bagman_speech/LPC10_SpeechSynth/Valeur[9]_i_1_n_0   |                3 |              8 |
+|  delay_count_reg_BUFG[0]           | pm/ena_pixel                                              | pm/video/vblank_reg_0                                  |                3 |              8 |
+|  x_pixel[1]                        | pm/ym2149/reg[7]_10                                       |                                                        |                3 |              8 |
+|  delay_count_reg_BUFG[0]           | pm/video/hcnt_reg[2]_0                                    | pm/video/hcnt_reg[8]_1                                 |                3 |              8 |
+|  delay_count_reg_BUFG[0]           | pm/video/vcnt_r[7]_i_1_n_0                                |                                                        |                2 |              8 |
+| ~x_pixel[0]                        | pm/Z80/u0/ACC[7]_i_1_n_0                                  | keyb/resetKey_reg_0                                    |                2 |              8 |
+|  delay_count_reg_BUFG[0]           | pm/video/hcnt_reg[2]_1[0]                                 |                                                        |                1 |              8 |
+| ~x_pixel[0]                        | pm/Z80/u0/BusA[7]_i_1_n_0                                 |                                                        |                4 |              8 |
+| ~x_pixel[0]                        | pm/Z80/u0/IR[7]_i_1_n_0                                   | keyb/resetKey_reg_0                                    |                4 |              8 |
+| ~x_pixel[0]                        | pm/Z80/u0/I[7]_i_1_n_0                                    | keyb/resetKey_reg_0                                    |                5 |              8 |
+|  x_pixel[1]                        | pm/Z80/u0/busctrl_addr                                    |                                                        |                2 |              8 |
+| ~x_pixel[0]                        | pm/Z80/u0/SP[15]_i_1_n_0                                  | keyb/resetKey_reg_0                                    |                4 |              8 |
+|  pclk                              | keyb/ps2/DATA[7]_i_1_n_0                                  |                                                        |                1 |              8 |
+| ~x_pixel[0]                        | pm/Z80/u0/SP[7]_i_1_n_0                                   | keyb/resetKey_reg_0                                    |                3 |              8 |
+| ~x_pixel[0]                        | pm/Z80/u0/TmpAddr[15]_i_1_n_0                             | keyb/resetKey_reg_0                                    |                3 |              8 |
+| ~x_pixel[0]                        | pm/Z80/u0/TmpAddr[7]_i_1_n_0                              | keyb/resetKey_reg_0                                    |                6 |              8 |
+| ~x_pixel[0]                        | pm/Z80/u0/E[0]                                            | keyb/resetKey_reg_0                                    |                4 |              8 |
+| ~x_pixel[0]                        | pm/Z80/u0/DO[7]_i_1_n_0                                   | keyb/resetKey_reg_0                                    |                2 |              8 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/E[0]                   | pm/bagman_speech/LPC10_SpeechSynth/CodeEnergy_reg[3]_0 |                3 |              8 |
+|  x_pixel[1]                        | pm/ym2149/reg[0]_17                                       |                                                        |                5 |              8 |
+|  x_pixel[1]                        | pm/ym2149/reg[11]_9                                       |                                                        |                2 |              8 |
+|  x_pixel[1]                        | pm/ym2149/reg[12]_3                                       |                                                        |                3 |              8 |
+|  x_pixel[1]                        | pm/ym2149/reg[14]_12                                      |                                                        |                2 |              8 |
+|  x_pixel[1]                        | pm/ym2149/reg[15]_8                                       |                                                        |                3 |              8 |
+|  x_pixel[1]                        | pm/ym2149/reg[2]_15                                       |                                                        |                4 |              8 |
+|  x_pixel[1]                        | pm/ym2149/reg[4]_7                                        |                                                        |                3 |              8 |
+|  delay_count_reg_BUFG[0]           | pm/ena_pixel                                              | pm/video/hcnt_reg[8]_0                                 |                3 |              8 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/vcnt_i01_out                              | pm/line_doubler/vcnt_i0                                |                2 |              9 |
+|  pclk                              | keyb/ps2/shiftreg                                         |                                                        |                2 |              9 |
+|  x_pixel[1]                        | pm/ym2149/audio_mix                                       |                                                        |                2 |              9 |
+|  delay_count_reg_BUFG[0]           |                                                           | pm/line_doubler/hcnt_o[0]_i_1_n_0                      |                2 |              9 |
+|  delay_count_reg_BUFG[0]           | el_multiboot/el_multiboot/Q[0]                            | keyb/SR[0]                                             |                2 |              9 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/X4C[9]_i_1_n_0         |                                                        |                6 |             10 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/X3C[9]_i_1_n_0         |                                                        |                4 |             10 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/SampleData[9]_i_1_n_0  |                                                        |                3 |             10 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/X10C[9]_i_1_n_0        |                                                        |                3 |             10 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/X1C[9]_i_1_n_0         |                                                        |                3 |             10 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/X2C[9]_i_1_n_0         |                                                        |                7 |             10 |
+|  delay_count_reg_BUFG[0]           |                                                           | pm/line_doubler/vcnt_i01_out                           |                5 |             10 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/X5C[9]_i_1_n_0         |                                                        |                4 |             10 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/X6C[9]_i_1_n_0         |                                                        |                5 |             10 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/X7C[9]_i_1_n_0         |                                                        |                4 |             10 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/X8C[9]_i_1_n_0         |                                                        |                3 |             10 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/X9C[9]_i_1_n_0         |                                                        |                7 |             10 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/YNext[9]_i_1_n_0       |                                                        |                5 |             10 |
+|  x_pixel[1]                        |                                                           | pm/ym2149/audio_mix                                    |                3 |             10 |
+|  delay_count_reg_BUFG[0]           | el_multiboot/el_multiboot/icap_data0[33]_inv_i_1_n_0      |                                                        |                2 |             11 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram2_reg_0_63_0_2_i_1_n_0                 |                                                        |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram2_reg_64_127_0_2_i_1_n_0               |                                                        |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram2_reg_320_383_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram1_reg_64_127_0_2_i_1_n_0               |                                                        |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram2_reg_256_319_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram1_reg_0_63_0_2_i_1_n_0                 |                                                        |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram1_reg_384_447_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram1_reg_128_191_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram1_reg_448_511_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram2_reg_384_447_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram2_reg_192_255_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram2_reg_448_511_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram1_reg_320_383_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  x_pixel[1]                        | pm/ym2149/ena_div                                         | pm/ym2149/p_2_out[0]                                   |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram1_reg_256_319_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  x_pixel[1]                        | pm/ym2149/ena_div                                         | pm/ym2149/p_2_out[1]                                   |                3 |             12 |
+|  x_pixel[1]                        | pm/ym2149/ena_div                                         | pm/ym2149/p_2_out[2]                                   |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram1_reg_192_255_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  delay_count_reg_BUFG[0]           | pm/line_doubler/ram2_reg_128_191_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/CntSample[7]_i_2_n_0   | pm/bagman_speech/LPC10_SpeechSynth/p_6_in              |                5 |             13 |
+| ~x_pixel[0]                        | pm/Z80/u0/A[15]_i_1_n_0                                   | keyb/resetKey_reg_0                                    |               16 |             16 |
+| ~x_pixel[0]                        | pm/Z80/u0/Ap                                              | keyb/resetKey_reg_0                                    |                6 |             16 |
+|  delay_count_reg_BUFG[0]           | pm/ena_pixel                                              |                                                        |               10 |             16 |
+|  x_pixel[1]                        | pm/ym2149/ena_div                                         | pm/ym2149/env_gen_cnt                                  |                4 |             16 |
+| ~x_pixel[0]                        | pm/Z80/u0/PC[0]_i_1_n_0                                   | keyb/resetKey_reg_0                                    |                4 |             16 |
+| ~delay_count_reg_BUFG[0]           |                                                           |                                                        |                5 |             16 |
+|  delay_count_reg_BUFG[0]           | pm/video/E[0]                                             |                                                        |                5 |             16 |
+|  delay_count_reg_BUFG[0]           |                                                           | keyb/resetHW                                           |                7 |             16 |
+|  x_pixel[1]                        | pm/ym2149/noise_gen_cnt                                   |                                                        |                3 |             17 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/CodeK1K4               |                                                        |                4 |             18 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/CodeK5K10              |                                                        |                6 |             21 |
+|  delay_count_reg_BUFG[0]           | pm/video/hcnt_reg[2]_2[0]                                 |                                                        |                7 |             22 |
+|  delay_count_reg_BUFG[0]           | el_multiboot/el_multiboot/icap_data0[33]_inv_i_1_n_0      | el_multiboot/el_multiboot/icap_data0[31]_i_1_n_0       |                4 |             23 |
+| ~x_pixel[0]                        | pm/Z80/u0/Regs/WEL                                        |                                                        |                8 |             32 |
+| ~x_pixel[0]                        | pm/Z80/u0/Regs/WEH                                        |                                                        |                8 |             32 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/ReadRom                | pm/bagman_speech/LPC10_SpeechSynth/p_6_in              |                7 |             36 |
+|  pclk                              |                                                           |                                                        |               17 |             38 |
+| ~x_pixel[0]                        |                                                           |                                                        |               24 |             40 |
+|  x_pixel[1]                        |                                                           |                                                        |                9 |             42 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/E[0]                   | pm/bagman_speech/LPC10_SpeechSynth/PT_0                |                8 |             48 |
+| ~x_pixel[0]                        |                                                           | keyb/resetKey_reg_0                                    |               32 |             54 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/E[0]                   | pm/bagman_speech/LPC10_SpeechSynth/K5T_1               |               10 |             58 |
+|  delay_count_reg_BUFG[0]           |                                                           |                                                        |               36 |             79 |
+|  bagman_speech/Clk512kHz           | pm/bagman_speech/LPC10_SpeechSynth/CntSegment_reg[2]_0[0] |                                                        |               34 |            120 |
++------------------------------------+-----------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+

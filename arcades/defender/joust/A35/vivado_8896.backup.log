@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May 25 19:55:44 2019
+# Process ID: 8896
+# Current directory: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16720 D:\repos\jammazx1 - Bigbucket\jammazx1\arcades\defender\joust\A35\A35.xpr
+# Log file: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/vivado.log
+# Journal file: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+oopen_project {D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.xpr}INFO: [Project 1-313] Project file moved from 'F:/repos/a35/NUEVO/joust/A35' since last save.
+SScanning sources...FFinished scanning sourcesWWARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'F:/repos/a35/defender/a35t/a35t.cache/ip'.WWARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'D:/repos/jammazx1 - Bigbucket/jammazx1/repos/a35/defender/a35t/a35t.ip_user_files', nor could it be found using path 'F:/repos/repos/a35/defender/a35t/a35t.ip_user_files'.IINFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specifiedIINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 795.020 ; gain = 235.836
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runWARNING: [Common 17-9] Error reading message records.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 25 21:16:59 2019...
+e captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1/runme.log
+[Sat May 25 19:57:04 2019] Launched impl_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 25 20:06:25 2019] Launched synth_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1/runme.log
+[Sat May 25 20:06:25 2019] Launched impl_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 25 20:09:23 2019] Launched synth_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1/runme.log
+[Sat May 25 20:09:23 2019] Launched impl_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1
+
+launch_runs impl_1 -jobs 2
+[Sat May 25 20:11:15 2019] Launched synth_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1/runme.log
+[Sat May 25 20:11:15 2019] Launched impl_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/impl_1/runme.log
+add_files -norecurse {{D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/src/rtl/joust_cmos_ram.vhd}}
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 25 20:15:02 2019] Launched synth_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1/runme.log
+[Sat May 25 20:15:02 2019] Launched impl_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 25 21:16:35 2019...

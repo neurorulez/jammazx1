@@ -1,0 +1,1269 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+A:\ZZ\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s
+2 -n 3 -fastpaths -xml amidar_top.twx amidar_top.ncd -o amidar_top.twr
+amidar_top.pcf
+
+Design file:              amidar_top.ncd
+Physical constraint file: amidar_top.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "pm/u_clocks/clk_ref_ibuf" PERIOD = 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   8.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "pm/u_clocks/clk_ref_ibuf" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: pm/u_clocks/dcm_inst/CLKIN
+  Logical resource: pm/u_clocks/dcm_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: pm/u_clocks/dcm_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: pm/u_clocks/dcm_inst/CLKIN
+  Logical resource: pm/u_clocks/dcm_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: pm/u_clocks/dcm_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 16.000ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 4.000ns (250.000MHz) (Tdcmper_CLKIN)
+  Physical resource: pm/u_clocks/dcm_inst/CLKIN
+  Logical resource: pm/u_clocks/dcm_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: pm/u_clocks/dcm_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net "pm/u_clocks/clk_dcm_op_0" derived 
+from  NET "pm/u_clocks/clk_ref_ibuf" PERIOD = 20 ns HIGH 50%;  duty cycle 
+corrected to 20 nS  HIGH 10 nS  
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 221 paths analyzed, 85 endpoints analyzed, 35 failing endpoints
+ 35 timing errors detected. (35 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  41.979ns.
+--------------------------------------------------------------------------------
+
+Paths for end point pm/u_dac/sig_in_10 (SLICE_X2Y38.CIN), 24 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.832ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/O_AUDIO_0 (FF)
+  Destination:          pm/u_dac/sig_in_10 (FF)
+  Requirement:          1.667ns
+  Data Path Delay:      2.023ns (Levels of Logic = 3)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.704ns (1.721 - 2.425)
+  Source Clock:         pm/clk rising at 458.333ns
+  Destination Clock:    pm/clk_ref rising at 460.000ns
+  Clock Uncertainty:    0.772ns
+
+  Clock Uncertainty:          0.772ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/O_AUDIO_0 to pm/u_dac/sig_in_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y36.AQ       Tcko                  0.430   pm/u_audio/O_AUDIO<4>
+                                                       pm/u_audio/O_AUDIO_0
+    SLICE_X2Y36.A2       net (fanout=1)        0.705   pm/u_audio/O_AUDIO<0>
+    SLICE_X2Y36.COUT     Topcya                0.472   pm/u_dac/sig_in<3>
+                                                       pm/u_dac/Maccum_sig_in_lut<0>
+                                                       pm/u_dac/Maccum_sig_in_cy<3>
+    SLICE_X2Y37.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<3>
+    SLICE_X2Y37.COUT     Tbyp                  0.091   pm/u_dac/sig_in<7>
+                                                       pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CLK      Tcinck                0.319   pm/u_dac/sig_in<11>
+                                                       pm/u_dac/Maccum_sig_in_xor<11>
+                                                       pm/u_dac/sig_in_10
+    -------------------------------------------------  ---------------------------
+    Total                                      2.023ns (1.312ns logic, 0.711ns route)
+                                                       (64.9% logic, 35.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.516ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/O_AUDIO_1 (FF)
+  Destination:          pm/u_dac/sig_in_10 (FF)
+  Requirement:          1.667ns
+  Data Path Delay:      1.707ns (Levels of Logic = 3)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.704ns (1.721 - 2.425)
+  Source Clock:         pm/clk rising at 458.333ns
+  Destination Clock:    pm/clk_ref rising at 460.000ns
+  Clock Uncertainty:    0.772ns
+
+  Clock Uncertainty:          0.772ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/O_AUDIO_1 to pm/u_dac/sig_in_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y36.AMUX     Tshcko                0.518   pm/u_audio/O_AUDIO<4>
+                                                       pm/u_audio/O_AUDIO_1
+    SLICE_X2Y36.B6       net (fanout=1)        0.325   pm/u_audio/O_AUDIO<1>
+    SLICE_X2Y36.COUT     Topcyb                0.448   pm/u_dac/sig_in<3>
+                                                       pm/u_dac/Maccum_sig_in_lut<1>
+                                                       pm/u_dac/Maccum_sig_in_cy<3>
+    SLICE_X2Y37.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<3>
+    SLICE_X2Y37.COUT     Tbyp                  0.091   pm/u_dac/sig_in<7>
+                                                       pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CLK      Tcinck                0.319   pm/u_dac/sig_in<11>
+                                                       pm/u_dac/Maccum_sig_in_xor<11>
+                                                       pm/u_dac/sig_in_10
+    -------------------------------------------------  ---------------------------
+    Total                                      1.707ns (1.376ns logic, 0.331ns route)
+                                                       (80.6% logic, 19.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.422ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/O_AUDIO_5 (FF)
+  Destination:          pm/u_dac/sig_in_10 (FF)
+  Requirement:          1.667ns
+  Data Path Delay:      1.613ns (Levels of Logic = 2)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.704ns (1.721 - 2.425)
+  Source Clock:         pm/clk rising at 458.333ns
+  Destination Clock:    pm/clk_ref rising at 460.000ns
+  Clock Uncertainty:    0.772ns
+
+  Clock Uncertainty:          0.772ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/O_AUDIO_5 to pm/u_dac/sig_in_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y36.CMUX     Tshcko                0.518   pm/u_audio/O_AUDIO<4>
+                                                       pm/u_audio/O_AUDIO_5
+    SLICE_X2Y37.B6       net (fanout=1)        0.325   pm/u_audio/O_AUDIO<5>
+    SLICE_X2Y37.COUT     Topcyb                0.448   pm/u_dac/sig_in<7>
+                                                       pm/u_dac/Maccum_sig_in_lut<5>
+                                                       pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CLK      Tcinck                0.319   pm/u_dac/sig_in<11>
+                                                       pm/u_dac/Maccum_sig_in_xor<11>
+                                                       pm/u_dac/sig_in_10
+    -------------------------------------------------  ---------------------------
+    Total                                      1.613ns (1.285ns logic, 0.328ns route)
+                                                       (79.7% logic, 20.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/u_dac/sig_in_11 (SLICE_X2Y38.CIN), 24 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.832ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/O_AUDIO_0 (FF)
+  Destination:          pm/u_dac/sig_in_11 (FF)
+  Requirement:          1.667ns
+  Data Path Delay:      2.023ns (Levels of Logic = 3)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.704ns (1.721 - 2.425)
+  Source Clock:         pm/clk rising at 458.333ns
+  Destination Clock:    pm/clk_ref rising at 460.000ns
+  Clock Uncertainty:    0.772ns
+
+  Clock Uncertainty:          0.772ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/O_AUDIO_0 to pm/u_dac/sig_in_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y36.AQ       Tcko                  0.430   pm/u_audio/O_AUDIO<4>
+                                                       pm/u_audio/O_AUDIO_0
+    SLICE_X2Y36.A2       net (fanout=1)        0.705   pm/u_audio/O_AUDIO<0>
+    SLICE_X2Y36.COUT     Topcya                0.472   pm/u_dac/sig_in<3>
+                                                       pm/u_dac/Maccum_sig_in_lut<0>
+                                                       pm/u_dac/Maccum_sig_in_cy<3>
+    SLICE_X2Y37.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<3>
+    SLICE_X2Y37.COUT     Tbyp                  0.091   pm/u_dac/sig_in<7>
+                                                       pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CLK      Tcinck                0.319   pm/u_dac/sig_in<11>
+                                                       pm/u_dac/Maccum_sig_in_xor<11>
+                                                       pm/u_dac/sig_in_11
+    -------------------------------------------------  ---------------------------
+    Total                                      2.023ns (1.312ns logic, 0.711ns route)
+                                                       (64.9% logic, 35.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.516ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/O_AUDIO_1 (FF)
+  Destination:          pm/u_dac/sig_in_11 (FF)
+  Requirement:          1.667ns
+  Data Path Delay:      1.707ns (Levels of Logic = 3)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.704ns (1.721 - 2.425)
+  Source Clock:         pm/clk rising at 458.333ns
+  Destination Clock:    pm/clk_ref rising at 460.000ns
+  Clock Uncertainty:    0.772ns
+
+  Clock Uncertainty:          0.772ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/O_AUDIO_1 to pm/u_dac/sig_in_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y36.AMUX     Tshcko                0.518   pm/u_audio/O_AUDIO<4>
+                                                       pm/u_audio/O_AUDIO_1
+    SLICE_X2Y36.B6       net (fanout=1)        0.325   pm/u_audio/O_AUDIO<1>
+    SLICE_X2Y36.COUT     Topcyb                0.448   pm/u_dac/sig_in<3>
+                                                       pm/u_dac/Maccum_sig_in_lut<1>
+                                                       pm/u_dac/Maccum_sig_in_cy<3>
+    SLICE_X2Y37.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<3>
+    SLICE_X2Y37.COUT     Tbyp                  0.091   pm/u_dac/sig_in<7>
+                                                       pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CLK      Tcinck                0.319   pm/u_dac/sig_in<11>
+                                                       pm/u_dac/Maccum_sig_in_xor<11>
+                                                       pm/u_dac/sig_in_11
+    -------------------------------------------------  ---------------------------
+    Total                                      1.707ns (1.376ns logic, 0.331ns route)
+                                                       (80.6% logic, 19.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.422ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/O_AUDIO_5 (FF)
+  Destination:          pm/u_dac/sig_in_11 (FF)
+  Requirement:          1.667ns
+  Data Path Delay:      1.613ns (Levels of Logic = 2)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.704ns (1.721 - 2.425)
+  Source Clock:         pm/clk rising at 458.333ns
+  Destination Clock:    pm/clk_ref rising at 460.000ns
+  Clock Uncertainty:    0.772ns
+
+  Clock Uncertainty:          0.772ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/O_AUDIO_5 to pm/u_dac/sig_in_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y36.CMUX     Tshcko                0.518   pm/u_audio/O_AUDIO<4>
+                                                       pm/u_audio/O_AUDIO_5
+    SLICE_X2Y37.B6       net (fanout=1)        0.325   pm/u_audio/O_AUDIO<5>
+    SLICE_X2Y37.COUT     Topcyb                0.448   pm/u_dac/sig_in<7>
+                                                       pm/u_dac/Maccum_sig_in_lut<5>
+                                                       pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CLK      Tcinck                0.319   pm/u_dac/sig_in<11>
+                                                       pm/u_dac/Maccum_sig_in_xor<11>
+                                                       pm/u_dac/sig_in_11
+    -------------------------------------------------  ---------------------------
+    Total                                      1.613ns (1.285ns logic, 0.328ns route)
+                                                       (79.7% logic, 20.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/u_dac/sig_in_9 (SLICE_X2Y38.CIN), 24 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.820ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/O_AUDIO_0 (FF)
+  Destination:          pm/u_dac/sig_in_9 (FF)
+  Requirement:          1.667ns
+  Data Path Delay:      2.011ns (Levels of Logic = 3)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.704ns (1.721 - 2.425)
+  Source Clock:         pm/clk rising at 458.333ns
+  Destination Clock:    pm/clk_ref rising at 460.000ns
+  Clock Uncertainty:    0.772ns
+
+  Clock Uncertainty:          0.772ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/O_AUDIO_0 to pm/u_dac/sig_in_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y36.AQ       Tcko                  0.430   pm/u_audio/O_AUDIO<4>
+                                                       pm/u_audio/O_AUDIO_0
+    SLICE_X2Y36.A2       net (fanout=1)        0.705   pm/u_audio/O_AUDIO<0>
+    SLICE_X2Y36.COUT     Topcya                0.472   pm/u_dac/sig_in<3>
+                                                       pm/u_dac/Maccum_sig_in_lut<0>
+                                                       pm/u_dac/Maccum_sig_in_cy<3>
+    SLICE_X2Y37.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<3>
+    SLICE_X2Y37.COUT     Tbyp                  0.091   pm/u_dac/sig_in<7>
+                                                       pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CLK      Tcinck                0.307   pm/u_dac/sig_in<11>
+                                                       pm/u_dac/Maccum_sig_in_xor<11>
+                                                       pm/u_dac/sig_in_9
+    -------------------------------------------------  ---------------------------
+    Total                                      2.011ns (1.300ns logic, 0.711ns route)
+                                                       (64.6% logic, 35.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.504ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/O_AUDIO_1 (FF)
+  Destination:          pm/u_dac/sig_in_9 (FF)
+  Requirement:          1.667ns
+  Data Path Delay:      1.695ns (Levels of Logic = 3)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.704ns (1.721 - 2.425)
+  Source Clock:         pm/clk rising at 458.333ns
+  Destination Clock:    pm/clk_ref rising at 460.000ns
+  Clock Uncertainty:    0.772ns
+
+  Clock Uncertainty:          0.772ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/O_AUDIO_1 to pm/u_dac/sig_in_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y36.AMUX     Tshcko                0.518   pm/u_audio/O_AUDIO<4>
+                                                       pm/u_audio/O_AUDIO_1
+    SLICE_X2Y36.B6       net (fanout=1)        0.325   pm/u_audio/O_AUDIO<1>
+    SLICE_X2Y36.COUT     Topcyb                0.448   pm/u_dac/sig_in<3>
+                                                       pm/u_dac/Maccum_sig_in_lut<1>
+                                                       pm/u_dac/Maccum_sig_in_cy<3>
+    SLICE_X2Y37.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<3>
+    SLICE_X2Y37.COUT     Tbyp                  0.091   pm/u_dac/sig_in<7>
+                                                       pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CLK      Tcinck                0.307   pm/u_dac/sig_in<11>
+                                                       pm/u_dac/Maccum_sig_in_xor<11>
+                                                       pm/u_dac/sig_in_9
+    -------------------------------------------------  ---------------------------
+    Total                                      1.695ns (1.364ns logic, 0.331ns route)
+                                                       (80.5% logic, 19.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.410ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/O_AUDIO_5 (FF)
+  Destination:          pm/u_dac/sig_in_9 (FF)
+  Requirement:          1.667ns
+  Data Path Delay:      1.601ns (Levels of Logic = 2)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.704ns (1.721 - 2.425)
+  Source Clock:         pm/clk rising at 458.333ns
+  Destination Clock:    pm/clk_ref rising at 460.000ns
+  Clock Uncertainty:    0.772ns
+
+  Clock Uncertainty:          0.772ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/O_AUDIO_5 to pm/u_dac/sig_in_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y36.CMUX     Tshcko                0.518   pm/u_audio/O_AUDIO<4>
+                                                       pm/u_audio/O_AUDIO_5
+    SLICE_X2Y37.B6       net (fanout=1)        0.325   pm/u_audio/O_AUDIO<5>
+    SLICE_X2Y37.COUT     Topcyb                0.448   pm/u_dac/sig_in<7>
+                                                       pm/u_dac/Maccum_sig_in_lut<5>
+                                                       pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CIN      net (fanout=1)        0.003   pm/u_dac/Maccum_sig_in_cy<7>
+    SLICE_X2Y38.CLK      Tcinck                0.307   pm/u_dac/sig_in<11>
+                                                       pm/u_dac/Maccum_sig_in_xor<11>
+                                                       pm/u_dac/sig_in_9
+    -------------------------------------------------  ---------------------------
+    Total                                      1.601ns (1.273ns logic, 0.328ns route)
+                                                       (79.5% logic, 20.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PERIOD analysis for net "pm/u_clocks/clk_dcm_op_0" derived from
+ NET "pm/u_clocks/clk_ref_ibuf" PERIOD = 20 ns HIGH 50%;
+ duty cycle corrected to 20 nS  HIGH 10 nS 
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/u_dac/sig_in_3 (SLICE_X2Y36.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.439ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               pm/u_dac/sig_in_2 (FF)
+  Destination:          pm/u_dac/sig_in_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.439ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         pm/clk_ref rising at 20.000ns
+  Destination Clock:    pm/clk_ref rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: pm/u_dac/sig_in_2 to pm/u_dac/sig_in_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y36.CQ       Tcko                  0.200   pm/u_dac/sig_in<3>
+                                                       pm/u_dac/sig_in_2
+    SLICE_X2Y36.CX       net (fanout=2)        0.097   pm/u_dac/sig_in<2>
+    SLICE_X2Y36.CLK      Tckdi       (-Th)    -0.142   pm/u_dac/sig_in<3>
+                                                       pm/u_dac/Maccum_sig_in_cy<3>
+                                                       pm/u_dac/sig_in_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.439ns (0.342ns logic, 0.097ns route)
+                                                       (77.9% logic, 22.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/u_dac/sig_in_7 (SLICE_X2Y37.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.439ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               pm/u_dac/sig_in_6 (FF)
+  Destination:          pm/u_dac/sig_in_7 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.439ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         pm/clk_ref rising at 20.000ns
+  Destination Clock:    pm/clk_ref rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: pm/u_dac/sig_in_6 to pm/u_dac/sig_in_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y37.CQ       Tcko                  0.200   pm/u_dac/sig_in<7>
+                                                       pm/u_dac/sig_in_6
+    SLICE_X2Y37.CX       net (fanout=2)        0.097   pm/u_dac/sig_in<6>
+    SLICE_X2Y37.CLK      Tckdi       (-Th)    -0.142   pm/u_dac/sig_in<7>
+                                                       pm/u_dac/Maccum_sig_in_cy<7>
+                                                       pm/u_dac/sig_in_7
+    -------------------------------------------------  ---------------------------
+    Total                                      0.439ns (0.342ns logic, 0.097ns route)
+                                                       (77.9% logic, 22.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/u_dac/sig_in_11 (SLICE_X2Y38.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.439ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               pm/u_dac/sig_in_10 (FF)
+  Destination:          pm/u_dac/sig_in_11 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.439ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         pm/clk_ref rising at 20.000ns
+  Destination Clock:    pm/clk_ref rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: pm/u_dac/sig_in_10 to pm/u_dac/sig_in_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y38.CQ       Tcko                  0.200   pm/u_dac/sig_in<11>
+                                                       pm/u_dac/sig_in_10
+    SLICE_X2Y38.CX       net (fanout=2)        0.097   pm/u_dac/sig_in<10>
+    SLICE_X2Y38.CLK      Tckdi       (-Th)    -0.142   pm/u_dac/sig_in<11>
+                                                       pm/u_dac/Maccum_sig_in_xor<11>
+                                                       pm/u_dac/sig_in_11
+    -------------------------------------------------  ---------------------------
+    Total                                      0.439ns (0.342ns logic, 0.097ns route)
+                                                       (77.9% logic, 22.1% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "pm/u_clocks/clk_dcm_op_0" derived from
+ NET "pm/u_clocks/clk_ref_ibuf" PERIOD = 20 ns HIGH 50%;
+ duty cycle corrected to 20 nS  HIGH 10 nS 
+
+--------------------------------------------------------------------------------
+Slack: 16.000ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 4.000ns (250.000MHz) (Tdcmper_CLKOUT)
+  Physical resource: pm/u_clocks/dcm_inst/CLK0
+  Logical resource: pm/u_clocks/dcm_inst/CLK0
+  Location pin: DCM_X0Y1.CLK0
+  Clock network: pm/u_clocks/clk_dcm_op_0
+--------------------------------------------------------------------------------
+Slack: 17.334ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: pm/u_clocks/BUFG0/I0
+  Logical resource: pm/u_clocks/BUFG0/I0
+  Location pin: BUFGMUX_X2Y3.I0
+  Clock network: pm/u_clocks/clk_dcm_op_0
+--------------------------------------------------------------------------------
+Slack: 18.948ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.052ns (950.570MHz) (Tbufper_I)
+  Physical resource: SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1/I
+  Logical resource: SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1/I
+  Location pin: BUFIO2FB_X3Y7.I
+  Clock network: pm/clk_ref
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net "pm/u_clocks/clk_dcm_op_dv" derived 
+from  NET "pm/u_clocks/clk_ref_ibuf" PERIOD = 20 ns HIGH 50%;  multiplied by 
+2.08 to 41.667 nS and duty cycle corrected to HIGH 20.833 nS  
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 4429272 paths analyzed, 8351 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  19.164ns.
+--------------------------------------------------------------------------------
+
+Paths for end point pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/DP (SLICE_X16Y55.DX), 41902 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     22.502ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/u_cpu/u0/IR_6_1 (FF)
+  Destination:          pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/DP (RAM)
+  Requirement:          41.666ns
+  Data Path Delay:      18.537ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.075ns (0.651 - 0.726)
+  Source Clock:         pm/clk rising at 0.000ns
+  Destination Clock:    pm/clk rising at 41.666ns
+  Clock Uncertainty:    0.552ns
+
+  Clock Uncertainty:          0.552ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/u_cpu/u0/IR_6_1 to pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/DP
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y49.AQ       Tcko                  0.430   pm/u_audio/u_cpu/u0/IR_6_3
+                                                       pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X6Y47.C1       net (fanout=3)        1.224   pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X6Y47.C        Tilo                  0.235   pm/u_audio/u_cpu/u0/IR_2_3
+                                                       pm/u_audio/u_cpu/u0/mcode/_n10304<7>11_1
+    SLICE_X9Y48.A3       net (fanout=1)        0.948   pm/u_audio/u_cpu/u0/mcode/_n10304<7>11
+    SLICE_X9Y48.A        Tilo                  0.259   pm/u_audio/u_cpu/u0/IR_3_2
+                                                       pm/u_audio/u_cpu/u0/mcode/Mmux_Set_BusB_To25111111
+    SLICE_X6Y47.B2       net (fanout=4)        1.300   pm/u_audio/u_cpu/u0/mcode/Mmux_Set_BusB_To2511111
+    SLICE_X6Y47.B        Tilo                  0.235   pm/u_audio/u_cpu/u0/IR_2_3
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691_SW0
+    SLICE_X7Y47.C6       net (fanout=1)        1.165   N547
+    SLICE_X7Y47.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691
+    SLICE_X7Y47.D5       net (fanout=8)        0.259   pm/u_audio/u_cpu/u0/mcode/_n2769_mmx_out
+    SLICE_X7Y47.D        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/Mmux_IncDec_166
+    SLICE_X12Y45.CX      net (fanout=8)        1.345   pm/u_audio/u_cpu/u0/IncDec_16<2>
+    SLICE_X12Y45.CMUX    Tcxc                  0.182   pm/u_audio/u_cpu/u0/Mmux_RegAddrA21
+                                                       pm/u_audio/u_cpu/u0/TState[2]_PWR_24_o_AND_107_o_SW3
+    SLICE_X9Y48.C1       net (fanout=5)        1.166   N405
+    SLICE_X9Y48.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IR_3_2
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegAddrA21
+    SLICE_X16Y55.D3      net (fanout=10)       1.838   pm/u_audio/u_cpu/u0/RegAddrA<1>
+    SLICE_X16Y55.DMUX    Tilo                  0.326   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    SLICE_X8Y42.C2       net (fanout=3)        2.103   pm/u_audio/u_cpu/u0/RegBusA<14>
+    SLICE_X8Y42.CMUX     Topcc                 0.495   pm/u_audio/u_cpu/u0/ID16<15>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_lut<14>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_xor<15>
+    SLICE_X16Y54.B1      net (fanout=2)        2.700   pm/u_audio/u_cpu/u0/ID16<14>
+    SLICE_X16Y54.B       Tilo                  0.254   pm/u_audio/u_ym2149_3C/addr<3>
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegDIH7
+    SLICE_X16Y55.DX      net (fanout=3)        1.234   pm/u_audio/u_cpu/u0/RegDIH<6>
+    SLICE_X16Y55.CLK     Tds                   0.062   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/DP
+    -------------------------------------------------  ---------------------------
+    Total                                     18.537ns (3.255ns logic, 15.282ns route)
+                                                       (17.6% logic, 82.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     22.790ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/u_cpu/u0/IR_6_1 (FF)
+  Destination:          pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/DP (RAM)
+  Requirement:          41.666ns
+  Data Path Delay:      18.249ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.075ns (0.651 - 0.726)
+  Source Clock:         pm/clk rising at 0.000ns
+  Destination Clock:    pm/clk rising at 41.666ns
+  Clock Uncertainty:    0.552ns
+
+  Clock Uncertainty:          0.552ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/u_cpu/u0/IR_6_1 to pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/DP
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y49.AQ       Tcko                  0.430   pm/u_audio/u_cpu/u0/IR_6_3
+                                                       pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X3Y48.B3       net (fanout=3)        1.204   pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X3Y48.B        Tilo                  0.259   pm/u_audio/u_cpu/u0/mcode/_n3454<7>4
+                                                       pm/u_audio/u_cpu/u0/mcode/_n3454<7>41
+    SLICE_X7Y47.A3       net (fanout=7)        1.390   pm/u_audio/u_cpu/u0/mcode/_n3454<7>4
+    SLICE_X7Y47.A        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n1380<7>1_1
+    SLICE_X7Y47.B2       net (fanout=1)        1.380   pm/u_audio/u_cpu/u0/mcode/_n1380<7>1
+    SLICE_X7Y47.B        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n491011
+    SLICE_X7Y47.C4       net (fanout=2)        0.327   pm/u_audio/u_cpu/u0/mcode/_n49101
+    SLICE_X7Y47.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691
+    SLICE_X7Y47.D5       net (fanout=8)        0.259   pm/u_audio/u_cpu/u0/mcode/_n2769_mmx_out
+    SLICE_X7Y47.D        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/Mmux_IncDec_166
+    SLICE_X12Y45.CX      net (fanout=8)        1.345   pm/u_audio/u_cpu/u0/IncDec_16<2>
+    SLICE_X12Y45.CMUX    Tcxc                  0.182   pm/u_audio/u_cpu/u0/Mmux_RegAddrA21
+                                                       pm/u_audio/u_cpu/u0/TState[2]_PWR_24_o_AND_107_o_SW3
+    SLICE_X9Y48.C1       net (fanout=5)        1.166   N405
+    SLICE_X9Y48.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IR_3_2
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegAddrA21
+    SLICE_X16Y55.D3      net (fanout=10)       1.838   pm/u_audio/u_cpu/u0/RegAddrA<1>
+    SLICE_X16Y55.DMUX    Tilo                  0.326   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    SLICE_X8Y42.C2       net (fanout=3)        2.103   pm/u_audio/u_cpu/u0/RegBusA<14>
+    SLICE_X8Y42.CMUX     Topcc                 0.495   pm/u_audio/u_cpu/u0/ID16<15>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_lut<14>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_xor<15>
+    SLICE_X16Y54.B1      net (fanout=2)        2.700   pm/u_audio/u_cpu/u0/ID16<14>
+    SLICE_X16Y54.B       Tilo                  0.254   pm/u_audio/u_ym2149_3C/addr<3>
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegDIH7
+    SLICE_X16Y55.DX      net (fanout=3)        1.234   pm/u_audio/u_cpu/u0/RegDIH<6>
+    SLICE_X16Y55.CLK     Tds                   0.062   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/DP
+    -------------------------------------------------  ---------------------------
+    Total                                     18.249ns (3.303ns logic, 14.946ns route)
+                                                       (18.1% logic, 81.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     22.933ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/u_cpu/u0/IR_6_1 (FF)
+  Destination:          pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/DP (RAM)
+  Requirement:          41.666ns
+  Data Path Delay:      18.106ns (Levels of Logic = 9)
+  Clock Path Skew:      -0.075ns (0.651 - 0.726)
+  Source Clock:         pm/clk rising at 0.000ns
+  Destination Clock:    pm/clk rising at 41.666ns
+  Clock Uncertainty:    0.552ns
+
+  Clock Uncertainty:          0.552ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/u_cpu/u0/IR_6_1 to pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/DP
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y49.AQ       Tcko                  0.430   pm/u_audio/u_cpu/u0/IR_6_3
+                                                       pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X6Y47.C1       net (fanout=3)        1.224   pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X6Y47.C        Tilo                  0.235   pm/u_audio/u_cpu/u0/IR_2_3
+                                                       pm/u_audio/u_cpu/u0/mcode/_n10304<7>11_1
+    SLICE_X9Y48.A3       net (fanout=1)        0.948   pm/u_audio/u_cpu/u0/mcode/_n10304<7>11
+    SLICE_X9Y48.A        Tilo                  0.259   pm/u_audio/u_cpu/u0/IR_3_2
+                                                       pm/u_audio/u_cpu/u0/mcode/Mmux_Set_BusB_To25111111
+    SLICE_X6Y47.B2       net (fanout=4)        1.300   pm/u_audio/u_cpu/u0/mcode/Mmux_Set_BusB_To2511111
+    SLICE_X6Y47.B        Tilo                  0.235   pm/u_audio/u_cpu/u0/IR_2_3
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691_SW0
+    SLICE_X7Y47.C6       net (fanout=1)        1.165   N547
+    SLICE_X7Y47.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691
+    SLICE_X8Y44.A1       net (fanout=8)        1.088   pm/u_audio/u_cpu/u0/mcode/_n2769_mmx_out
+    SLICE_X8Y44.A        Tilo                  0.254   pm/u_audio/u_cpu/u0/RegAddrA<2>
+                                                       pm/u_audio/u_cpu/u0/TState[2]_GND_58_o_AND_104_o1
+    SLICE_X6Y43.CX       net (fanout=12)       0.896   pm/u_audio/u_cpu/u0/TState[2]_GND_58_o_AND_104_o
+    SLICE_X6Y43.CMUX     Tcxc                  0.192   N565
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegAddrA11
+    SLICE_X16Y55.D2      net (fanout=11)       2.447   pm/u_audio/u_cpu/u0/RegAddrA<0>
+    SLICE_X16Y55.DMUX    Tilo                  0.326   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    SLICE_X8Y42.C2       net (fanout=3)        2.103   pm/u_audio/u_cpu/u0/RegBusA<14>
+    SLICE_X8Y42.CMUX     Topcc                 0.495   pm/u_audio/u_cpu/u0/ID16<15>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_lut<14>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_xor<15>
+    SLICE_X16Y54.B1      net (fanout=2)        2.700   pm/u_audio/u_cpu/u0/ID16<14>
+    SLICE_X16Y54.B       Tilo                  0.254   pm/u_audio/u_ym2149_3C/addr<3>
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegDIH7
+    SLICE_X16Y55.DX      net (fanout=3)        1.234   pm/u_audio/u_cpu/u0/RegDIH<6>
+    SLICE_X16Y55.CLK     Tds                   0.062   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/DP
+    -------------------------------------------------  ---------------------------
+    Total                                     18.106ns (3.001ns logic, 15.105ns route)
+                                                       (16.6% logic, 83.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP (SLICE_X16Y55.DX), 41902 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     22.618ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/u_cpu/u0/IR_6_1 (FF)
+  Destination:          pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP (RAM)
+  Requirement:          41.666ns
+  Data Path Delay:      18.421ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.075ns (0.651 - 0.726)
+  Source Clock:         pm/clk rising at 0.000ns
+  Destination Clock:    pm/clk rising at 41.666ns
+  Clock Uncertainty:    0.552ns
+
+  Clock Uncertainty:          0.552ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/u_cpu/u0/IR_6_1 to pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y49.AQ       Tcko                  0.430   pm/u_audio/u_cpu/u0/IR_6_3
+                                                       pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X6Y47.C1       net (fanout=3)        1.224   pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X6Y47.C        Tilo                  0.235   pm/u_audio/u_cpu/u0/IR_2_3
+                                                       pm/u_audio/u_cpu/u0/mcode/_n10304<7>11_1
+    SLICE_X9Y48.A3       net (fanout=1)        0.948   pm/u_audio/u_cpu/u0/mcode/_n10304<7>11
+    SLICE_X9Y48.A        Tilo                  0.259   pm/u_audio/u_cpu/u0/IR_3_2
+                                                       pm/u_audio/u_cpu/u0/mcode/Mmux_Set_BusB_To25111111
+    SLICE_X6Y47.B2       net (fanout=4)        1.300   pm/u_audio/u_cpu/u0/mcode/Mmux_Set_BusB_To2511111
+    SLICE_X6Y47.B        Tilo                  0.235   pm/u_audio/u_cpu/u0/IR_2_3
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691_SW0
+    SLICE_X7Y47.C6       net (fanout=1)        1.165   N547
+    SLICE_X7Y47.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691
+    SLICE_X7Y47.D5       net (fanout=8)        0.259   pm/u_audio/u_cpu/u0/mcode/_n2769_mmx_out
+    SLICE_X7Y47.D        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/Mmux_IncDec_166
+    SLICE_X12Y45.CX      net (fanout=8)        1.345   pm/u_audio/u_cpu/u0/IncDec_16<2>
+    SLICE_X12Y45.CMUX    Tcxc                  0.182   pm/u_audio/u_cpu/u0/Mmux_RegAddrA21
+                                                       pm/u_audio/u_cpu/u0/TState[2]_PWR_24_o_AND_107_o_SW3
+    SLICE_X9Y48.C1       net (fanout=5)        1.166   N405
+    SLICE_X9Y48.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IR_3_2
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegAddrA21
+    SLICE_X16Y55.D3      net (fanout=10)       1.838   pm/u_audio/u_cpu/u0/RegAddrA<1>
+    SLICE_X16Y55.DMUX    Tilo                  0.326   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    SLICE_X8Y42.C2       net (fanout=3)        2.103   pm/u_audio/u_cpu/u0/RegBusA<14>
+    SLICE_X8Y42.CMUX     Topcc                 0.495   pm/u_audio/u_cpu/u0/ID16<15>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_lut<14>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_xor<15>
+    SLICE_X16Y54.B1      net (fanout=2)        2.700   pm/u_audio/u_cpu/u0/ID16<14>
+    SLICE_X16Y54.B       Tilo                  0.254   pm/u_audio/u_ym2149_3C/addr<3>
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegDIH7
+    SLICE_X16Y55.DX      net (fanout=3)        1.234   pm/u_audio/u_cpu/u0/RegDIH<6>
+    SLICE_X16Y55.CLK     Tds                  -0.054   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    -------------------------------------------------  ---------------------------
+    Total                                     18.421ns (3.139ns logic, 15.282ns route)
+                                                       (17.0% logic, 83.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     22.906ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/u_cpu/u0/IR_6_1 (FF)
+  Destination:          pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP (RAM)
+  Requirement:          41.666ns
+  Data Path Delay:      18.133ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.075ns (0.651 - 0.726)
+  Source Clock:         pm/clk rising at 0.000ns
+  Destination Clock:    pm/clk rising at 41.666ns
+  Clock Uncertainty:    0.552ns
+
+  Clock Uncertainty:          0.552ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/u_cpu/u0/IR_6_1 to pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y49.AQ       Tcko                  0.430   pm/u_audio/u_cpu/u0/IR_6_3
+                                                       pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X3Y48.B3       net (fanout=3)        1.204   pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X3Y48.B        Tilo                  0.259   pm/u_audio/u_cpu/u0/mcode/_n3454<7>4
+                                                       pm/u_audio/u_cpu/u0/mcode/_n3454<7>41
+    SLICE_X7Y47.A3       net (fanout=7)        1.390   pm/u_audio/u_cpu/u0/mcode/_n3454<7>4
+    SLICE_X7Y47.A        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n1380<7>1_1
+    SLICE_X7Y47.B2       net (fanout=1)        1.380   pm/u_audio/u_cpu/u0/mcode/_n1380<7>1
+    SLICE_X7Y47.B        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n491011
+    SLICE_X7Y47.C4       net (fanout=2)        0.327   pm/u_audio/u_cpu/u0/mcode/_n49101
+    SLICE_X7Y47.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691
+    SLICE_X7Y47.D5       net (fanout=8)        0.259   pm/u_audio/u_cpu/u0/mcode/_n2769_mmx_out
+    SLICE_X7Y47.D        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/Mmux_IncDec_166
+    SLICE_X12Y45.CX      net (fanout=8)        1.345   pm/u_audio/u_cpu/u0/IncDec_16<2>
+    SLICE_X12Y45.CMUX    Tcxc                  0.182   pm/u_audio/u_cpu/u0/Mmux_RegAddrA21
+                                                       pm/u_audio/u_cpu/u0/TState[2]_PWR_24_o_AND_107_o_SW3
+    SLICE_X9Y48.C1       net (fanout=5)        1.166   N405
+    SLICE_X9Y48.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IR_3_2
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegAddrA21
+    SLICE_X16Y55.D3      net (fanout=10)       1.838   pm/u_audio/u_cpu/u0/RegAddrA<1>
+    SLICE_X16Y55.DMUX    Tilo                  0.326   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    SLICE_X8Y42.C2       net (fanout=3)        2.103   pm/u_audio/u_cpu/u0/RegBusA<14>
+    SLICE_X8Y42.CMUX     Topcc                 0.495   pm/u_audio/u_cpu/u0/ID16<15>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_lut<14>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_xor<15>
+    SLICE_X16Y54.B1      net (fanout=2)        2.700   pm/u_audio/u_cpu/u0/ID16<14>
+    SLICE_X16Y54.B       Tilo                  0.254   pm/u_audio/u_ym2149_3C/addr<3>
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegDIH7
+    SLICE_X16Y55.DX      net (fanout=3)        1.234   pm/u_audio/u_cpu/u0/RegDIH<6>
+    SLICE_X16Y55.CLK     Tds                  -0.054   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    -------------------------------------------------  ---------------------------
+    Total                                     18.133ns (3.187ns logic, 14.946ns route)
+                                                       (17.6% logic, 82.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     23.049ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/u_cpu/u0/IR_6_1 (FF)
+  Destination:          pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP (RAM)
+  Requirement:          41.666ns
+  Data Path Delay:      17.990ns (Levels of Logic = 9)
+  Clock Path Skew:      -0.075ns (0.651 - 0.726)
+  Source Clock:         pm/clk rising at 0.000ns
+  Destination Clock:    pm/clk rising at 41.666ns
+  Clock Uncertainty:    0.552ns
+
+  Clock Uncertainty:          0.552ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/u_cpu/u0/IR_6_1 to pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y49.AQ       Tcko                  0.430   pm/u_audio/u_cpu/u0/IR_6_3
+                                                       pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X6Y47.C1       net (fanout=3)        1.224   pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X6Y47.C        Tilo                  0.235   pm/u_audio/u_cpu/u0/IR_2_3
+                                                       pm/u_audio/u_cpu/u0/mcode/_n10304<7>11_1
+    SLICE_X9Y48.A3       net (fanout=1)        0.948   pm/u_audio/u_cpu/u0/mcode/_n10304<7>11
+    SLICE_X9Y48.A        Tilo                  0.259   pm/u_audio/u_cpu/u0/IR_3_2
+                                                       pm/u_audio/u_cpu/u0/mcode/Mmux_Set_BusB_To25111111
+    SLICE_X6Y47.B2       net (fanout=4)        1.300   pm/u_audio/u_cpu/u0/mcode/Mmux_Set_BusB_To2511111
+    SLICE_X6Y47.B        Tilo                  0.235   pm/u_audio/u_cpu/u0/IR_2_3
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691_SW0
+    SLICE_X7Y47.C6       net (fanout=1)        1.165   N547
+    SLICE_X7Y47.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691
+    SLICE_X8Y44.A1       net (fanout=8)        1.088   pm/u_audio/u_cpu/u0/mcode/_n2769_mmx_out
+    SLICE_X8Y44.A        Tilo                  0.254   pm/u_audio/u_cpu/u0/RegAddrA<2>
+                                                       pm/u_audio/u_cpu/u0/TState[2]_GND_58_o_AND_104_o1
+    SLICE_X6Y43.CX       net (fanout=12)       0.896   pm/u_audio/u_cpu/u0/TState[2]_GND_58_o_AND_104_o
+    SLICE_X6Y43.CMUX     Tcxc                  0.192   N565
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegAddrA11
+    SLICE_X16Y55.D2      net (fanout=11)       2.447   pm/u_audio/u_cpu/u0/RegAddrA<0>
+    SLICE_X16Y55.DMUX    Tilo                  0.326   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    SLICE_X8Y42.C2       net (fanout=3)        2.103   pm/u_audio/u_cpu/u0/RegBusA<14>
+    SLICE_X8Y42.CMUX     Topcc                 0.495   pm/u_audio/u_cpu/u0/ID16<15>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_lut<14>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_xor<15>
+    SLICE_X16Y54.B1      net (fanout=2)        2.700   pm/u_audio/u_cpu/u0/ID16<14>
+    SLICE_X16Y54.B       Tilo                  0.254   pm/u_audio/u_ym2149_3C/addr<3>
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegDIH7
+    SLICE_X16Y55.DX      net (fanout=3)        1.234   pm/u_audio/u_cpu/u0/RegDIH<6>
+    SLICE_X16Y55.CLK     Tds                  -0.054   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    -------------------------------------------------  ---------------------------
+    Total                                     17.990ns (2.885ns logic, 15.105ns route)
+                                                       (16.0% logic, 84.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg2H/SP (SLICE_X12Y53.DI), 41902 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     22.948ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/u_cpu/u0/IR_6_1 (FF)
+  Destination:          pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg2H/SP (RAM)
+  Requirement:          41.666ns
+  Data Path Delay:      18.095ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.071ns (0.655 - 0.726)
+  Source Clock:         pm/clk rising at 0.000ns
+  Destination Clock:    pm/clk rising at 41.666ns
+  Clock Uncertainty:    0.552ns
+
+  Clock Uncertainty:          0.552ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/u_cpu/u0/IR_6_1 to pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg2H/SP
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y49.AQ       Tcko                  0.430   pm/u_audio/u_cpu/u0/IR_6_3
+                                                       pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X6Y47.C1       net (fanout=3)        1.224   pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X6Y47.C        Tilo                  0.235   pm/u_audio/u_cpu/u0/IR_2_3
+                                                       pm/u_audio/u_cpu/u0/mcode/_n10304<7>11_1
+    SLICE_X9Y48.A3       net (fanout=1)        0.948   pm/u_audio/u_cpu/u0/mcode/_n10304<7>11
+    SLICE_X9Y48.A        Tilo                  0.259   pm/u_audio/u_cpu/u0/IR_3_2
+                                                       pm/u_audio/u_cpu/u0/mcode/Mmux_Set_BusB_To25111111
+    SLICE_X6Y47.B2       net (fanout=4)        1.300   pm/u_audio/u_cpu/u0/mcode/Mmux_Set_BusB_To2511111
+    SLICE_X6Y47.B        Tilo                  0.235   pm/u_audio/u_cpu/u0/IR_2_3
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691_SW0
+    SLICE_X7Y47.C6       net (fanout=1)        1.165   N547
+    SLICE_X7Y47.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691
+    SLICE_X7Y47.D5       net (fanout=8)        0.259   pm/u_audio/u_cpu/u0/mcode/_n2769_mmx_out
+    SLICE_X7Y47.D        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/Mmux_IncDec_166
+    SLICE_X12Y45.CX      net (fanout=8)        1.345   pm/u_audio/u_cpu/u0/IncDec_16<2>
+    SLICE_X12Y45.CMUX    Tcxc                  0.182   pm/u_audio/u_cpu/u0/Mmux_RegAddrA21
+                                                       pm/u_audio/u_cpu/u0/TState[2]_PWR_24_o_AND_107_o_SW3
+    SLICE_X9Y48.C1       net (fanout=5)        1.166   N405
+    SLICE_X9Y48.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IR_3_2
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegAddrA21
+    SLICE_X16Y55.D3      net (fanout=10)       1.838   pm/u_audio/u_cpu/u0/RegAddrA<1>
+    SLICE_X16Y55.DMUX    Tilo                  0.326   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    SLICE_X8Y42.C2       net (fanout=3)        2.103   pm/u_audio/u_cpu/u0/RegBusA<14>
+    SLICE_X8Y42.CMUX     Topcc                 0.495   pm/u_audio/u_cpu/u0/ID16<15>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_lut<14>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_xor<15>
+    SLICE_X16Y54.B1      net (fanout=2)        2.700   pm/u_audio/u_cpu/u0/ID16<14>
+    SLICE_X16Y54.B       Tilo                  0.254   pm/u_audio/u_ym2149_3C/addr<3>
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegDIH7
+    SLICE_X12Y53.DI      net (fanout=3)        0.781   pm/u_audio/u_cpu/u0/RegDIH<6>
+    SLICE_X12Y53.CLK     Tds                   0.073   pm/u_audio/u_cpu/u0/RegBusA_r<15>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg2H/SP
+    -------------------------------------------------  ---------------------------
+    Total                                     18.095ns (3.266ns logic, 14.829ns route)
+                                                       (18.0% logic, 82.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     23.236ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/u_cpu/u0/IR_6_1 (FF)
+  Destination:          pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg2H/SP (RAM)
+  Requirement:          41.666ns
+  Data Path Delay:      17.807ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.071ns (0.655 - 0.726)
+  Source Clock:         pm/clk rising at 0.000ns
+  Destination Clock:    pm/clk rising at 41.666ns
+  Clock Uncertainty:    0.552ns
+
+  Clock Uncertainty:          0.552ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/u_cpu/u0/IR_6_1 to pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg2H/SP
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y49.AQ       Tcko                  0.430   pm/u_audio/u_cpu/u0/IR_6_3
+                                                       pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X3Y48.B3       net (fanout=3)        1.204   pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X3Y48.B        Tilo                  0.259   pm/u_audio/u_cpu/u0/mcode/_n3454<7>4
+                                                       pm/u_audio/u_cpu/u0/mcode/_n3454<7>41
+    SLICE_X7Y47.A3       net (fanout=7)        1.390   pm/u_audio/u_cpu/u0/mcode/_n3454<7>4
+    SLICE_X7Y47.A        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n1380<7>1_1
+    SLICE_X7Y47.B2       net (fanout=1)        1.380   pm/u_audio/u_cpu/u0/mcode/_n1380<7>1
+    SLICE_X7Y47.B        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n491011
+    SLICE_X7Y47.C4       net (fanout=2)        0.327   pm/u_audio/u_cpu/u0/mcode/_n49101
+    SLICE_X7Y47.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691
+    SLICE_X7Y47.D5       net (fanout=8)        0.259   pm/u_audio/u_cpu/u0/mcode/_n2769_mmx_out
+    SLICE_X7Y47.D        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/Mmux_IncDec_166
+    SLICE_X12Y45.CX      net (fanout=8)        1.345   pm/u_audio/u_cpu/u0/IncDec_16<2>
+    SLICE_X12Y45.CMUX    Tcxc                  0.182   pm/u_audio/u_cpu/u0/Mmux_RegAddrA21
+                                                       pm/u_audio/u_cpu/u0/TState[2]_PWR_24_o_AND_107_o_SW3
+    SLICE_X9Y48.C1       net (fanout=5)        1.166   N405
+    SLICE_X9Y48.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IR_3_2
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegAddrA21
+    SLICE_X16Y55.D3      net (fanout=10)       1.838   pm/u_audio/u_cpu/u0/RegAddrA<1>
+    SLICE_X16Y55.DMUX    Tilo                  0.326   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    SLICE_X8Y42.C2       net (fanout=3)        2.103   pm/u_audio/u_cpu/u0/RegBusA<14>
+    SLICE_X8Y42.CMUX     Topcc                 0.495   pm/u_audio/u_cpu/u0/ID16<15>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_lut<14>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_xor<15>
+    SLICE_X16Y54.B1      net (fanout=2)        2.700   pm/u_audio/u_cpu/u0/ID16<14>
+    SLICE_X16Y54.B       Tilo                  0.254   pm/u_audio/u_ym2149_3C/addr<3>
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegDIH7
+    SLICE_X12Y53.DI      net (fanout=3)        0.781   pm/u_audio/u_cpu/u0/RegDIH<6>
+    SLICE_X12Y53.CLK     Tds                   0.073   pm/u_audio/u_cpu/u0/RegBusA_r<15>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg2H/SP
+    -------------------------------------------------  ---------------------------
+    Total                                     17.807ns (3.314ns logic, 14.493ns route)
+                                                       (18.6% logic, 81.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     23.379ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pm/u_audio/u_cpu/u0/IR_6_1 (FF)
+  Destination:          pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg2H/SP (RAM)
+  Requirement:          41.666ns
+  Data Path Delay:      17.664ns (Levels of Logic = 9)
+  Clock Path Skew:      -0.071ns (0.655 - 0.726)
+  Source Clock:         pm/clk rising at 0.000ns
+  Destination Clock:    pm/clk rising at 41.666ns
+  Clock Uncertainty:    0.552ns
+
+  Clock Uncertainty:          0.552ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pm/u_audio/u_cpu/u0/IR_6_1 to pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg2H/SP
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y49.AQ       Tcko                  0.430   pm/u_audio/u_cpu/u0/IR_6_3
+                                                       pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X6Y47.C1       net (fanout=3)        1.224   pm/u_audio/u_cpu/u0/IR_6_1
+    SLICE_X6Y47.C        Tilo                  0.235   pm/u_audio/u_cpu/u0/IR_2_3
+                                                       pm/u_audio/u_cpu/u0/mcode/_n10304<7>11_1
+    SLICE_X9Y48.A3       net (fanout=1)        0.948   pm/u_audio/u_cpu/u0/mcode/_n10304<7>11
+    SLICE_X9Y48.A        Tilo                  0.259   pm/u_audio/u_cpu/u0/IR_3_2
+                                                       pm/u_audio/u_cpu/u0/mcode/Mmux_Set_BusB_To25111111
+    SLICE_X6Y47.B2       net (fanout=4)        1.300   pm/u_audio/u_cpu/u0/mcode/Mmux_Set_BusB_To2511111
+    SLICE_X6Y47.B        Tilo                  0.235   pm/u_audio/u_cpu/u0/IR_2_3
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691_SW0
+    SLICE_X7Y47.C6       net (fanout=1)        1.165   N547
+    SLICE_X7Y47.C        Tilo                  0.259   pm/u_audio/u_cpu/u0/IncDec_16<2>
+                                                       pm/u_audio/u_cpu/u0/mcode/_n27691
+    SLICE_X8Y44.A1       net (fanout=8)        1.088   pm/u_audio/u_cpu/u0/mcode/_n2769_mmx_out
+    SLICE_X8Y44.A        Tilo                  0.254   pm/u_audio/u_cpu/u0/RegAddrA<2>
+                                                       pm/u_audio/u_cpu/u0/TState[2]_GND_58_o_AND_104_o1
+    SLICE_X6Y43.CX       net (fanout=12)       0.896   pm/u_audio/u_cpu/u0/TState[2]_GND_58_o_AND_104_o
+    SLICE_X6Y43.CMUX     Tcxc                  0.192   N565
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegAddrA11
+    SLICE_X16Y55.D2      net (fanout=11)       2.447   pm/u_audio/u_cpu/u0/RegAddrA<0>
+    SLICE_X16Y55.DMUX    Tilo                  0.326   pm/u_audio/u_cpu/u0/RegBusA_r<14>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg1H/SP
+    SLICE_X8Y42.C2       net (fanout=3)        2.103   pm/u_audio/u_cpu/u0/RegBusA<14>
+    SLICE_X8Y42.CMUX     Topcc                 0.495   pm/u_audio/u_cpu/u0/ID16<15>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_lut<14>
+                                                       pm/u_audio/u_cpu/u0/Maddsub_ID16_xor<15>
+    SLICE_X16Y54.B1      net (fanout=2)        2.700   pm/u_audio/u_cpu/u0/ID16<14>
+    SLICE_X16Y54.B       Tilo                  0.254   pm/u_audio/u_ym2149_3C/addr<3>
+                                                       pm/u_audio/u_cpu/u0/Mmux_RegDIH7
+    SLICE_X12Y53.DI      net (fanout=3)        0.781   pm/u_audio/u_cpu/u0/RegDIH<6>
+    SLICE_X12Y53.CLK     Tds                   0.073   pm/u_audio/u_cpu/u0/RegBusA_r<15>
+                                                       pm/u_audio/u_cpu/u0/Regs/bG1[6].Reg2H/SP
+    -------------------------------------------------  ---------------------------
+    Total                                     17.664ns (3.012ns logic, 14.652ns route)
+                                                       (17.1% logic, 82.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PERIOD analysis for net "pm/u_clocks/clk_dcm_op_dv" derived from
+ NET "pm/u_clocks/clk_ref_ibuf" PERIOD = 20 ns HIGH 50%;
+ multiplied by 2.08 to 41.667 nS and duty cycle corrected to HIGH 20.833 nS 
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/u_scan_doubler/u_ram (RAMB16_X1Y18.DIA0), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.300ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               pm/u_scramble/u_video/O_VIDEO_R_0 (FF)
+  Destination:          pm/u_scan_doubler/u_ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.303ns (Levels of Logic = 0)
+  Clock Path Skew:      0.003ns (0.070 - 0.067)
+  Source Clock:         pm/clk rising at 0.000ns
+  Destination Clock:    pm/clk rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: pm/u_scramble/u_video/O_VIDEO_R_0 to pm/u_scan_doubler/u_ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y37.AQ      Tcko                  0.198   pm/u_scramble/u_video/O_VIDEO_R<3>
+                                                       pm/u_scramble/u_video/O_VIDEO_R_0
+    RAMB16_X1Y18.DIA0    net (fanout=2)        0.158   pm/u_scramble/u_video/O_VIDEO_R<0>
+    RAMB16_X1Y18.CLKA    Trckd_DIA   (-Th)     0.053   pm/u_scan_doubler/u_ram
+                                                       pm/u_scan_doubler/u_ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.303ns (0.145ns logic, 0.158ns route)
+                                                       (47.9% logic, 52.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/u_scan_doubler/u_ram (RAMB16_X1Y18.DIA6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.306ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               pm/u_scramble/u_video/O_VIDEO_G_2 (FF)
+  Destination:          pm/u_scan_doubler/u_ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.304ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.002ns (0.070 - 0.072)
+  Source Clock:         pm/clk rising at 0.000ns
+  Destination Clock:    pm/clk rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: pm/u_scramble/u_video/O_VIDEO_G_2 to pm/u_scan_doubler/u_ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y35.BQ      Tcko                  0.200   pm/u_scramble/u_video/O_VIDEO_G<3>
+                                                       pm/u_scramble/u_video/O_VIDEO_G_2
+    RAMB16_X1Y18.DIA6    net (fanout=2)        0.157   pm/u_scramble/u_video/O_VIDEO_G<2>
+    RAMB16_X1Y18.CLKA    Trckd_DIA   (-Th)     0.053   pm/u_scan_doubler/u_ram
+                                                       pm/u_scan_doubler/u_ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.304ns (0.147ns logic, 0.157ns route)
+                                                       (48.4% logic, 51.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pm/u_scramble/u_video/u_sprite_ram (RAMB16_X1Y16.DIA1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.309ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               pm/u_scramble/u_video/sprite_ram_ip_1 (FF)
+  Destination:          pm/u_scramble/u_video/u_sprite_ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.310ns (Levels of Logic = 0)
+  Clock Path Skew:      0.001ns (0.077 - 0.076)
+  Source Clock:         pm/clk rising at 0.000ns
+  Destination Clock:    pm/clk rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: pm/u_scramble/u_video/sprite_ram_ip_1 to pm/u_scramble/u_video/u_sprite_ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y32.BQ      Tcko                  0.200   pm/u_scramble/u_video/sprite_ram_ip<3>
+                                                       pm/u_scramble/u_video/sprite_ram_ip_1
+    RAMB16_X1Y16.DIA1    net (fanout=1)        0.163   pm/u_scramble/u_video/sprite_ram_ip<1>
+    RAMB16_X1Y16.CLKA    Trckd_DIA   (-Th)     0.053   pm/u_scramble/u_video/u_sprite_ram
+                                                       pm/u_scramble/u_video/u_sprite_ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.310ns (0.147ns logic, 0.163ns route)
+                                                       (47.4% logic, 52.6% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "pm/u_clocks/clk_dcm_op_dv" derived from
+ NET "pm/u_clocks/clk_ref_ibuf" PERIOD = 20 ns HIGH 50%;
+ multiplied by 2.08 to 41.667 nS and duty cycle corrected to HIGH 20.833 nS 
+
+--------------------------------------------------------------------------------
+Slack: 38.096ns (period - min period limit)
+  Period: 41.666ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: pm/u_audio/u_rom_5e/rom0.inst/CLKA
+  Logical resource: pm/u_audio/u_rom_5e/rom0.inst/CLKA
+  Location pin: RAMB16_X0Y28.CLKA
+  Clock network: pm/clk
+--------------------------------------------------------------------------------
+Slack: 38.096ns (period - min period limit)
+  Period: 41.666ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: pm/u_scramble/u_video/obj_rom0/rom0.inst/CLKA
+  Logical resource: pm/u_scramble/u_video/obj_rom0/rom0.inst/CLKA
+  Location pin: RAMB16_X1Y14.CLKA
+  Clock network: pm/clk
+--------------------------------------------------------------------------------
+Slack: 38.096ns (period - min period limit)
+  Period: 41.666ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: pm/u_scramble/u_video/obj_rom1/rom0.inst/CLKA
+  Logical resource: pm/u_scramble/u_video/obj_rom1/rom0.inst/CLKA
+  Location pin: RAMB16_X1Y12.CLKA
+  Clock network: pm/clk
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for pm/u_clocks/clk_ref_ibuf
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|pm/u_clocks/clk_ref_ibuf       |     20.000ns|      8.000ns|     41.979ns|            0|           35|            0|      4429493|
+| pm/u_clocks/clk_dcm_op_0      |     20.000ns|     41.979ns|          N/A|           35|            0|          221|            0|
+| pm/u_clocks/clk_dcm_op_dv     |     41.667ns|     19.164ns|          N/A|            0|            0|      4429272|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+1 constraint not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |   19.164|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 35  Score: 46844  (Setup/Max: 46844, Hold: 0)
+
+Constraints cover 4429493 paths, 0 nets, and 20867 connections
+
+Design statistics:
+   Minimum period:  41.979ns{1}   (Maximum frequency:  23.821MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Jul 03 00:12:38 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 283 MB
+
+
+

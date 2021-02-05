@@ -1,0 +1,189 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon Jun 25 10:44:49 2018
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file ckong_top_control_sets_placed.rpt
+| Design       : ckong_top
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   116 |
+| Unused register locations in slices containing registers |   321 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           23 |
+|      4 |            7 |
+|      5 |           11 |
+|      6 |            1 |
+|      7 |            1 |
+|      8 |           27 |
+|      9 |            5 |
+|     10 |            2 |
+|     12 |           20 |
+|    16+ |           19 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             258 |          113 |
+| No           | No                    | Yes                    |              77 |           42 |
+| No           | Yes                   | No                     |              37 |           15 |
+| Yes          | No                    | No                     |             348 |          107 |
+| Yes          | No                    | Yes                    |             137 |           70 |
+| Yes          | Yes                   | No                     |              86 |           23 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------+----------------------------------------------+-----------------------------------------------+------------------+----------------+
+|                  Clock Signal                  |                 Enable Signal                |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++------------------------------------------------+----------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  JOY_CLK_OBUF                                  | joy2[0]                                      |                                               |                1 |              1 |
+|  delay_count_reg_BUFG[0]                       |                                              | pm/cpu_int_n_i_2_n_0                          |                1 |              1 |
+|  pm/ckong_sound/ym2149/env_inc_reg_LDC_i_1_n_0 |                                              | pm/ckong_sound/ym2149/env_inc_reg_LDC_i_2_n_0 |                1 |              1 |
+|  pm/ckong_sound/ym2149/env_inc_reg_LDC_i_2_n_0 |                                              | pm/ckong_sound/ym2149/env_inc_reg_LDC_i_1_n_0 |                1 |              1 |
+|  reg_reg[0][7]_i_2_n_0                         |                                              | pm/ckong_sound/ym2149/env_inc_reg_LDC_i_2_n_0 |                1 |              1 |
+|  JOY_CLK_OBUF                                  |                                              | joy_renew_i_1_n_0                             |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy1[0]                                      |                                               |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy1[1]                                      |                                               |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy1[2]                                      |                                               |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy1[3]                                      |                                               |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy1[4]                                      |                                               |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy1[8]                                      |                                               |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy1[9]                                      |                                               |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy1[11]                                     |                                               |                1 |              1 |
+|  reg_reg[0][7]_i_2_n_0                         |                                              | pm/ckong_sound/ym2149/env_inc_reg_LDC_i_1_n_0 |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy2[1]                                      |                                               |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy2[2]                                      |                                               |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy2[3]                                      |                                               |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy2[4]                                      |                                               |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy2[8]                                      |                                               |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy2[9]                                      |                                               |                1 |              1 |
+|  JOY_CLK_OBUF                                  | joy2[11]                                     |                                               |                1 |              1 |
+|  reg_reg[0][7]_i_2_n_0                         |                                              | pm/ckong_sound/ym2149/env_reset               |                1 |              1 |
+|  delay_count_reg_BUFG[0]                       | pm/video/vcnt[8]_i_1_n_0                     | pm/video/vcnt[6]_i_1_n_0                      |                2 |              4 |
+|  pclk                                          | keyb/ps2/bit_count                           |                                               |                1 |              4 |
+|  x_pixel[0]                                    |                                              |                                               |                3 |              4 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[5][3]_i_1_n_0      |                                               |                1 |              4 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[3]_6               |                                               |                2 |              4 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[1]_7               |                                               |                1 |              4 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[13][3]_i_1_n_0     |                                               |                2 |              4 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/ena_div_noise          | pm/ckong_sound/ym2149/noise_gen_cnt           |                2 |              5 |
+|  JOY_CLK_OBUF                                  |                                              | joy_count[4]_i_1_n_0                          |                2 |              5 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[8][4]_i_1_n_0      |                                               |                1 |              5 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[9][4]_i_1_n_0      |                                               |                1 |              5 |
+|  delay_count_reg_BUFG[0]                       | pm/Z80/u0/attr_big_sprite_reg[0][0]          |                                               |                1 |              5 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[6]_5               |                                               |                1 |              5 |
+|  delay_count_reg_BUFG[0]                       | pm/video/vcnt[8]_i_1_n_0                     |                                               |                4 |              5 |
+|  pclk                                          |                                              | delay_count[4]_i_2_n_0                        |                1 |              5 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[10]_4              |                                               |                2 |              5 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/env_vol                | pm/ckong_sound/ym2149/env_inc_reg_LDC_i_2_n_0 |                2 |              5 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/env_vol                | pm/ckong_sound/ym2149/env_inc_reg_LDC_i_1_n_0 |                2 |              5 |
+|  delay_count_reg_BUFG[0]                       | pm/video/attr_sp_bg_reg[0][0]                |                                               |                1 |              6 |
+| ~x_pixel[0]                                    | pm/Z80/u0/R[6]_i_1_n_0                       | pm/Z80/TState[2]_i_3_n_0                      |                3 |              7 |
+| ~x_pixel[0]                                    | pm/Z80/u0/IR[7]_i_1_n_0                      | pm/Z80/TState[2]_i_3_n_0                      |                2 |              8 |
+|  delay_count_reg_BUFG[0]                       | pm/Z80/u0/x_big_sprite_reg[0][0]             |                                               |                2 |              8 |
+| ~x_pixel[0]                                    | pm/Z80/u0/BusA[7]_i_1_n_0                    |                                               |                6 |              8 |
+| ~x_pixel[0]                                    | pm/Z80/u0/DO[7]_i_1_n_0                      | pm/Z80/TState[2]_i_3_n_0                      |                6 |              8 |
+| ~x_pixel[0]                                    | pm/Z80/u0/SP[15]_i_1_n_0                     | pm/Z80/TState[2]_i_3_n_0                      |                6 |              8 |
+| ~x_pixel[0]                                    | pm/Z80/u0/TmpAddr[15]_i_1_n_0                | pm/Z80/TState[2]_i_3_n_0                      |                4 |              8 |
+| ~x_pixel[0]                                    | pm/Z80/u0/TmpAddr[7]_i_1_n_0                 | pm/Z80/TState[2]_i_3_n_0                      |                5 |              8 |
+|  delay_count_reg_BUFG[0]                       | pm/Z80/u0/y_big_sprite_reg[0][0]             |                                               |                2 |              8 |
+| ~x_pixel[0]                                    | pm/Z80/u0/I[7]_i_1_n_0                       | pm/Z80/TState[2]_i_3_n_0                      |                3 |              8 |
+| ~x_pixel[0]                                    | pm/Z80/u0/SP[7]_i_1_n_0                      | pm/Z80/TState[2]_i_3_n_0                      |                5 |              8 |
+| ~x_pixel[0]                                    | pm/Z80/u0/DI_Reg_reg[7]_0[0]                 | pm/Z80/TState[2]_i_3_n_0                      |                3 |              8 |
+| ~x_pixel[0]                                    | pm/Z80/u0/ACC[7]_i_1_n_0                     | pm/Z80/TState[2]_i_3_n_0                      |                5 |              8 |
+|  delay_count_reg_BUFG[0]                       | pm/video/vcnt_r[7]_i_1_n_0                   |                                               |                2 |              8 |
+|  delay_count_reg_BUFG[0]                       | pm/video/x_sprite_reg[7][0]                  |                                               |                2 |              8 |
+|  delay_count_reg_BUFG[0]                       | pm/ena_pixel                                 | pm/video/addr_ram_sprite_reg[0]_0             |                3 |              8 |
+|  delay_count_reg_BUFG[0]                       | pm/ena_pixel                                 | pm/video/video_i_reg[0]                       |                1 |              8 |
+|  pclk                                          | keyb/ps2/DATA[7]_i_1_n_0                     |                                               |                2 |              8 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/Z80/u0/busctrl_addr                       |                                               |                2 |              8 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[7][7]_i_1_n_0      |                                               |                4 |              8 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[0]_3               |                                               |                2 |              8 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[11][7]_i_1_n_0     |                                               |                2 |              8 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[12][7]_i_1_n_0     |                                               |                2 |              8 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[14]_8              |                                               |                2 |              8 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[15][7]_i_1_n_0     |                                               |                3 |              8 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[2][7]_i_1_n_0      |                                               |                3 |              8 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/reg[4][7]_i_1_n_0      |                                               |                2 |              8 |
+|  x_pixel[0]                                    | pm/Z80/u0/E[0]                               |                                               |                1 |              8 |
+|  pm/ckong_sound/clock_750khz                   |                                              |                                               |                3 |              9 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/audio_final[9]_i_1_n_0 |                                               |                2 |              9 |
+|  delay_count_reg_BUFG[0]                       |                                              | pm/line_doubler/hcnt_o[0]_i_1_n_0             |                4 |              9 |
+|  pclk                                          | keyb/ps2/shiftreg                            |                                               |                2 |              9 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/vcnt_i01_out                 | pm/line_doubler/vcnt_i0                       |                2 |              9 |
+|  reg_reg[0][7]_i_2_n_0                         |                                              | pm/ckong_sound/ym2149/audio_final[9]_i_1_n_0  |                3 |             10 |
+|  delay_count_reg_BUFG[0]                       |                                              | pm/line_doubler/vcnt_i01_out                  |                3 |             10 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram2_reg_64_127_0_2_i_1_n_0  |                                               |                3 |             12 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/ena_div                | pm/ckong_sound/ym2149/p_2_out[0]              |                3 |             12 |
+|  pm/ckong_sound/frequency_tick                 | pm/ckong_sound/sample_rom/sample_cnt0        |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram1_reg_0_63_0_2_i_1_n_0    |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram1_reg_128_191_0_2_i_1_n_0 |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram1_reg_192_255_0_2_i_1_n_0 |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram1_reg_256_319_0_2_i_1_n_0 |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram2_reg_384_447_0_2_i_1_n_0 |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram2_reg_320_383_0_2_i_1_n_0 |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram2_reg_256_319_0_2_i_1_n_0 |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram1_reg_320_383_0_2_i_1_n_0 |                                               |                3 |             12 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/ena_div                | pm/ckong_sound/ym2149/p_2_out[1]              |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram2_reg_192_255_0_2_i_1_n_0 |                                               |                3 |             12 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/ena_div                | pm/ckong_sound/ym2149/p_2_out[2]              |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram2_reg_128_191_0_2_i_1_n_0 |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram2_reg_0_63_0_2_i_1_n_0    |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram1_reg_64_127_0_2_i_1_n_0  |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram1_reg_448_511_0_2_i_1_n_0 |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram1_reg_384_447_0_2_i_1_n_0 |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       | pm/line_doubler/ram2_reg_448_511_0_2_i_1_n_0 |                                               |                3 |             12 |
+|  delay_count_reg_BUFG[0]                       |                                              | pm/Z80/resetHW                                |                6 |             16 |
+| ~delay_count_reg_BUFG[0]                       |                                              |                                               |                8 |             16 |
+|  delay_count_reg_BUFG[0]                       | pm/video/bg_tile_code_reg[0][0]              |                                               |                2 |             16 |
+|  delay_count_reg_BUFG[0]                       | pm/video/big_sprite_tile_code_reg[0][0]      |                                               |                2 |             16 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/ena_div                | pm/ckong_sound/ym2149/env_gen_cnt[0]_i_1_n_0  |                4 |             16 |
+| ~x_pixel[0]                                    | pm/Z80/u0/A[15]_i_1_n_0                      | pm/Z80/TState[2]_i_3_n_0                      |               10 |             16 |
+| ~x_pixel[0]                                    | pm/Z80/u0/Ap[7]_i_1_n_0                      | pm/Z80/TState[2]_i_3_n_0                      |               10 |             16 |
+| ~x_pixel[0]                                    | pm/Z80/u0/PC_reg[0]_i_1_n_0                  | pm/Z80/TState[2]_i_3_n_0                      |                4 |             16 |
+|  reg_reg[0][7]_i_2_n_0                         | pm/ckong_sound/ym2149/noise_gen_cnt          |                                               |                3 |             17 |
+|  delay_count_reg_BUFG[0]                       | pm/video/keep_sprite_reg                     |                                               |                4 |             22 |
+|  delay_count_reg_BUFG[0]                       | pm/big_sprite_tile_code_r0                   |                                               |                6 |             24 |
+|  delay_count_reg_BUFG[0]                       | pm/ena_pixel                                 |                                               |               11 |             25 |
+|  reg_reg[0][7]_i_2_n_0                         |                                              |                                               |                9 |             27 |
+| ~x_pixel[0]                                    | pm/Z80/u0/Regs/WEH                           |                                               |                4 |             32 |
+| ~x_pixel[0]                                    | pm/Z80/u0/Regs/WEL                           |                                               |                4 |             32 |
+| ~x_pixel[0]                                    |                                              |                                               |               25 |             34 |
+| ~x_pixel[0]                                    |                                              | pm/Z80/TState[2]_i_3_n_0                      |               31 |             52 |
+|  pclk                                          |                                              |                                               |               20 |             66 |
+|  delay_count_reg_BUFG[0]                       |                                              |                                               |               45 |            102 |
++------------------------------------------------+----------------------------------------------+-----------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\jammaZX1\arcades\pacman\pacman\synth\pacman_top.ncd
+OUTFILE=E:\jammaZX1\arcades\pacman\pacman\synth\pacman_top.bit
+FAMILY=Spartan6
+PART=xc6slx25-2ftg256
+WORKINGDIR=E:\jammaZX1\arcades\pacman\pacman\synth
+LICENSE=WebPack
+USER_INFO=211376030_0_0_437

@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="924" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v" Line 87: Attribute target identifier <arg fmt="%s" index="1">fdb</arg> not found in this scope
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="924" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v" Line 82: Attribute target identifier <arg fmt="%s" index="1">fda</arg> not found in this scope
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="924" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v" Line 83: Attribute target identifier <arg fmt="%s" index="1">fdb</arg> not found in this scope
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="924" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v" Line 84: Attribute target identifier <arg fmt="%s" index="1">fda</arg> not found in this scope
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="924" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v" Line 85: Attribute target identifier <arg fmt="%s" index="1">fdb</arg> not found in this scope
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="924" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\synchro.v" Line 86: Attribute target identifier <arg fmt="%s" index="1">fda</arg> not found in this scope
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 105: Actual for formal port <arg fmt="%s" index="1">addr</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="701" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 106: Partially associated formal <arg fmt="%s" index="1">data</arg> cannot have actual OPEN
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="701" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\playfield.vhd" Line 84: Partially associated formal <arg fmt="%s" index="1">data</arg> cannot have actual OPEN
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="701" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\playfield.vhd" Line 92: Partially associated formal <arg fmt="%s" index="1">data</arg> cannot have actual OPEN
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\motion.vhd" Line 126: Actual for formal port <arg fmt="%s" index="1">address</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="701" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" Line 161: Partially associated formal <arg fmt="%s" index="1">a</arg> cannot have actual OPEN
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" Line 232: Actual for formal port <arg fmt="%s" index="1">addr</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" Line 239: Actual for formal port <arg fmt="%s" index="1">addr</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" Line 246: Actual for formal port <arg fmt="%s" index="1">addr</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="701" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 225: Partially associated formal <arg fmt="%s" index="1">video_o</arg> cannot have actual OPEN
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 231: Actual for formal port <arg fmt="%s" index="1">scanlines</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 397: Actual for formal port <arg fmt="%s" index="1">hsync_n</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" Line 93: Assignment to <arg fmt="%s" index="1">pclkx10</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" Line 96: Assignment to <arg fmt="%s" index="1">reset</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" Line 108: Assignment to <arg fmt="%s" index="1">pm_reset</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v" Line 120: Assignment to <arg fmt="%s" index="1">ena_6</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 53: Using initial value <arg fmt="%s" index="1">&apos;1&apos;</arg> for <arg fmt="%s" index="2">test_i</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 54: Using initial value <arg fmt="%s" index="1">&apos;1&apos;</arg> for <arg fmt="%s" index="2">slam_i</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 173: <arg fmt="%s" index="1">hcount</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 177: <arg fmt="%s" index="1">hcount</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 181: <arg fmt="%s" index="1">hcount</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 185: <arg fmt="%s" index="1">hcount</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 189: <arg fmt="%s" index="1">hcount</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 193: <arg fmt="%s" index="1">hcount</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 200: <arg fmt="%s" index="1">overlay_r1</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 202: <arg fmt="%s" index="1">overlay_g1</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 204: <arg fmt="%s" index="1">overlay_b1</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 206: <arg fmt="%s" index="1">overlay_a1</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 208: <arg fmt="%s" index="1">overlay_c1</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 210: <arg fmt="%s" index="1">overlay_m1</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\line_doubler.vhd" Line 91: <arg fmt="%s" index="1">scanline</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\line_doubler.vhd" Line 92: <arg fmt="%s" index="1">video</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\line_doubler.vhd" Line 94: <arg fmt="%s" index="1">video</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 246: Assignment to <arg fmt="%s" index="1">reset_h</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd" Line 247: Assignment to <arg fmt="%s" index="1">vblank_o</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\m2-sync_prom.vhd" Line 121: &lt;<arg fmt="%s" index="1">ramb16_s9</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 151: Assignment to <arg fmt="%s" index="1">h1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 152: Assignment to <arg fmt="%s" index="1">h2</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 155: Assignment to <arg fmt="%s" index="1">h16</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 158: Assignment to <arg fmt="%s" index="1">h128</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 160: Assignment to <arg fmt="%s" index="1">h4_n</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 161: Assignment to <arg fmt="%s" index="1">h8_n</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\sync.vhd" Line 169: Assignment to <arg fmt="%s" index="1">v32</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\p4-char_LSB.vhd" Line 121: &lt;<arg fmt="%s" index="1">ramb16_s9</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\r4-char_MSB.vhd" Line 121: &lt;<arg fmt="%s" index="1">ramb16_s9</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\T65\T65.vhd" Line 232: Assignment to <arg fmt="%s" index="1">d</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\c1-prog_rom2.vhd" Line 121: &lt;<arg fmt="%s" index="1">ramb16_s9</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\d1-prog_rom3.vhd" Line 121: &lt;<arg fmt="%s" index="1">ramb16_s9</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\e1-prog_rom4.vhd" Line 121: &lt;<arg fmt="%s" index="1">ramb16_s9</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\ipcore_dir\ram1k_dp.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">ram1k_dp</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\e2-addec_prom.vhd" Line 121: &lt;<arg fmt="%s" index="1">ramb16_s9</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" Line 350: Assignment to <arg fmt="%s" index="1">ram_n</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd" Line 352: Assignment to <arg fmt="%s" index="1">sync1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\multiboot.v" Line 6: Using initial value of <arg fmt="%s" index="1">spi_addr</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\multiboot.v" Line 38: Port <arg fmt="%s" index="1">BUSY</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">sram_dq&lt;7:2&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v</arg>&quot; line <arg fmt="%s" index="2">96</arg>: Output port &lt;<arg fmt="%s" index="3">sync</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">synchro_reset</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v</arg>&quot; line <arg fmt="%s" index="2">190</arg>: Output port &lt;<arg fmt="%s" index="3">JOYSTICK_A_GND</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pm</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v</arg>&quot; line <arg fmt="%s" index="2">190</arg>: Output port &lt;<arg fmt="%s" index="3">JOYSTICK_B_GND</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pm</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v</arg>&quot; line <arg fmt="%s" index="2">190</arg>: Output port &lt;<arg fmt="%s" index="3">Video_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pm</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\modulo_top.v</arg>&quot; line <arg fmt="%s" index="2">190</arg>: Output port &lt;<arg fmt="%s" index="3">CompSync_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pm</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">scanSW&lt;7:7&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">scanSW&lt;10:10&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">tv15Khz_mode</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd</arg>&quot; line <arg fmt="%s" index="2">320</arg>: Output port &lt;<arg fmt="%s" index="3">vblank_s</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Vid_sync</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd</arg>&quot; line <arg fmt="%s" index="2">320</arg>: Output port &lt;<arg fmt="%s" index="3">vreset</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Vid_sync</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd</arg>&quot; line <arg fmt="%s" index="2">335</arg>: Output port &lt;<arg fmt="%s" index="3">CompBlank_s</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">PF</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd</arg>&quot; line <arg fmt="%s" index="2">407</arg>: Output port &lt;<arg fmt="%s" index="3">Lamp1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Input_Output</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd</arg>&quot; line <arg fmt="%s" index="2">407</arg>: Output port &lt;<arg fmt="%s" index="3">Lamp2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Input_Output</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd</arg>&quot; line <arg fmt="%s" index="2">407</arg>: Output port &lt;<arg fmt="%s" index="3">Serv_LED_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Input_Output</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\super_breakout.vhd</arg>&quot; line <arg fmt="%s" index="2">407</arg>: Output port &lt;<arg fmt="%s" index="3">Counter</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Input_Output</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="3015" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">ram1</arg>&gt; may be accessed with an index that does not cover the full array size or with a negative index. The RAM size is reduced to the index upper access or for only positive index values.
+</msg>
+
+<msg type="warning" file="Xst" num="3015" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">ram2</arg>&gt; may be accessed with an index that does not cover the full array size or with a negative index. The RAM size is reduced to the index upper access or for only positive index values.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\m2-sync_prom.vhd</arg>&quot; line <arg fmt="%s" index="2">288</arg>: Output port &lt;<arg fmt="%s" index="3">DOP</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">rom0.inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Display&lt;6:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">HCount&lt;7:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">VCount&lt;7:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\p4-char_LSB.vhd</arg>&quot; line <arg fmt="%s" index="2">288</arg>: Output port &lt;<arg fmt="%s" index="3">DOP</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">rom0.inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\r4-char_MSB.vhd</arg>&quot; line <arg fmt="%s" index="2">288</arg>: Output port &lt;<arg fmt="%s" index="3">DOP</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">rom0.inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">HCount&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">HCount&lt;7:7&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">VCount&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">VCount&lt;7:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">tone_reg&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">tone_reg&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">tone_reg&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">tone_reg&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Mask2_n</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\paddle.vhd</arg>&quot; line <arg fmt="%s" index="2">87</arg>: Output port &lt;<arg fmt="%s" index="3">direction</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">encoder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">HCount&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Timer_Reset_n</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">Sync</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CPU</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">EF</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CPU</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">MF</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CPU</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">XF</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CPU</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">ML_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CPU</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">VP_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CPU</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">VDA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CPU</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\cpu_mem.vhd</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">VPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CPU</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Abort_n</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">P&lt;5:2&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Mode</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\c1-prog_rom2.vhd</arg>&quot; line <arg fmt="%s" index="2">288</arg>: Output port &lt;<arg fmt="%s" index="3">DOP</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">rom0.inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\d1-prog_rom3.vhd</arg>&quot; line <arg fmt="%s" index="2">288</arg>: Output port &lt;<arg fmt="%s" index="3">DOP</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">rom0.inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\e1-prog_rom4.vhd</arg>&quot; line <arg fmt="%s" index="2">288</arg>: Output port &lt;<arg fmt="%s" index="3">DOP</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">rom0.inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">F:\jammaZX1\arcades\atarikee\sbreakout_(ok_y_overlay_2_bits)\src\roms\e2-addec_prom.vhd</arg>&quot; line <arg fmt="%s" index="2">288</arg>: Output port &lt;<arg fmt="%s" index="3">DOP</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">rom0.inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">PBR_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">CPU</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;PBR_1&gt; &lt;PBR_2&gt; &lt;PBR_3&gt; &lt;PBR_4&gt; &lt;PBR_5&gt; &lt;PBR_6&gt; &lt;PBR_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">q_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">K6</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;q_6&gt; &lt;q_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">q_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">K6</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;q_1&gt; &lt;q_2&gt; &lt;q_3&gt; &lt;q_4&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">P_5</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">CPU</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">set_origin_n_new_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">encoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">q_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">K6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">set_origin_n_new_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">encoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">set_origin_n_int</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">encoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">video_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dblscan</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">video_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dblscan</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">scanSW_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">keyb</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">PAUSE</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">keyb</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_F2_out</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_n0114</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_E8_out</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_ram1</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_ram2</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_n0154</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_D7_out</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">P_5</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">T65</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">set_origin_n_new_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">quadrature_decoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">set_origin_n_new_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">quadrature_decoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">set_origin_n_int</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">quadrature_decoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">q_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">K6_PROM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">q_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">K6_PROM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">q_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">K6_PROM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">q_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">K6_PROM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">q_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">K6_PROM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">PBR_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">T65</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;PBR_1&gt; &lt;PBR_2&gt; &lt;PBR_3&gt; &lt;PBR_4&gt; &lt;PBR_5&gt; &lt;PBR_6&gt; &lt;PBR_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">q_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">K6_PROM</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;q_6&gt; &lt;q_7&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DAC/reg_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">audio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">S_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">T65</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">S_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">T65</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">S_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">T65</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">S_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">T65</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">S_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">T65</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">S_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">T65</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">S_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">T65</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">S_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">T65</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">delay_count_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">delay_count_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">delay_count_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">delay_count_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">delay_count_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">delay_count_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">delay_count_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">M2/rom0.inst</arg> in unit <arg fmt="%s" index="2">synchronizer</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">C1/rom0.inst</arg> in unit <arg fmt="%s" index="2">CPU_mem</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">D1/rom0.inst</arg> in unit <arg fmt="%s" index="2">CPU_mem</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">E1/rom0.inst</arg> in unit <arg fmt="%s" index="2">CPU_mem</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">E2/rom0.inst</arg> in unit <arg fmt="%s" index="2">CPU_mem</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">P4/rom0.inst</arg> in unit <arg fmt="%s" index="2">playfield</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">R4/rom0.inst</arg> in unit <arg fmt="%s" index="2">playfield</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">PLL_OSERDES</arg> in unit <arg fmt="%s" index="2">PLL_OSERDES</arg> of type <arg fmt="%s" index="3">PLL_BASE</arg> has been replaced by <arg fmt="%s" index="4">PLL_ADV</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="3002" delta="new" >This design contains one or more registers/latches that are directly
+incompatible with the <arg fmt="%s" index="1">Spartan6</arg> architecture. The two primary causes of this is
+either a register or latch described with both an asynchronous set and
+asynchronous reset, or a register or latch described with an asynchronous
+set or reset which however has an initialization value of the opposite 
+polarity (i.e. asynchronous reset with an initialization value of 1).
+ While this circuit can be built, it creates a sub-optimal implementation
+in terms of area, power and performance. For a more optimal implementation
+Xilinx highly recommends one of the following:
+
+       1) Remove either the set or reset from all registers and latches
+          if not needed for required functionality
+       2) Modify the code in order to produce a synchronous set
+          and/or reset (both is preferred)
+       3) Ensure all registers have the same initialization value as the
+          described asynchronous set or reset polarity
+       4) Use the -async_to_sync option to transform the asynchronous
+          set/reset to synchronous operation
+          (timing simulation highly recommended when using this option)
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">joy1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2241</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2232</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2242</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2231</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2222</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2221</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2202</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2201</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2192</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2191</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2212</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2211</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2182</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2181</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2172</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram2171</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1242</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1241</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1232</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1231</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1222</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1221</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1212</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1211</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1192</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1191</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1182</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1181</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1202</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1201</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1172</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/Mram_ram1171</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/video_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/dblscan/video_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/debounce/button_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/debounce/button_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/debounce/button_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/debounce/button_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/debounce/button_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/debounce/button_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/debounce/button_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/debounce/button_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/debounce/button_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/CPU/CPU/BAH_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/CPU/CPU/BAH_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/CPU/CPU/PBR_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/CPU/CPU/EF_i</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/Knob/encoder/direction</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/PF/CompBlank_s</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/Input_Output/Serv_LED_n</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/Input_Output/Counter</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/Input_Output/Mask2_n</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/Input_Output/Lamp2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pm/Input_Output/Lamp1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/TABLE</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/PAUSE</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/scanSW_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/scanSW_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/scanSW_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/scanSW_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/scanSW_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/scanSW_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/scanSW_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/scanSW_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">keyb/scanSW_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">keyb/VFREQ</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;keyb/scanSW_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">keyb/VIDEO</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;keyb/scanSW_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">keyb/SCANL</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">superbreakout_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;keyb/scanSW_8&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2957" delta="new" >There are clock and non-clock loads on clock signal <arg fmt="%s" index="1">SYS_CLK_BUFGP</arg>. This is not a recommended design practice, that may cause excessive delay, skew or unroutable situations.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

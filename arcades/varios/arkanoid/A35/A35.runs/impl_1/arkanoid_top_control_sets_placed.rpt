@@ -1,0 +1,215 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Mon Jun 17 15:11:16 2019
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file arkanoid_top_control_sets_placed.rpt
+| Design       : arkanoid_top
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   136 |
+| Unused register locations in slices containing registers |   345 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           20 |
+|      2 |            1 |
+|      3 |            2 |
+|      4 |           17 |
+|      5 |            9 |
+|      6 |            3 |
+|      7 |            2 |
+|      8 |           37 |
+|      9 |            3 |
+|     10 |            1 |
+|     11 |            2 |
+|     12 |            6 |
+|     13 |            1 |
+|     14 |            1 |
+|     15 |            1 |
+|    16+ |           30 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             240 |          132 |
+| No           | No                    | Yes                    |             109 |           55 |
+| No           | Yes                   | No                     |              75 |           25 |
+| Yes          | No                    | No                     |             239 |           82 |
+| Yes          | No                    | Yes                    |             237 |          106 |
+| Yes          | Yes                   | No                     |             147 |           39 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+----------------------------------------------+--------------------------------------------------+------------------+----------------+
+|           Clock Signal          |                 Enable Signal                |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++---------------------------------+----------------------------------------------+--------------------------------------------------+------------------+----------------+
+|  clk_3m                         |                                              | pm/IC2/env_inc_reg_LDC_i_1_n_0                   |                1 |              1 |
+|  JOY_CLK_OBUF                   | joy1[9]                                      |                                                  |                1 |              1 |
+|  pm/IC2/env_inc_reg_LDC_i_1_n_0 |                                              | pm/IC2/env_inc_reg_LDC_i_2_n_0                   |                1 |              1 |
+|  pm/IC2/env_inc_reg_LDC_i_2_n_0 |                                              | pm/IC2/env_inc_reg_LDC_i_1_n_0                   |                1 |              1 |
+|  pm/IC73/Q[3]                   |                                              |                                                  |                1 |              1 |
+|  pm/IC68/Q[1]                   |                                              |                                                  |                1 |              1 |
+|  pm/IC68/Q[2]                   |                                              | h_cnt[7]                                         |                1 |              1 |
+|  JOY_CLK_OBUF                   | joy2[11]                                     |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF                   | joy2[9]                                      |                                                  |                1 |              1 |
+|  pm/IC87/n_vblank               |                                              | pm/IC12/IORQ_n_reg_inv_0                         |                1 |              1 |
+|  JOY_CLK_OBUF                   | joy2[8]                                      |                                                  |                1 |              1 |
+| ~pm/IC76/CLK_BUFG               |                                              | pm/IC86/q1_i_2_n_0                               |                1 |              1 |
+|  JOY_CLK_OBUF                   | joy2[4]                                      |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF                   |                                              | joy_renew_i_1_n_0                                |                1 |              1 |
+| ~h_cnt[7]                       |                                              |                                                  |                1 |              1 |
+|  JOY_CLK_OBUF                   | joy1[11]                                     |                                                  |                1 |              1 |
+|  clk_3m                         |                                              | pm/IC2/env_reset                                 |                1 |              1 |
+|  JOY_CLK_OBUF                   | joy1[4]                                      |                                                  |                1 |              1 |
+|  clk_3m                         |                                              | pm/IC2/env_inc_reg_LDC_i_2_n_0                   |                1 |              1 |
+|  JOY_CLK_OBUF                   | joy1[8]                                      |                                                  |                1 |              1 |
+|  clk_3m                         | pm/IC2/ena_div_noise                         | pm/IC2/noise_gen_cnt                             |                1 |              2 |
+|  clk9p6                         |                                              | delay_count[0]_i_2_n_0                           |                1 |              3 |
+|  clk_3m                         | pm/IC2/ena_div_noise                         |                                                  |                2 |              3 |
+|  clk24                          | mouse/mcmd_cnt                               | keyb/SR[0]                                       |                2 |              4 |
+|  clk9p6                         |                                              |                                                  |                3 |              4 |
+| ~pm/IC21/clk_26                 |                                              | pm/IC12/u0/AR[0]                                 |                1 |              4 |
+| ~spinner_encoder_reg_n_0_[0]    | pm/IC12/u0/E[0]                              |                                                  |                1 |              4 |
+| ~spinner_encoder_reg_n_0_[0]    | pm/IC5/E[0]                                  |                                                  |                1 |              4 |
+| ~pm/IC76/CLK_BUFG               | pm/IC68/E[0]                                 |                                                  |                1 |              4 |
+| ~pm/IC76/CLK_BUFG               | pm/IC52/E[0]                                 |                                                  |                2 |              4 |
+| ~pm/IC76/CLK_BUFG               | clk_3m                                       |                                                  |                2 |              4 |
+| ~pm/IC87/n_vblank               |                                              | pm/IC12/u0/AR[0]                                 |                1 |              4 |
+| ~h_cnt[7]                       | pm/IC73/E[0]                                 |                                                  |                2 |              4 |
+| ~h_cnt[7]                       | pm/IC87/v_cnt_en                             |                                                  |                2 |              4 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[13][3]_i_1_n_0                    | pm/IC12/count2_reg[3]                            |                1 |              4 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[1][3]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                1 |              4 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[3][3]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                2 |              4 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[5][3]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                1 |              4 |
+|  clk_3m                         |                                              | pm/IC2/eqOp                                      |                1 |              4 |
+|  clk12                          | keyb/ps2/bit_count                           |                                                  |                1 |              4 |
+|  pm/IC12/u0/CLK                 |                                              | pm/IC12/count2_reg[3]                            |                1 |              5 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[6][4]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                2 |              5 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[8][4]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                2 |              5 |
+|  clk24                          | clk9p6                                       |                                                  |                2 |              5 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[9][4]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                2 |              5 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[10][4]_i_1_n_0                    | pm/IC12/count2_reg[3]                            |                2 |              5 |
+|  JOY_CLK_OBUF                   |                                              | joy_count[4]_i_1_n_0                             |                1 |              5 |
+|  clk_3m                         | pm/IC2/env_vol                               | pm/IC2/env_inc_reg_LDC_i_2_n_0                   |                2 |              5 |
+|  clk_3m                         | pm/IC2/env_vol                               | pm/IC2/env_inc_reg_LDC_i_1_n_0                   |                2 |              5 |
+|  clk9p6                         | mouse/old_state_reg_0                        | keyb/old_state_reg                               |                2 |              6 |
+|  clk9p6                         | mouse/old_state_reg_0                        |                                                  |                3 |              6 |
+| ~h_cnt[1]                       |                                              |                                                  |                3 |              6 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/R[6]_i_1_n_0                      | pm/IC12/count2_reg[3]                            |                3 |              7 |
+|  clk24                          | clk9p6                                       | mouse/mstate                                     |                4 |              7 |
+| ~pm/IC12/u0/RD_n_reg_0          |                                              | pm/IC12/count2_reg[3]                            |                3 |              8 |
+|  clk_3m                         |                                              | pm/IC12/count2_reg[3]                            |                3 |              8 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[4][7]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                3 |              8 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[2][7]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                2 |              8 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[15][7]_i_1_n_0                    | pm/IC12/count2_reg[3]                            |                4 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsH[2]_18                  |                                                  |                2 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsH[4]_11                  |                                                  |                1 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsH[7]_16                  |                                                  |                4 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsL[1]_8                   |                                                  |                1 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsH[0]_9                   |                                                  |                1 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsH[1]_7                   |                                                  |                2 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsL[2]_17                  |                                                  |                4 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsH[5]_3                   |                                                  |                3 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsH[6]_13                  |                                                  |                3 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsL[0]_10                  |                                                  |                1 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsL[4]_12                  |                                                  |                1 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsL[5]_4                   |                                                  |                2 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsL[6]_14                  |                                                  |                2 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsL[7]_15                  |                                                  |                6 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsH[3]_5                   |                                                  |                4 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/ACC[7]_i_1_n_0                    | pm/IC12/count2_reg[3]                            |                4 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Regs/RegsL[3]_6                   |                                                  |                5 |              8 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[12][7]_i_1_n_0                    | pm/IC12/count2_reg[3]                            |                3 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/DO[7]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                4 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/IR[7]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                3 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/I[7]_i_1_n_0                      | pm/IC12/count2_reg[3]                            |                3 |              8 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[7][7]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                4 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/SP[15]_i_1_n_0                    | pm/IC12/count2_reg[3]                            |                4 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/SP[7]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                4 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/WZ[15]_i_1_n_0                    | pm/IC12/count2_reg[3]                            |                5 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/WZ[7]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                6 |              8 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/q2_reg[0]                         | pm/IC12/count2_reg[3]                            |                2 |              8 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[0][7]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                2 |              8 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[11][7]_i_1_n_0                    | pm/IC12/count2_reg[3]                            |                3 |              8 |
+| ~IC2/busctrl_we                 | pm/IC2/reg[14][7]_i_1_n_0                    | pm/IC12/count2_reg[3]                            |                3 |              8 |
+|  clk12                          | keyb/ps2/DATA[7]_i_1_n_0                     |                                                  |                1 |              8 |
+|  clk24                          | mouse/xcount[7]_i_1_n_0                      | keyb/SR[0]                                       |                2 |              8 |
+|  clk12                          | keyb/ps2/shiftreg                            |                                                  |                2 |              9 |
+|  clk12                          | pm/line_doubler/vcnt_i01_out                 | pm/line_doubler/vcnt_i0                          |                2 |              9 |
+|  clk12                          | el_multiboot/el_multiboot/Q[0]               | el_multiboot/el_multiboot/indx_rep[3]_i_1_n_0    |                3 |              9 |
+|  clk12                          |                                              | pm/line_doubler/vcnt_i01_out                     |                4 |             10 |
+|  clk24                          | mouse/mreceive[10]_i_2_n_0                   | mouse/mreceive                                   |                3 |             11 |
+|  clk12                          | keyb/joy2_reg[11]                            |                                                  |                2 |             11 |
+|  clk_3m                         | pm/IC2/ena_div                               | pm/IC2/p_2_out[0]                                |                3 |             12 |
+|  clk_3m                         | pm/IC2/ena_div                               | pm/IC2/p_2_out[2]                                |                3 |             12 |
+|  clk_3m                         | pm/IC2/ena_div                               | pm/IC2/p_2_out[1]                                |                3 |             12 |
+| ~pm/IC76/CLK_BUFG               |                                              | pm/IC31/q1_reg_0                                 |                3 |             12 |
+|  clk24                          | mouse/msend[11]_i_1_n_0                      |                                                  |                3 |             12 |
+|  clk24                          |                                              | keyb/resetHW                                     |                4 |             12 |
+|  clk12                          |                                              | pm/line_doubler/hcnt_o[0]_i_1_n_0                |                6 |             13 |
+|  clk24                          |                                              |                                                  |               12 |             14 |
+| ~clk_3m                         |                                              |                                                  |                4 |             15 |
+|  clk12                          | pm/line_doubler/ram2_reg_448_511_0_2_i_1_n_0 |                                                  |                4 |             16 |
+|  clk12                          | pm/line_doubler/ram2_reg_128_191_0_2_i_1_n_0 |                                                  |                4 |             16 |
+|  clk12                          | pm/line_doubler/ram2_reg_0_63_0_2_i_1_n_0    |                                                  |                4 |             16 |
+|  clk24                          | clk9p6                                       | mouse/mtimer                                     |                4 |             16 |
+|  clk12                          | pm/line_doubler/ram1_reg_448_511_0_2_i_1_n_0 |                                                  |                4 |             16 |
+|  clk12                          | pm/line_doubler/ram1_reg_384_447_0_2_i_1_n_0 |                                                  |                4 |             16 |
+|  clk12                          | pm/line_doubler/ram1_reg_320_383_0_2_i_1_n_0 |                                                  |                4 |             16 |
+|  clk12                          | pm/line_doubler/ram1_reg_64_127_0_2_i_1_n_0  |                                                  |                4 |             16 |
+|  clk12                          | pm/line_doubler/ram2_reg_64_127_0_2_i_1_n_0  |                                                  |                4 |             16 |
+|  clk12                          | pm/line_doubler/ram2_reg_384_447_0_2_i_1_n_0 |                                                  |                4 |             16 |
+|  clk12                          | pm/line_doubler/ram2_reg_256_319_0_2_i_1_n_0 |                                                  |                4 |             16 |
+|  clk_3m                         |                                              |                                                  |               11 |             16 |
+|  clk_3m                         | pm/IC2/ena_div                               | pm/IC2/env_gen_cnt[0]_i_1_n_0                    |                4 |             16 |
+|  clk12                          | pm/line_doubler/ram1_reg_0_63_0_2_i_4_n_0    |                                                  |                4 |             16 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/Ap                                | pm/IC12/count2_reg[3]                            |                8 |             16 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/A[15]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |               15 |             16 |
+|  clk12                          | pm/line_doubler/ram1_reg_192_255_0_2_i_1_n_0 |                                                  |                4 |             16 |
+|  clk12                          | pm/line_doubler/ram2_reg_192_255_0_2_i_1_n_0 |                                                  |                4 |             16 |
+|  clk12                          | pm/line_doubler/ram1_reg_256_319_0_2_i_1_n_0 |                                                  |                4 |             16 |
+|  h_cnt[1]                       |                                              |                                                  |                7 |             16 |
+|  clk12                          | pm/line_doubler/ram1_reg_128_191_0_2_i_1_n_0 |                                                  |                4 |             16 |
+| ~pm/IC76/CLK_BUFG               | pm/IC12/u0/PC[0]_i_1_n_0                     | pm/IC12/count2_reg[3]                            |                4 |             16 |
+|  clk12                          | pm/line_doubler/ram2_reg_320_383_0_2_i_1_n_0 |                                                  |                4 |             16 |
+|  pm/IC76/CLK_BUFG               |                                              |                                                  |                8 |             17 |
+|  clk_3m                         | pm/IC2/noise_gen_cnt                         |                                                  |                5 |             17 |
+|  clk12                          | keyb/joy2_reg[11]                            | el_multiboot/el_multiboot/icap_data0[31]_i_1_n_0 |                3 |             23 |
+|  clk9p6                         |                                              | keyb/scanSW_reg[3]_0[0]                          |                7 |             32 |
+|  clk12                          |                                              |                                                  |               28 |             45 |
+| ~pm/IC76/CLK_BUFG               |                                              | pm/IC12/count2_reg[3]                            |               35 |             55 |
+| ~pm/IC76/CLK_BUFG               |                                              |                                                  |               53 |            104 |
++---------------------------------+----------------------------------------------+--------------------------------------------------+------------------+----------------+
+
+

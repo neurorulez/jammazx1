@@ -1,0 +1,28 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Jul 03 00:12:56 2018
+
+drc -z amidar_top.ncd amidar_top.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   pm/u_audio/u_ym2149_3D/env_reset_GND_217_o_AND_272_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   pm/u_audio/u_ym2149_3D/env_reset_GND_217_o_AND_271_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   pm/u_audio/u_ym2149_3C/env_reset_GND_217_o_AND_271_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   pm/u_audio/u_ym2149_3C/env_reset_GND_217_o_AND_272_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp pm/u_clocks/dcm_inst,
+   consult the device Data Sheet.
+DRC detected 0 errors and 4 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

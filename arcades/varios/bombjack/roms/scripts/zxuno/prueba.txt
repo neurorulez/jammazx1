@@ -1,0 +1,24 @@
+copy/b %ROMS%\
+01_h03t.bin (8192b) (INTERNO)
+
+02_p04t.bin (4096b)
+02_p04t.bin
+03_e08t.bin (4096b)
+03_e08t.bin 
+04_h08t.bin (4096b)
+04_h08t.bin
+05_k08t.bin (4096b)
+05_k08t.bin
+06_l08t.bin (8192b)
+07_n08t.bin (8192b)
+08_r08t.bin (8192b)
+
+09_j01b.bin (8192b) (INTERNO)
+10_l01b.bin (8192b) (INTERNO)
+11_m01b.bin (8192b) (INTERNO)
+12_n01b.bin (8192b) (INTERNO)
+13.1r       (8192b) (INTERNO)
+
+14_j07b.bin (8192b)
+15_l07b.bin (8192b)
+16_m07b.bin (8192b)

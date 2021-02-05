@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May 26 10:59:04 2019
+# Process ID: 9372
+# Current directory: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9868 D:\repos\jammazx1 - Bigbucket\jammazx1\arcades\defender\joust\A35\A35.xpr
+# Log file: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/vivado.log
+# Journal file: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.xpr}
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'D:/repos/jammazx1 - Bigbucket/jammazx1/repos/a35/defender/a35t/a35t.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 648.234 ; gain = 89.871
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun May 26 11:04:42 2019] Launched synth_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1/runme.log
+[Sun May 26 11:04:42 2019] Launched impl_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun May 26 13:14:27 2019] Launched synth_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1/runme.log
+[Sun May 26 13:14:27 2019] Launched impl_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun May 26 13:15:46 2019] Launched synth_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1/runme.log
+[Sun May 26 13:15:46 2019] Launched impl_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun May 26 14:06:51 2019] Launched synth_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1/runme.log
+[Sun May 26 14:06:51 2019] Launched impl_1...
+Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/impl_1/runme.log

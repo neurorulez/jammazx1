@@ -1,0 +1,8 @@
+phoenix_prog.vhd
+prom_ic23.vhd
+prom_ic24.vhd
+prom_ic39.vhd
+prom_ic40.vhd
+prom_palette_ic40.vhd
+prom_palette_ic41.vhd
+

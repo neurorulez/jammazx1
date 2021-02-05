@@ -1,0 +1,248 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 5752
+License: Customer
+
+Current time: 	Sun Jun 16 14:53:57 CEST 2019
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 236 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	neuro
+User home directory: C:/Users/neuro
+User working directory: D:/repos/a35t/arkanoid/A35
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/neuro/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/neuro/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/neuro/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/repos/a35t/arkanoid/A35/vivado.log
+Vivado journal file location: 	D:/repos/a35t/arkanoid/A35/vivado.jou
+Engine tmp dir: 	D:/repos/a35t/arkanoid/A35/.Xil/Vivado-5752-DESKTOP-QDU895T
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.3
+XILINX_SDK: D:/Xilinx/SDK/2018.3
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 530 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: D:\repos\a35t\arkanoid\A35\A35.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/repos/a35t/arkanoid/A35/A35.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/repos/a35t/arkanoid/A35/A35.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 537 MB. GUI used memory: 42 MB. Current time: 6/16/19, 2:53:59 PM CEST
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 95 MB (+97644kb) [00:00:24]
+// [Engine Memory]: 572 MB (+448416kb) [00:00:24]
+// [GUI Memory]: 100 MB (+52kb) [00:00:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  4499 ms.
+// [Engine Memory]: 621 MB (+21244kb) [00:00:27]
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 644.148 ; gain = 83.367 
+// Project name: A35; location: D:/repos/a35t/arkanoid/A35; part: xc7a35tftg256-1
+// [Engine Memory]: 671 MB (+19811kb) [00:00:28]
+dismissDialog("Open Project"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 679 MB. GUI used memory: 50 MB. Current time: 6/16/19, 2:54:14 PM CEST
+// [GUI Memory]: 107 MB (+2051kb) [00:02:02]
+// PAPropertyPanels.initPanels (modulo_top_a35t.v) elapsed time: 0.2s
+// Elapsed time: 94 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, arkanoid_top (modulo_top_a35t.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, arkanoid_top (modulo_top_a35t.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, arkanoid_top (modulo_top_a35t.v), pm : arkanoid(virt_pcb) (arkanoid.vhd)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, arkanoid_top (modulo_top_a35t.v), pm : arkanoid(virt_pcb) (arkanoid.vhd), u_dac : dac(rtl) (dac.vhd)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("arkanoid.vhd", 166, 76); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 166, 76, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "arkanoid.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 288, 158); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 288, 158, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "arkanoid.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 286, 177); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 286, 177, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "arkanoid.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 277, 199); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 277, 199, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "arkanoid.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 160, 97); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 160, 97, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "arkanoid.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 401, 163); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 401, 163, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "arkanoid.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 394, 179); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 394, 179, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "arkanoid.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 382, 195); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 382, 195, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "arkanoid.vhd", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 699 MB. GUI used memory: 53 MB. Current time: 6/16/19, 2:56:19 PM CEST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 6 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 711 MB (+7029kb) [00:02:37]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Jun 16 14:56:20 2019] Launched synth_1... Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/synth_1/runme.log [Sun Jun 16 14:56:21 2019] Launched impl_1... Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 134 seconds
+selectCodeEditor("arkanoid.vhd", 456, 215); // cl (w, cp)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+// bx (cp):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (C, I)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (cp)
+selectCodeEditor("arkanoid.vhd", 150, 179); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 259, 176); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 391, 180); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// f (cp): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Jun 16 14:59:05 2019] Launched synth_1... Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/synth_1/runme.log [Sun Jun 16 14:59:05 2019] Launched impl_1... Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/impl_1/runme.log 
+selectCodeEditor("arkanoid.vhd", 97, 58); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 92, 59); // cl (w, cp)
+selectCodeEditor("arkanoid.vhd", 136, 267); // cl (w, cp)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+// bx (cp):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (C, I)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (cp): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// f (cp): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Jun 16 14:59:33 2019] Launched synth_1... Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/synth_1/runme.log [Sun Jun 16 14:59:33 2019] Launched impl_1... Run output will be captured here: D:/repos/a35t/arkanoid/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 113 MB (+620kb) [00:08:20]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 712 MB. GUI used memory: 56 MB. Current time: 6/16/19, 3:26:20 PM CEST
+// Elapsed time: 2105 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)

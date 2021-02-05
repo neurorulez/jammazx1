@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Apr 30 14:43:03 2019
+# Process ID: 5996
+# Current directory: F:/repos/a35/NUEVO/xevious/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7836 F:\repos\a35\NUEVO\xevious\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/xevious/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/xevious/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/xevious/A35/A35.xpr

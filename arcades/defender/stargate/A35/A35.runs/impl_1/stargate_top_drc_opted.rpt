@@ -1,0 +1,67 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Tue May 28 13:38:52 2019
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_drc -file stargate_top_drc_opted.rpt -pb stargate_top_drc_opted.pb -rpx stargate_top_drc_opted.rpx
+| Design       : stargate_top
+| Device       : xc7a35tftg256-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 4
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
+| REQP-1840   | Warning  | RAMB18 async control check                                  | 2          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT pm/inst_pia_rom/cb1_del_i_1__0 is driving clock pin of 14 cells. This could lead to large hold time violations. Involved cells are:
+pm/inst_pia_rom/ca1_del_reg, pm/inst_pia_rom/ca1_fall_reg, pm/inst_pia_rom/ca1_rise_reg, pm/inst_pia_rom/cb1_del_reg, pm/inst_pia_rom/cb1_fall_reg, pm/inst_pia_rom/cb1_rise_reg, pm/inst_pia_rom/cb2_del_reg, pm/inst_pia_rom/cb2_rise_reg, pm/inst_pia_rom/irqa1_reg, pm/inst_pia_rom/irqa2_reg, pm/inst_pia_rom/irqb1_reg, pm/inst_pia_rom/irqb2_reg, pm/inst_pia_widget/cb2_out_reg, pm/inst_pia_widget/irqb2_reg
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/audio/cpu_ram/ram_reg has an input control pin pm/audio/cpu_ram/ram_reg/WEA[0] (net: pm/audio/cpu_ram/WEA[0]) which is driven by a register (delay_count_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 pm/audio/cpu_ram/ram_reg has an input control pin pm/audio/cpu_ram/ram_reg/WEA[1] (net: pm/audio/cpu_ram/WEA[0]) which is driven by a register (delay_count_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+

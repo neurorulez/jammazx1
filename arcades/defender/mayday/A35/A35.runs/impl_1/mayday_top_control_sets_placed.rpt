@@ -1,0 +1,171 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Tue May 28 09:30:10 2019
+| Host         : W7-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file mayday_top_control_sets_placed.rpt
+| Design       : mayday_top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    96 |
+| Unused register locations in slices containing registers |   192 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           12 |
+|      4 |            2 |
+|      5 |            2 |
+|      6 |            9 |
+|      7 |            3 |
+|      8 |           33 |
+|      9 |            5 |
+|     10 |            1 |
+|     11 |            2 |
+|     12 |           16 |
+|     13 |            1 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             162 |           74 |
+| No           | No                    | Yes                    |              40 |           16 |
+| No           | Yes                   | No                     |              31 |           14 |
+| Yes          | No                    | No                     |             202 |          107 |
+| Yes          | No                    | Yes                    |             147 |           48 |
+| Yes          | Yes                   | No                     |             138 |           49 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------+----------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  Clock Signal |                       Enable Signal                      |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++---------------+----------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  JOY_CLK_OBUF | joy2[11]                                                 |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF |                                                          | p_0_in                                                 |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[0]                                                  |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[1]                                                  |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[2]                                                  |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[3]                                                  |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[4]                                                  |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[5]                                                  |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[8]                                                  |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[9]                                                  |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF | joy1[11]                                                 |                                                        |                1 |              1 |
+|  JOY_CLK_OBUF | joy2[8]                                                  |                                                        |                1 |              1 |
+|  clk12        | keyb/ps2/bit_count                                       |                                                        |                1 |              4 |
+|  clock_6      |                                                          | keyb/resetHW                                           |                3 |              4 |
+|  JOY_CLK_OBUF |                                                          | joy_count[4]_i_1_n_0                                   |                1 |              5 |
+|  clk7p16      |                                                          | delay_count[4]_i_2_n_0                                 |                1 |              5 |
+| ~clk0p89_BUFG |                                                          | keyb/resetHW                                           |                5 |              6 |
+|  clock_6      | pm/main_cpu/porta_ctrl[5]_i_2_0[0]                       | keyb/resetHW                                           |                1 |              6 |
+|  clock_6      | pm/main_cpu/E[0]                                         | keyb/resetHW                                           |                3 |              6 |
+|  clk1p79_BUFG | pm/williams_sound_board/main_cpu/delay_count_reg[2]_0[0] | keyb/resetHW                                           |                2 |              6 |
+|  clk1p79_BUFG | pm/williams_sound_board/main_cpu/delay_count_reg[2][0]   | keyb/resetHW                                           |                1 |              6 |
+| ~clock_6      | pm/main_cpu/op_code[7]_i_2_n_0                           | pm/main_cpu/op_code[7]_i_1_n_0                         |                1 |              6 |
+| ~clock_6      | pm/hcnt[5]_i_1_n_0                                       | keyb/resetHW                                           |                2 |              6 |
+|  clock_6      | pm/main_cpu/portb_ctrl[5]_i_3_0[0]                       | keyb/resetHW                                           |                2 |              6 |
+|  clock_6      | pm/main_cpu/porta_ctrl[5]_i_2_1[0]                       | keyb/resetHW                                           |                1 |              6 |
+| ~clk1p79_BUFG |                                                          | keyb/resetHW                                           |                4 |              7 |
+| ~clk0p89_BUFG | pm/williams_sound_board/main_cpu/op_code[7]_i_2__0_n_0   | pm/williams_sound_board/main_cpu/op_code[7]_i_1__0_n_0 |                2 |              7 |
+| ~clock_6      | pm/main_cpu/saved_state                                  |                                                        |                6 |              7 |
+| ~clock_6      | pm/main_cpu/accb[7]_i_1__0_n_0                           |                                                        |                3 |              8 |
+| ~clk0p89_BUFG | pm/williams_sound_board/main_cpu/xreg[7]                 |                                                        |                6 |              8 |
+| ~clk0p89_BUFG | pm/williams_sound_board/main_cpu/xreg[15]                | pm/williams_sound_board/main_cpu/xreg[15]_i_1__0_n_0   |                1 |              8 |
+| ~clk0p89_BUFG | pm/williams_sound_board/main_cpu/acca[7]_i_1__0_n_0      |                                                        |                6 |              8 |
+| ~clk0p89_BUFG | pm/williams_sound_board/main_cpu/accb[7]_i_1_n_0         |                                                        |                5 |              8 |
+| ~clk0p89_BUFG | pm/williams_sound_board/main_cpu/cc[7]_i_1__0_n_0        |                                                        |                8 |              8 |
+| ~clock_6      | pm/main_cpu/dp[7]_i_1_n_0                                |                                                        |                4 |              8 |
+| ~clock_6      | pm/main_cpu/pc[15]_i_1_n_0                               |                                                        |                4 |              8 |
+| ~clock_6      | pm/main_cpu/pre_code                                     | pm/main_cpu/pre_code[7]_i_1_n_0                        |                3 |              8 |
+| ~clock_6      | pm/main_cpu/pc[2]                                        |                                                        |                3 |              8 |
+| ~clock_6      | pm/main_cpu/sp[2]                                        |                                                        |                3 |              8 |
+| ~clock_6      | pm/main_cpu/sp[10]                                       | pm/main_cpu/sp[15]_i_1__0_n_0                          |                2 |              8 |
+|  clk12        | keyb/ps2/DATA[7]_i_1_n_0                                 |                                                        |                2 |              8 |
+| ~clock_6      | pm/main_cpu/up[2]                                        |                                                        |                4 |              8 |
+| ~clock_6      | pm/main_cpu/up[10]                                       | pm/main_cpu/up[15]_i_1_n_0                             |                3 |              8 |
+| ~clock_6      | pm/main_cpu/xreg[2]                                      |                                                        |                4 |              8 |
+| ~clock_6      | pm/main_cpu/xreg[10]                                     | pm/main_cpu/xreg[15]_i_1_n_0                           |                3 |              8 |
+| ~clock_6      | pm/main_cpu/yreg[2]                                      |                                                        |                4 |              8 |
+| ~clock_6      | pm/main_cpu/yreg[10]                                     | pm/main_cpu/yreg[15]_i_1_n_0                           |                3 |              8 |
+|  clock_6      | pm/main_cpu/palette_we                                   |                                                        |                2 |              8 |
+|  clock_6      | pm/main_cpu/portb_ctrl_reg[2]_1[0]                       | keyb/resetHW                                           |                3 |              8 |
+|  clk1p79_BUFG | pm/williams_sound_board/main_cpu/porta_ctrl_reg[2][0]    | keyb/resetHW                                           |                2 |              8 |
+|  clk1p79_BUFG | pm/williams_sound_board/main_cpu/portb_ctrl_reg[2][0]    | keyb/resetHW                                           |                3 |              8 |
+|  clk1p79_BUFG | pm/williams_sound_board/main_cpu/portb_ctrl_reg[2]_1[0]  | keyb/resetHW                                           |                2 |              8 |
+|  clk1p79_BUFG | pm/williams_sound_board/main_cpu/E[0]                    | keyb/resetHW                                           |                2 |              8 |
+|  clock_6      | pm/main_cpu/porta_ctrl_reg[2]_0[0]                       | keyb/resetHW                                           |                4 |              8 |
+|  clock_6      | pm/main_cpu/porta_ctrl_reg[2]_1[0]                       | keyb/resetHW                                           |                2 |              8 |
+|  clock_6      | pm/main_cpu/porta_ctrl_reg[2]_2[0]                       | keyb/resetHW                                           |                2 |              8 |
+|  clock_6      | pm/main_cpu/porta_ctrl_reg[2]_3[0]                       | keyb/resetHW                                           |                3 |              8 |
+|  clock_6      | pm/main_cpu/portb_ctrl_reg[2][0]                         | keyb/resetHW                                           |                3 |              8 |
+|  clock_6      | pm/main_cpu/portb_ctrl_reg[2]_0[0]                       | keyb/resetHW                                           |                3 |              8 |
+|  clock_6      | pm/main_cpu/portb_ctrl_reg[2]_2[0]                       | keyb/resetHW                                           |                4 |              8 |
+| ~clock_6      | pm/main_cpu/acca[7]_i_1_n_0                              |                                                        |                3 |              8 |
+|  clk12        |                                                          | pm/line_doubler/hcnt_o[0]_i_1_n_0                      |                3 |              9 |
+|  clk12        | keyb/ps2/shiftreg                                        |                                                        |                2 |              9 |
+|  clk12        | el_multiboot/el_multiboot/Q[0]                           | keyb/SR[0]                                             |                4 |              9 |
+|  clk12        | pm/line_doubler/vcnt_i01_out                             | pm/line_doubler/vcnt_i0                                |                2 |              9 |
+| ~clock_6      | pm/vsync_cnt1                                            | keyb/resetHW                                           |                3 |              9 |
+|  clk12        |                                                          | pm/line_doubler/vcnt_i01_out                           |                4 |             10 |
+|  clk12        | el_multiboot/el_multiboot/p_0_in                         |                                                        |                2 |             11 |
+| ~clock_6      |                                                          | keyb/resetHW                                           |                3 |             11 |
+|  clk12        | pm/line_doubler/ram1_reg_0_63_0_2_i_4_n_0                |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram1_reg_128_191_0_2_i_1_n_0             |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram2_reg_64_127_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram2_reg_128_191_0_2_i_1_n_0             |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram2_reg_0_63_0_2_i_1_n_0                |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram1_reg_320_383_0_2_i_1_n_0             |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram1_reg_64_127_0_2_i_1_n_0              |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram1_reg_256_319_0_2_i_1_n_0             |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram1_reg_192_255_0_2_i_1_n_0             |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram2_reg_448_511_0_2_i_1_n_0             |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram2_reg_384_447_0_2_i_1_n_0             |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram2_reg_320_383_0_2_i_1_n_0             |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram1_reg_448_511_0_2_i_1_n_0             |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram2_reg_256_319_0_2_i_1_n_0             |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram1_reg_384_447_0_2_i_1_n_0             |                                                        |                3 |             12 |
+|  clk12        | pm/line_doubler/ram2_reg_192_255_0_2_i_1_n_0             |                                                        |                3 |             12 |
+|  clk12        |                                                          | keyb/resetHW                                           |                5 |             13 |
+| ~clock_6      | pm/main_cpu/ea[15]_i_1_n_0                               |                                                        |                9 |             16 |
+| ~clk0p89_BUFG | pm/williams_sound_board/main_cpu/md[15]_i_1_n_0          |                                                        |                7 |             16 |
+| ~clk0p89_BUFG | pm/williams_sound_board/main_cpu/sp[15]_i_2__0_n_0       | pm/williams_sound_board/main_cpu/sp[15]_i_1_n_0        |               10 |             16 |
+| ~clock_6      | pm/main_cpu/md[15]_i_1__0_n_0                            |                                                        |               10 |             16 |
+| ~clock_6      | pm/main_cpu/state[7]_i_2_n_0                             | keyb/resetHW                                           |               12 |             20 |
+|  clk12        | el_multiboot/el_multiboot/p_0_in                         | el_multiboot/el_multiboot/icap_data0[31]_i_1_n_0       |                3 |             23 |
+| ~clock_6      |                                                          |                                                        |               20 |             26 |
+|  clock_6      |                                                          |                                                        |               11 |             32 |
+| ~clk0p89_BUFG |                                                          |                                                        |               10 |             35 |
+|  clk12        |                                                          |                                                        |               33 |             69 |
++---------------+----------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+

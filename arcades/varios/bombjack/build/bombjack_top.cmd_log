@@ -1,0 +1,8 @@
+xst -intstyle ise -filter "F:/repos/a35/bombjack/iseconfig/filter.filter" -ifn "F:/repos/a35/bombjack/build/bombjack_top.xst" -ofn "F:/repos/a35/bombjack/build/bombjack_top.syr" 
+xst -intstyle ise -filter "F:/repos/a35/bombjack/iseconfig/filter.filter" -ifn "F:/repos/a35/bombjack/build/bombjack_top.xst" -ofn "F:/repos/a35/bombjack/build/bombjack_top.syr" 
+ngdbuild -filter "F:/repos/a35/bombjack/iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc F:/repos/a35/bombjack/source/zxuno_lx16.ucf -p xc6slx16-ftg256-2 bombjack_top.ngc bombjack_top.ngd  
+xst -intstyle ise -filter "F:/repos/a35/bombjack/iseconfig/filter.filter" -ifn "F:/repos/a35/bombjack/build/bombjack_top.xst" -ofn "F:/repos/a35/bombjack/build/bombjack_top.syr" 
+ngdbuild -filter "F:/repos/a35/bombjack/iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-ftg256-2 bombjack_top.ngc bombjack_top.ngd  
+map -filter "F:/repos/a35/bombjack/iseconfig/filter.filter" -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -detail -ir off -pr off -lc off -power off -o bombjack_top_map.ncd bombjack_top.ngd bombjack_top.pcf 
+xst -intstyle ise -filter "F:/repos/a35/bombjack/iseconfig/filter.filter" -ifn "F:/repos/a35/bombjack/build/bombjack_top.xst" -ofn "F:/repos/a35/bombjack/build/bombjack_top.syr" 
+ngdbuild -filter "F:/repos/a35/bombjack/iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc F:/repos/a35/bombjack/pines_zxuno_lx16.ucf -p xc6slx16-ftg256-2 bombjack_top.ngc bombjack_top.ngd  

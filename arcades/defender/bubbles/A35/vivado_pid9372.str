@@ -1,0 +1,394 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 9372
+License: Customer
+
+Current time: 	Sun May 26 10:59:56 CEST 2019
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 207 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	neuro
+User home directory: C:/Users/neuro
+User working directory: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/neuro/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/neuro/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/neuro/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/vivado.log
+Vivado journal file location: 	D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/vivado.jou
+Engine tmp dir: 	D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/.Xil/Vivado-9372-DESKTOP-QDU895T
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.3
+XILINX_SDK: D:/Xilinx/SDK/2018.3
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 517 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: D:\repos\jammazx1 - Bigbucket\jammazx1\arcades\defender\joust\A35\A35.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 517 MB. GUI used memory: 43 MB. Current time: 5/26/19, 10:59:58 AM CEST
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 96 MB (+98393kb) [00:00:22]
+// [Engine Memory]: 563 MB (+438745kb) [00:00:22]
+// [Engine Memory]: 604 MB (+13659kb) [00:00:24]
+// [GUI Memory]: 101 MB (+397kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  4471 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 648.234 ; gain = 89.871 
+// Project name: A35; location: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35; part: xc7a35tftg256-1
+// [Engine Memory]: 689 MB (+57345kb) [00:00:27]
+dismissDialog("Open Project"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 46 MB. Current time: 5/26/19, 11:00:18 AM CEST
+// [Engine Memory]: 730 MB (+6850kb) [00:00:40]
+// PAPropertyPanels.initPanels (modulo_top_a35t.v) elapsed time: 0.2s
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd)]", 2, true); // B (D, cp) - Node
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v), pm : williams_cpu(Behavioral) (williams_cpu.vhd), inst_cpu09 : cpu09(CPU_ARCH) (cpu09new.vhd)]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("williams_cpu.vhd", 138, 316); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 138, 316, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "williams_cpu.vhd", 'c'); // cl (w, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CLK12"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CLK12"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CLK12"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CLK12"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CLK12"); // l (aT, cp)
+selectCodeEditor("williams_cpu.vhd", 146, 284); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+// [GUI Memory]: 110 MB (+3391kb) [00:03:16]
+// Elapsed time: 148 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 150 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun May 26 11:04:42 2019] Launched synth_1... Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1/runme.log [Sun May 26 11:04:42 2019] Launched impl_1... Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 414 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// [GUI Memory]: 117 MB (+1803kb) [00:18:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 57 MB. Current time: 5/26/19, 11:30:19 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  2364 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 45 MB. Current time: 5/26/19, 12:00:21 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 43 MB. Current time: 5/26/19, 12:30:21 PM CEST
+// Elapsed time: 6163 seconds
+selectCodeEditor("williams_cpu.vhd", 174, 307); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("williams_cpu.vhd", 1003, 17); // cl (w, cp)
+// Elapsed time: 19 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "audio_out"); // l (aT, cp)
+selectCodeEditor("williams_cpu.vhd", 173, 161); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 173, 161, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "williams_cpu.vhd", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'c'); // cl (w, cp)
+// Elapsed time: 16 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_snd2"); // l (aT, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 51 MB. Current time: 5/26/19, 1:00:21 PM CEST
+// Elapsed time: 330 seconds
+selectCodeEditor("williams_cpu.vhd", 519, 261); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("williams_cpu.vhd", 390, 190); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 59, 250); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 59, 250, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "williams_cpu.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 75, 46); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 75, 46, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "williams_cpu.vhd", 'c'); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_0p89"); // l (aT, cp)
+// Elapsed time: 42 seconds
+selectCodeEditor("williams_cpu.vhd", 370, 134); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 86, 299); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 80, 315); // cl (w, cp)
+selectCodeEditor("williams_cpu.vhd", 85, 313); // cl (w, cp)
+typeControlKey((HResource) null, "williams_cpu.vhd", 'v'); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_snd1"); // l (aT, cp)
+selectCodeEditor("williams_cpu.vhd", 0, 313); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modulo_top_a35t.v", 1); // k (j, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("modulo_top_a35t.v", 28, 114); // cl (w, cp)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 201, 120); // cl (w, cp)
+// Elapsed time: 64 seconds
+selectCodeEditor("modulo_top_a35t.v", 569, 257); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("modulo_top_a35t.v", 102, 283); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 102, 283, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cl (w, cp)
+// Elapsed time: 16 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk3p58"); // l (aT, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("modulo_top_a35t.v", 139, 83); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 139, 83, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "williams_cpu.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modulo_top_a35t.v", 1); // k (j, cp)
+// Elapsed time: 148 seconds
+selectCodeEditor("modulo_top_a35t.v", 232, 351); // cl (w, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("modulo_top_a35t.v", 136, 350); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 140, 350); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 139, 349); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("modulo_top_a35t.v", 133, 92); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 67, 94); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 132, 93); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 259, 161); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 253, 143); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 274, 166); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 265, 162); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 265, 163, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 347, 94); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 347, 94, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 258, 160); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 70, 93); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("modulo_top_a35t.v", 11, 249); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 80, 264); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("modulo_top_a35t.v", 83, 263); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("modulo_top_a35t.v", 116, 297); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("modulo_top_a35t.v", 198, 298); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 208, 298); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("modulo_top_a35t.v", 95, 350); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("modulo_top_a35t.v", 275, 340); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectButton(RDIResourceCommand.RDICommands_PASTE, "edit_paste"); // B (f, cp)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "williams_cpu.vhd", 2); // k (j, cp)
+selectCodeEditor("williams_cpu.vhd", 121, 313); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modulo_top_a35t.v", 1); // k (j, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+// Elapsed time: 89 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 91 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun May 26 13:14:27 2019] Launched synth_1... Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1/runme.log [Sun May 26 13:14:27 2019] Launched impl_1... Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 37 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1031] clk7p16 is not declared [D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/src/modulo_top_a35t.v:90]. ]", 1, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\repos\jammazx1 - Bigbucket\jammazx1\arcades\defender\joust\src\modulo_top_a35t.v;-;;-;16;-;line;-;90;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("modulo_top_a35t.v", 349, 194); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 349, 194, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 161, 214); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 161, 214, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sun May 26 13:15:46 2019] Launched synth_1... Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1/runme.log [Sun May 26 13:15:46 2019] Launched impl_1... Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 53 MB. Current time: 5/26/19, 1:30:22 PM CEST
+// Elapsed time: 2516 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 52 MB. Current time: 5/26/19, 2:00:22 PM CEST
+// Elapsed time: 373 seconds
+selectCodeEditor("modulo_top_a35t.v", 127, 234); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 127, 238); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 126, 237, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("modulo_top_a35t.v", 147, 237, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af (al, Popup.HeavyWeightWindow)
+// Elapsed time: 62 seconds
+selectCodeEditor("modulo_top_a35t.v", 68, 296); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 68, 296, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("modulo_top_a35t.v", 91, 158); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("modulo_top_a35t.v", 123, 179); // cl (w, cp)
+selectCodeEditor("modulo_top_a35t.v", 134, 179); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("modulo_top_a35t.v", 315, 143); // cl (w, cp)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joust_top (modulo_top_a35t.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sun May 26 14:06:51 2019] Launched synth_1... Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/synth_1/runme.log [Sun May 26 14:06:51 2019] Launched impl_1... Run output will be captured here: D:/repos/jammazx1 - Bigbucket/jammazx1/arcades/defender/joust/A35/A35.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 53 MB. Current time: 5/26/19, 2:30:22 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 53 MB. Current time: 5/26/19, 3:00:22 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 53 MB. Current time: 5/26/19, 3:30:23 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 54 MB. Current time: 5/26/19, 4:00:23 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 53 MB. Current time: 5/26/19, 4:30:23 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 53 MB. Current time: 5/26/19, 5:00:23 PM CEST

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Oct  1 13:17:58 2019
+# Process ID: 5396
+# Current directory: F:/repos/lx16/defender/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4916 F:\repos\lx16\defender\A35\A35.xpr
+# Log file: F:/repos/lx16/defender/A35/vivado.log
+# Journal file: F:/repos/lx16/defender/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/lx16/defender/A35/A35.xpr
+INFO: [Project 1-313] Project file moved from 'F:/repos/a35/NUEVO/defender/A35' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as 'F:/repos/a35/defender/a35t/a35t.ip_user_files'; using path 'F:/repos/repos/a35/defender/a35t/a35t.ip_user_files' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 674.684 ; gain = 90.422
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  1 14:12:32 2019...

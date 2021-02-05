@@ -1,0 +1,127 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon May 27 09:51:05 2019
+# Process ID: 4396
+# Current directory: F:/repos/a35/NUEVO/colony7/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7140 F:\repos\a35\NUEVO\colony7\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/colony7/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/colony7/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/colony7/A35/A35.xpr
+INFO: [Project 1-313] Project file moved from 'F:/repos/a35/NUEVO/colony 7/A35' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 703.172 ; gain = 123.250
+add_files -norecurse {F:/repos/a35/NUEVO/colony7/src/roms/colony7_decoder_3.vhd F:/repos/a35/NUEVO/colony7/src/roms/colony7_sound.vhd F:/repos/a35/NUEVO/colony7/src/roms/colony7_decoder_2.vhd F:/repos/a35/NUEVO/colony7/src/rtl/gen_ram.vhd F:/repos/a35/NUEVO/colony7/src/roms/colony7_prog.vhd F:/repos/a35/NUEVO/colony7/src/rtl/cpu09l_128.vhd F:/repos/a35/NUEVO/colony7/src/rtl/defender_old.vhd F:/repos/a35/NUEVO/colony7/src/rtl/pia6821.vhd F:/repos/a35/NUEVO/colony7/src/rtl/Williams_sound_board.vhd F:/repos/a35/NUEVO/colony7/src/rtl/cpu68.vhd F:/repos/a35/NUEVO/colony7/src/rtl/defender.vhd}
+set_property top colony7_top [current_fileset]
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/colony7/src/rtl/defender_old.vhd] -no_script -reset -force -quiet
+remove_files  F:/repos/a35/NUEVO/colony7/src/rtl/defender_old.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon May 27 10:00:11 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/synth_1/runme.log
+[Mon May 27 10:00:11 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon May 27 10:01:44 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/synth_1/runme.log
+[Mon May 27 10:01:44 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon May 27 10:04:07 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/synth_1/runme.log
+[Mon May 27 10:04:07 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon May 27 10:12:10 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/synth_1/runme.log
+[Mon May 27 10:12:10 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon May 27 10:13:31 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/synth_1/runme.log
+[Mon May 27 10:13:31 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon May 27 10:14:31 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/synth_1/runme.log
+[Mon May 27 10:14:31 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon May 27 10:16:06 2019] Launched synth_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/synth_1/runme.log
+[Mon May 27 10:16:06 2019] Launched impl_1...
+Run output will be captured here: F:/repos/a35/NUEVO/colony7/A35/A35.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3.1
+  **** Build date : Mar 26 2019-05:02:51
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf//
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf//.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+refresh_hw_target {localhost:3121/xilinx_tcf//}
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf//.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'refresh_hw_target' failed due to earlier errors.
+refresh_hw_target {localhost:3121/xilinx_tcf//}
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf//.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'refresh_hw_target' failed due to earlier errors.
+close_hw_target {localhost:3121/xilinx_tcf//}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf//
+refresh_hw_server {localhost:3121}
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf//
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf//.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf//
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf//
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf//.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf//
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf//
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf//.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 27 12:02:30 2019...

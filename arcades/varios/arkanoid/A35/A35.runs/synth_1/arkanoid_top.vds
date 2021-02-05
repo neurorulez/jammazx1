@@ -1,0 +1,1607 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon Jun 17 15:04:58 2019
+# Process ID: 14672
+# Current directory: F:/repos/a35/NUEVO/arkanoid/A35/A35.runs/synth_1
+# Command line: vivado.exe -log arkanoid_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arkanoid_top.tcl
+# Log file: F:/repos/a35/NUEVO/arkanoid/A35/A35.runs/synth_1/arkanoid_top.vds
+# Journal file: F:/repos/a35/NUEVO/arkanoid/A35/A35.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source arkanoid_top.tcl -notrace
+Command: synth_design -top arkanoid_top -part xc7a35tftg256-1 -retiming
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11600 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 359.383 ; gain = 100.461
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port video_i is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:202]
+WARNING: [Synth 8-1565] actual for formal port vsync_i is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:204]
+WARNING: [Synth 8-2519] partially associated formal q cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:301]
+WARNING: [Synth 8-2519] partially associated formal z cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:346]
+WARNING: [Synth 8-1565] actual for formal port we is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:448]
+WARNING: [Synth 8-1565] actual for formal port addr is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:457]
+WARNING: [Synth 8-2519] partially associated formal q1 cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:516]
+WARNING: [Synth 8-2519] partially associated formal q2 cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:520]
+WARNING: [Synth 8-2519] partially associated formal data cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:528]
+WARNING: [Synth 8-2519] partially associated formal data cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:537]
+WARNING: [Synth 8-2519] partially associated formal data cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:546]
+WARNING: [Synth 8-1565] actual for formal port d is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:578]
+WARNING: [Synth 8-2519] partially associated formal q cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:661]
+WARNING: [Synth 8-2519] partially associated formal q cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:662]
+WARNING: [Synth 8-2519] partially associated formal q cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:723]
+WARNING: [Synth 8-2519] partially associated formal q cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:945]
+WARNING: [Synth 8-1565] actual for formal port we is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:959]
+WARNING: [Synth 8-1565] actual for formal port re is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:960]
+WARNING: [Synth 8-1565] actual for formal port we is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:1034]
+WARNING: [Synth 8-1565] actual for formal port we is neither a static name nor a globally static expression [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:1049]
+WARNING: [Synth 8-2519] partially associated formal y cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:1261]
+WARNING: [Synth 8-2519] partially associated formal shift_out cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:1335]
+WARNING: [Synth 8-2519] partially associated formal o0 cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:1386]
+WARNING: [Synth 8-2519] partially associated formal o1 cannot have actual OPEN [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:1388]
+INFO: [Synth 8-6157] synthesizing module 'arkanoid_top' [F:/repos/a35/NUEVO/arkanoid/src/modulo_top_a35t.v:9]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'PLL_BASE' [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41499]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 12 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN_PERIOD bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 50 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 63 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLK_FEEDBACK bound to: CLKFBOUT - type: string 
+	Parameter COMPENSATION bound to: INTERNAL - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER bound to: 0.100000 - type: float 
+	Parameter RESET_ON_LOSS_OF_LOCK bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLL_BASE' (2#1) [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41499]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/repos/a35/NUEVO/arkanoid/src/modulo_top_a35t.v:161]
+WARNING: [Synth 8-6090] variable 'position' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/repos/a35/NUEVO/arkanoid/src/modulo_top_a35t.v:245]
+INFO: [Synth 8-638] synthesizing module 'arkanoid' [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'line_doubler' [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/line_doubler.vhd:20]
+WARNING: [Synth 8-614] signal 'scanline' is read in the process but is not in the sensitivity list [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/line_doubler.vhd:77]
+WARNING: [Synth 8-614] signal 'scanlines' is read in the process but is not in the sensitivity list [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/line_doubler.vhd:77]
+WARNING: [Synth 8-614] signal 'video' is read in the process but is not in the sensitivity list [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/line_doubler.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'line_doubler' (3#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/line_doubler.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'dac' [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/dac.vhd:37]
+	Parameter msbi_g bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dac' (4#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/dac.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'YM2149' [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:91]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:161]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:245]
+INFO: [Synth 8-226] default block is never used [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:276]
+WARNING: [Synth 8-614] signal 'ioa_inreg' is read in the process but is not in the sensitivity list [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:272]
+WARNING: [Synth 8-614] signal 'iob_inreg' is read in the process but is not in the sensitivity list [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:272]
+WARNING: [Synth 8-614] signal 'reg' is read in the process but is not in the sensitivity list [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:417]
+INFO: [Synth 8-3491] module 'vol_table' declared at 'F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/vol_table.vhd:6' bound to instance 'u_vol_table' of component 'vol_table' [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:547]
+INFO: [Synth 8-638] synthesizing module 'vol_table' [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/vol_table.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'vol_table' (5#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/vol_table.vhd:14]
+WARNING: [Synth 8-6014] Unused sequential element noise_gen_comp_reg was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:334]
+WARNING: [Synth 8-6014] Unused sequential element poly17_zero_reg was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:339]
+WARNING: [Synth 8-6014] Unused sequential element tone_gen_freq_reg[1] was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:364]
+WARNING: [Synth 8-6014] Unused sequential element tone_gen_freq_reg[2] was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:364]
+WARNING: [Synth 8-6014] Unused sequential element tone_gen_freq_reg[3] was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:364]
+WARNING: [Synth 8-6014] Unused sequential element tone_gen_comp_reg[1] was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:370]
+WARNING: [Synth 8-6014] Unused sequential element tone_gen_comp_reg[2] was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:370]
+WARNING: [Synth 8-6014] Unused sequential element tone_gen_comp_reg[3] was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:370]
+WARNING: [Synth 8-6014] Unused sequential element env_gen_freq_reg was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:396]
+WARNING: [Synth 8-6014] Unused sequential element env_gen_comp_reg was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:399]
+WARNING: [Synth 8-6014] Unused sequential element is_bot_reg was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:456]
+WARNING: [Synth 8-6014] Unused sequential element is_bot_p1_reg was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:457]
+WARNING: [Synth 8-6014] Unused sequential element is_top_m1_reg was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:458]
+WARNING: [Synth 8-6014] Unused sequential element is_top_reg was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:459]
+WARNING: [Synth 8-6014] Unused sequential element chan_mixed_reg was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:515]
+INFO: [Synth 8-256] done synthesizing module 'YM2149' (6#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/sound/ym2149.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'ls273' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls273.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'ls273' (7#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls273.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'ls669' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls669.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'ls669' (8#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls669.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'ls157' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls157.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'ls157' (9#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls157.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'cmos_4584' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/cmos_4584.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'cmos_4584' (10#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/cmos_4584.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'ls257' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls257.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'ls257' (11#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls257.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'T80s' [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80s.vhd:102]
+	Parameter Mode bound to: 0 - type: integer 
+	Parameter T2Write bound to: 1 - type: integer 
+	Parameter IOWait bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'T80' [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80.vhd:126]
+	Parameter Mode bound to: 0 - type: integer 
+	Parameter IOWait bound to: 1 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+	Parameter Mode bound to: 0 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'T80_MCode' declared at 'F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80_MCode.vhd:79' bound to instance 'mcode' of component 'T80_MCode' [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80.vhd:263]
+INFO: [Synth 8-638] synthesizing module 'T80_MCode' [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80_MCode.vhd:151]
+	Parameter Mode bound to: 0 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'T80_MCode' (12#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80_MCode.vhd:151]
+	Parameter Mode bound to: 0 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'T80_ALU' declared at 'F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80_ALU.vhd:74' bound to instance 'alu' of component 'T80_ALU' [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80.vhd:331]
+INFO: [Synth 8-638] synthesizing module 'T80_ALU' [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80_ALU.vhd:102]
+	Parameter Mode bound to: 0 - type: integer 
+	Parameter Flag_C bound to: 0 - type: integer 
+	Parameter Flag_N bound to: 1 - type: integer 
+	Parameter Flag_P bound to: 2 - type: integer 
+	Parameter Flag_X bound to: 3 - type: integer 
+	Parameter Flag_H bound to: 4 - type: integer 
+	Parameter Flag_Y bound to: 5 - type: integer 
+	Parameter Flag_Z bound to: 6 - type: integer 
+	Parameter Flag_S bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'T80_ALU' (13#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80_ALU.vhd:102]
+INFO: [Synth 8-3491] module 'T80_Reg' declared at 'F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80_Reg.vhd:75' bound to instance 'Regs' of component 'T80_Reg' [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80.vhd:923]
+INFO: [Synth 8-638] synthesizing module 'T80_Reg' [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80_Reg.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'T80_Reg' (14#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80_Reg.vhd:96]
+WARNING: [Synth 8-6014] Unused sequential element ioq_reg was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80.vhd:597]
+WARNING: [Synth 8-6014] Unused sequential element n_reg was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80.vhd:770]
+INFO: [Synth 8-256] done synthesizing module 'T80' (15#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'T80s' (16#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80s.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'spram' [F:/repos/a35/NUEVO/arkanoid/src/rtl/spram.vhd:25]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spram' (17#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/spram.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'eprom_2' [F:/repos/a35/NUEVO/arkanoid/src/roms/eprom_2_taito.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'eprom_2' (18#1) [F:/repos/a35/NUEVO/arkanoid/src/roms/eprom_2_taito.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'eprom_1' [F:/repos/a35/NUEVO/arkanoid/src/roms/eprom_1_taito.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'eprom_1' (19#1) [F:/repos/a35/NUEVO/arkanoid/src/roms/eprom_1_taito.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'ls08' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls08.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'ls08' (20#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls08.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'ls04' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls04.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'ls04' (21#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls04.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'ls393' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls393.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'ls393' (22#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls393.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'color_prom_3' [F:/repos/a35/NUEVO/arkanoid/src/roms/color_prom_3.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'color_prom_3' (23#1) [F:/repos/a35/NUEVO/arkanoid/src/roms/color_prom_3.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'color_prom_2' [F:/repos/a35/NUEVO/arkanoid/src/roms/color_prom_2.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'color_prom_2' (24#1) [F:/repos/a35/NUEVO/arkanoid/src/roms/color_prom_2.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'color_prom_1' [F:/repos/a35/NUEVO/arkanoid/src/roms/color_prom_1.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'color_prom_1' (25#1) [F:/repos/a35/NUEVO/arkanoid/src/roms/color_prom_1.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'ls155' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls155.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'ls155' (26#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls155.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'ls374' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls374.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'ls374' (27#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls374.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'ls32' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls32.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'ls32' (28#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls32.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'ls74' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls74.vhd:59]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register q1_reg in module ls74. This is not a recommended register style for Xilinx devices  [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls74.vhd:63]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register q2_reg in module ls74. This is not a recommended register style for Xilinx devices  [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls74.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ls74' (29#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls74.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'ls244' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls244.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'ls244' (30#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls244.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'ls174' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls174.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'ls174' (31#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls174.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'ls298' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls298.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'ls298' (32#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls298.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'spram_en' [F:/repos/a35/NUEVO/arkanoid/src/rtl/spram_en.vhd:26]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spram_en' (33#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/spram_en.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'ls27' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls27.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'ls27' (34#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls27.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'ls283' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls283.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'ls283' (35#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls283.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'eprom_5' [F:/repos/a35/NUEVO/arkanoid/src/roms/eprom_5.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'eprom_5' (36#1) [F:/repos/a35/NUEVO/arkanoid/src/roms/eprom_5.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'eprom_4' [F:/repos/a35/NUEVO/arkanoid/src/roms/eprom_4.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'eprom_4' (37#1) [F:/repos/a35/NUEVO/arkanoid/src/roms/eprom_4.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'eprom_3' [F:/repos/a35/NUEVO/arkanoid/src/roms/eprom_3.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'eprom_3' (38#1) [F:/repos/a35/NUEVO/arkanoid/src/roms/eprom_3.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'ls161' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls161.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'ls161' (39#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls161.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'ls20' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls20.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'ls20' (40#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls20.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'mb112s146' [F:/repos/a35/NUEVO/arkanoid/src/rtl/custom/mb112s146.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'mb112s146' (41#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/custom/mb112s146.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'ls00' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls00.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'ls00' (42#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls00.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'ls139' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls139.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'ls139' (43#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls139.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'ls86' [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls86.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'ls86' (44#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls86.vhd:57]
+WARNING: [Synth 8-3848] Net ym2149_clk_div in module/entity arkanoid does not have driver. [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'arkanoid' (45#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/keyb/keyboard.vhd:20]
+	Parameter filter_length bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ps2_intf' declared at 'F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/keyb/ps2_intf.vhd:44' bound to instance 'ps2' of component 'ps2_intf' [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/keyb/keyboard.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ps2_intf' [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/keyb/ps2_intf.vhd:62]
+	Parameter filter_length bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ps2_intf' (46#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/keyb/ps2_intf.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (47#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/keyb/keyboard.vhd:20]
+INFO: [Synth 8-6157] synthesizing module 'ps2mouse' [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/ps2mouse.v:6]
+WARNING: [Synth 8-6104] Input port 'ps2mclk' has an internal driver [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/ps2mouse.v:49]
+WARNING: [Synth 8-6104] Input port 'ps2mdat' has an internal driver [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/ps2mouse.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'ps2mouse' (48#1) [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/ps2mouse.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/repos/a35/NUEVO/arkanoid/src/modulo_top_a35t.v:303]
+INFO: [Synth 8-6157] synthesizing module 'multiboot' [F:/repos/a35/NUEVO/arkanoid/src/multiboot_artix7.v:1]
+INFO: [Synth 8-6157] synthesizing module 'multiboot_artix7' [F:/repos/a35/NUEVO/arkanoid/src/multiboot_artix7.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'multiboot_artix7' (49#1) [F:/repos/a35/NUEVO/arkanoid/src/multiboot_artix7.v:35]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/repos/a35/NUEVO/arkanoid/src/multiboot_artix7.v:16]
+INFO: [Synth 8-6157] synthesizing module 'icape' [F:/repos/a35/NUEVO/arkanoid/src/multiboot_artix7.v:75]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/repos/a35/NUEVO/arkanoid/src/multiboot_artix7.v:91]
+INFO: [Synth 8-6157] synthesizing module 'ICAPE2' [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22206]
+	Parameter DEVICE_ID bound to: 56955027 - type: integer 
+	Parameter ICAP_WIDTH bound to: X32 - type: string 
+	Parameter SIM_CFG_FILE_NAME bound to: NONE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ICAPE2' (50#1) [F:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22206]
+INFO: [Synth 8-6155] done synthesizing module 'icape' (51#1) [F:/repos/a35/NUEVO/arkanoid/src/multiboot_artix7.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'multiboot' (52#1) [F:/repos/a35/NUEVO/arkanoid/src/multiboot_artix7.v:1]
+WARNING: [Synth 8-6014] Unused sequential element mouse_x_reg was removed.  [F:/repos/a35/NUEVO/arkanoid/src/modulo_top_a35t.v:209]
+INFO: [Synth 8-6155] done synthesizing module 'arkanoid_top' (53#1) [F:/repos/a35/NUEVO/arkanoid/src/modulo_top_a35t.v:9]
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[18] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[17] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[16] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[15] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[14] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[13] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[12] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[11] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[10] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[9] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[8] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[7] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[6] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[5] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[4] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[3] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[2] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[1] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[0] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_we_n driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port green[3] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port green[2] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port green[1] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port green[0] driven by constant 0
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[15]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[14]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[12]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[10]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[9]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[8]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[7]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[6]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[5]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[4]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[3]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[2]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[1]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[0]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[5]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[4]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[3]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[1]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[19]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[18]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[17]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[16]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[15]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[14]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[10]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[9]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[7]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[6]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[5]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[3]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[2]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[1]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scanSW[0]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scandblctrl[0]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port sram_data[7]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port sram_data[6]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port sram_data[5]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port sram_data[4]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port sram_data[3]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port sram_data[2]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port BTN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 619.867 ; gain = 360.945
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin IC2:I_SEL_L to constant 0 [F:/repos/a35/NUEVO/arkanoid/src/rtl/arkanoid.vhd:272]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 619.867 ; gain = 360.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 619.867 ; gain = 360.945
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/repos/a35/NUEVO/arkanoid/pines_zxuno_a35t.xdc]
+Finished Parsing XDC File [F:/repos/a35/NUEVO/arkanoid/pines_zxuno_a35t.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/repos/a35/NUEVO/arkanoid/pines_zxuno_a35t.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arkanoid_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arkanoid_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 888.160 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 888.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  PLL_BASE => MMCME2_ADV: 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 888.160 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 888.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 888.160 ; gain = 629.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 888.160 ; gain = 629.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 888.160 ; gain = 629.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "scanline" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_o" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element hcnt_o_reg_rep was removed.  [F:/repos/a35/NUEVO/arkanoid/src/rtl_mio/line_doubler.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls669.vhd:74]
+INFO: [Synth 8-5587] ROM size for "MCycles" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "MCycles" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MCycles" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TStates" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Prefix" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "LDZ" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Inc_PC" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NoRead" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Inc_PC" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IncDec_16" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IncDec_16" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Read_To_Reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Read_To_Acc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Jump" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusA_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_BusB_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Set_Addr_To" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "JumpXY" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "LDZ" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "LDSPHL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Special_LD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExchangeDH" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExchangeRp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExchangeAF" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExchangeRS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "I_DJNZ" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "I_CPL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I_CCF" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I_SCF" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "SetWZ" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SetWZ" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SetWZ" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SetWZ" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "SetDI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SetEI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IMode" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Halt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "XYbit_undoc" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "RegsH_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegsH_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegsH_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegsH_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegsH_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegsH_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegsH_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegsH_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/arkanoid/src/rtl/T80/T80.vhd:635]
+INFO: [Synth 8-5546] ROM "F" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IncDecZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IncDecZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "XY_State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "F" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "I" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegAddrA_r" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegAddrB_r" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "rom_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rom_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rom_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ps2_clk_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "release" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_11_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_7_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_6_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'ps2mouse'
+INFO: [Synth 8-5544] ROM "_mleft" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mpacket0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mnext" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mnext0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mnext0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "icap_command" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element indx_reg_rep was removed.  [F:/repos/a35/NUEVO/arkanoid/src/multiboot_artix7.v:65]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/repos/a35/NUEVO/arkanoid/src/modulo_top_a35t.v:211]
+INFO: [Synth 8-5546] ROM "joy_renew" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "position" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "spin_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                          0000001 |                              000
+                  iSTATE |                          0000010 |                              001
+                 iSTATE0 |                          0000100 |                              010
+                 iSTATE2 |                          0001000 |                              101
+                 iSTATE3 |                          0010000 |                              110
+                 iSTATE4 |                          0100000 |                              011
+                 iSTATE1 |                          1000000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'one-hot' in module 'ps2mouse'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 961.133 ; gain = 702.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 11    
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 6     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 5     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 7     
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 13    
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
++---XORs : 
+	   2 Input      8 Bit         XORs := 2     
+	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 21    
+	   8 Input      1 Bit         XORs := 6     
++---Registers : 
+	               34 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 6     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 80    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 20    
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 74    
++---RAMs : 
+	              16K Bit         RAMs := 4     
+	               6K Bit         RAMs := 2     
++---ROMs : 
+	                              ROMs := 6     
++---Muxes : 
+	   2 Input    208 Bit        Muxes := 1     
+	  17 Input     34 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	  29 Input     21 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 30    
+	   6 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 10    
+	  11 Input     12 Bit        Muxes := 1     
+	  25 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 75    
+	   8 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 5     
+	 513 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 9     
+	   7 Input      7 Bit        Muxes := 1     
+	  10 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 105   
+	   4 Input      4 Bit        Muxes := 15    
+	   6 Input      4 Bit        Muxes := 5     
+	   8 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 15    
+	  59 Input      4 Bit        Muxes := 4     
+	   9 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 6     
+	  23 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 87    
+	   3 Input      3 Bit        Muxes := 11    
+	   5 Input      3 Bit        Muxes := 20    
+	  59 Input      3 Bit        Muxes := 3     
+	  25 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 18    
+	   6 Input      3 Bit        Muxes := 6     
+	  23 Input      3 Bit        Muxes := 6     
+	   8 Input      3 Bit        Muxes := 3     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 22    
+	   4 Input      2 Bit        Muxes := 7     
+	   8 Input      2 Bit        Muxes := 3     
+	  61 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  59 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 3     
+	  25 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 248   
+	   8 Input      1 Bit        Muxes := 7     
+	  16 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 19    
+	   5 Input      1 Bit        Muxes := 15    
+	   6 Input      1 Bit        Muxes := 9     
+	  59 Input      1 Bit        Muxes := 17    
+	  23 Input      1 Bit        Muxes := 17    
+	   3 Input      1 Bit        Muxes := 8     
+	  25 Input      1 Bit        Muxes := 1     
+	  61 Input      1 Bit        Muxes := 12    
+	  29 Input      1 Bit        Muxes := 9     
+	   7 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module arkanoid_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  25 Input     12 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module line_doubler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	               6K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module dac 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module vol_table 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module YM2149 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 20    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 3     
+	  16 Input      1 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 16    
+Module ls273 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module ls669 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ls157 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module ls257 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module T80_MCode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 52    
+	   4 Input      4 Bit        Muxes := 15    
+	   6 Input      4 Bit        Muxes := 5     
+	   8 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 11    
+	  59 Input      4 Bit        Muxes := 4     
+	   9 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 6     
+	  23 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 10    
+	   2 Input      3 Bit        Muxes := 73    
+	   5 Input      3 Bit        Muxes := 20    
+	  59 Input      3 Bit        Muxes := 3     
+	  25 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 18    
+	   6 Input      3 Bit        Muxes := 6     
+	  23 Input      3 Bit        Muxes := 6     
+	   8 Input      3 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 8     
+	   8 Input      2 Bit        Muxes := 2     
+	  61 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  59 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 3     
+	  25 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 74    
+	   4 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 11    
+	   6 Input      1 Bit        Muxes := 7     
+	  59 Input      1 Bit        Muxes := 17    
+	  23 Input      1 Bit        Muxes := 17    
+	   3 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 3     
+	  25 Input      1 Bit        Muxes := 1     
+	  61 Input      1 Bit        Muxes := 12    
+Module T80_ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
+	   8 Input      1 Bit         XORs := 4     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   8 Input      1 Bit        Muxes := 1     
+Module T80_Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module T80 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 10    
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 3     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   8 Input      1 Bit         XORs := 2     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 10    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input    208 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 29    
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 57    
+	   6 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 5     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 10    
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 96    
+	   4 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 2     
+Module T80s 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 10    
+Module spram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module eprom_2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module eprom_1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module ls393 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+Module color_prom_3 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	 513 Input      8 Bit        Muxes := 1     
+Module color_prom_2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	 513 Input      8 Bit        Muxes := 1     
+Module color_prom_1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	 513 Input      8 Bit        Muxes := 1     
+Module ls155 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 2     
+Module ls374 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module ls74 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module ls244 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module ls174 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
+Module ls298 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module spram_en 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              16K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module ls283 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
+Module eprom_5 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module eprom_4 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module eprom_3 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module ls161 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mb112s146 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module ls139 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 2     
+Module ls86 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module arkanoid 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module ps2_intf 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 2     
+Module keyboard 
+Detailed RTL Component Info : 
++---Registers : 
+	               21 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	  29 Input     21 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+Module ps2mouse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	  11 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 8     
+	  10 Input      7 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module multiboot_artix7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               34 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	  17 Input     34 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "scanline" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IncDecZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "F" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'IC50/q_reg' and it is trimmed from '4' to '3' bits. [F:/repos/a35/NUEVO/arkanoid/src/rtl/logic/ls298.vhd:66]
+INFO: [Synth 8-5546] ROM "joy_renew" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ps2_clk_in0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/ps2/ps2_clk_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_11_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/release" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_7_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_6_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyb/p_0_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "spin_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "position" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[18] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[17] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[16] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[15] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[14] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[13] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[12] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[11] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[10] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[9] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[8] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[7] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[6] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[5] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[4] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[3] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[2] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[1] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_addr[0] driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port sram_we_n driven by constant 1
+WARNING: [Synth 8-3917] design arkanoid_top has port green[3] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port green[2] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port green[1] driven by constant 0
+WARNING: [Synth 8-3917] design arkanoid_top has port green[0] driven by constant 0
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[15]
+WARNING: [Synth 8-3331] design T80_ALU has unconnected port WZ[14]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[5]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[4]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[3]
+WARNING: [Synth 8-3331] design T80_MCode has unconnected port F[1]
+WARNING: [Synth 8-3331] design arkanoid has unconnected port scandblctrl[0]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port sram_data[7]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port sram_data[6]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port sram_data[5]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port sram_data[4]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port sram_data[3]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port sram_data[2]
+WARNING: [Synth 8-3331] design arkanoid_top has unconnected port BTN
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/IC12/u0 /OldNMI_n_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/IC12/u0 /NMI_s_reg)
+INFO: [Synth 8-3886] merging instance 'pm/IC2/iob_inreg_reg[7]' (FD) to 'pm/IC2/iob_inreg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pm/IC2/ioa_inreg_reg[7]' (FD) to 'pm/IC2/iob_inreg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/IC2/iob_inreg_reg[4]' (FD) to 'pm/IC2/iob_inreg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pm/IC2/ioa_inreg_reg[4]' (FD) to 'pm/IC2/iob_inreg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/IC2/iob_inreg_reg[5]' (FD) to 'pm/IC2/iob_inreg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pm/IC2/ioa_inreg_reg[5]' (FD) to 'pm/IC2/iob_inreg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/IC2/iob_inreg_reg[6]' (FD) to 'pm/IC2/iob_inreg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/IC2/ioa_inreg_reg[6]' (FD) to 'pm/IC2/iob_inreg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/IC2/iob_inreg_reg[3]' (FD) to 'pm/IC2/iob_inreg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/IC2/ioa_inreg_reg[3]' (FD) to 'pm/IC2/iob_inreg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/IC2/iob_inreg_reg[2]' (FD) to 'pm/IC2/iob_inreg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pm/IC2/ioa_inreg_reg[2]' (FD) to 'pm/IC2/iob_inreg_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/IC2/iob_inreg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'pm/IC2/ioa_inreg_reg[1]' (FD) to 'pm/IC2/iob_inreg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/IC2/iob_inreg_reg[0]' (FD) to 'pm/IC2/ioa_inreg_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/IC2/ioa_inreg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/IC12/u0 /BusReq_s_reg)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:37 ; elapsed = 00:03:48 . Memory (MB): peak = 1045.203 ; gain = 786.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------------+---------------+----------------+
+|Module Name | RTL Object       | Depth x Width | Implemented As | 
++------------+------------------+---------------+----------------+
+|YM2149      | vol_table_in_reg | 4096x10       | Block RAM      | 
+|arkanoid    | IC62/data_reg    | 32768x8       | Block RAM      | 
+|arkanoid    | IC63/data_reg    | 32768x8       | Block RAM      | 
+|arkanoid    | IC64/data_reg    | 32768x8       | Block RAM      | 
+|arkanoid    | IC17/data_reg    | 32768x8       | Block RAM      | 
+|arkanoid    | IC16/data_reg    | 32768x8       | Block RAM      | 
++------------+------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|spram:      | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|spram_en:   | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|spram:      | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|spram:      | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-------------+--------------------------+-----------+----------------------+---------------+
+|Module Name  | RTL Object               | Inference | Size (Depth x Width) | Primitives    | 
++-------------+--------------------------+-----------+----------------------+---------------+
+|arkanoid_top | pm/line_doubler/ram1_reg | Implied   | 512 x 12             | RAM64M x 32   | 
+|arkanoid_top | pm/line_doubler/ram2_reg | Implied   | 512 x 12             | RAM64M x 32   | 
++-------------+--------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_31/pm/IC2/vol_table_in_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_31/pm/IC2/vol_table_in_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_59/pm/IC15/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_122/pm/IC51/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_123/pm/IC57/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_124/pm/IC58/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_170/pm/IC62/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_170/pm/IC62/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_170/pm/IC62/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_170/pm/IC62/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_170/pm/IC62/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_170/pm/IC62/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_170/pm/IC62/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_170/pm/IC62/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_171/pm/IC63/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_171/pm/IC63/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_171/pm/IC63/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_171/pm/IC63/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_171/pm/IC63/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_171/pm/IC63/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_171/pm/IC63/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_171/pm/IC63/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_172/pm/IC64/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_172/pm/IC64/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_172/pm/IC64/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_172/pm/IC64/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_172/pm/IC64/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_172/pm/IC64/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_172/pm/IC64/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_172/pm/IC64/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_173/pm/IC17/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_173/pm/IC17/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_173/pm/IC17/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_173/pm/IC17/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_173/pm/IC17/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_173/pm/IC17/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_173/pm/IC17/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_173/pm/IC17/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_174/pm/IC16/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_174/pm/IC16/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_174/pm/IC16/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_174/pm/IC16/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_174/pm/IC16/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_174/pm/IC16/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_174/pm/IC16/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_174/pm/IC16/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:59 ; elapsed = 00:04:10 . Memory (MB): peak = 1045.203 ; gain = 786.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:01 ; elapsed = 00:04:11 . Memory (MB): peak = 1045.203 ; gain = 786.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|spram:      | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|spram_en:   | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|spram:      | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|spram:      | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping  Report
++-------------+--------------------------+-----------+----------------------+---------------+
+|Module Name  | RTL Object               | Inference | Size (Depth x Width) | Primitives    | 
++-------------+--------------------------+-----------+----------------------+---------------+
+|arkanoid_top | pm/line_doubler/ram1_reg | Implied   | 512 x 12             | RAM64M x 32   | 
+|arkanoid_top | pm/line_doubler/ram2_reg | Implied   | 512 x 12             | RAM64M x 32   | 
++-------------+--------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[0]' (FDR) to 'pm/line_doubler/hcnt_o_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[1]' (FDR) to 'pm/line_doubler/hcnt_o_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[2]' (FDR) to 'pm/line_doubler/hcnt_o_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[3]' (FDR) to 'pm/line_doubler/hcnt_o_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[4]' (FDR) to 'pm/line_doubler/hcnt_o_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[5]' (FDR) to 'pm/line_doubler/hcnt_o_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[6]' (FDR) to 'pm/line_doubler/hcnt_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[8]' (FDR) to 'pm/line_doubler/hcnt_o_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pm/line_doubler/hcnt_o_reg_rep[7]' (FDR) to 'pm/line_doubler/hcnt_o_reg[7]'
+INFO: [Synth 8-5816] Retiming module `arkanoid_top`
+	No candidate paths found in current hierarchy level
+	Skipping retiming for this module
+
+INFO: [Synth 8-5816] Retiming module `arkanoid_top' done
+
+
+INFO: [Synth 8-6837] The timing for the instance pm/IC15/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC51/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC57/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC58/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC62/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC62/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC62/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC62/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC62/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC62/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC62/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC62/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC63/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC63/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC63/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC63/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC63/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC63/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC63/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC63/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC64/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC64/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC64/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC64/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC64/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC64/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC64/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC64/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC17/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC17/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC17/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC17/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC17/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC17/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC17/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC17/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC16/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC16/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC16/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC16/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC16/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC16/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC16/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance pm/IC16/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:06 ; elapsed = 00:04:17 . Memory (MB): peak = 1059.129 ; gain = 800.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop pm/IC12/IORQ_n_reg is being inverted and renamed to pm/IC12/IORQ_n_reg_inv.
+INFO: [Synth 8-5365] Flop el_multiboot/el_multiboot/icap_data0_reg[32] is being inverted and renamed to el_multiboot/el_multiboot/icap_data0_reg[32]_inv.
+INFO: [Synth 8-5365] Flop el_multiboot/el_multiboot/icap_data0_reg[33] is being inverted and renamed to el_multiboot/el_multiboot/icap_data0_reg[33]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:09 ; elapsed = 00:04:20 . Memory (MB): peak = 1059.129 ; gain = 800.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:10 ; elapsed = 00:04:20 . Memory (MB): peak = 1059.129 ; gain = 800.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:10 ; elapsed = 00:04:21 . Memory (MB): peak = 1059.129 ; gain = 800.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:10 ; elapsed = 00:04:21 . Memory (MB): peak = 1059.129 ; gain = 800.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:10 ; elapsed = 00:04:21 . Memory (MB): peak = 1059.129 ; gain = 800.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:10 ; elapsed = 00:04:21 . Memory (MB): peak = 1059.129 ; gain = 800.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     7|
+|2     |CARRY4      |   107|
+|3     |ICAPE2      |     1|
+|4     |LUT1        |   114|
+|5     |LUT2        |   310|
+|6     |LUT3        |   322|
+|7     |LUT4        |   277|
+|8     |LUT5        |   464|
+|9     |LUT6        |  1238|
+|10    |MUXF7       |    91|
+|11    |MUXF8       |     8|
+|12    |PLL_BASE    |     1|
+|13    |RAM64M      |    64|
+|14    |RAMB18E1_1  |     4|
+|15    |RAMB18E1_2  |     1|
+|16    |RAMB36E1_1  |     1|
+|17    |RAMB36E1_10 |     1|
+|18    |RAMB36E1_11 |     1|
+|19    |RAMB36E1_12 |     1|
+|20    |RAMB36E1_13 |     1|
+|21    |RAMB36E1_14 |     1|
+|22    |RAMB36E1_15 |     1|
+|23    |RAMB36E1_16 |     1|
+|24    |RAMB36E1_17 |     1|
+|25    |RAMB36E1_18 |     1|
+|26    |RAMB36E1_19 |     1|
+|27    |RAMB36E1_2  |     1|
+|28    |RAMB36E1_20 |     1|
+|29    |RAMB36E1_21 |     1|
+|30    |RAMB36E1_22 |     1|
+|31    |RAMB36E1_23 |     1|
+|32    |RAMB36E1_24 |     1|
+|33    |RAMB36E1_25 |     1|
+|34    |RAMB36E1_26 |     1|
+|35    |RAMB36E1_27 |     1|
+|36    |RAMB36E1_28 |     1|
+|37    |RAMB36E1_29 |     1|
+|38    |RAMB36E1_3  |     1|
+|39    |RAMB36E1_30 |     1|
+|40    |RAMB36E1_31 |     1|
+|41    |RAMB36E1_32 |     1|
+|42    |RAMB36E1_33 |     1|
+|43    |RAMB36E1_34 |     1|
+|44    |RAMB36E1_35 |     1|
+|45    |RAMB36E1_36 |     1|
+|46    |RAMB36E1_37 |     1|
+|47    |RAMB36E1_38 |     1|
+|48    |RAMB36E1_39 |     1|
+|49    |RAMB36E1_4  |     1|
+|50    |RAMB36E1_40 |     1|
+|51    |RAMB36E1_41 |     1|
+|52    |RAMB36E1_5  |     1|
+|53    |RAMB36E1_6  |     1|
+|54    |RAMB36E1_7  |     1|
+|55    |RAMB36E1_8  |     1|
+|56    |RAMB36E1_9  |     1|
+|57    |FDCE        |   285|
+|58    |FDPE        |    60|
+|59    |FDRE        |   676|
+|60    |FDSE        |    23|
+|61    |LDC         |     2|
+|62    |IBUF        |     6|
+|63    |IOBUF       |     2|
+|64    |OBUF        |    39|
++------+------------+------+
+
+Report Instance Areas: 
++------+-----------------+-----------------+------+
+|      |Instance         |Module           |Cells |
++------+-----------------+-----------------+------+
+|1     |top              |                 |  4143|
+|2     |  el_multiboot   |multiboot        |    88|
+|3     |    el_icap      |icape            |     1|
+|4     |    el_multiboot |multiboot_artix7 |    87|
+|5     |  keyb           |keyboard         |   116|
+|6     |    ps2          |ps2_intf         |    73|
+|7     |  mouse          |ps2mouse         |   141|
+|8     |  pm             |arkanoid         |  3578|
+|9     |    IC22         |color_prom_3     |     4|
+|10    |    IC23         |color_prom_2     |     4|
+|11    |    IC24         |color_prom_1     |     4|
+|12    |    IC12         |T80s             |  2242|
+|13    |      u0         |T80              |  2218|
+|14    |        Regs     |T80_Reg          |   881|
+|15    |    IC13         |ls273            |    16|
+|16    |    IC15         |spram            |     1|
+|17    |    IC16         |eprom_2          |     8|
+|18    |    IC17         |eprom_1          |     8|
+|19    |    IC2          |YM2149           |   511|
+|20    |    IC21         |ls393            |    16|
+|21    |    IC27         |ls374            |     9|
+|22    |    IC3          |ls273_0          |     8|
+|23    |    IC31         |ls74             |     3|
+|24    |    IC32         |ls273_1          |    14|
+|25    |    IC35         |ls174            |    10|
+|26    |    IC36         |ls374_2          |     8|
+|27    |    IC37         |ls374_3          |     8|
+|28    |    IC38         |ls298            |     8|
+|29    |    IC39         |ls298_4          |   153|
+|30    |    IC40         |ls374_5          |     8|
+|31    |    IC45         |ls74_6           |     3|
+|32    |    IC47         |ls298_7          |     4|
+|33    |    IC48         |ls298_8          |     4|
+|34    |    IC49         |ls298_9          |     4|
+|35    |    IC5          |ls669            |     9|
+|36    |    IC50         |ls298_10         |     3|
+|37    |    IC51         |spram_en         |     1|
+|38    |    IC52         |ls669_11         |     8|
+|39    |    IC57         |spram_12         |     4|
+|40    |    IC58         |spram_13         |     8|
+|41    |    IC59         |ls374_14         |    18|
+|42    |    IC6          |ls669_15         |     8|
+|43    |    IC62         |eprom_5          |     8|
+|44    |    IC63         |eprom_4          |     8|
+|45    |    IC64         |eprom_3          |     8|
+|46    |    IC65         |ls669_16         |     7|
+|47    |    IC67         |ls161            |    13|
+|48    |    IC68         |ls161_17         |    62|
+|49    |    IC73         |ls161_18         |    10|
+|50    |    IC74         |ls161_19         |    12|
+|51    |    IC76         |ls74_20          |     3|
+|52    |    IC77         |mb112s146        |    19|
+|53    |    IC78         |mb112s146_21     |    40|
+|54    |    IC81         |ls74_22          |     3|
+|55    |    IC86         |ls74_23          |     4|
+|56    |    IC87         |ls74_24          |     3|
+|57    |    line_doubler |line_doubler     |   238|
+|58    |    u_dac        |dac              |    23|
++------+-----------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:10 ; elapsed = 00:04:21 . Memory (MB): peak = 1059.129 ; gain = 800.207
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 41 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:36 ; elapsed = 00:04:04 . Memory (MB): peak = 1059.129 ; gain = 531.914
+Synthesis Optimization Complete : Time (s): cpu = 00:04:11 ; elapsed = 00:04:22 . Memory (MB): peak = 1059.129 ; gain = 800.207
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 321 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 17 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1059.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 69 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  LDC => LDCE: 2 instances
+  PLL_BASE => MMCME2_ADV: 1 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+388 Infos, 162 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:16 ; elapsed = 00:04:27 . Memory (MB): peak = 1059.129 ; gain = 805.914
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1059.129 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/repos/a35/NUEVO/arkanoid/A35/A35.runs/synth_1/arkanoid_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file arkanoid_top_utilization_synth.rpt -pb arkanoid_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 17 15:09:34 2019...

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/IO.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/K6_PROM.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/T65/T65.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/T65/T65_ALU.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/T65/T65_MCode.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/T65/T65_Pack.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/audio.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/cpu_mem.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/debounce.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/deltasigma.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/keyb/keyboard.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/keyb/ps2_intf.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/line_doubler.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/modulo_top.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/motion.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/multiboot.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/paddle.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/playfield.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/quadrature_decoder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/roms/c1-prog_rom2.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/roms/d1-prog_rom3.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/roms/e1-prog_rom4.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/roms/e2-addec_prom.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/roms/m2-sync_prom.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/roms/p4-char_LSB.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/roms/r4-char_MSB.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/super_breakout.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/sync.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;F:/jammaZX1/arcades/atarikee/sbreakout_(ok_y_overlay_2_bits)/src/synchro.v&quot; into library work</arg>
+</msg>
+
+</messages>
+

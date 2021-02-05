@@ -1,0 +1,53 @@
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Jan 27 09:29:11 2020
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 41 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   JJOY<5>_IBUF
+   JJOY<6>_IBUF
+   JOYSTICK<5>_IBUF
+   pm/dblscan/Mram_ram110_RAMD_O
+   pm/dblscan/Mram_ram111_RAMD_O
+   pm/dblscan/Mram_ram112_RAMD_O
+   pm/dblscan/Mram_ram113_RAMD_O
+   pm/dblscan/Mram_ram114_RAMD_O
+   pm/dblscan/Mram_ram115_RAMD_O
+   pm/dblscan/Mram_ram116_RAMD_O
+   pm/dblscan/Mram_ram11_RAMD_O
+   pm/dblscan/Mram_ram12_RAMD_O
+   pm/dblscan/Mram_ram13_RAMD_O
+   pm/dblscan/Mram_ram14_RAMD_O
+   pm/dblscan/Mram_ram15_RAMD_O
+   pm/dblscan/Mram_ram16_RAMD_O
+   pm/dblscan/Mram_ram17_RAMD_O
+   pm/dblscan/Mram_ram18_RAMD_O
+   pm/dblscan/Mram_ram19_RAMD_O
+   pm/dblscan/Mram_ram210_RAMD_O
+   pm/dblscan/Mram_ram211_RAMD_O
+   pm/dblscan/Mram_ram212_RAMD_O
+   pm/dblscan/Mram_ram213_RAMD_O
+   pm/dblscan/Mram_ram214_RAMD_O
+   pm/dblscan/Mram_ram215_RAMD_O
+   pm/dblscan/Mram_ram216_RAMD_O
+   pm/dblscan/Mram_ram21_RAMD_O
+   pm/dblscan/Mram_ram22_RAMD_O
+   pm/dblscan/Mram_ram23_RAMD_O
+   pm/dblscan/Mram_ram24_RAMD_O
+   pm/dblscan/Mram_ram25_RAMD_O
+   pm/dblscan/Mram_ram26_RAMD_O
+   pm/dblscan/Mram_ram27_RAMD_O
+   pm/dblscan/Mram_ram28_RAMD_O
+   pm/dblscan/Mram_ram29_RAMD_O
+   sram_dq<2>_IBUF
+   sram_dq<3>_IBUF
+   sram_dq<4>_IBUF
+   sram_dq<5>_IBUF
+   sram_dq<6>_IBUF
+   sram_dq<7>_IBUF
+
+

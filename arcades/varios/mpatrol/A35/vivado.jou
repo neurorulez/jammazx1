@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Wed May 29 08:31:20 2019
+# Process ID: 9284
+# Current directory: F:/repos/a35/NUEVO/mpatrol/A35
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3760 F:\repos\a35\NUEVO\mpatrol\A35\A35.xpr
+# Log file: F:/repos/a35/NUEVO/mpatrol/A35/vivado.log
+# Journal file: F:/repos/a35/NUEVO/mpatrol/A35\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/repos/a35/NUEVO/mpatrol/A35/A35.xpr
+add_files -norecurse {F:/repos/a35/NUEVO/mpatrol/src/roms/mpb-1.3n.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-5.3e.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpb-2.3m.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-4.3f.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-3.3h.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpa-4.3j.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpa-2.3l.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpa-1.3m.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-1.3l.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpe-2.3k.mem F:/repos/a35/NUEVO/mpatrol/src/roms/mpa-3.3k.mem}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property STEPS.SYNTH_DESIGN.ARGS.DIRECTIVE RuntimeOptimized [get_runs synth_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property -dict [list CONFIG.PRIMITIVE {MMCM} CONFIG.PRIM_IN_FREQ {50.000} CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {12.000} CONFIG.MMCM_CLKIN1_PERIOD {20.0} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {83.750} CONFIG.MMCM_CLKOUT1_DIVIDE {80} CONFIG.MMCM_CLKOUT2_DIVIDE {20} CONFIG.MMCM_CLKOUT3_DIVIDE {15} CONFIG.CLKOUT1_JITTER {369.319} CONFIG.CLKOUT1_PHASE_ERROR {155.997} CONFIG.CLKOUT2_JITTER {366.057} CONFIG.CLKOUT2_PHASE_ERROR {155.997} CONFIG.CLKOUT3_JITTER {277.423} CONFIG.CLKOUT3_PHASE_ERROR {155.997} CONFIG.CLKOUT4_JITTER {261.306} CONFIG.CLKOUT4_PHASE_ERROR {155.997}] [get_ips relojes]
+generate_target all [get_files  F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci]
+catch { config_ip_cache -export [get_ips -all relojes] }
+export_ip_user_files -of_objects [get_files F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -no_script -sync -force -quiet
+reset_run relojes_synth_1
+launch_runs  relojes_synth_1
+export_simulation -of_objects [get_files F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -directory F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files/sim_scripts -ip_user_files_dir F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files -ipstatic_source_dir F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/modelsim} {questa=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/questa} {riviera=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/riviera} {activehdl=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+export_ip_user_files -of_objects  [get_files F:/repos/a35/NUEVO/mpatrol/src/synchro.v] -no_script -reset -force -quiet
+remove_files  F:/repos/a35/NUEVO/mpatrol/src/synchro.v
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property -dict [list CONFIG.CLKOUT5_USED {false} CONFIG.CLK_OUT4_PORT {clk12} CONFIG.CLK_OUT5_PORT {clk6} CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {12.000} CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {6.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {18.000} CONFIG.MMCM_CLKIN1_PERIOD {20.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {125.625} CONFIG.MMCM_CLKOUT1_DIVIDE {120} CONFIG.MMCM_CLKOUT2_DIVIDE {30} CONFIG.MMCM_CLKOUT3_DIVIDE {75} CONFIG.MMCM_CLKOUT4_DIVIDE {1} CONFIG.NUM_OUT_CLKS {4} CONFIG.CLKOUT1_JITTER {316.154} CONFIG.CLKOUT1_PHASE_ERROR {161.614} CONFIG.CLKOUT2_JITTER {313.442} CONFIG.CLKOUT2_PHASE_ERROR {161.614} CONFIG.CLKOUT3_JITTER {238.203} CONFIG.CLKOUT3_PHASE_ERROR {161.614} CONFIG.CLKOUT4_JITTER {286.482} CONFIG.CLKOUT4_PHASE_ERROR {161.614} CONFIG.CLKOUT5_JITTER {570.737} CONFIG.CLKOUT5_PHASE_ERROR {383.066}] [get_ips relojes]
+generate_target all [get_files  F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci]
+catch { config_ip_cache -export [get_ips -all relojes] }
+export_ip_user_files -of_objects [get_files F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -no_script -sync -force -quiet
+reset_run relojes_synth_1
+launch_runs  relojes_synth_1
+export_simulation -of_objects [get_files F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -directory F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files/sim_scripts -ip_user_files_dir F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files -ipstatic_source_dir F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/modelsim} {questa=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/questa} {riviera=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/riviera} {activehdl=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property -dict [list CONFIG.CLKOUT4_USED {false} CONFIG.CLK_OUT2_PORT {clk12} CONFIG.CLK_OUT4_PORT {clk_out4} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {12} CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {100.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT1_DIVIDE {75} CONFIG.MMCM_CLKOUT3_DIVIDE {1} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT2_JITTER {286.482} CONFIG.CLKOUT4_JITTER {175.200}] [get_ips relojes]
+generate_target all [get_files  F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci]
+catch { config_ip_cache -export [get_ips -all relojes] }
+export_ip_user_files -of_objects [get_files F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -no_script -sync -force -quiet
+reset_run relojes_synth_1
+launch_runs  relojes_synth_1
+export_simulation -of_objects [get_files F:/repos/a35/NUEVO/mpatrol/A35/A35.srcs/sources_1/ip/relojes/relojes.xci] -directory F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files/sim_scripts -ip_user_files_dir F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files -ipstatic_source_dir F:/repos/a35/NUEVO/mpatrol/A35/A35.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/modelsim} {questa=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/questa} {riviera=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/riviera} {activehdl=F:/repos/a35/NUEVO/mpatrol/A35/A35.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/repos/a35/NUEVO/mpatrol/A35/A35.runs/impl_1/mpatrol_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

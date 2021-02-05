@@ -1,0 +1,506 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 7128
+License: Customer
+
+Current time: 	Tue Jun 26 10:33:35 CEST 2018
+Time zone: 	Central European Time (Europe/Paris)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 21 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	sysop
+User home directory: C:/Users/sysop
+User working directory: F:/repos/a35/bombjack/A35
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.1
+RDI_DATADIR: C:/Xilinx/Vivado/2018.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.1/bin
+
+Vivado preferences file location: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.1/
+Vivado layouts directory: C:/Users/sysop/AppData/Roaming/Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	F:/repos/a35/bombjack/A35/vivado.log
+Vivado journal file location: 	F:/repos/a35/bombjack/A35/vivado.jou
+Engine tmp dir: 	F:/repos/a35/bombjack/A35/.Xil/Vivado-7128-W7-PC
+
+GUI allocated memory:	193 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 495 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 53 MB (+52909kb) [00:00:16]
+// [Engine Memory]: 472 MB (+343149kb) [00:00:16]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bv (ch):  Open Project : addNotify
+// Opening Vivado Project: F:\repos\a35\bombjack\A35\A35.xpr. Version: Vivado v2018.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// [GUI Memory]: 64 MB (+8656kb) [00:00:21]
+// [Engine Memory]: 517 MB (+22915kb) [00:00:21]
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 536 MB. GUI used memory: 34 MB. Current time: 6/26/18 10:33:38 AM CEST
+// Tcl Message: open_project F:/repos/a35/bombjack/A35/A35.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 568 MB (+26422kb) [00:00:29]
+// [GUI Memory]: 73 MB (+6606kb) [00:00:30]
+// [Engine Memory]: 614 MB (+18161kb) [00:00:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 625 MB. GUI used memory: 46 MB. Current time: 6/26/18 10:33:54 AM CEST
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 806.969 ; gain = 99.371 
+// Project name: A35; location: F:/repos/a35/bombjack/A35; part: xc7a35tftg256-1
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v)]", 1); // B (D, ch)
+// PAPropertyPanels.initPanels (modulo_top_a35t.v) elapsed time: 0.5s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v)]", 1, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v)]", 1, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectCodeEditor("modulo_top_a35t.v", 400, 110); // cd (w, ch)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sycro", true); // l (aP, ch)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sycr", true); // l (aP, ch)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "syc", true); // l (aP, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, synchro (synchro.v)]", 2, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, synchro (synchro.v)]", 2, false); // B (D, ch)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aF (ch): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aF)
+dismissDialog("Remove Sources"); // aF (ch)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/repos/a35/bombjack/source/synchro.v] -no_script -reset -force -quiet 
+// aF (ch): Remove Sources: addNotify
+// bv (aF):  Remove Sources : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/repos/a35/bombjack/source/synchro.v 
+dismissDialog("Remove Sources"); // bv (aF)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 78 MB (+1344kb) [00:01:30]
+// HMemoryUtils.trashcanNow. Engine heap size: 642 MB. GUI used memory: 47 MB. Current time: 6/26/18 10:35:14 AM CEST
+// Elapsed time: 41 seconds
+selectCodeEditor("modulo_top_a35t.v", 76, 124); // cd (w, ch)
+// [Engine Memory]: 646 MB (+803kb) [00:02:11]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v)]", 1); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v), pm : BOMBJACK(RTL) (bombjack.vhd)]", 2, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v), pm : BOMBJACK(RTL) (bombjack.vhd), prog_roms : PROG_ROMS(RTL) (prog_roms_ramb.vhd)]", 4, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// [GUI Memory]: 86 MB (+4126kb) [00:02:23]
+// Elapsed time: 17 seconds
+selectCodeEditor("bombjack.vhd", 0, 89); // cd (w, ch)
+// Elapsed time: 10 seconds
+selectCodeEditor("bombjack.vhd", 55, 246); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 201, 244); // cd (w, ch)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 92 MB (+1198kb) [00:02:50]
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modulo_top_a35t.v", 1); // k (j, ch)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("modulo_top_a35t.v", 36, 126); // cd (w, ch)
+// Elapsed time: 10 seconds
+selectCodeEditor("modulo_top_a35t.v", 345, 242); // cd (w, ch)
+// Elapsed time: 17 seconds
+selectCodeEditor("modulo_top_a35t.v", 2, 62); // cd (w, ch)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bombjack.vhd", 2); // k (j, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 97 MB (+1311kb) [00:03:37]
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("bombjack.vhd", 19, 157); // cd (w, ch)
+// Elapsed time: 23 seconds
+selectCodeEditor("bombjack.vhd", 424, 126); // cd (w, ch)
+// Elapsed time: 42 seconds
+selectCodeEditor("bombjack.vhd", 92, 129); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 92, 129, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "bombjack.vhd", 'v'); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 127, 113); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 407, 106); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'v'); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 196, 110); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'c'); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 199, 125); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'v'); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 116, 130); // cd (w, ch)
+// Elapsed time: 15 seconds
+selectCodeEditor("bombjack.vhd", 414, 142); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'v'); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'v'); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 102, 178); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 99, 178); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 406, 183); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 38, 108); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'v'); // cd (w, ch)
+// [GUI Memory]: 103 MB (+890kb) [00:06:00]
+// Elapsed time: 28 seconds
+selectCodeEditor("bombjack.vhd", 0, 163); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'v'); // cd (w, ch)
+// Elapsed time: 16 seconds
+selectCodeEditor("bombjack.vhd", 227, 197); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'v'); // cd (w, ch)
+// Elapsed time: 13 seconds
+selectCodeEditor("bombjack.vhd", 375, 208); // cd (w, ch)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 15 seconds
+selectCodeEditor("bombjack.vhd", 217, 252); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 43, 284); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 22, 293); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 3, 104, true, false, false, false, false); // cd (w, ch) - Shift Key
+// Elapsed time: 21 seconds
+selectCodeEditor("bombjack.vhd", 218, 265); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 218, 265, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("bombjack.vhd", 232, 259); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 232, 259, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "bombjack.vhd", 'v'); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 0, 192); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'v'); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 166, 212); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'v'); // cd (w, ch)
+// Elapsed time: 57 seconds
+selectCodeEditor("bombjack.vhd", 323, 316); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 143, 348); // cd (w, ch)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v)]", 1, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v)]", 1, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v)]", 1, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("modulo_top_a35t.v", 83, 93); // cd (w, ch)
+// Elapsed time: 23 seconds
+selectCodeEditor("modulo_top_a35t.v", 6, 187); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 3, 177); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 1, 367); // cd (w, ch)
+// Elapsed time: 22 seconds
+selectCodeEditor("modulo_top_a35t.v", 37, 366); // cd (w, ch)
+// Elapsed time: 39 seconds
+selectCodeEditor("modulo_top_a35t.v", 6, 77); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 2, 209); // cd (w, ch)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v)]", 1); // B (D, ch)
+selectCodeEditor("modulo_top_a35t.v", 224, 146); // cd (w, ch)
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 40 seconds
+selectCodeEditor("modulo_top_a35t.v", 0, 212); // cd (w, ch)
+// Elapsed time: 25 seconds
+selectCodeEditor("modulo_top_a35t.v", 80, 262); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 171, 314); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 75, 112); // cd (w, ch)
+// Elapsed time: 20 seconds
+selectCodeEditor("modulo_top_a35t.v", 162, 131); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 133, 75); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 137, 80); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 133, 80); // cd (w, ch)
+// Elapsed time: 11 seconds
+selectCodeEditor("modulo_top_a35t.v", 141, 94); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 225, 91); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 214, 92); // cd (w, ch)
+// Elapsed time: 41 seconds
+selectCodeEditor("modulo_top_a35t.v", 141, 109); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 141, 126); // cd (w, ch)
+// Elapsed time: 16 seconds
+selectCodeEditor("modulo_top_a35t.v", 141, 108); // cd (w, ch)
+// Elapsed time: 19 seconds
+selectCodeEditor("modulo_top_a35t.v", 18, 250); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 12, 249); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+// Elapsed time: 83 seconds
+selectCodeEditor("modulo_top_a35t.v", 319, 295); // cd (w, ch)
+// Elapsed time: 10 seconds
+selectCodeEditor("modulo_top_a35t.v", 231, 208); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 141, 298); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 2, 79); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 233, 178); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 321, 40); // cd (w, ch)
+// Elapsed time: 23 seconds
+selectCodeEditor("modulo_top_a35t.v", 290, 325); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 69, 229); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 169, 248); // cd (w, ch)
+// Elapsed time: 15 seconds
+selectCodeEditor("modulo_top_a35t.v", 122, 98); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 181, 208); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 21, 250); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 11, 242); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 86, 219); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+// Elapsed time: 11 seconds
+selectCodeEditor("modulo_top_a35t.v", 244, 97); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 244, 97, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 159, 228); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 159, 228, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 367, 233); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 315, 229); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 303, 247); // cd (w, ch)
+// Elapsed time: 11 seconds
+selectCodeEditor("modulo_top_a35t.v", 18, 298); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 60, 253); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 70, 267); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 52, 262); // cd (w, ch)
+// Elapsed time: 72 seconds
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+// Elapsed time: 15 seconds
+selectCodeEditor("modulo_top_a35t.v", 50, 319); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 46, 322); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 56, 315); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 186, 312); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+// Elapsed time: 18 seconds
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+// Elapsed time: 66 seconds
+selectCodeEditor("modulo_top_a35t.v", 49, 59); // cd (w, ch)
+// Elapsed time: 27 seconds
+selectCodeEditor("modulo_top_a35t.v", 153, 143); // cd (w, ch)
+// Elapsed time: 31 seconds
+selectCodeEditor("modulo_top_a35t.v", 173, 247); // cd (w, ch)
+// Elapsed time: 76 seconds
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+// Elapsed time: 82 seconds
+selectCodeEditor("modulo_top_a35t.v", 178, 184); // cd (w, ch)
+// Elapsed time: 50 seconds
+selectCodeEditor("modulo_top_a35t.v", 205, 107); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 314, 185); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 214, 109); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 123, 226); // cd (w, ch)
+// Elapsed time: 43 seconds
+selectCodeEditor("modulo_top_a35t.v", 239, 148); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 261, 144); // cd (w, ch)
+// Elapsed time: 12 seconds
+selectCodeEditor("modulo_top_a35t.v", 160, 212); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 1, 402); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 64, 346); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 4, 148); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 2, 144); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 1, 229); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 2, 141); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 24, 167); // cd (w, ch)
+// Elapsed time: 39 seconds
+selectCodeEditor("modulo_top_a35t.v", 251, 114); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 251, 114, false, false, false, false, true); // cd (w, ch) - Double Click
+// Elapsed time: 35 seconds
+selectCodeEditor("modulo_top_a35t.v", 60, 276); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 10, 283); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 77, 113); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 0, 298); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 46, 116); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 68, 291); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 44, 75); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 46, 74); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 47, 78); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 16, 365); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 48, 98); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 13, 382); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 134, 346); // cd (w, ch)
+// Elapsed time: 15 seconds
+selectCodeEditor("modulo_top_a35t.v", 239, 265); // cd (w, ch)
+// Elapsed time: 21 seconds
+selectCodeEditor("modulo_top_a35t.v", 9, 162); // cd (w, ch)
+// Elapsed time: 11 seconds
+selectCodeEditor("modulo_top_a35t.v", 47, 97); // cd (w, ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 661 MB. GUI used memory: 50 MB. Current time: 6/26/18 11:05:16 AM CEST
+// Elapsed time: 43 seconds
+selectCodeEditor("modulo_top_a35t.v", 254, 177); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 254, 177, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 155, 158); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 155, 158, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+typeControlKey(null, null, 'z');
+selectCodeEditor("modulo_top_a35t.v", 174, 159); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 152, 96); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 152, 96, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+// Elapsed time: 49 seconds
+selectCodeEditor("modulo_top_a35t.v", 13, 130); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 52, 140); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 77, 141); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 94, 346); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 145, 350); // cd (w, ch)
+// Elapsed time: 85 seconds
+selectCodeEditor("modulo_top_a35t.v", 11, 51); // cd (w, ch)
+// Elapsed time: 27 seconds
+selectCodeEditor("modulo_top_a35t.v", 125, 365); // cd (w, ch)
+// Elapsed time: 15 seconds
+selectCodeEditor("modulo_top_a35t.v", 205, 440); // cd (w, ch)
+// Elapsed time: 139 seconds
+selectCodeEditor("modulo_top_a35t.v", 146, 218); // cd (w, ch)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bombjack.vhd", 2); // k (j, ch)
+selectCodeEditor("bombjack.vhd", 90, 133); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 90, 133, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "bombjack.vhd", 'c'); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modulo_top_a35t.v", 1); // k (j, ch)
+selectCodeEditor("modulo_top_a35t.v", 52, 267); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 52, 267, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 57, 274); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 57, 274, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 189, 290); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 157, 277); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 3, 262); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 1, 297); // cd (w, ch)
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bombjack.vhd", 2); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "modulo_top_a35t.v", 1); // k (j, ch)
+selectCodeEditor("modulo_top_a35t.v", 81, 272); // cd (w, ch)
+// Elapsed time: 13 seconds
+selectCodeEditor("modulo_top_a35t.v", 154, 77); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 154, 77, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 113, 142); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 113, 142, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 85, 218); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 85, 218, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'c'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 111, 165); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 111, 165, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 117, 178); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 117, 178, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 114, 197); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 114, 197, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "modulo_top_a35t.v", 'v'); // cd (w, ch)
+selectCodeEditor("modulo_top_a35t.v", 131, 177); // cd (w, ch)
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bombjack.vhd", 2); // k (j, ch)
+// Elapsed time: 63 seconds
+selectCodeEditor("bombjack.vhd", 67, 50); // cd (w, ch)
+typeControlKey((HResource) null, "bombjack.vhd", 'v'); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 226, 133); // cd (w, ch)
+// Elapsed time: 44 seconds
+selectCodeEditor("bombjack.vhd", 213, 401); // cd (w, ch)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 22 seconds
+selectCodeEditor("bombjack.vhd", 49, 400); // cd (w, ch)
+selectCodeEditor("bombjack.vhd", 49, 400, false, false, false, false, true); // cd (w, ch) - Double Click
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v), pm : BOMBJACK(RTL) (bombjack.vhd)]", 2); // B (D, ch)
+// Elapsed time: 20 seconds
+selectCodeEditor("bombjack.vhd", 340, 67); // cd (w, ch)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ROM_"); // l (aP, ch)
+selectCodeEditor("bombjack.vhd", 198, 111); // cd (w, ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 663 MB. GUI used memory: 49 MB. Current time: 6/26/18 11:16:31 AM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v), pm : BOMBJACK(RTL) (bombjack.vhd), p8 : palette(RTL) (p8_palette.vhd)]", 22, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v), pm : BOMBJACK(RTL) (bombjack.vhd), p8 : palette(RTL) (p8_palette.vhd)]", 22, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v), pm : BOMBJACK(RTL) (bombjack.vhd), p8 : palette(RTL) (p8_palette.vhd)]", 22, false, false, false, false, false, true); // B (D, ch) - Double Click
+// Elapsed time: 15 seconds
+typeControlKey(null, null, 'z');
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v), pm : BOMBJACK(RTL) (bombjack.vhd), p8 : palette(RTL) (p8_palette.vhd)]", 22, false); // B (D, ch)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aF (ch): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aF)
+dismissDialog("Remove Sources"); // aF (ch)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/repos/a35/bombjack/source/bombjack/p8_palette.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/repos/a35/bombjack/source/bombjack/p8_palette.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v), pm : BOMBJACK(RTL) (bombjack.vhd), p8 : palette(RTL) (p8_palette.vhd)]", 22, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v), pm : BOMBJACK(RTL) (bombjack.vhd), p8 : palette(RTL) (p8_palette.vhd)]", 22, false, false, false, false, true, false); // B (D, ch) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ac (ai, ch)
+// ac (ch): Unable to Open File: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceOtoP.OpenFileAction_CANCEL, "Cancel"); // a (ac)
+dismissDialog("Unable to Open File"); // ac (ch)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bombjack_top (modulo_top_a35t.v), pm : BOMBJACK(RTL) (bombjack.vhd), p8 : palette(RTL) (p8_palette.vhd)]", 22, false, false, false, false, true, false); // B (D, ch) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 13 seconds
+setFileChooser("F:/repos/a35/BombJack.jepalza/source/bombjack/p8_palette_no_brams.vhd");
+// 'dG' command handler elapsed time: 13 seconds
